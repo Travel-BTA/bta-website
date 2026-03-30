@@ -1,25 +1,67 @@
-import { Button } from "@/components/ui/button";
-import { Loader2 } from "lucide-react";
-import { Streamdown } from 'streamdown';
-
 /**
- * All content in this page are only for example, replace with your own feature implementation
- * When building pages, remember your instructions in Frontend Best Practices, Design Guide and Common Pitfalls
+ * Home — BTA Homepage
+ *
+ * Assembles all sections in the order defined by the Figma design:
+ * 1. NavBar (sticky, transparent → solid on scroll)
+ * 2. Hero
+ * 3. Who We Are
+ * 4. Stats
+ * 5. Philosophy
+ * 6. Curated Hotels (full-width image)
+ * 7. Exclusive Benefits
+ * 8. VIP Access + Hotel Search
+ * 9. Gives Back
+ * 10. Experience Strip (full-width image)
+ * 11. Journal / Blog
+ * 12. Testimonials
+ * 13. Instagram Feed
+ * 14. Final CTA
+ * 15. Footer
+ *
+ * To update content: edit /src/content/homepage.ts only.
+ * To update design: edit the individual section component files.
  */
-export default function Home() {
-  // If theme is switchable in App.tsx, we can implement theme toggling like this:
-  // const { theme, toggleTheme } = useTheme();
 
+import NavBar from "@/components/NavBar";
+import HeroSection from "@/components/sections/HeroSection";
+import {
+  WhoWeAreSection,
+  StatsSection,
+  PhilosophySection,
+  CuratedHotelsSection,
+} from "@/components/sections/AboutSections";
+import {
+  ExclusiveBenefitsSection,
+  VipAccessSection,
+  GivesBackSection,
+} from "@/components/sections/MembershipSections";
+import {
+  ExperienceStripSection,
+  JournalSection,
+  TestimonialsSection,
+  InstagramSection,
+  FinalCtaSection,
+  FooterSection,
+} from "@/components/sections/JournalSections";
+
+export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col">
-      <main>
-        {/* Example: lucide-react for icons */}
-        <Loader2 className="animate-spin" />
-        Example Page
-        {/* Example: Streamdown for markdown rendering */}
-        <Streamdown>Any **markdown** content</Streamdown>
-        <Button variant="default">Example Button</Button>
-      </main>
+    <div className="min-h-screen">
+      <NavBar />
+      <HeroSection />
+      <WhoWeAreSection />
+      <StatsSection />
+      <PhilosophySection />
+      <CuratedHotelsSection />
+      <ExclusiveBenefitsSection />
+      <VipAccessSection />
+      <GivesBackSection />
+      <ExperienceStripSection />
+      <JournalSection />
+      <TestimonialsSection />
+      <InstagramSection />
+      <FinalCtaSection />
+      <FooterSection />
     </div>
   );
 }

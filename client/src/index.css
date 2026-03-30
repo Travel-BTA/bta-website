@@ -1,9 +1,37 @@
+/*
+ * BTA Design System — index.css
+ *
+ * Design Philosophy: Luxury, Elevated, Modern, Sophisticated
+ * Color Palette:
+ *   Gold/Tan:    #A18B6E / #9E8661  → primary accent, buttons, section backgrounds
+ *   Dark Navy:   #041E42 / #040619  → stats bar, footer, dark sections
+ *   Off-White:   #F5F0EA            → primary page background
+ *   Cream:       #EDE8E0            → secondary background
+ *   White:       #FFFFFF            → text on dark, nav overlay
+ * Typography:
+ *   Display (H1):  Playfair Display — large, uppercase, serif
+ *   Script:        Cormorant Garamond italic — eyebrow labels, script accents
+ *   Heading (H2):  Playfair Display — uppercase, tracked
+ *   Body:          Cormorant Garamond — elegant serif body
+ *   Labels:        Cormorant SC — small caps for nav/labels
+ */
+
 @import "tailwindcss";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  /* BTA Brand Colors in OKLCH */
+  --color-bta-gold:       oklch(0.62 0.06 68);      /* #A18B6E */
+  --color-bta-gold-dark:  oklch(0.57 0.07 68);      /* #9E8661 */
+  --color-bta-navy:       oklch(0.17 0.04 255);     /* #041E42 */
+  --color-bta-navy-deep:  oklch(0.12 0.03 260);     /* #040619 */
+  --color-bta-cream:      oklch(0.96 0.01 80);      /* #F5F0EA */
+  --color-bta-cream-dark: oklch(0.93 0.015 80);     /* #EDE8E0 */
+  --color-bta-warm-gray:  oklch(0.75 0.02 80);      /* #C8B99A */
+
+  /* Semantic tokens */
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -27,132 +55,71 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  --color-chart-1: var(--chart-1);
-  --color-chart-2: var(--chart-2);
-  --color-chart-3: var(--chart-3);
-  --color-chart-4: var(--chart-4);
-  --color-chart-5: var(--chart-5);
-  --color-sidebar: var(--sidebar);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
 }
 
 :root {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-600);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
-  --radius: 0.65rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.235 0.015 65);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.235 0.015 65);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.235 0.015 65);
-  --secondary: oklch(0.98 0.001 286.375);
-  --secondary-foreground: oklch(0.4 0.015 65);
-  --muted: oklch(0.967 0.001 286.375);
-  --muted-foreground: oklch(0.552 0.016 285.938);
-  --accent: oklch(0.967 0.001 286.375);
-  --accent-foreground: oklch(0.141 0.005 285.823);
-  --destructive: oklch(0.577 0.245 27.325);
+  /* BTA brand as the primary palette */
+  --radius: 0rem; /* Sharp corners for luxury feel */
+  --background:         oklch(0.96 0.01 80);   /* Off-white cream */
+  --foreground:         oklch(0.17 0.04 255);  /* Dark navy */
+  --card:               oklch(1 0 0);
+  --card-foreground:    oklch(0.17 0.04 255);
+  --popover:            oklch(1 0 0);
+  --popover-foreground: oklch(0.17 0.04 255);
+  --primary:            oklch(0.62 0.06 68);   /* BTA Gold */
+  --primary-foreground: oklch(1 0 0);          /* White */
+  --secondary:          oklch(0.93 0.015 80);  /* Cream dark */
+  --secondary-foreground: oklch(0.17 0.04 255);
+  --muted:              oklch(0.93 0.015 80);
+  --muted-foreground:   oklch(0.50 0.04 68);
+  --accent:             oklch(0.62 0.06 68);   /* Gold accent */
+  --accent-foreground:  oklch(1 0 0);
+  --destructive:        oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.92 0.004 286.32);
-  --input: oklch(0.92 0.004 286.32);
-  --ring: oklch(0.623 0.214 259.815);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.235 0.015 65);
-  --sidebar-accent: oklch(0.967 0.001 286.375);
-  --sidebar-accent-foreground: oklch(0.141 0.005 285.823);
-  --sidebar-border: oklch(0.92 0.004 286.32);
-  --sidebar-ring: oklch(0.623 0.214 259.815);
-}
-
-.dark {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-500);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --background: oklch(0.141 0.005 285.823);
-  --foreground: oklch(0.85 0.005 65);
-  --card: oklch(0.21 0.006 285.885);
-  --card-foreground: oklch(0.85 0.005 65);
-  --popover: oklch(0.21 0.006 285.885);
-  --popover-foreground: oklch(0.85 0.005 65);
-  --secondary: oklch(0.24 0.006 286.033);
-  --secondary-foreground: oklch(0.7 0.005 65);
-  --muted: oklch(0.274 0.006 286.033);
-  --muted-foreground: oklch(0.705 0.015 286.067);
-  --accent: oklch(0.274 0.006 286.033);
-  --accent-foreground:  oklch(0.92 0.005 65);
-  --destructive: oklch(0.704 0.191 22.216);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.488 0.243 264.376);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
-  --sidebar: oklch(0.21 0.006 285.885);
-  --sidebar-foreground: oklch(0.85 0.005 65);
-  --sidebar-accent: oklch(0.274 0.006 286.033);
-  --sidebar-accent-foreground:  oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.488 0.243 264.376);
+  --border:             oklch(0.88 0.02 80);
+  --input:              oklch(0.88 0.02 80);
+  --ring:               oklch(0.62 0.06 68);
 }
 
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-background text-foreground;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
   [type="button"]:not(:disabled),
   [type="submit"]:not(:disabled),
-  [type="reset"]:not(:disabled),
   a[href],
-  select:not(:disabled),
-  input[type="checkbox"]:not(:disabled),
-  input[type="radio"]:not(:disabled) {
+  select:not(:disabled) {
     @apply cursor-pointer;
   }
 }
 
 @layer components {
-  /**
-   * Custom container utility that centers content and adds responsive padding.
-   *
-   * This overrides Tailwind's default container behavior to:
-   * - Auto-center content (mx-auto)
-   * - Add responsive horizontal padding
-   * - Set max-width for large screens
-   *
-   * Usage: <div className="container">...</div>
-   *
-   * For custom widths, use max-w-* utilities directly:
-   * <div className="max-w-6xl mx-auto px-4">...</div>
-   */
+  /* Container: centered, responsive padding */
   .container {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1rem; /* 16px - mobile padding */
-    padding-right: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .flex {
@@ -162,16 +129,108 @@
 
   @media (min-width: 640px) {
     .container {
-      padding-left: 1.5rem; /* 24px - tablet padding */
-      padding-right: 1.5rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
     }
   }
 
   @media (min-width: 1024px) {
     .container {
-      padding-left: 2rem; /* 32px - desktop padding */
-      padding-right: 2rem;
-      max-width: 1280px; /* Standard content width */
+      padding-left: 4rem;
+      padding-right: 4rem;
+      max-width: 1440px;
     }
+  }
+
+  /* BTA Typography Utilities */
+  .font-display {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  .font-script {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  .font-body {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 400;
+  }
+
+  .font-smallcaps {
+    font-family: 'Cormorant SC', 'Cormorant Garamond', Georgia, serif;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+  }
+
+  /* BTA Section Eyebrow Label */
+  .bta-eyebrow {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 1.25rem;
+    color: oklch(0.62 0.06 68);
+    letter-spacing: 0.02em;
+  }
+
+  /* BTA Outlined Button — white version (on dark/image backgrounds) */
+  .bta-btn-outline-white {
+    display: inline-block;
+    padding: 0.6rem 2rem;
+    border: 1px solid rgba(255,255,255,0.8);
+    color: white;
+    font-family: 'Cormorant SC', 'Cormorant Garamond', Georgia, serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    background: transparent;
+    transition: background 0.25s ease, color 0.25s ease;
+  }
+  .bta-btn-outline-white:hover {
+    background: rgba(255,255,255,0.15);
+  }
+
+  /* BTA Outlined Button — dark version (on light backgrounds) */
+  .bta-btn-outline-dark {
+    display: inline-block;
+    padding: 0.6rem 2rem;
+    border: 1px solid oklch(0.62 0.06 68);
+    color: oklch(0.62 0.06 68);
+    font-family: 'Cormorant SC', 'Cormorant Garamond', Georgia, serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    background: transparent;
+    transition: background 0.25s ease, color 0.25s ease;
+  }
+  .bta-btn-outline-dark:hover {
+    background: oklch(0.62 0.06 68);
+    color: white;
+  }
+
+  /* BTA Filled Button — gold */
+  .bta-btn-gold {
+    display: inline-block;
+    padding: 0.65rem 2.5rem;
+    background: oklch(0.62 0.06 68);
+    color: white;
+    font-family: 'Cormorant SC', 'Cormorant Garamond', Georgia, serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    border: 1px solid oklch(0.62 0.06 68);
+    transition: background 0.25s ease;
+  }
+  .bta-btn-gold:hover {
+    background: oklch(0.57 0.07 68);
+  }
+
+  /* Section heading style */
+  .bta-section-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    line-height: 1.15;
   }
 }
