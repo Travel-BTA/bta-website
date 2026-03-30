@@ -1,10 +1,13 @@
 /**
  * MembershipSections — Exclusive Benefits + VIP Access + Gives Back
  *
- * Design:
- *   - Benefits Bar: Dark charcoal, 6 benefit icons in a row
- *   - VIP Access: Off-white, 2-column (photo left, hotel search form right)
- *   - Gives Back: Off-white, 2-column (photo + gold accent, text right)
+ * Official BTA Brand Colors:
+ *   Champagne Gold:  #BFAF8A  → icons, accents, tabs, buttons, borders
+ *   Aegean Blue:     #384959  → headings on light backgrounds
+ *   Linen White:     #FAF0F6  → text on dark backgrounds
+ *   Warm Stone:      #EDEAE4  → section backgrounds
+ *   Charcoal Ink:    #2F2F2F  → body text
+ *   Dark Navy:       #041E42  → benefits bar background
  */
 
 import React, { useState } from "react";
@@ -46,12 +49,13 @@ const benefitIcons: Record<string, React.ReactElement> = {
 
 export function ExclusiveBenefitsSection() {
   return (
-    <section className="bg-[#1a1a1a] py-10 px-6">
+    // Dark Navy background — strong contrast, matches Figma
+    <section className="bg-[#041E42] py-10 px-6">
       <div className="max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
         {/* Label */}
         <div className="flex-shrink-0 lg:w-48">
           <h2
-            className="bta-section-title text-white text-2xl md:text-3xl leading-tight"
+            className="bta-section-title text-[#FAF0F6] text-2xl md:text-3xl leading-tight"
             style={{ fontWeight: 400 }}
           >
             {exclusiveBenefits.headline.split("\n").map((line, i) => (
@@ -64,14 +68,15 @@ export function ExclusiveBenefitsSection() {
         <div className="flex-1 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
           {exclusiveBenefits.benefits.map((benefit) => (
             <div key={benefit.label} className="flex flex-col items-center text-center gap-2">
-              <div className="text-[#A18B6E]">
+              {/* Champagne Gold icon */}
+              <div className="text-[#BFAF8A]">
                 {benefitIcons[benefit.label] || (
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d="M5 13l4 4L19 7" />
                   </svg>
                 )}
               </div>
-              <span className="font-smallcaps text-white/70 text-[9px] tracking-[0.12em] uppercase leading-snug">
+              <span className="font-smallcaps text-[#FAF0F6]/70 text-[9px] tracking-[0.12em] uppercase leading-snug">
                 {benefit.label}
               </span>
             </div>
@@ -86,7 +91,8 @@ export function VipAccessSection() {
   const [activeTab, setActiveTab] = useState<"stays" | "hotel">("stays");
 
   return (
-    <section className="bg-[#F5F0EA] py-0">
+    // Warm Stone background
+    <section className="bg-[#EDEAE4] py-0">
       <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2">
         {/* Left: Photo */}
         <div className="h-[520px] lg:h-auto overflow-hidden">
@@ -100,25 +106,25 @@ export function VipAccessSection() {
         {/* Right: Content */}
         <div className="px-10 lg:px-16 py-16 flex flex-col justify-center">
           <h2
-            className="bta-section-title text-[#A18B6E] text-2xl md:text-3xl lg:text-4xl leading-tight mb-3"
+            className="bta-section-title text-[#BFAF8A] text-2xl md:text-3xl lg:text-4xl leading-tight mb-3"
             style={{ fontWeight: 400 }}
           >
             {vipAccess.headline.split("\n").map((line, i) => (
               <span key={i} className="block">{line}</span>
             ))}
           </h2>
-          <p className="font-body text-[#041E42]/70 text-base mb-8">
+          <p className="font-body text-[#384959]/80 text-base mb-8">
             {vipAccess.subheadline}
           </p>
 
           {/* Tabs */}
-          <div className="flex mb-6 border-b border-[#A18B6E]/30">
+          <div className="flex mb-6 border-b border-[#BFAF8A]/30">
             <button
               onClick={() => setActiveTab("stays")}
               className={`font-smallcaps text-[10px] tracking-[0.18em] uppercase px-6 py-2 transition-all ${
                 activeTab === "stays"
-                  ? "border-b-2 border-[#A18B6E] text-[#A18B6E]"
-                  : "text-[#041E42]/50 hover:text-[#041E42]"
+                  ? "border-b-2 border-[#BFAF8A] text-[#BFAF8A]"
+                  : "text-[#384959]/50 hover:text-[#384959]"
               }`}
             >
               Stays
@@ -127,8 +133,8 @@ export function VipAccessSection() {
               onClick={() => setActiveTab("hotel")}
               className={`font-smallcaps text-[10px] tracking-[0.18em] uppercase px-6 py-2 transition-all ${
                 activeTab === "hotel"
-                  ? "border-b-2 border-[#A18B6E] text-[#A18B6E]"
-                  : "text-[#041E42]/50 hover:text-[#041E42]"
+                  ? "border-b-2 border-[#BFAF8A] text-[#BFAF8A]"
+                  : "text-[#384959]/50 hover:text-[#384959]"
               }`}
             >
               Search by Hotel
@@ -138,33 +144,33 @@ export function VipAccessSection() {
           {/* Search Form */}
           <div className="space-y-3">
             <div className="relative">
-              <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#A18B6E]/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#BFAF8A]/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
               <input
                 type="text"
                 placeholder="Search Hotel Name"
-                className="w-full pl-10 pr-4 py-3 border border-[#A18B6E]/30 bg-white font-body text-[#041E42] text-sm placeholder:text-[#041E42]/40 focus:outline-none focus:border-[#A18B6E]"
+                className="w-full pl-10 pr-4 py-3 border border-[#BFAF8A]/30 bg-white font-body text-[#384959] text-sm placeholder:text-[#384959]/40 focus:outline-none focus:border-[#BFAF8A]"
               />
             </div>
             <div className="relative">
-              <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#A18B6E]/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#BFAF8A]/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
               </svg>
               <input
                 type="text"
                 placeholder="Check-in — Check-out"
-                className="w-full pl-10 pr-4 py-3 border border-[#A18B6E]/30 bg-white font-body text-[#041E42] text-sm placeholder:text-[#041E42]/40 focus:outline-none focus:border-[#A18B6E]"
+                className="w-full pl-10 pr-4 py-3 border border-[#BFAF8A]/30 bg-white font-body text-[#384959] text-sm placeholder:text-[#384959]/40 focus:outline-none focus:border-[#BFAF8A]"
               />
             </div>
             <div className="relative">
-              <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#A18B6E]/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#BFAF8A]/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
               <input
                 type="text"
                 placeholder="Guests: 2, Rooms: 1"
-                className="w-full pl-10 pr-4 py-3 border border-[#A18B6E]/30 bg-white font-body text-[#041E42] text-sm placeholder:text-[#041E42]/40 focus:outline-none focus:border-[#A18B6E]"
+                className="w-full pl-10 pr-4 py-3 border border-[#BFAF8A]/30 bg-white font-body text-[#384959] text-sm placeholder:text-[#384959]/40 focus:outline-none focus:border-[#BFAF8A]"
               />
             </div>
             <button className="bta-btn-gold w-full flex items-center justify-center gap-2 py-3">
@@ -182,11 +188,12 @@ export function VipAccessSection() {
 
 export function GivesBackSection() {
   return (
-    <section className="bg-[#F5F0EA] py-20 px-6">
+    // Warm Stone background
+    <section className="bg-[#EDEAE4] py-20 px-6">
       <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-        {/* Left: Photo with gold accent */}
+        {/* Left: Photo with Champagne Gold accent block */}
         <div className="relative">
-          <div className="absolute top-[-16px] left-[-16px] w-3/5 h-4/5 bg-[#A18B6E]/20 z-0" />
+          <div className="absolute top-[-16px] left-[-16px] w-3/5 h-4/5 bg-[#BFAF8A]/20 z-0" />
           <img
             src={givesBack.image}
             alt="Community impact through travel"
@@ -198,12 +205,12 @@ export function GivesBackSection() {
         <div>
           <p className="bta-eyebrow mb-3">{givesBack.eyebrow}</p>
           <h2
-            className="bta-section-title text-[#041E42] text-3xl md:text-4xl mb-6 leading-tight"
+            className="bta-section-title text-[#384959] text-3xl md:text-4xl mb-6 leading-tight"
             style={{ fontWeight: 400 }}
           >
             {givesBack.headline}
           </h2>
-          <p className="font-body text-[#041E42]/70 text-lg leading-relaxed">
+          <p className="font-body text-[#2F2F2F]/75 text-lg leading-relaxed">
             {givesBack.body}
           </p>
         </div>

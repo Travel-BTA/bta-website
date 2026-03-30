@@ -2,12 +2,14 @@
  * BTA Design System — index.css
  *
  * Design Philosophy: Luxury, Elevated, Modern, Sophisticated
- * Color Palette:
- *   Gold/Tan:    #A18B6E / #9E8661  → primary accent, buttons, section backgrounds
- *   Dark Navy:   #041E42 / #040619  → stats bar, footer, dark sections
- *   Off-White:   #F5F0EA            → primary page background
- *   Cream:       #EDE8E0            → secondary background
- *   White:       #FFFFFF            → text on dark, nav overlay
+ *
+ * OFFICIAL BRAND COLORS (from brand kit):
+ *   Champagne Gold:  #BFAF8A  → primary accent, buttons, eyebrows, borders
+ *   Aegean Blue:     #384959  → text on light backgrounds, dark accents, nav
+ *   Linen White:     #FAF0F6  → text on dark backgrounds, nav overlay text
+ *   Warm Stone:      #EDEAE4  → section backgrounds, secondary surfaces
+ *   Charcoal Ink:    #2F2F2F  → primary body text on light backgrounds
+ *
  * Typography:
  *   Display (H1):  Playfair Display — large, uppercase, serif
  *   Script:        Cormorant Garamond italic — eyebrow labels, script accents
@@ -22,14 +24,14 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  /* BTA Brand Colors in OKLCH */
-  --color-bta-gold:       oklch(0.62 0.06 68);      /* #A18B6E */
-  --color-bta-gold-dark:  oklch(0.57 0.07 68);      /* #9E8661 */
-  --color-bta-navy:       oklch(0.17 0.04 255);     /* #041E42 */
-  --color-bta-navy-deep:  oklch(0.12 0.03 260);     /* #040619 */
-  --color-bta-cream:      oklch(0.96 0.01 80);      /* #F5F0EA */
-  --color-bta-cream-dark: oklch(0.93 0.015 80);     /* #EDE8E0 */
-  --color-bta-warm-gray:  oklch(0.75 0.02 80);      /* #C8B99A */
+  /* BTA Official Brand Colors in OKLCH */
+  --color-bta-gold:       oklch(0.73 0.05 78);      /* #BFAF8A — Champagne Gold */
+  --color-bta-gold-dark:  oklch(0.65 0.06 72);      /* #9E8661 — deeper gold for hover */
+  --color-bta-aegean:     oklch(0.35 0.04 230);     /* #384959 — Aegean Blue */
+  --color-bta-linen:      oklch(0.96 0.02 340);     /* #FAF0F6 — Linen White */
+  --color-bta-stone:      oklch(0.93 0.01 80);      /* #EDEAE4 — Warm Stone */
+  --color-bta-charcoal:   oklch(0.23 0.00 0);       /* #2F2F2F — Charcoal Ink */
+  --color-bta-navy:       oklch(0.17 0.04 255);     /* #041E42 — Dark Navy (stats bar, footer) */
 
   /* Semantic tokens */
   --radius-sm: calc(var(--radius) - 4px);
@@ -58,27 +60,28 @@
 }
 
 :root {
-  /* BTA brand as the primary palette */
-  --radius: 0rem; /* Sharp corners for luxury feel */
-  --background:         oklch(0.96 0.01 80);   /* Off-white cream */
-  --foreground:         oklch(0.17 0.04 255);  /* Dark navy */
-  --card:               oklch(1 0 0);
-  --card-foreground:    oklch(0.17 0.04 255);
-  --popover:            oklch(1 0 0);
-  --popover-foreground: oklch(0.17 0.04 255);
-  --primary:            oklch(0.62 0.06 68);   /* BTA Gold */
-  --primary-foreground: oklch(1 0 0);          /* White */
-  --secondary:          oklch(0.93 0.015 80);  /* Cream dark */
-  --secondary-foreground: oklch(0.17 0.04 255);
-  --muted:              oklch(0.93 0.015 80);
-  --muted-foreground:   oklch(0.50 0.04 68);
-  --accent:             oklch(0.62 0.06 68);   /* Gold accent */
-  --accent-foreground:  oklch(1 0 0);
-  --destructive:        oklch(0.577 0.245 27.325);
+  --radius: 0rem; /* Sharp corners — luxury feel */
+
+  /* Warm Stone as page background, Charcoal Ink as body text */
+  --background:           oklch(0.93 0.01 80);    /* #EDEAE4 Warm Stone */
+  --foreground:           oklch(0.23 0.00 0);     /* #2F2F2F Charcoal Ink */
+  --card:                 oklch(0.97 0.005 80);   /* near-white card */
+  --card-foreground:      oklch(0.23 0.00 0);
+  --popover:              oklch(0.97 0.005 80);
+  --popover-foreground:   oklch(0.23 0.00 0);
+  --primary:              oklch(0.73 0.05 78);    /* #BFAF8A Champagne Gold */
+  --primary-foreground:   oklch(1 0 0);           /* White */
+  --secondary:            oklch(0.93 0.01 80);    /* Warm Stone */
+  --secondary-foreground: oklch(0.35 0.04 230);   /* Aegean Blue */
+  --muted:                oklch(0.93 0.01 80);
+  --muted-foreground:     oklch(0.50 0.03 78);
+  --accent:               oklch(0.73 0.05 78);    /* Champagne Gold */
+  --accent-foreground:    oklch(1 0 0);
+  --destructive:          oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.985 0 0);
-  --border:             oklch(0.88 0.02 80);
-  --input:              oklch(0.88 0.02 80);
-  --ring:               oklch(0.62 0.06 68);
+  --border:               oklch(0.85 0.02 78);    /* subtle gold-tinted border */
+  --input:                oklch(0.88 0.015 78);
+  --ring:                 oklch(0.73 0.05 78);    /* Champagne Gold focus ring */
 }
 
 @layer base {
@@ -164,12 +167,12 @@
     letter-spacing: 0.12em;
   }
 
-  /* BTA Section Eyebrow Label */
+  /* BTA Section Eyebrow Label — Champagne Gold italic */
   .bta-eyebrow {
     font-family: 'Cormorant Garamond', Georgia, serif;
     font-style: italic;
     font-size: 1.25rem;
-    color: oklch(0.62 0.06 68);
+    color: #BFAF8A;
     letter-spacing: 0.02em;
   }
 
@@ -190,12 +193,12 @@
     background: rgba(255,255,255,0.15);
   }
 
-  /* BTA Outlined Button — dark version (on light backgrounds) */
+  /* BTA Outlined Button — gold version (on light/stone backgrounds) */
   .bta-btn-outline-dark {
     display: inline-block;
     padding: 0.6rem 2rem;
-    border: 1px solid oklch(0.62 0.06 68);
-    color: oklch(0.62 0.06 68);
+    border: 1px solid #BFAF8A;
+    color: #BFAF8A;
     font-family: 'Cormorant SC', 'Cormorant Garamond', Georgia, serif;
     font-size: 0.75rem;
     letter-spacing: 0.18em;
@@ -204,25 +207,26 @@
     transition: background 0.25s ease, color 0.25s ease;
   }
   .bta-btn-outline-dark:hover {
-    background: oklch(0.62 0.06 68);
+    background: #BFAF8A;
     color: white;
   }
 
-  /* BTA Filled Button — gold */
+  /* BTA Filled Button — Champagne Gold */
   .bta-btn-gold {
     display: inline-block;
     padding: 0.65rem 2.5rem;
-    background: oklch(0.62 0.06 68);
+    background: #BFAF8A;
     color: white;
     font-family: 'Cormorant SC', 'Cormorant Garamond', Georgia, serif;
     font-size: 0.75rem;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    border: 1px solid oklch(0.62 0.06 68);
+    border: 1px solid #BFAF8A;
     transition: background 0.25s ease;
   }
   .bta-btn-gold:hover {
-    background: oklch(0.57 0.07 68);
+    background: #9E8661;
+    border-color: #9E8661;
   }
 
   /* Section heading style */

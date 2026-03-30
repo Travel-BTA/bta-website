@@ -5,8 +5,8 @@
  * To update text, links, or photos — edit ONLY this file.
  * Never modify the component files for content changes.
  *
- * IMAGE PLACEHOLDERS: Replace the Unsplash URLs below with your own CDN-hosted
- * images once ready. Upload via: manus-upload-file --webdev path/to/image.jpg
+ * IMAGE WORKFLOW: Upload images via `manus-upload-file --webdev path/to/image.jpg`
+ * then paste the returned CDN URL into the imageUrl fields below.
  */
 
 export const nav = {
@@ -27,13 +27,13 @@ export const nav = {
 };
 
 export const hero = {
-  // Replace with your hero image — dramatic landscape, full-width
-  backgroundImage: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=85&auto=format&fit=crop",
+  // Infinity pool at sunset — dramatic, aspirational
+  backgroundImage: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/infinity-pool-sunset_1070585b.webp",
   headline: "WHERE WILL YOUR\nJOURNEY TAKE YOU?",
   subheadline: "Travel that transforms your world and shapes unforgettable moments.",
   cta: { label: "PLAN YOUR\nJOURNEY", href: "/plan" },
   partnerLogos: [
-    { name: "Virtuoso", imageUrl: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=120&q=80&auto=format&fit=crop" },
+    { name: "Virtuoso", imageUrl: "" },
     { name: "ASTA", imageUrl: "" },
     { name: "Best of Our Valley", imageUrl: "" },
     { name: "IATAN", imageUrl: "" },
@@ -81,13 +81,13 @@ export const philosophy = {
     },
   ],
   cta: { label: "LEARN MORE", href: "/about" },
-  // Replace with airplane window / travel lifestyle photo
-  image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=900&q=85&auto=format&fit=crop",
+  // Airplane window view — the journey begins
+  image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/airplane-window_98d2995f.webp",
 };
 
 export const curatedHotels = {
-  // Replace with luxury resort/terrace photo — Santorini-style sunset
-  backgroundImage: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1920&q=85&auto=format&fit=crop",
+  // Terrace dining at sunset with island views — warm, aspirational
+  backgroundImage: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/terrace-sunset_526ca796.webp",
   scriptLine1: "Explore our",
   scriptLine2: "curated hotels",
 };
@@ -107,21 +107,21 @@ export const exclusiveBenefits = {
 export const vipAccess = {
   headline: "VIP MEMBER ACCESS TO\nVETTED HOTELS &\nEXPERIENCES",
   subheadline: "Exclusive Member Privileges Worth $350* Per Stay",
-  // Replace with resort lifestyle photo — woman in robe, relaxed luxury
-  image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=900&q=85&auto=format&fit=crop",
+  // Pearls on a yacht — refined, luxurious detail
+  image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/pearls-yacht_1dd80f10.webp",
 };
 
 export const givesBack = {
   eyebrow: "Purpose and Meaning",
   headline: "TRAVEL THAT GIVES BACK",
   body: "Connection matters—to people, to places, and communities. Through select partnerships, your journeys quietly support arts, education, sports, travel and community. A portion of every booking supports local charities including childhood cancer, Make-A-Wish, veterans, and arts & culture where we travel.",
-  // Replace with community/children photo
-  image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=900&q=85&auto=format&fit=crop",
+  // Children smiling — community impact
+  image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/children-charity_9d8a6581.png",
 };
 
 export const experienceStrip = {
-  // Replace with outdoor dining / warm tones travel photo
-  backgroundImage: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=85&auto=format&fit=crop",
+  // Hiker on coastal ridge — adventure, exploration
+  backgroundImage: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/hiker-coastal_412c8551.webp",
 };
 
 export const journal = {
@@ -175,7 +175,7 @@ export const instagram = {
   eyebrow: "Follow the Journey",
   handle: "@BOUTIQUETRAVELADVISORS",
   href: "https://www.instagram.com/boutiquetraveladvisors",
-  // Replace with actual Instagram feed images
+  // Replace with actual Instagram feed screenshots
   photos: [
     "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&q=80&auto=format&fit=crop",
     "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=400&q=80&auto=format&fit=crop",
@@ -187,8 +187,8 @@ export const instagram = {
 };
 
 export const finalCta = {
-  // Replace with luxury yacht / ocean photo
-  backgroundImage: "https://images.unsplash.com/photo-1548574505-5e239809ee19?w=1920&q=85&auto=format&fit=crop",
+  // Infinity pool at sunset — aspirational close
+  backgroundImage: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/infinity-pool-sunset_1070585b.webp",
   subheadline: "Live life with no excuses, travel with no regrets",
   headline: "BEGIN YOUR NEXT CHAPTER",
   cta: { label: "START PLANNING", href: "/plan" },
@@ -222,5 +222,5 @@ export const footer = {
     { label: "Privacy Policy", href: "/privacy" },
     { label: "Terms and Conditions", href: "/terms" },
   ],
-  copyright: "© 2024 Travel BTA All Rights Reserved",
+  copyright: "© 2026 Travel BTA All Rights Reserved",
 };

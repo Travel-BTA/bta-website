@@ -1,12 +1,12 @@
 /**
  * JournalSections — Journal + Testimonials + Instagram + Final CTA + Footer
  *
- * Design:
- *   - Journal: Dark navy, 3-column blog cards
- *   - Testimonials: Off-white, carousel with arrows
- *   - Instagram: Gold/tan, 6-photo grid
- *   - Final CTA: Full-width image with centered text
- *   - Footer: Dark navy, 4-column layout
+ * Official BTA Brand Colors:
+ *   Champagne Gold:  #BFAF8A  → eyebrows, accents, icons, hover states, Instagram bg
+ *   Aegean Blue:     #384959  → text on light backgrounds
+ *   Linen White:     #FAF0F6  → text on dark/navy/gold backgrounds
+ *   Warm Stone:      #EDEAE4  → testimonials background
+ *   Dark Navy:       #041E42  → journal section background, footer
  */
 
 import { useState } from "react";
@@ -33,18 +33,19 @@ export function ExperienceStripSection() {
 
 export function JournalSection() {
   return (
+    // Dark Navy background — rich contrast for editorial feel
     <section className="bg-[#041E42] py-20 px-6">
       <div className="max-w-[1440px] mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <p className="font-script text-[#A18B6E] text-xl mb-2">{journal.eyebrow}</p>
+          <p className="font-script text-[#BFAF8A] text-xl mb-2">{journal.eyebrow}</p>
           <h2
-            className="bta-section-title text-white text-3xl md:text-4xl mb-4"
+            className="bta-section-title text-[#FAF0F6] text-3xl md:text-4xl mb-4"
             style={{ fontWeight: 400 }}
           >
             {journal.headline}
           </h2>
-          <p className="font-body text-white/60 text-base">{journal.subheadline}</p>
+          <p className="font-body text-[#FAF0F6]/60 text-base">{journal.subheadline}</p>
         </div>
 
         {/* Blog Cards */}
@@ -58,18 +59,18 @@ export function JournalSection() {
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
-              <div className="font-smallcaps text-[#A18B6E] text-[9px] tracking-[0.18em] uppercase mb-2">
+              <div className="font-smallcaps text-[#BFAF8A] text-[9px] tracking-[0.18em] uppercase mb-2">
                 {post.category} — {post.readTime}
               </div>
               <h3
-                className="font-display text-white text-lg mb-4 leading-snug"
+                className="font-display text-[#FAF0F6] text-lg mb-4 leading-snug"
                 style={{ fontWeight: 400 }}
               >
                 {post.title}
               </h3>
               <a
                 href={post.href}
-                className="font-smallcaps text-white/50 text-[9px] tracking-[0.18em] uppercase hover:text-[#A18B6E] transition-colors flex items-center gap-2"
+                className="font-smallcaps text-[#FAF0F6]/50 text-[9px] tracking-[0.18em] uppercase hover:text-[#BFAF8A] transition-colors flex items-center gap-2"
               >
                 READ MORE
                 <svg className="w-4 h-px" viewBox="0 0 16 1" fill="none">
@@ -92,14 +93,15 @@ export function TestimonialsSection() {
   const next = () => setCurrent((c) => (c + 1) % testimonials.length);
 
   return (
-    <section className="bg-[#F5F0EA] py-20 px-6">
+    // Warm Stone background — clean, airy
+    <section className="bg-[#EDEAE4] py-20 px-6">
       <div className="max-w-[1440px] mx-auto">
         {/* Desktop: 3-across layout with side arrows */}
         <div className="hidden md:flex items-start gap-6">
-          {/* Prev Arrow */}
+          {/* Prev Arrow — Champagne Gold */}
           <button
             onClick={prev}
-            className="mt-8 flex-shrink-0 text-[#A18B6E]/50 hover:text-[#A18B6E] transition-colors"
+            className="mt-8 flex-shrink-0 text-[#BFAF8A]/50 hover:text-[#BFAF8A] transition-colors"
             aria-label="Previous testimonial"
           >
             <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -116,7 +118,7 @@ export function TestimonialsSection() {
           {/* Next Arrow */}
           <button
             onClick={next}
-            className="mt-8 flex-shrink-0 text-[#A18B6E]/50 hover:text-[#A18B6E] transition-colors"
+            className="mt-8 flex-shrink-0 text-[#BFAF8A]/50 hover:text-[#BFAF8A] transition-colors"
             aria-label="Next testimonial"
           >
             <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -133,7 +135,7 @@ export function TestimonialsSection() {
               <button
                 key={i}
                 onClick={() => setCurrent(i)}
-                className={`h-1.5 rounded-full transition-all ${i === current ? "bg-[#A18B6E] w-6" : "bg-[#A18B6E]/30 w-1.5"}`}
+                className={`h-1.5 rounded-full transition-all ${i === current ? "bg-[#BFAF8A] w-6" : "bg-[#BFAF8A]/30 w-1.5"}`}
               />
             ))}
           </div>
@@ -146,29 +148,30 @@ export function TestimonialsSection() {
 function TestimonialCard({ item, dim = false }: { item: typeof testimonials[0]; dim?: boolean }) {
   return (
     <div className={`transition-opacity duration-300 ${dim ? "opacity-40" : "opacity-100"}`}>
-      <p className="font-body text-[#041E42]/70 text-base mb-3 leading-relaxed">{item.context}</p>
+      <p className="font-body text-[#384959]/70 text-base mb-3 leading-relaxed">{item.context}</p>
       <blockquote
-        className="font-display text-[#A18B6E] text-xl md:text-2xl leading-snug mb-4"
+        className="font-display text-[#BFAF8A] text-xl md:text-2xl leading-snug mb-4"
         style={{ fontWeight: 400 }}
       >
         {item.quote}
       </blockquote>
-      <p className="font-script text-[#041E42]/60 text-base">— {item.author}</p>
+      <p className="font-script text-[#384959]/60 text-base">— {item.author}</p>
     </div>
   );
 }
 
 export function InstagramSection() {
   return (
-    <section className="bg-[#A18B6E] py-14 px-6">
+    // Champagne Gold background — warm, distinctive
+    <section className="bg-[#BFAF8A] py-14 px-6">
       <div className="max-w-[1440px] mx-auto">
         <div className="text-center mb-8">
-          <p className="font-script text-white/80 text-xl mb-2">{instagram.eyebrow}</p>
+          <p className="font-script text-[#FAF0F6]/80 text-xl mb-2">{instagram.eyebrow}</p>
           <a
             href={instagram.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="bta-section-title text-white text-2xl md:text-3xl hover:text-white/80 transition-colors"
+            className="bta-section-title text-[#FAF0F6] text-2xl md:text-3xl hover:text-[#FAF0F6]/80 transition-colors"
             style={{ fontWeight: 400 }}
           >
             {instagram.handle}
@@ -205,11 +208,11 @@ export function FinalCtaSection() {
       />
       <div className="absolute inset-0 bg-black/40" />
       <div className="relative text-center px-6">
-        <p className="font-script text-white/90 text-xl md:text-2xl mb-4">
+        <p className="font-script text-[#FAF0F6]/90 text-xl md:text-2xl mb-4">
           {finalCta.subheadline}
         </p>
         <h2
-          className="bta-section-title text-white text-4xl md:text-5xl lg:text-6xl mb-10"
+          className="bta-section-title text-[#FAF0F6] text-4xl md:text-5xl lg:text-6xl mb-10"
           style={{ fontWeight: 400 }}
         >
           {finalCta.headline}
@@ -224,22 +227,23 @@ export function FinalCtaSection() {
 
 export function FooterSection() {
   return (
-    <footer className="bg-[#040619] py-16 px-6">
+    // Deep Navy footer — anchors the page
+    <footer className="bg-[#041E42] py-16 px-6">
       <div className="max-w-[1440px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <div className="text-white mb-4 leading-none">
+            <div className="text-[#FAF0F6] mb-4 leading-none">
               <div className="font-smallcaps text-[9px] tracking-[0.25em] uppercase opacity-70">BOUTIQUE</div>
               <div
                 className="text-[28px] leading-none mt-[-2px]"
-                style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", color: "white" }}
+                style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", color: "#FAF0F6" }}
               >
                 travel
               </div>
               <div className="font-smallcaps text-[9px] tracking-[0.25em] uppercase opacity-70 mt-[-2px]">ADVISORS</div>
             </div>
-            <p className="font-body text-white/50 text-sm mb-6 leading-relaxed">{footer.tagline}</p>
+            <p className="font-body text-[#FAF0F6]/50 text-sm mb-6 leading-relaxed">{footer.tagline}</p>
             <div className="flex gap-4">
               {footer.social.map((s) => (
                 <a
@@ -247,7 +251,7 @@ export function FooterSection() {
                   href={s.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white/40 hover:text-[#A18B6E] transition-colors"
+                  className="text-[#FAF0F6]/40 hover:text-[#BFAF8A] transition-colors"
                   aria-label={s.platform}
                 >
                   {s.platform === "Instagram" && (
@@ -272,11 +276,11 @@ export function FooterSection() {
 
           {/* Explore */}
           <div>
-            <h4 className="font-smallcaps text-white text-[10px] tracking-[0.2em] uppercase mb-5">Explore</h4>
+            <h4 className="font-smallcaps text-[#FAF0F6] text-[10px] tracking-[0.2em] uppercase mb-5">Explore</h4>
             <ul className="space-y-3">
               {footer.explore.map((link) => (
                 <li key={link.label}>
-                  <a href={link.href} className="font-body text-white/50 text-sm hover:text-[#A18B6E] transition-colors">
+                  <a href={link.href} className="font-body text-[#FAF0F6]/50 text-sm hover:text-[#BFAF8A] transition-colors">
                     {link.label}
                   </a>
                 </li>
@@ -286,11 +290,11 @@ export function FooterSection() {
 
           {/* Company */}
           <div>
-            <h4 className="font-smallcaps text-white text-[10px] tracking-[0.2em] uppercase mb-5">Company</h4>
+            <h4 className="font-smallcaps text-[#FAF0F6] text-[10px] tracking-[0.2em] uppercase mb-5">Company</h4>
             <ul className="space-y-3">
               {footer.company.map((link) => (
                 <li key={link.label}>
-                  <a href={link.href} className="font-body text-white/50 text-sm hover:text-[#A18B6E] transition-colors">
+                  <a href={link.href} className="font-body text-[#FAF0F6]/50 text-sm hover:text-[#BFAF8A] transition-colors">
                     {link.label}
                   </a>
                 </li>
@@ -300,38 +304,38 @@ export function FooterSection() {
 
           {/* Contact + Newsletter */}
           <div>
-            <h4 className="font-smallcaps text-white text-[10px] tracking-[0.2em] uppercase mb-5">Subscribe</h4>
-            <p className="font-body text-white/50 text-xs mb-4 leading-relaxed uppercase tracking-wide">
+            <h4 className="font-smallcaps text-[#FAF0F6] text-[10px] tracking-[0.2em] uppercase mb-5">Subscribe</h4>
+            <p className="font-body text-[#FAF0F6]/50 text-xs mb-4 leading-relaxed uppercase tracking-wide">
               Newsletter for latest updates
             </p>
             <div className="flex mb-8">
               <input
                 type="email"
                 placeholder="Your email address"
-                className="flex-1 bg-white/5 border border-white/10 px-4 py-2 font-body text-white text-sm placeholder:text-white/30 focus:outline-none focus:border-[#A18B6E]"
+                className="flex-1 bg-white/5 border border-white/10 px-4 py-2 font-body text-[#FAF0F6] text-sm placeholder:text-[#FAF0F6]/30 focus:outline-none focus:border-[#BFAF8A]"
               />
-              <button className="bg-[#A18B6E] px-4 py-2 text-white hover:bg-[#9E8661] transition-colors">
+              <button className="bg-[#BFAF8A] px-4 py-2 text-white hover:bg-[#9E8661] transition-colors">
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
                 </svg>
               </button>
             </div>
 
-            <h4 className="font-smallcaps text-white text-[10px] tracking-[0.2em] uppercase mb-4">Get in Touch</h4>
+            <h4 className="font-smallcaps text-[#FAF0F6] text-[10px] tracking-[0.2em] uppercase mb-4">Get in Touch</h4>
             <div className="space-y-2">
-              <a href={`tel:${footer.contact.phone}`} className="flex items-center gap-2 font-body text-white/50 text-sm hover:text-[#A18B6E] transition-colors">
+              <a href={`tel:${footer.contact.phone}`} className="flex items-center gap-2 font-body text-[#FAF0F6]/50 text-sm hover:text-[#BFAF8A] transition-colors">
                 <svg className="w-3.5 h-3.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
                 {footer.contact.phone}
               </a>
-              <a href={`mailto:${footer.contact.email}`} className="flex items-center gap-2 font-body text-white/50 text-sm hover:text-[#A18B6E] transition-colors">
+              <a href={`mailto:${footer.contact.email}`} className="flex items-center gap-2 font-body text-[#FAF0F6]/50 text-sm hover:text-[#BFAF8A] transition-colors">
                 <svg className="w-3.5 h-3.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
                 {footer.contact.email}
               </a>
-              <p className="font-smallcaps text-white/30 text-[9px] tracking-[0.12em] uppercase mt-2">
+              <p className="font-smallcaps text-[#FAF0F6]/30 text-[9px] tracking-[0.12em] uppercase mt-2">
                 {footer.contact.virtuoso}
               </p>
             </div>
@@ -340,7 +344,7 @@ export function FooterSection() {
 
         {/* Bottom Bar */}
         <div className="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-3">
-          <p className="font-smallcaps text-white/30 text-[9px] tracking-[0.15em] uppercase">
+          <p className="font-smallcaps text-[#FAF0F6]/30 text-[9px] tracking-[0.15em] uppercase">
             {footer.copyright}
           </p>
           <div className="flex gap-4">
@@ -348,7 +352,7 @@ export function FooterSection() {
               <a
                 key={link.label}
                 href={link.href}
-                className="font-smallcaps text-white/30 text-[9px] tracking-[0.12em] uppercase hover:text-white/60 transition-colors"
+                className="font-smallcaps text-[#FAF0F6]/30 text-[9px] tracking-[0.12em] uppercase hover:text-[#FAF0F6]/60 transition-colors"
               >
                 {link.label}
               </a>
