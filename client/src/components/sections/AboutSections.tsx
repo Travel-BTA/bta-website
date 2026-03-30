@@ -7,7 +7,7 @@
  *   Linen White:     #FAF0F6  → text on dark/gold backgrounds
  *   Warm Stone:      #EDEAE4  → section backgrounds
  *   Charcoal Ink:    #2F2F2F  → body text
- *   Dark Navy:       #041E42  → stats bar, footer
+ *   Dark Navy:       #384959  → stats bar, footer
  */
 
 import { whoWeAre, stats, philosophy, curatedHotels } from "@/content/homepage";
@@ -35,7 +35,7 @@ export function WhoWeAreSection() {
 export function StatsSection() {
   return (
     // Dark Navy bar — keeps strong contrast, matches Figma
-    <section className="bg-[#041E42] py-14 px-6">
+    <section className="bg-[#384959] py-14 px-6">
       <div className="max-w-[1440px] mx-auto grid grid-cols-3 gap-8 text-center">
         {stats.map((stat) => (
           <div key={stat.label}>

@@ -31,7 +31,7 @@
   --color-bta-linen:      oklch(0.96 0.02 340);     /* #FAF0F6 — Linen White */
   --color-bta-stone:      oklch(0.93 0.01 80);      /* #EDEAE4 — Warm Stone */
   --color-bta-charcoal:   oklch(0.23 0.00 0);       /* #2F2F2F — Charcoal Ink */
-  --color-bta-navy:       oklch(0.17 0.04 255);     /* #041E42 — Dark Navy (stats bar, footer) */
+  --color-bta-navy:       oklch(0.17 0.04 255);     /* #384959 — Dark Navy (stats bar, footer) */
 
   /* Semantic tokens */
   --radius-sm: calc(var(--radius) - 4px);

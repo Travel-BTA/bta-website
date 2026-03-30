@@ -6,7 +6,7 @@
  *   Aegean Blue:     #384959  → text on light backgrounds
  *   Linen White:     #FAF0F6  → text on dark/navy/gold backgrounds
  *   Warm Stone:      #EDEAE4  → testimonials background
- *   Dark Navy:       #041E42  → journal section background, footer
+ *   Dark Navy:       #384959  → journal section background, footer
  */
 
 import { useState } from "react";
@@ -34,7 +34,7 @@ export function ExperienceStripSection() {
 export function JournalSection() {
   return (
     // Dark Navy background — rich contrast for editorial feel
-    <section className="bg-[#041E42] py-20 px-6">
+    <section className="bg-[#384959] py-20 px-6">
       <div className="max-w-[1440px] mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
@@ -228,7 +228,7 @@ export function FinalCtaSection() {
 export function FooterSection() {
   return (
     // Deep Navy footer — anchors the page
-    <footer className="bg-[#041E42] py-16 px-6">
+    <footer className="bg-[#384959] py-16 px-6">
       <div className="max-w-[1440px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand */}

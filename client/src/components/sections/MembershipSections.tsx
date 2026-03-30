@@ -7,7 +7,7 @@
  *   Linen White:     #FAF0F6  → text on dark backgrounds
  *   Warm Stone:      #EDEAE4  → section backgrounds
  *   Charcoal Ink:    #2F2F2F  → body text
- *   Dark Navy:       #041E42  → benefits bar background
+ *   Dark Navy:       #384959  → benefits bar background
  */
 
 import React, { useState } from "react";
@@ -50,7 +50,7 @@ const benefitIcons: Record<string, React.ReactElement> = {
 export function ExclusiveBenefitsSection() {
   return (
     // Dark Navy background — strong contrast, matches Figma
-    <section className="bg-[#041E42] py-10 px-6">
+    <section className="bg-[#384959] py-10 px-6">
       <div className="max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
         {/* Label */}
         <div className="flex-shrink-0 lg:w-48">
