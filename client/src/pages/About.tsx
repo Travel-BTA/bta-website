@@ -238,7 +238,7 @@ export default function About() {
               { name: "Tracey Davis", image: "https://travelbta.com/wp-content/uploads/2024/03/bta-horizontal-photo-2.jpeg" },
               { name: "Kathleen Smith", image: "https://travelbta.com/wp-content/uploads/2022/12/Kathleen-Profile-resized.jpg" },
               { name: "Carol Fogerty", image: "https://travelbta.com/wp-content/uploads/2025/05/f2a52e31-59fe-4b31-8793-0a1fdda00163_IMG_1584__3_-1-scaled-e1747425399928.jpg" },
-              { name: "Julie Plummer", image: "https://travelbta.com/wp-content/uploads/2025/06/Screenshot-2025-06-02-at-7.08.48%20AM.png" },
+              { name: "Julie Plummer", image: "/images/advisor-julie-plummer.jpg" },
               { name: "Baylee Shapiro", image: "https://travelbta.com/wp-content/uploads/2025/07/009A8159-scaled.jpeg" },
               { name: "Danitza & Esteban Villanueva", image: "https://travelbta.com/wp-content/uploads/2025/09/Danitza-and-Esteban-Villaneuva-at-The-Tower-Birdge-e1757596376865.jpg" },
               { name: "Chloe Cottingham", image: "https://travelbta.com/wp-content/uploads/2022/12/Chloe-Cottingham-About.jpg" },
