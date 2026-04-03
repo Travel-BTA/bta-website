@@ -9,6 +9,7 @@ import LandJourneys from "./pages/LandJourneys";
 import PhilanthropicInitiatives from "./pages/PhilanthropicInitiatives";
 import PreferredPartners from "./pages/PreferredPartners";
 import PartnerDetail from "./pages/PartnerDetail";
+import PrivateJetCharters from "./pages/PrivateJetCharters";
 
 
 function Router() {
@@ -20,6 +21,8 @@ function Router() {
       {/* Preferred Partners hub + individual partner pages */}
       <Route path={"/preferred-partners"} component={PreferredPartners} />
       <Route path={"/preferred-partners/:id"} component={PartnerDetail} />
+      {/* Private Jet Charters */}
+      <Route path={"/private-jet-charters"} component={PrivateJetCharters} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
