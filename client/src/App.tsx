@@ -10,7 +10,8 @@ import SafariWildlife from "./pages/SafariWildlife";
 import EuropeanImmersions from "./pages/EuropeanImmersions";
 import ExpeditionTravel from "./pages/ExpeditionTravel";
 import CulturalJourneys from "./pages/CulturalJourneys";
-import Book from "./pages/Book";
+import Book from "@/pages/Book";
+import About from "@/pages/About";
 
 function Router() {
   return (
@@ -25,6 +26,7 @@ function Router() {
       <Route path={"/land-journeys/expedition"} component={ExpeditionTravel} />
       <Route path={"/land-journeys/cultural"} component={CulturalJourneys} />
       <Route path={"/book"} component={Book} />
+      <Route path={"/about"} component={About} />
 
       {/* Fallback */}
       <Route path={"/404"} component={NotFound} />
