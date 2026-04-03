@@ -23,7 +23,7 @@ import {
 // ─── Brand tokens ─────────────────────────────────────────────────────────────
 const AEGEAN   = "#384959";
 const GOLD     = "#9C886A";
-const DARK     = "#040619";
+const DARK     = "#2f2f2f";
 
 export default function PrivateJetCharters() {
   const [activeJet, setActiveJet] = useState(0);
@@ -40,7 +40,7 @@ export default function PrivateJetCharters() {
           style={{ backgroundImage: `url('${jetHero.imageUrl}')` }}
         />
         {/* Dark gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#040619] via-[#040619]/50 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#2f2f2f] via-[#2f2f2f]/50 to-transparent" />
 
         {/* Watermark */}
         <div
@@ -74,7 +74,7 @@ export default function PrivateJetCharters() {
           </p>
           <a
             href="/book"
-            className="inline-block px-8 py-3 border border-white/60 text-white text-xs tracking-[0.2em] uppercase hover:bg-white hover:text-[#040619] transition-all duration-300"
+            className="inline-block px-8 py-3 border border-white/60 text-white text-xs tracking-[0.2em] uppercase hover:bg-white hover:text-[#2f2f2f] transition-all duration-300"
           >
             Request a Charter
           </a>
@@ -130,7 +130,7 @@ export default function PrivateJetCharters() {
                 alt="Private jet interior"
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-br from-transparent to-[#040619]/20" />
+              <div className="absolute inset-0 bg-gradient-to-br from-transparent to-[#2f2f2f]/20" />
             </div>
             {/* Gold corner accents */}
             <div
@@ -196,7 +196,7 @@ export default function PrivateJetCharters() {
                     alt={cat.name}
                     className="absolute inset-0 w-full h-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#040619]/60 hidden md:block" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#2f2f2f]/60 hidden md:block" />
                 </div>
                 {/* Content */}
                 <div className="p-8 md:p-12" style={{ backgroundColor: "#384959" }}>
@@ -315,7 +315,7 @@ export default function PrivateJetCharters() {
                   alt="Private jet charter process"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#040619]/40 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#2f2f2f]/40 to-transparent" />
               </div>
               <div
                 className="absolute -top-3 -right-3 w-12 h-12 border-t-2 border-r-2"
@@ -374,7 +374,7 @@ export default function PrivateJetCharters() {
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url('${jetCta.imageUrl}')` }}
         />
-        <div className="absolute inset-0 bg-[#040619]/75" />
+        <div className="absolute inset-0 bg-[#2f2f2f]/75" />
 
         {/* Watermark */}
         <div
@@ -416,7 +416,7 @@ export default function PrivateJetCharters() {
             </a>
             <a
               href={`tel:${jetCta.phone}`}
-              className="px-10 py-3 text-xs tracking-[0.2em] uppercase border border-white/40 text-white hover:bg-white hover:text-[#040619] transition-all duration-300"
+              className="px-10 py-3 text-xs tracking-[0.2em] uppercase border border-white/40 text-white hover:bg-white hover:text-[#2f2f2f] transition-all duration-300"
             >
               {jetCta.phone}
             </a>
