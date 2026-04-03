@@ -124,10 +124,11 @@ export const partners: Partner[] = [
       "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=800&q=80&auto=format&fit=crop",
     accentColor: "#2c3e50",
     benefits: [
+      "Hotel credit (varies by property)",
       "Daily breakfast for two guests",
-      "USD 100 property credit per stay",
       "Priority room upgrade upon arrival (subject to availability)",
-      "Early check-in and late check-out (subject to availability)",
+      "Extended check-in and check-out (subject to availability)",
+      "Complimentary welcome gift",
     ],
     properties: [
       {
@@ -338,7 +339,7 @@ export const partners: Partner[] = [
     name: "JMak",
     tagline: "Bespoke luxury, personally delivered.",
     description:
-      "JMak is BTA's exclusive in-house concierge and luxury experience partner — providing clients with white-glove ground services, private transfers, curated dining reservations, and bespoke experiences at destinations worldwide. Every JMak experience is personally arranged by a BTA advisor.",
+      "J.MAK curates a portfolio of over 200 independently vetted luxury properties worldwide — from coastal sanctuaries to safari lodges — and provides BTA clients with exclusive welcome amenities and curated on-property experiences that cannot be accessed through standard booking channels.",
     category: "Collections",
     heroImage:
       "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1600&q=85&auto=format&fit=crop",
@@ -350,7 +351,6 @@ export const partners: Partner[] = [
       "Curated on-property experiences and activities",
       "Access to a portfolio of 200+ independently vetted luxury properties",
       "Direct relationship with property general managers",
-      "10% commission passed through to BTA clients as added value",
     ],
     properties: [
       {
