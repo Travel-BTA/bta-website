@@ -31,8 +31,8 @@ const CRUISE_LINES = [
     ],
     culinary:
       "Chef's Table: an intimate specialty restaurant featuring a rotating menu of regional dishes. Daily cooking demonstrations, wine pairing dinners, and market visits bring each destination's flavors aboard.",
-    // Rhine Gorge — generated hyper-realistic image: luxury river ship at golden hour
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/rhine-gorge-cruise_5b5d3935.png",
+    // Heidelberg castle and Neckar River — user-provided photo
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/ama-heidelberg-neckar_81fe3c96.jpg",
     link: "https://inspires.to/experiences/amawaterways-a-new-expression-and-a-deeper-connection-xw4kl4",
     linkLabel: "Explore AmaWaterways",
     imageRight: false,
@@ -54,8 +54,8 @@ const CRUISE_LINES = [
     ],
     culinary:
       "Destination-driven menus change daily, sourced from local markets. A dedicated sommelier curates wine pairings for every meal. Cooking classes and market visits are offered on select itineraries.",
-    // Bordeaux quayside at dusk — generated hyper-realistic image: Garonne River at golden hour
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/bordeaux-river-cruise_49929b54.png",
+    // Amsterdam autumn canal reflection — user-provided photo
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/uniworld-amsterdam-autumn_10c9e73e.jpg",
     link: "https://www.uniworld.com",
     linkLabel: "Explore Uniworld",
     imageRight: true,
@@ -76,8 +76,8 @@ const CRUISE_LINES = [
     ],
     culinary:
       "The Restaurant features destination-inspired menus with live cooking stations. The Aquavit Terrace offers al fresco dining. Cooking demonstrations and market visits are offered on select itineraries.",
-    // Amsterdam canals — classic European river destination
-    image: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1400&q=80",
+    // Amsterdam canal houses at golden hour — user-provided photo
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/viking-amsterdam-canal_cdc76375.jpg",
     link: "https://www.vikingcruises.com/river-cruises",
     linkLabel: "Explore Viking River",
     imageRight: false,
@@ -98,34 +98,13 @@ const CRUISE_LINES = [
     ],
     culinary:
       "Destination-inspired menus featuring local ingredients. Exclusive dining events at private venues — châteaux, historic estates, and local restaurants not accessible to other cruise lines.",
-    // Mekong Delta — generated hyper-realistic image: sunrise on the Mekong
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/mekong-delta-cruise_f8812a65.png",
+    // Mekong Delta — traditional boat through jungle waterway, user-provided photo
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/tauck-mekong-delta_0ae98827.jpg",
     link: "https://www.tauck.com/river-cruises",
     linkLabel: "Explore Tauck",
     imageRight: true,
   },
-  {
-    id: "scenic",
-    name: "Scenic River Cruises",
-    tagline: "All-Inclusive Space-Ships",
-    eyebrow: "All-Inclusive Luxury",
-    description:
-      "Scenic's Space-Ships are purpose-built for luxury river cruising — featuring heated sun loungers, a wellness center with a pool, and the signature Scenic Enrich program of exclusive experiences ashore. Every fare is truly all-inclusive: meals, premium beverages, excursions, gratuities, butler service, and even e-bikes for independent exploration. The culinary program draws on local ingredients and features a rotating menu of regional specialties.",
-    highlights: [
-      "Purpose-built Space-Ships with heated sun loungers & pool",
-      "Truly all-inclusive: butler service & e-bikes included",
-      "Scenic Enrich — exclusive experiences not available to others",
-      "Wellness center on every ship",
-      "E-bikes for independent exploration at every port",
-    ],
-    culinary:
-      "Locally sourced, destination-inspired menus rotate daily. The Chef's Table offers an intimate specialty dining experience. Cooking demonstrations and market visits are featured on select sailings.",
-    // Amazon River — generated hyper-realistic image: jungle canopy and tropical river
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/amazon-river-cruise_a295bd30.jpg",
-    link: "https://www.scenicusa.com",
-    linkLabel: "Explore Scenic",
-    imageRight: false,
-  },
+
   {
     id: "riverside",
     name: "Riverside Luxury Cruises",
@@ -142,8 +121,8 @@ const CRUISE_LINES = [
     ],
     culinary:
       "European-inspired menus featuring regional specialties. Select beverages included with meals. Cooking demonstrations on select sailings.",
-    // Rhine Gorge (Riverside) — generated hyper-realistic image: Rhine valley at golden hour
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/rhine-gorge-cruise_5b5d3935.png",
+    // Rhine Symphony ship on the Rhine — user-provided photo
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/riverside-rhine-symphony_dab3342f.png",
     link: "https://www.riverside-guide.com/copilot",
     linkLabel: "Explore Riverside",
     imageRight: true,
@@ -159,12 +138,13 @@ export default function RiverCruises() {
       {/* Stronger overlay (via/50) ensures white text is legible over any image */}
       <section className="relative h-[75vh] min-h-[520px] flex items-end overflow-hidden">
         <img
-          src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/rhine-gorge-cruise_5b5d3935.png"
+          src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/riverside-rhine-symphony_dab3342f.png"
           alt="Luxury river cruise ship sailing through a European waterway at golden hour"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
-        {/* Strengthened gradient: bottom 90% → mid 50% → top 15% for clear text */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#2f2f2f]/90 via-[#2f2f2f]/50 to-[#2f2f2f]/15" />
+        {/* Full overlay: uniform dark base + stronger bottom gradient ensures all text is legible */}
+        <div className="absolute inset-0 bg-[#2f2f2f]/45" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#2f2f2f]/80 via-[#2f2f2f]/30 to-transparent" />
 
         <div className="relative z-10 w-full max-w-[1440px] mx-auto px-8 lg:px-14 pb-16 md:pb-20">
           <div className="flex items-center gap-2 mb-6">
