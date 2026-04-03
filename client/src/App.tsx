@@ -6,32 +6,37 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import LandJourneys from "./pages/LandJourneys";
-
+import SafariWildlife from "./pages/SafariWildlife";
+import EuropeanImmersions from "./pages/EuropeanImmersions";
+import ExpeditionTravel from "./pages/ExpeditionTravel";
+import CulturalJourneys from "./pages/CulturalJourneys";
+import Book from "./pages/Book";
 
 function Router() {
   return (
     <Switch>
+      {/* Core pages */}
       <Route path={"/"} component={Home} />
+
+      {/* Land Journeys — parent + sub-pages */}
       <Route path={"/land-journeys"} component={LandJourneys} />
+      <Route path={"/land-journeys/safari"} component={SafariWildlife} />
+      <Route path={"/land-journeys/europe"} component={EuropeanImmersions} />
+      <Route path={"/land-journeys/expedition"} component={ExpeditionTravel} />
+      <Route path={"/land-journeys/cultural"} component={CulturalJourneys} />
+      <Route path={"/book"} component={Book} />
+
+      {/* Fallback */}
       <Route path={"/404"} component={NotFound} />
-      {/* Final fallback route */}
       <Route component={NotFound} />
     </Switch>
   );
 }
 
-// NOTE: About Theme
-// - First choose a default theme according to your design style (dark or light bg), than change color palette in index.css
-//   to keep consistent foreground/background color across components
-// - If you want to make theme switchable, pass `switchable` ThemeProvider and use `useTheme` hook
-
 function App() {
   return (
     <ErrorBoundary>
-      <ThemeProvider
-        defaultTheme="light"
-        // switchable
-      >
+      <ThemeProvider defaultTheme="light">
         <TooltipProvider>
           <Toaster />
           <Router />
