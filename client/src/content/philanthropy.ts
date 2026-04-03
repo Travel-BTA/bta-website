@@ -65,8 +65,8 @@ export const philanthropyPillars = {
     {
       name: "Gratitude",
       tagline: "Giving back with intention",
-      // Person giving / helping, warm light
-      imageUrl: "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=900&q=85&auto=format&fit=crop",
+      // Warm sunrise / golden light — uplifting, no hands
+      imageUrl: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=900&q=85&auto=format&fit=crop",
     },
   ],
 };
@@ -100,17 +100,11 @@ export const philanthropyBeneficiaries = {
     {
       name: "CASA Orange County",
       description: "Advocating for abused and neglected children in court.",
-      // Child reading, safe environment
-      imageUrl: "https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=600&q=80&auto=format&fit=crop",
+      // Child with book in safe, warm setting
+      imageUrl: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=600&q=80&auto=format&fit=crop",
       logoUrl: "",
     },
-    {
-      name: "Comfy Cozys",
-      description: "Providing comfort and warmth to children in need.",
-      // Cozy, warm, children
-      imageUrl: "https://images.unsplash.com/photo-1476703993599-0035a21b17a9?w=600&q=80&auto=format&fit=crop",
-      logoUrl: "",
-    },
+
     {
       name: "The Phoenix Symphony",
       description: "Bringing world-class music to the Phoenix community.",
@@ -128,8 +122,8 @@ export const philanthropyBeneficiaries = {
     {
       name: "CASA — OC",
       description: "Court Appointed Special Advocates for children in Orange County.",
-      // Community support, warm
-      imageUrl: "https://images.unsplash.com/photo-1526976668912-1a811878dd37?w=600&q=80&auto=format&fit=crop",
+      // Children in a classroom, safe and supported
+      imageUrl: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&q=80&auto=format&fit=crop",
       logoUrl: "",
     },
   ],
