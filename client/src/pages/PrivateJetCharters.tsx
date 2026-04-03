@@ -42,19 +42,6 @@ export default function PrivateJetCharters() {
         {/* Dark gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#2f2f2f] via-[#2f2f2f]/50 to-transparent" />
 
-        {/* Watermark */}
-        <div
-          className="absolute inset-0 flex items-center justify-center pointer-events-none select-none"
-          aria-hidden="true"
-        >
-          <span
-            className="text-white/5 font-['Playfair_Display',serif] font-bold leading-none text-center"
-            style={{ fontSize: "clamp(80px, 20vw, 260px)" }}
-          >
-            BTA
-          </span>
-        </div>
-
         {/* Hero content */}
         <div className="relative z-10 w-full max-w-6xl mx-auto px-6 pb-16 md:pb-24">
           <p
