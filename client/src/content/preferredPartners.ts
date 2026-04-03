@@ -83,7 +83,7 @@ export const partners: Partner[] = [
         name: "Grand Hyatt Vail",
         location: "Vail, Colorado",
         imageUrl:
-          "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=600&q=80&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1548777123-e216912df7d8?w=600&q=80&auto=format&fit=crop",
       },
       {
         name: "Thompson Chicago",
@@ -142,7 +142,7 @@ export const partners: Partner[] = [
         name: "Borgo Egnazia",
         location: "Puglia, Italy",
         imageUrl:
-          "https://images.unsplash.com/photo-1534430480872-3498386e7856?w=600&q=80&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=600&q=80&auto=format&fit=crop",
       },
       {
         name: "Canaves Oia Suites",
@@ -207,13 +207,13 @@ export const partners: Partner[] = [
         name: "Carlton Cannes, a Regent Hotel",
         location: "Cannes, France",
         imageUrl:
-          "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600&q=80&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1533929736458-ca588d08c8be?w=600&q=80&auto=format&fit=crop",
       },
       {
         name: "Six Senses Zil Pasyon",
         location: "Félicité Island, Seychelles",
         imageUrl:
-          "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&q=80&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?w=600&q=80&auto=format&fit=crop",
       },
       {
         name: "Kimpton De Witt Amsterdam",
@@ -300,7 +300,7 @@ export const partners: Partner[] = [
         name: "Borgo Egnazia",
         location: "Puglia, Italy",
         imageUrl:
-          "https://images.unsplash.com/photo-1534430480872-3498386e7856?w=600&q=80&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=600&q=80&auto=format&fit=crop",
       },
       {
         name: "Ashford Castle",
@@ -330,7 +330,7 @@ export const partners: Partner[] = [
         name: "The Fifth Avenue Hotel",
         location: "New York, USA",
         imageUrl:
-          "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=600&q=80&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1548777123-e216912df7d8?w=600&q=80&auto=format&fit=crop",
       },
     ],
   },
@@ -359,7 +359,7 @@ export const partners: Partner[] = [
         name: "Shangri-La Paris",
         location: "Paris, France",
         imageUrl:
-          "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600&q=80&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1533929736458-ca588d08c8be?w=600&q=80&auto=format&fit=crop",
       },
       {
         name: "Shangri-La Villingili Resort & Spa",
