@@ -13,7 +13,7 @@ export const nav = {
   logo: {
     text: "BOUTIQUE\ntravel\nADVISORS",
     // Replace with official logo CDN URL when available
-    imageUrl: "", // e.g. "https://cdn.../bta-logo-white.svg"
+    imageUrl: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/bta-logo_aff60fe6.png",
   },
   links: [
     { label: "Land Journeys", href: "/land-journeys" },
