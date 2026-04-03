@@ -20,7 +20,7 @@ export const nav = {
     { label: "Experiences", href: "/experiences" },
     { label: "Land Journeys", href: "/land-journeys" },
     { label: "Cruises", href: "/cruises" },
-    { label: "Preferred Partners", href: "/preferred-partners" },
+    { label: "Partners", href: "/preferred-partners" },
     { label: "Journal", href: "/journal" },
     { label: "About", href: "/about" },
   ],
@@ -206,7 +206,7 @@ export const footer = {
     { label: "Destinations", href: "/destinations" },
     { label: "Experiences", href: "/experiences" },
     { label: "Advisors", href: "/advisors" },
-    { label: "Preferred Partners", href: "/preferred-partners" },
+    { label: "Partners", href: "/preferred-partners" },
     { label: "Journal", href: "/inspiration" },
   ],
   company: [
