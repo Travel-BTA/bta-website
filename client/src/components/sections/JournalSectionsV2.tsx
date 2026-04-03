@@ -12,6 +12,7 @@ import {
   experienceStrip,
 } from "@/content/homepage";
 import { trpc } from "@/lib/trpc";
+import { Link } from "wouter";
 
 export function ExperienceStripSection() {
   return (
@@ -26,6 +27,12 @@ export function ExperienceStripSection() {
 }
 
 export function JournalSection() {
+  /*
+   * WHY: Live feed from WordPress REST API — same source as the Journal page.
+   * Taller images (420px) preserved from V2 design spec.
+   */
+  const { data: livePosts, isLoading } = trpc.blog.getPosts.useQuery({ page: 1, perPage: 3 });
+
   return (
     <section className="bg-[#384959] py-24 px-6">
       <div className="max-w-[1440px] mx-auto">
@@ -43,35 +50,61 @@ export function JournalSection() {
           </p>
         </div>
 
-        {/* Blog Cards. taller images */}
+        {/* Blog Cards — live from WordPress REST API */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-          {journal.posts.map((post) => (
-            <article key={post.title} className="group">
-              <div className="overflow-hidden mb-6">
-                <img
-                  src={post.image}
-                  alt={post.title}
-                  className="w-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  style={{ height: "420px" }}
-                />
-              </div>
-              <div className="font-smallcaps text-[#bfaf8a] text-xs tracking-[0.18em] uppercase mb-3">
-                {post.category}. {post.readTime}
-              </div>
-              <h3
-                className="font-display text-[#faf9f6] text-xl md:text-2xl mb-5 leading-snug"
-                style={{ fontWeight: 400 }}
-              >
-                {post.title}
-              </h3>
-              <a
-                href={post.href}
-                className="font-smallcaps text-[#faf9f6]/50 text-xs tracking-[0.18em] uppercase hover:text-[#bfaf8a] transition-colors flex items-center gap-2"
-              >
-                READ MORE →
-              </a>
-            </article>
-          ))}
+          {isLoading
+            ? [0, 1, 2].map((i) => (
+                <div key={i} className="animate-pulse">
+                  <div className="w-full bg-white/10 mb-6" style={{ height: "420px" }} />
+                  <div className="h-2 bg-white/10 w-1/3 mb-3" />
+                  <div className="h-5 bg-white/10 w-full mb-2" />
+                  <div className="h-5 bg-white/10 w-3/4 mb-5" />
+                  <div className="h-2 bg-white/10 w-1/4" />
+                </div>
+              ))
+            : (livePosts ?? []).map((post: any) => (
+                <article key={post.id} className="group">
+                  <div className="overflow-hidden mb-6">
+                    {post.imageUrl ? (
+                      <img
+                        src={post.imageUrl}
+                        alt={post.title}
+                        className="w-full object-cover group-hover:scale-105 transition-transform duration-700"
+                        style={{ height: "420px" }}
+                      />
+                    ) : (
+                      <div className="w-full bg-white/10 flex items-center justify-center" style={{ height: "420px" }}>
+                        <span className="text-white/20 text-xs tracking-widest uppercase" style={{ fontFamily: "'Instrument Serif', serif" }}>Boutique Travel</span>
+                      </div>
+                    )}
+                  </div>
+                  <div className="font-smallcaps text-[#bfaf8a] text-xs tracking-[0.18em] uppercase mb-3">
+                    {post.categories?.[0] ?? "Travel"} &middot; {post.readTime}
+                  </div>
+                  <h3
+                    className="font-display text-[#faf9f6] text-xl md:text-2xl mb-5 leading-snug"
+                    style={{ fontWeight: 400 }}
+                  >
+                    {post.title}
+                  </h3>
+                  <Link
+                    href={`/${post.slug}`}
+                    className="font-smallcaps text-[#faf9f6]/50 text-xs tracking-[0.18em] uppercase hover:text-[#bfaf8a] transition-colors flex items-center gap-2"
+                  >
+                    READ MORE →
+                  </Link>
+                </article>
+              ))}
+        </div>
+
+        {/* View all link */}
+        <div className="text-center mt-14">
+          <Link
+            href="/journal"
+            className="font-smallcaps text-[#faf9f6]/50 text-xs tracking-[0.18em] uppercase hover:text-[#bfaf8a] transition-colors inline-flex items-center gap-2"
+          >
+            VIEW ALL ARTICLES →
+          </Link>
         </div>
       </div>
     </section>

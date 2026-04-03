@@ -66,3 +66,9 @@
 ## Git / Deployment
 - [x] Push backend upgrade to user_github (Travel-BTA/bta-website) — already in sync
 - [ ] Push backend upgrade to bta2 (Travel-BTA/BTA-website-2.0) — needs manus-connector[bot] write access granted in GitHub repo settings
+
+## Live Blog Feed
+- [x] Journal page: already pulling live from WordPress REST API (was already wired)
+- [x] Journal page: pagination already implemented (Previous/Next buttons)
+- [x] Homepage Inspiration/Journal section: now fetches live latest 3 posts from WordPress REST API
+- [x] Homepage Inspiration section: shows real featured image, category, read time, title from live feed; skeleton loading states added

@@ -10,6 +10,8 @@
  */
 
 import { useState } from "react";
+import { trpc } from "@/lib/trpc";
+import { Link } from "wouter";
 import {
   journal,
   testimonials,
@@ -32,6 +34,14 @@ export function ExperienceStripSection() {
 }
 
 export function JournalSection() {
+  /*
+   * WHY: Fetch the 3 most recent posts live from the WordPress REST API
+   * instead of using hardcoded placeholder posts from homepage.ts.
+   * This ensures the homepage always reflects the latest published content
+   * from travelbta.com without any manual content updates.
+   */
+  const { data: livePosts, isLoading } = trpc.blog.getPosts.useQuery({ page: 1, perPage: 3 });
+
   return (
     // Dark Navy background. rich contrast for editorial feel
     <section className="bg-[#384959] py-20 px-6">
@@ -48,38 +58,75 @@ export function JournalSection() {
           <p className="font-body text-[#faf9f6]/60 text-base">{journal.subheadline}</p>
         </div>
 
-        {/* Blog Cards */}
+        {/* Blog Cards — live from WordPress REST API */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {journal.posts.map((post) => (
-            <article key={post.title} className="group">
-              <div className="overflow-hidden mb-5">
-                <img
-                  src={post.image}
-                  alt={post.title}
-                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-700"
-                />
-              </div>
-              <div className="font-smallcaps text-[#BFAF8A] text-[9px] tracking-[0.18em] uppercase mb-2">
-                {post.category}. {post.readTime}
-              </div>
-              <h3
-                className="font-display text-[#faf9f6] text-lg mb-4 leading-snug"
-                style={{ fontWeight: 400 }}
-              >
-                {post.title}
-              </h3>
-              <a
-                href={post.href}
-                className="font-smallcaps text-[#faf9f6]/50 text-[9px] tracking-[0.18em] uppercase hover:text-[#BFAF8A] transition-colors flex items-center gap-2"
-              >
-                READ MORE
-                <svg className="w-4 h-px" viewBox="0 0 16 1" fill="none">
-                  <line x1="0" y1="0.5" x2="16" y2="0.5" stroke="currentColor" />
-                </svg>
-                →
-              </a>
-            </article>
-          ))}
+          {isLoading
+            ? [0, 1, 2].map((i) => (
+                // Skeleton placeholders while the live feed loads
+                <div key={i} className="animate-pulse">
+                  <div className="w-full h-64 bg-white/10 mb-5" />
+                  <div className="h-2 bg-white/10 w-1/3 mb-3" />
+                  <div className="h-4 bg-white/10 w-full mb-2" />
+                  <div className="h-4 bg-white/10 w-3/4 mb-4" />
+                  <div className="h-2 bg-white/10 w-1/4" />
+                </div>
+              ))
+            : (livePosts ?? []).map((post: any) => (
+                <article key={post.id} className="group">
+                  <div className="overflow-hidden mb-5">
+                    {post.imageUrl ? (
+                      <img
+                        src={post.imageUrl}
+                        alt={post.title}
+                        className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-700"
+                      />
+                    ) : (
+                      // Fallback when no featured image is set on the WordPress post
+                      <div className="w-full h-64 bg-white/10 flex items-center justify-center">
+                        <span
+                          className="text-white/20 text-[9px] tracking-widest uppercase"
+                          style={{ fontFamily: "'Instrument Serif', serif" }}
+                        >
+                          Boutique Travel
+                        </span>
+                      </div>
+                    )}
+                  </div>
+                  <div className="font-smallcaps text-[#BFAF8A] text-[9px] tracking-[0.18em] uppercase mb-2">
+                    {post.categories?.[0] ?? "Travel"} &middot; {post.readTime}
+                  </div>
+                  <h3
+                    className="font-display text-[#faf9f6] text-lg mb-4 leading-snug"
+                    style={{ fontWeight: 400 }}
+                  >
+                    {post.title}
+                  </h3>
+                  <Link
+                    href={`/${post.slug}`}
+                    className="font-smallcaps text-[#faf9f6]/50 text-[9px] tracking-[0.18em] uppercase hover:text-[#BFAF8A] transition-colors flex items-center gap-2"
+                  >
+                    READ MORE
+                    <svg className="w-4 h-px" viewBox="0 0 16 1" fill="none">
+                      <line x1="0" y1="0.5" x2="16" y2="0.5" stroke="currentColor" />
+                    </svg>
+                    →
+                  </Link>
+                </article>
+              ))}
+        </div>
+
+        {/* View all link */}
+        <div className="text-center mt-12">
+          <Link
+            href="/journal"
+            className="font-smallcaps text-[#faf9f6]/50 text-[9px] tracking-[0.18em] uppercase hover:text-[#BFAF8A] transition-colors inline-flex items-center gap-2"
+          >
+            VIEW ALL ARTICLES
+            <svg className="w-4 h-px" viewBox="0 0 16 1" fill="none">
+              <line x1="0" y1="0.5" x2="16" y2="0.5" stroke="currentColor" />
+            </svg>
+            →
+          </Link>
         </div>
       </div>
     </section>
