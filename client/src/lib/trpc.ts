@@ -12,24 +12,6 @@ export const trpc = {
       useQuery: (_args?: unknown) => ({ data: undefined, isLoading: false, error: new Error("Backend not yet enabled") }),
     },
   },
-  // reviews namespace — used by JournalSections.tsx (TestimonialsSection)
-  reviews: {
-    getLatest: {
-      useQuery: (_args?: unknown) => ({ data: undefined, isLoading: false, error: null }),
-    },
-  },
-  // media namespace — used by MediaManager.tsx
-  media: {
-    list: {
-      useQuery: (_args?: unknown) => ({ data: undefined, isLoading: false, error: null, refetch: () => {} }),
-    },
-    upload: {
-      useMutation: () => ({ mutate: () => {}, mutateAsync: async () => ({}), isLoading: false }),
-    },
-    delete: {
-      useMutation: () => ({ mutate: () => {}, isLoading: false }),
-    },
-  },
   storage: {
     listFiles: {
       useQuery: (_args?: unknown) => ({ data: undefined, isLoading: false, error: null }),

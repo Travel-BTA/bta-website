@@ -26,13 +26,12 @@ import JulieRose from "@/pages/advisors/JulieRose";
 import Journal from "@/pages/Journal";
 import BlogPost from "@/pages/BlogPost";
 import MediaManager from "@/pages/MediaManager";
-import PhilanthropicInitiatives from "./pages/PhilanthropicInitiatives";
 
 function Router() {
   return (
     <Switch>
       {/* Core pages */}
-      <Route path={"/"} component={HomeLegacy} />
+      <Route path={"/"} component={HomeV2} />
 
       {/* Land Journeys — parent + sub-pages */}
       <Route path={"/land-journeys"} component={LandJourneys} />
@@ -43,8 +42,8 @@ function Router() {
       <Route path={"/book"} component={Book} />
       <Route path={"/about"} component={About} />
       {/* Merged from boutique-travel-advisors repo */}
-      {/* HomeV2 — boutique-travel-advisors repo homepage, kept at /home-v2 */}
-      <Route path={"/home-v2"} component={HomeV2} />
+      {/* HomeLegacy — original homepage kept for reference at /home-legacy */}
+      <Route path={"/home-legacy"} component={HomeLegacy} />
       {/* Cruise pages */}
       <Route path={"/cruises"} component={CruisesHub} />
       <Route path={"/cruises/luxury-ocean"} component={LuxuryOcean} />
@@ -63,8 +62,6 @@ function Router() {
       <Route path={"/advisors/julie-rose"} component={JulieRose} />
       {/* Admin */}
       <Route path={"/admin/media"} component={MediaManager} />
-      {/* Philanthropic Initiatives */}
-      <Route path={"/philanthropic-initiatives"} component={PhilanthropicInitiatives} />
 
       {/* Fallback */}
       <Route path={"/404"} component={NotFound} />
