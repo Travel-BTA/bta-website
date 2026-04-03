@@ -36,6 +36,8 @@ import Experiences from "./pages/Experiences";
 import TermsOfService from "./pages/TermsOfService";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsAndConditions from "./pages/TermsAndConditions";
+import FulfillmentPolicy from "./pages/FulfillmentPolicy";
+import CookiePolicy from "./pages/CookiePolicy";
 function Router() {
   // make sure to consider if you need authentication for certain routes
   return (
@@ -87,6 +89,8 @@ function Router() {
       <Route path={"/terms-of-service"} component={TermsOfService} />
       <Route path={"/privacy-policy"} component={PrivacyPolicy} />
       <Route path={"/terms-and-conditions"} component={TermsAndConditions} />
+      <Route path={"/fulfillment-policy"} component={FulfillmentPolicy} />
+      <Route path={"/cookie-policy"} component={CookiePolicy} />
       {/*
         WHY: WordPress blog posts live at root-level slugs (e.g. /lake-garda-holidays-planning-guide).
         This catch-all route intercepts any unmatched path, treats it as a blog post slug,

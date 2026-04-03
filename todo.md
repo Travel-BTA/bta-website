@@ -17,15 +17,15 @@
 - [x] Terms of Service (/terms-of-service)
 - [x] Privacy Policy (/privacy-policy)
 - [x] Terms and Conditions (/terms-and-conditions)
-- [ ] Fulfillment Policy page (/fulfillment-policy)
-- [ ] Cookie Policy page (/cookie-policy)
-- [ ] Standardize all 5 legal pages — identical typography, photo header style, section spacing
-- [ ] Update footer legal links to correct routes (currently /privacy and /terms, should be /privacy-policy and /terms-and-conditions)
-- [ ] Add Fulfillment Policy and Cookie Policy to footer legal links
+- [x] Fulfillment Policy page (/fulfillment-policy)
+- [x] Cookie Policy page (/cookie-policy)
+- [x] Standardize all 5 legal pages — identical typography, photo header style, section spacing
+- [x] Update footer legal links to correct routes (currently /privacy and /terms, should be /privacy-policy and /terms-and-conditions)
+- [x] Add Fulfillment Policy and Cookie Policy to footer legal links
 
 ## Navigation / Footer
 - [x] NavBar redesigned with luxury styling (transparent → frosted Aegean Blue on scroll)
-- [ ] Footer legal links updated to match actual routes
+- [x] Footer legal links updated to match actual routes
 
 ## Typography Audit
 - [x] Instrument Serif ALL CAPS for H1 heroes sitewide
@@ -55,8 +55,8 @@
 - [x] Philanthropic Initiatives
 - [x] Experiences
 - [x] Legal pages (ToS, Privacy, T&C)
-- [ ] Fulfillment Policy
-- [ ] Cookie Policy
+- [x] Fulfillment Policy
+- [x] Cookie Policy
 
 ## Images
 - [x] Fixed mismatched destination/property images (Carlton Cannes, Six Senses, Borgo Egnazia, Grand Hyatt Vail)
@@ -64,5 +64,5 @@
 - [x] Azamara photo for Premium Ocean
 
 ## Git / Deployment
-- [ ] Push backend upgrade to user_github (Travel-BTA/bta-website)
-- [ ] Push backend upgrade to bta2 (Travel-BTA/BTA-website-2.0)
+- [x] Push backend upgrade to user_github (Travel-BTA/bta-website) — already in sync
+- [ ] Push backend upgrade to bta2 (Travel-BTA/BTA-website-2.0) — needs manus-connector[bot] write access granted in GitHub repo settings

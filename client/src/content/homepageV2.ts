@@ -370,10 +370,13 @@ export const footer = {
     virtuoso: "Virtuoso Member Agency | 2142139",
   },
 
-  // ✏️ LEGAL LINKS
+  // ✏️ LEGAL LINKS — routes must match App.tsx exactly
   legal: [
-    { label: "Privacy Policy",    href: "/privacy" },
-    { label: "Terms and Conditions", href: "/terms" },
+    { label: "Privacy Policy",      href: "/privacy-policy" },
+    { label: "Terms of Service",     href: "/terms-of-service" },
+    { label: "Terms and Conditions", href: "/terms-and-conditions" },
+    { label: "Fulfillment Policy",   href: "/fulfillment-policy" },
+    { label: "Cookie Policy",        href: "/cookie-policy" },
   ],
 
   // ✏️ COPYRIGHT LINE
