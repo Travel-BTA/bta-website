@@ -209,7 +209,7 @@ export default function About() {
               { name: "Bri Crowder", image: "https://travelbta.com/wp-content/uploads/2022/12/Bri-Crowder-About.jpg" },
               { name: "Kim Parizek", image: "https://travelbta.com/wp-content/uploads/2025/08/unnamed-15-e1756243211120.jpg" },
               { name: "Jessica Barkley", image: "https://travelbta.com/wp-content/uploads/2025/02/unnamed-17-e1755721947975.jpg" },
-              { name: "Cristina Medeiros", image: "https://travelbta.com/wp-content/uploads/2026/03/20231118_125508-609x1024.jpg" },
+              { name: "Cristina Medeiros", image: "https://travelbta.com/wp-content/uploads/2026/01/cris.jpg" },
               { name: "Justin Lintz", image: "https://travelbta.com/wp-content/uploads/2026/03/IMG_5590-1024x768.jpeg" },
               { name: "Laura Cosme", image: "https://travelbta.com/wp-content/uploads/2026/03/unnamed-10-1024x683.webp" },
               { name: "Rose Topisian", image: "https://travelbta.com/wp-content/uploads/2026/02/3.jpg" },

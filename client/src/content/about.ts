@@ -104,7 +104,7 @@ export const aboutData: AboutData = {
       location: "Scottsdale, AZ",
       // Direct WordPress image from travelbta.com
       imageUrl:
-        "https://travelbta.com/wp-content/uploads/2021/03/Janet-e1614902028129.jpg",
+        "https://travelbta.com/wp-content/uploads/2022/12/Janet-resized.jpg",
       profilePath: "/about/janet",
       bio: [
         "Janet Semenova was born in Tashkent, Uzbekistan, and moved to the US at 7 years old. She inherited her passion for travel from her mother and is dedicated to showing the world to her children. She frequently travels with her family and friends and loves bringing groups of like-minded travelers together to experience unique, off-the-beaten-path destinations. She has spent extensive time in Europe, Israel, and Central America and speaks fluent Russian and some Hebrew.",
@@ -155,7 +155,7 @@ export const aboutData: AboutData = {
       location: "Scottsdale, AZ",
       // Direct WordPress image from travelbta.com
       imageUrl:
-        "https://travelbta.com/wp-content/uploads/2020/08/Angie.jpg",
+        "https://travelbta.com/wp-content/uploads/2024/03/Angie-1200x799-1.jpg",
       profilePath: "/about/angie",
       bio: [
         "Angie Rice enjoys planning vacations for clients traveling where they are visiting places for the first time. She loves to encourage them to have an open mind and embrace new adventures and experiences at each destination. Her personal travels play an integral role in preparing clients for their travels.",
