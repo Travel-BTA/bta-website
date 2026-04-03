@@ -119,13 +119,7 @@ export const philanthropyBeneficiaries = {
       imageUrl: "https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=600&q=80&auto=format&fit=crop",
       logoUrl: "",
     },
-    {
-      name: "CASA — OC",
-      description: "Court Appointed Special Advocates for children in Orange County.",
-      // Children in a classroom, safe and supported
-      imageUrl: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&q=80&auto=format&fit=crop",
-      logoUrl: "",
-    },
+
   ],
 };
 
