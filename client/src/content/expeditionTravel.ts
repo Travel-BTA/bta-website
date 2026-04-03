@@ -34,7 +34,7 @@ export const expeditionTravelData: JourneySubPageData = {
       description:
         "The most remote and pristine wilderness on earth. We arrange passage aboard expedition vessels with the finest naturalist teams, Zodiac landings among penguin colonies, and nights under the southern lights.",
       imageUrl:
-        "https://images.unsplash.com/photo-1551415923-a2297c7fda79?w=800&q=80&auto=format&fit=crop",
+        "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/antarctica-penguins_19073f8f.webp",
     },
     {
       name: "Galápagos Islands",
@@ -42,7 +42,7 @@ export const expeditionTravelData: JourneySubPageData = {
       description:
         "Darwin's living laboratory — wildlife that shows no fear of humans, volcanic landscapes, and crystal waters teeming with marine life. We secure space on the most intimate small-ship expeditions.",
       imageUrl:
-        "https://images.unsplash.com/photo-1548767797-d8c844163c4c?w=800&q=80&auto=format&fit=crop",
+        "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/galapagos-sea-lions_359e2e9a.webp",
     },
     {
       name: "Patagonia",
@@ -50,7 +50,7 @@ export const expeditionTravelData: JourneySubPageData = {
       description:
         "Torres del Paine, Los Glaciares, and the Carretera Austral — a landscape of staggering scale and beauty. Private estancias, expert trekking guides, and fly-fishing on rivers few visitors ever reach.",
       imageUrl:
-        "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&q=80&auto=format&fit=crop",
+        "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/patagonia-torres_a39f9a97.webp",
     },
   ],
   featuredItinerary: {
@@ -59,7 +59,7 @@ export const expeditionTravelData: JourneySubPageData = {
     description:
       "Embark from Ushuaia aboard a 100-guest expedition vessel — small enough to access bays that larger ships cannot reach. Cross the Drake Passage, land among half a million penguins at South Georgia, and witness calving glaciers from a Zodiac. Expert naturalists lead every excursion, and evenings are spent in the ship's library with a glass of wine and a sky full of stars.",
     imageUrl:
-      "https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=900&q=85&auto=format&fit=crop",
+      "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/antarctica-penguins_19073f8f.webp",
     details: [
       { label: "Duration", value: "14 Days / 13 Nights" },
       { label: "Best Season", value: "November – March" },
