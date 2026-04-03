@@ -7,6 +7,8 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import LandJourneys from "./pages/LandJourneys";
 import PhilanthropicInitiatives from "./pages/PhilanthropicInitiatives";
+import PreferredPartners from "./pages/PreferredPartners";
+import PartnerDetail from "./pages/PartnerDetail";
 
 
 function Router() {
@@ -15,6 +17,9 @@ function Router() {
       <Route path={"/"} component={Home} />
       <Route path={"/land-journeys"} component={LandJourneys} />
       <Route path={"/philanthropic-initiatives"} component={PhilanthropicInitiatives} />
+      {/* Preferred Partners hub + individual partner pages */}
+      <Route path={"/preferred-partners"} component={PreferredPartners} />
+      <Route path={"/preferred-partners/:id"} component={PartnerDetail} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
