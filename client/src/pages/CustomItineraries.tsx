@@ -1,5 +1,5 @@
 /**
- * CustomItineraries — /custom-itineraries
+ * CustomItineraries. /custom-itineraries
  *
  * Mirrors the content structure of travelbta.com/custom-itineraries:
  * 1. Hero banner (private jet, full-bleed)
@@ -7,7 +7,7 @@
  * 3. Seven alternating image/text journey category sections
  * 4. Exclusive Planning Packages CTA
  *
- * Design: BTA brand guide — Instrument Serif headings, Cormorant Garamond body,
+ * Design: BTA brand guide. Instrument Serif headings, Cormorant Garamond body,
  * Champagne Gold #bfaf8a, Aegean Blue #384959, Linen White #faf9f6.
  */
 
@@ -125,7 +125,7 @@ export default function CustomItineraries() {
       <section className="relative h-[70vh] min-h-[500px] flex items-end overflow-hidden">
         <img
           src={IMAGES.hero}
-          alt="Private jet — luxury travel by air"
+          alt="Private jet. luxury travel by air"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
         {/* Dark gradient overlay */}
@@ -268,7 +268,7 @@ export default function CustomItineraries() {
         paragraphs={[
           "If you are 24 or 94, there are times in our lives when we all crave adventure. Whether exploring Norwegian fjords, cycling along the breathtaking cliffs of Australia, zip-lining through the jungles of Costa Rica, or kayaking beside penguins and humpbacks in Antarctica, an expedition trip is sure to raise your spirits.",
           "Our advisors understand that activity levels vary amongst individuals and within a group and work alongside you to curate the perfect adventure. We are passionate about sports, wellness, and expeditions and have the relationships and knowledge to craft the ideal itinerary.",
-          "Ask us about some of our favorite adventures — Trekking the Inca Trail, cycling in Alsace, rafting in Montana, and diving the Great Barrier Reef.",
+          "Ask us about some of our favorite adventures. Trekking the Inca Trail, cycling in Alsace, rafting in Montana, and diving the Great Barrier Reef.",
         ]}
         ctaText="Download Our Free Adventure Guide"
         ctaHref="#"
@@ -293,7 +293,7 @@ export default function CustomItineraries() {
         bgColor="#ffffff"
       />
 
-      {/* ── Exclusive Planning Packages — editorial inline section ─────────── */}
+      {/* ── Exclusive Planning Packages. editorial inline section ─────────── */}
       <section className="bg-[#faf9f6] py-20 px-6">
         <div className="max-w-5xl mx-auto">
           {/* Top rule + label */}

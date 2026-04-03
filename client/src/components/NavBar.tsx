@@ -1,5 +1,5 @@
 /**
- * NavBar — BTA Site Navigation
+ * NavBar. BTA Site Navigation
  *
  * Design: Transparent overlay on hero image, becomes solid on scroll.
  * Logo: top-left, small. Nav links: center. CTA: right.

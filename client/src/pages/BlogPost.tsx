@@ -1,5 +1,5 @@
 /**
- * BlogPost — Individual blog article page
+ * BlogPost. Individual blog article page
  *
  * Design matches Figma:
  * - White header: category tag (gold), date, read time, large centered title,
@@ -30,7 +30,7 @@ function formatDate(iso: string) {
 function decodeHtml(html: string) {
   return html
     .replace(/&#8211;/g, "–")
-    .replace(/&#8212;/g, "—")
+    .replace(/&#8212;/g, ".")
     .replace(/&#038;/g, "&")
     .replace(/&amp;/g, "&")
     .replace(/&nbsp;/g, " ")
@@ -83,7 +83,7 @@ function processWordPressHtml(html: string): string {
     // WHY: Every WP post ends with a boilerplate travel insurance paragraph
     // and a follow-up sentence about contacting a BTA advisor. These are
     // WordPress editorial footers that don't belong in the new editorial
-    // design — the site's own CTA section handles this instead.
+    // design. the site's own CTA section handles this instead.
     .replace(
       /<p[^>]*>[^<]*(?:If you would like assistance purchasing a travel insurance|please get in touch with a[^<]*BTA advisor)[\s\S]*?<\/p>/gi,
       ''

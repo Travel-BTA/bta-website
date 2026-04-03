@@ -1,7 +1,7 @@
 /**
  * Land Journeys Page
  *
- * Design Philosophy: Luxury editorial — cinematic hero, generous whitespace,
+ * Design Philosophy: Luxury editorial. cinematic hero, generous whitespace,
  * Playfair Display headings, gold (#bfaf8a) accents, BTA blue (#384959) panels.
  * Clean asymmetric layouts inspired by Virtuoso and top luxury travel agencies.
  *
@@ -59,18 +59,18 @@ export default function LandJourneys() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60" />
 
         <div className="relative z-10 h-full flex flex-col justify-end pb-20 px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
-          {/* Eyebrow */}
+          {/* Eyebrow: white on photo. Champagne Gold only on plain backgrounds */}
           <p
-            className="text-[#BFAF8A] tracking-[0.3em] text-sm uppercase mb-4"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+            className="tracking-[0.3em] text-sm uppercase mb-4"
+            style={{ color: "rgba(255,255,255,0.75)", fontFamily: "'Instrument Serif', Georgia, serif" }}
           >
             {landJourneysHero.eyebrow}
           </p>
 
-          {/* Headline */}
+          {/* H1: Instrument Serif ALL CAPS white on hero photo */}
           <h1
-            className="text-white text-5xl md:text-6xl lg:text-7xl font-light leading-[1.05] mb-6 max-w-3xl"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+            className="text-white text-5xl md:text-6xl lg:text-7xl uppercase leading-[1.05] mb-6 max-w-3xl"
+            style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400, letterSpacing: "0.04em" }}
           >
             {landJourneysHero.headline.split("\n").map((line, i) => (
               <span key={i} className="block">

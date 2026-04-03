@@ -1,13 +1,13 @@
 /**
- * RiverCruises — /cruises/river
+ * RiverCruises. /cruises/river
  *
  * River Cruises sub-page featuring:
  * AmaWaterways, Uniworld, Viking River, Tauck, Riverside
  *
- * Design: BTA brand guide — Instrument Serif headings, Cormorant Garamond body,
+ * Design: BTA brand guide. Instrument Serif headings, Cormorant Garamond body,
  * Champagne Gold #bfaf8a, Aegean Blue #384959, Linen White #faf9f6.
  *
- * Images: European rivers (Rhine, Danube), Mekong Delta, Amazon — no mainstream ships.
+ * Images: European rivers (Rhine, Danube), Mekong Delta, Amazon. no mainstream ships.
  * Hero overlay strengthened (from/90 via/50 to/15) for text legibility.
  */
 
@@ -21,9 +21,9 @@ const CRUISE_LINES = [
     tagline: "The World's Best River Cruise Line",
     eyebrow: "Luxury River",
     description:
-      "AmaWaterways consistently earns the title of world's best river cruise line. Their ships are purpose-built for European waterways — narrower, more intimate, and designed to dock in the heart of every town. The signature Twin Balcony staterooms (French balcony + full walking balcony) are an industry first. The culinary program is exceptional: a dedicated Chef's Table restaurant, cooking demonstrations, and destination-inspired menus crafted fresh daily. Active excursions — hiking, biking, kayaking — are included alongside classic guided tours.",
+      "AmaWaterways consistently earns the title of world's best river cruise line. Their ships are purpose-built for European waterways. narrower, more intimate, and designed to dock in the heart of every town. The signature Twin Balcony staterooms (French balcony + full walking balcony) are an industry first. The culinary program is exceptional: a dedicated Chef's Table restaurant, cooking demonstrations, and destination-inspired menus crafted fresh daily. Active excursions. hiking, biking, kayaking. are included alongside classic guided tours.",
     highlights: [
-      "Twin Balcony staterooms — French + full walking balcony",
+      "Twin Balcony staterooms. French + full walking balcony",
       "Chef's Table specialty restaurant on all ships",
       "Active excursions: hiking, biking & kayaking included",
       "Wine-inclusive sailings on select itineraries",
@@ -31,12 +31,12 @@ const CRUISE_LINES = [
     ],
     culinary:
       "Chef's Table: an intimate specialty restaurant featuring a rotating menu of regional dishes. Daily cooking demonstrations, wine pairing dinners, and market visits bring each destination's flavors aboard.",
-    // Heidelberg castle and Neckar River — user-provided photo
+    // Heidelberg castle and Neckar River. user-provided photo
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/ama-heidelberg-neckar_81fe3c96.jpg",
     link: "https://inspires.to/experiences/amawaterways-a-new-expression-and-a-deeper-connection-xw4kl4",
     linkLabel: "Explore AmaWaterways",
     imageRight: false,
-    note: "Interactive experience — co-branded site under construction",
+    note: "Interactive experience. co-branded site under construction",
   },
   {
     id: "uniworld",
@@ -44,17 +44,17 @@ const CRUISE_LINES = [
     tagline: "The World's Most Luxurious River Cruises",
     eyebrow: "Ultra-Luxury River",
     description:
-      "Uniworld is the Ritz-Carlton of river cruising. Every ship is individually designed as a floating boutique hotel — no two are alike. Original artworks, hand-crafted furnishings, and antique pieces from the destination regions adorn each vessel. The all-inclusive fare covers all meals, premium beverages, shore excursions, gratuities, and Wi-Fi. The culinary program draws on the destination's finest ingredients, with menus that change daily and a dedicated sommelier on every ship.",
+      "Uniworld is the Ritz-Carlton of river cruising. Every ship is individually designed as a floating boutique hotel. no two are alike. Original artworks, hand-crafted furnishings, and antique pieces from the destination regions adorn each vessel. The all-inclusive fare covers all meals, premium beverages, shore excursions, gratuities, and Wi-Fi. The culinary program draws on the destination's finest ingredients, with menus that change daily and a dedicated sommelier on every ship.",
     highlights: [
       "Every ship individually designed as a floating boutique hotel",
       "All-inclusive: meals, premium beverages, excursions & gratuities",
       "Original artworks and hand-crafted furnishings throughout",
       "Dedicated sommelier on every voyage",
-      "U by Uniworld — adults-only boutique ships for younger travelers",
+      "U by Uniworld. adults-only boutique ships for younger travelers",
     ],
     culinary:
       "Destination-driven menus change daily, sourced from local markets. A dedicated sommelier curates wine pairings for every meal. Cooking classes and market visits are offered on select itineraries.",
-    // Amsterdam autumn canal reflection — user-provided photo
+    // Amsterdam autumn canal reflection. user-provided photo
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/uniworld-amsterdam-autumn_10c9e73e.jpg",
     link: "https://www.uniworld.com",
     linkLabel: "Explore Uniworld",
@@ -66,17 +66,17 @@ const CRUISE_LINES = [
     tagline: "Exploring the World in Comfort",
     eyebrow: "Premium River",
     description:
-      "Viking River pioneered the modern river cruise concept and remains the largest river cruise line in the world. Their ships are consistently among the newest and most modern on European waterways. The Scandinavian design philosophy — clean lines, light-filled spaces, an Aquavit Terrace — creates a calm, sophisticated atmosphere. All fares include shore excursions in every port, specialty dining, Wi-Fi, and beer and wine with lunch and dinner. Adults-only (18+) throughout.",
+      "Viking River pioneered the modern river cruise concept and remains the largest river cruise line in the world. Their ships are consistently among the newest and most modern on European waterways. The Scandinavian design philosophy. clean lines, light-filled spaces, an Aquavit Terrace. creates a calm, sophisticated atmosphere. All fares include shore excursions in every port, specialty dining, Wi-Fi, and beer and wine with lunch and dinner. Adults-only (18+) throughout.",
     highlights: [
-      "Largest river cruise fleet — newest ships on European waterways",
+      "Largest river cruise fleet. newest ships on European waterways",
       "Shore excursions included in every port",
       "Specialty dining, Wi-Fi & beer/wine with meals included",
-      "Adults-only (18+) — calm, sophisticated atmosphere",
-      "Aquavit Terrace — signature outdoor dining space",
+      "Adults-only (18+). calm, sophisticated atmosphere",
+      "Aquavit Terrace. signature outdoor dining space",
     ],
     culinary:
       "The Restaurant features destination-inspired menus with live cooking stations. The Aquavit Terrace offers al fresco dining. Cooking demonstrations and market visits are offered on select itineraries.",
-    // Amsterdam canal houses at golden hour — user-provided photo
+    // Amsterdam canal houses at golden hour. user-provided photo
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/viking-amsterdam-canal_cdc76375.jpg",
     link: "https://www.vikingcruises.com/river-cruises",
     linkLabel: "Explore Viking River",
@@ -88,17 +88,17 @@ const CRUISE_LINES = [
     tagline: "The Standard of Excellence in Guided Travel",
     eyebrow: "Guided River & Land",
     description:
-      "Tauck is the gold standard for guided travel — river cruises and land tours that combine seamlessly into multi-destination journeys. Their river ships are among the most intimate on European waterways, carrying just 98 guests. The all-inclusive fare covers everything: shore excursions, gratuities, specialty dining, beverages, and exclusive access to venues closed to the general public. Tauck's Roam program brings active, multi-generational adventures to families and groups.",
+      "Tauck is the gold standard for guided travel. river cruises and land tours that combine seamlessly into multi-destination journeys. Their river ships are among the most intimate on European waterways, carrying just 98 guests. The all-inclusive fare covers everything: shore excursions, gratuities, specialty dining, beverages, and exclusive access to venues closed to the general public. Tauck's Roam program brings active, multi-generational adventures to families and groups.",
     highlights: [
-      "98-guest ships — among the most intimate on European rivers",
+      "98-guest ships. among the most intimate on European rivers",
       "Exclusive access to venues closed to the general public",
       "All-inclusive: excursions, gratuities, dining & beverages",
-      "Tauck Roam — active and multi-generational travel",
+      "Tauck Roam. active and multi-generational travel",
       "Seamless river + land combination itineraries",
     ],
     culinary:
-      "Destination-inspired menus featuring local ingredients. Exclusive dining events at private venues — châteaux, historic estates, and local restaurants not accessible to other cruise lines.",
-    // Mekong Delta — traditional boat through jungle waterway, user-provided photo
+      "Destination-inspired menus featuring local ingredients. Exclusive dining events at private venues. châteaux, historic estates, and local restaurants not accessible to other cruise lines.",
+    // Mekong Delta. traditional boat through jungle waterway, user-provided photo
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/tauck-mekong-delta_0ae98827.jpg",
     link: "https://www.tauck.com/river-cruises",
     linkLabel: "Explore Tauck",
@@ -120,7 +120,7 @@ const CRUISE_LINES = [
     ],
     culinary:
       "European-inspired menus featuring regional specialties. Select beverages included with meals. Cooking demonstrations on select sailings.",
-    // Rhine Symphony ship on the Rhine — user-provided photo
+    // Rhine Symphony ship on the Rhine. user-provided photo
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/riverside-rhine-symphony_dab3342f.png",
     link: "https://www.riverside-guide.com/copilot",
     linkLabel: "Explore Riverside",
@@ -163,7 +163,7 @@ export default function RiverCruises() {
             River Cruises
           </h1>
           <p className="text-white/85 text-xl max-w-2xl leading-relaxed mb-8" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
-            Wake up in a new town every morning. Drift through medieval villages, vineyard-lined valleys, and historic city centres — unpacking only once.
+            Wake up in a new town every morning. Drift through medieval villages, vineyard-lined valleys, and historic city centres. unpacking only once.
           </p>
           <Link
             href="/contact"
@@ -194,15 +194,15 @@ export default function RiverCruises() {
                 A river cruise takes you on an off-the-beaten-path journey across towns and villages, where you will enjoy scenic sights between ports. River cruising offers a way to travel in a relaxing, intimate environment. The calm waterways also eliminate many concerns of seasickness.
               </p>
               <p className="text-[#2f2f2f]/65 text-lg leading-relaxed" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
-                Ships typically carry between 98 and 190 guests — creating a genuine sense of community. It is not uncommon for families, friends, and organisations to buy out an entire boat for a private charter experience.
+                Ships typically carry between 98 and 190 guests. creating a genuine sense of community. It is not uncommon for families, friends, and organisations to buy out an entire boat for a private charter experience.
               </p>
             </div>
             <div className="border-l-2 border-[#bfaf8a] pl-10 py-4">
               <p className="text-[#384959] text-2xl md:text-3xl leading-relaxed mb-6" style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}>
-                "Enjoy gourmet food, decadent cocktails, and entertainment on board — then explore a variety of activities and tours at each port."
+                "Enjoy gourmet food, decadent cocktails, and entertainment on board. then explore a variety of activities and tours at each port."
               </p>
               <p className="text-[#bfaf8a] text-sm tracking-[0.2em] uppercase" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
-                — BTA River Cruise Philosophy
+               . BTA River Cruise Philosophy
               </p>
             </div>
           </div>

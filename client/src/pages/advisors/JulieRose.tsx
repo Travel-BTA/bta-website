@@ -1,11 +1,11 @@
 /**
- * Advisor Profile Page — Julie Rose
+ * Advisor Profile Page. Julie Rose
  *
  * HOW TO DUPLICATE FOR A NEW ADVISOR:
  *   1. Copy this file to client/src/pages/advisors/[AdvisorName].tsx
  *   2. Change the import below to point to the new advisor's content file
  *   3. Add a route in App.tsx: <Route path="/advisors/[slug]" component={NewAdvisor} />
- *   4. Done — all content comes from the data file, no JSX changes needed
+ *   4. Done. all content comes from the data file, no JSX changes needed
  */
 
 import React, { useState } from "react";
@@ -57,9 +57,8 @@ function HeroSection() {
     <section className="block lg:hidden bg-[#faf9f6]">
       {/* Text block */}
       <div className="px-6 pt-10 pb-8">
-        <h1
-            className="text-[#2F2F2F] font-heading text-4xl font-light leading-none mb-2 font-display"
-        >
+        {/* H1: Instrument Serif ALL CAPS on cream background */}
+        <h1 className="text-[#2F2F2F] text-4xl uppercase leading-none mb-2" style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400, letterSpacing: "0.04em" }}>
           {h.name}
         </h1>
         <p className="font-smallcaps text-[#bfaf8a] text-[10px] tracking-[0.25em] uppercase mb-3">
@@ -111,18 +110,15 @@ function HeroSection() {
       </div>
 
       <div className="relative z-10 w-full max-w-[1440px] mx-auto px-14">
-        <h1
-            className="text-white font-heading text-6xl lg:text-7xl font-light leading-none mb-2 font-display"
-        >
+        {/* H1: Instrument Serif ALL CAPS white on hero photo */}
+        <h1 className="text-white text-6xl lg:text-7xl uppercase leading-none mb-2" style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400, letterSpacing: "0.04em" }}>
           {h.name}
         </h1>
-        <p className="font-smallcaps text-[#bfaf8a] text-xs tracking-[0.25em] uppercase mb-3">
+        {/* Title label: white on photo. Champagne Gold only on plain backgrounds */}
+        <p className="text-white/75 text-xs tracking-[0.25em] uppercase mb-3" style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}>
           {h.title}
         </p>
-        <p
-          className="text-white/75 text-lg font-light italic max-w-xl mb-6"
-          style={{ fontFamily: "'Cormorant Garamond', serif" }}
-        >
+        <p className="text-white/75 text-lg italic max-w-xl mb-6" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 400 }}>
           {h.tagline}
         </p>
         <div className="flex flex-wrap gap-3 mb-4">
@@ -161,13 +157,13 @@ function MeetSection() {
   return (
     <section className="bg-[#faf9f6] py-24 lg:py-32">
       <div className="max-w-[1440px] mx-auto px-8 lg:px-14 grid lg:grid-cols-2 gap-16 items-center">
-        {/* Photos — overlapping layout */}
+        {/* Photos. overlapping layout */}
         <div className="relative h-[320px] md:h-[440px] lg:h-[620px]">
           {/* Main large photo */}
           <div className="absolute left-0 top-0 w-[75%] h-[85%] overflow-hidden shadow-2xl">
             <img src={m.photoMain} alt={m.eyebrow} className="w-full h-full object-cover object-top" />
           </div>
-          {/* Accent smaller photo — overlapping bottom-right */}
+          {/* Accent smaller photo. overlapping bottom-right */}
           <div className="absolute right-0 bottom-0 w-[52%] h-[55%] overflow-hidden shadow-xl border-4 border-[#faf9f6]">
             <img src={m.photoAccent} alt="Travel moment" className="w-full h-full object-cover" />
           </div>
@@ -377,7 +373,7 @@ function SpecialtiesSection() {
                 alt={item.label}
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
               />
-              {/* Default overlay — lighter */}
+              {/* Default overlay. lighter */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/10 to-transparent group-hover:from-black/80 group-hover:via-black/40 transition-all duration-500" />
               {/* Default state: label at bottom */}
               <div className="absolute bottom-0 left-0 right-0 p-5 transition-all duration-500 group-hover:opacity-0 group-hover:translate-y-2">
@@ -433,7 +429,7 @@ function PhilosophySection() {
           </h2>
         </div>
 
-        {/* Central quote — gold left border, no box */}
+        {/* Central quote. gold left border, no box */}
         <div className="max-w-3xl mx-auto mb-16 pl-8 border-l-4 border-[#bfaf8a]">
           <p
             className="text-[#2F2F2F] text-2xl md:text-3xl italic leading-relaxed"
@@ -552,7 +548,7 @@ function WhyWorkSection() {
   return (
     <section className="bg-white">
       <div className="max-w-[1440px] mx-auto grid lg:grid-cols-2">
-        {/* Photo — full height left column */}
+        {/* Photo. full height left column */}
         <div className="relative h-[280px] sm:h-[360px] lg:h-auto overflow-hidden">
           <img src={w.image} alt="Why work with Julie" className="w-full h-full object-cover object-top" />
           <div className="absolute inset-0 bg-gradient-to-r from-transparent to-white/10" />
@@ -717,7 +713,7 @@ function ContactSection() {
   return (
     <section id="contact" className="bg-[#edeae4] py-24 lg:py-32">
       <div className="max-w-[1440px] mx-auto px-8 lg:px-14 grid lg:grid-cols-2 gap-16">
-        {/* Left — Contact Form */}
+        {/* Left. Contact Form */}
         <div>
           <p
             className="text-[#bfaf8a] text-2xl italic mb-3"
@@ -804,7 +800,7 @@ function ContactSection() {
           )}
         </div>
 
-        {/* Right — Club CTA */}
+        {/* Right. Club CTA */}
         <div className="bg-[#384959] p-10 lg:p-14 flex flex-col justify-center">
           <p
             className="text-[#bfaf8a] text-2xl italic mb-3"

@@ -151,7 +151,7 @@ export default function PrivateJetCharters() {
             <div className="w-12 h-px mx-auto mt-4" style={{ backgroundColor: GOLD }} />
           </div>
 
-          {/* Tab selector — horizontal scroll on mobile */}
+          {/* Tab selector. horizontal scroll on mobile */}
           <div className="flex gap-2 mb-10 overflow-x-auto pb-2 scrollbar-hide">
             {jetCategories.map((cat, i) => (
               <button

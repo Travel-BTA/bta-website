@@ -2,7 +2,7 @@
  * BTA Homepage Content Configuration
  *
  * PURPOSE: This file is the single source of truth for all homepage content.
- * To update text, links, or photos — edit ONLY this file.
+ * To update text, links, or photos. edit ONLY this file.
  * Never modify the component files for content changes.
  *
  * IMAGE WORKFLOW: Upload images via `manus-upload-file --webdev path/to/image.jpg`
@@ -20,6 +20,7 @@ export const nav = {
     { label: "Experiences", href: "/experiences" },
     { label: "Land Journeys", href: "/land-journeys" },
     { label: "Cruises", href: "/cruises" },
+    { label: "Partners", href: "/preferred-partners" },
     { label: "Journal", href: "/journal" },
     { label: "About", href: "/about" },
   ],
@@ -27,7 +28,7 @@ export const nav = {
 };
 
 export const hero = {
-  // Infinity pool at sunset — dramatic, aspirational
+  // Infinity pool at sunset. dramatic, aspirational
   backgroundImage: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/infinity-pool-sunset_1070585b.webp",
   headline: "WHERE WILL YOUR\nJOURNEY TAKE YOU?",
   subheadline: "Travel that transforms your world and shapes unforgettable moments.",
@@ -44,7 +45,7 @@ export const hero = {
 export const whoWeAre = {
   eyebrow: "Who We Are:",
   headline: "BESPOKE TRAVEL, DESIGNED FOR YOU",
-  body: "At Boutique Travel, we craft once-in-a-lifetime journeys for the discerning traveler — fueled by curiosity, expertise, and a passion for discovery.",
+  body: "At Boutique Travel, we craft once-in-a-lifetime journeys for the discerning traveler. fueled by curiosity, expertise, and a passion for discovery.",
   cta: { label: "EXPLORE OUR APPROACH", href: "/about" },
 };
 
@@ -81,12 +82,12 @@ export const philosophy = {
     },
   ],
   cta: { label: "LEARN MORE", href: "/about" },
-  // Airplane window view — the journey begins
+  // Airplane window view. the journey begins
   image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/airplane-window_98d2995f.webp",
 };
 
 export const curatedHotels = {
-  // Terrace dining at sunset with island views — warm, aspirational
+  // Terrace dining at sunset with island views. warm, aspirational
   backgroundImage: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/terrace-sunset_526ca796.webp",
   scriptLine1: "Explore our",
   scriptLine2: "curated hotels",
@@ -107,20 +108,20 @@ export const exclusiveBenefits = {
 export const vipAccess = {
   headline: "VIP MEMBER ACCESS TO\nVETTED HOTELS &\nEXPERIENCES",
   subheadline: "Exclusive Member Privileges Worth $350* Per Stay",
-  // Pearls on a yacht — refined, luxurious detail
+  // Pearls on a yacht. refined, luxurious detail
   image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/pearls-yacht_1dd80f10.webp",
 };
 
 export const givesBack = {
   eyebrow: "Purpose and Meaning",
   headline: "TRAVEL THAT GIVES BACK",
-  body: "Connection matters—to people, to places, and communities. Through select partnerships, your journeys quietly support arts, education, sports, travel and community. A portion of every booking supports local charities including childhood cancer, Make-A-Wish, veterans, and arts & culture where we travel.",
-  // Children smiling — community impact
+  body: "Connection matters.to people, to places, and communities. Through select partnerships, your journeys quietly support arts, education, sports, travel and community. A portion of every booking supports local charities including childhood cancer, Make-A-Wish, veterans, and arts & culture where we travel.",
+  // Children smiling. community impact
   image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/travel-gives-back_ac83c349.webp",
 };
 
 export const experienceStrip = {
-  // Hiker on coastal ridge — adventure, exploration
+  // Hiker on coastal ridge. adventure, exploration
   backgroundImage: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/hiker-coastal_412c8551.webp",
 };
 
@@ -187,7 +188,7 @@ export const instagram = {
 };
 
 export const finalCta = {
-  // Infinity pool at sunset — aspirational close
+  // Infinity pool at sunset. aspirational close
   backgroundImage: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/infinity-pool-sunset_1070585b.webp",
   subheadline: "Live life with no excuses, travel with no regrets",
   headline: "BEGIN YOUR NEXT CHAPTER",
@@ -205,6 +206,7 @@ export const footer = {
     { label: "Destinations", href: "/destinations" },
     { label: "Experiences", href: "/experiences" },
     { label: "Advisors", href: "/advisors" },
+    { label: "Partners", href: "/preferred-partners" },
     { label: "Journal", href: "/inspiration" },
   ],
   company: [

@@ -1,5 +1,5 @@
 /**
- * AboutSections — Who We Are + Stats + Philosophy + Curated Hotels
+ * AboutSections. Who We Are + Stats + Philosophy + Curated Hotels
  *
  * Updated to match Figma brand guide:
  * - Allura script for eyebrows

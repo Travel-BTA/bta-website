@@ -1,5 +1,5 @@
 /**
- * HeroSection — Full-viewport hero with dramatic landscape photo
+ * HeroSection. Full-viewport hero with dramatic landscape photo
  *
  * Design: Full-height background image, headline bottom-left,
  * circular "PLAN YOUR JOURNEY" CTA right-center,
@@ -18,7 +18,7 @@ export default function HeroSection() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${hero.backgroundImage})` }}
       />
-      {/* Dark gradient overlay — bottom-heavy for text legibility */}
+      {/* Dark gradient overlay. bottom-heavy for text legibility */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/30" />
 
       {/* Main Content */}
@@ -39,7 +39,7 @@ export default function HeroSection() {
           </p>
         </div>
 
-        {/* Circular CTA — positioned right-center */}
+        {/* Circular CTA. positioned right-center */}
         <a
           href={hero.cta.href}
           className="absolute right-10 top-1/2 -translate-y-1/2 w-24 h-24 rounded-full border border-white/70 flex items-center justify-center text-center hover:bg-white/10 transition-colors"

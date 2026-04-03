@@ -39,7 +39,7 @@ function Router() {
       {/* Core pages */}
       <Route path={"/"} component={HomeV2} />
 
-      {/* Land Journeys — parent + sub-pages */}
+      {/* Land Journeys. parent + sub-pages */}
       <Route path={"/land-journeys"} component={LandJourneys} />
       <Route path={"/land-journeys/safari"} component={SafariWildlife} />
       <Route path={"/land-journeys/europe"} component={EuropeanImmersions} />
@@ -47,7 +47,7 @@ function Router() {
       <Route path={"/land-journeys/cultural"} component={CulturalJourneys} />
       <Route path={"/book"} component={Book} />
       <Route path={"/about"} component={About} />
-      {/* HomeLegacy — original homepage kept for reference at /home-legacy */}
+      {/* HomeLegacy. original homepage kept for reference at /home-legacy */}
       <Route path={"/home-legacy"} component={HomeLegacy} />
       {/* Cruise pages */}
       <Route path={"/cruises"} component={CruisesHub} />

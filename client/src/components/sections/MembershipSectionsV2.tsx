@@ -1,5 +1,5 @@
 /**
- * MembershipSections — Exclusive Benefits + VIP Access + Gives Back
+ * MembershipSections. Exclusive Benefits + VIP Access + Gives Back
  */
 
 import React, { useState } from "react";
@@ -110,7 +110,7 @@ export function VipAccessSection() {
       {/* Two-column layout: photo left | booking right */}
       <div className="flex flex-col lg:flex-row min-h-[600px]">
 
-        {/* LEFT — Spa photo, full height */}
+        {/* LEFT. Spa photo, full height */}
         <div className="w-full lg:w-[45%] flex-shrink-0 overflow-hidden" style={{ minHeight: "340px" }}>
           <img
             src="https://d2xsxph8kpxj0f.cloudfront.net/310519663449292159/kbUEYj6kqCturBQrxV6jNt/spa-robe-photo_8df6c223.png"
@@ -120,7 +120,7 @@ export function VipAccessSection() {
           />
         </div>
 
-        {/* RIGHT — Title + native booking form */}
+        {/* RIGHT. Title + native booking form */}
         <div className="flex-1 bg-[#edeae4] flex flex-col justify-center px-8 md:px-12 lg:px-16 py-12 lg:py-16">
           {/* Headline */}
           <h2
@@ -135,7 +135,7 @@ export function VipAccessSection() {
             {vipAccess.subheadline}
           </p>
 
-          {/* Native booking form — no iframe, no box */}
+          {/* Native booking form. no iframe, no box */}
           <div className="w-full" style={{ maxWidth: "520px" }}>
             {/* Tab switcher */}
             <div className="flex mb-6 border border-[#bfaf8a]/40">
@@ -297,7 +297,7 @@ export function GivesBackSection() {
             <p className="font-body text-[#2F2F2F]/60 text-base mb-6" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
               Proud partners of:
             </p>
-            {/* Single non-wrapping row — grayscale on light background */}
+            {/* Single non-wrapping row. grayscale on light background */}
             <div style={{
               display: "flex",
               flexWrap: "nowrap",
@@ -305,7 +305,7 @@ export function GivesBackSection() {
               gap: "clamp(20px, 4vw, 56px)",
               overflowX: "auto",
             }}>
-              {/* First Tee Phoenix — uniform grey pre-baked */}
+              {/* First Tee Phoenix. uniform grey pre-baked */}
               <img
                 src="https://d2xsxph8kpxj0f.cloudfront.net/310519663449292159/kbUEYj6kqCturBQrxV6jNt/first-tee-clean_6752d84f.png"
                 alt="First Tee Phoenix"
@@ -318,7 +318,7 @@ export function GivesBackSection() {
                   flexShrink: 1,
                 }}
               />
-              {/* Make-A-Wish — uniform grey pre-baked */}
+              {/* Make-A-Wish. uniform grey pre-baked */}
               <img
                 src="https://d2xsxph8kpxj0f.cloudfront.net/310519663449292159/kbUEYj6kqCturBQrxV6jNt/make-a-wish-clean_13c103dc.png"
                 alt="Make-A-Wish"
@@ -331,7 +331,7 @@ export function GivesBackSection() {
                   flexShrink: 1,
                 }}
               />
-              {/* The Phoenix Symphony — uniform grey pre-baked */}
+              {/* The Phoenix Symphony. uniform grey pre-baked */}
               <img
                 src="https://d2xsxph8kpxj0f.cloudfront.net/310519663449292159/kbUEYj6kqCturBQrxV6jNt/phoenix-symphony-clean_4c2d0127.png"
                 alt="The Phoenix Symphony"

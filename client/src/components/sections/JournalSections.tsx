@@ -1,5 +1,5 @@
 /**
- * JournalSections — Journal + Testimonials + Instagram + Final CTA + Footer
+ * JournalSections. Journal + Testimonials + Instagram + Final CTA + Footer
  *
  * Official BTA Brand Colors:
  *   Champagne Gold:  #BFAF8A  → eyebrows, accents, icons, hover states, Instagram bg
@@ -33,7 +33,7 @@ export function ExperienceStripSection() {
 
 export function JournalSection() {
   return (
-    // Dark Navy background — rich contrast for editorial feel
+    // Dark Navy background. rich contrast for editorial feel
     <section className="bg-[#384959] py-20 px-6">
       <div className="max-w-[1440px] mx-auto">
         {/* Header */}
@@ -60,7 +60,7 @@ export function JournalSection() {
                 />
               </div>
               <div className="font-smallcaps text-[#BFAF8A] text-[9px] tracking-[0.18em] uppercase mb-2">
-                {post.category} — {post.readTime}
+                {post.category}. {post.readTime}
               </div>
               <h3
                 className="font-display text-[#faf9f6] text-lg mb-4 leading-snug"
@@ -93,12 +93,12 @@ export function TestimonialsSection() {
   const next = () => setCurrent((c) => (c + 1) % testimonials.length);
 
   return (
-    // Warm Stone background — clean, airy
+    // Warm Stone background. clean, airy
     <section className="bg-[#faf9f6] py-20 px-6">
       <div className="max-w-[1440px] mx-auto">
         {/* Desktop: 3-across layout with side arrows */}
         <div className="hidden md:flex items-start gap-6">
-          {/* Prev Arrow — Champagne Gold */}
+          {/* Prev Arrow. Champagne Gold */}
           <button
             onClick={prev}
             className="mt-8 flex-shrink-0 text-[#BFAF8A]/50 hover:text-[#BFAF8A] transition-colors"
@@ -155,14 +155,14 @@ function TestimonialCard({ item, dim = false }: { item: typeof testimonials[0]; 
       >
         {item.quote}
       </blockquote>
-      <p className="font-script text-[#384959]/60 text-base">— {item.author}</p>
+      <p className="font-script text-[#384959]/60 text-base">. {item.author}</p>
     </div>
   );
 }
 
 export function InstagramSection() {
   return (
-    // Champagne Gold background — warm, distinctive
+    // Champagne Gold background. warm, distinctive
     <section className="bg-[#BFAF8A] py-14 px-6">
       <div className="max-w-[1440px] mx-auto">
         <div className="text-center mb-8">
@@ -227,7 +227,7 @@ export function FinalCtaSection() {
 
 export function FooterSection() {
   return (
-    // Deep Navy footer — anchors the page
+    // Deep Navy footer. anchors the page
     <footer className="bg-[#384959] py-16 px-6">
       <div className="max-w-[1440px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">

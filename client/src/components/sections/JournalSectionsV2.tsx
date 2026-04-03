@@ -1,5 +1,5 @@
 /**
- * JournalSections — Journal + Testimonials + Instagram + Next Journey + Final CTA + Footer
+ * JournalSections. Journal + Testimonials + Instagram + Next Journey + Final CTA + Footer
  */
 
 import { useState, useEffect, useRef } from "react";
@@ -43,7 +43,7 @@ export function JournalSection() {
           </p>
         </div>
 
-        {/* Blog Cards — taller images */}
+        {/* Blog Cards. taller images */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {journal.posts.map((post) => (
             <article key={post.title} className="group">
@@ -56,7 +56,7 @@ export function JournalSection() {
                 />
               </div>
               <div className="font-smallcaps text-[#bfaf8a] text-xs tracking-[0.18em] uppercase mb-3">
-                {post.category} — {post.readTime}
+                {post.category}. {post.readTime}
               </div>
               <h3
                 className="font-display text-[#faf9f6] text-xl md:text-2xl mb-5 leading-snug"
@@ -120,7 +120,7 @@ function ReviewCard({ item, index }: { item: typeof testimonials[0]; index: numb
           className="font-script text-[#384959]/60 text-lg"
           style={{ fontFamily: "'Allura', 'Cormorant Garamond', serif" }}
         >
-          — {item.author}
+         . {item.author}
         </p>
         <span className="font-smallcaps text-[#bfaf8a] text-xs tracking-[0.14em] uppercase group-hover:text-[#384959] transition-colors flex items-center gap-1">
           View on Google

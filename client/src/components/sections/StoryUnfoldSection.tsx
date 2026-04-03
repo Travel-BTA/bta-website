@@ -1,5 +1,5 @@
 /**
- * StoryUnfoldSection — "Where Will Your Story Unfold?"
+ * StoryUnfoldSection. "Where Will Your Story Unfold?"
  * Appears after the Gives Back section.
  * Shows 3–5 featured itinerary cards that open in a new tab.
  */
@@ -32,7 +32,7 @@ export function StoryUnfoldSection() {
   return (
     <section className="bg-[#edeae4] py-24 px-6">
       <div className="max-w-[1440px] mx-auto">
-        {/* Header — left aligned */}
+        {/* Header. left aligned */}
         <div className="text-left mb-14">
           <p
             className="font-script text-[#bfaf8a] text-3xl md:text-4xl mb-3"

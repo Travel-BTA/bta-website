@@ -1,5 +1,5 @@
 /**
- * Journal — Blog listing page at /journal
+ * Journal. Blog listing page at /journal
  *
  * Design matches Figma:
  * - Tan/gold header: "Travel Inspiration" title, italic subtitle, description
@@ -30,7 +30,7 @@ function formatDate(iso: string) {
 function decodeHtml(html: string) {
   return html
     .replace(/&#8211;/g, "–")
-    .replace(/&#8212;/g, "—")
+    .replace(/&#8212;/g, ".")
     .replace(/&#038;/g, "&")
     .replace(/&amp;/g, "&")
     .replace(/&nbsp;/g, " ")

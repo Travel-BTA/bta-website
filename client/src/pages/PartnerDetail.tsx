@@ -1,18 +1,18 @@
 /**
  * PartnerDetail.tsx
  *
- * Individual preferred partner landing page — one component, all 7 partners.
+ * Individual preferred partner landing page. one component, all 7 partners.
  * The slug from the URL (/preferred-partners/:id) drives which partner data
  * is loaded from preferredPartners.ts. Adding a new partner only requires
- * adding an entry to the content file — no new page component needed.
+ * adding an entry to the content file. no new page component needed.
  *
  * Page structure (mirrors Fora's Hyatt Privé page, BTA aesthetic):
- *   1. Hero — full-bleed partner image + partner name + "Plan Your Journey" CTA
- *   2. Intro — partner name large, intro paragraph centered
- *   3. Benefits — left text + clickable pill tabs / right editorial image
- *   4. Property grid — "Discover [Partner Name]" + 3-col photo cards
- *   5. BTA value prop — why book through BTA strip
- *   6. Final CTA — full-bleed "Plan Your Journey"
+ *   1. Hero. full-bleed partner image + partner name + "Plan Your Journey" CTA
+ *   2. Intro. partner name large, intro paragraph centered
+ *   3. Benefits. left text + clickable pill tabs / right editorial image
+ *   4. Property grid. "Discover [Partner Name]" + 3-col photo cards
+ *   5. BTA value prop. why book through BTA strip
+ *   6. Final CTA. full-bleed "Plan Your Journey"
  *   7. Footer
  */
 
@@ -80,7 +80,7 @@ function PropertyCard({
         </p>
       </div>
 
-      {/* Book link — appears on hover */}
+      {/* Book link. appears on hover */}
       <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
         <Link href="/book">
           <span className="bg-[#BFAF8A] text-white font-smallcaps text-[10px] tracking-widest px-3 py-1.5 inline-block">
@@ -192,7 +192,7 @@ export default function PartnerDetail() {
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-stretch">
 
-            {/* Left — benefits text + pills */}
+            {/* Left. benefits text + pills */}
             <div className="bg-[#EDEAE4] py-16 pr-0 lg:pr-12 flex flex-col justify-center">
               <p className="bta-eyebrow mb-3">Exclusive Inclusions</p>
               <h2 className="font-display text-2xl md:text-3xl text-[#384959] uppercase tracking-wider mb-3">
@@ -200,11 +200,11 @@ export default function PartnerDetail() {
               </h2>
               <p className="font-body text-sm text-[#2F2F2F]/60 mb-6 leading-relaxed">
                 Benefits apply on all qualifying bookings made through a BTA
-                advisor. Perks vary by property — your advisor will confirm
+                advisor. Perks vary by property. your advisor will confirm
                 exact inclusions at time of booking.
               </p>
 
-              {/* Benefit pills — clickable, mirrors Fora's tab pattern */}
+              {/* Benefit pills. clickable, mirrors Fora's tab pattern */}
               <div className="flex flex-wrap gap-2">
                 {partner.benefits.map((benefit, i) => (
                   <BenefitPill
@@ -220,13 +220,13 @@ export default function PartnerDetail() {
               <div className="mt-6 p-4 border-l-2 border-[#BFAF8A] bg-white/50">
                 <p className="font-body text-sm text-[#384959] leading-relaxed">
                   <span className="font-semibold">{partner.benefits[activeBenefit]}</span>
-                  {" "}is included on every qualifying stay booked through BTA — confirmed
+                  {" "}is included on every qualifying stay booked through BTA. confirmed
                   at time of reservation with no additional cost to you.
                 </p>
               </div>
             </div>
 
-            {/* Right — editorial image */}
+            {/* Right. editorial image */}
             <div className="relative h-80 lg:h-auto min-h-[400px] overflow-hidden">
               <img
                 src={partner.heroImage}
@@ -254,7 +254,7 @@ export default function PartnerDetail() {
               <div className="flex-1 h-px bg-[#BFAF8A]/40" />
             </div>
 
-            {/* 3-col grid — 2-col tablet — 1-col mobile */}
+            {/* 3-col grid. 2-col tablet. 1-col mobile */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {partner.properties.map((property) => (
                 <PropertyCard
@@ -276,7 +276,7 @@ export default function PartnerDetail() {
             {[
               {
                 heading: "Guaranteed Benefits",
-                body: "Every perk listed is confirmed at booking — not aspirational.",
+                body: "Every perk listed is confirmed at booking. not aspirational.",
               },
               {
                 heading: "No Extra Cost",
@@ -317,7 +317,7 @@ export default function PartnerDetail() {
           <div className="w-10 h-px bg-[#BFAF8A] mx-auto mb-6" />
           <p className="font-body text-base text-white/75 mb-8 leading-relaxed">
             Tell us your travel plans and a BTA advisor will reach out within 24 hours
-            with a fully personalised proposal — including all {partner.name} benefits.
+            with a fully personalised proposal. including all {partner.name} benefits.
           </p>
           <Link href="/book">
             <span className="bta-btn-outline-white inline-block">

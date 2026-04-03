@@ -1,5 +1,5 @@
 /**
- * European Immersions — Content Configuration
+ * European Immersions. Content Configuration
  * Edit text, images, and links here. Do not touch the page component.
  * Route: /land-journeys/europe
  */
@@ -15,7 +15,7 @@ export const europeanImmersionsData: JourneySubPageData = {
   hero: {
     backgroundImage:
       "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=1920&q=85&auto=format&fit=crop",
-    eyebrow: "Land Journeys — European Immersions",
+    eyebrow: "Land Journeys. European Immersions",
     headline: "Europe, Beyond\nthe Ordinary",
     subheadline:
       "Private villas, castle estates, and cultural access that most travelers never discover.",
@@ -48,16 +48,16 @@ export const europeanImmersionsData: JourneySubPageData = {
       name: "Santorini, Greece",
       country: "Greece",
       description:
-        "The iconic caldera views, private cave suites, and sunset dinners that define the Aegean. We extend your journey to lesser-known islands — Folegandros, Milos — for a Greece few visitors ever see.",
+        "The iconic caldera views, private cave suites, and sunset dinners that define the Aegean. We extend your journey to lesser-known islands. Folegandros, Milos. for a Greece few visitors ever see.",
       imageUrl:
         "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=800&q=80&auto=format&fit=crop",
     },
   ],
   featuredItinerary: {
     eyebrow: "Featured Journey",
-    headline: "Italy: Amalfi &\nTuscany — 12 Days",
+    headline: "Italy: Amalfi &\nTuscany. 12 Days",
     description:
-      "Begin with three nights in a private clifftop villa above Positano, exploring the coast by private boat. Transfer north to a restored farmhouse estate in the Chianti hills for the harvest season — private winery visits, truffle hunting, and a cooking lesson with a local chef. End in Florence with after-hours access to the Uffizi Gallery.",
+      "Begin with three nights in a private clifftop villa above Positano, exploring the coast by private boat. Transfer north to a restored farmhouse estate in the Chianti hills for the harvest season. private winery visits, truffle hunting, and a cooking lesson with a local chef. End in Florence with after-hours access to the Uffizi Gallery.",
     imageUrl:
       "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=900&q=85&auto=format&fit=crop",
     details: [
@@ -74,7 +74,7 @@ export const europeanImmersionsData: JourneySubPageData = {
       {
         title: "Virtuoso Access",
         description:
-          "Preferred rates and exclusive amenities at Europe's finest properties — from Relais & Châteaux estates to Leading Hotels of the World — available only through Virtuoso advisors.",
+          "Preferred rates and exclusive amenities at Europe's finest properties. from Relais & Châteaux estates to Leading Hotels of the World. available only through Virtuoso advisors.",
       },
       {
         title: "Expert Advisors",

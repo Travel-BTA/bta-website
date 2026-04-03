@@ -1,5 +1,5 @@
 /**
- * LuxuryOcean — /cruises/luxury-ocean
+ * LuxuryOcean. /cruises/luxury-ocean
  *
  * Luxury Ocean Cruises sub-page featuring:
  * Explora Journeys, Regent Seven Seas, Seabourn, Silversea, Crystal
@@ -7,7 +7,7 @@
  * Each cruise line section alternates image left / right.
  * White-label co-branded links from the BTA directory are used for CTAs.
  *
- * Design: BTA brand guide — Instrument Serif headings, Cormorant Garamond body,
+ * Design: BTA brand guide. Instrument Serif headings, Cormorant Garamond body,
  * Champagne Gold #bfaf8a, Aegean Blue #384959, Linen White #faf9f6.
  */
 
@@ -23,13 +23,13 @@ const CRUISE_LINES = [
     tagline: "Ocean State of Mind",
     eyebrow: "Modern Luxury",
     description:
-      "Explora Journeys redefines luxury ocean travel with a residential, unhurried philosophy. Nine distinct culinary experiences, unlimited premium beverages, and a wellness-first approach make every voyage feel more like a private estate at sea than a traditional cruise. The fleet's Grand Terrace, Penthouse, and Residence suites each unlock tiered benefits — from priority dining reservations to butler service, VIP lounge access, and complimentary ground transfers up to 50 miles.",
+      "Explora Journeys redefines luxury ocean travel with a residential, unhurried philosophy. Nine distinct culinary experiences, unlimited premium beverages, and a wellness-first approach make every voyage feel more like a private estate at sea than a traditional cruise. The fleet's Grand Terrace, Penthouse, and Residence suites each unlock tiered benefits. from priority dining reservations to butler service, VIP lounge access, and complimentary ground transfers up to 50 miles.",
     highlights: [
-      "9 culinary experiences per ship — from casual to Michelin-inspired",
+      "9 culinary experiences per ship. from casual to Michelin-inspired",
       "Unlimited fine beverages included in all fare tiers",
       "Thermal spa access, high-speed Wi-Fi & wellbeing programs",
       "In-suite champagne, pillow & mattress menus",
-      "Shore-power capable — advanced sustainability systems",
+      "Shore-power capable. advanced sustainability systems",
     ],
     culinary:
       "Anthology Culinary Masterclasses & Workshops: hands-on cooking classes led by resident chefs, market visits, and destination-inspired menus that change with every port.",
@@ -45,11 +45,11 @@ const CRUISE_LINES = [
     tagline: "The Most Inclusive Luxury Experience",
     eyebrow: "All-Inclusive Ultra-Luxury",
     description:
-      "Regent Seven Seas is the benchmark for all-inclusive ultra-luxury cruising. Every fare includes round-trip business-class airfare, pre-cruise hotel stays, unlimited shore excursions, all dining venues, unlimited premium beverages, butler service in all suites, and gratuities — truly nothing extra to pay. The Culinary Arts Kitchen aboard Explorer, Splendor, and Grandeur class ships offers hands-on cooking classes with world-class chefs, while destination-inspired menus rotate with every itinerary.",
+      "Regent Seven Seas is the benchmark for all-inclusive ultra-luxury cruising. Every fare includes round-trip business-class airfare, pre-cruise hotel stays, unlimited shore excursions, all dining venues, unlimited premium beverages, butler service in all suites, and gratuities. truly nothing extra to pay. The Culinary Arts Kitchen aboard Explorer, Splendor, and Grandeur class ships offers hands-on cooking classes with world-class chefs, while destination-inspired menus rotate with every itinerary.",
     highlights: [
       "Round-trip business-class airfare included on all voyages",
       "Pre-cruise hotel stay included",
-      "Unlimited shore excursions — over 1,500 options",
+      "Unlimited shore excursions. over 1,500 options",
       "Butler service in every suite category",
       "All dining, beverages & gratuities included",
     ],
@@ -67,11 +67,11 @@ const CRUISE_LINES = [
     tagline: "The World's Finest Ultra-Luxury Cruise Line",
     eyebrow: "Ultra-Luxury",
     description:
-      "Seabourn's intimate ships carry between 458 and 600 guests, creating an atmosphere closer to a private yacht than a traditional cruise ship. The Thomas Keller partnership is the crown jewel — the celebrated chef's culinary philosophy is woven throughout every dining venue, from The Restaurant to The Grill by Thomas Keller. Open bars, caviar on the beach, and complimentary water sports from the marina platform are signature Seabourn moments.",
+      "Seabourn's intimate ships carry between 458 and 600 guests, creating an atmosphere closer to a private yacht than a traditional cruise ship. The Thomas Keller partnership is the crown jewel. the celebrated chef's culinary philosophy is woven throughout every dining venue, from The Restaurant to The Grill by Thomas Keller. Open bars, caviar on the beach, and complimentary water sports from the marina platform are signature Seabourn moments.",
     highlights: [
-      "Thomas Keller Partnership — signature menus fleet-wide",
+      "Thomas Keller Partnership. signature menus fleet-wide",
       "Complimentary open bar throughout the ship",
-      "Caviar in the surf — iconic beach service",
+      "Caviar in the surf. iconic beach service",
       "Complimentary water sports from the marina platform",
       "All suites with ocean views, most with private verandas",
     ],
@@ -89,9 +89,9 @@ const CRUISE_LINES = [
     tagline: "Discover the World in Silver Style",
     eyebrow: "Ultra-Luxury & Expedition",
     description:
-      "Silversea's S.A.L.T. (Sea And Land Taste) program is the most sophisticated culinary concept in luxury cruising — a ship-wide philosophy connecting guests to the authentic flavors of each destination through cooking classes, shore excursions, and curated menus. With a fleet spanning classic ocean ships to purpose-built expedition vessels, Silversea reaches more than 900 destinations across all seven continents. All fares are door-to-door inclusive.",
+      "Silversea's S.A.L.T. (Sea And Land Taste) program is the most sophisticated culinary concept in luxury cruising. a ship-wide philosophy connecting guests to the authentic flavors of each destination through cooking classes, shore excursions, and curated menus. With a fleet spanning classic ocean ships to purpose-built expedition vessels, Silversea reaches more than 900 destinations across all seven continents. All fares are door-to-door inclusive.",
     highlights: [
-      "S.A.L.T. culinary program — destination-driven dining fleet-wide",
+      "S.A.L.T. culinary program. destination-driven dining fleet-wide",
       "Door-to-door all-inclusive fares with private jet transfers available",
       "900+ destinations across all 7 continents",
       "Expedition ships with Zodiacs, kayaks & expert naturalists",
@@ -113,7 +113,7 @@ const CRUISE_LINES = [
     description:
       "Relaunched under A&K Travel Group, Crystal Cruises returns with its legendary reputation for gracious service, spacious ships, and enriching programming. Crystal's culinary enrichment program features guest chef demonstrations, wine and spirits tastings, and destination-inspired menus crafted by award-winning chefs. The Crystal Society loyalty program rewards returning guests with exclusive benefits and upgrades.",
     highlights: [
-      "Spacious ships — generous space-to-guest ratios",
+      "Spacious ships. generous space-to-guest ratios",
       "Award-winning culinary program with guest chef events",
       "Complimentary specialty dining, beverages & gratuities",
       "Crystal Society loyalty program with exclusive benefits",
@@ -136,47 +136,46 @@ export default function LuxuryOcean() {
 
       {/* ── Hero ──────────────────────────────────────────────────────────── */}
       <section className="relative h-[75vh] min-h-[520px] flex items-end overflow-hidden">
+        {/* WHY: User-provided Santorini photo. light/bright image so overlay is stronger to ensure white text legibility */}
         <img
-          src="https://images.unsplash.com/photo-1599640842225-85d111c60e6b?auto=format&fit=crop&w=2400&q=80"
-          alt="Luxury ocean cruise ship at sea"
+          src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/santorini-luxury_c8b64a58.jpg"
+          alt="Santorini blue domes overlooking the Aegean Sea"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#2f2f2f]/85 via-[#2f2f2f]/25 to-transparent" />
+        {/* Stronger overlay for light Santorini image. ensures all text is legible */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/90 via-[#1a1a1a]/55 to-[#1a1a1a]/30" />
 
         <div className="relative z-10 w-full max-w-[1440px] mx-auto px-8 lg:px-14 pb-16 md:pb-20">
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 mb-6">
-            <Link href="/cruises" className="text-white/60 text-xs tracking-[0.2em] uppercase hover:text-[#bfaf8a] transition-colors" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+            <Link href="/cruises" className="text-white/60 text-xs tracking-[0.2em] uppercase hover:text-white transition-colors" style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}>
               Cruises
             </Link>
             <span className="text-white/40 text-xs">›</span>
-            <span className="text-[#bfaf8a] text-xs tracking-[0.2em] uppercase" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+            {/* Current page label: white on photo, not Champagne Gold */}
+            <span className="text-white/75 text-xs tracking-[0.2em] uppercase" style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}>
               Luxury Ocean
             </span>
           </div>
 
-          <p
-            className="text-[#bfaf8a] mb-3"
-            style={{ fontFamily: "'Allura', cursive", fontSize: "1.6rem" }}
-          >
+          {/* Allura script: white on photo. Champagne Gold only on plain backgrounds */}
+          <p className="mb-3" style={{ color: "rgba(255,255,255,0.9)", fontFamily: "'Allura', cursive", fontSize: "1.6rem", fontStyle: "italic" }}>
             Ultra-Luxury at Sea
           </p>
-          <h1 className="font-display text-white text-5xl md:text-6xl font-light leading-none mb-6">
+          {/* H1: Instrument Serif ALL CAPS white on hero photo */}
+          <h1 className="text-white text-5xl md:text-6xl uppercase leading-tight mb-6" style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400, letterSpacing: "0.04em" }}>
             Luxury Ocean Cruises
           </h1>
-          <p
-            className="text-white/75 text-xl max-w-2xl leading-relaxed mb-8"
-            style={{ fontFamily: "'Cormorant Garamond', serif" }}
-          >
-            All-inclusive voyages aboard the world's finest ships — where butler service, Michelin-calibre dining, and private shore excursions are simply the beginning.
+          <p className="text-white/75 text-base max-w-2xl leading-relaxed mb-8" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 400 }}>
+            All-inclusive voyages aboard the world's finest ships. where butler service, Michelin-calibre dining, and private shore excursions are simply the beginning.
           </p>
           <Link
             href="/contact"
             className="inline-flex items-center gap-3 bg-[#bfaf8a] text-white px-8 py-3.5 text-xs tracking-[0.25em] uppercase hover:bg-[#bfaf8a] transition-all duration-300"
-            style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
+            style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
           >
             Start Planning
-            <span className="text-base not-italic">→</span>
+            <span className="text-base">→</span>
           </Link>
         </div>
       </section>
@@ -195,7 +194,7 @@ export default function LuxuryOcean() {
               What Sets Luxury Ocean Apart
             </h2>
             <p className="text-[#2F2F2F]/75 text-lg leading-relaxed mb-4" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
-              Luxury ocean cruising is defined by an exceptional space-to-guest ratio, all-inclusive pricing, and a level of personalised service that anticipates your every need. These ships carry between 200 and 1,000 guests — a fraction of mainstream vessels — creating an atmosphere of genuine intimacy.
+              Luxury ocean cruising is defined by an exceptional space-to-guest ratio, all-inclusive pricing, and a level of personalised service that anticipates your every need. These ships carry between 200 and 1,000 guests. a fraction of mainstream vessels. creating an atmosphere of genuine intimacy.
             </p>
             <p className="text-[#2F2F2F]/65 text-lg leading-relaxed" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
               As a Virtuoso member agency, BTA clients receive exclusive amenities on top of each line's already generous inclusions: negotiated rates, VIP welcome receptions, shipboard credits, specialty dining, cabin upgrades when available, and dedicated onboard hosts.

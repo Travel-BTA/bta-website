@@ -134,19 +134,21 @@ export default function Destinations() {
           style={{ background: "linear-gradient(to top, rgba(47,47,47,0.85) 0%, rgba(47,47,47,0.3) 50%, rgba(47,47,47,0.15) 100%)" }}
         />
         <div className="relative z-10 w-full px-8 md:px-16 pb-16">
-          {/* Breadcrumb */}
-          <p className="text-xs tracking-[0.25em] uppercase mb-4" style={{ color: "#bfaf8a", fontFamily: "'Cormorant Garamond', serif" }}>
+          {/* Breadcrumb. white over photo, never Champagne Gold on images */}
+          <p className="text-xs tracking-[0.25em] uppercase mb-4" style={{ color: "rgba(255,255,255,0.75)", fontFamily: "'Instrument Serif', Georgia, serif" }}>
             <Link href="/" className="hover:underline">Home</Link>
             <span className="mx-2">›</span>
             Destinations
           </p>
-          <p className="text-2xl md:text-3xl mb-2" style={{ color: "#bfaf8a", fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}>
+          {/* Allura script accent. white on photo; Champagne Gold only on plain backgrounds */}
+          <p className="text-2xl md:text-3xl mb-2" style={{ color: "rgba(255,255,255,0.9)", fontFamily: "'Allura', cursive", fontStyle: "italic" }}>
             Where Will You Go Next?
           </p>
-          <h1 className="text-5xl md:text-7xl font-light text-white mb-6" style={{ fontFamily: "'Cormorant Garamond', serif", letterSpacing: "-0.02em" }}>
+          {/* H1: Instrument Serif ALL CAPS white on hero photo. Champagne Gold only on plain backgrounds */}
+          <h1 className="text-5xl md:text-7xl mb-6 uppercase" style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400, color: "#ffffff", letterSpacing: "0.06em", lineHeight: 1.1 }}>
             Destinations
           </h1>
-          <p className="text-white/80 max-w-xl text-base leading-relaxed" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+          <p className="text-white/80 max-w-xl text-base leading-relaxed" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 400 }}>
             Our most requested destinations for 2026 and 2027 each one chosen for its depth, its beauty, and the extraordinary experiences only a trusted advisor can unlock.
           </p>
         </div>
@@ -155,13 +157,14 @@ export default function Destinations() {
       {/* Intro */}
       <section className="py-16 px-8 md:px-16 max-w-4xl mx-auto text-center">
         <div className="w-12 h-px mx-auto mb-8" style={{ backgroundColor: "#bfaf8a" }} />
-        <p className="text-sm tracking-[0.2em] uppercase mb-4" style={{ color: "#bfaf8a", fontFamily: "'Cormorant Garamond', serif" }}>
+        <p className="text-sm tracking-[0.2em] uppercase mb-4" style={{ color: "#bfaf8a", fontFamily: "'Instrument Serif', Georgia, serif" }}>
           Curated for 2026 &amp; 2027
         </p>
-        <h2 className="text-3xl md:text-4xl font-light mb-6" style={{ color: "#384959", fontFamily: "'Cormorant Garamond', serif" }}>
+        {/* H2 subheading: Playfair Display SemiBold Italic, NOT caps. matches Figma */}
+        <h2 className="text-3xl md:text-4xl mb-6" style={{ color: "#384959", fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 600, fontStyle: "italic" }}>
           The World, Thoughtfully Edited
         </h2>
-        <p className="text-base leading-relaxed" style={{ color: "#2f2f2f", fontFamily: "'Cormorant Garamond', serif", fontSize: "1.1rem" }}>
+        <p className="text-base leading-relaxed" style={{ color: "#2f2f2f", fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 400, fontSize: "1.05rem" }}>
           These are the destinations our advisors are most excited about right now places where we have deep relationships, insider access, and the knowledge to design a journey that goes far beyond what any booking platform can offer. Each destination supports local communities and charitable causes that matter.
         </p>
       </section>
@@ -177,19 +180,21 @@ export default function Destinations() {
 
       {/* CTA */}
       <section className="py-20 px-8 text-center" style={{ backgroundColor: "#384959" }}>
-        <p className="text-sm tracking-[0.2em] uppercase mb-4" style={{ color: "#bfaf8a", fontFamily: "'Cormorant Garamond', serif" }}>
+        {/* Allura script accent for CTA eyebrow */}
+        <p className="text-2xl mb-3" style={{ color: "#bfaf8a", fontFamily: "'Allura', cursive", fontStyle: "italic" }}>
           Ready to Begin?
         </p>
-        <h2 className="text-3xl md:text-4xl font-light text-white mb-6" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+        {/* H1: Instrument Serif ALL CAPS Champagne Gold */}
+        <h2 className="text-3xl md:text-4xl mb-6 uppercase" style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400, color: "#faf9f6", letterSpacing: "0.06em" }}>
           Let's Design Your Journey
         </h2>
-        <p className="text-white/70 max-w-lg mx-auto mb-10 leading-relaxed" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.05rem" }}>
+        <p className="text-white/70 max-w-lg mx-auto mb-10 leading-relaxed" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 400, fontSize: "1.05rem" }}>
           Every destination above is one we know intimately. Tell us where you want to go and we'll craft an itinerary that exceeds every expectation.
         </p>
         <Link href="/contact">
           <button
             className="px-10 py-4 text-sm tracking-[0.2em] uppercase transition-all duration-300 hover:opacity-80"
-            style={{ backgroundColor: "#bfaf8a", color: "#faf9f6", fontFamily: "'Cormorant Garamond', serif", letterSpacing: "0.15em" }}
+            style={{ backgroundColor: "#bfaf8a", color: "#faf9f6", fontFamily: "'Instrument Serif', Georgia, serif", letterSpacing: "0.15em" }}
           >
             Start Planning
           </button>
@@ -219,23 +224,25 @@ function DestinationCard({ dest, featured }: { dest: typeof DESTINATIONS[0]; fea
         {/* Year badge */}
         <div
           className="absolute top-6 right-6 px-3 py-1 text-xs tracking-[0.15em] uppercase"
-          style={{ backgroundColor: "#bfaf8a", color: "#faf9f6", fontFamily: "'Cormorant Garamond', serif" }}
+          style={{ backgroundColor: "#bfaf8a", color: "#faf9f6", fontFamily: "'Instrument Serif', Georgia, serif" }}
         >
           {dest.year}
         </div>
         {/* Region */}
         <p
           className="absolute top-6 left-6 text-xs tracking-[0.2em] uppercase"
-          style={{ color: "rgba(255,255,255,0.8)", fontFamily: "'Cormorant Garamond', serif" }}
+          style={{ color: "rgba(255,255,255,0.8)", fontFamily: "'Instrument Serif', Georgia, serif" }}
         >
           {dest.region}
         </p>
         {/* Name overlay */}
         <div className="absolute bottom-0 left-0 right-0 p-8">
-          <p className="text-lg italic mb-1" style={{ color: "#bfaf8a", fontFamily: "'Cormorant Garamond', serif" }}>
+          {/* Allura script for tagline. white on photo overlay; Champagne Gold only on plain backgrounds */}
+          <p className="text-xl mb-1" style={{ color: "rgba(255,255,255,0.85)", fontFamily: "'Allura', cursive", fontStyle: "italic" }}>
             {dest.tagline}
           </p>
-          <h3 className="text-4xl font-light text-white" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+          {/* H3 card title: Instrument Serif ALL CAPS, white on dark overlay */}
+          <h3 className="text-3xl uppercase" style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400, color: "#faf9f6", letterSpacing: "0.06em" }}>
             {dest.name}
           </h3>
         </div>
@@ -243,19 +250,19 @@ function DestinationCard({ dest, featured }: { dest: typeof DESTINATIONS[0]; fea
 
       {/* Content */}
       <div className="p-8">
-        <p className="text-base leading-relaxed mb-6" style={{ color: "#2f2f2f", fontFamily: "'Cormorant Garamond', serif", fontSize: "1rem" }}>
+        <p className="text-base leading-relaxed mb-6" style={{ color: "#2f2f2f", fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 400, fontSize: "1rem" }}>
           {dest.description}
         </p>
         {/* Highlights */}
         <div className="mb-6">
-          <p className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: "#bfaf8a", fontFamily: "'Cormorant Garamond', serif" }}>
+          <p className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: "#bfaf8a", fontFamily: "'Instrument Serif', Georgia, serif" }}>
             What We Curate
           </p>
           <div className="grid grid-cols-2 gap-2">
             {dest.highlights.map((h) => (
               <div key={h} className="flex items-start gap-2">
                 <span className="mt-1.5 w-1 h-1 rounded-full flex-shrink-0" style={{ backgroundColor: "#bfaf8a" }} />
-                <span className="text-sm" style={{ color: "#2f2f2f", fontFamily: "'Cormorant Garamond', serif" }}>{h}</span>
+                <span className="text-sm" style={{ color: "#2f2f2f", fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 400 }}>{h}</span>
               </div>
             ))}
           </div>
@@ -263,7 +270,7 @@ function DestinationCard({ dest, featured }: { dest: typeof DESTINATIONS[0]; fea
         <Link href="/contact">
           <button
             className="text-xs tracking-[0.2em] uppercase border px-6 py-3 transition-all duration-300 hover:opacity-70"
-            style={{ borderColor: "#384959", color: "#384959", fontFamily: "'Cormorant Garamond', serif" }}
+            style={{ borderColor: "#384959", color: "#384959", fontFamily: "'Instrument Serif', Georgia, serif" }}
           >
             Plan This Journey
           </button>

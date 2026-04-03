@@ -1,5 +1,5 @@
 // ============================================================
-//  BTA WEBSITE — CONTENT CONFIGURATION FILE
+//  BTA WEBSITE. CONTENT CONFIGURATION FILE
 //  File: client/src/content/homepage.ts
 // ============================================================
 //
@@ -9,33 +9,33 @@
 //  homepage. You do NOT need to touch any other file.
 //
 //  WHAT YOU CAN CHANGE HERE:
-//    ✏️  Text  — headlines, body copy, labels, button text
-//    🔗  Links — nav links, button hrefs, social media URLs
-//    🖼️  Photos — paste a new image URL to swap any photo
-//    📞  Contact — phone, email, address
+//    ✏️  Text . headlines, body copy, labels, button text
+//    🔗  Links. nav links, button hrefs, social media URLs
+//    🖼️  Photos. paste a new image URL to swap any photo
+//    📞  Contact. phone, email, address
 //
 //  HOW TO SWAP A PHOTO:
 //    1. Upload your image in the Manus file manager, OR
 //       paste a direct image URL (e.g. from your website/CDN)
 //    2. Replace the URL in the imageUrl / backgroundImage field
-//    3. Save — the site updates instantly in the live preview
+//    3. Save. the site updates instantly in the live preview
 //
 //  SECTIONS IN THIS FILE (in page order):
-//    1.  NAV BAR          — logo, navigation links, Book Now button
-//    2.  HERO             — background photo, headline, partner logos
-//    3.  WHO WE ARE       — intro text block
-//    4.  STATS            — 3 numbers (countries, trips, value)
-//    5.  PHILOSOPHY       — features list + side image
-//    6.  CURATED HOTELS   — full-width banner photo + script text
-//    7.  EXCLUSIVE BENEFITS — bullet list of perks
-//    8.  VIP ACCESS       — headline + side photo
-//    9.  GIVES BACK       — charity section text + photo
-//    10. EXPERIENCE STRIP — full-width decorative photo
-//    11. JOURNAL          — 3 blog post cards
-//    12. TESTIMONIALS     — 3 client quotes
-//    13. INSTAGRAM        — handle + 6 feed photos
-//    14. FINAL CTA        — closing banner + button
-//    15. FOOTER           — tagline, links, contact info
+//    1.  NAV BAR         . logo, navigation links, Book Now button
+//    2.  HERO            . background photo, headline, partner logos
+//    3.  WHO WE ARE      . intro text block
+//    4.  STATS           . 3 numbers (countries, trips, value)
+//    5.  PHILOSOPHY      . features list + side image
+//    6.  CURATED HOTELS  . full-width banner photo + script text
+//    7.  EXCLUSIVE BENEFITS. bullet list of perks
+//    8.  VIP ACCESS      . headline + side photo
+//    9.  GIVES BACK      . charity section text + photo
+//    10. EXPERIENCE STRIP. full-width decorative photo
+//    11. JOURNAL         . 3 blog post cards
+//    12. TESTIMONIALS    . 3 client quotes
+//    13. INSTAGRAM       . handle + 6 feed photos
+//    14. FINAL CTA       . closing banner + button
+//    15. FOOTER          . tagline, links, contact info
 //
 // ============================================================
 
@@ -105,7 +105,7 @@ export const hero = {
 export const whoWeAre = {
   eyebrow: "Who We Are:",                                    // small label above headline
   headline: "BESPOKE TRAVEL, DESIGNED FOR YOU",
-  body: "At Boutique Travel, we craft once-in-a-lifetime journeys for the discerning traveler — fueled by curiosity, expertise, and a passion for discovery.",
+  body: "At Boutique Travel, we craft once-in-a-lifetime journeys for the discerning traveler. fueled by curiosity, expertise, and a passion for discovery.",
   cta: {
     label: "EXPLORE OUR APPROACH",
     href: "/about",
@@ -213,7 +213,7 @@ export const vipAccess = {
 export const givesBack = {
   eyebrow: "Purpose and Meaning",
   headline: "TRAVEL THAT GIVES BACK",
-  body: "Connection matters—to people, to places, and communities. Through select partnerships, your journeys quietly support arts, education, sports, travel and community. A portion of every booking supports local charities including childhood cancer, Make-A-Wish, veterans, and arts & culture where we travel.",
+  body: "Connection matters.to people, to places, and communities. Through select partnerships, your journeys quietly support arts, education, sports, travel and community. A portion of every booking supports local charities including childhood cancer, Make-A-Wish, veterans, and arts & culture where we travel.",
 
   // 🖼️ SIDE IMAGE
   image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/children-charity_9d8a6581.png",
@@ -245,7 +245,7 @@ export const journal = {
       readTime: "5 mins",
       title: "The Art of Slow Travel in Italy",
       href: "/inspiration/slow-travel-italy",
-      // 🖼️ Card photo — swap URL to change the image
+      // 🖼️ Card photo. swap URL to change the image
       image: "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=600&q=80&auto=format&fit=crop",
     },
     {
@@ -301,7 +301,7 @@ export const instagram = {
   // 🔗 Link to your Instagram profile
   href: "https://www.instagram.com/boutiquetraveladvisors",
 
-  // 🖼️ 6 FEED PHOTOS  — replace each URL with a real Instagram screenshot
+  // 🖼️ 6 FEED PHOTOS . replace each URL with a real Instagram screenshot
   // Tip: screenshot your Instagram grid and upload each square here
   photos: [
     "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&q=80&auto=format&fit=crop",

@@ -1,5 +1,5 @@
 /**
- * Expedition Travel — Content Configuration
+ * Expedition Travel. Content Configuration
  * Edit text, images, and links here. Do not touch the page component.
  * Route: /land-journeys/expedition
  */
@@ -10,15 +10,15 @@ export const expeditionTravelData: JourneySubPageData = {
   seo: {
     title: "Expedition Travel | Boutique Travel Advisors",
     metaDescription:
-      "Antarctica, Galápagos, Patagonia, and the Arctic — BTA designs expedition journeys to the world's most remote and extraordinary destinations for discerning travelers.",
+      "Antarctica, Galápagos, Patagonia, and the Arctic. BTA designs expedition journeys to the world's most remote and extraordinary destinations for discerning travelers.",
   },
   hero: {
     backgroundImage:
       "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/patagonia-guanaco_6307f230.webp",
-    eyebrow: "Land Journeys — Expedition Travel",
+    eyebrow: "Land Journeys. Expedition Travel",
     headline: "The World's Last\nWild Places",
     subheadline:
-      "Antarctica, Patagonia, the Galápagos — journeys to the edges of the earth, designed for those who seek the extraordinary.",
+      "Antarctica, Patagonia, the Galápagos. journeys to the edges of the earth, designed for those who seek the extraordinary.",
   },
   intro: {
     eyebrow: "The BTA Expedition Experience",
@@ -40,7 +40,7 @@ export const expeditionTravelData: JourneySubPageData = {
       name: "Galápagos Islands",
       country: "Ecuador",
       description:
-        "Darwin's living laboratory — wildlife that shows no fear of humans, volcanic landscapes, and crystal waters teeming with marine life. We secure space on the most intimate small-ship expeditions.",
+        "Darwin's living laboratory. wildlife that shows no fear of humans, volcanic landscapes, and crystal waters teeming with marine life. We secure space on the most intimate small-ship expeditions.",
       imageUrl:
         "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/galapagos-sea-lions_359e2e9a.webp",
     },
@@ -48,14 +48,14 @@ export const expeditionTravelData: JourneySubPageData = {
       name: "Patagonia",
       country: "Chile & Argentina",
       description:
-        "Torres del Paine, Los Glaciares, and the Carretera Austral — a landscape of staggering scale and beauty. Private estancias, expert trekking guides, and fly-fishing on rivers few visitors ever reach.",
+        "Torres del Paine, Los Glaciares, and the Carretera Austral. a landscape of staggering scale and beauty. Private estancias, expert trekking guides, and fly-fishing on rivers few visitors ever reach.",
       imageUrl:
         "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/patagonia-torres_a39f9a97.webp",
     },
   ],
   featuredItinerary: {
     eyebrow: "Featured Journey",
-    headline: "Antarctica: White\nWilderness — 14 Days",
+    headline: "Antarctica: White\nWilderness. 14 Days",
     description:
       "Embark from Ushuaia aboard a 150-guest expedition vessel, small enough to access bays that larger ships cannot reach. Cross the Drake Passage, land among half a million penguins at South Georgia, and witness calving glaciers from a Zodiac. Expert naturalists lead every excursion, and evenings are spent in the ship's library with a glass of wine and a sky full of stars.",
     imageUrl:
@@ -74,7 +74,7 @@ export const expeditionTravelData: JourneySubPageData = {
       {
         title: "Virtuoso Access",
         description:
-          "We hold allocations with the world's leading expedition operators — Abercrombie & Kent, Silversea Expeditions, Lindblad — and secure the best cabins before they reach the public.",
+          "We hold allocations with the world's leading expedition operators. Abercrombie & Kent, Silversea Expeditions, Lindblad. and secure the best cabins before they reach the public.",
       },
       {
         title: "Expert Advisors",
@@ -84,7 +84,7 @@ export const expeditionTravelData: JourneySubPageData = {
       {
         title: "Bespoke Design",
         description:
-          "We combine expedition travel with luxury extensions — a private estancia in Patagonia before your ship, or a night in a glass-domed lodge under the northern lights after.",
+          "We combine expedition travel with luxury extensions. a private estancia in Patagonia before your ship, or a night in a glass-domed lodge under the northern lights after.",
       },
     ],
   },

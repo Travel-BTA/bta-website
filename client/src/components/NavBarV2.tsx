@@ -1,8 +1,8 @@
 /**
- * NavBar — BTA Site Navigation
+ * NavBar. BTA Site Navigation
  *
  * Design: Transparent overlay on hero image, becomes solid on scroll.
- * Logo: top-left, official BTA logo image — larger and prominent.
+ * Logo: top-left, official BTA logo image. larger and prominent.
  * Nav links: center, Cormorant SC small caps, properly sized.
  * CTA: right, outlined button.
  */
@@ -29,7 +29,7 @@ export default function NavBar() {
       }`}
     >
       <div className="max-w-[1440px] mx-auto px-8 lg:px-14 flex items-center justify-between h-[80px]">
-        {/* Logo — larger, prominent */}
+        {/* Logo. larger, prominent */}
         <a href="/" className="flex-shrink-0">
           {nav.logo.imageUrl ? (
             <img

@@ -1,7 +1,7 @@
 /**
  * PreferredPartners.tsx
  *
- * BTA Preferred Partners hub page — inspired by Fora's /partners layout
+ * BTA Preferred Partners hub page. inspired by Fora's /partners layout
  * but built entirely in BTA brand aesthetic:
  *   - Aegean Blue (#384959) + Champagne Gold (#BFAF8A) + Warm Stone (#EDEAE4)
  *   - Playfair Display headings, Cormorant Garamond body
@@ -31,7 +31,7 @@ function PartnerCard({ partner }: { partner: Partner }) {
     // Each card links to its individual landing page
     <Link href={`/preferred-partners/${partner.id}`}>
       <div className="group flex flex-col bg-[#FAF8F5] border border-[#BFAF8A]/30 hover:border-[#BFAF8A] transition-all duration-300 cursor-pointer h-full">
-        {/* Card image — subtle, fades on hover */}
+        {/* Card image. subtle, fades on hover */}
         <div className="relative h-48 overflow-hidden">
           <img
             src={partner.cardImage}
@@ -59,7 +59,7 @@ function PartnerCard({ partner }: { partner: Partner }) {
             {partner.tagline}
           </p>
 
-          {/* Description — capped at 2 lines */}
+          {/* Description. capped at 2 lines */}
           <p className="font-body text-sm text-[#2F2F2F]/70 leading-relaxed line-clamp-3 flex-1">
             {partner.description}
           </p>
@@ -187,7 +187,7 @@ export default function PreferredPartners() {
       {/* ── Partner grid ─────────────────────────────────────────────────── */}
       <section className="pb-20 px-6">
         <div className="container mx-auto">
-          {/* Section heading with decorative lines — mirrors Fora's style */}
+          {/* Section heading with decorative lines. mirrors Fora's style */}
           <div className="flex items-center gap-4 mb-10">
             <div className="flex-1 h-px bg-[#BFAF8A]/40" />
             <h2 className="font-display text-2xl text-[#384959] uppercase tracking-widest whitespace-nowrap">
@@ -198,7 +198,7 @@ export default function PreferredPartners() {
             <div className="flex-1 h-px bg-[#BFAF8A]/40" />
           </div>
 
-          {/* 3-col grid — 2-col tablet — 1-col mobile */}
+          {/* 3-col grid. 2-col tablet. 1-col mobile */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {filtered.map((partner) => (
               <PartnerCard key={partner.id} partner={partner} />
@@ -210,7 +210,7 @@ export default function PreferredPartners() {
       {/* ── Favourite properties ─────────────────────────────────────────────────── */}
       <section className="py-20 px-6 bg-[#FAF8F5]">
         <div className="container mx-auto">
-          {/* Section heading — stacks on mobile, inline with rules on desktop */}
+          {/* Section heading. stacks on mobile, inline with rules on desktop */}
           <div className="flex flex-col md:flex-row items-center gap-4 mb-10">
             <div className="hidden md:block flex-1 h-px bg-[#BFAF8A]/40" />
             <h2 className="font-display text-xl md:text-2xl text-[#384959] uppercase tracking-widest text-center">

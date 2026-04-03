@@ -1,5 +1,5 @@
 /**
- * InfinityPoolBannerSection — Full-width banner image with overlay text
+ * InfinityPoolBannerSection. Full-width banner image with overlay text
  * Placed after the Story Unfold section.
  * Uses the infinity pool / resort banner image.
  */

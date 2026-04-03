@@ -2,7 +2,7 @@
  * Book / Begin Planning Page
  * Route: /book
  *
- * Design: Luxury consultation form — split layout, BTA blue left panel,
+ * Design: Luxury consultation form. split layout, BTA blue left panel,
  * clean form on right. Playfair Display headings, gold accents.
  * No emojis. No aggressive fonts.
  */
@@ -56,7 +56,7 @@ export default function Book() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Form submission — connect to your preferred CRM or email service
+    // Form submission. connect to your preferred CRM or email service
     setSubmitted(true);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -123,7 +123,7 @@ export default function Book() {
           <section className="py-20 px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
             <div className="grid lg:grid-cols-3 gap-16">
 
-              {/* Left — What to Expect */}
+              {/* Left. What to Expect */}
               <div className="lg:col-span-1">
                 <p
                   className="text-[#bfaf8a] tracking-[0.25em] text-xs uppercase mb-4"
@@ -187,7 +187,7 @@ export default function Book() {
                 </div>
               </div>
 
-              {/* Right — Form */}
+              {/* Right. Form */}
               <form
                 onSubmit={handleSubmit}
                 className="lg:col-span-2 space-y-8"

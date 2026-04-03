@@ -1,5 +1,5 @@
 /**
- * AboutSections — Who We Are + Stats + Philosophy + Curated Hotels
+ * AboutSections. Who We Are + Stats + Philosophy + Curated Hotels
  *
  * Official BTA Brand Colors:
  *   Champagne Gold:  #BFAF8A  → backgrounds, accents, buttons, eyebrows
@@ -34,7 +34,7 @@ export function WhoWeAreSection() {
 
 export function StatsSection() {
   return (
-    // Dark Navy bar — keeps strong contrast, matches Figma
+    // Dark Navy bar. keeps strong contrast, matches Figma
     <section className="bg-[#384959] py-14 px-6">
       <div className="max-w-[1440px] mx-auto grid grid-cols-3 gap-8 text-center">
         {stats.map((stat) => (
@@ -57,7 +57,7 @@ export function StatsSection() {
 
 export function PhilosophySection() {
   return (
-    // Warm Stone background — clean, airy
+    // Warm Stone background. clean, airy
     <section className="bg-[#faf9f6] py-20 px-6">
       <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         {/* Left: Text */}

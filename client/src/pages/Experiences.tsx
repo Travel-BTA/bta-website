@@ -122,18 +122,21 @@ export default function Experiences() {
           style={{ background: "linear-gradient(to top, rgba(47,47,47,0.88) 0%, rgba(47,47,47,0.3) 55%, rgba(47,47,47,0.15) 100%)" }}
         />
         <div className="relative z-10 w-full px-8 md:px-16 pb-16">
-          <p className="text-xs tracking-[0.25em] uppercase mb-4" style={{ color: "#bfaf8a", fontFamily: "'Cormorant Garamond', serif" }}>
+          {/* Breadcrumb: white on photo. Champagne Gold only on plain backgrounds */}
+          <p className="text-xs tracking-[0.25em] uppercase mb-4" style={{ color: "rgba(255,255,255,0.75)", fontFamily: "'Instrument Serif', Georgia, serif" }}>
             <Link href="/" className="hover:underline">Home</Link>
             <span className="mx-2">›</span>
             Experiences
           </p>
-          <p className="text-2xl md:text-3xl mb-2" style={{ color: "#bfaf8a", fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}>
+          {/* Allura script: white on photo */}
+          <p className="text-2xl md:text-3xl mb-2" style={{ color: "rgba(255,255,255,0.9)", fontFamily: "'Allura', cursive", fontStyle: "italic" }}>
             Curated Around the Globe
           </p>
-          <h1 className="text-5xl md:text-7xl font-light text-white mb-6" style={{ fontFamily: "'Cormorant Garamond', serif", letterSpacing: "-0.02em" }}>
+          {/* H1: Instrument Serif ALL CAPS white */}
+          <h1 className="text-5xl md:text-7xl uppercase mb-6" style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400, color: "#ffffff", letterSpacing: "0.06em", lineHeight: 1.1 }}>
             Experiences
           </h1>
-          <p className="text-white/80 max-w-xl text-base leading-relaxed" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+          <p className="text-white/80 max-w-xl text-base leading-relaxed" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 400 }}>
             The moments that define a journey are rarely the ones you planned. We design the conditions for those moments to happen through access, expertise, and the relationships we have built over decades.
           </p>
         </div>
