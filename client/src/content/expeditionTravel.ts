@@ -34,7 +34,7 @@ export const expeditionTravelData: JourneySubPageData = {
       description:
         "The most remote and pristine wilderness on earth. We arrange passage aboard expedition vessels with the finest naturalist teams, Zodiac landings among penguin colonies, and nights under the southern lights.",
       imageUrl:
-        "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/antarctica-penguins_19073f8f.webp",
+        "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/antarctica-king-penguins_a9c917f2.webp",
     },
     {
       name: "Galápagos Islands",
