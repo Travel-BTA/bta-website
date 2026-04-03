@@ -32,8 +32,8 @@ const CRUISE_LINES = [
     ],
     culinary:
       "Fresh, locally sourced ingredients wherever possible. The culinary team incorporates destination flavors — fresh-caught seafood in Alaska, local produce in the Galápagos. Cooking demonstrations and local tastings are offered on select voyages.",
-    // Galápagos Islands — iconic expedition destination, volcanic landscape and wildlife
-    image: "https://images.unsplash.com/photo-1551415923-a2297c7fda79?auto=format&fit=crop&w=1400&q=80",
+    // Galápagos Islands — generated hyper-realistic image: expedition vessel near volcanic island
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/galapagos-cruise_05416f38.png",
     link: "https://www.expeditions.com",
     linkLabel: "Explore Lindblad Expeditions",
     imageRight: false,
@@ -54,8 +54,8 @@ const CRUISE_LINES = [
     ],
     culinary:
       "S.A.L.T. (Sea And Land Taste) culinary program aboard expedition ships. Destination-inspired menus change with every port of call. Butler service in all suites.",
-    // Antarctica — icebergs and dramatic polar seascape
-    image: "https://images.unsplash.com/photo-1517783999520-f068d7431a60?auto=format&fit=crop&w=1400&q=80",
+    // Antarctica — generated hyper-realistic image: icebergs and polar seascape
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/antarctica-cruise_42a0bf80.png",
     link: "https://www.silversea.com/expedition-cruises.html",
     linkLabel: "Explore Silversea Expeditions",
     imageRight: true,
@@ -76,8 +76,8 @@ const CRUISE_LINES = [
     ],
     culinary:
       "Norwegian cuisine featuring locally sourced ingredients — fresh seafood, Arctic char, and regional specialties. The Lindstrøm restaurant offers fine dining inspired by the destinations. Cooking demonstrations and local food experiences at ports.",
-    // Norwegian fjords — dramatic cliffs and calm waters, no sunny beach
-    image: "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=1400&q=80",
+    // Aurora borealis over Norway — generated hyper-realistic image: northern lights at sea
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/aurora-norway-cruise_0cae3f6b.png",
     link: "https://www.hurtigruten.com",
     linkLabel: "Explore Hurtigruten",
     imageRight: false,
@@ -98,8 +98,8 @@ const CRUISE_LINES = [
     ],
     culinary:
       "Hearty, warming cuisine designed for polar expeditions. Fresh ingredients sourced at ports where possible. The galley team accommodates all dietary requirements. Hot chocolate and warming beverages always available after excursions.",
-    // Arctic — polar bear territory, ice floes, no tropical beach
-    image: "https://images.unsplash.com/photo-1520116468816-95b69f847357?auto=format&fit=crop&w=1400&q=80",
+    // Alaska fjord — generated hyper-realistic image: glaciers and expedition zodiac
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/alaska-fjord-cruise_99e341b2.png",
     link: "https://www.quarkexpeditions.com",
     linkLabel: "Explore Quark Expeditions",
     imageRight: true,
@@ -120,8 +120,8 @@ const CRUISE_LINES = [
     ],
     culinary:
       "Fresh, seasonal ingredients with a focus on sustainability. The culinary team creates destination-inspired menus. Cooking demonstrations and local food experiences are offered on select voyages.",
-    // Alaska — glaciers, wilderness, dramatic mountain and ice scenery
-    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=1400&q=80",
+    // Antarctica (Aurora) — generated hyper-realistic image: polar expedition scenery
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/antarctica-cruise_42a0bf80.png",
     link: "https://www.auroraexpeditions.com.au",
     linkLabel: "Explore Aurora Expeditions",
     imageRight: false,
@@ -145,7 +145,7 @@ export default function ExpeditionCruises() {
       {/* ── Hero — Antarctica iceberg scene, strong overlay for text legibility ── */}
       <section className="relative h-[75vh] min-h-[520px] flex items-end overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1517783999520-f068d7431a60?auto=format&fit=crop&w=2400&q=80"
+          src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/antarctica-cruise_42a0bf80.png"
           alt="Expedition ship navigating icy Antarctic waters"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />

@@ -31,8 +31,8 @@ const CRUISE_LINES = [
     ],
     culinary:
       "Chef's Table: an intimate specialty restaurant featuring a rotating menu of regional dishes. Daily cooking demonstrations, wine pairing dinners, and market visits bring each destination's flavors aboard.",
-    // Rhine valley — vineyards and medieval villages
-    image: "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1400&q=80",
+    // Rhine Gorge — generated hyper-realistic image: luxury river ship at golden hour
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/rhine-gorge-cruise_5b5d3935.png",
     link: "https://inspires.to/experiences/amawaterways-a-new-expression-and-a-deeper-connection-xw4kl4",
     linkLabel: "Explore AmaWaterways",
     imageRight: false,
@@ -54,8 +54,8 @@ const CRUISE_LINES = [
     ],
     culinary:
       "Destination-driven menus change daily, sourced from local markets. A dedicated sommelier curates wine pairings for every meal. Cooking classes and market visits are offered on select itineraries.",
-    // Danube — Budapest at dusk, iconic European river scene
-    image: "https://images.unsplash.com/photo-1519677100203-a0e668c92439?auto=format&fit=crop&w=1400&q=80",
+    // Bordeaux quayside at dusk — generated hyper-realistic image: Garonne River at golden hour
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/bordeaux-river-cruise_49929b54.png",
     link: "https://www.uniworld.com",
     linkLabel: "Explore Uniworld",
     imageRight: true,
@@ -98,8 +98,8 @@ const CRUISE_LINES = [
     ],
     culinary:
       "Destination-inspired menus featuring local ingredients. Exclusive dining events at private venues — châteaux, historic estates, and local restaurants not accessible to other cruise lines.",
-    // Mekong Delta — lush tropical river landscape
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1400&q=80",
+    // Mekong Delta — generated hyper-realistic image: sunrise on the Mekong
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/mekong-delta-cruise_f8812a65.png",
     link: "https://www.tauck.com/river-cruises",
     linkLabel: "Explore Tauck",
     imageRight: true,
@@ -120,8 +120,8 @@ const CRUISE_LINES = [
     ],
     culinary:
       "Locally sourced, destination-inspired menus rotate daily. The Chef's Table offers an intimate specialty dining experience. Cooking demonstrations and market visits are featured on select sailings.",
-    // Amazon river — lush jungle waterway
-    image: "https://images.unsplash.com/photo-1534430480872-3498386e7856?auto=format&fit=crop&w=1400&q=80",
+    // Amazon River — generated hyper-realistic image: jungle canopy and tropical river
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/amazon-river-cruise_a295bd30.jpg",
     link: "https://www.scenicusa.com",
     linkLabel: "Explore Scenic",
     imageRight: false,
@@ -142,8 +142,8 @@ const CRUISE_LINES = [
     ],
     culinary:
       "European-inspired menus featuring regional specialties. Select beverages included with meals. Cooking demonstrations on select sailings.",
-    // Rhine gorge — dramatic European river scenery
-    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1400&q=80",
+    // Rhine Gorge (Riverside) — generated hyper-realistic image: Rhine valley at golden hour
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/rhine-gorge-cruise_5b5d3935.png",
     link: "https://www.riverside-guide.com/copilot",
     linkLabel: "Explore Riverside",
     imageRight: true,
@@ -159,7 +159,7 @@ export default function RiverCruises() {
       {/* Stronger overlay (via/50) ensures white text is legible over any image */}
       <section className="relative h-[75vh] min-h-[520px] flex items-end overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=2400&q=80"
+          src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/rhine-gorge-cruise_5b5d3935.png"
           alt="Luxury river cruise ship sailing through a European waterway at golden hour"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
