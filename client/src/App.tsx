@@ -26,6 +26,9 @@ import JulieRose from "@/pages/advisors/JulieRose";
 import Journal from "@/pages/Journal";
 import BlogPost from "@/pages/BlogPost";
 import MediaManager from "@/pages/MediaManager";
+import PhilanthropicInitiatives from "./pages/PhilanthropicInitiatives";
+import PreferredPartners from "./pages/PreferredPartners";
+import PartnerDetail from "./pages/PartnerDetail";
 
 function Router() {
   return (
@@ -41,7 +44,6 @@ function Router() {
       <Route path={"/land-journeys/cultural"} component={CulturalJourneys} />
       <Route path={"/book"} component={Book} />
       <Route path={"/about"} component={About} />
-      {/* Merged from boutique-travel-advisors repo */}
       {/* HomeLegacy — original homepage kept for reference at /home-legacy */}
       <Route path={"/home-legacy"} component={HomeLegacy} />
       {/* Cruise pages */}
@@ -62,7 +64,11 @@ function Router() {
       <Route path={"/advisors/julie-rose"} component={JulieRose} />
       {/* Admin */}
       <Route path={"/admin/media"} component={MediaManager} />
-
+      {/* New pages */}
+      <Route path={"/philanthropic-initiatives"} component={PhilanthropicInitiatives} />
+      {/* Preferred Partners hub + individual partner pages */}
+      <Route path={"/preferred-partners"} component={PreferredPartners} />
+      <Route path={"/preferred-partners/:id"} component={PartnerDetail} />
       {/* Fallback */}
       <Route path={"/404"} component={NotFound} />
       <Route component={NotFound} />
