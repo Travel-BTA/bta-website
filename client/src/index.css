@@ -473,6 +473,31 @@
     border-radius: 0 !important;
   }
 
+  /* ── BOOK WITH VIP AMENITIES button ──
+     WHY: WordPress embeds inline styles (padding:16px 40px, background:#040619)
+     directly on the <a> tag. Inline styles have higher specificity than class
+     selectors, so we use !important here to guarantee our values win.
+     The [href*="luxurytravelclubs"] attribute selector targets this button
+     precisely without touching any other links in the article. */
+  .blog-body a[href*="luxurytravelclubs"] {
+    display: inline-block !important;
+    padding: 9px 24px !important;
+    background-color: #2f2f2f !important;
+    color: #ffffff !important;
+    font-family: 'Cormorant SC', 'Cormorant Garamond', serif !important;
+    font-size: 0.7rem !important;
+    letter-spacing: 0.18em !important;
+    text-transform: uppercase !important;
+    text-decoration: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    transition: background-color 0.25s ease !important;
+  }
+
+  .blog-body a[href*="luxurytravelclubs"]:hover {
+    background-color: #9C886A !important;
+  }
+
   /* ── WordPress CTA buttons ── */
   .blog-body .wp-block-buttons,
   .blog-body .wp-block-button {
