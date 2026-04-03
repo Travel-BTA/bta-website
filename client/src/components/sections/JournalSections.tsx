@@ -5,7 +5,7 @@
  *   Champagne Gold:  #BFAF8A  → eyebrows, accents, icons, hover states, Instagram bg
  *   Aegean Blue:     #384959  → text on light backgrounds
  *   Linen White:     #FAF0F6  → text on dark/navy/gold backgrounds
- *   Warm Stone:      #EDEAE4  → testimonials background
+ *   Warm Stone:      #FAF0F6  → testimonials background
  *   Dark Navy:       #384959  → journal section background, footer
  */
 
@@ -94,7 +94,7 @@ export function TestimonialsSection() {
 
   return (
     // Warm Stone background — clean, airy
-    <section className="bg-[#EDEAE4] py-20 px-6">
+    <section className="bg-[#FAF0F6] py-20 px-6">
       <div className="max-w-[1440px] mx-auto">
         {/* Desktop: 3-across layout with side arrows */}
         <div className="hidden md:flex items-start gap-6">

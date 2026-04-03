@@ -7,7 +7,7 @@
  *   Champagne Gold:  #BFAF8A  → primary accent, buttons, eyebrows, borders
  *   Aegean Blue:     #384959  → text on light backgrounds, dark accents, nav
  *   Linen White:     #FAF0F6  → text on dark backgrounds, nav overlay text
- *   Warm Stone:      #EDEAE4  → section backgrounds, secondary surfaces
+ *   Warm Stone:      #FAF0F6  → section backgrounds, secondary surfaces
  *   Charcoal Ink:    #2F2F2F  → primary body text on light backgrounds
  *
  * Typography:
@@ -29,7 +29,7 @@
   --color-bta-gold-dark:  oklch(0.65 0.06 72);      /* #9E8661 — deeper gold for hover */
   --color-bta-aegean:     oklch(0.35 0.04 230);     /* #384959 — Aegean Blue */
   --color-bta-linen:      oklch(0.96 0.02 340);     /* #FAF0F6 — Linen White */
-  --color-bta-stone:      oklch(0.93 0.01 80);      /* #EDEAE4 — Warm Stone */
+  --color-bta-stone:      oklch(0.93 0.01 80);      /* #FAF0F6 — Warm Stone */
   --color-bta-charcoal:   oklch(0.23 0.00 0);       /* #2F2F2F — Charcoal Ink */
   --color-bta-navy:       oklch(0.17 0.04 255);     /* #384959 — Dark Navy (stats bar, footer) */
 
@@ -63,7 +63,7 @@
   --radius: 0rem; /* Sharp corners — luxury feel */
 
   /* Warm Stone as page background, Charcoal Ink as body text */
-  --background:           oklch(0.93 0.01 80);    /* #EDEAE4 Warm Stone */
+  --background:           oklch(0.93 0.01 80);    /* #FAF0F6 Warm Stone */
   --foreground:           oklch(0.23 0.00 0);     /* #2F2F2F Charcoal Ink */
   --card:                 oklch(0.97 0.005 80);   /* near-white card */
   --card-foreground:      oklch(0.23 0.00 0);

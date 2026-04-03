@@ -8,7 +8,7 @@
  * 4. Exclusive Planning Packages CTA
  *
  * Design: BTA brand guide — Instrument Serif headings, Cormorant Garamond body,
- * Champagne Gold #bfa88a, Aegean Blue #384959, Linen White #faf9f6.
+ * Champagne Gold #bfa88a, Aegean Blue #384959, Linen White #faf0f6.
  */
 
 import { Link } from "wouter";
@@ -149,7 +149,7 @@ export default function CustomItineraries() {
       </section>
 
       {/* ── Intro / Virtuoso ──────────────────────────────────────────────── */}
-      <section className="bg-[#faf9f6] py-20 px-6">
+      <section className="bg-[#faf0f6] py-20 px-6">
         <div className="max-w-3xl mx-auto text-center">
           {/* Virtuoso badge */}
           <div className="flex items-center justify-center gap-3 mb-10">
@@ -183,7 +183,7 @@ export default function CustomItineraries() {
       </section>
 
       {/* ── Thin gold divider ─────────────────────────────────────────────── */}
-      <div className="w-full h-px bg-[#edeac4]" />
+      <div className="w-full h-px bg-[#edcac4]" />
 
       {/* ── Journey Sections ──────────────────────────────────────────────── */}
 
@@ -214,7 +214,7 @@ export default function CustomItineraries() {
         imageUrl={IMAGES.cruise}
         imageAlt="Luxury cruise ship illuminated at night"
         imageLeft={true}
-        bgColor="#faf9f6"
+        bgColor="#faf0f6"
       />
 
       {/* 3. Epicurean */}
@@ -244,7 +244,7 @@ export default function CustomItineraries() {
         imageUrl={IMAGES.romance}
         imageAlt="Elegant destination wedding ceremony at Lake Como"
         imageLeft={true}
-        bgColor="#faf9f6"
+        bgColor="#faf0f6"
       />
 
       {/* 5. Wellness */}
@@ -275,7 +275,7 @@ export default function CustomItineraries() {
         imageUrl={IMAGES.adventure}
         imageAlt="Cyclists on a scenic coastal road"
         imageLeft={true}
-        bgColor="#faf9f6"
+        bgColor="#faf0f6"
       />
 
       {/* 7. Corporate Educational */}
@@ -294,7 +294,7 @@ export default function CustomItineraries() {
       />
 
       {/* ── Exclusive Planning Packages — editorial inline section ─────────── */}
-      <section className="bg-[#faf9f6] py-20 px-6">
+      <section className="bg-[#faf0f6] py-20 px-6">
         <div className="max-w-5xl mx-auto">
           {/* Top rule + label */}
           <div className="flex items-center gap-6 mb-12">

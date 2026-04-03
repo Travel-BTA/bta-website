@@ -5,7 +5,7 @@
  * Viking Ocean, Oceania Cruises, Azamara, Virgin Voyages
  *
  * Design: BTA brand guide — Instrument Serif headings, Cormorant Garamond body,
- * Champagne Gold #bfa88a, Aegean Blue #384959, Linen White #faf9f6.
+ * Champagne Gold #bfa88a, Aegean Blue #384959, Linen White #faf0f6.
  */
 
 import { Link } from "wouter";
@@ -143,7 +143,7 @@ export default function PremiumOcean() {
       </section>
 
       {/* ── Intro ─────────────────────────────────────────────────────────── */}
-      <section className="bg-[#faf9f6] py-20 px-6">
+      <section className="bg-[#faf0f6] py-20 px-6">
         <div className="max-w-[1440px] mx-auto px-8 lg:px-14">
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-8">
@@ -167,7 +167,7 @@ export default function PremiumOcean() {
 
       {/* ── Cruise Line Sections ──────────────────────────────────────────── */}
       {CRUISE_LINES.map((line, index) => (
-        <section key={line.id} className={index % 2 === 0 ? "bg-white" : "bg-[#faf9f6]"}>
+        <section key={line.id} className={index % 2 === 0 ? "bg-white" : "bg-[#faf0f6]"}>
           <div className="max-w-[1440px] mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2">
               <div className={`relative overflow-hidden ${line.imageRight ? "lg:order-2" : "lg:order-1"}`} style={{ minHeight: "540px" }}>

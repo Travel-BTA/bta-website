@@ -62,7 +62,7 @@ export default function Book() {
   };
 
   return (
-    <div className="min-h-screen bg-[#FAF8F5] text-[#2F2F2F]">
+    <div className="min-h-screen bg-[#FAF0F6] text-[#2F2F2F]">
       <NavBar />
 
       {submitted ? (

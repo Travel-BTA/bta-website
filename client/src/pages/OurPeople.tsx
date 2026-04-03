@@ -3,7 +3,7 @@
  *
  * Design language mirrors the Julie Rose advisor page:
  * - max-w-[1440px] mx-auto px-8 lg:px-14 container
- * - FAF8F4 cream background, white alternating sections
+ * - FAF0F6 Linen White background, white alternating sections
  * - Allura script eyebrows, Instrument Serif headings
  * - Cormorant Garamond body, font-smallcaps labels
  * - Gold #bfa88a accents throughout
@@ -259,7 +259,7 @@ export default function OurPeople() {
       </section>
 
       {/* ── Intro ─────────────────────────────────────────────────────────── */}
-      <section className="bg-[#FAF8F4] py-24 lg:py-32">
+      <section className="bg-[#FAF0F6] py-24 lg:py-32">
         <div className="max-w-[1440px] mx-auto px-8 lg:px-14">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             {/* Left: heading */}
@@ -326,7 +326,7 @@ export default function OurPeople() {
       </section>
 
       {/* ── Inhouse Advisors ──────────────────────────────────────────────── */}
-      <section className="bg-[#FAF8F4] py-24 lg:py-32">
+      <section className="bg-[#FAF0F6] py-24 lg:py-32">
         <div className="max-w-[1440px] mx-auto px-8 lg:px-14">
           <SectionHeader
             eyebrow="Our In-House Team"
@@ -356,7 +356,7 @@ export default function OurPeople() {
       </section>
 
       {/* ── Luxury Travel Coaches ─────────────────────────────────────────── */}
-      <section className="bg-[#FAF8F4] py-24 lg:py-32">
+      <section className="bg-[#FAF0F6] py-24 lg:py-32">
         <div className="max-w-[1440px] mx-auto px-8 lg:px-14">
           <SectionHeader
             eyebrow="Guiding Your Journey"

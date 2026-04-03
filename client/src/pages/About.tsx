@@ -3,7 +3,7 @@
  * Route: /about
  *
  * Design Philosophy: Luxury, Elevated, Modern, Sophisticated
- * Colors: Champagne Gold (#BFAF8A), Aegean Blue (#384959), Warm Stone (#EDEAE4)
+ * Colors: Champagne Gold (#BFAF8A), Aegean Blue (#384959), Warm Stone (#FAF0F6)
  * Typography: Playfair Display (headings), Cormorant Garamond (body/italic)
  *
  * Layout:

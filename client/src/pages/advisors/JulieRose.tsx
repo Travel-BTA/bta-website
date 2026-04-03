@@ -54,7 +54,7 @@ function HeroSection() {
   return (
     <>
     {/* ── MOBILE hero: cream bg, text top, photo bottom ── */}
-    <section className="block lg:hidden bg-[#FAF8F4]">
+    <section className="block lg:hidden bg-[#FAF0F6]">
       {/* Text block */}
       <div className="px-6 pt-10 pb-8">
         <h1
@@ -159,7 +159,7 @@ function HeroSection() {
 function MeetSection() {
   const m = advisor.meet;
   return (
-    <section className="bg-[#FAF8F4] py-24 lg:py-32">
+    <section className="bg-[#FAF0F6] py-24 lg:py-32">
       <div className="max-w-[1440px] mx-auto px-8 lg:px-14 grid lg:grid-cols-2 gap-16 items-center">
         {/* Photos — overlapping layout */}
         <div className="relative h-[320px] md:h-[440px] lg:h-[620px]">
@@ -168,7 +168,7 @@ function MeetSection() {
             <img src={m.photoMain} alt={m.eyebrow} className="w-full h-full object-cover object-top" />
           </div>
           {/* Accent smaller photo — overlapping bottom-right */}
-          <div className="absolute right-0 bottom-0 w-[52%] h-[55%] overflow-hidden shadow-xl border-4 border-[#FAF8F4]">
+          <div className="absolute right-0 bottom-0 w-[52%] h-[55%] overflow-hidden shadow-xl border-4 border-[#FAF0F6]">
             <img src={m.photoAccent} alt="Travel moment" className="w-full h-full object-cover" />
           </div>
           {/* Gold accent line */}
@@ -256,7 +256,7 @@ function StatsBar() {
 function HotelsSection() {
   const h = advisor.hotels;
   return (
-    <section className="bg-[#edeac4] py-24 lg:py-32">
+    <section className="bg-[#edcac4] py-24 lg:py-32">
       <div className="max-w-[1440px] mx-auto px-8 lg:px-14">
         {/* Header */}
         <div className="text-center mb-16">
@@ -416,7 +416,7 @@ function SpecialtiesSection() {
 function PhilosophySection() {
   const p = advisor.philosophy;
   return (
-    <section className="bg-[#f5f0e6] py-24 lg:py-32">
+    <section className="bg-[#faf0f6] py-24 lg:py-32">
       <div className="max-w-[1440px] mx-auto px-8 lg:px-14">
         {/* Header */}
         <div className="text-center mb-6">
@@ -715,7 +715,7 @@ function ContactSection() {
   };
 
   return (
-    <section id="contact" className="bg-[#edeac4] py-24 lg:py-32">
+    <section id="contact" className="bg-[#edcac4] py-24 lg:py-32">
       <div className="max-w-[1440px] mx-auto px-8 lg:px-14 grid lg:grid-cols-2 gap-16">
         {/* Left — Contact Form */}
         <div>

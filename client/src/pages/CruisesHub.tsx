@@ -13,7 +13,7 @@
  * 6. FinalCta + Footer (via PageLayout)
  *
  * Design: BTA brand guide — Instrument Serif headings, Cormorant Garamond body,
- * Champagne Gold #bfa88a, Aegean Blue #384959, Linen White #faf9f6.
+ * Champagne Gold #bfa88a, Aegean Blue #384959, Linen White #faf0f6.
  */
 
 import { Link } from "wouter";
@@ -122,7 +122,7 @@ export default function CruisesHub() {
       </section>
 
       {/* ── Intro + Quote ─────────────────────────────────────────────────── */}
-      <section className="bg-[#faf9f6] py-24 px-6">
+      <section className="bg-[#faf0f6] py-24 px-6">
         <div className="max-w-[1440px] mx-auto px-8 lg:px-14">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
 
@@ -318,7 +318,7 @@ export default function CruisesHub() {
       </section>
 
       {/* ── Private Charters ──────────────────────────────────────────────── */}
-      <section className="bg-[#faf9f6]">
+      <section className="bg-[#faf0f6]">
         <div className="grid grid-cols-1 lg:grid-cols-2">
 
           {/* Image — left */}

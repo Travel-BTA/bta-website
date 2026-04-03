@@ -40,7 +40,7 @@ export default function LandJourneys() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#FAF8F5] text-[#2F2F2F] font-serif">
+    <div className="min-h-screen bg-[#FAF0F6] text-[#2F2F2F] font-serif">
       {/* ── Navigation ─────────────────────────────────────────────────── */}
       <NavBar />
 
@@ -136,7 +136,7 @@ export default function LandJourneys() {
       </section>
 
       {/* ── Journey Categories ─────────────────────────────────────────── */}
-      <section className="py-24 bg-[#F0EDE8]">
+      <section className="py-24 bg-[#FAF0F6]">
         <div className="px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
           <div className="text-center mb-16">
             <p
@@ -297,7 +297,7 @@ export default function LandJourneys() {
       </section>
 
       {/* ── What Sets Us Apart ─────────────────────────────────────────── */}
-      <section className="py-24 bg-[#F0EDE8]">
+      <section className="py-24 bg-[#FAF0F6]">
         <div className="px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
           <div className="text-center mb-16">
             <p

@@ -6,7 +6,7 @@
  * Design references: philanthropic-initiatives page card grid pattern.
  *
  * BTA brand: Instrument Serif headings, Cormorant Garamond body,
- * Champagne Gold #bfa88a, Aegean Blue #384959, Linen White #faf9f6.
+ * Champagne Gold #bfa88a, Aegean Blue #384959, Linen White #faf0f6.
  */
 
 import { Link } from "wouter";
@@ -437,7 +437,7 @@ export default function PartnerDirectory() {
       </section>
 
       {/* ── Cruise Collections ────────────────────────────────────────────── */}
-      <section className="bg-[#faf9f6] py-20">
+      <section className="bg-[#faf0f6] py-20">
         <div className="max-w-[1440px] mx-auto px-8 lg:px-14">
           <SectionHeader
             eyebrow="Co-Branded Partner Platforms"

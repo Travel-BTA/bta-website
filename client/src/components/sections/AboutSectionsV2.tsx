@@ -14,11 +14,11 @@ export function WhoWeAreSection() {
   return (
     <section className="bg-[#bfa88a] py-24 px-6 text-center">
       <div className="max-w-2xl mx-auto">
-        <p className="bta-eyebrow text-[#faf9f6]/90 mb-4">{whoWeAre.eyebrow}</p>
-        <h2 className="bta-section-title text-[#faf9f6] text-4xl md:text-5xl mb-8" style={{ fontWeight: 400 }}>
+        <p className="bta-eyebrow text-[#faf0f6]/90 mb-4">{whoWeAre.eyebrow}</p>
+        <h2 className="bta-section-title text-[#faf0f6] text-4xl md:text-5xl mb-8" style={{ fontWeight: 400 }}>
           {whoWeAre.headline}
         </h2>
-        <p className="font-body text-[#faf9f6]/90 text-xl md:text-2xl leading-relaxed mb-10" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+        <p className="font-body text-[#faf0f6]/90 text-xl md:text-2xl leading-relaxed mb-10" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
           {whoWeAre.body}
         </p>
         <a href={whoWeAre.cta.href} className="bta-btn-gold">
@@ -36,7 +36,7 @@ export function StatsSection() {
         {stats.map((stat) => (
           <div key={stat.label}>
             <div
-              className="font-display text-[#faf9f6] text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-3"
+              className="font-display text-[#faf0f6] text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-3"
               style={{ fontWeight: 300 }}
             >
               {stat.value}
@@ -53,7 +53,7 @@ export function StatsSection() {
 
 export function PhilosophySection() {
   return (
-    <section className="bg-[#edeac4] py-24 px-6">
+    <section className="bg-[#edcac4] py-24 px-6">
       <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-24 items-center">
         {/* Left: Text */}
         <div>
@@ -118,13 +118,13 @@ export function CuratedHotelsSection() {
       <div className="relative h-full flex items-center justify-start px-14 lg:px-20">
         <div>
           <p
-            className="text-[#faf9f6] text-5xl md:text-6xl lg:text-7xl leading-tight"
+            className="text-[#faf0f6] text-5xl md:text-6xl lg:text-7xl leading-tight"
             style={{ fontFamily: "'Allura', 'Cormorant Garamond', serif", fontWeight: 400 }}
           >
             {curatedHotels.scriptLine1}
           </p>
           <p
-            className="text-[#faf9f6] text-5xl md:text-6xl lg:text-7xl leading-tight"
+            className="text-[#faf0f6] text-5xl md:text-6xl lg:text-7xl leading-tight"
             style={{ fontFamily: "'Allura', 'Cormorant Garamond', serif", fontWeight: 400 }}
           >
             {curatedHotels.scriptLine2}

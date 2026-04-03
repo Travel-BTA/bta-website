@@ -5,7 +5,7 @@
  *   Champagne Gold:  #BFAF8A  → backgrounds, accents, buttons, eyebrows
  *   Aegean Blue:     #384959  → text on light backgrounds, dark accents
  *   Linen White:     #FAF0F6  → text on dark/gold backgrounds
- *   Warm Stone:      #EDEAE4  → section backgrounds
+ *   Warm Stone:      #FAF0F6  → section backgrounds
  *   Charcoal Ink:    #2F2F2F  → body text
  *   Dark Navy:       #384959  → stats bar, footer
  */
@@ -58,7 +58,7 @@ export function StatsSection() {
 export function PhilosophySection() {
   return (
     // Warm Stone background — clean, airy
-    <section className="bg-[#EDEAE4] py-20 px-6">
+    <section className="bg-[#FAF0F6] py-20 px-6">
       <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         {/* Left: Text */}
         <div>

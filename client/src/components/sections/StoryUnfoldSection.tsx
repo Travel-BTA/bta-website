@@ -30,7 +30,7 @@ export const storyUnfoldItineraries = [
 
 export function StoryUnfoldSection() {
   return (
-    <section className="bg-[#edeac4] py-24 px-6">
+    <section className="bg-[#edcac4] py-24 px-6">
       <div className="max-w-[1440px] mx-auto">
         {/* Header — left aligned */}
         <div className="text-left mb-14">
@@ -75,7 +75,7 @@ export function StoryUnfoldSection() {
                   {item.destination}
                 </p>
                 <h3
-                  className="font-display text-[#faf9f6] text-2xl md:text-3xl mb-4 leading-snug"
+                  className="font-display text-[#faf0f6] text-2xl md:text-3xl mb-4 leading-snug"
                   style={{ fontWeight: 400 }}
                 >
                   {item.title}

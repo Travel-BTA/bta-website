@@ -45,7 +45,7 @@ export function ExclusiveBenefitsSection() {
         {/* Label */}
         <div className="flex-shrink-0 lg:w-56">
           <h2
-            className="bta-section-title text-[#faf9f6] text-3xl md:text-4xl leading-tight"
+            className="bta-section-title text-[#faf0f6] text-3xl md:text-4xl leading-tight"
             style={{ fontWeight: 400 }}
           >
             {exclusiveBenefits.headline.split("\n").map((line, i) => (
@@ -68,7 +68,7 @@ export function ExclusiveBenefitsSection() {
                   </svg>
                 )}
               </div>
-              <span className="font-smallcaps text-[#faf9f6]/75 text-xs tracking-[0.14em] uppercase leading-snug">
+              <span className="font-smallcaps text-[#faf0f6]/75 text-xs tracking-[0.14em] uppercase leading-snug">
                 {benefit.label}
               </span>
             </div>
@@ -106,7 +106,7 @@ export function VipAccessSection() {
   };
 
   return (
-    <section className="bg-[#edeac4]">
+    <section className="bg-[#edcac4]">
       {/* Two-column layout: photo left | booking right */}
       <div className="flex flex-col lg:flex-row min-h-[600px]">
 
@@ -121,7 +121,7 @@ export function VipAccessSection() {
         </div>
 
         {/* RIGHT — Title + native booking form */}
-        <div className="flex-1 bg-[#edeac4] flex flex-col justify-center px-8 md:px-12 lg:px-16 py-12 lg:py-16">
+        <div className="flex-1 bg-[#edcac4] flex flex-col justify-center px-8 md:px-12 lg:px-16 py-12 lg:py-16">
           {/* Headline */}
           <h2
             className="bta-section-title text-[#bfa88a] text-3xl md:text-4xl lg:text-5xl leading-tight mb-3"
