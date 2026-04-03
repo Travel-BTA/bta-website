@@ -66,10 +66,10 @@ export const partners: Partner[] = [
       "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80&auto=format&fit=crop",
     accentColor: "#1a1a2e",
     benefits: [
-      "Daily breakfast for two",
-      "USD 100 hotel credit",
-      "One category room upgrade",
-      "Early check-in / late check-out",
+      "Daily breakfast for two guests",
+      "USD 100 hotel credit per stay",
+      "Priority room upgrade upon arrival (subject to availability)",
+      "Early check-in and late check-out (subject to availability)",
       "Complimentary welcome amenity",
     ],
     properties: [
@@ -124,11 +124,10 @@ export const partners: Partner[] = [
       "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=800&q=80&auto=format&fit=crop",
     accentColor: "#2c3e50",
     benefits: [
-      "Daily breakfast for two",
-      "USD 100 property credit",
-      "Room upgrade on arrival (subject to availability)",
-      "Complimentary welcome gift",
-      "Early check-in / late check-out",
+      "Daily breakfast for two guests",
+      "USD 100 property credit per stay",
+      "Priority room upgrade upon arrival (subject to availability)",
+      "Early check-in and late check-out (subject to availability)",
     ],
     properties: [
       {
@@ -170,11 +169,11 @@ export const partners: Partner[] = [
       "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800&q=80&auto=format&fit=crop",
     accentColor: "#1b4332",
     benefits: [
-      "Daily breakfast for two",
-      "USD 100 food & beverage credit",
-      "Complimentary room upgrade",
-      "Early check-in / late check-out",
-      "Welcome amenity upon arrival",
+      "Daily breakfast for two guests",
+      "USD 100 value-added amenity (varies by property)",
+      "Priority room upgrade upon arrival (subject to availability)",
+      "Early check-in and late check-out (subject to availability)",
+      "Complimentary welcome gift",
     ],
     properties: [
       {
@@ -216,11 +215,11 @@ export const partners: Partner[] = [
       "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80&auto=format&fit=crop",
     accentColor: "#7b2d8b",
     benefits: [
-      "Daily breakfast for two",
-      "EUR 75 hotel credit",
-      "Room upgrade (subject to availability)",
-      "Early check-in / late check-out",
-      "Welcome fruit basket and wine",
+      "Daily breakfast for two guests",
+      "Complimentary lunch or dinner for two (stays of 3+ nights)",
+      "Room upgrade upon arrival (subject to availability)",
+      "Guaranteed early check-in from 10am or late check-out to 4pm",
+      "VIP welcome amenity",
     ],
     properties: [
       {
@@ -256,11 +255,10 @@ export const partners: Partner[] = [
       "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80&auto=format&fit=crop",
     accentColor: "#0d1b2a",
     benefits: [
-      "Virtuoso Voyages amenity packages on cruises",
-      "Hotel amenity programs at 1,200+ properties",
-      "Preferred rates and exclusive inventory",
-      "Access to Virtuoso Week events and experiences",
-      "Direct supplier relationships and priority service",
+      "Daily breakfast for two guests",
+      "USD 100 hotel credit per stay",
+      "Priority room upgrade upon arrival (subject to availability)",
+      "Early check-in and late check-out (subject to availability)",
     ],
     properties: [
       {
@@ -302,10 +300,10 @@ export const partners: Partner[] = [
       "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&q=80&auto=format&fit=crop",
     accentColor: "#8b1a1a",
     benefits: [
-      "Daily breakfast for two",
-      "USD 100 food & beverage credit",
-      "One category room upgrade",
-      "Early check-in from 9am / late check-out to 4pm",
+      "Daily complimentary breakfast for two guests",
+      "USD 100 property credit per stay (dining, spa, or activities)",
+      "Room upgrade upon arrival (subject to availability)",
+      "Early check-in and late check-out (subject to availability)",
       "Complimentary welcome amenity",
     ],
     properties: [
@@ -348,11 +346,11 @@ export const partners: Partner[] = [
       "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&q=80&auto=format&fit=crop",
     accentColor: "#2d4a22",
     benefits: [
-      "Private airport transfers and meet-and-greet",
-      "Curated dining reservations at sought-after restaurants",
-      "Bespoke cultural and adventure experiences",
-      "Private guides and exclusive access",
-      "24/7 on-the-ground concierge support",
+      "Exclusive J.MAK welcome amenity upon arrival (varies by property)",
+      "Curated on-property experiences and activities",
+      "Access to a portfolio of 200+ independently vetted luxury properties",
+      "Direct relationship with property general managers",
+      "10% commission passed through to BTA clients as added value",
     ],
     properties: [
       {
