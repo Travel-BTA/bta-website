@@ -184,7 +184,83 @@ export default function About() {
         </div>
       </section>
 
-      {/* ── 5. MISSION BAND ── */}
+      {/* ── 5. ADVISOR GRID ── */}
+      {/* WHY: Shows all BTA inhouse and affiliate advisors in a clean photo
+           grid. Travel coaches are intentionally excluded — they serve a
+           different function and should not appear on the public About page. */}
+      <section className="bg-bta-stone py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+
+          {/* Inhouse Advisors */}
+          <p className="text-bta-gold font-[Cormorant_Garamond,serif] italic tracking-[0.25em] text-base uppercase mb-2 text-center">
+            Our Team
+          </p>
+          <h2 className="font-[Playfair_Display,serif] bta-h2 text-bta-aegean uppercase tracking-widest mb-12 text-center">
+            BTA Inhouse Advisors
+          </h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 mb-20">
+            {([
+              { name: "Bri Crowder", image: "https://travelbta.com/wp-content/uploads/2022/12/Bri-Crowder-About.jpg" },
+              { name: "Kim Parizek", image: "https://travelbta.com/wp-content/uploads/2025/08/unnamed-15-e1756243211120.jpg" },
+              { name: "Jessica Barkley", image: "https://travelbta.com/wp-content/uploads/2025/02/unnamed-17-e1755721947975.jpg" },
+              { name: "Cristina Medeiros", image: "https://travelbta.com/wp-content/uploads/2026/03/20231118_125508-609x1024.jpg" },
+              { name: "Justin Lintz", image: "https://travelbta.com/wp-content/uploads/2026/03/IMG_5590-1024x768.jpeg" },
+              { name: "Laura Cosme", image: "https://travelbta.com/wp-content/uploads/2026/03/unnamed-10-1024x683.webp" },
+              { name: "Rose Topisian", image: "https://travelbta.com/wp-content/uploads/2026/02/3.jpg" },
+            ] as { name: string; image: string }[]).map((advisor) => (
+              <div key={advisor.name} className="flex flex-col items-center text-center">
+                <div className="w-full aspect-square overflow-hidden mb-3">
+                  <img
+                    src={advisor.image}
+                    alt={advisor.name}
+                    className="w-full h-full object-cover object-top grayscale hover:grayscale-0 transition-all duration-500"
+                  />
+                </div>
+                <p className="font-[Cormorant_SC,serif] tracking-widest text-xs uppercase text-bta-aegean">
+                  {advisor.name}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* Independent Affiliate Advisors */}
+          <h2 className="font-[Playfair_Display,serif] bta-h2 text-bta-aegean uppercase tracking-widest mb-12 text-center">
+            BTA Independent Affiliate Advisors
+          </h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+            {([
+              { name: "Julie Rose", image: "https://travelbta.com/wp-content/uploads/2023/02/Julie-Rose-Photo-resized.jpg" },
+              { name: "Rebecca Hogan", image: "https://travelbta.com/wp-content/uploads/2026/03/IMG_0181-766x1024.jpeg" },
+              { name: "Autumn Garduno", image: "https://travelbta.com/wp-content/uploads/2024/04/unnamed-13-3-1.jpg" },
+              { name: "Becca Samuels", image: "https://travelbta.com/wp-content/uploads/2024/08/unnamed-1.jpg" },
+              { name: "Tracey Davis", image: "https://travelbta.com/wp-content/uploads/2024/03/bta-horizontal-photo-2.jpeg" },
+              { name: "Kathleen Smith", image: "https://travelbta.com/wp-content/uploads/2022/12/Kathleen-Profile-resized.jpg" },
+              { name: "Carol Fogerty", image: "https://travelbta.com/wp-content/uploads/2025/05/f2a52e31-59fe-4b31-8793-0a1fdda00163_IMG_1584__3_-1-scaled-e1747425399928.jpg" },
+              { name: "Julie Plummer", image: "https://travelbta.com/wp-content/uploads/2025/06/Screenshot-2025-06-02-at-7.08.48%20AM.png" },
+              { name: "Baylee Shapiro", image: "https://travelbta.com/wp-content/uploads/2025/07/009A8159-scaled.jpeg" },
+              { name: "Danitza & Esteban Villanueva", image: "https://travelbta.com/wp-content/uploads/2025/09/Danitza-and-Esteban-Villaneuva-at-The-Tower-Birdge-e1757596376865.jpg" },
+              { name: "Chloe Cottingham", image: "https://travelbta.com/wp-content/uploads/2022/12/Chloe-Cottingham-About.jpg" },
+              { name: "Camila Dominguez", image: "https://travelbta.com/wp-content/uploads/2025/02/IMG_5029-2-scaled.jpg" },
+              { name: "Malou Sarmiento", image: "https://travelbta.com/wp-content/uploads/2025/08/Screenshot-2025-08-19-at-9.38.30-PM.png" },
+            ] as { name: string; image: string }[]).map((advisor) => (
+              <div key={advisor.name} className="flex flex-col items-center text-center">
+                <div className="w-full aspect-square overflow-hidden mb-3">
+                  <img
+                    src={advisor.image}
+                    alt={advisor.name}
+                    className="w-full h-full object-cover object-top grayscale hover:grayscale-0 transition-all duration-500"
+                  />
+                </div>
+                <p className="font-[Cormorant_SC,serif] tracking-widest text-xs uppercase text-bta-aegean">
+                  {advisor.name}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── 6. MISSION BAND ── */}
       <section className="bg-bta-aegean py-20 px-6">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-bta-gold font-['Playfair_Display',Georgia,serif] italic tracking-[0.25em] text-base uppercase mb-4">
