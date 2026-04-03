@@ -1,4 +1,4 @@
-// Destinations page — BTA top requested destinations for 2026 & 2027
+// Destinations page BTA top requested destinations for 2026 & 2027
 // Brand: #2f2f2f | #faf9f6 | #edeae4 | #384959 | #bfaf8a
 // Layout: Full-bleed hero → intro → destination grid with hover reveals → CTA
 
@@ -23,7 +23,7 @@ const DESTINATIONS = [
     year: "2026",
     tagline: "Pura Vida, Elevated",
     description:
-      "Canopy bridges at dawn, private wildlife guides, and lodge-to-lodge journeys through cloud forest and coastline. Costa Rica is one of the world's great eco-destinations — and we know how to experience it without the crowds.",
+      "Canopy bridges at dawn, private wildlife guides, and lodge-to-lodge journeys through cloud forest and coastline. Costa Rica is one of the world's great eco-destinations and we know how to experience it without the crowds.",
     highlights: ["Arenal volcano lodges", "Monteverde cloud forest", "Osa Peninsula wildlife", "Private naturalist guides"],
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/dest-costa-rica-5fGppq6wxU6xJdSoikCVu9.webp",
   },
@@ -45,7 +45,7 @@ const DESTINATIONS = [
     year: "2026 & 2027",
     tagline: "La Dolce Vita, Without the Queue",
     description:
-      "The Amalfi Coast at its most intimate, Tuscany's private wine estates, and Rome's Vatican before the crowds arrive. Our Italy itineraries are built around access — to places, people, and experiences that simply cannot be booked online.",
+      "The Amalfi Coast at its most intimate, Tuscany's private wine estates, and Rome's Vatican before the crowds arrive. Our Italy itineraries are built around access to places, people, and experiences that simply cannot be booked online.",
     highlights: ["Amalfi private boat days", "Tuscan villa stays", "Vatican after-hours access", "Trulli of Alberobello"],
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/dest-italy-Pg7LXDKfqav3zpNAUyCAxi.webp",
   },
@@ -56,7 +56,7 @@ const DESTINATIONS = [
     year: "2026 & 2027",
     tagline: "Beyond Paris, Into the Soul of France",
     description:
-      "Lavender-scented Provence, the Dordogne's prehistoric caves, Bordeaux's grand châteaux, and the Côte d'Azur's quieter coves. France rewards those who travel with intention — and with the right connections.",
+      "Lavender-scented Provence, the Dordogne's prehistoric caves, Bordeaux's grand châteaux, and the Côte d'Azur's quieter coves. France rewards those who travel with intention and with the right connections.",
     highlights: ["Provence lavender season", "Bordeaux château tastings", "Loire Valley châteaux", "Private Paris experiences"],
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/dest-france-ArBZ8adDWZ4orUxfop7YBn.webp",
   },
@@ -67,7 +67,7 @@ const DESTINATIONS = [
     year: "2026",
     tagline: "Timeless Grace, Extraordinary Access",
     description:
-      "Phang Nga Bay by private longtail, Chiang Mai's temple-studded old city, and the Andaman's quieter islands. Thailand's depth goes far beyond its beaches — and we know exactly where to find it.",
+      "Phang Nga Bay by private longtail, Chiang Mai's temple-studded old city, and the Andaman's quieter islands. Thailand's depth goes far beyond its beaches and we know exactly where to find it.",
     highlights: ["Phang Nga private charter", "Chiang Mai temple immersions", "Northern hill tribe villages", "Koh Yao Noi seclusion"],
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/dest-thailand-WY3LpXhnLc2oyojQCG2oN3.webp",
   },
@@ -78,7 +78,7 @@ const DESTINATIONS = [
     year: "2026 & 2027",
     tagline: "Lantern-Lit, Layered, Unforgettable",
     description:
-      "Hoi An's ancient town at dusk, Ha Long Bay on a private junk, and Hanoi's Old Quarter through the eyes of a local guide. Vietnam is a country that reveals itself slowly — and generously — to those who approach it with curiosity.",
+      "Hoi An's ancient town at dusk, Ha Long Bay on a private junk, and Hanoi's Old Quarter through the eyes of a local guide. Vietnam is a country that reveals itself slowly and generously to those who approach it with curiosity.",
     highlights: ["Hoi An lantern evenings", "Ha Long Bay private junk", "Hanoi Old Quarter walks", "Hue imperial citadel"],
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/dest-vietnam-ZcVJaQ5MZj94gtVaqmZbW6.webp",
   },
@@ -89,7 +89,7 @@ const DESTINATIONS = [
     year: "2026 & 2027",
     tagline: "The Last True Wilderness",
     description:
-      "Fewer than 50,000 people visit Antarctica each year. We work with the world's finest expedition operators to place our clients on the right ship, in the right season, with the right naturalists — for a journey that redefines perspective.",
+      "Fewer than 50,000 people visit Antarctica each year. We work with the world's finest expedition operators to place our clients on the right ship, in the right season, with the right naturalists for a journey that redefines perspective.",
     highlights: ["Zodiac landings on ice", "Penguin colony encounters", "Iceberg alley navigation", "Polar plunge experiences"],
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/dest-antarctica-hFRTfhtDnXn2vykPRwRfAY.webp",
   },
@@ -100,7 +100,7 @@ const DESTINATIONS = [
     year: "2026 & 2027",
     tagline: "Africa's Most Exclusive Safari",
     description:
-      "The Okavango Delta is one of the world's great natural wonders — a vast inland sea that floods each year, drawing extraordinary concentrations of wildlife. Botswana's low-volume, high-value model means your experience is always intimate.",
+      "The Okavango Delta is one of the world's great natural wonders a vast inland sea that floods each year, drawing extraordinary concentrations of wildlife. Botswana's low-volume, high-value model means your experience is always intimate.",
     highlights: ["Okavango mokoro safaris", "Chobe elephant herds", "Moremi Game Reserve", "Private island camps"],
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/dest-botswana-RFwWXWsUi6sRMje3SGrMV3.webp",
   },
@@ -111,7 +111,7 @@ const DESTINATIONS = [
     year: "2026 & 2027",
     tagline: "The Great Migration & Beyond",
     description:
-      "Witness the Serengeti's great wildebeest migration, climb Kilimanjaro's slopes at dawn, and end your journey on Zanzibar's spice-scented shores. Tanzania is Africa's most complete safari destination — and we know every corner of it.",
+      "Witness the Serengeti's great wildebeest migration, climb Kilimanjaro's slopes at dawn, and end your journey on Zanzibar's spice-scented shores. Tanzania is Africa's most complete safari destination and we know every corner of it.",
     highlights: ["Serengeti migration timing", "Ngorongoro Crater drives", "Zanzibar beach extension", "Kilimanjaro approach treks"],
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/dest-tanzania-UuTu4hDwAZf7E2P3oPTBH6.webp",
   },
@@ -147,7 +147,7 @@ export default function Destinations() {
             Destinations
           </h1>
           <p className="text-white/80 max-w-xl text-base leading-relaxed" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
-            Our most requested destinations for 2026 and 2027 — each one chosen for its depth, its beauty, and the extraordinary experiences only a trusted advisor can unlock.
+            Our most requested destinations for 2026 and 2027 each one chosen for its depth, its beauty, and the extraordinary experiences only a trusted advisor can unlock.
           </p>
         </div>
       </section>
@@ -162,7 +162,7 @@ export default function Destinations() {
           The World, Thoughtfully Edited
         </h2>
         <p className="text-base leading-relaxed" style={{ color: "#2f2f2f", fontFamily: "'Cormorant Garamond', serif", fontSize: "1.1rem" }}>
-          These are the destinations our advisors are most excited about right now — places where we have deep relationships, insider access, and the knowledge to design a journey that goes far beyond what any booking platform can offer. Each destination supports local communities and charitable causes that matter.
+          These are the destinations our advisors are most excited about right now places where we have deep relationships, insider access, and the knowledge to design a journey that goes far beyond what any booking platform can offer. Each destination supports local communities and charitable causes that matter.
         </p>
       </section>
 

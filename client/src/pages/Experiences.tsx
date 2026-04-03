@@ -1,4 +1,4 @@
-// Experiences page — BTA curated global experiences
+// Experiences page BTA curated global experiences
 // Brand: #2f2f2f | #faf9f6 | #edeae4 | #384959 | #bfaf8a
 // Layout: Full-bleed hero → intro → featured categories → curated list → philanthropy note → CTA
 
@@ -12,7 +12,7 @@ const EXPERIENCE_CATEGORIES = [
     eyebrow: "Africa & Beyond",
     tagline: "Witness the World's Greatest Wildlife Spectacles",
     description:
-      "A private safari is not simply a game drive — it is a complete immersion into the rhythms of the wild. Our advisors have walked the Serengeti, paddled the Okavango, and tracked mountain gorillas in Rwanda. We know which camps place you closest to the action, which guides are truly exceptional, and which seasons deliver the most extraordinary sightings.",
+      "A private safari is not simply a game drive it is a complete immersion into the rhythms of the wild. Our advisors have walked the Serengeti, paddled the Okavango, and tracked mountain gorillas in Rwanda. We know which camps place you closest to the action, which guides are truly exceptional, and which seasons deliver the most extraordinary sightings.",
     experiences: [
       "Serengeti Great Migration timing & camps",
       "Okavango Delta mokoro & walking safaris",
@@ -31,7 +31,7 @@ const EXPERIENCE_CATEGORIES = [
     eyebrow: "Farm, Table & Cellar",
     tagline: "Taste the World Through Its Finest Kitchens",
     description:
-      "Food is the most intimate form of cultural exchange. We design experiences that go far beyond restaurant reservations — private cooking lessons with Michelin-starred chefs, harvest-season stays at Bordeaux châteaux, market mornings in Marrakech, and truffle hunts in Périgord. Every meal tells a story.",
+      "Food is the most intimate form of cultural exchange. We design experiences that go far beyond restaurant reservations private cooking lessons with Michelin-starred chefs, harvest-season stays at Bordeaux châteaux, market mornings in Marrakech, and truffle hunts in Périgord. Every meal tells a story.",
     experiences: [
       "Tuscan farmhouse cooking with private chef",
       "Bordeaux & Burgundy château stays",
@@ -50,7 +50,7 @@ const EXPERIENCE_CATEGORIES = [
     eyebrow: "Retreat, Restore, Return",
     tagline: "The World's Most Transformative Wellness Retreats",
     description:
-      "True wellness travel is not a spa day — it is a complete recalibration of mind, body, and perspective. We curate overwater retreats in the Maldives, Ayurvedic immersions in Kerala, silent meditation in Bhutan, and thermal bathing in Iceland's geothermal landscape. Each experience is chosen for its depth and authenticity.",
+      "True wellness travel is not a spa day it is a complete recalibration of mind, body, and perspective. We curate overwater retreats in the Maldives, Ayurvedic immersions in Kerala, silent meditation in Bhutan, and thermal bathing in Iceland's geothermal landscape. Each experience is chosen for its depth and authenticity.",
     experiences: [
       "Maldives overwater spa retreats",
       "Ayurvedic immersions in Kerala, India",
@@ -69,7 +69,7 @@ const EXPERIENCE_CATEGORIES = [
     eyebrow: "Private Access, Rare Encounters",
     tagline: "Experiences That Cannot Be Booked Online",
     description:
-      "The Uffizi Gallery after closing time. A private audience with a Kyoto geisha house. A backstage tour of La Scala in Milan. Cultural access is about relationships — and ours run deep. We open doors that remain firmly closed to the general public, creating moments that become the defining memories of a lifetime.",
+      "The Uffizi Gallery after closing time. A private audience with a Kyoto geisha house. A backstage tour of La Scala in Milan. Cultural access is about relationships and ours run deep. We open doors that remain firmly closed to the general public, creating moments that become the defining memories of a lifetime.",
     experiences: [
       "Vatican after-hours private tours",
       "Uffizi Gallery exclusive evening access",
@@ -134,7 +134,7 @@ export default function Experiences() {
             Experiences
           </h1>
           <p className="text-white/80 max-w-xl text-base leading-relaxed" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
-            The moments that define a journey are rarely the ones you planned. We design the conditions for those moments to happen — through access, expertise, and the relationships we have built over decades.
+            The moments that define a journey are rarely the ones you planned. We design the conditions for those moments to happen through access, expertise, and the relationships we have built over decades.
           </p>
         </div>
       </section>
@@ -246,7 +246,7 @@ export default function Experiences() {
             Every Experience Gives Back
           </h3>
           <p className="text-base leading-relaxed" style={{ color: "#2f2f2f", fontFamily: "'Cormorant Garamond', serif", fontSize: "1rem" }}>
-            A portion of every booking supports local charities and causes that matter — childhood cancer, Make-A-Wish, veterans, arts and culture, and the communities in the destinations where we travel. Our clients are invited to participate in selecting the supported project, and together we have raised hundreds of thousands of dollars to improve the world.
+            A portion of every booking supports local charities and causes that matter childhood cancer, Make-A-Wish, veterans, arts and culture, and the communities in the destinations where we travel. Our clients are invited to participate in selecting the supported project, and together we have raised hundreds of thousands of dollars to improve the world.
           </p>
         </div>
       </section>
@@ -260,7 +260,7 @@ export default function Experiences() {
           Design Your Perfect Experience
         </h2>
         <p className="text-white/70 max-w-lg mx-auto mb-10 leading-relaxed" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.05rem" }}>
-          Tell us what moves you — a landscape, a cuisine, a culture, a challenge — and we will build an experience around it that exceeds every expectation.
+          Tell us what moves you a landscape, a cuisine, a culture, a challenge and we will build an experience around it that exceeds every expectation.
         </p>
         <Link href="/contact">
           <button
