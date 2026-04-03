@@ -6,6 +6,13 @@
  *
  * Design: BTA brand guide — Instrument Serif headings, Cormorant Garamond body,
  * Champagne Gold #bfaf8a, Aegean Blue #384959, Linen White #faf9f6.
+ *
+ * Images: Each card shows a destination or scene that matches the cruise line's identity:
+ *   Viking Ocean → Scandinavian fjord / Nordic landscape
+ *   Oceania → Mediterranean port / culinary destination
+ *   Azamara → Historic European port town at dusk
+ *   Virgin Voyages → Modern boutique ship / vibrant destination
+ *   Hero → Elegant ocean voyage at golden hour
  */
 
 import { Link } from "wouter";
@@ -28,7 +35,8 @@ const CRUISE_LINES = [
     ],
     culinary:
       "The World Café features live cooking stations with destination-inspired cuisine. Manfredi's Italian Kitchen and The Chef's Table offer specialty dining. Viking's culinary enrichment includes cooking demonstrations and market visits.",
-    image: "https://images.unsplash.com/photo-1548574505-5e239809ee19?auto=format&fit=crop&w=1400&q=80",
+    // Norwegian fjords — calm, dramatic Scandinavian scenery matching Viking's design ethos
+    image: "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=1400&q=80",
     link: "https://www.vikingcruises.com/oceans/myagent/travelbta1",
     linkLabel: "Explore Viking Ocean",
     imageRight: false,
@@ -49,7 +57,8 @@ const CRUISE_LINES = [
     ],
     culinary:
       "The Culinary Center: a state-of-the-art teaching kitchen offering hands-on classes inspired by each destination. Jacques (French cuisine), Red Ginger (Asian), Ember (steakhouse), and Aquamar Kitchen (healthy) are among the specialty venues.",
-    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80",
+    // Santorini / Greek islands — iconic Oceania Mediterranean destination
+    image: "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=1400&q=80",
     link: "https://www.oceaniacruises.com?insider=zq18x-boutique-travel-advisors",
     linkLabel: "Explore Oceania Cruises",
     imageRight: true,
@@ -70,7 +79,8 @@ const CRUISE_LINES = [
     ],
     culinary:
       "Azamara's culinary enrichment includes destination-inspired menus, local wine and spirits tastings, and cooking demonstrations. Prime C (steakhouse) and Aqualina (Italian) are the signature specialty restaurants.",
-    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1400&q=80",
+    // Dubrovnik / historic Mediterranean port at dusk — Azamara's overnight port stays
+    image: "https://images.unsplash.com/photo-1555990793-da11153b2473?auto=format&fit=crop&w=1400&q=80",
     link: "https://www.azamara.com",
     linkLabel: "Explore Azamara",
     imageRight: false,
@@ -91,7 +101,8 @@ const CRUISE_LINES = [
     ],
     culinary:
       "20+ restaurant concepts by Michelin-starred and James Beard-nominated chefs: Gunbae (Korean BBQ), Pink Agave (Mexican), Razzle Dazzle (vegetarian-forward), Noodle Around (ramen), The Wake (steakhouse), and more — all included.",
-    image: "https://images.unsplash.com/photo-1517783999520-f068d7431a60?auto=format&fit=crop&w=1400&q=80",
+    // Vibrant Caribbean island destination — Virgin Voyages' primary sailing region
+    image: "https://images.unsplash.com/photo-1548574505-5e239809ee19?auto=format&fit=crop&w=1400&q=80",
     link: "https://www.virginvoyages.com",
     linkLabel: "Explore Virgin Voyages",
     imageRight: true,
@@ -102,14 +113,14 @@ export default function PremiumOcean() {
   return (
     <PageLayout>
 
-      {/* ── Hero ──────────────────────────────────────────────────────────── */}
+      {/* ── Hero — elegant ocean voyage at golden hour ─────────────────────── */}
       <section className="relative h-[75vh] min-h-[520px] flex items-end overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2400&q=80"
-          alt="Premium ocean cruise ship at sunset"
+          src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=2400&q=80"
+          alt="Premium ocean cruise ship sailing at golden hour"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#2f2f2f]/85 via-[#2f2f2f]/25 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#2f2f2f]/90 via-[#2f2f2f]/50 to-[#2f2f2f]/15" />
 
         <div className="relative z-10 w-full max-w-[1440px] mx-auto px-8 lg:px-14 pb-16 md:pb-20">
           <div className="flex items-center gap-2 mb-6">
@@ -128,7 +139,7 @@ export default function PremiumOcean() {
           <h1 className="font-display text-white text-5xl md:text-6xl font-light leading-none mb-6">
             Premium Ocean Cruises
           </h1>
-          <p className="text-white/75 text-xl max-w-2xl leading-relaxed mb-8" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+          <p className="text-white/85 text-xl max-w-2xl leading-relaxed mb-8" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
             The perfect balance of premium value and luxury experience — intimate ships, culinary excellence, and deep destination immersion at a compelling price point.
           </p>
           <Link
@@ -155,10 +166,10 @@ export default function PremiumOcean() {
             <h2 className="font-display text-[#384959] text-3xl md:text-4xl font-light leading-tight mb-6">
               Premium Without Compromise
             </h2>
-            <p className="text-[#2F2F2F]/75 text-lg leading-relaxed mb-4" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+            <p className="text-[#2f2f2f]/75 text-lg leading-relaxed mb-4" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
               Premium ocean cruising occupies the sweet spot between mainstream and ultra-luxury — offering smaller ships, superior dining, and a more sophisticated atmosphere without the all-inclusive price tag of the top tier. These lines attract discerning travelers who prioritise destination depth, culinary quality, and genuine service over glitzy entertainment.
             </p>
-            <p className="text-[#2F2F2F]/65 text-lg leading-relaxed" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+            <p className="text-[#2f2f2f]/65 text-lg leading-relaxed" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
               BTA's Virtuoso membership unlocks exclusive amenities on every premium ocean voyage — shipboard credits, cabin upgrades when available, specialty dining, and dedicated onboard hosts.
             </p>
           </div>
@@ -187,12 +198,12 @@ export default function PremiumOcean() {
                   {line.tagline}
                 </p>
                 <div className="w-12 h-px bg-[#bfaf8a] mb-6" />
-                <p className="text-[#2F2F2F]/75 text-base leading-relaxed mb-6" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+                <p className="text-[#2f2f2f]/75 text-base leading-relaxed mb-6" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
                   {line.description}
                 </p>
                 <ul className="space-y-2 mb-6">
                   {line.highlights.map((h) => (
-                    <li key={h} className="flex items-start gap-3 text-[#2F2F2F]/70 text-sm" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+                    <li key={h} className="flex items-start gap-3 text-[#2f2f2f]/70 text-sm" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
                       <span className="text-[#bfaf8a] mt-0.5 flex-shrink-0">✦</span>
                       {h}
                     </li>
