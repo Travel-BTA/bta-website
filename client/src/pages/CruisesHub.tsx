@@ -21,8 +21,10 @@ import { PageLayout } from "@/components/PageLayout";
 
 // ─── Images ──────────────────────────────────────────────────────────────────
 const IMAGES = {
-  // Hero: luxury small expedition ship at sea — no mainstream port or Caribbean aerial
-  hero: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=2400&q=80",
+  // Hero: cruise ship at port with tropical hillside — provided by Janet to
+  // replace the underwater diver stock photo. Better represents the luxury
+  // ocean journey experience BTA curates for clients.
+  hero: "/images/hero-cruises.jpg",
   // Luxury Ocean card: elegant ship bow at sea
   luxuryOcean: "https://images.unsplash.com/photo-1548574505-5e239809ee19?auto=format&fit=crop&w=1200&q=80",
   // Premium Ocean card: scenic ocean voyage, no mainstream ship branding
