@@ -4,6 +4,8 @@ import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
+import NavBar from "@/components/NavBar";
+import { FooterSection } from "@/components/sections/JournalSections";
 import HomeLegacy from "./pages/HomeLegacy";
 import LandJourneys from "./pages/LandJourneys";
 import SafariWildlife from "./pages/SafariWildlife";
@@ -109,7 +111,14 @@ function App() {
       <ThemeProvider defaultTheme="light">
         <TooltipProvider>
           <Toaster />
+          {/* WHY: NavBar and FooterSection are rendered here at the app level so every
+              route automatically gets the header and footer without each page needing
+              to import and render them individually. Pages that previously included
+              NavBar/FooterSection directly still work because NavBar is fixed-position
+              and FooterSection renders inline — duplicates are removed from those pages. */}
+          <NavBar />
           <Router />
+          <FooterSection />
         </TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>

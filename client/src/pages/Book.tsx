@@ -7,7 +7,6 @@
  * No emojis. No aggressive fonts.
  */
 
-import NavBar from "@/components/NavBar";
 import { footer } from "@/content/homepage";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import { useState } from "react";
@@ -63,7 +62,6 @@ export default function Book() {
 
   return (
     <div className="min-h-screen bg-[#faf9f6] text-[#2F2F2F]">
-      <NavBar />
 
       {submitted ? (
         /* ── Thank You State ─────────────────────────────────────────── */

@@ -22,7 +22,6 @@
  * To update design: edit the individual section component files.
  */
 
-import NavBar from "@/components/NavBar";
 import HeroSection from "@/components/sections/HeroSection";
 import {
   WhoWeAreSection,
@@ -40,14 +39,12 @@ import {
   JournalSection,
   TestimonialsSection,
   InstagramSection,
-  FinalCtaSection,
-  FooterSection,
+  FinalCtaSection
 } from "@/components/sections/JournalSections";
 
 export default function Home() {
   return (
     <div className="min-h-screen">
-      <NavBar />
       <HeroSection />
       <WhoWeAreSection />
       <StatsSection />
@@ -61,7 +58,7 @@ export default function Home() {
       <TestimonialsSection />
       <InstagramSection />
       <FinalCtaSection />
-      <FooterSection />
+
     </div>
   );
 }

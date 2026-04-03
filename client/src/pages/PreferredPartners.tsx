@@ -14,7 +14,6 @@
 
 import { useRef, useEffect, useState } from "react";
 import { Link } from "wouter";
-import NavBar from "@/components/NavBar";
 import {
   partnersHero,
   partnersIntro,
@@ -102,7 +101,6 @@ export default function PreferredPartners() {
 
   return (
     <div className="bg-[#EDEAE4] min-h-screen">
-      <NavBar />
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
       <section className="relative h-[70vh] min-h-[520px] overflow-hidden flex items-center justify-center">

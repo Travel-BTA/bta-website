@@ -9,7 +9,6 @@
 
 import { useState } from "react";
 import { Link } from "wouter";
-import NavBar from "@/components/NavBar";
 import { footer } from "@/content/homepage";
 import {
   jetHero,
@@ -30,7 +29,6 @@ export default function PrivateJetCharters() {
 
   return (
     <div className="min-h-screen bg-[#F5F2EE] font-['Playfair_Display',serif]">
-      <NavBar />
 
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
       <section className="relative h-screen min-h-[600px] flex items-end overflow-hidden">

@@ -21,7 +21,7 @@ const EXPERIENCE_CATEGORIES = [
       "Ngorongoro Crater private game drives",
       "South Africa's private game reserves",
     ],
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/exp-safari-N6YN2vnsQxfdHiUgUjnhEX.webp",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/safari_bush_dining_v2_e2293e19.jpg",
     bgColor: "#384959",
     textColor: "#faf9f6",
   },

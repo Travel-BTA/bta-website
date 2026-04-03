@@ -8,7 +8,6 @@
  * Content is managed entirely in: client/src/content/landJourneys.ts
  */
 
-import NavBar from "@/components/NavBar";
 import {
   landJourneysHero,
   landJourneysIntro,
@@ -42,7 +41,6 @@ export default function LandJourneys() {
   return (
     <div className="min-h-screen bg-[#faf9f6] text-[#2F2F2F] font-serif">
       {/* ── Navigation ─────────────────────────────────────────────────── */}
-      <NavBar />
 
       {/* ── Hero ───────────────────────────────────────────────────────── */}
       <section className="relative h-[90vh] min-h-[600px] overflow-hidden">

@@ -24,7 +24,6 @@
 
 import { useState } from "react";
 import { Link } from "wouter";
-import NavBar from "@/components/NavBar";
 import { footer } from "@/content/homepage";
 import { aboutData } from "@/content/about";
 
@@ -104,7 +103,6 @@ export default function About() {
 
   return (
     <div className="min-h-screen bg-bta-stone font-[Cormorant_Garamond,serif]">
-      <NavBar />
 
       {/* ── 1. HERO ── */}
       <section className="relative h-[55vh] min-h-[400px] overflow-hidden">

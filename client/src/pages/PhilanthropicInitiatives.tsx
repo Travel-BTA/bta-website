@@ -12,7 +12,6 @@
  * Content managed in: client/src/content/philanthropy.ts
  */
 
-import NavBar from "@/components/NavBar";
 import { footer } from "@/content/homepage";
 import {
   philanthropyBeneficiaries,
@@ -43,7 +42,6 @@ export default function PhilanthropicInitiatives() {
 
   return (
     <div className="min-h-screen bg-[#FAF8F5] text-[#2F2F2F] font-serif">
-      <NavBar />
 
       {/* ══════════════════════════════════════════════════════════════
           HERO. Full-screen cinematic with parallax

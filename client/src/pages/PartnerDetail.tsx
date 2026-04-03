@@ -18,7 +18,6 @@
 
 import { useRef, useEffect, useState } from "react";
 import { Link, useParams } from "wouter";
-import NavBar from "@/components/NavBar";
 import { partners } from "@/content/preferredPartners";
 
 // ─── Benefit pill ─────────────────────────────────────────────────────────────
@@ -117,7 +116,6 @@ export default function PartnerDetail() {
   if (!partner) {
     return (
       <div className="bg-[#EDEAE4] min-h-screen flex flex-col items-center justify-center">
-        <NavBar />
         <div className="text-center py-40">
           <h1 className="font-display text-4xl text-[#384959] mb-4">
             Partner Not Found
@@ -134,7 +132,6 @@ export default function PartnerDetail() {
 
   return (
     <div className="bg-[#EDEAE4] min-h-screen">
-      <NavBar />
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
       <section className="relative h-[75vh] min-h-[560px] overflow-hidden flex items-center justify-center">

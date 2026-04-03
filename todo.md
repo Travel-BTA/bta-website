@@ -85,3 +85,13 @@
 ## Photo Swaps
 - [x] Replace unrealistic elephant photo with safari bush dining image (6 locations replaced)
 - [x] Update Costa Rica destination card with Monteverde canopy bridge photo (royalty-free Unsplash)
+- [ ] Replace Private Safari experience page hero (game drive sunset) with safari bush dining image
+- [ ] Fix: NavBar/header missing on certain pages — audit all routes and ensure NavBar renders on every page
+
+## Land Journeys Typography Fix
+- [ ] Fix H1/H2/H3 fonts and copy formatting on LandJourneys.tsx to match site standard
+- [ ] Fix H1/H2/H3 fonts and copy formatting on SafariWildlife.tsx to match site standard
+- [ ] Fix H1/H2/H3 fonts and copy formatting on EuropeanImmersions.tsx to match site standard
+- [ ] Fix H1/H2/H3 fonts and copy formatting on ExpeditionTravel.tsx to match site standard
+- [ ] Fix H1/H2/H3 fonts and copy formatting on CulturalJourneys.tsx to match site standard
+- [ ] Replace Private Safari experience page hero (game drive sunset) with safari bush dining image
