@@ -36,7 +36,7 @@ export const landJourneysCategories = [
   {
     title: "Safari & Wildlife",
     description:
-      "Immersive encounters with the natural world — from the Serengeti to the Okavango Delta.",
+      "Immersive encounters with the natural world, from the Serengeti to the Okavango Delta.",
     imageUrl:
       "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&q=80&auto=format&fit=crop",
     href: "/land-journeys/safari",
@@ -52,7 +52,7 @@ export const landJourneysCategories = [
   {
     title: "Expedition Travel",
     description:
-      "Remote destinations for the curious — Antarctica, the Galápagos, Patagonia, and beyond.",
+      "Remote destinations for the curious: Antarctica, the Galápagos, Patagonia, and beyond.",
     imageUrl:
       "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/patagonia-guanaco_6307f230.webp",
     href: "/land-journeys/expedition",
@@ -75,7 +75,7 @@ export const landJourneysProcess = {
       number: "01",
       title: "Discovery Consultation",
       description:
-        "We begin with a conversation — understanding your travel style, interests, pace, and vision for the perfect journey.",
+        "We begin with a conversation, understanding your travel style, interests, pace, and vision for the perfect journey.",
     },
     {
       number: "02",
@@ -87,7 +87,7 @@ export const landJourneysProcess = {
       number: "03",
       title: "VIP Arrangements",
       description:
-        "We handle every detail — from private transfers and exclusive access to dining reservations and on-the-ground support.",
+        "We handle every detail, from private transfers and exclusive access to dining reservations and on-the-ground support.",
     },
     {
       number: "04",
@@ -130,7 +130,7 @@ export const landJourneysExperiences = {
     {
       title: "On-Trip Support",
       description:
-        "Our team is available throughout your journey — a trusted contact whenever you need us, wherever you are.",
+        "Our team is available throughout your journey, a trusted contact whenever you need us, wherever you are.",
     },
   ],
 };
@@ -139,7 +139,7 @@ export const landJourneysFeaturedJourney = {
   eyebrow: "Featured Journey",
   headline: "Africa: The Great Migration",
   description:
-    "Witness one of nature's most spectacular events — the annual wildebeest migration across the Serengeti and Masai Mara. Private camps, expert guides, and moments that stay with you for a lifetime.",
+    "Witness one of nature's most spectacular events: the annual wildebeest migration across the Serengeti and Masai Mara. Private camps, expert guides, and moments that stay with you for a lifetime.",
   imageUrl:
     "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/masai-mara-balloon_fbd18a64.webp",
   details: [
