@@ -238,3 +238,17 @@
     line-height: 1.15;
   }
 }
+
+/* ─────────────────────────────────────────────────────────────────
+   Scroll utilities — used by horizontal carousel sections
+   (Pillars of Community, Beneficiaries on mobile)
+───────────────────────────────────────────────────────────────── */
+
+/* Hide scrollbar visually while keeping scroll functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none;   /* IE / Edge */
+  scrollbar-width: none;      /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;              /* Chrome / Safari / Opera */
+}

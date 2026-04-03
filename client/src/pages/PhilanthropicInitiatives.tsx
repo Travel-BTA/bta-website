@@ -149,20 +149,57 @@ export default function PhilanthropicInitiatives() {
             </h2>
           </div>
 
-          {/* Pillar cards — 2 cols on mobile, 3 on tablet, 5 on desktop */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          {/* Mobile: horizontal scroll carousel — no dead space, no orphaned cards
+               Desktop: 5-column full-width flex strip */}
+
+          {/* Mobile scroll strip (hidden lg+) */}
+          <div className="lg:hidden flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide -mx-6 px-6">
             {philanthropyPillars.pillars.map((pillar, i) => (
-              <div key={i} className="relative overflow-hidden group h-[320px] md:h-[380px]">
-                {/* Background image */}
+              <div
+                key={i}
+                className="relative flex-none w-[72vw] h-[380px] overflow-hidden snap-start"
+              >
+                <div
+                  className="absolute inset-0 bg-cover bg-center"
+                  style={{ backgroundImage: `url(${pillar.imageUrl})` }}
+                />
+                <div className="absolute inset-0 bg-black/50" />
+                <div className="absolute inset-0 flex flex-col justify-end p-6">
+                  <p className="text-[#BFAF8A]/40 text-3xl font-light leading-none mb-2" style={PF}>
+                    0{i + 1}
+                  </p>
+                  <div className="w-5 h-px bg-[#BFAF8A] mb-3" />
+                  <h3 className="text-white text-xl font-light tracking-wide" style={PF}>
+                    {pillar.name}
+                  </h3>
+                  <p className="text-white/60 text-[10px] tracking-widest uppercase font-light mt-1 leading-relaxed">
+                    {pillar.tagline}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Scroll indicator dots — mobile only */}
+          <div className="lg:hidden flex justify-center gap-2 mt-4">
+            {philanthropyPillars.pillars.map((_, i) => (
+              <div key={i} className="w-1 h-1 rounded-full bg-[#BFAF8A]/40" />
+            ))}
+          </div>
+
+          {/* Desktop: 5-column full-height strip (hidden below lg) */}
+          <div className="hidden lg:flex h-[420px]">
+            {philanthropyPillars.pillars.map((pillar, i) => (
+              <div
+                key={i}
+                className="relative flex-1 overflow-hidden group"
+              >
                 <div
                   className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
                   style={{ backgroundImage: `url(${pillar.imageUrl})` }}
                 />
-                {/* Dark overlay */}
                 <div className="absolute inset-0 bg-black/50 group-hover:bg-black/35 transition-colors duration-500" />
-
-                {/* Content pinned to bottom */}
-                <div className="absolute inset-0 flex flex-col justify-end p-5">
+                <div className="absolute inset-0 flex flex-col justify-end p-6">
                   <p className="text-[#BFAF8A]/40 text-3xl font-light leading-none mb-2" style={PF}>
                     0{i + 1}
                   </p>
@@ -170,7 +207,7 @@ export default function PhilanthropicInitiatives() {
                   <h3 className="text-white text-lg font-light tracking-wide" style={PF}>
                     {pillar.name}
                   </h3>
-                  <p className="text-white/0 group-hover:text-white/60 text-[10px] tracking-widest uppercase font-light mt-1 transition-all duration-400 leading-relaxed">
+                  <p className="text-white/0 group-hover:text-white/60 text-[10px] tracking-widest uppercase font-light mt-1 transition-all duration-500 leading-relaxed">
                     {pillar.tagline}
                   </p>
                 </div>
