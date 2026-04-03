@@ -4,7 +4,7 @@ import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
-import Home from "./pages/Home";
+import HomeLegacy from "./pages/HomeLegacy";
 import LandJourneys from "./pages/LandJourneys";
 import SafariWildlife from "./pages/SafariWildlife";
 import EuropeanImmersions from "./pages/EuropeanImmersions";
@@ -13,6 +13,7 @@ import CulturalJourneys from "./pages/CulturalJourneys";
 import Book from "@/pages/Book";
 import About from "@/pages/About";
 // Merged from boutique-travel-advisors repo
+import HomeV2 from "@/pages/HomeV2";
 import CruisesHub from "@/pages/CruisesHub";
 import LuxuryOcean from "@/pages/cruises/LuxuryOcean";
 import PremiumOcean from "@/pages/cruises/PremiumOcean";
@@ -30,7 +31,7 @@ function Router() {
   return (
     <Switch>
       {/* Core pages */}
-      <Route path={"/"} component={Home} />
+      <Route path={"/"} component={HomeV2} />
 
       {/* Land Journeys — parent + sub-pages */}
       <Route path={"/land-journeys"} component={LandJourneys} />
@@ -41,6 +42,8 @@ function Router() {
       <Route path={"/book"} component={Book} />
       <Route path={"/about"} component={About} />
       {/* Merged from boutique-travel-advisors repo */}
+      {/* HomeLegacy — original homepage kept for reference at /home-legacy */}
+      <Route path={"/home-legacy"} component={HomeLegacy} />
       {/* Cruise pages */}
       <Route path={"/cruises"} component={CruisesHub} />
       <Route path={"/cruises/luxury-ocean"} component={LuxuryOcean} />
