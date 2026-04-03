@@ -215,45 +215,39 @@ export default function TermsOfService() {
 
       {/* ── Header ────────────────────────────────────────────────────────── */}
       {/*
-        WHY: Aegean Blue solid background — Champagne Gold labels are correct here.
-        Luxury treatment: deep gradient from near-black to Aegean Blue, a hairline
-        gold rule above and below the title, Allura script eyebrow, and generous
-        vertical breathing room. The decorative diamond motif echoes the BTA brand.
+        WHY: Photo background — private members club lobby with marble floors, dark
+        wood paneling, antique world maps, and a leather writing desk. Conveys trust,
+        discretion, and refined authority. Dark overlay ensures white text is legible.
+        Rule: no Champagne Gold text over photos — white only.
       */}
       <section
-        className="relative pt-36 pb-24 px-6 overflow-hidden"
+        className="relative pt-36 pb-28 px-6 overflow-hidden"
         style={{
-          background: "linear-gradient(180deg, #1e2b35 0%, #384959 55%, #2e3f4f 100%)",
+          backgroundImage: `url('https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/tos-header-bg-V3ZrJa5SFajHG3LmjH5ARA.webp')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center 30%",
         }}
       >
-        {/* Subtle radial glow — adds depth without being heavy */}
+        {/* Dark overlay — photo is warm/light so needs strong overlay for text legibility */}
         <div
-          className="absolute inset-0 pointer-events-none"
+          className="absolute inset-0"
           style={{
-            background: "radial-gradient(ellipse 70% 60% at 50% 40%, rgba(191,175,138,0.06) 0%, transparent 70%)",
+            background: "linear-gradient(180deg, rgba(20,28,36,0.72) 0%, rgba(30,43,53,0.80) 60%, rgba(20,28,36,0.88) 100%)",
           }}
         />
 
         <div className="relative max-w-3xl mx-auto text-center">
 
-          {/* Allura script eyebrow */}
-          <p
-            className="text-[#bfaf8a]/70 mb-5"
-            style={{ fontFamily: "'Allura', cursive", fontSize: "26px", lineHeight: 1 }}
-          >
-            Boutique Travel Advisors
-          </p>
-
-          {/* Decorative hairline + diamond */}
+          {/* Decorative hairline + diamond — WHY: Allura eyebrow removed per user request */}
           <div className="flex items-center justify-center gap-3 mb-8">
-            <span className="block h-px w-20 bg-[#bfaf8a]/35" />
+            <span className="block h-px w-20 bg-[#bfaf8a]/40" />
             <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-              <rect x="5" y="0.5" width="6.5" height="6.5" rx="0.5" transform="rotate(45 5 0.5)" fill="#bfaf8a" fillOpacity="0.5" />
+              <rect x="5" y="0.5" width="6.5" height="6.5" rx="0.5" transform="rotate(45 5 0.5)" fill="#bfaf8a" fillOpacity="0.55" />
             </svg>
-            <span className="block h-px w-20 bg-[#bfaf8a]/35" />
+            <span className="block h-px w-20 bg-[#bfaf8a]/40" />
           </div>
 
-          {/* H1 */}
+          {/* H1 — white on photo per brand rule */}
           <h1
             className="text-white uppercase mb-6"
             style={{
@@ -269,14 +263,14 @@ export default function TermsOfService() {
 
           {/* Bottom rule */}
           <div className="flex items-center justify-center gap-3 mb-7">
-            <span className="block h-px w-16 bg-[#bfaf8a]/30" />
-            <span className="block w-1 h-1 rounded-full bg-[#bfaf8a]/50" />
-            <span className="block h-px w-16 bg-[#bfaf8a]/30" />
+            <span className="block h-px w-16 bg-[#bfaf8a]/35" />
+            <span className="block w-1 h-1 rounded-full bg-[#bfaf8a]/55" />
+            <span className="block h-px w-16 bg-[#bfaf8a]/35" />
           </div>
 
           {/* Date */}
           <p
-            className="text-white/40 text-xs tracking-[0.2em] uppercase"
+            className="text-white/45 text-xs tracking-[0.2em] uppercase"
             style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
           >
             Last Modified: December 28, 2025
