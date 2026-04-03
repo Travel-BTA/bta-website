@@ -20,6 +20,7 @@ import PremiumOcean from "@/pages/cruises/PremiumOcean";
 import RiverCruises from "@/pages/cruises/RiverCruises";
 import ExpeditionCruises from "@/pages/cruises/ExpeditionCruises";
 import PartnerDirectory from "@/pages/cruises/PartnerDirectory";
+import PrivateCharters from "@/pages/cruises/PrivateCharters";
 import OurPeople from "@/pages/OurPeople";
 import CustomItineraries from "@/pages/CustomItineraries";
 import JulieRose from "@/pages/advisors/JulieRose";
@@ -56,6 +57,7 @@ function Router() {
       <Route path={"/cruises/river"} component={RiverCruises} />
       <Route path={"/cruises/expedition"} component={ExpeditionCruises} />
       <Route path={"/cruises/partners"} component={PartnerDirectory} />
+      <Route path={"/cruises/private-charters"} component={PrivateCharters} />
       {/* About sub-pages */}
       <Route path={"/about/our-people"} component={OurPeople} />
       {/* Land Journeys sub-pages */}

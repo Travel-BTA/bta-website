@@ -318,24 +318,18 @@ export default function CruisesHub() {
             </h2>
 
             <p className="text-[#2F2F2F]/75 text-base leading-relaxed mb-5" style={{ fontFamily: F.playfair, fontWeight: 400 }}>
-              Mention the word yachts and images of billionaires, royals, and celebrities cruising
-              along the riviera while sipping champagne are easily conjured up. But a private
-              charter is not just for the rich and famous. many of our itineraries start at only
-              $1,500 per person per week.
+              Private aviation and yacht charters are no longer reserved for the ultra-wealthy. BTA arranges private jet and yacht charters for discerning travelers who value their time, privacy, and comfort. Many itineraries begin at $1,500 per person per week.
             </p>
             <p className="text-[#2F2F2F]/65 text-base leading-relaxed mb-10" style={{ fontFamily: F.playfair, fontWeight: 400 }}>
-              We offer fully crewed charters that deliver the utmost value and service. All charters
-              come with a professional captain and many include a gourmet chef, hostess, and full
-              staff to cater to your every need. Our trusted yacht partners have decades of
-              experience and deliver only the highest quality boats and crew in the industry.
+              Every charter includes a professional captain and crew. Many include a gourmet chef, hostess, and full staff. Our trusted partners have decades of experience and deliver the highest quality vessels and service in the industry.
             </p>
 
             <Link
-              href="/contact"
+              href="/cruises/private-charters"
               className="inline-flex items-center gap-3 border border-[#bfaf8a] text-[#bfaf8a] px-8 py-3 text-xs tracking-[0.2em] uppercase hover:bg-[#bfaf8a] hover:text-white transition-all duration-300 self-start"
               style={{ fontFamily: F.instrument }}
             >
-              Enquire About a Charter
+              Explore Private Charters
               <span className="text-base">→</span>
             </Link>
           </div>
