@@ -207,7 +207,7 @@ export default function About() {
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
             {([
               { name: "Bri Crowder", image: "https://travelbta.com/wp-content/uploads/2022/12/Bri-Crowder-About.jpg" },
-              { name: "Kim Parizek", image: "https://travelbta.com/wp-content/uploads/2025/08/unnamed-15-e1756243211120.jpg" },
+              { name: "Kim Parizek", image: "/images/advisor-kim-parizek.jpg" },
               { name: "Jessica Barkley", image: "https://travelbta.com/wp-content/uploads/2025/02/unnamed-17-e1755721947975.jpg" },
               { name: "Cristina Medeiros", image: "https://travelbta.com/wp-content/uploads/2026/01/cris.jpg" },
               { name: "Justin Lintz", image: "https://travelbta.com/wp-content/uploads/2026/03/IMG_5590-1024x768.jpeg" },
