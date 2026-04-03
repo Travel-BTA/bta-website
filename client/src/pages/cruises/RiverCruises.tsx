@@ -2,7 +2,7 @@
  * RiverCruises — /cruises/river
  *
  * River Cruises sub-page featuring:
- * AmaWaterways, Uniworld, Viking River, Tauck, Scenic, Riverside
+ * AmaWaterways, Uniworld, Viking River, Tauck, Riverside
  *
  * Design: BTA brand guide — Instrument Serif headings, Cormorant Garamond body,
  * Champagne Gold #bfaf8a, Aegean Blue #384959, Linen White #faf9f6.
@@ -111,10 +111,9 @@ const CRUISE_LINES = [
     tagline: "Premium European River Travel",
     eyebrow: "Premium River",
     description:
-      "Riverside Luxury Cruises offers premium European river travel with a focus on value and contemporary design. Their modern fleet sails the Rhine, Danube, and Main rivers, with itineraries ranging from 7 to 15 nights. Current promotions offer up to 18% off select sailings — exclusively available through BTA. All fares include meals, select beverages, and guided shore excursions.",
+      "Riverside Luxury Cruises offers premium European river travel with a focus on value and contemporary design. Their modern fleet sails the Rhine, Danube, and Main rivers, with itineraries ranging from 7 to 15 nights. All fares include meals, select beverages, and guided shore excursions.",
     highlights: [
       "Modern fleet on Rhine, Danube & Main rivers",
-      "Up to 18% off select sailings — exclusive BTA offer",
       "Meals, select beverages & guided excursions included",
       "7 to 15-night itineraries",
       "Contemporary design throughout",
@@ -126,7 +125,7 @@ const CRUISE_LINES = [
     link: "https://www.riverside-guide.com/copilot",
     linkLabel: "Explore Riverside",
     imageRight: true,
-    badge: "Up to 18% Off",
+
   },
 ];
 
@@ -221,11 +220,7 @@ export default function RiverCruises() {
                   <span className="bg-[#bfaf8a]/90 text-white text-xs tracking-[0.25em] uppercase px-4 py-1.5" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
                     {line.eyebrow}
                   </span>
-                  {"badge" in line && line.badge && (
-                    <span className="bg-[#384959]/90 text-white text-xs tracking-[0.2em] uppercase px-4 py-1.5" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
-                      {line.badge}
-                    </span>
-                  )}
+
                 </div>
               </div>
 
