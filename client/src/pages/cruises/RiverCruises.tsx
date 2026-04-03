@@ -2,10 +2,13 @@
  * RiverCruises — /cruises/river
  *
  * River Cruises sub-page featuring:
- * AmaWaterways, Uniworld, Viking River, Tauck, Scenic, Emerald, Avalon/Globus, Riverside
+ * AmaWaterways, Uniworld, Viking River, Tauck, Scenic, Riverside
  *
  * Design: BTA brand guide — Instrument Serif headings, Cormorant Garamond body,
  * Champagne Gold #bfaf8a, Aegean Blue #384959, Linen White #faf9f6.
+ *
+ * Images: European rivers (Rhine, Danube), Mekong Delta, Amazon — no mainstream ships.
+ * Hero overlay strengthened (from/90 via/50 to/15) for text legibility.
  */
 
 import { Link } from "wouter";
@@ -28,7 +31,8 @@ const CRUISE_LINES = [
     ],
     culinary:
       "Chef's Table: an intimate specialty restaurant featuring a rotating menu of regional dishes. Daily cooking demonstrations, wine pairing dinners, and market visits bring each destination's flavors aboard.",
-    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1400&q=80",
+    // Rhine valley — vineyards and medieval villages
+    image: "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1400&q=80",
     link: "https://inspires.to/experiences/amawaterways-a-new-expression-and-a-deeper-connection-xw4kl4",
     linkLabel: "Explore AmaWaterways",
     imageRight: false,
@@ -50,8 +54,9 @@ const CRUISE_LINES = [
     ],
     culinary:
       "Destination-driven menus change daily, sourced from local markets. A dedicated sommelier curates wine pairings for every meal. Cooking classes and market visits are offered on select itineraries.",
-    image: "https://images.unsplash.com/photo-1548574505-5e239809ee19?auto=format&fit=crop&w=1400&q=80",
-    link: "https://travelbta1.uniworld.com",
+    // Danube — Budapest at dusk, iconic European river scene
+    image: "https://images.unsplash.com/photo-1519677100203-a0e668c92439?auto=format&fit=crop&w=1400&q=80",
+    link: "https://www.uniworld.com",
     linkLabel: "Explore Uniworld",
     imageRight: true,
   },
@@ -71,8 +76,9 @@ const CRUISE_LINES = [
     ],
     culinary:
       "The Restaurant features destination-inspired menus with live cooking stations. The Aquavit Terrace offers al fresco dining. Cooking demonstrations and market visits are offered on select itineraries.",
-    image: "https://images.unsplash.com/photo-1517783999520-f068d7431a60?auto=format&fit=crop&w=1400&q=80",
-    link: "https://www.vikingrivercruises.com/myagent/travelbta1",
+    // Amsterdam canals — classic European river destination
+    image: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1400&q=80",
+    link: "https://www.vikingcruises.com/river-cruises",
     linkLabel: "Explore Viking River",
     imageRight: false,
   },
@@ -92,8 +98,9 @@ const CRUISE_LINES = [
     ],
     culinary:
       "Destination-inspired menus featuring local ingredients. Exclusive dining events at private venues — châteaux, historic estates, and local restaurants not accessible to other cruise lines.",
-    image: "https://images.unsplash.com/photo-1599640842225-85d111c60e6b?auto=format&fit=crop&w=1400&q=80",
-    link: "https://www.tauck.com?insider=zq18x-boutique-travel-advisors",
+    // Mekong Delta — lush tropical river landscape
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1400&q=80",
+    link: "https://www.tauck.com/river-cruises",
     linkLabel: "Explore Tauck",
     imageRight: true,
   },
@@ -113,7 +120,8 @@ const CRUISE_LINES = [
     ],
     culinary:
       "Locally sourced, destination-inspired menus rotate daily. The Chef's Table offers an intimate specialty dining experience. Cooking demonstrations and market visits are featured on select sailings.",
-    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80",
+    // Amazon river — lush jungle waterway
+    image: "https://images.unsplash.com/photo-1534430480872-3498386e7856?auto=format&fit=crop&w=1400&q=80",
     link: "https://www.scenicusa.com",
     linkLabel: "Explore Scenic",
     imageRight: false,
@@ -134,8 +142,9 @@ const CRUISE_LINES = [
     ],
     culinary:
       "European-inspired menus featuring regional specialties. Select beverages included with meals. Cooking demonstrations on select sailings.",
+    // Rhine gorge — dramatic European river scenery
     image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1400&q=80",
-    link: "https://inspires.to/riverside/copilot",
+    link: "https://www.riverside-guide.com/copilot",
     linkLabel: "Explore Riverside",
     imageRight: true,
     badge: "Up to 18% Off",
@@ -147,13 +156,15 @@ export default function RiverCruises() {
     <PageLayout>
 
       {/* ── Hero ──────────────────────────────────────────────────────────── */}
+      {/* Stronger overlay (via/50) ensures white text is legible over any image */}
       <section className="relative h-[75vh] min-h-[520px] flex items-end overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=2400&q=80"
-          alt="River cruise ship on a European waterway"
+          src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=2400&q=80"
+          alt="Luxury river cruise ship sailing through a European waterway at golden hour"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#2f2f2f]/85 via-[#2f2f2f]/25 to-transparent" />
+        {/* Strengthened gradient: bottom 90% → mid 50% → top 15% for clear text */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#2f2f2f]/90 via-[#2f2f2f]/50 to-[#2f2f2f]/15" />
 
         <div className="relative z-10 w-full max-w-[1440px] mx-auto px-8 lg:px-14 pb-16 md:pb-20">
           <div className="flex items-center gap-2 mb-6">
@@ -172,7 +183,7 @@ export default function RiverCruises() {
           <h1 className="font-display text-white text-5xl md:text-6xl font-light leading-none mb-6">
             River Cruises
           </h1>
-          <p className="text-white/75 text-xl max-w-2xl leading-relaxed mb-8" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+          <p className="text-white/85 text-xl max-w-2xl leading-relaxed mb-8" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
             Wake up in a new town every morning. Drift through medieval villages, vineyard-lined valleys, and historic city centres — unpacking only once.
           </p>
           <Link
@@ -200,10 +211,10 @@ export default function RiverCruises() {
               <h2 className="font-display text-[#384959] text-3xl md:text-4xl font-light leading-tight mb-6">
                 The Off-the-Beaten-Path Journey
               </h2>
-              <p className="text-[#2F2F2F]/75 text-lg leading-relaxed mb-4" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+              <p className="text-[#2f2f2f]/75 text-lg leading-relaxed mb-4" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
                 A river cruise takes you on an off-the-beaten-path journey across towns and villages, where you will enjoy scenic sights between ports. River cruising offers a way to travel in a relaxing, intimate environment. The calm waterways also eliminate many concerns of seasickness.
               </p>
-              <p className="text-[#2F2F2F]/65 text-lg leading-relaxed" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+              <p className="text-[#2f2f2f]/65 text-lg leading-relaxed" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
                 Ships typically carry between 98 and 190 guests — creating a genuine sense of community. It is not uncommon for families, friends, and organisations to buy out an entire boat for a private charter experience.
               </p>
             </div>
@@ -246,12 +257,12 @@ export default function RiverCruises() {
                   {line.tagline}
                 </p>
                 <div className="w-12 h-px bg-[#bfaf8a] mb-6" />
-                <p className="text-[#2F2F2F]/75 text-base leading-relaxed mb-6" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+                <p className="text-[#2f2f2f]/75 text-base leading-relaxed mb-6" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
                   {line.description}
                 </p>
                 <ul className="space-y-2 mb-6">
                   {line.highlights.map((h) => (
-                    <li key={h} className="flex items-start gap-3 text-[#2F2F2F]/70 text-sm" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+                    <li key={h} className="flex items-start gap-3 text-[#2f2f2f]/70 text-sm" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
                       <span className="text-[#bfaf8a] mt-0.5 flex-shrink-0">✦</span>
                       {h}
                     </li>

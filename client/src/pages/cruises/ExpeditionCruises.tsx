@@ -6,6 +6,10 @@
  *
  * Design: BTA brand guide — Instrument Serif headings, Cormorant Garamond body,
  * Champagne Gold #bfaf8a, Aegean Blue #384959, Linen White #faf9f6.
+ *
+ * Images: All images show actual expedition destinations —
+ *   Antarctica icebergs, Galápagos wildlife, Norwegian fjords, Alaska glaciers, polar landscapes.
+ *   No mainstream cruise ships. No sunny Caribbean beaches for polar/arctic destinations.
  */
 
 import { Link } from "wouter";
@@ -28,7 +32,8 @@ const CRUISE_LINES = [
     ],
     culinary:
       "Fresh, locally sourced ingredients wherever possible. The culinary team incorporates destination flavors — fresh-caught seafood in Alaska, local produce in the Galápagos. Cooking demonstrations and local tastings are offered on select voyages.",
-    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1400&q=80",
+    // Galápagos Islands — iconic expedition destination, volcanic landscape and wildlife
+    image: "https://images.unsplash.com/photo-1551415923-a2297c7fda79?auto=format&fit=crop&w=1400&q=80",
     link: "https://www.expeditions.com",
     linkLabel: "Explore Lindblad Expeditions",
     imageRight: false,
@@ -49,6 +54,7 @@ const CRUISE_LINES = [
     ],
     culinary:
       "S.A.L.T. (Sea And Land Taste) culinary program aboard expedition ships. Destination-inspired menus change with every port of call. Butler service in all suites.",
+    // Antarctica — icebergs and dramatic polar seascape
     image: "https://images.unsplash.com/photo-1517783999520-f068d7431a60?auto=format&fit=crop&w=1400&q=80",
     link: "https://www.silversea.com/expedition-cruises.html",
     linkLabel: "Explore Silversea Expeditions",
@@ -70,7 +76,8 @@ const CRUISE_LINES = [
     ],
     culinary:
       "Norwegian cuisine featuring locally sourced ingredients — fresh seafood, Arctic char, and regional specialties. The Lindstrøm restaurant offers fine dining inspired by the destinations. Cooking demonstrations and local food experiences at ports.",
-    image: "https://images.unsplash.com/photo-1548574505-5e239809ee19?auto=format&fit=crop&w=1400&q=80",
+    // Norwegian fjords — dramatic cliffs and calm waters, no sunny beach
+    image: "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=1400&q=80",
     link: "https://www.hurtigruten.com",
     linkLabel: "Explore Hurtigruten",
     imageRight: false,
@@ -91,7 +98,8 @@ const CRUISE_LINES = [
     ],
     culinary:
       "Hearty, warming cuisine designed for polar expeditions. Fresh ingredients sourced at ports where possible. The galley team accommodates all dietary requirements. Hot chocolate and warming beverages always available after excursions.",
-    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80",
+    // Arctic — polar bear territory, ice floes, no tropical beach
+    image: "https://images.unsplash.com/photo-1520116468816-95b69f847357?auto=format&fit=crop&w=1400&q=80",
     link: "https://www.quarkexpeditions.com",
     linkLabel: "Explore Quark Expeditions",
     imageRight: true,
@@ -112,35 +120,36 @@ const CRUISE_LINES = [
     ],
     culinary:
       "Fresh, seasonal ingredients with a focus on sustainability. The culinary team creates destination-inspired menus. Cooking demonstrations and local food experiences are offered on select voyages.",
-    image: "https://images.unsplash.com/photo-1599640842225-85d111c60e6b?auto=format&fit=crop&w=1400&q=80",
+    // Alaska — glaciers, wilderness, dramatic mountain and ice scenery
+    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=1400&q=80",
     link: "https://www.auroraexpeditions.com.au",
     linkLabel: "Explore Aurora Expeditions",
     imageRight: false,
   },
 ];
 
-// Destination highlights for the visual grid
+// Destination highlights — text only, no emoji (brand standard)
 const DESTINATIONS = [
-  { name: "Antarctica", icon: "❄️", desc: "The last great wilderness" },
-  { name: "Galápagos", icon: "🦎", desc: "Darwin's living laboratory" },
-  { name: "Arctic & Svalbard", icon: "🐻‍❄️", desc: "Polar bears & midnight sun" },
-  { name: "Norwegian Fjords", icon: "🏔️", desc: "Northern Lights at sea" },
-  { name: "Alaska", icon: "🦅", desc: "Glaciers & wildlife" },
-  { name: "Greenland", icon: "🧊", desc: "Ancient ice & Inuit culture" },
+  { name: "Antarctica", desc: "The last great wilderness" },
+  { name: "Galápagos", desc: "Darwin's living laboratory" },
+  { name: "Arctic & Svalbard", desc: "Polar bears & midnight sun" },
+  { name: "Norwegian Fjords", desc: "Northern Lights at sea" },
+  { name: "Alaska", desc: "Glaciers & wildlife" },
+  { name: "Greenland", desc: "Ancient ice & Inuit culture" },
 ];
 
 export default function ExpeditionCruises() {
   return (
     <PageLayout>
 
-      {/* ── Hero ──────────────────────────────────────────────────────────── */}
+      {/* ── Hero — Antarctica iceberg scene, strong overlay for text legibility ── */}
       <section className="relative h-[75vh] min-h-[520px] flex items-end overflow-hidden">
         <img
           src="https://images.unsplash.com/photo-1517783999520-f068d7431a60?auto=format&fit=crop&w=2400&q=80"
-          alt="Expedition ship in icy polar waters"
+          alt="Expedition ship navigating icy Antarctic waters"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#2f2f2f]/85 via-[#2f2f2f]/25 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#2f2f2f]/90 via-[#2f2f2f]/50 to-[#2f2f2f]/15" />
 
         <div className="relative z-10 w-full max-w-[1440px] mx-auto px-8 lg:px-14 pb-16 md:pb-20">
           <div className="flex items-center gap-2 mb-6">
@@ -159,7 +168,7 @@ export default function ExpeditionCruises() {
           <h1 className="font-display text-white text-5xl md:text-6xl font-light leading-none mb-6">
             Expedition Cruises
           </h1>
-          <p className="text-white/75 text-xl max-w-2xl leading-relaxed mb-8" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+          <p className="text-white/85 text-xl max-w-2xl leading-relaxed mb-8" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
             Observe glaciers, exotic islands, fjords, and icebergs accessible only from a Zodiac — accompanied by expert naturalists, scientists, and photographers.
           </p>
           <Link
@@ -187,21 +196,20 @@ export default function ExpeditionCruises() {
               <h2 className="font-display text-[#384959] text-3xl md:text-4xl font-light leading-tight mb-6">
                 There Is Nothing Quite Like Exploring by Expedition
               </h2>
-              <p className="text-[#2F2F2F]/75 text-lg leading-relaxed mb-4" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+              <p className="text-[#2f2f2f]/75 text-lg leading-relaxed mb-4" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
                 Expedition cruising is defined by access — to places, wildlife, and experiences that simply cannot be reached any other way. Whether you're snorkeling and kayaking in the Galápagos Islands or hiking glaciers and snowshoeing on an Arctic adventure, expect to be genuinely amazed.
               </p>
-              <p className="text-[#2F2F2F]/65 text-lg leading-relaxed" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+              <p className="text-[#2f2f2f]/65 text-lg leading-relaxed" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
                 With a focus on exploration and adventure, expedition cruises are accompanied by expert guides — naturalists, environmentalists, scientists, biologists, historians, photographers, and other trained professionals who transform every sighting into a learning experience.
               </p>
             </div>
 
-            {/* Destination grid */}
+            {/* Destination grid — text only, clean and sophisticated */}
             <div className="grid grid-cols-2 gap-4">
               {DESTINATIONS.map((dest) => (
                 <div key={dest.name} className="border border-[#bfaf8a]/25 px-6 py-5 hover:border-[#bfaf8a]/60 transition-colors duration-300">
-                  <p className="text-2xl mb-2">{dest.icon}</p>
                   <p className="font-display text-[#384959] text-lg mb-1">{dest.name}</p>
-                  <p className="text-[#2F2F2F]/55 text-sm" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+                  <p className="text-[#2f2f2f]/55 text-sm" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
                     {dest.desc}
                   </p>
                 </div>
@@ -233,12 +241,12 @@ export default function ExpeditionCruises() {
                   {line.tagline}
                 </p>
                 <div className="w-12 h-px bg-[#bfaf8a] mb-6" />
-                <p className="text-[#2F2F2F]/75 text-base leading-relaxed mb-6" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+                <p className="text-[#2f2f2f]/75 text-base leading-relaxed mb-6" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
                   {line.description}
                 </p>
                 <ul className="space-y-2 mb-6">
                   {line.highlights.map((h) => (
-                    <li key={h} className="flex items-start gap-3 text-[#2F2F2F]/70 text-sm" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+                    <li key={h} className="flex items-start gap-3 text-[#2f2f2f]/70 text-sm" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
                       <span className="text-[#bfaf8a] mt-0.5 flex-shrink-0">✦</span>
                       {h}
                     </li>
