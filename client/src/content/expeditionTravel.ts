@@ -57,7 +57,7 @@ export const expeditionTravelData: JourneySubPageData = {
     eyebrow: "Featured Journey",
     headline: "Antarctica: White\nWilderness — 14 Days",
     description:
-      "Embark from Ushuaia aboard a 100-guest expedition vessel — small enough to access bays that larger ships cannot reach. Cross the Drake Passage, land among half a million penguins at South Georgia, and witness calving glaciers from a Zodiac. Expert naturalists lead every excursion, and evenings are spent in the ship's library with a glass of wine and a sky full of stars.",
+      "Embark from Ushuaia aboard a 150-guest expedition vessel, small enough to access bays that larger ships cannot reach. Cross the Drake Passage, land among half a million penguins at South Georgia, and witness calving glaciers from a Zodiac. Expert naturalists lead every excursion, and evenings are spent in the ship's library with a glass of wine and a sky full of stars.",
     imageUrl:
       "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/antarctica-penguins_19073f8f.webp",
     details: [
