@@ -33,6 +33,7 @@ import PartnerDetail from "./pages/PartnerDetail";
 import PrivateJetCharters from "./pages/PrivateJetCharters";
 import Destinations from "./pages/Destinations";
 import Experiences from "./pages/Experiences";
+import TermsOfService from "./pages/TermsOfService";
 
 function Router() {
   return (
@@ -81,6 +82,7 @@ function Router() {
       <Route path={"/experiences"} component={Experiences} />
       {/* Fallback */}
       <Route path={"/404"} component={NotFound} />
+      <Route path={"/terms-of-service"} component={TermsOfService} />
       {/*
         WHY: WordPress blog posts live at root-level slugs (e.g. /lake-garda-holidays-planning-guide).
         This catch-all route intercepts any unmatched path, treats it as a blog post slug,
