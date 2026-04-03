@@ -4,18 +4,22 @@
  *
  * Design Philosophy: Luxury, Elevated, Modern, Sophisticated
  * Colors: Champagne Gold (#BFAF8A), Aegean Blue (#384959), Warm Stone (#faf9f6)
- * Typography: Playfair Display (headings), Playfair Display (body/italic)
+ * Typography: Playfair Display (headings), Cormorant SC (name labels)
  *
  * Layout:
  *  1. Hero — full-width image with overlay headline
- *  2. Company Overview — centered copy with Hans Christian Andersen quote
+ *  2. Company Overview — centered copy with quote
  *  3. Who We Are / What We Do / What We Believe — tabbed section
- *  4. Co-Founders — two full-width profile cards with bio + Favorite Things
- *  5. Mission — dark aegean band with mission statement
- *  6. CTA — Start Planning
+ *  4. Founders — Janet & Angie in the same photo grid format as advisors
+ *  5. Advisors — BTA inhouse advisors grid
+ *  6. Independent Advisors & Affiliates — affiliate advisors grid
+ *  7. Hotel Specialists — new section with placeholder photos
+ *  8. Mission — dark aegean band
+ *  9. CTA — Start Planning
  *
- * WHY this structure: mirrors the travelbta.com About page hierarchy while
- * applying the new site's design system for visual consistency.
+ * WHY: All team sections use a consistent photo grid so every person
+ * is presented with equal visual weight. Section descriptions are
+ * consumer-facing and polished.
  */
 
 import { useState } from "react";
@@ -24,9 +28,78 @@ import NavBar from "@/components/NavBar";
 import { footer } from "@/content/homepage";
 import { aboutData } from "@/content/about";
 
+/* ── Reusable advisor card ── */
+function AdvisorCard({
+  name,
+  image,
+  subtitle,
+  placeholder = false,
+}: {
+  name: string;
+  image: string;
+  subtitle?: string;
+  placeholder?: boolean;
+}) {
+  return (
+    <div className="flex flex-col items-center text-center">
+      {/* Square photo — fixed 240×240px equivalent via aspect-square */}
+      <div className="w-full aspect-square overflow-hidden mb-3 bg-[#edeae4]">
+        {placeholder ? (
+          /* Elegant placeholder when no photo is available yet */
+          <div className="w-full h-full flex items-center justify-center">
+            <svg
+              className="w-16 h-16 text-bta-gold/40"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z" />
+            </svg>
+          </div>
+        ) : (
+          <img
+            src={image}
+            alt={name}
+            className="w-full h-full object-cover object-top grayscale hover:grayscale-0 transition-all duration-500"
+          />
+        )}
+      </div>
+      <p className="font-[Cormorant_SC,serif] tracking-widest text-xs uppercase text-bta-aegean leading-snug">
+        {name}
+      </p>
+      {subtitle && (
+        <p className="font-['Playfair_Display',Georgia,serif] italic text-bta-gold text-xs mt-0.5">
+          {subtitle}
+        </p>
+      )}
+    </div>
+  );
+}
+
+/* ── Section header ── */
+function SectionHeader({
+  eyebrow,
+  heading,
+  description,
+}: {
+  eyebrow: string;
+  heading: string;
+  description: string;
+}) {
+  return (
+    <div className="text-center mb-12 max-w-2xl mx-auto">
+      <p className="text-bta-gold font-['Playfair_Display',Georgia,serif] italic tracking-[0.25em] text-sm uppercase mb-2">
+        {eyebrow}
+      </p>
+      <h2 className="font-[Playfair_Display,serif] bta-h2 text-bta-aegean uppercase tracking-widest mb-5">
+        {heading}
+      </h2>
+      <p className="text-bta-charcoal text-base leading-relaxed">{description}</p>
+    </div>
+  );
+}
+
 export default function About() {
   const [activeTab, setActiveTab] = useState("who-we-are");
-
   const activeTabContent = aboutData.tabs.find((t) => t.id === activeTab);
 
   return (
@@ -60,14 +133,11 @@ export default function About() {
           <h2 className="font-[Playfair_Display,serif] bta-h2 text-bta-aegean uppercase tracking-widest mb-10">
             {aboutData.overview.headline}
           </h2>
-
           <div className="space-y-5 text-bta-charcoal text-lg leading-relaxed text-left">
             {aboutData.overview.paragraphs.map((para, i) => (
               <p key={i}>{para}</p>
             ))}
           </div>
-
-          {/* Quote */}
           <blockquote className="mt-14 border-l-2 border-bta-gold pl-6 text-left">
             <p className="font-['Playfair_Display',Georgia,serif] italic text-xl md:text-2xl text-bta-aegean leading-relaxed">
               "{aboutData.overview.quote}"
@@ -82,7 +152,6 @@ export default function About() {
       {/* ── 3. TABS ── */}
       <section className="bg-bta-stone py-20 px-6">
         <div className="max-w-4xl mx-auto">
-          {/* Tab nav */}
           <div className="flex border-b border-bta-gold/40 mb-10 gap-0 overflow-x-auto">
             {aboutData.tabs.map((tab) => (
               <button
@@ -98,8 +167,6 @@ export default function About() {
               </button>
             ))}
           </div>
-
-          {/* Tab content */}
           {activeTabContent && (
             <p className="text-bta-charcoal text-lg leading-relaxed max-w-2xl">
               {activeTabContent.content}
@@ -108,97 +175,36 @@ export default function About() {
         </div>
       </section>
 
-      {/* ── 4. CO-FOUNDERS ── */}
+      {/* ── 4. FOUNDERS ── */}
       <section className="bg-white py-20 px-6">
-        <div className="max-w-5xl mx-auto">
-          <p className="text-bta-gold font-['Playfair_Display',Georgia,serif] italic tracking-[0.25em] text-base uppercase mb-2 text-center">
-            The Heart of BTA
-          </p>
-          <h2 className="font-[Playfair_Display,serif] bta-h2 text-bta-aegean uppercase tracking-widest mb-10 text-center">
-            BTA Co-Founders
-          </h2>
-
-          <p className="text-center text-bta-charcoal text-lg mb-16 max-w-2xl mx-auto">
-            Our designers are passionate travelers and the heart of BTA. Every person on our team has traveled extensively and specializes in creating unique experiences focused on discovery, exploration, and refined luxury.
-          </p>
-
-          <div className="space-y-24">
-            {aboutData.cofounders.map((advisor, idx) => (
-              <div
-                key={advisor.name}
-                className={`flex flex-col ${idx % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"} gap-12 items-start`}
-              >
-                {/* Portrait */}
-                <div className="flex-shrink-0 flex flex-col items-center gap-4 w-full md:w-64">
-                  <div className="w-52 h-52 rounded-full overflow-hidden border-4 border-bta-gold/30 shadow-lg">
-                    <img
-                      src={advisor.imageUrl}
-                      alt={advisor.name}
-                      className="w-full h-full object-cover object-top"
-                    />
-                  </div>
-                  <div className="text-center">
-                    <h3 className="font-[Playfair_Display,serif] bta-h3 text-bta-aegean uppercase tracking-widest">
-                      {advisor.name}
-                    </h3>
-                    <p className="font-['Playfair_Display',Georgia,serif] italic text-bta-gold text-base mt-1">
-                      {advisor.title}
-                    </p>
-                    <p className="text-bta-charcoal/60 text-sm tracking-wider uppercase mt-1 font-['Playfair_Display',Georgia,serif]">
-                      {advisor.location}
-                    </p>
-                  </div>
-                </div>
-
-                {/* Content */}
-                <div className="flex-1 min-w-0">
-                  {/* Bio */}
-                  <div className="space-y-4 text-bta-charcoal text-lg leading-relaxed mb-10">
-                    {advisor.bio.map((para, i) => (
-                      <p key={i}>{para}</p>
-                    ))}
-                  </div>
-
-                  {/* Favorite Things */}
-                  <div className="border-t border-bta-gold/30 pt-8">
-                    <h4 className="font-['Playfair_Display',Georgia,serif] italic text-bta-gold bta-h4 mb-6">
-                      A Few of My Favorite Things
-                    </h4>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-5">
-                      {advisor.favoriteThings.map((item) => (
-                        <div key={item.label}>
-                          <p className="font-['Playfair_Display',Georgia,serif] text-xs tracking-widest uppercase text-bta-gold mb-1">
-                            {item.label}
-                          </p>
-                          <p className="text-bta-charcoal text-base leading-snug">
-                            {item.value}
-                          </p>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <div className="max-w-6xl mx-auto">
+          <SectionHeader
+            eyebrow="Leadership"
+            heading="Founders"
+            description="Guided by a clear vision, our founders bring together innovation, relationships, and a deep understanding of luxury travel to shape every experience we design."
+          />
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 justify-items-center">
+            {aboutData.cofounders.map((person) => (
+              <AdvisorCard
+                key={person.name}
+                name={person.name}
+                image={person.imageUrl}
+                subtitle={person.title}
+              />
             ))}
           </div>
         </div>
       </section>
 
-      {/* ── 5. ADVISOR GRID ── */}
-      {/* WHY: Shows all BTA inhouse and affiliate advisors in a clean photo
-           grid. Travel coaches are intentionally excluded — they serve a
-           different function and should not appear on the public About page. */}
+      {/* ── 5. ADVISORS ── */}
       <section className="bg-bta-stone py-20 px-6">
         <div className="max-w-6xl mx-auto">
-
-          {/* Inhouse Advisors */}
-          <p className="text-bta-gold font-[Cormorant_Garamond,serif] italic tracking-[0.25em] text-base uppercase mb-2 text-center">
-            Our Team
-          </p>
-          <h2 className="font-[Playfair_Display,serif] bta-h2 text-bta-aegean uppercase tracking-widest mb-12 text-center">
-            BTA Inhouse Advisors
-          </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 mb-20">
+          <SectionHeader
+            eyebrow="Our Team"
+            heading="Advisors"
+            description="Our advisors craft thoughtful, personalized journeys, combining global expertise with trusted partnerships to ensure every detail feels seamless."
+          />
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
             {([
               { name: "Bri Crowder", image: "https://travelbta.com/wp-content/uploads/2022/12/Bri-Crowder-About.jpg" },
               { name: "Kim Parizek", image: "https://travelbta.com/wp-content/uploads/2025/08/unnamed-15-e1756243211120.jpg" },
@@ -207,26 +213,21 @@ export default function About() {
               { name: "Justin Lintz", image: "https://travelbta.com/wp-content/uploads/2026/03/IMG_5590-1024x768.jpeg" },
               { name: "Laura Cosme", image: "https://travelbta.com/wp-content/uploads/2026/03/unnamed-10-1024x683.webp" },
               { name: "Rose Topisian", image: "https://travelbta.com/wp-content/uploads/2026/02/3.jpg" },
-            ] as { name: string; image: string }[]).map((advisor) => (
-              <div key={advisor.name} className="flex flex-col items-center text-center">
-                <div className="w-full aspect-square overflow-hidden mb-3">
-                  <img
-                    src={advisor.image}
-                    alt={advisor.name}
-                    className="w-full h-full object-cover object-top grayscale hover:grayscale-0 transition-all duration-500"
-                  />
-                </div>
-                <p className="font-[Cormorant_SC,serif] tracking-widest text-xs uppercase text-bta-aegean">
-                  {advisor.name}
-                </p>
-              </div>
+            ] as { name: string; image: string }[]).map((a) => (
+              <AdvisorCard key={a.name} name={a.name} image={a.image} />
             ))}
           </div>
+        </div>
+      </section>
 
-          {/* Independent Affiliate Advisors */}
-          <h2 className="font-[Playfair_Display,serif] bta-h2 text-bta-aegean uppercase tracking-widest mb-12 text-center">
-            BTA Independent Affiliate Advisors
-          </h2>
+      {/* ── 6. INDEPENDENT ADVISORS & AFFILIATES ── */}
+      <section className="bg-white py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <SectionHeader
+            eyebrow="Extended Network"
+            heading="Independent Advisors & Affiliates"
+            description="A curated network of independent travel experts, each bringing their own perspective and specialty, all supported by the strength and standards of BTA."
+          />
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
             {([
               { name: "Julie Rose", image: "https://travelbta.com/wp-content/uploads/2023/02/Julie-Rose-Photo-resized.jpg" },
@@ -242,25 +243,44 @@ export default function About() {
               { name: "Chloe Cottingham", image: "https://travelbta.com/wp-content/uploads/2022/12/Chloe-Cottingham-About.jpg" },
               { name: "Camila Dominguez", image: "https://travelbta.com/wp-content/uploads/2025/02/IMG_5029-2-scaled.jpg" },
               { name: "Malou Sarmiento", image: "https://travelbta.com/wp-content/uploads/2025/08/Screenshot-2025-08-19-at-9.38.30-PM.png" },
-            ] as { name: string; image: string }[]).map((advisor) => (
-              <div key={advisor.name} className="flex flex-col items-center text-center">
-                <div className="w-full aspect-square overflow-hidden mb-3">
-                  <img
-                    src={advisor.image}
-                    alt={advisor.name}
-                    className="w-full h-full object-cover object-top grayscale hover:grayscale-0 transition-all duration-500"
-                  />
-                </div>
-                <p className="font-[Cormorant_SC,serif] tracking-widest text-xs uppercase text-bta-aegean">
-                  {advisor.name}
-                </p>
-              </div>
+            ] as { name: string; image: string }[]).map((a) => (
+              <AdvisorCard key={a.name} name={a.name} image={a.image} />
             ))}
           </div>
         </div>
       </section>
 
-      {/* ── 6. MISSION BAND ── */}
+      {/* ── 7. HOTEL SPECIALISTS ── */}
+      {/* WHY: A dedicated section for our hotel specialist partners — well-traveled
+           advisors with deep luxury hotel knowledge. Photos are placeholders until
+           provided by each specialist. */}
+      <section className="bg-bta-stone py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <SectionHeader
+            eyebrow="Specialist Partners"
+            heading="Hotel Specialists"
+            description="Our hotel specialists are well-traveled advisors with deep knowledge of the world's leading luxury hotels, offering thoughtful guidance and trusted recommendations for exceptional stays worldwide."
+          />
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+            {([
+              { name: "Kelly Reed", subtitle: "Petit Passeport", image: "", placeholder: true },
+              { name: "Edward Leos", subtitle: "The Hotel Guide", image: "", placeholder: true },
+              { name: "Michelle Halpern", subtitle: "Live Like It's the Weekend", image: "", placeholder: true },
+              { name: "Roxane Stritt", subtitle: "The Spa Travel Gal", image: "", placeholder: true },
+            ] as { name: string; subtitle: string; image: string; placeholder: boolean }[]).map((a) => (
+              <AdvisorCard
+                key={a.name}
+                name={a.name}
+                image={a.image}
+                subtitle={a.subtitle}
+                placeholder={a.placeholder}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── 8. MISSION BAND ── */}
       <section className="bg-bta-aegean py-20 px-6">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-bta-gold font-['Playfair_Display',Georgia,serif] italic tracking-[0.25em] text-base uppercase mb-4">
@@ -275,7 +295,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* ── 6. CTA ── */}
+      {/* ── 9. CTA ── */}
       <section className="bg-bta-stone py-20 px-6 text-center">
         <p className="text-bta-gold font-['Playfair_Display',Georgia,serif] italic tracking-[0.25em] text-base uppercase mb-4">
           Ready to Begin?
