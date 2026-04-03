@@ -235,7 +235,7 @@ export default function About() {
               { name: "Rebecca Hogan", image: "https://travelbta.com/wp-content/uploads/2026/03/IMG_0181-766x1024.jpeg" },
               { name: "Autumn Garduno", image: "https://travelbta.com/wp-content/uploads/2024/04/unnamed-13-3-1.jpg" },
               { name: "Becca Samuels", image: "https://travelbta.com/wp-content/uploads/2024/08/unnamed-1.jpg" },
-              { name: "Tracey Davis", image: "https://travelbta.com/wp-content/uploads/2024/03/bta-horizontal-photo-2.jpeg" },
+              { name: "Tracey Davis", image: "/images/advisor-tracey-davis.jpg" },
               { name: "Kathleen Smith", image: "https://travelbta.com/wp-content/uploads/2022/12/Kathleen-Profile-resized.jpg" },
               { name: "Carol Fogerty", image: "https://travelbta.com/wp-content/uploads/2025/05/f2a52e31-59fe-4b31-8793-0a1fdda00163_IMG_1584__3_-1-scaled-e1747425399928.jpg" },
               { name: "Julie Plummer", image: "/images/advisor-julie-plummer.jpg" },
