@@ -72,3 +72,7 @@
 - [x] Journal page: pagination already implemented (Previous/Next buttons)
 - [x] Homepage Inspiration/Journal section: now fetches live latest 3 posts from WordPress REST API
 - [x] Homepage Inspiration section: shows real featured image, category, read time, title from live feed; skeleton loading states added
+
+## Philosophy Section Figma Match
+- [x] Update PhilosophySection in AboutSections.tsx to match Figma: gold heading, bold italic eyebrow, Lucide icons, bold item titles, Learn More button
+- [x] Update PhilosophySection in AboutSectionsV2.tsx to match same Figma design

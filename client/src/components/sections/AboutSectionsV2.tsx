@@ -9,6 +9,8 @@
  */
 
 import { whoWeAre, stats, philosophy, curatedHotels } from "@/content/homepage";
+import { Diamond, Users, Map, Award, Crown } from "lucide-react";
+import { Link } from "wouter";
 
 export function WhoWeAreSection() {
   return (
@@ -52,34 +54,72 @@ export function StatsSection() {
 }
 
 export function PhilosophySection() {
+  /*
+   * WHY: Updated to match Figma design:
+   * - Heading color changed to Champagne Gold (#BFAF8A)
+   * - Eyebrow uses bold italic Cormorant Garamond in Champagne Gold
+   * - Body text uses bold Playfair Display
+   * - Decorative dashes replaced with Lucide icons in Champagne Gold
+   * - Feature titles use bold Playfair Display in sentence case
+   * - Layout and image column preserved unchanged
+   */
+
+  const featureIcons = [
+    <Diamond key="diamond" className="w-5 h-5 text-[#bfaf8a] flex-shrink-0 mt-0.5" strokeWidth={1.25} />,
+    <Users key="users" className="w-5 h-5 text-[#bfaf8a] flex-shrink-0 mt-0.5" strokeWidth={1.25} />,
+    <Map key="map" className="w-5 h-5 text-[#bfaf8a] flex-shrink-0 mt-0.5" strokeWidth={1.25} />,
+    <Award key="award" className="w-5 h-5 text-[#bfaf8a] flex-shrink-0 mt-0.5" strokeWidth={1.25} />,
+    <Crown key="crown" className="w-5 h-5 text-[#bfaf8a] flex-shrink-0 mt-0.5" strokeWidth={1.25} />,
+  ];
+
   return (
     <section className="bg-[#edeae4] py-24 px-6">
       <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-24 items-center">
         {/* Left: Text */}
         <div>
-          <p className="bta-eyebrow mb-4">{philosophy.eyebrow}</p>
+          {/* Eyebrow: bold italic Cormorant Garamond in Champagne Gold */}
+          <p
+            className="text-[#bfaf8a] text-xl mb-4"
+            style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontWeight: 600 }}
+          >
+            {philosophy.eyebrow}
+          </p>
+
+          {/* Heading: Champagne Gold — matches Figma */}
           <h2
-            className="bta-section-title text-[#384959] text-4xl md:text-5xl mb-6 leading-tight"
-            style={{ fontWeight: 400 }}
+            className="bta-section-title text-4xl md:text-5xl mb-6 leading-tight"
+            style={{ fontWeight: 400, color: "#bfaf8a" }}
           >
             {philosophy.headline.split("\n").map((line, i) => (
               <span key={i} className="block">{line}</span>
             ))}
           </h2>
-          <p className="font-body text-[#2F2F2F]/80 text-xl leading-relaxed mb-10" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+
+          {/* Body: bold Playfair Display — matches Figma weight */}
+          <p
+            className="text-[#2F2F2F] text-xl leading-relaxed mb-10"
+            style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700 }}
+          >
             {philosophy.body}
           </p>
 
           <div className="space-y-6 mb-12">
-            {philosophy.features.map((feature) => (
-              <div key={feature.title} className="flex gap-5">
-                {/* Champagne Gold decorative dash */}
-                <div className="w-5 h-px bg-[#bfaf8a] mt-3.5 flex-shrink-0" />
+            {philosophy.features.map((feature, i) => (
+              <div key={feature.title} className="flex gap-5 items-start">
+                {/* Lucide icon in Champagne Gold — replaces decorative dash per Figma */}
+                {featureIcons[i] ?? featureIcons[0]}
                 <div>
-                  <div className="font-smallcaps text-[#384959] text-sm tracking-[0.15em] uppercase mb-1.5">
+                  {/* Feature title: bold Playfair Display, sentence case */}
+                  <div
+                    className="text-[#384959] text-sm mb-1.5"
+                    style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700 }}
+                  >
                     {feature.title}
                   </div>
-                  <p className="font-body text-[#2F2F2F]/65 text-lg leading-snug" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+                  <p
+                    className="text-[#2F2F2F]/65 text-lg leading-snug"
+                    style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 400 }}
+                  >
                     {feature.description}
                   </p>
                 </div>
@@ -87,9 +127,9 @@ export function PhilosophySection() {
             ))}
           </div>
 
-          <a href={philosophy.cta.href} className="bta-btn-outline-dark">
+          <Link href={philosophy.cta.href} className="bta-btn-outline-dark">
             {philosophy.cta.label}
-          </a>
+          </Link>
         </div>
 
         {/* Right: Image with Champagne Gold accent block */}
