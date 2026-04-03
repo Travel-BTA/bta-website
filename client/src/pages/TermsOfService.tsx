@@ -214,24 +214,70 @@ export default function TermsOfService() {
     <PageLayout>
 
       {/* ── Header ────────────────────────────────────────────────────────── */}
-      {/* WHY: Aegean Blue solid background — Champagne Gold labels are correct here */}
-      <section className="bg-[#384959] py-20 px-6">
-        <div className="max-w-[1440px] mx-auto px-8 lg:px-14 text-center">
+      {/*
+        WHY: Aegean Blue solid background — Champagne Gold labels are correct here.
+        Luxury treatment: deep gradient from near-black to Aegean Blue, a hairline
+        gold rule above and below the title, Allura script eyebrow, and generous
+        vertical breathing room. The decorative diamond motif echoes the BTA brand.
+      */}
+      <section
+        className="relative pt-36 pb-24 px-6 overflow-hidden"
+        style={{
+          background: "linear-gradient(180deg, #1e2b35 0%, #384959 55%, #2e3f4f 100%)",
+        }}
+      >
+        {/* Subtle radial glow — adds depth without being heavy */}
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background: "radial-gradient(ellipse 70% 60% at 50% 40%, rgba(191,175,138,0.06) 0%, transparent 70%)",
+          }}
+        />
+
+        <div className="relative max-w-3xl mx-auto text-center">
+
+          {/* Allura script eyebrow */}
           <p
-            className="text-[#bfaf8a] text-xs tracking-[0.3em] uppercase mb-4"
-            style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
+            className="text-[#bfaf8a]/70 mb-5"
+            style={{ fontFamily: "'Allura', cursive", fontSize: "26px", lineHeight: 1 }}
           >
             Boutique Travel Advisors
           </p>
+
+          {/* Decorative hairline + diamond */}
+          <div className="flex items-center justify-center gap-3 mb-8">
+            <span className="block h-px w-20 bg-[#bfaf8a]/35" />
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+              <rect x="5" y="0.5" width="6.5" height="6.5" rx="0.5" transform="rotate(45 5 0.5)" fill="#bfaf8a" fillOpacity="0.5" />
+            </svg>
+            <span className="block h-px w-20 bg-[#bfaf8a]/35" />
+          </div>
+
+          {/* H1 */}
           <h1
-            className="text-white text-4xl md:text-5xl uppercase tracking-[0.08em] mb-4"
-            style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400 }}
+            className="text-white uppercase mb-6"
+            style={{
+              fontFamily: "'Instrument Serif', Georgia, serif",
+              fontWeight: 400,
+              fontSize: "clamp(2.4rem, 6vw, 4.5rem)",
+              letterSpacing: "0.12em",
+              lineHeight: 1.05,
+            }}
           >
             Terms of Service
           </h1>
+
+          {/* Bottom rule */}
+          <div className="flex items-center justify-center gap-3 mb-7">
+            <span className="block h-px w-16 bg-[#bfaf8a]/30" />
+            <span className="block w-1 h-1 rounded-full bg-[#bfaf8a]/50" />
+            <span className="block h-px w-16 bg-[#bfaf8a]/30" />
+          </div>
+
+          {/* Date */}
           <p
-            className="text-white/45 text-sm"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+            className="text-white/40 text-xs tracking-[0.2em] uppercase"
+            style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
           >
             Last Modified: December 28, 2025
           </p>
