@@ -3,7 +3,7 @@
  *
  * Design: Transparent overlay on hero image, becomes solid on scroll.
  * Logo: top-left, official BTA logo image — larger and prominent.
- * Nav links: center, Playfair Display small caps, properly sized.
+ * Nav links: center, Cormorant SC small caps, properly sized.
  * CTA: right, outlined button.
  */
 

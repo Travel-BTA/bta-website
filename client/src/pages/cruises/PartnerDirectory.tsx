@@ -5,7 +5,7 @@
  * Cards use full-bleed photography with name/tagline overlay (bottom gradient).
  * Design references: philanthropic-initiatives page card grid pattern.
  *
- * BTA brand: Instrument Serif headings, Playfair Display body,
+ * BTA brand: Instrument Serif headings, Cormorant Garamond body,
  * Champagne Gold #bfaf8a, Aegean Blue #384959, Linen White #faf9f6.
  */
 
@@ -248,7 +248,7 @@ function PhotoCard({
       <div className="absolute top-4 left-4">
         <span
           className="inline-block bg-[#bfaf8a] text-white text-[9px] tracking-[0.25em] uppercase px-2.5 py-1"
-          style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+          style={{ fontFamily: "'Cormorant Garamond', serif" }}
         >
           {badge ?? category}
         </span>
@@ -264,14 +264,14 @@ function PhotoCard({
         </h3>
         <p
           className="text-white/70 text-xs leading-relaxed mb-3"
-          style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic" }}
+          style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
         >
           {tagline}
         </p>
         {note && (
           <p
             className="text-[#bfaf8a]/80 text-[10px] tracking-[0.15em] uppercase"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+            style={{ fontFamily: "'Cormorant Garamond', serif" }}
           >
             ✦ {note}
           </p>
@@ -281,7 +281,7 @@ function PhotoCard({
           <div className="w-6 h-px bg-[#bfaf8a]" />
           <span
             className="text-[#bfaf8a] text-[10px] tracking-[0.2em] uppercase"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+            style={{ fontFamily: "'Cormorant Garamond', serif" }}
           >
             Explore
           </span>
@@ -308,19 +308,19 @@ function SectionHeader({
     <div className="mb-12 text-center">
       <p
         className={`text-xs tracking-[0.3em] uppercase mb-4 ${light ? "text-[#bfaf8a]" : "text-[#bfaf8a]"}`}
-        style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+        style={{ fontFamily: "'Cormorant Garamond', serif" }}
       >
         {eyebrow}
       </p>
       <h2
-        className={`font-display bta-h3 md:bta-h2 font-light leading-tight mb-4 ${light ? "text-white" : "text-[#384959]"}`}
+        className={`font-display text-4xl md:text-5xl font-light leading-tight mb-4 ${light ? "text-white" : "text-[#384959]"}`}
       >
         {title}
       </h2>
       {subtitle && (
         <p
           className={`text-lg max-w-2xl mx-auto leading-relaxed ${light ? "text-white/65" : "text-[#2F2F2F]/60"}`}
-          style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+          style={{ fontFamily: "'Cormorant Garamond', serif" }}
         >
           {subtitle}
         </p>
@@ -355,14 +355,14 @@ export default function PartnerDirectory() {
             <Link
               href="/cruises"
               className="text-white/55 text-xs tracking-[0.2em] uppercase hover:text-[#bfaf8a] transition-colors"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              style={{ fontFamily: "'Cormorant Garamond', serif" }}
             >
               Cruises
             </Link>
             <span className="text-white/35 text-xs">›</span>
             <span
               className="text-[#bfaf8a] text-xs tracking-[0.2em] uppercase"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              style={{ fontFamily: "'Cormorant Garamond', serif" }}
             >
               Partner Directory
             </span>
@@ -374,12 +374,12 @@ export default function PartnerDirectory() {
           >
             Every Link Leads Back to BTA
           </p>
-          <h1 className="font-display text-white bta-h1 md:bta-h1 leading-none mb-6">
+          <h1 className="font-display text-white text-5xl md:text-7xl font-light leading-none mb-6">
             Our Partner Directory
           </h1>
           <p
             className="text-white/70 text-xl max-w-xl leading-relaxed"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+            style={{ fontFamily: "'Cormorant Garamond', serif" }}
           >
             Every co-branded platform and interactive experience — pre-configured so all enquiries route directly to Boutique Travel Advisors.
           </p>
@@ -418,7 +418,7 @@ export default function PartnerDirectory() {
                   <h3 className="font-display text-white text-lg font-light mb-2">{item.title}</h3>
                   <p
                     className="text-white/55 text-sm leading-relaxed"
-                    style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                    style={{ fontFamily: "'Cormorant Garamond', serif" }}
                   >
                     {item.body}
                   </p>

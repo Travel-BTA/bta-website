@@ -12,7 +12,7 @@
  * 5. Private Charters — alternating image/text
  * 6. FinalCta + Footer (via PageLayout)
  *
- * Design: BTA brand guide — Instrument Serif headings, Playfair Display body,
+ * Design: BTA brand guide — Instrument Serif headings, Cormorant Garamond body,
  * Champagne Gold #bfaf8a, Aegean Blue #384959, Linen White #faf9f6.
  */
 
@@ -21,11 +21,8 @@ import { PageLayout } from "@/components/PageLayout";
 
 // ─── Images ──────────────────────────────────────────────────────────────────
 const IMAGES = {
-  // Hero: cruise ship at port with tropical hillside — provided by Janet to
-  // replace the underwater diver stock photo. Better represents the luxury
-  // ocean journey experience BTA curates for clients.
-  // Uploaded to CDN to avoid deployment timeout (was client/public/images/hero-cruises.jpg)
-  hero: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/hero-cruises_fb1c83c7.jpg",
+  // Hero: luxury small expedition ship at sea — no mainstream port or Caribbean aerial
+  hero: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=2400&q=80",
   // Luxury Ocean card: elegant ship bow at sea
   luxuryOcean: "https://images.unsplash.com/photo-1548574505-5e239809ee19?auto=format&fit=crop&w=1200&q=80",
   // Premium Ocean card: scenic ocean voyage, no mainstream ship branding
@@ -110,16 +107,16 @@ export default function CruisesHub() {
           >
             Extraordinary Places & Exclusive Amenities
           </p>
-          <h1 className="font-display text-white bta-h1 md:bta-h1 leading-none mb-2">
+          <h1 className="font-display text-white text-5xl md:text-7xl font-light leading-none mb-2">
             Cruises &
           </h1>
-          <h1 className="font-display text-white bta-h1 md:bta-h1 leading-none mb-8">
+          <h1 className="font-display text-white text-5xl md:text-7xl font-light leading-none mb-8">
             Water Journeys
           </h1>
           <Link
             href="/contact"
             className="inline-flex items-center gap-3 bg-[#bfaf8a] text-white px-8 py-3.5 text-xs tracking-[0.25em] uppercase hover:bg-[#bfaf8a] transition-all duration-300"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic" }}
+            style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
           >
             Start Planning
             <span className="text-base not-italic">→</span>
@@ -139,19 +136,19 @@ export default function CruisesHub() {
                 <div className="w-10 h-px bg-[#bfaf8a]" />
                 <span
                   className="text-[#bfaf8a] text-xs tracking-[0.25em] uppercase"
-                  style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                  style={{ fontFamily: "'Cormorant Garamond', serif" }}
                 >
                   Virtuoso Member
                 </span>
               </div>
 
-              <h2 className="font-display text-[#384959] bta-h2 font-light leading-tight mb-8">
+              <h2 className="font-display text-[#384959] text-3xl md:text-4xl font-light leading-tight mb-8">
                 The Art of Cruising
               </h2>
 
               <p
                 className="text-[#2F2F2F]/75 text-lg leading-relaxed mb-6"
-                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                style={{ fontFamily: "'Cormorant Garamond', serif" }}
               >
                 Whether traveling on a river cruise or exploring wildlife, glaciers, and fjords on
                 an expedition cruise, cruising allows us to entertain, relax, and experience new
@@ -161,7 +158,7 @@ export default function CruisesHub() {
               </p>
               <p
                 className="text-[#2F2F2F]/65 text-lg leading-relaxed mb-10"
-                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                style={{ fontFamily: "'Cormorant Garamond', serif" }}
               >
                 A cruise takes away the stressors of packing and unpacking and lost time transiting
                 between destinations. BTA works closely with our clients to determine the cruise
@@ -176,7 +173,7 @@ export default function CruisesHub() {
               <Link
                 href="/contact"
                 className="inline-flex items-center gap-3 border border-[#bfaf8a] text-[#bfaf8a] px-8 py-3 text-xs tracking-[0.2em] uppercase hover:bg-[#bfaf8a] hover:text-white transition-all duration-300"
-                style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic" }}
+                style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
               >
                 Connect with an Advisor
                 <span className="text-base not-italic">→</span>
@@ -187,15 +184,15 @@ export default function CruisesHub() {
             <div className="relative">
               <div className="border-l-2 border-[#bfaf8a] pl-10 py-4">
                 <p
-                  className="text-[#384959] bta-h3 leading-relaxed mb-6"
-                  style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic" }}
+                  className="text-[#384959] text-2xl md:text-3xl leading-relaxed mb-6"
+                  style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
                 >
                   "Why do we love the sea? It is because it has some potent power to make us think
                   things we like to think."
                 </p>
                 <p
                   className="text-[#bfaf8a] text-sm tracking-[0.2em] uppercase"
-                  style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                  style={{ fontFamily: "'Cormorant Garamond', serif" }}
                 >
                   — Robert Henri
                 </p>
@@ -218,13 +215,13 @@ export default function CruisesHub() {
               <div className="w-12 h-px bg-[#bfaf8a]/50" />
               <span
                 className="text-[#bfaf8a] text-xs tracking-[0.3em] uppercase"
-                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                style={{ fontFamily: "'Cormorant Garamond', serif" }}
               >
                 Exclusive to BTA Clients
               </span>
               <div className="w-12 h-px bg-[#bfaf8a]/50" />
             </div>
-            <h2 className="font-display text-white bta-h3 font-light tracking-wide">
+            <h2 className="font-display text-white text-2xl md:text-3xl font-light tracking-wide">
               Virtuoso Voyages Cruise Amenities
             </h2>
           </div>
@@ -240,7 +237,7 @@ export default function CruisesHub() {
                 <div className="text-[#bfaf8a] text-lg mb-2">✦</div>
                 <p
                   className="text-white/85 text-xs tracking-[0.15em] uppercase leading-snug"
-                  style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                  style={{ fontFamily: "'Cormorant Garamond', serif" }}
                 >
                   {benefit}
                 </p>
@@ -262,7 +259,7 @@ export default function CruisesHub() {
             >
               Explore Our Cruises
             </p>
-            <h2 className="font-display text-[#384959] bta-h2 font-light mb-4">
+            <h2 className="font-display text-[#384959] text-3xl md:text-4xl font-light mb-4">
               Choose Your Journey
             </h2>
             <div className="flex items-center justify-center gap-4">
@@ -290,7 +287,7 @@ export default function CruisesHub() {
                   <div className="absolute top-6 left-6">
                     <span
                       className="text-[#bfaf8a] text-xs tracking-[0.25em] uppercase"
-                      style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                      style={{ fontFamily: "'Cormorant Garamond', serif" }}
                     >
                       {cat.eyebrow}
                     </span>
@@ -298,19 +295,19 @@ export default function CruisesHub() {
 
                   {/* Bottom text block */}
                   <div className="absolute bottom-0 left-0 right-0 p-8">
-                    <h3 className="font-display text-white bta-h3 font-light leading-tight mb-2">
+                    <h3 className="font-display text-white text-2xl md:text-3xl font-light leading-tight mb-2">
                       {cat.title}
                     </h3>
                     <p
                       className="text-white/70 text-sm leading-relaxed mb-5 max-w-sm"
-                      style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                      style={{ fontFamily: "'Cormorant Garamond', serif" }}
                     >
                       {cat.description}
                     </p>
                     {/* CTA — gold outlined pill */}
                     <span
                       className="inline-flex items-center gap-2 border border-[#bfaf8a] text-[#bfaf8a] px-6 py-2 text-xs tracking-[0.2em] uppercase group-hover:bg-[#bfaf8a] group-hover:text-white transition-all duration-300"
-                      style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic" }}
+                      style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
                     >
                       Explore
                       <span className="text-sm not-italic">→</span>
@@ -348,13 +345,13 @@ export default function CruisesHub() {
               The Ultimate Escape
             </p>
 
-            <h2 className="font-display text-[#384959] bta-h2 font-light leading-tight mb-8">
+            <h2 className="font-display text-[#384959] text-3xl md:text-4xl font-light leading-tight mb-8">
               Private Charters
             </h2>
 
             <p
               className="text-[#2F2F2F]/75 text-lg leading-relaxed mb-5"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              style={{ fontFamily: "'Cormorant Garamond', serif" }}
             >
               Mention the word yachts and images of billionaires, royals, and celebrities cruising
               along the riviera while sipping champagne are easily conjured up. But a private
@@ -363,7 +360,7 @@ export default function CruisesHub() {
             </p>
             <p
               className="text-[#2F2F2F]/65 text-lg leading-relaxed mb-10"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              style={{ fontFamily: "'Cormorant Garamond', serif" }}
             >
               We offer fully crewed charters that deliver the utmost value and service. All charters
               come with a professional captain and many include a gourmet chef, hostess, and full
@@ -374,7 +371,7 @@ export default function CruisesHub() {
             <Link
               href="/contact"
               className="inline-flex items-center gap-3 border border-[#bfaf8a] text-[#bfaf8a] px-8 py-3 text-xs tracking-[0.2em] uppercase hover:bg-[#bfaf8a] hover:text-white transition-all duration-300 self-start"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic" }}
+              style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
             >
               Enquire About a Charter
               <span className="text-base not-italic">→</span>

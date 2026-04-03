@@ -3,8 +3,8 @@
  *
  * BTA Preferred Partners hub page — inspired by Fora's /partners layout
  * but built entirely in BTA brand aesthetic:
- *   - Aegean Blue (#384959) + Champagne Gold (#BFAF8A) + Warm Stone (#edeac4)
- *   - Playfair Display headings, Playfair Display body
+ *   - Aegean Blue (#384959) + Champagne Gold (#BFAF8A) + Warm Stone (#EDEAE4)
+ *   - Playfair Display headings, Cormorant Garamond body
  *   - Logo-forward partner cards with category filter tabs
  *   - Full-bleed hero, stats bar, partner grid, final CTA
  *
@@ -101,7 +101,7 @@ export default function PreferredPartners() {
       : partners.filter((p) => p.category === activeCategory);
 
   return (
-    <div className="bg-[#edeac4] min-h-screen">
+    <div className="bg-[#EDEAE4] min-h-screen">
       <NavBar />
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
@@ -121,7 +121,7 @@ export default function PreferredPartners() {
           <p className="bta-eyebrow mb-3 text-[#BFAF8A]">
             {partnersHero.eyebrow}
           </p>
-          <h1 className="font-display bta-h2 md:bta-h1 text-white uppercase tracking-[0.08em] mb-6">
+          <h1 className="font-display text-5xl md:text-7xl text-white uppercase tracking-[0.08em] mb-6">
             {partnersHero.heading}
           </h1>
           <p className="font-body text-lg text-white/80 leading-relaxed max-w-xl mx-auto">
@@ -152,7 +152,7 @@ export default function PreferredPartners() {
       <section className="py-20 px-6">
         <div className="container mx-auto max-w-3xl text-center">
           <p className="bta-eyebrow mb-3">Why It Matters</p>
-          <h2 className="font-display bta-h2 text-[#384959] uppercase tracking-wider mb-6">
+          <h2 className="font-display text-3xl md:text-4xl text-[#384959] uppercase tracking-wider mb-6">
             {partnersIntro.heading}
           </h2>
           <div className="w-12 h-px bg-[#BFAF8A] mx-auto mb-6" />
@@ -267,7 +267,7 @@ export default function PreferredPartners() {
         />
         <div className="absolute inset-0 bg-[#384959]/65" />
         <div className="relative z-10 text-center px-6 max-w-2xl mx-auto">
-          <h2 className="font-display bta-h2 md:bta-h2 text-white uppercase tracking-wider mb-4">
+          <h2 className="font-display text-3xl md:text-5xl text-white uppercase tracking-wider mb-4">
             {partnersCta.heading}
           </h2>
           <div className="w-10 h-px bg-[#BFAF8A] mx-auto mb-6" />

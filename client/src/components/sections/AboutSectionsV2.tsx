@@ -4,7 +4,7 @@
  * Updated to match Figma brand guide:
  * - Allura script for eyebrows
  * - Playfair Display for headings (larger, more prominent)
- * - Playfair Display for body text
+ * - Cormorant Garamond for body text
  * - Correct brand colors and spacing
  */
 
@@ -18,7 +18,7 @@ export function WhoWeAreSection() {
         <h2 className="bta-section-title text-[#faf9f6] text-4xl md:text-5xl mb-8" style={{ fontWeight: 400 }}>
           {whoWeAre.headline}
         </h2>
-        <p className="font-body text-[#faf9f6]/90 text-xl md:text-2xl leading-relaxed mb-10" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+        <p className="font-body text-[#faf9f6]/90 text-xl md:text-2xl leading-relaxed mb-10" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
           {whoWeAre.body}
         </p>
         <a href={whoWeAre.cta.href} className="bta-btn-gold">
@@ -53,7 +53,7 @@ export function StatsSection() {
 
 export function PhilosophySection() {
   return (
-    <section className="bg-[#edeac4] py-24 px-6">
+    <section className="bg-[#edeae4] py-24 px-6">
       <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-24 items-center">
         {/* Left: Text */}
         <div>
@@ -66,7 +66,7 @@ export function PhilosophySection() {
               <span key={i} className="block">{line}</span>
             ))}
           </h2>
-          <p className="font-body text-[#2F2F2F]/80 text-xl leading-relaxed mb-10" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+          <p className="font-body text-[#2F2F2F]/80 text-xl leading-relaxed mb-10" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
             {philosophy.body}
           </p>
 
@@ -79,7 +79,7 @@ export function PhilosophySection() {
                   <div className="font-smallcaps text-[#384959] text-sm tracking-[0.15em] uppercase mb-1.5">
                     {feature.title}
                   </div>
-                  <p className="font-body text-[#2F2F2F]/65 text-lg leading-snug" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+                  <p className="font-body text-[#2F2F2F]/65 text-lg leading-snug" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
                     {feature.description}
                   </p>
                 </div>
@@ -119,13 +119,13 @@ export function CuratedHotelsSection() {
         <div>
           <p
             className="text-[#faf9f6] text-5xl md:text-6xl lg:text-7xl leading-tight"
-            style={{ fontFamily: "'Allura', cursive", fontWeight: 400 }}
+            style={{ fontFamily: "'Allura', 'Cormorant Garamond', serif", fontWeight: 400 }}
           >
             {curatedHotels.scriptLine1}
           </p>
           <p
             className="text-[#faf9f6] text-5xl md:text-6xl lg:text-7xl leading-tight"
-            style={{ fontFamily: "'Allura', cursive", fontWeight: 400 }}
+            style={{ fontFamily: "'Allura', 'Cormorant Garamond', serif", fontWeight: 400 }}
           >
             {curatedHotels.scriptLine2}
           </p>

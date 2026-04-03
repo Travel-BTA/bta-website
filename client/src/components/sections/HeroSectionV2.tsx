@@ -46,7 +46,7 @@ export default function HeroSection() {
             </h1>
             <p
               className="font-body text-white/85 text-xl md:text-2xl italic"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              style={{ fontFamily: "'Cormorant Garamond', serif" }}
             >
               {hero.subheadline}
             </p>

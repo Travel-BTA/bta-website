@@ -4,7 +4,7 @@
  * Expedition Cruises sub-page featuring:
  * Lindblad Expeditions, Silversea Expeditions, Hurtigruten, Quark Expeditions, Aurora Expeditions
  *
- * Design: BTA brand guide — Instrument Serif headings, Playfair Display body,
+ * Design: BTA brand guide — Instrument Serif headings, Cormorant Garamond body,
  * Champagne Gold #bfaf8a, Aegean Blue #384959, Linen White #faf9f6.
  *
  * Images: All images show actual expedition destinations —
@@ -153,11 +153,11 @@ export default function ExpeditionCruises() {
 
         <div className="relative z-10 w-full max-w-[1440px] mx-auto px-8 lg:px-14 pb-16 md:pb-20">
           <div className="flex items-center gap-2 mb-6">
-            <Link href="/cruises" className="text-white/60 text-xs tracking-[0.2em] uppercase hover:text-[#bfaf8a] transition-colors" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+            <Link href="/cruises" className="text-white/60 text-xs tracking-[0.2em] uppercase hover:text-[#bfaf8a] transition-colors" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
               Cruises
             </Link>
             <span className="text-white/40 text-xs">›</span>
-            <span className="text-[#bfaf8a] text-xs tracking-[0.2em] uppercase" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+            <span className="text-[#bfaf8a] text-xs tracking-[0.2em] uppercase" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
               Expedition
             </span>
           </div>
@@ -165,16 +165,16 @@ export default function ExpeditionCruises() {
           <p className="text-[#bfaf8a] mb-3" style={{ fontFamily: "'Allura', cursive", fontSize: "1.6rem" }}>
             The Final Frontiers
           </p>
-          <h1 className="font-display text-white bta-h1 md:bta-h2 leading-none mb-6">
+          <h1 className="font-display text-white text-5xl md:text-6xl font-light leading-none mb-6">
             Expedition Cruises
           </h1>
-          <p className="text-white/85 text-xl max-w-2xl leading-relaxed mb-8" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+          <p className="text-white/85 text-xl max-w-2xl leading-relaxed mb-8" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
             Observe glaciers, exotic islands, fjords, and icebergs accessible only from a Zodiac — accompanied by expert naturalists, scientists, and photographers.
           </p>
           <Link
             href="/contact"
             className="inline-flex items-center gap-3 bg-[#bfaf8a] text-white px-8 py-3.5 text-xs tracking-[0.25em] uppercase hover:bg-[#bfaf8a] transition-all duration-300"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic" }}
+            style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
           >
             Start Planning
             <span className="text-base not-italic">→</span>
@@ -189,17 +189,17 @@ export default function ExpeditionCruises() {
             <div>
               <div className="flex items-center gap-3 mb-8">
                 <div className="w-10 h-px bg-[#bfaf8a]" />
-                <span className="text-[#bfaf8a] text-xs tracking-[0.25em] uppercase" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+                <span className="text-[#bfaf8a] text-xs tracking-[0.25em] uppercase" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
                   Expedition Philosophy
                 </span>
               </div>
-              <h2 className="font-display text-[#384959] bta-h2 font-light leading-tight mb-6">
+              <h2 className="font-display text-[#384959] text-3xl md:text-4xl font-light leading-tight mb-6">
                 There Is Nothing Quite Like Exploring by Expedition
               </h2>
-              <p className="text-[#2f2f2f]/75 text-lg leading-relaxed mb-4" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+              <p className="text-[#2f2f2f]/75 text-lg leading-relaxed mb-4" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
                 Expedition cruising is defined by access — to places, wildlife, and experiences that simply cannot be reached any other way. Whether you're snorkeling and kayaking in the Galápagos Islands or hiking glaciers and snowshoeing on an Arctic adventure, expect to be genuinely amazed.
               </p>
-              <p className="text-[#2f2f2f]/65 text-lg leading-relaxed" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+              <p className="text-[#2f2f2f]/65 text-lg leading-relaxed" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
                 With a focus on exploration and adventure, expedition cruises are accompanied by expert guides — naturalists, environmentalists, scientists, biologists, historians, photographers, and other trained professionals who transform every sighting into a learning experience.
               </p>
             </div>
@@ -209,7 +209,7 @@ export default function ExpeditionCruises() {
               {DESTINATIONS.map((dest) => (
                 <div key={dest.name} className="border border-[#bfaf8a]/25 px-6 py-5 hover:border-[#bfaf8a]/60 transition-colors duration-300">
                   <p className="font-display text-[#384959] text-lg mb-1">{dest.name}</p>
-                  <p className="text-[#2f2f2f]/55 text-sm" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+                  <p className="text-[#2f2f2f]/55 text-sm" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
                     {dest.desc}
                   </p>
                 </div>
@@ -227,33 +227,33 @@ export default function ExpeditionCruises() {
               <div className={`relative overflow-hidden ${line.imageRight ? "lg:order-2" : "lg:order-1"}`} style={{ minHeight: "540px" }}>
                 <img src={line.image} alt={line.name} className="absolute inset-0 w-full h-full object-cover" />
                 <div className="absolute top-8 left-8">
-                  <span className="bg-[#bfaf8a]/90 text-white text-xs tracking-[0.25em] uppercase px-4 py-1.5" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+                  <span className="bg-[#bfaf8a]/90 text-white text-xs tracking-[0.25em] uppercase px-4 py-1.5" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
                     {line.eyebrow}
                   </span>
                 </div>
               </div>
 
               <div className={`flex flex-col justify-center px-8 lg:px-14 py-16 lg:py-20 ${line.imageRight ? "lg:order-1" : "lg:order-2"}`}>
-                <h2 className="font-display text-[#384959] bta-h2 font-light leading-tight mb-2">
+                <h2 className="font-display text-[#384959] text-3xl md:text-4xl font-light leading-tight mb-2">
                   {line.name}
                 </h2>
-                <p className="text-[#bfaf8a] text-lg mb-6" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic" }}>
+                <p className="text-[#bfaf8a] text-lg mb-6" style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}>
                   {line.tagline}
                 </p>
                 <div className="w-12 h-px bg-[#bfaf8a] mb-6" />
-                <p className="text-[#2f2f2f]/75 text-base leading-relaxed mb-6" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+                <p className="text-[#2f2f2f]/75 text-base leading-relaxed mb-6" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
                   {line.description}
                 </p>
                 <ul className="space-y-2 mb-6">
                   {line.highlights.map((h) => (
-                    <li key={h} className="flex items-start gap-3 text-[#2f2f2f]/70 text-sm" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+                    <li key={h} className="flex items-start gap-3 text-[#2f2f2f]/70 text-sm" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
                       <span className="text-[#bfaf8a] mt-0.5 flex-shrink-0">✦</span>
                       {h}
                     </li>
                   ))}
                 </ul>
                 <div className="border-l-2 border-[#bfaf8a]/40 pl-4 mb-8">
-                  <p className="text-[#384959]/70 text-sm leading-relaxed" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic" }}>
+                  <p className="text-[#384959]/70 text-sm leading-relaxed" style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}>
                     <span className="text-[#bfaf8a] not-italic font-medium">Culinary: </span>
                     {line.culinary}
                   </p>
@@ -263,7 +263,7 @@ export default function ExpeditionCruises() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-3 border border-[#bfaf8a] text-[#bfaf8a] px-8 py-3 text-xs tracking-[0.2em] uppercase hover:bg-[#bfaf8a] hover:text-white transition-all duration-300 self-start"
-                  style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic" }}
+                  style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
                 >
                   {line.linkLabel}
                   <span className="text-base not-italic">→</span>

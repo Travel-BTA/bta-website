@@ -72,7 +72,7 @@ function PropertyCard({
 
       {/* Text overlay at bottom */}
       <div className="absolute bottom-0 left-0 right-0 p-4">
-        <h4 className="font-display text-white bta-h4 leading-tight mb-0.5">
+        <h4 className="font-display text-white text-base leading-tight mb-0.5">
           {name}
         </h4>
         <p className="font-smallcaps text-[#BFAF8A] text-[10px] tracking-widest">
@@ -116,10 +116,10 @@ export default function PartnerDetail() {
   // 404 fallback
   if (!partner) {
     return (
-      <div className="bg-[#edeac4] min-h-screen flex flex-col items-center justify-center">
+      <div className="bg-[#EDEAE4] min-h-screen flex flex-col items-center justify-center">
         <NavBar />
         <div className="text-center py-40">
-          <h1 className="font-display bta-h3 text-[#384959] mb-4">
+          <h1 className="font-display text-4xl text-[#384959] mb-4">
             Partner Not Found
           </h1>
           <Link href="/preferred-partners">
@@ -133,7 +133,7 @@ export default function PartnerDetail() {
   }
 
   return (
-    <div className="bg-[#edeac4] min-h-screen">
+    <div className="bg-[#EDEAE4] min-h-screen">
       <NavBar />
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
@@ -157,7 +157,7 @@ export default function PartnerDetail() {
             </span>
           </Link>
 
-          <h1 className="font-display bta-h2 md:bta-h1 text-white uppercase tracking-[0.06em] mb-6 leading-none">
+          <h1 className="font-display text-5xl md:text-7xl text-white uppercase tracking-[0.06em] mb-6 leading-none">
             {partner.name}
           </h1>
 
@@ -177,7 +177,7 @@ export default function PartnerDetail() {
           <p className="bta-eyebrow mb-3 text-[#BFAF8A]">
             BTA Preferred Partner
           </p>
-          <h2 className="font-display bta-h2 text-[#384959] uppercase tracking-wider mb-6">
+          <h2 className="font-display text-3xl md:text-4xl text-[#384959] uppercase tracking-wider mb-6">
             {partner.name}
           </h2>
           <div className="w-10 h-px bg-[#BFAF8A] mx-auto mb-6" />
@@ -193,9 +193,9 @@ export default function PartnerDetail() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-stretch">
 
             {/* Left — benefits text + pills */}
-            <div className="bg-[#edeac4] py-16 pr-0 lg:pr-12 flex flex-col justify-center">
+            <div className="bg-[#EDEAE4] py-16 pr-0 lg:pr-12 flex flex-col justify-center">
               <p className="bta-eyebrow mb-3">Exclusive Inclusions</p>
-              <h2 className="font-display bta-h3 text-[#384959] uppercase tracking-wider mb-3">
+              <h2 className="font-display text-2xl md:text-3xl text-[#384959] uppercase tracking-wider mb-3">
                 {partner.name} Benefits
               </h2>
               <p className="font-body text-sm text-[#2F2F2F]/60 mb-6 leading-relaxed">
@@ -311,7 +311,7 @@ export default function PartnerDetail() {
         <div className="absolute inset-0 bg-[#384959]/65" />
         <div className="relative z-10 text-center px-6 max-w-xl mx-auto">
           <p className="bta-eyebrow mb-3 text-[#BFAF8A]">Ready to Travel?</p>
-          <h2 className="font-display bta-h2 text-white uppercase tracking-wider mb-4">
+          <h2 className="font-display text-3xl md:text-4xl text-white uppercase tracking-wider mb-4">
             Let's Design Your Journey
           </h2>
           <div className="w-10 h-px bg-[#BFAF8A] mx-auto mb-6" />

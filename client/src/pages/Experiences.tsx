@@ -1,5 +1,5 @@
 // Experiences page BTA curated global experiences
-// Brand: #2f2f2f | #faf9f6 | #edeac4 | #384959 | #bfaf8a
+// Brand: #2f2f2f | #faf9f6 | #edeae4 | #384959 | #bfaf8a
 // Layout: Full-bleed hero → intro → featured categories → curated list → philanthropy note → CTA
 
 import { Link } from "wouter";
@@ -41,7 +41,7 @@ const EXPERIENCE_CATEGORIES = [
       "Napa Valley harvest season experiences",
     ],
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/exp-culinary-MygosSX4kaPXefwZ8DaiYG.webp",
-    bgColor: "#edeac4",
+    bgColor: "#edeae4",
     textColor: "#2f2f2f",
   },
   {
@@ -79,7 +79,7 @@ const EXPERIENCE_CATEGORIES = [
       "Angkor Wat sunrise private access",
     ],
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/exp-cultural-3tXwJCYW23JgqqixTYhCWT.webp",
-    bgColor: "#edeac4",
+    bgColor: "#edeae4",
     textColor: "#2f2f2f",
   },
   {
@@ -122,25 +122,25 @@ export default function Experiences() {
           style={{ background: "linear-gradient(to top, rgba(47,47,47,0.88) 0%, rgba(47,47,47,0.3) 55%, rgba(47,47,47,0.15) 100%)" }}
         />
         <div className="relative z-10 w-full px-8 md:px-16 pb-16">
-          <p className="text-xs tracking-[0.25em] uppercase mb-4" style={{ color: "#bfaf8a", fontFamily: "'Playfair Display', Georgia, serif" }}>
+          <p className="text-xs tracking-[0.25em] uppercase mb-4" style={{ color: "#bfaf8a", fontFamily: "'Cormorant Garamond', serif" }}>
             <Link href="/" className="hover:underline">Home</Link>
             <span className="mx-2">›</span>
             Experiences
           </p>
-          <p className="bta-h3 mb-2" style={{ color: "#bfaf8a", fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic" }}>
+          <p className="text-2xl md:text-3xl mb-2" style={{ color: "#bfaf8a", fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}>
             Curated Around the Globe
           </p>
-          <h1 className="bta-h1 md:bta-h1 text-white mb-6" style={{ fontFamily: "'Playfair Display', Georgia, serif", letterSpacing: "-0.02em" }}>
+          <h1 className="text-5xl md:text-7xl font-light text-white mb-6" style={{ fontFamily: "'Cormorant Garamond', serif", letterSpacing: "-0.02em" }}>
             Experiences
           </h1>
-          <p className="text-white/80 max-w-xl text-base leading-relaxed" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+          <p className="text-white/80 max-w-xl text-base leading-relaxed" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
             The moments that define a journey are rarely the ones you planned. We design the conditions for those moments to happen through access, expertise, and the relationships we have built over decades.
           </p>
         </div>
       </section>
 
       {/* Category Nav */}
-      <section className="sticky top-[68px] z-30 border-b" style={{ backgroundColor: "#faf9f6", borderColor: "#edeac4" }}>
+      <section className="sticky top-[68px] z-30 border-b" style={{ backgroundColor: "#faf9f6", borderColor: "#edeae4" }}>
         <div className="max-w-7xl mx-auto px-8 md:px-16 flex gap-0 overflow-x-auto">
           {EXPERIENCE_CATEGORIES.map((cat) => (
             <button
@@ -151,7 +151,7 @@ export default function Experiences() {
               }}
               className="flex-shrink-0 px-6 py-4 text-xs tracking-[0.15em] uppercase transition-all duration-200 border-b-2"
               style={{
-                fontFamily: "'Playfair Display', Georgia, serif",
+                fontFamily: "'Cormorant Garamond', serif",
                 color: activeCategory === cat.id ? "#384959" : "#2f2f2f",
                 borderBottomColor: activeCategory === cat.id ? "#bfaf8a" : "transparent",
               }}
@@ -181,37 +181,37 @@ export default function Experiences() {
             </div>
             {/* Content */}
             <div className="md:w-1/2 flex flex-col justify-center p-10 md:p-16">
-              <p className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: "#bfaf8a", fontFamily: "'Playfair Display', Georgia, serif" }}>
+              <p className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: "#bfaf8a", fontFamily: "'Cormorant Garamond', serif" }}>
                 {cat.eyebrow}
               </p>
               <h2
-                className="bta-h2 font-light mb-4"
-                style={{ color: cat.textColor, fontFamily: "'Playfair Display', Georgia, serif" }}
+                className="text-3xl md:text-4xl font-light mb-4"
+                style={{ color: cat.textColor, fontFamily: "'Cormorant Garamond', serif" }}
               >
                 {cat.name}
               </h2>
               <p
                 className="text-lg italic mb-5"
-                style={{ color: "#bfaf8a", fontFamily: "'Playfair Display', Georgia, serif" }}
+                style={{ color: "#bfaf8a", fontFamily: "'Cormorant Garamond', serif" }}
               >
                 {cat.tagline}
               </p>
               <p
                 className="text-base leading-relaxed mb-8 opacity-85"
-                style={{ color: cat.textColor, fontFamily: "'Playfair Display', Georgia, serif", fontSize: "1rem" }}
+                style={{ color: cat.textColor, fontFamily: "'Cormorant Garamond', serif", fontSize: "1rem" }}
               >
                 {cat.description}
               </p>
               {/* Experience list */}
               <div className="mb-8">
-                <p className="text-xs tracking-[0.2em] uppercase mb-4" style={{ color: "#bfaf8a", fontFamily: "'Playfair Display', Georgia, serif" }}>
+                <p className="text-xs tracking-[0.2em] uppercase mb-4" style={{ color: "#bfaf8a", fontFamily: "'Cormorant Garamond', serif" }}>
                   Featured Experiences
                 </p>
                 <div className="grid grid-cols-1 gap-2">
                   {cat.experiences.map((exp) => (
                     <div key={exp} className="flex items-center gap-3">
                       <span className="w-4 h-px flex-shrink-0" style={{ backgroundColor: "#bfaf8a" }} />
-                      <span className="text-sm" style={{ color: cat.textColor, fontFamily: "'Playfair Display', Georgia, serif", opacity: 0.9 }}>
+                      <span className="text-sm" style={{ color: cat.textColor, fontFamily: "'Cormorant Garamond', serif", opacity: 0.9 }}>
                         {exp}
                       </span>
                     </div>
@@ -224,7 +224,7 @@ export default function Experiences() {
                   style={{
                     borderColor: "#bfaf8a",
                     color: "#bfaf8a",
-                    fontFamily: "'Playfair Display', Georgia, serif",
+                    fontFamily: "'Cormorant Garamond', serif",
                   }}
                 >
                   Enquire About This Experience
@@ -236,16 +236,16 @@ export default function Experiences() {
       ))}
 
       {/* Philanthropy Note */}
-      <section className="py-16 px-8 md:px-16 text-center" style={{ backgroundColor: "#edeac4" }}>
+      <section className="py-16 px-8 md:px-16 text-center" style={{ backgroundColor: "#edeae4" }}>
         <div className="max-w-3xl mx-auto">
           <div className="w-12 h-px mx-auto mb-8" style={{ backgroundColor: "#bfaf8a" }} />
-          <p className="text-sm tracking-[0.2em] uppercase mb-4" style={{ color: "#bfaf8a", fontFamily: "'Playfair Display', Georgia, serif" }}>
+          <p className="text-sm tracking-[0.2em] uppercase mb-4" style={{ color: "#bfaf8a", fontFamily: "'Cormorant Garamond', serif" }}>
             Travel With Purpose
           </p>
-          <h3 className="bta-h3 font-light mb-5" style={{ color: "#384959", fontFamily: "'Playfair Display', Georgia, serif" }}>
+          <h3 className="text-2xl md:text-3xl font-light mb-5" style={{ color: "#384959", fontFamily: "'Cormorant Garamond', serif" }}>
             Every Experience Gives Back
           </h3>
-          <p className="text-base leading-relaxed" style={{ color: "#2f2f2f", fontFamily: "'Playfair Display', Georgia, serif", fontSize: "1rem" }}>
+          <p className="text-base leading-relaxed" style={{ color: "#2f2f2f", fontFamily: "'Cormorant Garamond', serif", fontSize: "1rem" }}>
             A portion of every booking supports local charities and causes that matter childhood cancer, Make-A-Wish, veterans, arts and culture, and the communities in the destinations where we travel. Our clients are invited to participate in selecting the supported project, and together we have raised hundreds of thousands of dollars to improve the world.
           </p>
         </div>
@@ -253,19 +253,19 @@ export default function Experiences() {
 
       {/* CTA */}
       <section className="py-20 px-8 text-center" style={{ backgroundColor: "#2f2f2f" }}>
-        <p className="text-sm tracking-[0.2em] uppercase mb-4" style={{ color: "#bfaf8a", fontFamily: "'Playfair Display', Georgia, serif" }}>
+        <p className="text-sm tracking-[0.2em] uppercase mb-4" style={{ color: "#bfaf8a", fontFamily: "'Cormorant Garamond', serif" }}>
           Your Story Starts Here
         </p>
-        <h2 className="bta-h2 font-light text-white mb-6" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+        <h2 className="text-3xl md:text-4xl font-light text-white mb-6" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
           Design Your Perfect Experience
         </h2>
-        <p className="text-white/70 max-w-lg mx-auto mb-10 leading-relaxed" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "1.05rem" }}>
+        <p className="text-white/70 max-w-lg mx-auto mb-10 leading-relaxed" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.05rem" }}>
           Tell us what moves you a landscape, a cuisine, a culture, a challenge and we will build an experience around it that exceeds every expectation.
         </p>
         <Link href="/contact">
           <button
             className="px-10 py-4 text-sm tracking-[0.2em] uppercase transition-all duration-300 hover:opacity-80"
-            style={{ backgroundColor: "#bfaf8a", color: "#faf9f6", fontFamily: "'Playfair Display', Georgia, serif", letterSpacing: "0.15em" }}
+            style={{ backgroundColor: "#bfaf8a", color: "#faf9f6", fontFamily: "'Cormorant Garamond', serif", letterSpacing: "0.15em" }}
           >
             Start the Conversation
           </button>

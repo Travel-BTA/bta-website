@@ -7,7 +7,7 @@
  * Each cruise line section alternates image left / right.
  * White-label co-branded links from the BTA directory are used for CTAs.
  *
- * Design: BTA brand guide — Instrument Serif headings, Playfair Display body,
+ * Design: BTA brand guide — Instrument Serif headings, Cormorant Garamond body,
  * Champagne Gold #bfaf8a, Aegean Blue #384959, Linen White #faf9f6.
  */
 
@@ -146,11 +146,11 @@ export default function LuxuryOcean() {
         <div className="relative z-10 w-full max-w-[1440px] mx-auto px-8 lg:px-14 pb-16 md:pb-20">
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 mb-6">
-            <Link href="/cruises" className="text-white/60 text-xs tracking-[0.2em] uppercase hover:text-[#bfaf8a] transition-colors" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+            <Link href="/cruises" className="text-white/60 text-xs tracking-[0.2em] uppercase hover:text-[#bfaf8a] transition-colors" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
               Cruises
             </Link>
             <span className="text-white/40 text-xs">›</span>
-            <span className="text-[#bfaf8a] text-xs tracking-[0.2em] uppercase" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+            <span className="text-[#bfaf8a] text-xs tracking-[0.2em] uppercase" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
               Luxury Ocean
             </span>
           </div>
@@ -161,19 +161,19 @@ export default function LuxuryOcean() {
           >
             Ultra-Luxury at Sea
           </p>
-          <h1 className="font-display text-white bta-h1 md:bta-h2 leading-none mb-6">
+          <h1 className="font-display text-white text-5xl md:text-6xl font-light leading-none mb-6">
             Luxury Ocean Cruises
           </h1>
           <p
             className="text-white/75 text-xl max-w-2xl leading-relaxed mb-8"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+            style={{ fontFamily: "'Cormorant Garamond', serif" }}
           >
             All-inclusive voyages aboard the world's finest ships — where butler service, Michelin-calibre dining, and private shore excursions are simply the beginning.
           </p>
           <Link
             href="/contact"
             className="inline-flex items-center gap-3 bg-[#bfaf8a] text-white px-8 py-3.5 text-xs tracking-[0.25em] uppercase hover:bg-[#bfaf8a] transition-all duration-300"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic" }}
+            style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
           >
             Start Planning
             <span className="text-base not-italic">→</span>
@@ -187,17 +187,17 @@ export default function LuxuryOcean() {
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-8">
               <div className="w-10 h-px bg-[#bfaf8a]" />
-              <span className="text-[#bfaf8a] text-xs tracking-[0.25em] uppercase" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+              <span className="text-[#bfaf8a] text-xs tracking-[0.25em] uppercase" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
                 Virtuoso Member Benefits
               </span>
             </div>
-            <h2 className="font-display text-[#384959] bta-h2 font-light leading-tight mb-6">
+            <h2 className="font-display text-[#384959] text-3xl md:text-4xl font-light leading-tight mb-6">
               What Sets Luxury Ocean Apart
             </h2>
-            <p className="text-[#2F2F2F]/75 text-lg leading-relaxed mb-4" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+            <p className="text-[#2F2F2F]/75 text-lg leading-relaxed mb-4" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
               Luxury ocean cruising is defined by an exceptional space-to-guest ratio, all-inclusive pricing, and a level of personalised service that anticipates your every need. These ships carry between 200 and 1,000 guests — a fraction of mainstream vessels — creating an atmosphere of genuine intimacy.
             </p>
-            <p className="text-[#2F2F2F]/65 text-lg leading-relaxed" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+            <p className="text-[#2F2F2F]/65 text-lg leading-relaxed" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
               As a Virtuoso member agency, BTA clients receive exclusive amenities on top of each line's already generous inclusions: negotiated rates, VIP welcome receptions, shipboard credits, specialty dining, cabin upgrades when available, and dedicated onboard hosts.
             </p>
           </div>
@@ -227,7 +227,7 @@ export default function LuxuryOcean() {
                 <div className="absolute top-8 left-8">
                   <span
                     className="bg-[#bfaf8a]/90 text-white text-xs tracking-[0.25em] uppercase px-4 py-1.5"
-                    style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                    style={{ fontFamily: "'Cormorant Garamond', serif" }}
                   >
                     {line.eyebrow}
                   </span>
@@ -241,19 +241,19 @@ export default function LuxuryOcean() {
                 {/* Parent company */}
                 <p
                   className="text-[#bfaf8a]/70 text-xs tracking-[0.2em] uppercase mb-2"
-                  style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                  style={{ fontFamily: "'Cormorant Garamond', serif" }}
                 >
                   {line.parent}
                 </p>
 
-                <h2 className="font-display text-[#384959] bta-h2 font-light leading-tight mb-2">
+                <h2 className="font-display text-[#384959] text-3xl md:text-4xl font-light leading-tight mb-2">
                   {line.name}
                 </h2>
 
                 {/* Tagline */}
                 <p
                   className="text-[#bfaf8a] text-lg mb-6"
-                  style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic" }}
+                  style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
                 >
                   {line.tagline}
                 </p>
@@ -263,7 +263,7 @@ export default function LuxuryOcean() {
 
                 <p
                   className="text-[#2F2F2F]/75 text-base leading-relaxed mb-6"
-                  style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                  style={{ fontFamily: "'Cormorant Garamond', serif" }}
                 >
                   {line.description}
                 </p>
@@ -274,7 +274,7 @@ export default function LuxuryOcean() {
                     <li
                       key={h}
                       className="flex items-start gap-3 text-[#2F2F2F]/70 text-sm"
-                      style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                      style={{ fontFamily: "'Cormorant Garamond', serif" }}
                     >
                       <span className="text-[#bfaf8a] mt-0.5 flex-shrink-0">✦</span>
                       {h}
@@ -286,7 +286,7 @@ export default function LuxuryOcean() {
                 <div className="border-l-2 border-[#bfaf8a]/40 pl-4 mb-8">
                   <p
                     className="text-[#384959]/70 text-sm leading-relaxed"
-                    style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic" }}
+                    style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
                   >
                     <span className="text-[#bfaf8a] not-italic font-medium">Culinary: </span>
                     {line.culinary}
@@ -299,7 +299,7 @@ export default function LuxuryOcean() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-3 border border-[#bfaf8a] text-[#bfaf8a] px-8 py-3 text-xs tracking-[0.2em] uppercase hover:bg-[#bfaf8a] hover:text-white transition-all duration-300 self-start"
-                  style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic" }}
+                  style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
                 >
                   {line.linkLabel}
                   <span className="text-base not-italic">→</span>
@@ -317,20 +317,20 @@ export default function LuxuryOcean() {
             <div>
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-10 h-px bg-[#bfaf8a]/60" />
-                <span className="text-[#bfaf8a] text-xs tracking-[0.25em] uppercase" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+                <span className="text-[#bfaf8a] text-xs tracking-[0.25em] uppercase" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
                   Also Available
                 </span>
               </div>
-              <h2 className="font-display text-white bta-h2 font-light leading-tight mb-6">
+              <h2 className="font-display text-white text-3xl md:text-4xl font-light leading-tight mb-6">
                 Yacht & Boutique Lines
               </h2>
-              <p className="text-white/70 text-lg leading-relaxed mb-8" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+              <p className="text-white/70 text-lg leading-relaxed mb-8" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
                 For the ultimate in intimate luxury, explore our portfolio of yacht and boutique cruise lines: The Ritz-Carlton Yacht Collection, Four Seasons Yachts (launching 2026), Emerald Cruises Yacht Series, Scenic Discovery Yachts, Windstar Cruises, and Paul Gauguin Cruises. These vessels carry as few as 36 guests, offering a truly private-yacht experience with full-service amenities.
               </p>
               <Link
                 href="/contact"
                 className="inline-flex items-center gap-3 border border-[#bfaf8a] text-[#bfaf8a] px-8 py-3 text-xs tracking-[0.2em] uppercase hover:bg-[#bfaf8a] hover:text-white transition-all duration-300"
-                style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic" }}
+                style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
               >
                 Enquire About Yacht Cruises
                 <span className="text-base not-italic">→</span>
@@ -353,7 +353,7 @@ export default function LuxuryOcean() {
                 >
                   <p
                     className="text-white/75 text-sm leading-snug"
-                    style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                    style={{ fontFamily: "'Cormorant Garamond', serif" }}
                   >
                     {name}
                   </p>
