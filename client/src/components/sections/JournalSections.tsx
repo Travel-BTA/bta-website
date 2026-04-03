@@ -4,8 +4,8 @@
  * Official BTA Brand Colors:
  *   Champagne Gold:  #BFAF8A  → eyebrows, accents, icons, hover states, Instagram bg
  *   Aegean Blue:     #384959  → text on light backgrounds
- *   Linen White:     #FAF0F6  → text on dark/navy/gold backgrounds
- *   Warm Stone:      #FAF0F6  → testimonials background
+ *   Linen White:     #faf9f6  → text on dark/navy/gold backgrounds
+ *   Warm Stone:      #faf9f6  → testimonials background
  *   Dark Navy:       #384959  → journal section background, footer
  */
 
@@ -40,12 +40,12 @@ export function JournalSection() {
         <div className="text-center mb-12">
           <p className="font-script text-[#BFAF8A] text-xl mb-2">{journal.eyebrow}</p>
           <h2
-            className="bta-section-title text-[#FAF0F6] text-3xl md:text-4xl mb-4"
+            className="bta-section-title text-[#faf9f6] text-3xl md:text-4xl mb-4"
             style={{ fontWeight: 400 }}
           >
             {journal.headline}
           </h2>
-          <p className="font-body text-[#FAF0F6]/60 text-base">{journal.subheadline}</p>
+          <p className="font-body text-[#faf9f6]/60 text-base">{journal.subheadline}</p>
         </div>
 
         {/* Blog Cards */}
@@ -63,14 +63,14 @@ export function JournalSection() {
                 {post.category} — {post.readTime}
               </div>
               <h3
-                className="font-display text-[#FAF0F6] text-lg mb-4 leading-snug"
+                className="font-display text-[#faf9f6] text-lg mb-4 leading-snug"
                 style={{ fontWeight: 400 }}
               >
                 {post.title}
               </h3>
               <a
                 href={post.href}
-                className="font-smallcaps text-[#FAF0F6]/50 text-[9px] tracking-[0.18em] uppercase hover:text-[#BFAF8A] transition-colors flex items-center gap-2"
+                className="font-smallcaps text-[#faf9f6]/50 text-[9px] tracking-[0.18em] uppercase hover:text-[#BFAF8A] transition-colors flex items-center gap-2"
               >
                 READ MORE
                 <svg className="w-4 h-px" viewBox="0 0 16 1" fill="none">
@@ -94,7 +94,7 @@ export function TestimonialsSection() {
 
   return (
     // Warm Stone background — clean, airy
-    <section className="bg-[#FAF0F6] py-20 px-6">
+    <section className="bg-[#faf9f6] py-20 px-6">
       <div className="max-w-[1440px] mx-auto">
         {/* Desktop: 3-across layout with side arrows */}
         <div className="hidden md:flex items-start gap-6">
@@ -166,12 +166,12 @@ export function InstagramSection() {
     <section className="bg-[#BFAF8A] py-14 px-6">
       <div className="max-w-[1440px] mx-auto">
         <div className="text-center mb-8">
-          <p className="font-script text-[#FAF0F6]/80 text-xl mb-2">{instagram.eyebrow}</p>
+          <p className="font-script text-[#faf9f6]/80 text-xl mb-2">{instagram.eyebrow}</p>
           <a
             href={instagram.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="bta-section-title text-[#FAF0F6] text-2xl md:text-3xl hover:text-[#FAF0F6]/80 transition-colors"
+            className="bta-section-title text-[#faf9f6] text-2xl md:text-3xl hover:text-[#faf9f6]/80 transition-colors"
             style={{ fontWeight: 400 }}
           >
             {instagram.handle}
@@ -208,11 +208,11 @@ export function FinalCtaSection() {
       />
       <div className="absolute inset-0 bg-black/40" />
       <div className="relative text-center px-6">
-        <p className="font-script text-[#FAF0F6]/90 text-xl md:text-2xl mb-4">
+        <p className="font-script text-[#faf9f6]/90 text-xl md:text-2xl mb-4">
           {finalCta.subheadline}
         </p>
         <h2
-          className="bta-section-title text-[#FAF0F6] text-4xl md:text-5xl lg:text-6xl mb-10"
+          className="bta-section-title text-[#faf9f6] text-4xl md:text-5xl lg:text-6xl mb-10"
           style={{ fontWeight: 400 }}
         >
           {finalCta.headline}
@@ -233,17 +233,17 @@ export function FooterSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <div className="text-[#FAF0F6] mb-4 leading-none">
+            <div className="text-[#faf9f6] mb-4 leading-none">
               <div className="font-smallcaps text-[9px] tracking-[0.25em] uppercase opacity-70">BOUTIQUE</div>
               <div
                 className="text-[28px] leading-none mt-[-2px]"
-                style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", color: "#FAF0F6" }}
+                style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", color: "#faf9f6" }}
               >
                 travel
               </div>
               <div className="font-smallcaps text-[9px] tracking-[0.25em] uppercase opacity-70 mt-[-2px]">ADVISORS</div>
             </div>
-            <p className="font-body text-[#FAF0F6]/50 text-sm mb-6 leading-relaxed">{footer.tagline}</p>
+            <p className="font-body text-[#faf9f6]/50 text-sm mb-6 leading-relaxed">{footer.tagline}</p>
             <div className="flex gap-4">
               {footer.social.map((s) => (
                 <a
@@ -251,7 +251,7 @@ export function FooterSection() {
                   href={s.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#FAF0F6]/40 hover:text-[#BFAF8A] transition-colors"
+                  className="text-[#faf9f6]/40 hover:text-[#BFAF8A] transition-colors"
                   aria-label={s.platform}
                 >
                   {s.platform === "Instagram" && (
@@ -276,11 +276,11 @@ export function FooterSection() {
 
           {/* Explore */}
           <div>
-            <h4 className="font-smallcaps text-[#FAF0F6] text-[10px] tracking-[0.2em] uppercase mb-5">Explore</h4>
+            <h4 className="font-smallcaps text-[#faf9f6] text-[10px] tracking-[0.2em] uppercase mb-5">Explore</h4>
             <ul className="space-y-3">
               {footer.explore.map((link) => (
                 <li key={link.label}>
-                  <a href={link.href} className="font-body text-[#FAF0F6]/50 text-sm hover:text-[#BFAF8A] transition-colors">
+                  <a href={link.href} className="font-body text-[#faf9f6]/50 text-sm hover:text-[#BFAF8A] transition-colors">
                     {link.label}
                   </a>
                 </li>
@@ -290,11 +290,11 @@ export function FooterSection() {
 
           {/* Company */}
           <div>
-            <h4 className="font-smallcaps text-[#FAF0F6] text-[10px] tracking-[0.2em] uppercase mb-5">Company</h4>
+            <h4 className="font-smallcaps text-[#faf9f6] text-[10px] tracking-[0.2em] uppercase mb-5">Company</h4>
             <ul className="space-y-3">
               {footer.company.map((link) => (
                 <li key={link.label}>
-                  <a href={link.href} className="font-body text-[#FAF0F6]/50 text-sm hover:text-[#BFAF8A] transition-colors">
+                  <a href={link.href} className="font-body text-[#faf9f6]/50 text-sm hover:text-[#BFAF8A] transition-colors">
                     {link.label}
                   </a>
                 </li>
@@ -304,38 +304,38 @@ export function FooterSection() {
 
           {/* Contact + Newsletter */}
           <div>
-            <h4 className="font-smallcaps text-[#FAF0F6] text-[10px] tracking-[0.2em] uppercase mb-5">Subscribe</h4>
-            <p className="font-body text-[#FAF0F6]/50 text-xs mb-4 leading-relaxed uppercase tracking-wide">
+            <h4 className="font-smallcaps text-[#faf9f6] text-[10px] tracking-[0.2em] uppercase mb-5">Subscribe</h4>
+            <p className="font-body text-[#faf9f6]/50 text-xs mb-4 leading-relaxed uppercase tracking-wide">
               Newsletter for latest updates
             </p>
             <div className="flex mb-8">
               <input
                 type="email"
                 placeholder="Your email address"
-                className="flex-1 bg-white/5 border border-white/10 px-4 py-2 font-body text-[#FAF0F6] text-sm placeholder:text-[#FAF0F6]/30 focus:outline-none focus:border-[#BFAF8A]"
+                className="flex-1 bg-white/5 border border-white/10 px-4 py-2 font-body text-[#faf9f6] text-sm placeholder:text-[#faf9f6]/30 focus:outline-none focus:border-[#BFAF8A]"
               />
-              <button className="bg-[#BFAF8A] px-4 py-2 text-white hover:bg-[#9E8661] transition-colors">
+              <button className="bg-[#BFAF8A] px-4 py-2 text-white hover:bg-[#bfaf8a] transition-colors">
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
                 </svg>
               </button>
             </div>
 
-            <h4 className="font-smallcaps text-[#FAF0F6] text-[10px] tracking-[0.2em] uppercase mb-4">Get in Touch</h4>
+            <h4 className="font-smallcaps text-[#faf9f6] text-[10px] tracking-[0.2em] uppercase mb-4">Get in Touch</h4>
             <div className="space-y-2">
-              <a href={`tel:${footer.contact.phone}`} className="flex items-center gap-2 font-body text-[#FAF0F6]/50 text-sm hover:text-[#BFAF8A] transition-colors">
+              <a href={`tel:${footer.contact.phone}`} className="flex items-center gap-2 font-body text-[#faf9f6]/50 text-sm hover:text-[#BFAF8A] transition-colors">
                 <svg className="w-3.5 h-3.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
                 {footer.contact.phone}
               </a>
-              <a href={`mailto:${footer.contact.email}`} className="flex items-center gap-2 font-body text-[#FAF0F6]/50 text-sm hover:text-[#BFAF8A] transition-colors">
+              <a href={`mailto:${footer.contact.email}`} className="flex items-center gap-2 font-body text-[#faf9f6]/50 text-sm hover:text-[#BFAF8A] transition-colors">
                 <svg className="w-3.5 h-3.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
                 {footer.contact.email}
               </a>
-              <p className="font-smallcaps text-[#FAF0F6]/30 text-[9px] tracking-[0.12em] uppercase mt-2">
+              <p className="font-smallcaps text-[#faf9f6]/30 text-[9px] tracking-[0.12em] uppercase mt-2">
                 {footer.contact.virtuoso}
               </p>
             </div>
@@ -344,7 +344,7 @@ export function FooterSection() {
 
         {/* Bottom Bar */}
         <div className="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-3">
-          <p className="font-smallcaps text-[#FAF0F6]/30 text-[9px] tracking-[0.15em] uppercase">
+          <p className="font-smallcaps text-[#faf9f6]/30 text-[9px] tracking-[0.15em] uppercase">
             {footer.copyright}
           </p>
           <div className="flex gap-4">
@@ -352,7 +352,7 @@ export function FooterSection() {
               <a
                 key={link.label}
                 href={link.href}
-                className="font-smallcaps text-[#FAF0F6]/30 text-[9px] tracking-[0.12em] uppercase hover:text-[#FAF0F6]/60 transition-colors"
+                className="font-smallcaps text-[#faf9f6]/30 text-[9px] tracking-[0.12em] uppercase hover:text-[#faf9f6]/60 transition-colors"
               >
                 {link.label}
               </a>

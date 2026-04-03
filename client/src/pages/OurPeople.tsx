@@ -6,7 +6,7 @@
  * - FAF0F6 Linen White background, white alternating sections
  * - Allura script eyebrows, Instrument Serif headings
  * - Cormorant Garamond body, font-smallcaps labels
- * - Gold #bfa88a accents throughout
+ * - Gold #bfaf8a accents throughout
  * - 3-column portrait grid (4 on xl), generous gap-10 lg:gap-14 spacing
  * - Uniform 3:4 portrait cards — same size for every advisor
  */
@@ -83,7 +83,7 @@ function AdvisorCard({ advisor }: { advisor: Advisor }) {
   return (
     <Link href={advisor.href ?? "#"} className="group block">
       {/* Portrait photo — 3:4 ratio, same for all */}
-      <div className="relative overflow-hidden aspect-[3/4]" style={{ background: "#e8e3d8" }}>
+      <div className="relative overflow-hidden aspect-[3/4]" style={{ background: "#edeae4" }}>
         <img
           src={advisor.photo}
           alt={advisor.name}
@@ -94,10 +94,10 @@ function AdvisorCard({ advisor }: { advisor: Advisor }) {
           }}
         />
         {/* Subtle dark vignette at bottom */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#1a2530]/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#384959]/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
         {/* "View Profile" pill — only shown on hover */}
         <div className="absolute bottom-4 left-0 right-0 flex justify-center opacity-0 group-hover:opacity-100 transition-all duration-400 translate-y-2 group-hover:translate-y-0">
-          <span className="font-smallcaps text-white text-[0.6rem] tracking-[0.22em] uppercase bg-[#bfa88a]/90 px-4 py-1.5">
+          <span className="font-smallcaps text-white text-[0.6rem] tracking-[0.22em] uppercase bg-[#bfaf8a]/90 px-4 py-1.5">
             View Profile
           </span>
         </div>
@@ -106,15 +106,15 @@ function AdvisorCard({ advisor }: { advisor: Advisor }) {
       {/* Name block */}
       <div className="pt-5 pb-2">
         {/* Thin gold rule — expands on hover */}
-        <div className="w-6 h-px bg-[#bfa88a] mb-3 transition-all duration-500 group-hover:w-12" />
+        <div className="w-6 h-px bg-[#bfaf8a] mb-3 transition-all duration-500 group-hover:w-12" />
         <p
-          className="text-[#2F2F2F] font-smallcaps text-[0.72rem] tracking-[0.18em] uppercase leading-snug group-hover:text-[#bfa88a] transition-colors duration-300"
+          className="text-[#2F2F2F] font-smallcaps text-[0.72rem] tracking-[0.18em] uppercase leading-snug group-hover:text-[#bfaf8a] transition-colors duration-300"
         >
           {advisor.name}
         </p>
         {advisor.title && (
           <p
-            className="text-[#bfa88a] text-[0.65rem] tracking-[0.1em] mt-1 italic"
+            className="text-[#bfaf8a] text-[0.65rem] tracking-[0.1em] mt-1 italic"
             style={{ fontFamily: "'Cormorant Garamond', serif" }}
           >
             {advisor.title}
@@ -132,9 +132,9 @@ function SectionHeader({ eyebrow, heading, sub }: { eyebrow: string; heading: st
     <div className="mb-16">
       {/* Gold rule + eyebrow */}
       <div className="flex items-center gap-4 mb-4">
-        <div className="w-12 h-px bg-[#bfa88a]" />
+        <div className="w-12 h-px bg-[#bfaf8a]" />
         <p
-          className="text-[#bfa88a] text-2xl italic"
+          className="text-[#bfaf8a] text-2xl italic"
           style={{ fontFamily: "'Allura', cursive" }}
         >
           {eyebrow}
@@ -145,7 +145,7 @@ function SectionHeader({ eyebrow, heading, sub }: { eyebrow: string; heading: st
         {heading}
       </h2>
       {/* Horizontal gold rule below heading */}
-      <div className="w-16 h-px bg-[#bfa88a] mt-6" />
+      <div className="w-16 h-px bg-[#bfaf8a] mt-6" />
       {sub && (
         <p
           className="text-[#2F2F2F]/60 text-lg leading-relaxed mt-6 max-w-2xl"
@@ -190,9 +190,9 @@ function MissionTabs() {
       <div className="max-w-[1440px] mx-auto px-8 lg:px-14">
         {/* Eyebrow */}
         <div className="flex items-center gap-4 mb-10">
-          <div className="w-12 h-px bg-[#bfa88a]/50" />
+          <div className="w-12 h-px bg-[#bfaf8a]/50" />
           <p
-            className="text-[#bfa88a] text-2xl italic"
+            className="text-[#bfaf8a] text-2xl italic"
             style={{ fontFamily: "'Allura', cursive" }}
           >
             Our Mission
@@ -207,7 +207,7 @@ function MissionTabs() {
               onClick={() => setActive(tab.id)}
               className={`font-smallcaps text-[0.65rem] tracking-[0.22em] uppercase px-6 pb-4 transition-all duration-300 ${
                 active === tab.id
-                  ? "text-[#bfa88a] border-b-2 border-[#bfa88a] -mb-px"
+                  ? "text-[#bfaf8a] border-b-2 border-[#bfaf8a] -mb-px"
                   : "text-white/40 hover:text-white/70"
               }`}
             >
@@ -244,10 +244,10 @@ export default function OurPeople() {
           backgroundPosition: "center 35%",
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-t from-[#1a2530]/80 via-[#1a2530]/20 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#384959]/80 via-[#384959]/20 to-transparent" />
         <div className="relative z-10 w-full max-w-[1440px] mx-auto px-8 lg:px-14 pb-14">
           <p
-            className="text-[#bfa88a] text-2xl italic mb-3"
+            className="text-[#bfaf8a] text-2xl italic mb-3"
             style={{ fontFamily: "'Allura', cursive" }}
           >
             About BTA
@@ -259,15 +259,15 @@ export default function OurPeople() {
       </section>
 
       {/* ── Intro ─────────────────────────────────────────────────────────── */}
-      <section className="bg-[#FAF0F6] py-24 lg:py-32">
+      <section className="bg-[#faf9f6] py-24 lg:py-32">
         <div className="max-w-[1440px] mx-auto px-8 lg:px-14">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             {/* Left: heading */}
             <div>
               <div className="flex items-center gap-4 mb-4">
-                <div className="w-12 h-px bg-[#bfa88a]" />
+                <div className="w-12 h-px bg-[#bfaf8a]" />
                 <p
-                  className="text-[#bfa88a] text-2xl italic"
+                  className="text-[#bfaf8a] text-2xl italic"
                   style={{ fontFamily: "'Allura', cursive" }}
                 >
                   Transformational Luxury
@@ -276,7 +276,7 @@ export default function OurPeople() {
               <h2 className="font-display text-[#2F2F2F] text-4xl md:text-5xl font-light leading-tight">
                 Passionate Travelers.<br />Exceptional Designers.
               </h2>
-              <div className="w-16 h-px bg-[#bfa88a] mt-8" />
+              <div className="w-16 h-px bg-[#bfaf8a] mt-8" />
             </div>
 
             {/* Right: body + quote */}
@@ -295,11 +295,11 @@ export default function OurPeople() {
               </p>
               {/* Quote — mirrors Julie Rose blockquote */}
               <blockquote
-                className="border-l-2 border-[#bfa88a] pl-6 text-[#2F2F2F]/60 text-xl italic leading-relaxed"
+                className="border-l-2 border-[#bfaf8a] pl-6 text-[#2F2F2F]/60 text-xl italic leading-relaxed"
                 style={{ fontFamily: "'Cormorant Garamond', serif" }}
               >
                 "To move, to breathe, to fly, to float, to gain all while you give, to roam the roads of lands remote: to travel is to live."
-                <footer className="font-smallcaps text-[#bfa88a] text-xs tracking-[0.15em] uppercase mt-3 not-italic">
+                <footer className="font-smallcaps text-[#bfaf8a] text-xs tracking-[0.15em] uppercase mt-3 not-italic">
                   — Hans Christian Andersen
                 </footer>
               </blockquote>
@@ -326,7 +326,7 @@ export default function OurPeople() {
       </section>
 
       {/* ── Inhouse Advisors ──────────────────────────────────────────────── */}
-      <section className="bg-[#FAF0F6] py-24 lg:py-32">
+      <section className="bg-[#faf9f6] py-24 lg:py-32">
         <div className="max-w-[1440px] mx-auto px-8 lg:px-14">
           <SectionHeader
             eyebrow="Our In-House Team"
@@ -356,7 +356,7 @@ export default function OurPeople() {
       </section>
 
       {/* ── Luxury Travel Coaches ─────────────────────────────────────────── */}
-      <section className="bg-[#FAF0F6] py-24 lg:py-32">
+      <section className="bg-[#faf9f6] py-24 lg:py-32">
         <div className="max-w-[1440px] mx-auto px-8 lg:px-14">
           <SectionHeader
             eyebrow="Guiding Your Journey"

@@ -6,8 +6,8 @@
  * OFFICIAL BRAND COLORS (from brand kit):
  *   Champagne Gold:  #BFAF8A  → primary accent, buttons, eyebrows, borders
  *   Aegean Blue:     #384959  → text on light backgrounds, dark accents, nav
- *   Linen White:     #FAF0F6  → text on dark backgrounds, nav overlay text
- *   Warm Stone:      #FAF0F6  → section backgrounds, secondary surfaces
+ *   Linen White:     #faf9f6  → text on dark backgrounds, nav overlay text
+ *   Warm Stone:      #faf9f6  → section backgrounds, secondary surfaces
  *   Charcoal Ink:    #2F2F2F  → primary body text on light backgrounds
  *
  * Typography:
@@ -25,13 +25,13 @@
 
 @theme inline {
   /* BTA Official Brand Colors in OKLCH */
-  --color-bta-gold:       oklch(0.73 0.05 78);      /* #BFAF8A — Champagne Gold */
-  --color-bta-gold-dark:  oklch(0.65 0.06 72);      /* #9E8661 — deeper gold for hover */
-  --color-bta-aegean:     oklch(0.35 0.04 230);     /* #384959 — Aegean Blue */
-  --color-bta-linen:      oklch(0.96 0.02 340);     /* #FAF0F6 — Linen White */
-  --color-bta-stone:      oklch(0.93 0.008 91.6);   /* #EBE9E3 — Warm Stone */
-  --color-bta-charcoal:   oklch(0.23 0.00 0);       /* #2F2F2F — Charcoal Ink */
-  --color-bta-navy:       oklch(0.17 0.04 255);     /* #384959 — Dark Navy (stats bar, footer) */
+  --color-bta-gold:       oklch(0.76 0.053 87.4);   /* #bfaf8a — Champagne Gold */
+  --color-bta-gold-dark:  oklch(0.68 0.055 87.4);   /* #bfaf8a/80 — Champagne Gold hover */
+  --color-bta-aegean:     oklch(0.40 0.035 247.2);  /* #384959 — Aegean Blue */
+  --color-bta-linen:      oklch(0.98 0.004 91.6);   /* #faf9f6 — Linen White */
+  --color-bta-stone:      oklch(0.94 0.009 84.6);   /* #edeae4 — Warm Stone */
+  --color-bta-charcoal:   oklch(0.31 0.000 263.3);  /* #2f2f2f — Charcoal Ink */
+  --color-bta-navy:       oklch(0.40 0.035 247.2);  /* #384959 — Aegean Blue (dark sections) */
 
   /* Semantic tokens */
   --radius-sm: calc(var(--radius) - 4px);
@@ -63,7 +63,7 @@
   --radius: 0rem; /* Sharp corners — luxury feel */
 
   /* Warm Stone as page background, Charcoal Ink as body text */
-  --background:           oklch(0.93 0.01 80);    /* #FAF0F6 Warm Stone */
+  --background:           oklch(0.93 0.01 80);    /* #faf9f6 Warm Stone */
   --foreground:           oklch(0.23 0.00 0);     /* #2F2F2F Charcoal Ink */
   --card:                 oklch(0.97 0.005 80);   /* near-white card */
   --card-foreground:      oklch(0.23 0.00 0);
@@ -225,8 +225,8 @@
     transition: background 0.25s ease;
   }
   .bta-btn-gold:hover {
-    background: #9E8661;
-    border-color: #9E8661;
+    background: #bfaf8a;
+    border-color: #bfaf8a;
   }
 
   /* Section heading style */

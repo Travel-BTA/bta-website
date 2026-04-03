@@ -4,8 +4,8 @@
  * Official BTA Brand Colors:
  *   Champagne Gold:  #BFAF8A  → icons, accents, tabs, buttons, borders
  *   Aegean Blue:     #384959  → headings on light backgrounds
- *   Linen White:     #FAF0F6  → text on dark backgrounds
- *   Warm Stone:      #FAF0F6  → section backgrounds
+ *   Linen White:     #faf9f6  → text on dark backgrounds
+ *   Warm Stone:      #faf9f6  → section backgrounds
  *   Charcoal Ink:    #2F2F2F  → body text
  *   Dark Navy:       #384959  → benefits bar background
  */
@@ -55,7 +55,7 @@ export function ExclusiveBenefitsSection() {
         {/* Label */}
         <div className="flex-shrink-0 lg:w-48">
           <h2
-            className="bta-section-title text-[#FAF0F6] text-2xl md:text-3xl leading-tight"
+            className="bta-section-title text-[#faf9f6] text-2xl md:text-3xl leading-tight"
             style={{ fontWeight: 400 }}
           >
             {exclusiveBenefits.headline.split("\n").map((line, i) => (
@@ -76,7 +76,7 @@ export function ExclusiveBenefitsSection() {
                   </svg>
                 )}
               </div>
-              <span className="font-smallcaps text-[#FAF0F6]/70 text-[9px] tracking-[0.12em] uppercase leading-snug">
+              <span className="font-smallcaps text-[#faf9f6]/70 text-[9px] tracking-[0.12em] uppercase leading-snug">
                 {benefit.label}
               </span>
             </div>
@@ -92,7 +92,7 @@ export function VipAccessSection() {
 
   return (
     // Warm Stone background
-    <section className="bg-[#FAF0F6] py-0">
+    <section className="bg-[#faf9f6] py-0">
       <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2">
         {/* Left: Photo */}
         <div className="h-[520px] lg:h-auto overflow-hidden">
@@ -189,7 +189,7 @@ export function VipAccessSection() {
 export function GivesBackSection() {
   return (
     // Warm Stone background
-    <section className="bg-[#FAF0F6] py-20 px-6">
+    <section className="bg-[#faf9f6] py-20 px-6">
       <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         {/* Left: Photo with Champagne Gold accent block */}
         <div className="relative">

@@ -58,7 +58,7 @@ const FILTER_LABELS = [
 function ImageMosaic({ imageUrl, title, large }: { imageUrl: string; title: string; large?: boolean }) {
   const h = large ? "h-[480px]" : "h-[260px] sm:h-[300px]";
   if (!imageUrl) {
-    return <div className={`w-full ${h} bg-[#EBE9E3]`} />;
+    return <div className={`w-full ${h} bg-[#edeae4]`} />;
   }
   return (
     <div className={`w-full ${h} overflow-hidden`}>
@@ -110,7 +110,7 @@ function FeaturedCard({ post }: { post: Post }) {
       <div className="flex flex-col justify-center px-8 lg:px-12 py-10 bg-white">
         <div className="flex items-center justify-between mb-3">
           <span
-            className="text-[#bfa88a] text-xs tracking-[0.16em] uppercase"
+            className="text-[#bfaf8a] text-xs tracking-[0.16em] uppercase"
             style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
           >
             {primaryCategory}
@@ -125,7 +125,7 @@ function FeaturedCard({ post }: { post: Post }) {
         </div>
         <Link href={`/journal/${post.slug}`} className="group">
           <h2
-            className="text-[#2F2F2F] text-2xl lg:text-3xl font-light leading-snug mb-4 group-hover:text-[#bfa88a] transition-colors font-display"
+            className="text-[#2F2F2F] text-2xl lg:text-3xl font-light leading-snug mb-4 group-hover:text-[#bfaf8a] transition-colors font-display"
             dangerouslySetInnerHTML={{ __html: post.title }}
           />
         </Link>
@@ -146,7 +146,7 @@ function FeaturedCard({ post }: { post: Post }) {
         </p>
         <Link
           href={`/journal/${post.slug}`}
-          className="text-[#bfa88a] text-xs tracking-[0.16em] uppercase flex items-center gap-2 hover:gap-3 transition-all"
+          className="text-[#bfaf8a] text-xs tracking-[0.16em] uppercase flex items-center gap-2 hover:gap-3 transition-all"
           style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
         >
           Read Article <span>→</span>
@@ -168,7 +168,7 @@ function GridCard({ post }: { post: Post }) {
       {/* Meta */}
       <div className="flex items-center justify-between mb-2">
         <span
-          className="text-[#bfa88a] text-xs tracking-[0.14em] uppercase"
+          className="text-[#bfaf8a] text-xs tracking-[0.14em] uppercase"
           style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
         >
           {primaryCategory}
@@ -184,7 +184,7 @@ function GridCard({ post }: { post: Post }) {
       {/* Title */}
       <Link href={`/journal/${post.slug}`}>
         <h3
-          className="text-[#2F2F2F] text-lg font-light leading-snug mb-2 group-hover:text-[#bfa88a] transition-colors line-clamp-2 font-display"
+          className="text-[#2F2F2F] text-lg font-light leading-snug mb-2 group-hover:text-[#bfaf8a] transition-colors line-clamp-2 font-display"
           dangerouslySetInnerHTML={{ __html: post.title }}
         />
       </Link>
@@ -208,7 +208,7 @@ function GridCard({ post }: { post: Post }) {
       {/* Read more */}
       <Link
         href={`/journal/${post.slug}`}
-        className="text-[#bfa88a] text-xs tracking-[0.14em] uppercase flex items-center gap-1.5 hover:gap-2.5 transition-all"
+        className="text-[#bfaf8a] text-xs tracking-[0.14em] uppercase flex items-center gap-1.5 hover:gap-2.5 transition-all"
         style={{ fontFamily: "'Cormorant Garamond', serif" }}
       >
         READ MORE <span>→</span>
@@ -236,7 +236,7 @@ function NewsletterSection() {
         Subscribe to receive travel inspiration, destination guides, and exclusive offers delivered to your inbox monthly.
       </p>
       {submitted ? (
-        <p className="text-[#bfa88a] text-base italic" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+        <p className="text-[#bfaf8a] text-base italic" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
           Thank you for subscribing!
         </p>
       ) : (
@@ -255,7 +255,7 @@ function NewsletterSection() {
           />
           <button
             type="submit"
-            className="bg-[#bfa88a] text-white font-smallcaps text-xs tracking-[0.18em] uppercase px-7 py-3 hover:bg-[#a8927a] transition-colors whitespace-nowrap"
+            className="bg-[#bfaf8a] text-white font-smallcaps text-xs tracking-[0.18em] uppercase px-7 py-3 hover:bg-[#bfaf8a] transition-colors whitespace-nowrap"
           >
             Subscribe
           </button>
@@ -314,7 +314,7 @@ export default function Journal() {
   return (
     <PageLayout hideCta={false}>
       {/* ── Tan Header ──────────────────────────────────────────────────── */}
-      <div className="bg-[#bfa88a]/70 pt-28 pb-16 px-6 text-center">
+      <div className="bg-[#bfaf8a]/70 pt-28 pb-16 px-6 text-center">
         <h1
           className="text-white text-5xl md:text-6xl font-light mb-4 font-display"
         >
@@ -335,7 +335,7 @@ export default function Journal() {
       </div>
 
       {/* ── Filter Bar ──────────────────────────────────────────────────── */}
-      <div className="bg-[#FAF0F6] border-b border-[#EBE9E3] px-6 py-4">
+      <div className="bg-[#faf9f6] border-b border-[#edeae4] px-6 py-4">
         <div className="max-w-[1280px] mx-auto flex flex-wrap items-center justify-between gap-4">
           {/* Category pills */}
           <div className="flex flex-wrap items-center gap-1">
@@ -345,8 +345,8 @@ export default function Journal() {
                 onClick={() => handleFilter(label)}
                 className={`px-4 py-2 text-xs tracking-[0.14em] uppercase transition-colors ${
                   activeFilter === label
-                    ? "bg-[#bfa88a] text-white"
-                    : "text-[#2F2F2F]/50 hover:text-[#bfa88a]"
+                    ? "bg-[#bfaf8a] text-white"
+                    : "text-[#2F2F2F]/50 hover:text-[#bfaf8a]"
                 }`}
                 style={{ fontFamily: "'Cormorant Garamond', serif" }}
               >
@@ -355,7 +355,7 @@ export default function Journal() {
             ))}
           </div>
           {/* Search */}
-          <div className="flex items-center border border-[#EBE9E3] bg-white px-4 py-2 gap-2 min-w-[240px]">
+          <div className="flex items-center border border-[#edeae4] bg-white px-4 py-2 gap-2 min-w-[240px]">
             <input
               type="text"
               value={searchQuery}
@@ -364,7 +364,7 @@ export default function Journal() {
               className="flex-1 text-sm text-[#2F2F2F] outline-none bg-transparent placeholder:text-[#2F2F2F]/35"
               style={{ fontFamily: "'Cormorant Garamond', serif" }}
             />
-            <Search className="w-4 h-4 text-[#bfa88a]" />
+            <Search className="w-4 h-4 text-[#bfaf8a]" />
           </div>
         </div>
       </div>
@@ -393,7 +393,7 @@ export default function Journal() {
             {/* Divider */}
             {grid.length > 0 && (
               <div className="max-w-[1280px] mx-auto px-6">
-                <div className="border-t border-[#EBE9E3] mb-12" />
+                <div className="border-t border-[#edeae4] mb-12" />
               </div>
             )}
 
@@ -414,7 +414,7 @@ export default function Journal() {
                 <button
                   onClick={() => setPage(p => Math.max(1, p - 1))}
                   disabled={page === 1}
-                  className="border border-[#EBE9E3] px-6 py-2.5 text-[#2F2F2F]/50 text-xs tracking-[0.14em] uppercase hover:border-[#bfa88a] hover:text-[#bfa88a] transition-colors disabled:opacity-30"
+                  className="border border-[#edeae4] px-6 py-2.5 text-[#2F2F2F]/50 text-xs tracking-[0.14em] uppercase hover:border-[#bfaf8a] hover:text-[#bfaf8a] transition-colors disabled:opacity-30"
                 >
                   Previous
                 </button>
@@ -424,8 +424,8 @@ export default function Journal() {
                     onClick={() => setPage(n)}
                     className={`w-10 h-10 text-xs tracking-[0.14em] transition-colors ${
                       page === n
-                        ? "bg-[#bfa88a] text-white border border-[#bfa88a]"
-                        : "border border-[#EBE9E3] text-[#2F2F2F]/50 hover:border-[#bfa88a] hover:text-[#bfa88a]"
+                        ? "bg-[#bfaf8a] text-white border border-[#bfaf8a]"
+                        : "border border-[#edeae4] text-[#2F2F2F]/50 hover:border-[#bfaf8a] hover:text-[#bfaf8a]"
                     }`}
                   >
                     {n}
@@ -434,7 +434,7 @@ export default function Journal() {
                 <button
                   onClick={() => setPage(p => Math.min(totalPages, p + 1))}
                   disabled={page === totalPages}
-                  className="border border-[#EBE9E3] px-6 py-2.5 text-[#2F2F2F]/50 text-xs tracking-[0.14em] uppercase hover:border-[#bfa88a] hover:text-[#bfa88a] transition-colors disabled:opacity-30"
+                  className="border border-[#edeae4] px-6 py-2.5 text-[#2F2F2F]/50 text-xs tracking-[0.14em] uppercase hover:border-[#bfaf8a] hover:text-[#bfaf8a] transition-colors disabled:opacity-30"
                 >
                   Next
                 </button>

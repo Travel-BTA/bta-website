@@ -8,7 +8,7 @@
  * White-label co-branded links from the BTA directory are used for CTAs.
  *
  * Design: BTA brand guide — Instrument Serif headings, Cormorant Garamond body,
- * Champagne Gold #bfa88a, Aegean Blue #384959, Linen White #faf0f6.
+ * Champagne Gold #bfaf8a, Aegean Blue #384959, Linen White #faf9f6.
  */
 
 import { Link } from "wouter";
@@ -141,22 +141,22 @@ export default function LuxuryOcean() {
           alt="Luxury ocean cruise ship at sea"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/85 via-[#1a1a1a]/25 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#2f2f2f]/85 via-[#2f2f2f]/25 to-transparent" />
 
         <div className="relative z-10 w-full max-w-[1440px] mx-auto px-8 lg:px-14 pb-16 md:pb-20">
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 mb-6">
-            <Link href="/cruises" className="text-white/60 text-xs tracking-[0.2em] uppercase hover:text-[#bfa88a] transition-colors" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+            <Link href="/cruises" className="text-white/60 text-xs tracking-[0.2em] uppercase hover:text-[#bfaf8a] transition-colors" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
               Cruises
             </Link>
             <span className="text-white/40 text-xs">›</span>
-            <span className="text-[#bfa88a] text-xs tracking-[0.2em] uppercase" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+            <span className="text-[#bfaf8a] text-xs tracking-[0.2em] uppercase" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
               Luxury Ocean
             </span>
           </div>
 
           <p
-            className="text-[#bfa88a] mb-3"
+            className="text-[#bfaf8a] mb-3"
             style={{ fontFamily: "'Allura', cursive", fontSize: "1.6rem" }}
           >
             Ultra-Luxury at Sea
@@ -172,7 +172,7 @@ export default function LuxuryOcean() {
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-3 bg-[#bfa88a] text-white px-8 py-3.5 text-xs tracking-[0.25em] uppercase hover:bg-[#a8927a] transition-all duration-300"
+            className="inline-flex items-center gap-3 bg-[#bfaf8a] text-white px-8 py-3.5 text-xs tracking-[0.25em] uppercase hover:bg-[#bfaf8a] transition-all duration-300"
             style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
           >
             Start Planning
@@ -182,12 +182,12 @@ export default function LuxuryOcean() {
       </section>
 
       {/* ── Intro ─────────────────────────────────────────────────────────── */}
-      <section className="bg-[#faf0f6] py-20 px-6">
+      <section className="bg-[#faf9f6] py-20 px-6">
         <div className="max-w-[1440px] mx-auto px-8 lg:px-14">
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-8">
-              <div className="w-10 h-px bg-[#bfa88a]" />
-              <span className="text-[#bfa88a] text-xs tracking-[0.25em] uppercase" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+              <div className="w-10 h-px bg-[#bfaf8a]" />
+              <span className="text-[#bfaf8a] text-xs tracking-[0.25em] uppercase" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
                 Virtuoso Member Benefits
               </span>
             </div>
@@ -208,7 +208,7 @@ export default function LuxuryOcean() {
       {CRUISE_LINES.map((line, index) => (
         <section
           key={line.id}
-          className={index % 2 === 0 ? "bg-white" : "bg-[#faf0f6]"}
+          className={index % 2 === 0 ? "bg-white" : "bg-[#faf9f6]"}
         >
           <div className="max-w-[1440px] mx-auto">
             <div className={`grid grid-cols-1 lg:grid-cols-2 ${line.imageRight ? "" : ""}`}>
@@ -226,7 +226,7 @@ export default function LuxuryOcean() {
                 {/* Eyebrow label over image */}
                 <div className="absolute top-8 left-8">
                   <span
-                    className="bg-[#bfa88a]/90 text-white text-xs tracking-[0.25em] uppercase px-4 py-1.5"
+                    className="bg-[#bfaf8a]/90 text-white text-xs tracking-[0.25em] uppercase px-4 py-1.5"
                     style={{ fontFamily: "'Cormorant Garamond', serif" }}
                   >
                     {line.eyebrow}
@@ -240,7 +240,7 @@ export default function LuxuryOcean() {
               >
                 {/* Parent company */}
                 <p
-                  className="text-[#bfa88a]/70 text-xs tracking-[0.2em] uppercase mb-2"
+                  className="text-[#bfaf8a]/70 text-xs tracking-[0.2em] uppercase mb-2"
                   style={{ fontFamily: "'Cormorant Garamond', serif" }}
                 >
                   {line.parent}
@@ -252,14 +252,14 @@ export default function LuxuryOcean() {
 
                 {/* Tagline */}
                 <p
-                  className="text-[#bfa88a] text-lg mb-6"
+                  className="text-[#bfaf8a] text-lg mb-6"
                   style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
                 >
                   {line.tagline}
                 </p>
 
                 {/* Gold rule */}
-                <div className="w-12 h-px bg-[#bfa88a] mb-6" />
+                <div className="w-12 h-px bg-[#bfaf8a] mb-6" />
 
                 <p
                   className="text-[#2F2F2F]/75 text-base leading-relaxed mb-6"
@@ -276,19 +276,19 @@ export default function LuxuryOcean() {
                       className="flex items-start gap-3 text-[#2F2F2F]/70 text-sm"
                       style={{ fontFamily: "'Cormorant Garamond', serif" }}
                     >
-                      <span className="text-[#bfa88a] mt-0.5 flex-shrink-0">✦</span>
+                      <span className="text-[#bfaf8a] mt-0.5 flex-shrink-0">✦</span>
                       {h}
                     </li>
                   ))}
                 </ul>
 
                 {/* Culinary highlight */}
-                <div className="border-l-2 border-[#bfa88a]/40 pl-4 mb-8">
+                <div className="border-l-2 border-[#bfaf8a]/40 pl-4 mb-8">
                   <p
                     className="text-[#384959]/70 text-sm leading-relaxed"
                     style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
                   >
-                    <span className="text-[#bfa88a] not-italic font-medium">Culinary: </span>
+                    <span className="text-[#bfaf8a] not-italic font-medium">Culinary: </span>
                     {line.culinary}
                   </p>
                 </div>
@@ -298,7 +298,7 @@ export default function LuxuryOcean() {
                   href={line.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-3 border border-[#bfa88a] text-[#bfa88a] px-8 py-3 text-xs tracking-[0.2em] uppercase hover:bg-[#bfa88a] hover:text-white transition-all duration-300 self-start"
+                  className="inline-flex items-center gap-3 border border-[#bfaf8a] text-[#bfaf8a] px-8 py-3 text-xs tracking-[0.2em] uppercase hover:bg-[#bfaf8a] hover:text-white transition-all duration-300 self-start"
                   style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
                 >
                   {line.linkLabel}
@@ -316,8 +316,8 @@ export default function LuxuryOcean() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-px bg-[#bfa88a]/60" />
-                <span className="text-[#bfa88a] text-xs tracking-[0.25em] uppercase" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+                <div className="w-10 h-px bg-[#bfaf8a]/60" />
+                <span className="text-[#bfaf8a] text-xs tracking-[0.25em] uppercase" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
                   Also Available
                 </span>
               </div>
@@ -329,7 +329,7 @@ export default function LuxuryOcean() {
               </p>
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-3 border border-[#bfa88a] text-[#bfa88a] px-8 py-3 text-xs tracking-[0.2em] uppercase hover:bg-[#bfa88a] hover:text-white transition-all duration-300"
+                className="inline-flex items-center gap-3 border border-[#bfaf8a] text-[#bfaf8a] px-8 py-3 text-xs tracking-[0.2em] uppercase hover:bg-[#bfaf8a] hover:text-white transition-all duration-300"
                 style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
               >
                 Enquire About Yacht Cruises
@@ -349,7 +349,7 @@ export default function LuxuryOcean() {
               ].map((name) => (
                 <div
                   key={name}
-                  className="border border-[#bfa88a]/25 px-5 py-4 hover:border-[#bfa88a]/60 transition-colors duration-300"
+                  className="border border-[#bfaf8a]/25 px-5 py-4 hover:border-[#bfaf8a]/60 transition-colors duration-300"
                 >
                   <p
                     className="text-white/75 text-sm leading-snug"

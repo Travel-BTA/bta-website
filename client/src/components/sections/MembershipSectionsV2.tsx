@@ -45,7 +45,7 @@ export function ExclusiveBenefitsSection() {
         {/* Label */}
         <div className="flex-shrink-0 lg:w-56">
           <h2
-            className="bta-section-title text-[#faf0f6] text-3xl md:text-4xl leading-tight"
+            className="bta-section-title text-[#faf9f6] text-3xl md:text-4xl leading-tight"
             style={{ fontWeight: 400 }}
           >
             {exclusiveBenefits.headline.split("\n").map((line, i) => (
@@ -61,14 +61,14 @@ export function ExclusiveBenefitsSection() {
         <div className="flex-1 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
           {exclusiveBenefits.benefits.map((benefit) => (
             <div key={benefit.label} className="flex flex-col items-center text-center gap-3">
-              <div className="text-[#bfa88a]">
+              <div className="text-[#bfaf8a]">
                 {benefitIcons[benefit.label] || (
                   <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d="M5 13l4 4L19 7" />
                   </svg>
                 )}
               </div>
-              <span className="font-smallcaps text-[#faf0f6]/75 text-xs tracking-[0.14em] uppercase leading-snug">
+              <span className="font-smallcaps text-[#faf9f6]/75 text-xs tracking-[0.14em] uppercase leading-snug">
                 {benefit.label}
               </span>
             </div>
@@ -106,7 +106,7 @@ export function VipAccessSection() {
   };
 
   return (
-    <section className="bg-[#EBE9E3]">
+    <section className="bg-[#edeae4]">
       {/* Two-column layout: photo left | booking right */}
       <div className="flex flex-col lg:flex-row min-h-[600px]">
 
@@ -121,10 +121,10 @@ export function VipAccessSection() {
         </div>
 
         {/* RIGHT — Title + native booking form */}
-        <div className="flex-1 bg-[#EBE9E3] flex flex-col justify-center px-8 md:px-12 lg:px-16 py-12 lg:py-16">
+        <div className="flex-1 bg-[#edeae4] flex flex-col justify-center px-8 md:px-12 lg:px-16 py-12 lg:py-16">
           {/* Headline */}
           <h2
-            className="bta-section-title text-[#bfa88a] text-3xl md:text-4xl lg:text-5xl leading-tight mb-3"
+            className="bta-section-title text-[#bfaf8a] text-3xl md:text-4xl lg:text-5xl leading-tight mb-3"
             style={{ fontWeight: 400 }}
           >
             {vipAccess.headline.split("\n").map((line, i) => (
@@ -138,12 +138,12 @@ export function VipAccessSection() {
           {/* Native booking form — no iframe, no box */}
           <div className="w-full" style={{ maxWidth: "520px" }}>
             {/* Tab switcher */}
-            <div className="flex mb-6 border border-[#bfa88a]/40">
+            <div className="flex mb-6 border border-[#bfaf8a]/40">
               <button
                 onClick={() => setActiveTab("stays")}
                 className={`flex-1 py-3 text-xs tracking-[0.18em] uppercase font-medium transition-colors ${
                   activeTab === "stays"
-                    ? "bg-[#bfa88a] text-white"
+                    ? "bg-[#bfaf8a] text-white"
                     : "bg-transparent text-[#384959]/70 hover:text-[#384959]"
                 }`}
               >
@@ -153,7 +153,7 @@ export function VipAccessSection() {
                 onClick={() => setActiveTab("hotel")}
                 className={`flex-1 py-3 text-xs tracking-[0.18em] uppercase font-medium transition-colors ${
                   activeTab === "hotel"
-                    ? "bg-[#bfa88a]/70 text-white"
+                    ? "bg-[#bfaf8a]/70 text-white"
                     : "bg-transparent text-[#384959]/70 hover:text-[#384959]"
                 }`}
               >
@@ -166,8 +166,8 @@ export function VipAccessSection() {
               {activeTab === "stays" ? (
                 <>
                   {/* Destination */}
-                  <div className="flex items-center gap-3 border border-[#bfa88a]/30 bg-white/60 px-4 py-3">
-                    <svg className="w-4 h-4 text-[#bfa88a] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="flex items-center gap-3 border border-[#bfaf8a]/30 bg-white/60 px-4 py-3">
+                    <svg className="w-4 h-4 text-[#bfaf8a] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
                     <input
@@ -182,8 +182,8 @@ export function VipAccessSection() {
 
                   {/* Dates */}
                   <div className="flex gap-3">
-                    <div className="flex-1 flex items-center gap-3 border border-[#bfa88a]/30 bg-white/60 px-4 py-3">
-                      <svg className="w-4 h-4 text-[#bfa88a] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="flex-1 flex items-center gap-3 border border-[#bfaf8a]/30 bg-white/60 px-4 py-3">
+                      <svg className="w-4 h-4 text-[#bfaf8a] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                       </svg>
                       <input
@@ -194,8 +194,8 @@ export function VipAccessSection() {
                         style={{ fontFamily: "'Cormorant Garamond', serif" }}
                       />
                     </div>
-                    <div className="flex-1 flex items-center gap-3 border border-[#bfa88a]/30 bg-white/60 px-4 py-3">
-                      <svg className="w-4 h-4 text-[#bfa88a] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="flex-1 flex items-center gap-3 border border-[#bfaf8a]/30 bg-white/60 px-4 py-3">
+                      <svg className="w-4 h-4 text-[#bfaf8a] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                       </svg>
                       <input
@@ -209,8 +209,8 @@ export function VipAccessSection() {
                   </div>
 
                   {/* Guests & Rooms */}
-                  <div className="flex items-center gap-3 border border-[#bfa88a]/30 bg-white/60 px-4 py-3">
-                    <svg className="w-4 h-4 text-[#bfa88a] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="flex items-center gap-3 border border-[#bfaf8a]/30 bg-white/60 px-4 py-3">
+                    <svg className="w-4 h-4 text-[#bfaf8a] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                     </svg>
                     <span className="text-sm text-[#2F2F2F]/60 flex-1" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
@@ -218,22 +218,22 @@ export function VipAccessSection() {
                     </span>
                     <div className="flex items-center gap-4">
                       <div className="flex items-center gap-2">
-                        <button onClick={() => setGuests(g => Math.max(1, g - 1))} className="w-6 h-6 flex items-center justify-center text-[#bfa88a] border border-[#bfa88a]/40 hover:bg-[#bfa88a]/10 text-sm">−</button>
+                        <button onClick={() => setGuests(g => Math.max(1, g - 1))} className="w-6 h-6 flex items-center justify-center text-[#bfaf8a] border border-[#bfaf8a]/40 hover:bg-[#bfaf8a]/10 text-sm">−</button>
                         <span className="text-sm text-[#2F2F2F] w-4 text-center">{guests}</span>
-                        <button onClick={() => setGuests(g => g + 1)} className="w-6 h-6 flex items-center justify-center text-[#bfa88a] border border-[#bfa88a]/40 hover:bg-[#bfa88a]/10 text-sm">+</button>
+                        <button onClick={() => setGuests(g => g + 1)} className="w-6 h-6 flex items-center justify-center text-[#bfaf8a] border border-[#bfaf8a]/40 hover:bg-[#bfaf8a]/10 text-sm">+</button>
                       </div>
                       <div className="flex items-center gap-2">
-                        <button onClick={() => setRooms(r => Math.max(1, r - 1))} className="w-6 h-6 flex items-center justify-center text-[#bfa88a] border border-[#bfa88a]/40 hover:bg-[#bfa88a]/10 text-sm">−</button>
+                        <button onClick={() => setRooms(r => Math.max(1, r - 1))} className="w-6 h-6 flex items-center justify-center text-[#bfaf8a] border border-[#bfaf8a]/40 hover:bg-[#bfaf8a]/10 text-sm">−</button>
                         <span className="text-sm text-[#2F2F2F] w-4 text-center">{rooms}</span>
-                        <button onClick={() => setRooms(r => r + 1)} className="w-6 h-6 flex items-center justify-center text-[#bfa88a] border border-[#bfa88a]/40 hover:bg-[#bfa88a]/10 text-sm">+</button>
+                        <button onClick={() => setRooms(r => r + 1)} className="w-6 h-6 flex items-center justify-center text-[#bfaf8a] border border-[#bfaf8a]/40 hover:bg-[#bfaf8a]/10 text-sm">+</button>
                       </div>
                     </div>
                   </div>
                 </>
               ) : (
                 /* Hotel name search */
-                <div className="flex items-center gap-3 border border-[#bfa88a]/30 bg-white/60 px-4 py-3">
-                  <svg className="w-4 h-4 text-[#bfa88a] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="flex items-center gap-3 border border-[#bfaf8a]/30 bg-white/60 px-4 py-3">
+                  <svg className="w-4 h-4 text-[#bfaf8a] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                   </svg>
                   <input
@@ -250,7 +250,7 @@ export function VipAccessSection() {
               {/* Search button */}
               <button
                 onClick={handleSearch}
-                className="w-full py-3.5 bg-[#bfa88a] hover:bg-[#a8927a] text-white text-xs tracking-[0.2em] uppercase font-medium flex items-center justify-center gap-2 transition-colors mt-2"
+                className="w-full py-3.5 bg-[#bfaf8a] hover:bg-[#bfaf8a] text-white text-xs tracking-[0.2em] uppercase font-medium flex items-center justify-center gap-2 transition-colors mt-2"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -271,7 +271,7 @@ export function GivesBackSection() {
       <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-24 items-center">
         {/* Left: Photo with Champagne Gold accent block */}
         <div className="relative">
-          <div className="absolute top-[-20px] left-[-20px] w-3/5 h-4/5 bg-[#bfa88a]/20 z-0" />
+          <div className="absolute top-[-20px] left-[-20px] w-3/5 h-4/5 bg-[#bfaf8a]/20 z-0" />
           <img
             src={givesBack.image}
             alt="Community impact through travel"

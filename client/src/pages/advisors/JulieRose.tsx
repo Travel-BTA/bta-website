@@ -15,7 +15,7 @@ import { advisor } from "@/content/advisors/julie-rose";
 // ─── Icon helpers ─────────────────────────────────────────────────────────────
 function StarIcon({ filled = true }: { filled?: boolean }) {
   return (
-    <svg className={`w-4 h-4 ${filled ? "text-[#bfa88a]" : "text-white/20"}`} fill="currentColor" viewBox="0 0 20 20">
+    <svg className={`w-4 h-4 ${filled ? "text-[#bfaf8a]" : "text-white/20"}`} fill="currentColor" viewBox="0 0 20 20">
       <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
     </svg>
   );
@@ -54,7 +54,7 @@ function HeroSection() {
   return (
     <>
     {/* ── MOBILE hero: cream bg, text top, photo bottom ── */}
-    <section className="block lg:hidden bg-[#FAF0F6]">
+    <section className="block lg:hidden bg-[#faf9f6]">
       {/* Text block */}
       <div className="px-6 pt-10 pb-8">
         <h1
@@ -62,7 +62,7 @@ function HeroSection() {
         >
           {h.name}
         </h1>
-        <p className="font-smallcaps text-[#bfa88a] text-[10px] tracking-[0.25em] uppercase mb-3">
+        <p className="font-smallcaps text-[#bfaf8a] text-[10px] tracking-[0.25em] uppercase mb-3">
           {h.title}
         </p>
         <p
@@ -74,13 +74,13 @@ function HeroSection() {
         <div className="flex flex-col gap-3 mb-4">
           <a
             href={h.ctaPrimary.href}
-            className="inline-block bg-[#bfa88a] text-white font-smallcaps text-xs tracking-[0.2em] uppercase px-7 py-3 text-center hover:bg-[#a8927a] transition-colors"
+            className="inline-block bg-[#bfaf8a] text-white font-smallcaps text-xs tracking-[0.2em] uppercase px-7 py-3 text-center hover:bg-[#bfaf8a] transition-colors"
           >
             {h.ctaPrimary.label}
           </a>
           <a
             href={h.ctaSecondary.href}
-            className="inline-block border border-[#bfa88a] text-[#2F2F2F] font-smallcaps text-xs tracking-[0.2em] uppercase px-7 py-3 text-center hover:bg-[#bfa88a]/10 transition-colors"
+            className="inline-block border border-[#bfaf8a] text-[#2F2F2F] font-smallcaps text-xs tracking-[0.2em] uppercase px-7 py-3 text-center hover:bg-[#bfaf8a]/10 transition-colors"
           >
             {h.ctaSecondary.label}
           </a>
@@ -88,7 +88,7 @@ function HeroSection() {
         <div className="flex flex-wrap gap-x-4 gap-y-1">
           {h.badges.map((badge) => (
             <span key={badge} className="flex items-center gap-1.5 text-[#2F2F2F]/50 text-[10px] font-smallcaps tracking-[0.15em] uppercase">
-              <svg className="w-3 h-3 text-[#bfa88a] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-3 h-3 text-[#bfaf8a] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               {badge}
@@ -107,7 +107,7 @@ function HeroSection() {
       {/* Background image */}
       <div className="absolute inset-0">
         <img src={h.heroImage} alt={h.name} className="w-full h-full object-cover object-center" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#1a2530]/85 via-[#1a2530]/35 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#384959]/85 via-[#384959]/35 to-transparent" />
       </div>
 
       <div className="relative z-10 w-full max-w-[1440px] mx-auto px-14">
@@ -116,7 +116,7 @@ function HeroSection() {
         >
           {h.name}
         </h1>
-        <p className="font-smallcaps text-[#bfa88a] text-xs tracking-[0.25em] uppercase mb-3">
+        <p className="font-smallcaps text-[#bfaf8a] text-xs tracking-[0.25em] uppercase mb-3">
           {h.title}
         </p>
         <p
@@ -128,7 +128,7 @@ function HeroSection() {
         <div className="flex flex-wrap gap-3 mb-4">
           <a
             href={h.ctaPrimary.href}
-            className="inline-block bg-[#bfa88a] text-white font-smallcaps text-xs tracking-[0.2em] uppercase px-7 py-3 hover:bg-[#a8927a] transition-colors"
+            className="inline-block bg-[#bfaf8a] text-white font-smallcaps text-xs tracking-[0.2em] uppercase px-7 py-3 hover:bg-[#bfaf8a] transition-colors"
           >
             {h.ctaPrimary.label}
           </a>
@@ -142,7 +142,7 @@ function HeroSection() {
         <div className="flex flex-wrap gap-x-5 gap-y-1">
           {h.badges.map((badge) => (
             <span key={badge} className="flex items-center gap-1.5 text-white/50 text-xs font-smallcaps tracking-[0.15em] uppercase">
-              <svg className="w-3 h-3 text-[#bfa88a] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-3 h-3 text-[#bfaf8a] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               {badge}
@@ -159,7 +159,7 @@ function HeroSection() {
 function MeetSection() {
   const m = advisor.meet;
   return (
-    <section className="bg-[#FAF0F6] py-24 lg:py-32">
+    <section className="bg-[#faf9f6] py-24 lg:py-32">
       <div className="max-w-[1440px] mx-auto px-8 lg:px-14 grid lg:grid-cols-2 gap-16 items-center">
         {/* Photos — overlapping layout */}
         <div className="relative h-[320px] md:h-[440px] lg:h-[620px]">
@@ -168,18 +168,18 @@ function MeetSection() {
             <img src={m.photoMain} alt={m.eyebrow} className="w-full h-full object-cover object-top" />
           </div>
           {/* Accent smaller photo — overlapping bottom-right */}
-          <div className="absolute right-0 bottom-0 w-[52%] h-[55%] overflow-hidden shadow-xl border-4 border-[#FAF0F6]">
+          <div className="absolute right-0 bottom-0 w-[52%] h-[55%] overflow-hidden shadow-xl border-4 border-[#faf9f6]">
             <img src={m.photoAccent} alt="Travel moment" className="w-full h-full object-cover" />
           </div>
           {/* Gold accent line */}
-          <div className="absolute left-[-16px] top-12 w-1 h-32 bg-[#bfa88a]" />
+          <div className="absolute left-[-16px] top-12 w-1 h-32 bg-[#bfaf8a]" />
         </div>
 
         {/* Text */}
         <div>
           {/* Eyebrow */}
           <p
-            className="text-[#bfa88a] text-2xl italic mb-3"
+            className="text-[#bfaf8a] text-2xl italic mb-3"
             style={{ fontFamily: "'Allura', cursive" }}
           >
             {m.eyebrow}
@@ -208,7 +208,7 @@ function MeetSection() {
 
           {/* Quote */}
           <blockquote
-            className="border-l-2 border-[#bfa88a] pl-6 mb-10 text-[#2F2F2F]/60 text-xl italic leading-relaxed"
+            className="border-l-2 border-[#bfaf8a] pl-6 mb-10 text-[#2F2F2F]/60 text-xl italic leading-relaxed"
             style={{ fontFamily: "'Cormorant Garamond', serif" }}
           >
             {m.quote}
@@ -217,7 +217,7 @@ function MeetSection() {
           {/* CTA */}
           <a
             href={m.cta.href}
-            className="inline-block bg-[#bfa88a] text-white font-smallcaps text-xs tracking-[0.2em] uppercase px-8 py-4 hover:bg-[#a8927a] transition-colors"
+            className="inline-block bg-[#bfaf8a] text-white font-smallcaps text-xs tracking-[0.2em] uppercase px-8 py-4 hover:bg-[#bfaf8a] transition-colors"
           >
             {m.cta.label}
           </a>
@@ -236,7 +236,7 @@ function StatsBar() {
           {advisor.stats.map((stat, i) => (
             <div key={i} className="text-center lg:px-8">
               <div
-                className="text-[#bfa88a] text-5xl md:text-6xl font-light mb-2"
+                className="text-[#bfaf8a] text-5xl md:text-6xl font-light mb-2"
                 style={{ fontFamily: "'Playfair Display', serif" }}
               >
                 {stat.value}
@@ -256,12 +256,12 @@ function StatsBar() {
 function HotelsSection() {
   const h = advisor.hotels;
   return (
-    <section className="bg-[#EBE9E3] py-24 lg:py-32">
+    <section className="bg-[#edeae4] py-24 lg:py-32">
       <div className="max-w-[1440px] mx-auto px-8 lg:px-14">
         {/* Header */}
         <div className="text-center mb-16">
           <p
-            className="text-[#bfa88a] text-2xl italic mb-3"
+            className="text-[#bfaf8a] text-2xl italic mb-3"
             style={{ fontFamily: "'Allura', cursive" }}
           >
             {h.eyebrow}
@@ -292,18 +292,18 @@ function HotelsSection() {
                   alt={hotel.name}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
-                <span className="absolute top-4 left-4 bg-[#bfa88a] text-white font-smallcaps text-xs tracking-[0.18em] uppercase px-3 py-1.5">
+                <span className="absolute top-4 left-4 bg-[#bfaf8a] text-white font-smallcaps text-xs tracking-[0.18em] uppercase px-3 py-1.5">
                   {hotel.badge}
                 </span>
               </div>
               {/* Content */}
               <div className="p-7">
-                <p className="font-smallcaps text-[#bfa88a] text-xs tracking-[0.18em] uppercase mb-2">
+                <p className="font-smallcaps text-[#bfaf8a] text-xs tracking-[0.18em] uppercase mb-2">
                   {hotel.location}
                 </p>
                 {/* Hotel name with vertical gold line */}
                 <div className="flex items-start gap-3 mb-4">
-                  <div className="w-0.5 bg-[#bfa88a] self-stretch mt-1 flex-shrink-0" style={{ minHeight: '2rem' }} />
+                  <div className="w-0.5 bg-[#bfaf8a] self-stretch mt-1 flex-shrink-0" style={{ minHeight: '2rem' }} />
                   <h3
             className="text-[#2F2F2F] text-2xl font-light leading-snug font-display"
                   >
@@ -317,16 +317,16 @@ function HotelsSection() {
                   {hotel.quote}
                 </p>
                 {/* Horizontal divider */}
-                <div className="border-t border-[#bfa88a]/30 mb-4" />
+                <div className="border-t border-[#bfaf8a]/30 mb-4" />
                 {/* Perks title */}
-                <p className="font-smallcaps text-[#bfa88a] text-[10px] tracking-[0.2em] uppercase mb-3">
+                <p className="font-smallcaps text-[#bfaf8a] text-[10px] tracking-[0.2em] uppercase mb-3">
                   Exclusive Perks When You Book Through Julie
                 </p>
                 {/* Perks with check icons */}
                 <ul className="space-y-2">
                   {hotel.perks.map((perk, j) => (
                     <li key={j} className="flex items-start gap-2">
-                      <svg className="w-3.5 h-3.5 text-[#bfa88a] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-3.5 h-3.5 text-[#bfaf8a] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                       </svg>
                       <span
@@ -356,7 +356,7 @@ function SpecialtiesSection() {
         {/* Header */}
         <div className="text-center mb-14">
           <p
-            className="text-[#bfa88a] text-2xl italic mb-3"
+            className="text-[#bfaf8a] text-2xl italic mb-3"
             style={{ fontFamily: "'Allura', cursive" }}
           >
             {s.eyebrow}
@@ -390,7 +390,7 @@ function SpecialtiesSection() {
               </div>
               {/* Hover state: gold line + italic title + description */}
               <div className="absolute inset-0 flex flex-col justify-center px-6 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-2 group-hover:translate-y-0">
-                <div className="w-8 h-0.5 bg-[#bfa88a] mb-3" />
+                <div className="w-8 h-0.5 bg-[#bfaf8a] mb-3" />
                 <p
                   className="text-white text-lg italic mb-2 leading-snug"
                   style={{ fontFamily: "'Cormorant Garamond', serif" }}
@@ -416,12 +416,12 @@ function SpecialtiesSection() {
 function PhilosophySection() {
   const p = advisor.philosophy;
   return (
-    <section className="bg-[#faf0f6] py-24 lg:py-32">
+    <section className="bg-[#faf9f6] py-24 lg:py-32">
       <div className="max-w-[1440px] mx-auto px-8 lg:px-14">
         {/* Header */}
         <div className="text-center mb-6">
           <p
-            className="text-[#bfa88a] text-2xl italic mb-3"
+            className="text-[#bfaf8a] text-2xl italic mb-3"
             style={{ fontFamily: "'Allura', cursive" }}
           >
             {p.eyebrow}
@@ -434,7 +434,7 @@ function PhilosophySection() {
         </div>
 
         {/* Central quote — gold left border, no box */}
-        <div className="max-w-3xl mx-auto mb-16 pl-8 border-l-4 border-[#bfa88a]">
+        <div className="max-w-3xl mx-auto mb-16 pl-8 border-l-4 border-[#bfaf8a]">
           <p
             className="text-[#2F2F2F] text-2xl md:text-3xl italic leading-relaxed"
             style={{ fontFamily: "'Cormorant Garamond', serif" }}
@@ -447,7 +447,7 @@ function PhilosophySection() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {p.pillars.map((pillar, i) => (
             <div key={i} className="text-center">
-              <div className="w-14 h-14 rounded-full bg-[#bfa88a]/15 flex items-center justify-center mx-auto mb-5 text-[#bfa88a]">
+              <div className="w-14 h-14 rounded-full bg-[#bfaf8a]/15 flex items-center justify-center mx-auto mb-5 text-[#bfaf8a]">
                 <PillarIcon icon={pillar.icon} />
               </div>
               <h4
@@ -479,7 +479,7 @@ function ExperiencesSection() {
         {/* Header */}
         <div className="text-center mb-14">
           <p
-            className="text-[#bfa88a] text-2xl italic mb-3"
+            className="text-[#bfaf8a] text-2xl italic mb-3"
             style={{ fontFamily: "'Allura', cursive" }}
           >
             {e.eyebrow}
@@ -507,7 +507,7 @@ function ExperiencesSection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-[#384959]/80 to-transparent" />
                 {/* Duration + Region badges */}
                 <div className="absolute top-4 left-4 flex gap-2">
-                  <span className="bg-[#bfa88a] text-white font-smallcaps text-xs tracking-[0.15em] uppercase px-3 py-1">
+                  <span className="bg-[#bfaf8a] text-white font-smallcaps text-xs tracking-[0.15em] uppercase px-3 py-1">
                     {trip.duration}
                   </span>
                   <span className="bg-white/20 backdrop-blur-sm text-white font-smallcaps text-xs tracking-[0.15em] uppercase px-3 py-1">
@@ -516,7 +516,7 @@ function ExperiencesSection() {
                 </div>
               </div>
               {/* Content */}
-              <div className="bg-[#2F3E4E] p-7">
+              <div className="bg-[#384959] p-7">
                 <h3
             className="text-white text-xl font-light mb-3 leading-snug font-display"
                 >
@@ -530,7 +530,7 @@ function ExperiencesSection() {
                 </p>
                 <a
                   href={trip.href}
-                  className="inline-flex items-center gap-2 font-smallcaps text-[#bfa88a] text-xs tracking-[0.2em] uppercase hover:gap-3 transition-all"
+                  className="inline-flex items-center gap-2 font-smallcaps text-[#bfaf8a] text-xs tracking-[0.2em] uppercase hover:gap-3 transition-all"
                 >
                   Learn More
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -561,7 +561,7 @@ function WhyWorkSection() {
         {/* Content */}
         <div className="py-24 px-8 lg:px-14 xl:px-20 flex flex-col justify-center">
           <p
-            className="text-[#bfa88a] text-2xl italic mb-3"
+            className="text-[#bfaf8a] text-2xl italic mb-3"
             style={{ fontFamily: "'Allura', cursive" }}
           >
             {w.eyebrow}
@@ -578,8 +578,8 @@ function WhyWorkSection() {
           <div className="space-y-7 mb-10">
             {w.benefits.map((benefit, i) => (
               <div key={i} className="flex gap-5">
-                <div className="w-8 h-8 rounded-full bg-[#bfa88a]/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <span className="text-[#bfa88a] font-smallcaps text-xs">{String(i + 1).padStart(2, "0")}</span>
+                <div className="w-8 h-8 rounded-full bg-[#bfaf8a]/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <span className="text-[#bfaf8a] font-smallcaps text-xs">{String(i + 1).padStart(2, "0")}</span>
                 </div>
                 <div>
                   <h4
@@ -601,7 +601,7 @@ function WhyWorkSection() {
 
           <a
             href={w.cta.href}
-            className="inline-block self-start bg-[#bfa88a] text-white font-smallcaps text-xs tracking-[0.2em] uppercase px-8 py-4 hover:bg-[#a8927a] transition-colors"
+            className="inline-block self-start bg-[#bfaf8a] text-white font-smallcaps text-xs tracking-[0.2em] uppercase px-8 py-4 hover:bg-[#bfaf8a] transition-colors"
           >
             {w.cta.label}
           </a>
@@ -618,11 +618,11 @@ function TestimonialsSection() {
   const current = t.items[active];
 
   return (
-    <section className="bg-[#1a2530] py-24 lg:py-32">
+    <section className="bg-[#384959] py-24 lg:py-32">
       <div className="max-w-[900px] mx-auto px-8 text-center">
         {/* Eyebrow */}
         <p
-          className="text-[#bfa88a] text-2xl italic mb-3"
+          className="text-[#bfaf8a] text-2xl italic mb-3"
           style={{ fontFamily: "'Allura', cursive" }}
         >
           {t.eyebrow}
@@ -652,7 +652,7 @@ function TestimonialsSection() {
 
         {/* Author */}
         <div className="mb-10">
-          <p className="font-smallcaps text-[#bfa88a] text-sm tracking-[0.2em] uppercase">
+          <p className="font-smallcaps text-[#bfaf8a] text-sm tracking-[0.2em] uppercase">
             {current.author}
           </p>
           <p
@@ -667,7 +667,7 @@ function TestimonialsSection() {
         <div className="flex items-center justify-center gap-6">
           <button
             onClick={() => setActive((active - 1 + t.items.length) % t.items.length)}
-            className="w-10 h-10 border border-white/20 flex items-center justify-center text-white/60 hover:border-[#bfa88a] hover:text-[#bfa88a] transition-colors"
+            className="w-10 h-10 border border-white/20 flex items-center justify-center text-white/60 hover:border-[#bfaf8a] hover:text-[#bfaf8a] transition-colors"
             aria-label="Previous testimonial"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -680,14 +680,14 @@ function TestimonialsSection() {
               <button
                 key={i}
                 onClick={() => setActive(i)}
-                className={`w-2 h-2 rounded-full transition-colors ${i === active ? "bg-[#bfa88a]" : "bg-white/20"}`}
+                className={`w-2 h-2 rounded-full transition-colors ${i === active ? "bg-[#bfaf8a]" : "bg-white/20"}`}
                 aria-label={`Testimonial ${i + 1}`}
               />
             ))}
           </div>
           <button
             onClick={() => setActive((active + 1) % t.items.length)}
-            className="w-10 h-10 border border-white/20 flex items-center justify-center text-white/60 hover:border-[#bfa88a] hover:text-[#bfa88a] transition-colors"
+            className="w-10 h-10 border border-white/20 flex items-center justify-center text-white/60 hover:border-[#bfaf8a] hover:text-[#bfaf8a] transition-colors"
             aria-label="Next testimonial"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -715,12 +715,12 @@ function ContactSection() {
   };
 
   return (
-    <section id="contact" className="bg-[#EBE9E3] py-24 lg:py-32">
+    <section id="contact" className="bg-[#edeae4] py-24 lg:py-32">
       <div className="max-w-[1440px] mx-auto px-8 lg:px-14 grid lg:grid-cols-2 gap-16">
         {/* Left — Contact Form */}
         <div>
           <p
-            className="text-[#bfa88a] text-2xl italic mb-3"
+            className="text-[#bfaf8a] text-2xl italic mb-3"
             style={{ fontFamily: "'Allura', cursive" }}
           >
             {c.eyebrow}
@@ -740,7 +740,7 @@ function ContactSection() {
           </p>
 
           {submitted ? (
-            <div className="bg-[#bfa88a]/10 border border-[#bfa88a]/30 p-8 text-center">
+            <div className="bg-[#bfaf8a]/10 border border-[#bfaf8a]/30 p-8 text-center">
               <p
                 className="text-[#2F2F2F] text-xl italic"
                 style={{ fontFamily: "'Cormorant Garamond', serif" }}
@@ -757,7 +757,7 @@ function ContactSection() {
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   required
-                  className="w-full bg-white border border-[#2F2F2F]/10 px-5 py-3.5 text-[#2F2F2F] placeholder:text-[#2F2F2F]/40 focus:outline-none focus:border-[#bfa88a] transition-colors"
+                  className="w-full bg-white border border-[#2F2F2F]/10 px-5 py-3.5 text-[#2F2F2F] placeholder:text-[#2F2F2F]/40 focus:outline-none focus:border-[#bfaf8a] transition-colors"
                   style={{ fontFamily: "'Cormorant Garamond', serif" }}
                 />
                 <input
@@ -766,7 +766,7 @@ function ContactSection() {
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   required
-                  className="w-full bg-white border border-[#2F2F2F]/10 px-5 py-3.5 text-[#2F2F2F] placeholder:text-[#2F2F2F]/40 focus:outline-none focus:border-[#bfa88a] transition-colors"
+                  className="w-full bg-white border border-[#2F2F2F]/10 px-5 py-3.5 text-[#2F2F2F] placeholder:text-[#2F2F2F]/40 focus:outline-none focus:border-[#bfaf8a] transition-colors"
                   style={{ fontFamily: "'Cormorant Garamond', serif" }}
                 />
               </div>
@@ -775,7 +775,7 @@ function ContactSection() {
                 placeholder={c.fields.phonePlaceholder}
                 value={formData.phone}
                 onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                className="w-full bg-white border border-[#2F2F2F]/10 px-5 py-3.5 text-[#2F2F2F] placeholder:text-[#2F2F2F]/40 focus:outline-none focus:border-[#bfa88a] transition-colors"
+                className="w-full bg-white border border-[#2F2F2F]/10 px-5 py-3.5 text-[#2F2F2F] placeholder:text-[#2F2F2F]/40 focus:outline-none focus:border-[#bfaf8a] transition-colors"
                 style={{ fontFamily: "'Cormorant Garamond', serif" }}
               />
               <input
@@ -783,7 +783,7 @@ function ContactSection() {
                 placeholder={c.fields.destinationPlaceholder}
                 value={formData.destination}
                 onChange={(e) => setFormData({ ...formData, destination: e.target.value })}
-                className="w-full bg-white border border-[#2F2F2F]/10 px-5 py-3.5 text-[#2F2F2F] placeholder:text-[#2F2F2F]/40 focus:outline-none focus:border-[#bfa88a] transition-colors"
+                className="w-full bg-white border border-[#2F2F2F]/10 px-5 py-3.5 text-[#2F2F2F] placeholder:text-[#2F2F2F]/40 focus:outline-none focus:border-[#bfaf8a] transition-colors"
                 style={{ fontFamily: "'Cormorant Garamond', serif" }}
               />
               <textarea
@@ -791,12 +791,12 @@ function ContactSection() {
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 rows={5}
-                className="w-full bg-white border border-[#2F2F2F]/10 px-5 py-3.5 text-[#2F2F2F] placeholder:text-[#2F2F2F]/40 focus:outline-none focus:border-[#bfa88a] transition-colors resize-none"
+                className="w-full bg-white border border-[#2F2F2F]/10 px-5 py-3.5 text-[#2F2F2F] placeholder:text-[#2F2F2F]/40 focus:outline-none focus:border-[#bfaf8a] transition-colors resize-none"
                 style={{ fontFamily: "'Cormorant Garamond', serif" }}
               />
               <button
                 type="submit"
-                className="w-full bg-[#bfa88a] text-white font-smallcaps text-xs tracking-[0.2em] uppercase py-4 hover:bg-[#a8927a] transition-colors"
+                className="w-full bg-[#bfaf8a] text-white font-smallcaps text-xs tracking-[0.2em] uppercase py-4 hover:bg-[#bfaf8a] transition-colors"
               >
                 {c.fields.submitLabel}
               </button>
@@ -807,7 +807,7 @@ function ContactSection() {
         {/* Right — Club CTA */}
         <div className="bg-[#384959] p-10 lg:p-14 flex flex-col justify-center">
           <p
-            className="text-[#bfa88a] text-2xl italic mb-3"
+            className="text-[#bfaf8a] text-2xl italic mb-3"
             style={{ fontFamily: "'Allura', cursive" }}
           >
             {c.club.eyebrow}
@@ -827,7 +827,7 @@ function ContactSection() {
           </p>
           <a
             href={c.club.cta.href}
-            className="inline-block self-start border border-[#bfa88a] text-[#bfa88a] font-smallcaps text-xs tracking-[0.2em] uppercase px-8 py-4 hover:bg-[#bfa88a] hover:text-white transition-colors"
+            className="inline-block self-start border border-[#bfaf8a] text-[#bfaf8a] font-smallcaps text-xs tracking-[0.2em] uppercase px-8 py-4 hover:bg-[#bfaf8a] hover:text-white transition-colors"
           >
             {c.club.cta.label}
           </a>
@@ -843,7 +843,7 @@ function ClosingBanner() {
   return (
     <section className="relative h-[420px] flex items-center justify-center overflow-hidden">
       <img src={cb.image} alt="Closing banner" className="absolute inset-0 w-full h-full object-cover" />
-      <div className="absolute inset-0 bg-[#1a2530]/65" />
+      <div className="absolute inset-0 bg-[#384959]/65" />
       <div className="relative z-10 text-center px-8 max-w-3xl mx-auto">
         <p
           className="text-white text-2xl md:text-4xl italic leading-relaxed mb-4"
@@ -851,7 +851,7 @@ function ClosingBanner() {
         >
           {cb.quote}
         </p>
-        <p className="font-smallcaps text-[#bfa88a] text-xs tracking-[0.25em] uppercase mb-8">
+        <p className="font-smallcaps text-[#bfaf8a] text-xs tracking-[0.25em] uppercase mb-8">
           {cb.credit}
         </p>
         <a

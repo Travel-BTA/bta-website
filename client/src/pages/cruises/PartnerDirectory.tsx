@@ -6,7 +6,7 @@
  * Design references: philanthropic-initiatives page card grid pattern.
  *
  * BTA brand: Instrument Serif headings, Cormorant Garamond body,
- * Champagne Gold #bfa88a, Aegean Blue #384959, Linen White #faf0f6.
+ * Champagne Gold #bfaf8a, Aegean Blue #384959, Linen White #faf9f6.
  */
 
 import { Link } from "wouter";
@@ -254,7 +254,7 @@ function PhotoCard({
       {/* Category badge — top left */}
       <div className="absolute top-4 left-4">
         <span
-          className="inline-block bg-[#bfa88a] text-white text-[9px] tracking-[0.25em] uppercase px-2.5 py-1"
+          className="inline-block bg-[#bfaf8a] text-white text-[9px] tracking-[0.25em] uppercase px-2.5 py-1"
           style={{ fontFamily: "'Cormorant Garamond', serif" }}
         >
           {badge ?? category}
@@ -264,7 +264,7 @@ function PhotoCard({
       {/* Text overlay — bottom */}
       <div className="absolute bottom-0 left-0 right-0 px-5 pb-5 pt-10">
         <h3
-          className="text-white text-lg font-light leading-snug mb-1 group-hover:text-[#bfa88a] transition-colors duration-300"
+          className="text-white text-lg font-light leading-snug mb-1 group-hover:text-[#bfaf8a] transition-colors duration-300"
           style={{ fontFamily: "'Instrument Serif', 'Playfair Display', serif" }}
         >
           {name}
@@ -277,7 +277,7 @@ function PhotoCard({
         </p>
         {note && (
           <p
-            className="text-[#bfa88a]/80 text-[10px] tracking-[0.15em] uppercase"
+            className="text-[#bfaf8a]/80 text-[10px] tracking-[0.15em] uppercase"
             style={{ fontFamily: "'Cormorant Garamond', serif" }}
           >
             ✦ {note}
@@ -285,9 +285,9 @@ function PhotoCard({
         )}
         {/* Arrow CTA — slides in on hover */}
         <div className="mt-3 flex items-center gap-2 opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
-          <div className="w-6 h-px bg-[#bfa88a]" />
+          <div className="w-6 h-px bg-[#bfaf8a]" />
           <span
-            className="text-[#bfa88a] text-[10px] tracking-[0.2em] uppercase"
+            className="text-[#bfaf8a] text-[10px] tracking-[0.2em] uppercase"
             style={{ fontFamily: "'Cormorant Garamond', serif" }}
           >
             Explore
@@ -314,7 +314,7 @@ function SectionHeader({
   return (
     <div className="mb-12 text-center">
       <p
-        className={`text-xs tracking-[0.3em] uppercase mb-4 ${light ? "text-[#bfa88a]" : "text-[#bfa88a]"}`}
+        className={`text-xs tracking-[0.3em] uppercase mb-4 ${light ? "text-[#bfaf8a]" : "text-[#bfaf8a]"}`}
         style={{ fontFamily: "'Cormorant Garamond', serif" }}
       >
         {eyebrow}
@@ -333,9 +333,9 @@ function SectionHeader({
         </p>
       )}
       <div className="flex items-center justify-center gap-3 mt-6">
-        <div className={`w-16 h-px ${light ? "bg-[#bfa88a]/50" : "bg-[#bfa88a]/40"}`} />
-        <span className="text-[#bfa88a]">✦</span>
-        <div className={`w-16 h-px ${light ? "bg-[#bfa88a]/50" : "bg-[#bfa88a]/40"}`} />
+        <div className={`w-16 h-px ${light ? "bg-[#bfaf8a]/50" : "bg-[#bfaf8a]/40"}`} />
+        <span className="text-[#bfaf8a]">✦</span>
+        <div className={`w-16 h-px ${light ? "bg-[#bfaf8a]/50" : "bg-[#bfaf8a]/40"}`} />
       </div>
     </div>
   );
@@ -354,21 +354,21 @@ export default function PartnerDirectory() {
           alt="Luxury cruise ship at sea"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/90 via-[#1a1a1a]/30 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#2f2f2f]/90 via-[#2f2f2f]/30 to-transparent" />
 
         <div className="relative z-10 w-full max-w-[1440px] mx-auto px-8 lg:px-14 pb-20">
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 mb-6">
             <Link
               href="/cruises"
-              className="text-white/55 text-xs tracking-[0.2em] uppercase hover:text-[#bfa88a] transition-colors"
+              className="text-white/55 text-xs tracking-[0.2em] uppercase hover:text-[#bfaf8a] transition-colors"
               style={{ fontFamily: "'Cormorant Garamond', serif" }}
             >
               Cruises
             </Link>
             <span className="text-white/35 text-xs">›</span>
             <span
-              className="text-[#bfa88a] text-xs tracking-[0.2em] uppercase"
+              className="text-[#bfaf8a] text-xs tracking-[0.2em] uppercase"
               style={{ fontFamily: "'Cormorant Garamond', serif" }}
             >
               Partner Directory
@@ -376,7 +376,7 @@ export default function PartnerDirectory() {
           </div>
 
           <p
-            className="text-[#bfa88a] mb-3"
+            className="text-[#bfaf8a] mb-3"
             style={{ fontFamily: "'Allura', cursive", fontSize: "1.8rem" }}
           >
             Every Link Leads Back to BTA
@@ -416,7 +416,7 @@ export default function PartnerDirectory() {
             ].map((item) => (
               <div key={item.num} className="flex gap-5">
                 <span
-                  className="text-[#bfa88a]/35 text-3xl font-light flex-shrink-0 leading-none mt-0.5"
+                  className="text-[#bfaf8a]/35 text-3xl font-light flex-shrink-0 leading-none mt-0.5"
                   style={{ fontFamily: "'Instrument Serif', serif" }}
                 >
                   {item.num}
@@ -437,7 +437,7 @@ export default function PartnerDirectory() {
       </section>
 
       {/* ── Cruise Collections ────────────────────────────────────────────── */}
-      <section className="bg-[#faf0f6] py-20">
+      <section className="bg-[#faf9f6] py-20">
         <div className="max-w-[1440px] mx-auto px-8 lg:px-14">
           <SectionHeader
             eyebrow="Co-Branded Partner Platforms"

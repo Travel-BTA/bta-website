@@ -30,12 +30,12 @@ export const storyUnfoldItineraries = [
 
 export function StoryUnfoldSection() {
   return (
-    <section className="bg-[#EBE9E3] py-24 px-6">
+    <section className="bg-[#edeae4] py-24 px-6">
       <div className="max-w-[1440px] mx-auto">
         {/* Header — left aligned */}
         <div className="text-left mb-14">
           <p
-            className="font-script text-[#bfa88a] text-3xl md:text-4xl mb-3"
+            className="font-script text-[#bfaf8a] text-3xl md:text-4xl mb-3"
             style={{ fontFamily: "'Allura', 'Cormorant Garamond', serif" }}
           >
             Begin your journey
@@ -71,16 +71,16 @@ export function StoryUnfoldSection() {
 
               {/* Content */}
               <div className="absolute bottom-0 left-0 right-0 p-8">
-                <p className="font-smallcaps text-[#bfa88a] text-xs tracking-[0.22em] uppercase mb-2">
+                <p className="font-smallcaps text-[#bfaf8a] text-xs tracking-[0.22em] uppercase mb-2">
                   {item.destination}
                 </p>
                 <h3
-                  className="font-display text-[#faf0f6] text-2xl md:text-3xl mb-4 leading-snug"
+                  className="font-display text-[#faf9f6] text-2xl md:text-3xl mb-4 leading-snug"
                   style={{ fontWeight: 400 }}
                 >
                   {item.title}
                 </h3>
-                <span className="inline-flex items-center gap-2 font-smallcaps text-[#bfa88a] text-xs tracking-[0.18em] uppercase group-hover:gap-4 transition-all duration-300">
+                <span className="inline-flex items-center gap-2 font-smallcaps text-[#bfaf8a] text-xs tracking-[0.18em] uppercase group-hover:gap-4 transition-all duration-300">
                   VIEW ITINERARY
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />

@@ -123,17 +123,17 @@ export default function MediaManager() {
   );
 
   return (
-    <div className="min-h-screen bg-[#faf0f6]">
+    <div className="min-h-screen bg-[#faf9f6]">
       {/* Header */}
-      <header className="bg-white border-b border-[#EBE9E3] sticky top-0 z-10 shadow-sm">
+      <header className="bg-white border-b border-[#edeae4] sticky top-0 z-10 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-4">
             <Link href="/">
-              <span className="text-[#384959] hover:text-[#bfa88a] transition-colors text-sm font-medium cursor-pointer">
+              <span className="text-[#384959] hover:text-[#bfaf8a] transition-colors text-sm font-medium cursor-pointer">
                 ← Back to Site
               </span>
             </Link>
-            <div className="w-px h-5 bg-[#EBE9E3]" />
+            <div className="w-px h-5 bg-[#edeae4]" />
             <h1 className="text-xl font-semibold text-[#2f2f2f] tracking-wide">
               Media Manager
             </h1>
@@ -156,8 +156,8 @@ export default function MediaManager() {
           onClick={() => fileInputRef.current?.click()}
           className={`border-2 border-dashed rounded-xl p-10 text-center cursor-pointer transition-all mb-8 ${
             dragOver
-              ? "border-[#bfa88a] bg-[#bfa88a]/10"
-              : "border-[#EBE9E3] bg-white hover:border-[#bfa88a] hover:bg-[#bfa88a]/5"
+              ? "border-[#bfaf8a] bg-[#bfaf8a]/10"
+              : "border-[#edeae4] bg-white hover:border-[#bfaf8a] hover:bg-[#bfaf8a]/5"
           }`}
         >
           <div className="text-4xl mb-3">📁</div>
@@ -179,7 +179,7 @@ export default function MediaManager() {
 
         {/* Upload Progress */}
         {uploading.length > 0 && (
-          <div className="bg-white rounded-xl border border-[#EBE9E3] p-4 mb-8 space-y-2">
+          <div className="bg-white rounded-xl border border-[#edeae4] p-4 mb-8 space-y-2">
             <p className="text-sm font-medium text-[#2f2f2f] mb-3">Uploading...</p>
             {uploading.map((u, i) => (
               <div key={i} className="flex items-center gap-3">
@@ -188,12 +188,12 @@ export default function MediaManager() {
                     <span className="truncate max-w-xs">{u.name}</span>
                     <span>{u.status === "done" ? "✓ Done" : u.status === "error" ? "✗ Error" : "Uploading..."}</span>
                   </div>
-                  <div className="h-1.5 bg-[#EBE9E3] rounded-full overflow-hidden">
+                  <div className="h-1.5 bg-[#edeae4] rounded-full overflow-hidden">
                     <div
                       className={`h-full rounded-full transition-all ${
                         u.status === "done" ? "bg-green-500 w-full" :
                         u.status === "error" ? "bg-red-400 w-full" :
-                        "bg-[#bfa88a] w-1/2 animate-pulse"
+                        "bg-[#bfaf8a] w-1/2 animate-pulse"
                       }`}
                     />
                   </div>
@@ -210,7 +210,7 @@ export default function MediaManager() {
             placeholder="Search by filename or label..."
             value={labelFilter}
             onChange={(e) => setLabelFilter(e.target.value)}
-            className="border border-[#EBE9E3] rounded-lg px-4 py-2 text-sm w-72 focus:outline-none focus:border-[#bfa88a] bg-white"
+            className="border border-[#edeae4] rounded-lg px-4 py-2 text-sm w-72 focus:outline-none focus:border-[#bfaf8a] bg-white"
           />
           <span className="text-sm text-[#384959]/60">
             {filteredFiles?.length ?? 0} file{(filteredFiles?.length ?? 0) !== 1 ? "s" : ""}
@@ -221,7 +221,7 @@ export default function MediaManager() {
         {isLoading ? (
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
             {Array.from({ length: 10 }).map((_, i) => (
-              <div key={i} className="bg-white rounded-xl border border-[#EBE9E3] aspect-square animate-pulse" />
+              <div key={i} className="bg-white rounded-xl border border-[#edeae4] aspect-square animate-pulse" />
             ))}
           </div>
         ) : filteredFiles?.length === 0 ? (
@@ -235,10 +235,10 @@ export default function MediaManager() {
             {filteredFiles?.map((file: any) => (
               <div
                 key={file.id}
-                className="bg-white rounded-xl border border-[#EBE9E3] overflow-hidden group hover:shadow-md transition-shadow"
+                className="bg-white rounded-xl border border-[#edeae4] overflow-hidden group hover:shadow-md transition-shadow"
               >
                 {/* Preview */}
-                <div className="aspect-square bg-[#faf0f6] relative overflow-hidden">
+                <div className="aspect-square bg-[#faf9f6] relative overflow-hidden">
                   {file.mimeType.startsWith("image/") ? (
                     <img
                       src={file.url}
@@ -257,7 +257,7 @@ export default function MediaManager() {
                   <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2">
                     <button
                       onClick={() => copyUrl(file.url, file.id)}
-                      className="bg-white text-[#2f2f2f] text-xs px-3 py-1.5 rounded font-medium hover:bg-[#bfa88a] hover:text-white transition-colors"
+                      className="bg-white text-[#2f2f2f] text-xs px-3 py-1.5 rounded font-medium hover:bg-[#bfaf8a] hover:text-white transition-colors"
                     >
                       {copiedId === file.id ? "Copied!" : "Copy URL"}
                     </button>

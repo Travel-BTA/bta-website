@@ -4,8 +4,8 @@
  * Official BTA Brand Colors:
  *   Champagne Gold:  #BFAF8A  → backgrounds, accents, buttons, eyebrows
  *   Aegean Blue:     #384959  → text on light backgrounds, dark accents
- *   Linen White:     #FAF0F6  → text on dark/gold backgrounds
- *   Warm Stone:      #FAF0F6  → section backgrounds
+ *   Linen White:     #faf9f6  → text on dark/gold backgrounds
+ *   Warm Stone:      #faf9f6  → section backgrounds
  *   Charcoal Ink:    #2F2F2F  → body text
  *   Dark Navy:       #384959  → stats bar, footer
  */
@@ -17,11 +17,11 @@ export function WhoWeAreSection() {
     // Champagne Gold background with Linen White text
     <section className="bg-[#BFAF8A] py-20 px-6 text-center">
       <div className="max-w-2xl mx-auto">
-        <p className="bta-eyebrow text-[#FAF0F6]/80 mb-3">{whoWeAre.eyebrow}</p>
-        <h2 className="bta-section-title text-[#FAF0F6] text-3xl md:text-4xl mb-6" style={{ fontWeight: 400 }}>
+        <p className="bta-eyebrow text-[#faf9f6]/80 mb-3">{whoWeAre.eyebrow}</p>
+        <h2 className="bta-section-title text-[#faf9f6] text-3xl md:text-4xl mb-6" style={{ fontWeight: 400 }}>
           {whoWeAre.headline}
         </h2>
-        <p className="font-body text-[#FAF0F6]/90 text-lg md:text-xl leading-relaxed mb-8">
+        <p className="font-body text-[#faf9f6]/90 text-lg md:text-xl leading-relaxed mb-8">
           {whoWeAre.body}
         </p>
         <a href={whoWeAre.cta.href} className="bta-btn-outline-white text-[10px]">
@@ -40,7 +40,7 @@ export function StatsSection() {
         {stats.map((stat) => (
           <div key={stat.label}>
             <div
-              className="font-display text-[#FAF0F6] text-4xl md:text-5xl lg:text-6xl mb-2"
+              className="font-display text-[#faf9f6] text-4xl md:text-5xl lg:text-6xl mb-2"
               style={{ fontWeight: 300 }}
             >
               {stat.value}
@@ -58,7 +58,7 @@ export function StatsSection() {
 export function PhilosophySection() {
   return (
     // Warm Stone background — clean, airy
-    <section className="bg-[#FAF0F6] py-20 px-6">
+    <section className="bg-[#faf9f6] py-20 px-6">
       <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         {/* Left: Text */}
         <div>
@@ -123,13 +123,13 @@ export function CuratedHotelsSection() {
       <div className="relative h-full flex items-center justify-start px-10 lg:px-16">
         <div>
           <p
-            className="text-[#FAF0F6] text-4xl md:text-5xl leading-tight"
+            className="text-[#faf9f6] text-4xl md:text-5xl leading-tight"
             style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontWeight: 400 }}
           >
             {curatedHotels.scriptLine1}
           </p>
           <p
-            className="text-[#FAF0F6] text-4xl md:text-5xl leading-tight"
+            className="text-[#faf9f6] text-4xl md:text-5xl leading-tight"
             style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontWeight: 400 }}
           >
             {curatedHotels.scriptLine2}

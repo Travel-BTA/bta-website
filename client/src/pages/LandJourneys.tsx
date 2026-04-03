@@ -2,7 +2,7 @@
  * Land Journeys Page
  *
  * Design Philosophy: Luxury editorial — cinematic hero, generous whitespace,
- * Playfair Display headings, gold (#9E8661) accents, BTA blue (#384959) panels.
+ * Playfair Display headings, gold (#bfaf8a) accents, BTA blue (#384959) panels.
  * Clean asymmetric layouts inspired by Virtuoso and top luxury travel agencies.
  *
  * Content is managed entirely in: client/src/content/landJourneys.ts
@@ -40,7 +40,7 @@ export default function LandJourneys() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#FAF0F6] text-[#2F2F2F] font-serif">
+    <div className="min-h-screen bg-[#faf9f6] text-[#2F2F2F] font-serif">
       {/* ── Navigation ─────────────────────────────────────────────────── */}
       <NavBar />
 
@@ -97,7 +97,7 @@ export default function LandJourneys() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <p
-              className="text-[#9E8661] tracking-[0.25em] text-xs uppercase mb-4"
+              className="text-[#bfaf8a] tracking-[0.25em] text-xs uppercase mb-4"
               style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
             >
               {landJourneysIntro.eyebrow}
@@ -108,11 +108,11 @@ export default function LandJourneys() {
             >
               {landJourneysIntro.headline}
             </h2>
-            <p className="text-[#5A5A5A] text-lg leading-relaxed mb-10 font-light">
+            <p className="text-[#2f2f2f] text-lg leading-relaxed mb-10 font-light">
               {landJourneysIntro.body}
             </p>
             <Link href={landJourneysIntro.cta.href}>
-              <button className="group flex items-center gap-3 text-[#9E8661] tracking-[0.2em] text-sm uppercase border border-[#9E8661] px-8 py-4 hover:bg-[#9E8661] hover:text-white transition-all duration-300">
+              <button className="group flex items-center gap-3 text-[#bfaf8a] tracking-[0.2em] text-sm uppercase border border-[#bfaf8a] px-8 py-4 hover:bg-[#bfaf8a] hover:text-white transition-all duration-300">
                 {landJourneysIntro.cta.label}
                 <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
               </button>
@@ -130,17 +130,17 @@ export default function LandJourneys() {
               }}
             />
             {/* Gold accent bar */}
-            <div className="absolute -bottom-4 -left-4 w-24 h-1 bg-[#9E8661]" />
+            <div className="absolute -bottom-4 -left-4 w-24 h-1 bg-[#bfaf8a]" />
           </div>
         </div>
       </section>
 
       {/* ── Journey Categories ─────────────────────────────────────────── */}
-      <section className="py-24 bg-[#FAF0F6]">
+      <section className="py-24 bg-[#faf9f6]">
         <div className="px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
           <div className="text-center mb-16">
             <p
-              className="text-[#9E8661] tracking-[0.25em] text-xs uppercase mb-4"
+              className="text-[#bfaf8a] tracking-[0.25em] text-xs uppercase mb-4"
               style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
             >
               Explore by Style
@@ -247,14 +247,14 @@ export default function LandJourneys() {
               }}
             />
             {/* Gold corner accent */}
-            <div className="absolute -top-4 -right-4 w-16 h-16 border-t-2 border-r-2 border-[#9E8661]" />
-            <div className="absolute -bottom-4 -left-4 w-16 h-16 border-b-2 border-l-2 border-[#9E8661]" />
+            <div className="absolute -top-4 -right-4 w-16 h-16 border-t-2 border-r-2 border-[#bfaf8a]" />
+            <div className="absolute -bottom-4 -left-4 w-16 h-16 border-b-2 border-l-2 border-[#bfaf8a]" />
           </div>
 
           {/* Content */}
           <div>
             <p
-              className="text-[#9E8661] tracking-[0.25em] text-xs uppercase mb-4"
+              className="text-[#bfaf8a] tracking-[0.25em] text-xs uppercase mb-4"
               style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
             >
               {landJourneysFeaturedJourney.eyebrow}
@@ -265,15 +265,15 @@ export default function LandJourneys() {
             >
               {landJourneysFeaturedJourney.headline}
             </h2>
-            <p className="text-[#5A5A5A] text-lg leading-relaxed mb-10 font-light">
+            <p className="text-[#2f2f2f] text-lg leading-relaxed mb-10 font-light">
               {landJourneysFeaturedJourney.description}
             </p>
 
             {/* Journey details */}
-            <div className="grid grid-cols-2 gap-6 mb-10 border-t border-b border-[#E0D9CF] py-8">
+            <div className="grid grid-cols-2 gap-6 mb-10 border-t border-b border-[#edeae4] py-8">
               {landJourneysFeaturedJourney.details.map((d, i) => (
                 <div key={i}>
-                  <p className="text-[#9E8661] text-xs tracking-[0.2em] uppercase mb-1">
+                  <p className="text-[#bfaf8a] text-xs tracking-[0.2em] uppercase mb-1">
                     {d.label}
                   </p>
                   <p
@@ -287,7 +287,7 @@ export default function LandJourneys() {
             </div>
 
             <Link href={landJourneysFeaturedJourney.cta.href}>
-              <button className="group flex items-center gap-3 bg-[#384959] text-white tracking-[0.2em] text-sm uppercase px-10 py-4 hover:bg-[#2a3845] transition-colors duration-300">
+              <button className="group flex items-center gap-3 bg-[#384959] text-white tracking-[0.2em] text-sm uppercase px-10 py-4 hover:bg-[#384959] transition-colors duration-300">
                 {landJourneysFeaturedJourney.cta.label}
                 <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
               </button>
@@ -297,11 +297,11 @@ export default function LandJourneys() {
       </section>
 
       {/* ── What Sets Us Apart ─────────────────────────────────────────── */}
-      <section className="py-24 bg-[#FAF0F6]">
+      <section className="py-24 bg-[#faf9f6]">
         <div className="px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
           <div className="text-center mb-16">
             <p
-              className="text-[#9E8661] tracking-[0.25em] text-xs uppercase mb-4"
+              className="text-[#bfaf8a] tracking-[0.25em] text-xs uppercase mb-4"
               style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
             >
               {landJourneysExperiences.eyebrow}
@@ -317,14 +317,14 @@ export default function LandJourneys() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-12">
             {landJourneysExperiences.items.map((item, i) => (
               <div key={i} className="group">
-                <div className="w-8 h-px bg-[#9E8661] mb-6" />
+                <div className="w-8 h-px bg-[#bfaf8a] mb-6" />
                 <h3
                   className="text-[#384959] text-xl font-light mb-3"
                   style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
                 >
                   {item.title}
                 </h3>
-                <p className="text-[#5A5A5A] text-sm leading-relaxed font-light">
+                <p className="text-[#2f2f2f] text-sm leading-relaxed font-light">
                   {item.description}
                 </p>
               </div>

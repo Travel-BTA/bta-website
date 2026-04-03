@@ -8,7 +8,7 @@
  * 4. Exclusive Planning Packages CTA
  *
  * Design: BTA brand guide — Instrument Serif headings, Cormorant Garamond body,
- * Champagne Gold #bfa88a, Aegean Blue #384959, Linen White #faf0f6.
+ * Champagne Gold #bfaf8a, Aegean Blue #384959, Linen White #faf9f6.
  */
 
 import { Link } from "wouter";
@@ -52,7 +52,7 @@ function JourneySection({
   const textBlock = (
     <div className="flex flex-col justify-center px-8 lg:px-16 py-12 lg:py-20">
       {/* Gold accent line */}
-      <div className="w-10 h-px bg-[#bfa88a] mb-8" />
+      <div className="w-10 h-px bg-[#bfaf8a] mb-8" />
       <h2
         className="font-display text-[#384959] text-3xl md:text-4xl font-light leading-tight mb-8"
       >
@@ -73,7 +73,7 @@ function JourneySection({
         <div className="mt-10">
           <Link
             href={ctaHref}
-            className="inline-flex items-center gap-3 border border-[#bfa88a] text-[#bfa88a] px-8 py-3 text-xs tracking-[0.2em] uppercase hover:bg-[#bfa88a] hover:text-white transition-all duration-300"
+            className="inline-flex items-center gap-3 border border-[#bfaf8a] text-[#bfaf8a] px-8 py-3 text-xs tracking-[0.2em] uppercase hover:bg-[#bfaf8a] hover:text-white transition-all duration-300"
             style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
           >
             {ctaText}
@@ -129,12 +129,12 @@ export default function CustomItineraries() {
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
         {/* Dark gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/80 via-[#1a1a1a]/30 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#2f2f2f]/80 via-[#2f2f2f]/30 to-transparent" />
 
         {/* Hero text */}
         <div className="relative z-10 w-full px-8 md:px-16 pb-16 md:pb-24">
           <p
-            className="text-[#bfa88a] text-xs tracking-[0.3em] uppercase mb-4"
+            className="text-[#bfaf8a] text-xs tracking-[0.3em] uppercase mb-4"
             style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
           >
             Land Journeys
@@ -149,18 +149,18 @@ export default function CustomItineraries() {
       </section>
 
       {/* ── Intro / Virtuoso ──────────────────────────────────────────────── */}
-      <section className="bg-[#faf0f6] py-20 px-6">
+      <section className="bg-[#faf9f6] py-20 px-6">
         <div className="max-w-3xl mx-auto text-center">
           {/* Virtuoso badge */}
           <div className="flex items-center justify-center gap-3 mb-10">
-            <div className="w-16 h-px bg-[#bfa88a]" />
+            <div className="w-16 h-px bg-[#bfaf8a]" />
             <span
-              className="text-[#bfa88a] text-xs tracking-[0.25em] uppercase"
+              className="text-[#bfaf8a] text-xs tracking-[0.25em] uppercase"
               style={{ fontFamily: "'Cormorant Garamond', serif" }}
             >
               Virtuoso Member
             </span>
-            <div className="w-16 h-px bg-[#bfa88a]" />
+            <div className="w-16 h-px bg-[#bfaf8a]" />
           </div>
 
           <p
@@ -174,7 +174,7 @@ export default function CustomItineraries() {
             style={{ fontFamily: "'Cormorant Garamond', serif" }}
           >
             Our team is here to ensure that your travel goals are achieved. Our{" "}
-            <Link href="#" className="text-[#bfa88a] underline underline-offset-4 hover:text-[#a8927a] transition-colors">
+            <Link href="#" className="text-[#bfaf8a] underline underline-offset-4 hover:text-[#bfaf8a] transition-colors">
               Five-Stage Process
             </Link>{" "}
             is designed to inspire you to dream big and then exceed your expectations. Tap into our global network and gain access to exceptional experiences and insider knowledge.
@@ -183,7 +183,7 @@ export default function CustomItineraries() {
       </section>
 
       {/* ── Thin gold divider ─────────────────────────────────────────────── */}
-      <div className="w-full h-px bg-[#EBE9E3]" />
+      <div className="w-full h-px bg-[#edeae4]" />
 
       {/* ── Journey Sections ──────────────────────────────────────────────── */}
 
@@ -214,7 +214,7 @@ export default function CustomItineraries() {
         imageUrl={IMAGES.cruise}
         imageAlt="Luxury cruise ship illuminated at night"
         imageLeft={true}
-        bgColor="#faf0f6"
+        bgColor="#faf9f6"
       />
 
       {/* 3. Epicurean */}
@@ -244,7 +244,7 @@ export default function CustomItineraries() {
         imageUrl={IMAGES.romance}
         imageAlt="Elegant destination wedding ceremony at Lake Como"
         imageLeft={true}
-        bgColor="#faf0f6"
+        bgColor="#faf9f6"
       />
 
       {/* 5. Wellness */}
@@ -275,7 +275,7 @@ export default function CustomItineraries() {
         imageUrl={IMAGES.adventure}
         imageAlt="Cyclists on a scenic coastal road"
         imageLeft={true}
-        bgColor="#faf0f6"
+        bgColor="#faf9f6"
       />
 
       {/* 7. Corporate Educational */}
@@ -294,18 +294,18 @@ export default function CustomItineraries() {
       />
 
       {/* ── Exclusive Planning Packages — editorial inline section ─────────── */}
-      <section className="bg-[#faf0f6] py-20 px-6">
+      <section className="bg-[#faf9f6] py-20 px-6">
         <div className="max-w-5xl mx-auto">
           {/* Top rule + label */}
           <div className="flex items-center gap-6 mb-12">
-            <div className="flex-1 h-px bg-[#bfa88a]/40" />
+            <div className="flex-1 h-px bg-[#bfaf8a]/40" />
             <span
-              className="text-[#bfa88a] text-xs tracking-[0.3em] uppercase whitespace-nowrap"
+              className="text-[#bfaf8a] text-xs tracking-[0.3em] uppercase whitespace-nowrap"
               style={{ fontFamily: "'Cormorant Garamond', serif" }}
             >
               Our Services
             </span>
-            <div className="flex-1 h-px bg-[#bfa88a]/40" />
+            <div className="flex-1 h-px bg-[#bfaf8a]/40" />
           </div>
 
           {/* Two-column layout: heading left, content right */}
@@ -328,7 +328,7 @@ export default function CustomItineraries() {
                 BTA provides a 15-minute discovery call to all inquiries. If you choose to work with BTA, we offer a variety of service packages.{" "}
                 <Link
                   href="/contact"
-                  className="text-[#bfa88a] underline underline-offset-4 hover:text-[#a8927a] transition-colors"
+                  className="text-[#bfaf8a] underline underline-offset-4 hover:text-[#bfaf8a] transition-colors"
                 >
                   Contact us
                 </Link>{" "}
@@ -337,7 +337,7 @@ export default function CustomItineraries() {
 
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-3 border border-[#bfa88a] text-[#bfa88a] px-8 py-3 text-xs tracking-[0.2em] uppercase hover:bg-[#bfa88a] hover:text-white transition-all duration-300"
+                className="inline-flex items-center gap-3 border border-[#bfaf8a] text-[#bfaf8a] px-8 py-3 text-xs tracking-[0.2em] uppercase hover:bg-[#bfaf8a] hover:text-white transition-all duration-300"
                 style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
               >
                 Schedule Your Discovery Call
@@ -347,7 +347,7 @@ export default function CustomItineraries() {
           </div>
 
           {/* Bottom rule */}
-          <div className="mt-16 h-px bg-[#bfa88a]/20" />
+          <div className="mt-16 h-px bg-[#bfaf8a]/20" />
         </div>
       </section>
 

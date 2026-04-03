@@ -97,11 +97,11 @@ export default function BlogPost() {
   return (
     <PageLayout>
       <div className="max-w-3xl mx-auto px-6 py-32 text-center">
-        <p className="text-[#bfa88a] text-sm tracking-[0.15em] uppercase font-smallcaps mb-4">Article Not Found</p>
+        <p className="text-[#bfaf8a] text-sm tracking-[0.15em] uppercase font-smallcaps mb-4">Article Not Found</p>
         <h1 className="text-[#384959] text-4xl font-light mb-6 font-display">
           This article couldn't be loaded
         </h1>
-        <Link href="/journal" className="text-[#bfa88a] underline underline-offset-4 hover:text-[#a8927a] transition-colors">
+        <Link href="/journal" className="text-[#bfaf8a] underline underline-offset-4 hover:text-[#bfaf8a] transition-colors">
           ← Back to Journal
         </Link>
       </div>
@@ -117,12 +117,12 @@ export default function BlogPost() {
     <PageLayout>
 
       {/* ── Article Header ─────────────────────────────────────────────── */}
-      <header className="bg-white pt-16 pb-10 px-6 border-b border-[#EBE9E3]">
+      <header className="bg-white pt-16 pb-10 px-6 border-b border-[#edeae4]">
         <div className="max-w-3xl mx-auto text-center">
           {/* Meta row */}
           <div className="flex items-center justify-center gap-5 mb-8 text-sm text-[#2F2F2F]/50">
             <span
-              className="text-[#bfa88a] font-smallcaps tracking-[0.15em] uppercase text-xs"
+              className="text-[#bfaf8a] font-smallcaps tracking-[0.15em] uppercase text-xs"
             >
               {primaryCategory}
             </span>
@@ -153,7 +153,7 @@ export default function BlogPost() {
           {/* Excerpt / subtitle */}
           {displayExcerpt && (
             <p
-              className="text-[#bfa88a] text-xl md:text-2xl italic leading-relaxed mb-10 max-w-2xl mx-auto"
+              className="text-[#bfaf8a] text-xl md:text-2xl italic leading-relaxed mb-10 max-w-2xl mx-auto"
               style={{ fontFamily: "'Cormorant Garamond', serif" }}
             >
               {displayExcerpt.length > 160
@@ -163,7 +163,7 @@ export default function BlogPost() {
           )}
 
           {/* Divider */}
-          <div className="w-16 h-px bg-[#EBE9E3] mx-auto mb-10" />
+          <div className="w-16 h-px bg-[#edeae4] mx-auto mb-10" />
 
           {/* Author */}
           <div className="flex items-center justify-center gap-4">
@@ -174,8 +174,8 @@ export default function BlogPost() {
                 className="w-14 h-14 object-cover"
               />
             ) : (
-              <div className="w-14 h-14 bg-[#EBE9E3] flex items-center justify-center">
-                <span className="text-[#bfa88a] text-xl font-light" style={{ fontFamily: "'Playfair Display', serif" }}>
+              <div className="w-14 h-14 bg-[#edeae4] flex items-center justify-center">
+                <span className="text-[#bfaf8a] text-xl font-light" style={{ fontFamily: "'Playfair Display', serif" }}>
                   {post.author.name.charAt(0)}
                 </span>
               </div>
@@ -205,9 +205,9 @@ export default function BlogPost() {
 
       {/* ── Share bar ────────────────────────────────────────────── */}
       <div className="max-w-[720px] mx-auto px-6 pb-12">
-        <div className="flex items-center justify-between border-t border-[#EBE9E3] pt-8">
+        <div className="flex items-center justify-between border-t border-[#edeae4] pt-8">
           <span
-            className="text-[#bfa88a] text-sm italic"
+            className="text-[#bfaf8a] text-sm italic"
             style={{ fontFamily: "'Cormorant Garamond', serif" }}
           >
             Share this article
@@ -220,7 +220,7 @@ export default function BlogPost() {
                 navigator.clipboard.writeText(window.location.href);
               }
             }}
-            className="flex items-center gap-2 border border-[#EBE9E3] px-4 py-2 text-[#2F2F2F]/60 text-sm hover:border-[#bfa88a] hover:text-[#bfa88a] transition-colors"
+            className="flex items-center gap-2 border border-[#edeae4] px-4 py-2 text-[#2F2F2F]/60 text-sm hover:border-[#bfaf8a] hover:text-[#bfaf8a] transition-colors"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <circle cx="18" cy="5" r="3" strokeWidth="1.5" />
@@ -236,9 +236,9 @@ export default function BlogPost() {
 
       {/* ── CTA Box ────────────────────────────────────────────────────── */}
       <div className="max-w-[720px] mx-auto px-6 pb-20">
-        <div className="bg-[#faf0f6] px-10 py-12 text-center">
+        <div className="bg-[#faf9f6] px-10 py-12 text-center">
           <p
-            className="text-[#bfa88a] text-2xl italic mb-4"
+            className="text-[#bfaf8a] text-2xl italic mb-4"
             style={{ fontFamily: "'Allura', cursive" }}
           >
             Ready to Plan Your Journey?
@@ -252,7 +252,7 @@ export default function BlogPost() {
           </p>
           <a
             href="/contact"
-            className="inline-block bg-[#bfa88a] text-white font-smallcaps text-xs tracking-[0.2em] uppercase px-10 py-4 hover:bg-[#a8927a] transition-colors"
+            className="inline-block bg-[#bfaf8a] text-white font-smallcaps text-xs tracking-[0.2em] uppercase px-10 py-4 hover:bg-[#bfaf8a] transition-colors"
           >
             Start Planning Your Journey
           </a>

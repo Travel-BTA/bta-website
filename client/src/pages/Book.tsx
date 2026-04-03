@@ -62,25 +62,25 @@ export default function Book() {
   };
 
   return (
-    <div className="min-h-screen bg-[#FAF0F6] text-[#2F2F2F]">
+    <div className="min-h-screen bg-[#faf9f6] text-[#2F2F2F]">
       <NavBar />
 
       {submitted ? (
         /* ── Thank You State ─────────────────────────────────────────── */
         <div className="min-h-screen flex items-center justify-center px-8 pt-24">
           <div className="text-center max-w-lg">
-            <CheckCircle size={48} className="text-[#9E8661] mx-auto mb-8" strokeWidth={1} />
+            <CheckCircle size={48} className="text-[#bfaf8a] mx-auto mb-8" strokeWidth={1} />
             <h1
               className="text-[#384959] text-5xl font-light mb-6"
               style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
             >
               Thank You
             </h1>
-            <p className="text-[#5A5A5A] text-lg leading-relaxed mb-10 font-light">
+            <p className="text-[#2f2f2f] text-lg leading-relaxed mb-10 font-light">
               Your enquiry has been received. One of our advisors will be in touch within one business day to begin designing your journey.
             </p>
             <Link href="/">
-              <button className="group inline-flex items-center gap-3 text-[#9E8661] tracking-[0.2em] text-sm uppercase border border-[#9E8661] px-8 py-4 hover:bg-[#9E8661] hover:text-white transition-all duration-300">
+              <button className="group inline-flex items-center gap-3 text-[#bfaf8a] tracking-[0.2em] text-sm uppercase border border-[#bfaf8a] px-8 py-4 hover:bg-[#bfaf8a] hover:text-white transition-all duration-300">
                 Return Home
                 <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
               </button>
@@ -126,7 +126,7 @@ export default function Book() {
               {/* Left — What to Expect */}
               <div className="lg:col-span-1">
                 <p
-                  className="text-[#9E8661] tracking-[0.25em] text-xs uppercase mb-4"
+                  className="text-[#bfaf8a] tracking-[0.25em] text-xs uppercase mb-4"
                   style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
                 >
                   What to Expect
@@ -169,17 +169,17 @@ export default function Book() {
                         >
                           {item.title}
                         </h3>
-                        <p className="text-[#5A5A5A] text-sm leading-relaxed font-light">{item.desc}</p>
+                        <p className="text-[#2f2f2f] text-sm leading-relaxed font-light">{item.desc}</p>
                       </div>
                     </div>
                   ))}
                 </div>
 
-                <div className="mt-12 pt-8 border-t border-[#E0D9CF]">
-                  <p className="text-[#5A5A5A] text-sm font-light mb-2">Prefer to speak directly?</p>
+                <div className="mt-12 pt-8 border-t border-[#edeae4]">
+                  <p className="text-[#2f2f2f] text-sm font-light mb-2">Prefer to speak directly?</p>
                   <a
                     href={`tel:${footer.contact.phone}`}
-                    className="text-[#384959] text-lg font-light hover:text-[#9E8661] transition-colors"
+                    className="text-[#384959] text-lg font-light hover:text-[#bfaf8a] transition-colors"
                     style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
                   >
                     {footer.contact.phone}
@@ -195,28 +195,28 @@ export default function Book() {
                 {/* Name */}
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-xs tracking-[0.15em] uppercase text-[#5A5A5A] mb-2">
-                      First Name <span className="text-[#9E8661]">*</span>
+                    <label className="block text-xs tracking-[0.15em] uppercase text-[#2f2f2f] mb-2">
+                      First Name <span className="text-[#bfaf8a]">*</span>
                     </label>
                     <input
                       required
                       type="text"
                       value={form.firstName}
                       onChange={(e) => setForm({ ...form, firstName: e.target.value })}
-                      className="w-full border-b border-[#C8C0B4] bg-transparent py-3 text-[#2F2F2F] text-base font-light focus:outline-none focus:border-[#384959] transition-colors placeholder:text-[#C8C0B4]"
+                      className="w-full border-b border-[#edeae4] bg-transparent py-3 text-[#2F2F2F] text-base font-light focus:outline-none focus:border-[#384959] transition-colors placeholder:text-[#edeae4]"
                       placeholder="Janet"
                     />
                   </div>
                   <div>
-                    <label className="block text-xs tracking-[0.15em] uppercase text-[#5A5A5A] mb-2">
-                      Last Name <span className="text-[#9E8661]">*</span>
+                    <label className="block text-xs tracking-[0.15em] uppercase text-[#2f2f2f] mb-2">
+                      Last Name <span className="text-[#bfaf8a]">*</span>
                     </label>
                     <input
                       required
                       type="text"
                       value={form.lastName}
                       onChange={(e) => setForm({ ...form, lastName: e.target.value })}
-                      className="w-full border-b border-[#C8C0B4] bg-transparent py-3 text-[#2F2F2F] text-base font-light focus:outline-none focus:border-[#384959] transition-colors placeholder:text-[#C8C0B4]"
+                      className="w-full border-b border-[#edeae4] bg-transparent py-3 text-[#2F2F2F] text-base font-light focus:outline-none focus:border-[#384959] transition-colors placeholder:text-[#edeae4]"
                       placeholder="Semenova"
                     />
                   </div>
@@ -225,27 +225,27 @@ export default function Book() {
                 {/* Contact */}
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-xs tracking-[0.15em] uppercase text-[#5A5A5A] mb-2">
-                      Email Address <span className="text-[#9E8661]">*</span>
+                    <label className="block text-xs tracking-[0.15em] uppercase text-[#2f2f2f] mb-2">
+                      Email Address <span className="text-[#bfaf8a]">*</span>
                     </label>
                     <input
                       required
                       type="email"
                       value={form.email}
                       onChange={(e) => setForm({ ...form, email: e.target.value })}
-                      className="w-full border-b border-[#C8C0B4] bg-transparent py-3 text-[#2F2F2F] text-base font-light focus:outline-none focus:border-[#384959] transition-colors placeholder:text-[#C8C0B4]"
+                      className="w-full border-b border-[#edeae4] bg-transparent py-3 text-[#2F2F2F] text-base font-light focus:outline-none focus:border-[#384959] transition-colors placeholder:text-[#edeae4]"
                       placeholder="janet@example.com"
                     />
                   </div>
                   <div>
-                    <label className="block text-xs tracking-[0.15em] uppercase text-[#5A5A5A] mb-2">
+                    <label className="block text-xs tracking-[0.15em] uppercase text-[#2f2f2f] mb-2">
                       Phone Number
                     </label>
                     <input
                       type="tel"
                       value={form.phone}
                       onChange={(e) => setForm({ ...form, phone: e.target.value })}
-                      className="w-full border-b border-[#C8C0B4] bg-transparent py-3 text-[#2F2F2F] text-base font-light focus:outline-none focus:border-[#384959] transition-colors placeholder:text-[#C8C0B4]"
+                      className="w-full border-b border-[#edeae4] bg-transparent py-3 text-[#2F2F2F] text-base font-light focus:outline-none focus:border-[#384959] transition-colors placeholder:text-[#edeae4]"
                       placeholder="+1 (555) 000-0000"
                     />
                   </div>
@@ -253,8 +253,8 @@ export default function Book() {
 
                 {/* Journey Type */}
                 <div>
-                  <label className="block text-xs tracking-[0.15em] uppercase text-[#5A5A5A] mb-4">
-                    Journey Type <span className="text-[#5A5A5A] normal-case tracking-normal text-xs">(select all that apply)</span>
+                  <label className="block text-xs tracking-[0.15em] uppercase text-[#2f2f2f] mb-4">
+                    Journey Type <span className="text-[#2f2f2f] normal-case tracking-normal text-xs">(select all that apply)</span>
                   </label>
                   <div className="flex flex-wrap gap-3">
                     {journeyTypes.map((j) => (
@@ -265,7 +265,7 @@ export default function Book() {
                         className={`px-5 py-2.5 text-sm border transition-all duration-200 ${
                           selectedJourneys.includes(j)
                             ? "bg-[#384959] border-[#384959] text-white"
-                            : "border-[#C8C0B4] text-[#5A5A5A] hover:border-[#384959] hover:text-[#384959]"
+                            : "border-[#edeae4] text-[#2f2f2f] hover:border-[#384959] hover:text-[#384959]"
                         }`}
                       >
                         {j}
@@ -276,7 +276,7 @@ export default function Book() {
 
                 {/* Travellers */}
                 <div>
-                  <label className="block text-xs tracking-[0.15em] uppercase text-[#5A5A5A] mb-4">
+                  <label className="block text-xs tracking-[0.15em] uppercase text-[#2f2f2f] mb-4">
                     Number of Travelers
                   </label>
                   <div className="flex flex-wrap gap-3">
@@ -288,7 +288,7 @@ export default function Book() {
                         className={`px-5 py-2.5 text-sm border transition-all duration-200 ${
                           selectedCount === c
                             ? "bg-[#384959] border-[#384959] text-white"
-                            : "border-[#C8C0B4] text-[#5A5A5A] hover:border-[#384959] hover:text-[#384959]"
+                            : "border-[#edeae4] text-[#2f2f2f] hover:border-[#384959] hover:text-[#384959]"
                         }`}
                       >
                         {c}
@@ -299,7 +299,7 @@ export default function Book() {
 
                 {/* Budget */}
                 <div>
-                  <label className="block text-xs tracking-[0.15em] uppercase text-[#5A5A5A] mb-4">
+                  <label className="block text-xs tracking-[0.15em] uppercase text-[#2f2f2f] mb-4">
                     Approximate Budget
                   </label>
                   <div className="flex flex-wrap gap-3">
@@ -310,8 +310,8 @@ export default function Book() {
                         onClick={() => setSelectedBudget(b)}
                         className={`px-5 py-2.5 text-sm border transition-all duration-200 ${
                           selectedBudget === b
-                            ? "bg-[#9E8661] border-[#9E8661] text-white"
-                            : "border-[#C8C0B4] text-[#5A5A5A] hover:border-[#9E8661] hover:text-[#9E8661]"
+                            ? "bg-[#bfaf8a] border-[#bfaf8a] text-white"
+                            : "border-[#edeae4] text-[#2f2f2f] hover:border-[#bfaf8a] hover:text-[#bfaf8a]"
                         }`}
                       >
                         {b}
@@ -322,28 +322,28 @@ export default function Book() {
 
                 {/* Travel Dates */}
                 <div>
-                  <label className="block text-xs tracking-[0.15em] uppercase text-[#5A5A5A] mb-2">
+                  <label className="block text-xs tracking-[0.15em] uppercase text-[#2f2f2f] mb-2">
                     Preferred Travel Dates or Season
                   </label>
                   <input
                     type="text"
                     value={form.travelDates}
                     onChange={(e) => setForm({ ...form, travelDates: e.target.value })}
-                    className="w-full border-b border-[#C8C0B4] bg-transparent py-3 text-[#2F2F2F] text-base font-light focus:outline-none focus:border-[#384959] transition-colors placeholder:text-[#C8C0B4]"
+                    className="w-full border-b border-[#edeae4] bg-transparent py-3 text-[#2F2F2F] text-base font-light focus:outline-none focus:border-[#384959] transition-colors placeholder:text-[#edeae4]"
                     placeholder="e.g. October 2026, or flexible"
                   />
                 </div>
 
                 {/* Message */}
                 <div>
-                  <label className="block text-xs tracking-[0.15em] uppercase text-[#5A5A5A] mb-2">
+                  <label className="block text-xs tracking-[0.15em] uppercase text-[#2f2f2f] mb-2">
                     Tell Us About Your Dream Journey
                   </label>
                   <textarea
                     rows={5}
                     value={form.message}
                     onChange={(e) => setForm({ ...form, message: e.target.value })}
-                    className="w-full border-b border-[#C8C0B4] bg-transparent py-3 text-[#2F2F2F] text-base font-light focus:outline-none focus:border-[#384959] transition-colors placeholder:text-[#C8C0B4] resize-none"
+                    className="w-full border-b border-[#edeae4] bg-transparent py-3 text-[#2F2F2F] text-base font-light focus:outline-none focus:border-[#384959] transition-colors placeholder:text-[#edeae4] resize-none"
                     placeholder="Destinations you have in mind, experiences you are looking for, any special occasions..."
                   />
                 </div>
@@ -352,12 +352,12 @@ export default function Book() {
                 <div className="pt-4">
                   <button
                     type="submit"
-                    className="group inline-flex items-center gap-3 bg-[#384959] text-white tracking-[0.2em] text-sm uppercase px-12 py-5 hover:bg-[#2a3845] transition-colors duration-300"
+                    className="group inline-flex items-center gap-3 bg-[#384959] text-white tracking-[0.2em] text-sm uppercase px-12 py-5 hover:bg-[#384959] transition-colors duration-300"
                   >
                     Submit Enquiry
                     <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
                   </button>
-                  <p className="text-[#5A5A5A] text-xs mt-4 font-light">
+                  <p className="text-[#2f2f2f] text-xs mt-4 font-light">
                     We respond within one business day. Your information is kept strictly confidential.
                   </p>
                 </div>

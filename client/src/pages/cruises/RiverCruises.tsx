@@ -5,7 +5,7 @@
  * AmaWaterways, Uniworld, Viking River, Tauck, Scenic, Emerald, Avalon/Globus, Riverside
  *
  * Design: BTA brand guide — Instrument Serif headings, Cormorant Garamond body,
- * Champagne Gold #bfa88a, Aegean Blue #384959, Linen White #faf0f6.
+ * Champagne Gold #bfaf8a, Aegean Blue #384959, Linen White #faf9f6.
  */
 
 import { Link } from "wouter";
@@ -153,20 +153,20 @@ export default function RiverCruises() {
           alt="River cruise ship on a European waterway"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/85 via-[#1a1a1a]/25 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#2f2f2f]/85 via-[#2f2f2f]/25 to-transparent" />
 
         <div className="relative z-10 w-full max-w-[1440px] mx-auto px-8 lg:px-14 pb-16 md:pb-20">
           <div className="flex items-center gap-2 mb-6">
-            <Link href="/cruises" className="text-white/60 text-xs tracking-[0.2em] uppercase hover:text-[#bfa88a] transition-colors" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+            <Link href="/cruises" className="text-white/60 text-xs tracking-[0.2em] uppercase hover:text-[#bfaf8a] transition-colors" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
               Cruises
             </Link>
             <span className="text-white/40 text-xs">›</span>
-            <span className="text-[#bfa88a] text-xs tracking-[0.2em] uppercase" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+            <span className="text-[#bfaf8a] text-xs tracking-[0.2em] uppercase" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
               River Cruises
             </span>
           </div>
 
-          <p className="text-[#bfa88a] mb-3" style={{ fontFamily: "'Allura', cursive", fontSize: "1.6rem" }}>
+          <p className="text-[#bfaf8a] mb-3" style={{ fontFamily: "'Allura', cursive", fontSize: "1.6rem" }}>
             Intimate Waterway Journeys
           </p>
           <h1 className="font-display text-white text-5xl md:text-6xl font-light leading-none mb-6">
@@ -177,7 +177,7 @@ export default function RiverCruises() {
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-3 bg-[#bfa88a] text-white px-8 py-3.5 text-xs tracking-[0.25em] uppercase hover:bg-[#a8927a] transition-all duration-300"
+            className="inline-flex items-center gap-3 bg-[#bfaf8a] text-white px-8 py-3.5 text-xs tracking-[0.25em] uppercase hover:bg-[#bfaf8a] transition-all duration-300"
             style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
           >
             Start Planning
@@ -187,13 +187,13 @@ export default function RiverCruises() {
       </section>
 
       {/* ── Intro ─────────────────────────────────────────────────────────── */}
-      <section className="bg-[#faf0f6] py-20 px-6">
+      <section className="bg-[#faf9f6] py-20 px-6">
         <div className="max-w-[1440px] mx-auto px-8 lg:px-14">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="max-w-xl">
               <div className="flex items-center gap-3 mb-8">
-                <div className="w-10 h-px bg-[#bfa88a]" />
-                <span className="text-[#bfa88a] text-xs tracking-[0.25em] uppercase" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+                <div className="w-10 h-px bg-[#bfaf8a]" />
+                <span className="text-[#bfaf8a] text-xs tracking-[0.25em] uppercase" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
                   Why River Cruising
                 </span>
               </div>
@@ -207,11 +207,11 @@ export default function RiverCruises() {
                 Ships typically carry between 98 and 190 guests — creating a genuine sense of community. It is not uncommon for families, friends, and organisations to buy out an entire boat for a private charter experience.
               </p>
             </div>
-            <div className="border-l-2 border-[#bfa88a] pl-10 py-4">
+            <div className="border-l-2 border-[#bfaf8a] pl-10 py-4">
               <p className="text-[#384959] text-2xl md:text-3xl leading-relaxed mb-6" style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}>
                 "Enjoy gourmet food, decadent cocktails, and entertainment on board — then explore a variety of activities and tours at each port."
               </p>
-              <p className="text-[#bfa88a] text-sm tracking-[0.2em] uppercase" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+              <p className="text-[#bfaf8a] text-sm tracking-[0.2em] uppercase" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
                 — BTA River Cruise Philosophy
               </p>
             </div>
@@ -221,13 +221,13 @@ export default function RiverCruises() {
 
       {/* ── Cruise Line Sections ──────────────────────────────────────────── */}
       {CRUISE_LINES.map((line, index) => (
-        <section key={line.id} className={index % 2 === 0 ? "bg-white" : "bg-[#faf0f6]"}>
+        <section key={line.id} className={index % 2 === 0 ? "bg-white" : "bg-[#faf9f6]"}>
           <div className="max-w-[1440px] mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2">
               <div className={`relative overflow-hidden ${line.imageRight ? "lg:order-2" : "lg:order-1"}`} style={{ minHeight: "540px" }}>
                 <img src={line.image} alt={line.name} className="absolute inset-0 w-full h-full object-cover" />
                 <div className="absolute top-8 left-8 flex flex-col gap-2">
-                  <span className="bg-[#bfa88a]/90 text-white text-xs tracking-[0.25em] uppercase px-4 py-1.5" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+                  <span className="bg-[#bfaf8a]/90 text-white text-xs tracking-[0.25em] uppercase px-4 py-1.5" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
                     {line.eyebrow}
                   </span>
                   {"badge" in line && line.badge && (
@@ -242,29 +242,29 @@ export default function RiverCruises() {
                 <h2 className="font-display text-[#384959] text-3xl md:text-4xl font-light leading-tight mb-2">
                   {line.name}
                 </h2>
-                <p className="text-[#bfa88a] text-lg mb-6" style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}>
+                <p className="text-[#bfaf8a] text-lg mb-6" style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}>
                   {line.tagline}
                 </p>
-                <div className="w-12 h-px bg-[#bfa88a] mb-6" />
+                <div className="w-12 h-px bg-[#bfaf8a] mb-6" />
                 <p className="text-[#2F2F2F]/75 text-base leading-relaxed mb-6" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
                   {line.description}
                 </p>
                 <ul className="space-y-2 mb-6">
                   {line.highlights.map((h) => (
                     <li key={h} className="flex items-start gap-3 text-[#2F2F2F]/70 text-sm" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
-                      <span className="text-[#bfa88a] mt-0.5 flex-shrink-0">✦</span>
+                      <span className="text-[#bfaf8a] mt-0.5 flex-shrink-0">✦</span>
                       {h}
                     </li>
                   ))}
                 </ul>
-                <div className="border-l-2 border-[#bfa88a]/40 pl-4 mb-8">
+                <div className="border-l-2 border-[#bfaf8a]/40 pl-4 mb-8">
                   <p className="text-[#384959]/70 text-sm leading-relaxed" style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}>
-                    <span className="text-[#bfa88a] not-italic font-medium">Culinary: </span>
+                    <span className="text-[#bfaf8a] not-italic font-medium">Culinary: </span>
                     {line.culinary}
                   </p>
                 </div>
                 {"note" in line && line.note && (
-                  <p className="text-[#bfa88a]/70 text-xs tracking-[0.1em] mb-4" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+                  <p className="text-[#bfaf8a]/70 text-xs tracking-[0.1em] mb-4" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
                     ✦ {line.note}
                   </p>
                 )}
@@ -272,7 +272,7 @@ export default function RiverCruises() {
                   href={line.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-3 border border-[#bfa88a] text-[#bfa88a] px-8 py-3 text-xs tracking-[0.2em] uppercase hover:bg-[#bfa88a] hover:text-white transition-all duration-300 self-start"
+                  className="inline-flex items-center gap-3 border border-[#bfaf8a] text-[#bfaf8a] px-8 py-3 text-xs tracking-[0.2em] uppercase hover:bg-[#bfaf8a] hover:text-white transition-all duration-300 self-start"
                   style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
                 >
                   {line.linkLabel}

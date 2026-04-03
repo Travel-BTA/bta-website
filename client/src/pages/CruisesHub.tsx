@@ -13,7 +13,7 @@
  * 6. FinalCta + Footer (via PageLayout)
  *
  * Design: BTA brand guide — Instrument Serif headings, Cormorant Garamond body,
- * Champagne Gold #bfa88a, Aegean Blue #384959, Linen White #faf0f6.
+ * Champagne Gold #bfaf8a, Aegean Blue #384959, Linen White #faf9f6.
  */
 
 import { Link } from "wouter";
@@ -93,13 +93,13 @@ export default function CruisesHub() {
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
         {/* Gradient overlay — bottom-heavy for text legibility */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/85 via-[#1a1a1a]/30 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#2f2f2f]/85 via-[#2f2f2f]/30 to-transparent" />
 
         {/* Hero text */}
         <div className="relative z-10 w-full max-w-[1440px] mx-auto px-8 lg:px-14 pb-16 md:pb-24">
           {/* Allura script eyebrow */}
           <p
-            className="text-[#bfa88a] mb-3"
+            className="text-[#bfaf8a] mb-3"
             style={{ fontFamily: "'Allura', cursive", fontSize: "1.6rem" }}
           >
             Extraordinary Places & Exclusive Amenities
@@ -112,7 +112,7 @@ export default function CruisesHub() {
           </h1>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-3 bg-[#bfa88a] text-white px-8 py-3.5 text-xs tracking-[0.25em] uppercase hover:bg-[#a8927a] transition-all duration-300"
+            className="inline-flex items-center gap-3 bg-[#bfaf8a] text-white px-8 py-3.5 text-xs tracking-[0.25em] uppercase hover:bg-[#bfaf8a] transition-all duration-300"
             style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
           >
             Start Planning
@@ -122,7 +122,7 @@ export default function CruisesHub() {
       </section>
 
       {/* ── Intro + Quote ─────────────────────────────────────────────────── */}
-      <section className="bg-[#faf0f6] py-24 px-6">
+      <section className="bg-[#faf9f6] py-24 px-6">
         <div className="max-w-[1440px] mx-auto px-8 lg:px-14">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
 
@@ -130,9 +130,9 @@ export default function CruisesHub() {
             <div>
               {/* Virtuoso label */}
               <div className="flex items-center gap-3 mb-8">
-                <div className="w-10 h-px bg-[#bfa88a]" />
+                <div className="w-10 h-px bg-[#bfaf8a]" />
                 <span
-                  className="text-[#bfa88a] text-xs tracking-[0.25em] uppercase"
+                  className="text-[#bfaf8a] text-xs tracking-[0.25em] uppercase"
                   style={{ fontFamily: "'Cormorant Garamond', serif" }}
                 >
                   Virtuoso Member
@@ -161,7 +161,7 @@ export default function CruisesHub() {
                 between destinations. BTA works closely with our clients to determine the cruise
                 line, ship, destination, and itinerary. If you're looking for inspiration, explore
                 our exclusive{" "}
-                <span className="text-[#bfa88a] border-b border-[#bfa88a]/40 hover:border-[#bfa88a] transition-colors cursor-pointer">
+                <span className="text-[#bfaf8a] border-b border-[#bfaf8a]/40 hover:border-[#bfaf8a] transition-colors cursor-pointer">
                   Virtuoso Voyages
                 </span>
                 .
@@ -169,7 +169,7 @@ export default function CruisesHub() {
 
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-3 border border-[#bfa88a] text-[#bfa88a] px-8 py-3 text-xs tracking-[0.2em] uppercase hover:bg-[#bfa88a] hover:text-white transition-all duration-300"
+                className="inline-flex items-center gap-3 border border-[#bfaf8a] text-[#bfaf8a] px-8 py-3 text-xs tracking-[0.2em] uppercase hover:bg-[#bfaf8a] hover:text-white transition-all duration-300"
                 style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
               >
                 Connect with an Advisor
@@ -179,7 +179,7 @@ export default function CruisesHub() {
 
             {/* Right — blockquote */}
             <div className="relative">
-              <div className="border-l-2 border-[#bfa88a] pl-10 py-4">
+              <div className="border-l-2 border-[#bfaf8a] pl-10 py-4">
                 <p
                   className="text-[#384959] text-2xl md:text-3xl leading-relaxed mb-6"
                   style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
@@ -188,7 +188,7 @@ export default function CruisesHub() {
                   things we like to think."
                 </p>
                 <p
-                  className="text-[#bfa88a] text-sm tracking-[0.2em] uppercase"
+                  className="text-[#bfaf8a] text-sm tracking-[0.2em] uppercase"
                   style={{ fontFamily: "'Cormorant Garamond', serif" }}
                 >
                   — Robert Henri
@@ -196,8 +196,8 @@ export default function CruisesHub() {
               </div>
 
               {/* Decorative gold corner accent */}
-              <div className="absolute -top-4 -left-4 w-8 h-8 border-t-2 border-l-2 border-[#bfa88a]/30" />
-              <div className="absolute -bottom-4 -right-4 w-8 h-8 border-b-2 border-r-2 border-[#bfa88a]/30" />
+              <div className="absolute -top-4 -left-4 w-8 h-8 border-t-2 border-l-2 border-[#bfaf8a]/30" />
+              <div className="absolute -bottom-4 -right-4 w-8 h-8 border-b-2 border-r-2 border-[#bfaf8a]/30" />
             </div>
           </div>
         </div>
@@ -209,14 +209,14 @@ export default function CruisesHub() {
           {/* Section header */}
           <div className="text-center mb-12">
             <div className="flex items-center justify-center gap-4 mb-6">
-              <div className="w-12 h-px bg-[#bfa88a]/50" />
+              <div className="w-12 h-px bg-[#bfaf8a]/50" />
               <span
-                className="text-[#bfa88a] text-xs tracking-[0.3em] uppercase"
+                className="text-[#bfaf8a] text-xs tracking-[0.3em] uppercase"
                 style={{ fontFamily: "'Cormorant Garamond', serif" }}
               >
                 Exclusive to BTA Clients
               </span>
-              <div className="w-12 h-px bg-[#bfa88a]/50" />
+              <div className="w-12 h-px bg-[#bfaf8a]/50" />
             </div>
             <h2 className="font-display text-white text-2xl md:text-3xl font-light tracking-wide">
               Virtuoso Voyages Cruise Amenities
@@ -228,10 +228,10 @@ export default function CruisesHub() {
             {VIRTUOSO_BENEFITS.map((benefit) => (
               <div
                 key={benefit}
-                className="text-center py-4 px-3 border border-[#bfa88a]/25 hover:border-[#bfa88a]/60 transition-colors duration-300"
+                className="text-center py-4 px-3 border border-[#bfaf8a]/25 hover:border-[#bfaf8a]/60 transition-colors duration-300"
               >
                 {/* Gold star */}
-                <div className="text-[#bfa88a] text-lg mb-2">✦</div>
+                <div className="text-[#bfaf8a] text-lg mb-2">✦</div>
                 <p
                   className="text-white/85 text-xs tracking-[0.15em] uppercase leading-snug"
                   style={{ fontFamily: "'Cormorant Garamond', serif" }}
@@ -251,7 +251,7 @@ export default function CruisesHub() {
           {/* Section header */}
           <div className="text-center mb-16">
             <p
-              className="text-[#bfa88a] mb-3"
+              className="text-[#bfaf8a] mb-3"
               style={{ fontFamily: "'Allura', cursive", fontSize: "1.8rem" }}
             >
               Explore Our Cruises
@@ -260,9 +260,9 @@ export default function CruisesHub() {
               Choose Your Journey
             </h2>
             <div className="flex items-center justify-center gap-4">
-              <div className="w-12 h-px bg-[#bfa88a]" />
-              <span className="text-[#bfa88a] text-lg">✦</span>
-              <div className="w-12 h-px bg-[#bfa88a]" />
+              <div className="w-12 h-px bg-[#bfaf8a]" />
+              <span className="text-[#bfaf8a] text-lg">✦</span>
+              <div className="w-12 h-px bg-[#bfaf8a]" />
             </div>
           </div>
 
@@ -278,12 +278,12 @@ export default function CruisesHub() {
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   {/* Dark gradient overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/80 via-[#1a1a1a]/20 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#2f2f2f]/80 via-[#2f2f2f]/20 to-transparent" />
 
                   {/* Gold top-left eyebrow label */}
                   <div className="absolute top-6 left-6">
                     <span
-                      className="text-[#bfa88a] text-xs tracking-[0.25em] uppercase"
+                      className="text-[#bfaf8a] text-xs tracking-[0.25em] uppercase"
                       style={{ fontFamily: "'Cormorant Garamond', serif" }}
                     >
                       {cat.eyebrow}
@@ -303,7 +303,7 @@ export default function CruisesHub() {
                     </p>
                     {/* CTA — gold outlined pill */}
                     <span
-                      className="inline-flex items-center gap-2 border border-[#bfa88a] text-[#bfa88a] px-6 py-2 text-xs tracking-[0.2em] uppercase group-hover:bg-[#bfa88a] group-hover:text-white transition-all duration-300"
+                      className="inline-flex items-center gap-2 border border-[#bfaf8a] text-[#bfaf8a] px-6 py-2 text-xs tracking-[0.2em] uppercase group-hover:bg-[#bfaf8a] group-hover:text-white transition-all duration-300"
                       style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
                     >
                       Explore
@@ -318,7 +318,7 @@ export default function CruisesHub() {
       </section>
 
       {/* ── Private Charters ──────────────────────────────────────────────── */}
-      <section className="bg-[#faf0f6]">
+      <section className="bg-[#faf9f6]">
         <div className="grid grid-cols-1 lg:grid-cols-2">
 
           {/* Image — left */}
@@ -333,10 +333,10 @@ export default function CruisesHub() {
 
           {/* Text — right */}
           <div className="flex flex-col justify-center px-8 lg:px-16 py-16 lg:py-20">
-            <div className="w-10 h-px bg-[#bfa88a] mb-8" />
+            <div className="w-10 h-px bg-[#bfaf8a] mb-8" />
 
             <p
-              className="text-[#bfa88a] mb-3"
+              className="text-[#bfaf8a] mb-3"
               style={{ fontFamily: "'Allura', cursive", fontSize: "1.5rem" }}
             >
               The Ultimate Escape
@@ -367,7 +367,7 @@ export default function CruisesHub() {
 
             <Link
               href="/contact"
-              className="inline-flex items-center gap-3 border border-[#bfa88a] text-[#bfa88a] px-8 py-3 text-xs tracking-[0.2em] uppercase hover:bg-[#bfa88a] hover:text-white transition-all duration-300 self-start"
+              className="inline-flex items-center gap-3 border border-[#bfaf8a] text-[#bfaf8a] px-8 py-3 text-xs tracking-[0.2em] uppercase hover:bg-[#bfaf8a] hover:text-white transition-all duration-300 self-start"
               style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
             >
               Enquire About a Charter
