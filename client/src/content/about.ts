@@ -104,7 +104,7 @@ export const aboutData: AboutData = {
       location: "Scottsdale, AZ",
       // Direct WordPress image from travelbta.com
       imageUrl:
-        "https://travelbta.com/wp-content/uploads/2022/12/Janet-resized.jpg",
+        "/images/founder-janet-semenova.jpg",
       profilePath: "/about/janet",
       bio: [
         "Janet Semenova was born in Tashkent, Uzbekistan, and moved to the US at 7 years old. She inherited her passion for travel from her mother and is dedicated to showing the world to her children. She frequently travels with her family and friends and loves bringing groups of like-minded travelers together to experience unique, off-the-beaten-path destinations. She has spent extensive time in Europe, Israel, and Central America and speaks fluent Russian and some Hebrew.",
