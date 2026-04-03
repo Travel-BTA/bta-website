@@ -79,17 +79,18 @@ function processWordPressHtml(html: string): string {
       /<span[^>]*font-size:\s*16px[^>]*>(\s*\*Benefits apply[\s\S]*?)<\/span>/gi,
       '<span style="display:block;font-size:0.72rem;font-style:italic;color:#9C886A;opacity:0.75;text-align:center;margin-top:0.5rem;letter-spacing:0.02em;text-transform:none;">$1</span>'
     )
-    // ── Strip travel insurance sentence ─────────────────────────────────────
+    // ── Strip travel insurance boilerplate ──────────────────────────────────
     // WHY: Every WP post ends with a boilerplate travel insurance paragraph
     // and a follow-up sentence about contacting a BTA advisor. These are
     // WordPress editorial footers that don't belong in the new editorial
-    // design. the site's own CTA section handles this instead.
+    // design — the site's own CTA section handles this instead.
+    //
+    // The WP source wraps the text in <strong> inside <p>, so we match any
+    // <p> whose *text content* contains these phrases, regardless of inner tags.
+    // Strategy: replace the entire <p>…</p> block using a lookahead for the
+    // identifying phrase anywhere inside it.
     .replace(
-      /<p[^>]*>[^<]*(?:If you would like assistance purchasing a travel insurance|please get in touch with a[^<]*BTA advisor)[\s\S]*?<\/p>/gi,
-      ''
-    )
-    .replace(
-      /<p[^>]*>[^<]*We highly recommend the purchase of travel insurance[\s\S]*?<\/p>/gi,
+      /<p[^>]*>(?:(?!<\/p>)[\s\S])*?(?:We highly recommend the purchase of travel insurance|If you would like assistance purchasing a travel insurance|please get in touch with a[^<]*BTA advisor|Arch RoamRight)(?:(?!<\/p>)[\s\S])*?<\/p>/gi,
       ''
     );
 }
