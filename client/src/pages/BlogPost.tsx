@@ -1,5 +1,5 @@
 /**
- * BlogPost — Individual blog article page
+ * BlogPost. Individual blog article page
  *
  * Design matches Figma:
  * - White header: category tag (gold), date, read time, large centered title,
@@ -30,7 +30,7 @@ function formatDate(iso: string) {
 function decodeHtml(html: string) {
   return html
     .replace(/&#8211;/g, "–")
-    .replace(/&#8212;/g, "—")
+    .replace(/&#8212;/g, ".")
     .replace(/&#038;/g, "&")
     .replace(/&amp;/g, "&")
     .replace(/&nbsp;/g, " ")
@@ -55,7 +55,7 @@ function processWordPressHtml(html: string): string {
     // smaller, more refined button that fits the editorial context
     .replace(
       /(<a)([^>]*href="https:\/\/luxurytravelclubs\.com[^"]*")([^>]*)style="[^"]*"([^>]*>)/gi,
-      '$1$2$3 style="display:inline-block;padding:10px 28px;background-color:#2f2f2f;color:#ffffff;text-align:center;text-decoration:none;font-family:\'Playfair Display\',serif;font-size:0.7rem;letter-spacing:0.18em;text-transform:uppercase;border:none;"$4'
+      '$1$2$3 style="display:inline-block;padding:10px 28px;background-color:#2f2f2f;color:#ffffff;text-align:center;text-decoration:none;font-family:\'Cormorant SC\',serif;font-size:0.7rem;letter-spacing:0.18em;text-transform:uppercase;border:none;"$4'
     )
     // ── Images ──────────────────────────────────────────────────────────────
     // Remove inline width/height/style attrs that cause images to overflow
@@ -83,7 +83,7 @@ function processWordPressHtml(html: string): string {
     // WHY: Every WP post ends with a boilerplate travel insurance paragraph
     // and a follow-up sentence about contacting a BTA advisor. These are
     // WordPress editorial footers that don't belong in the new editorial
-    // design — the site's own CTA section handles this instead.
+    // design. the site's own CTA section handles this instead.
     .replace(
       /<p[^>]*>[^<]*(?:If you would like assistance purchasing a travel insurance|please get in touch with a[^<]*BTA advisor)[\s\S]*?<\/p>/gi,
       ''
@@ -166,7 +166,7 @@ export default function BlogPost() {
     <PageLayout>
 
       {/* ── Article Header ─────────────────────────────────────────────── */}
-      <header className="bg-white pt-16 pb-10 px-6 border-b border-[#edeac4]">
+      <header className="bg-white pt-16 pb-10 px-6 border-b border-[#edeae4]">
         <div className="max-w-3xl mx-auto text-center">
           {/* Meta row */}
           <div className="flex items-center justify-center gap-5 mb-8 text-sm text-[#2F2F2F]/50">
@@ -203,7 +203,7 @@ export default function BlogPost() {
           {displayExcerpt && (
             <p
               className="text-[#bfaf8a] text-xl md:text-2xl italic leading-relaxed mb-10 max-w-2xl mx-auto"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              style={{ fontFamily: "'Cormorant Garamond', serif" }}
             >
               {displayExcerpt.length > 160
                 ? displayExcerpt.slice(0, 160).replace(/\s\S+$/, "") + "…"
@@ -212,7 +212,7 @@ export default function BlogPost() {
           )}
 
           {/* Divider */}
-          <div className="w-16 h-px bg-[#edeac4] mx-auto mb-10" />
+          <div className="w-16 h-px bg-[#edeae4] mx-auto mb-10" />
 
           {/* Author */}
           <div className="flex items-center justify-center gap-4">
@@ -223,7 +223,7 @@ export default function BlogPost() {
                 className="w-14 h-14 object-cover"
               />
             ) : (
-              <div className="w-14 h-14 bg-[#edeac4] flex items-center justify-center">
+              <div className="w-14 h-14 bg-[#edeae4] flex items-center justify-center">
                 <span className="text-[#bfaf8a] text-xl font-light" style={{ fontFamily: "'Playfair Display', serif" }}>
                   {post.author.name.charAt(0)}
                 </span>
@@ -236,7 +236,7 @@ export default function BlogPost() {
               >
                 {post.author.name.split(" ").map((w: string) => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()).join(" ")}
               </p>
-              <p className="text-[#2F2F2F]/50 text-sm" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+              <p className="text-[#2F2F2F]/50 text-sm" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
                 {post.author.role}
               </p>
             </div>
@@ -256,10 +256,10 @@ export default function BlogPost() {
 
       {/* ── Share bar ────────────────────────────────────────────── */}
       <div className="max-w-[720px] mx-auto px-6 pb-12">
-        <div className="flex items-center justify-between border-t border-[#edeac4] pt-8">
+        <div className="flex items-center justify-between border-t border-[#edeae4] pt-8">
           <span
             className="text-[#bfaf8a] text-sm italic"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+            style={{ fontFamily: "'Cormorant Garamond', serif" }}
           >
             Share this article
           </span>
@@ -271,7 +271,7 @@ export default function BlogPost() {
                 navigator.clipboard.writeText(window.location.href);
               }
             }}
-            className="flex items-center gap-2 border border-[#edeac4] px-4 py-2 text-[#2F2F2F]/60 text-sm hover:border-[#bfaf8a] hover:text-[#bfaf8a] transition-colors"
+            className="flex items-center gap-2 border border-[#edeae4] px-4 py-2 text-[#2F2F2F]/60 text-sm hover:border-[#bfaf8a] hover:text-[#bfaf8a] transition-colors"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <circle cx="18" cy="5" r="3" strokeWidth="1.5" />
@@ -296,7 +296,7 @@ export default function BlogPost() {
           </p>
           <p
             className="text-[#2F2F2F]/70 text-lg leading-relaxed mb-8 max-w-md mx-auto"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+            style={{ fontFamily: "'Cormorant Garamond', serif" }}
           >
             Let us help you create an unforgettable travel experience tailored
               to your interests, style, and budget.

@@ -1,9 +1,9 @@
 /**
- * JourneySubPage — Shared template for all Land Journey sub-pages
+ * JourneySubPage. Shared template for all Land Journey sub-pages
  *
  * Used by: Safari & Wildlife, European Immersions, Expedition Travel, Cultural Journeys
  *
- * Design: Luxury editorial — cinematic hero, generous whitespace, Playfair Display
+ * Design: Luxury editorial. cinematic hero, generous whitespace, Playfair Display
  * headings, gold (#bfaf8a) accents, BTA blue (#384959) panels.
  *
  * To add a new journey sub-page: create a content config file and pass it to this component.
@@ -253,7 +253,7 @@ export default function JourneySubPage({ data }: Props) {
             <p className="text-[#2f2f2f] text-lg leading-relaxed mb-10 font-light">
               {data.featuredItinerary.description}
             </p>
-            <div className="grid grid-cols-2 gap-6 mb-10 border-t border-b border-[#edeac4] py-8">
+            <div className="grid grid-cols-2 gap-6 mb-10 border-t border-b border-[#edeae4] py-8">
               {data.featuredItinerary.details.map((d, i) => (
                 <div key={i}>
                   <p className="text-[#bfaf8a] text-xs tracking-[0.2em] uppercase mb-1">{d.label}</p>

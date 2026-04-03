@@ -1,5 +1,5 @@
 /**
- * JournalSections — Journal + Testimonials + Instagram + Final CTA + Footer
+ * JournalSections. Journal + Testimonials + Instagram + Final CTA + Footer
  *
  * Official BTA Brand Colors:
  *   Champagne Gold:  #BFAF8A  → eyebrows, accents, icons, hover states, Instagram bg
@@ -10,6 +10,8 @@
  */
 
 import { useState } from "react";
+import { trpc } from "@/lib/trpc";
+import { Link } from "wouter";
 import {
   journal,
   testimonials,
@@ -32,15 +34,23 @@ export function ExperienceStripSection() {
 }
 
 export function JournalSection() {
+  /*
+   * WHY: Fetch the 3 most recent posts live from the WordPress REST API
+   * instead of using hardcoded placeholder posts from homepage.ts.
+   * This ensures the homepage always reflects the latest published content
+   * from travelbta.com without any manual content updates.
+   */
+  const { data: livePosts, isLoading } = trpc.blog.getPosts.useQuery({ page: 1, perPage: 3 });
+
   return (
-    // Dark Navy background — rich contrast for editorial feel
+    // Dark Navy background. rich contrast for editorial feel
     <section className="bg-[#384959] py-20 px-6">
       <div className="max-w-[1440px] mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
           <p className="font-script text-[#BFAF8A] text-xl mb-2">{journal.eyebrow}</p>
           <h2
-            className="bta-section-title text-[#faf9f6] bta-h2 mb-4"
+            className="bta-section-title text-[#faf9f6] text-3xl md:text-4xl mb-4"
             style={{ fontWeight: 400 }}
           >
             {journal.headline}
@@ -48,38 +58,75 @@ export function JournalSection() {
           <p className="font-body text-[#faf9f6]/60 text-base">{journal.subheadline}</p>
         </div>
 
-        {/* Blog Cards */}
+        {/* Blog Cards — live from WordPress REST API */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {journal.posts.map((post) => (
-            <article key={post.title} className="group">
-              <div className="overflow-hidden mb-5">
-                <img
-                  src={post.image}
-                  alt={post.title}
-                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-700"
-                />
-              </div>
-              <div className="font-smallcaps text-[#BFAF8A] text-[9px] tracking-[0.18em] uppercase mb-2">
-                {post.category} — {post.readTime}
-              </div>
-              <h3
-                className="font-display text-[#faf9f6] text-lg mb-4 leading-snug"
-                style={{ fontWeight: 400 }}
-              >
-                {post.title}
-              </h3>
-              <a
-                href={post.href}
-                className="font-smallcaps text-[#faf9f6]/50 text-[9px] tracking-[0.18em] uppercase hover:text-[#BFAF8A] transition-colors flex items-center gap-2"
-              >
-                READ MORE
-                <svg className="w-4 h-px" viewBox="0 0 16 1" fill="none">
-                  <line x1="0" y1="0.5" x2="16" y2="0.5" stroke="currentColor" />
-                </svg>
-                →
-              </a>
-            </article>
-          ))}
+          {isLoading
+            ? [0, 1, 2].map((i) => (
+                // Skeleton placeholders while the live feed loads
+                <div key={i} className="animate-pulse">
+                  <div className="w-full h-64 bg-white/10 mb-5" />
+                  <div className="h-2 bg-white/10 w-1/3 mb-3" />
+                  <div className="h-4 bg-white/10 w-full mb-2" />
+                  <div className="h-4 bg-white/10 w-3/4 mb-4" />
+                  <div className="h-2 bg-white/10 w-1/4" />
+                </div>
+              ))
+            : (livePosts ?? []).map((post: any) => (
+                <article key={post.id} className="group">
+                  <div className="overflow-hidden mb-5">
+                    {post.imageUrl ? (
+                      <img
+                        src={post.imageUrl}
+                        alt={post.title}
+                        className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-700"
+                      />
+                    ) : (
+                      // Fallback when no featured image is set on the WordPress post
+                      <div className="w-full h-64 bg-white/10 flex items-center justify-center">
+                        <span
+                          className="text-white/20 text-[9px] tracking-widest uppercase"
+                          style={{ fontFamily: "'Instrument Serif', serif" }}
+                        >
+                          Boutique Travel
+                        </span>
+                      </div>
+                    )}
+                  </div>
+                  <div className="font-smallcaps text-[#BFAF8A] text-[9px] tracking-[0.18em] uppercase mb-2">
+                    {post.categories?.[0] ?? "Travel"} &middot; {post.readTime}
+                  </div>
+                  <h3
+                    className="font-display text-[#faf9f6] text-lg mb-4 leading-snug"
+                    style={{ fontWeight: 400 }}
+                  >
+                    {post.title}
+                  </h3>
+                  <Link
+                    href={`/${post.slug}`}
+                    className="font-smallcaps text-[#faf9f6]/50 text-[9px] tracking-[0.18em] uppercase hover:text-[#BFAF8A] transition-colors flex items-center gap-2"
+                  >
+                    READ MORE
+                    <svg className="w-4 h-px" viewBox="0 0 16 1" fill="none">
+                      <line x1="0" y1="0.5" x2="16" y2="0.5" stroke="currentColor" />
+                    </svg>
+                    →
+                  </Link>
+                </article>
+              ))}
+        </div>
+
+        {/* View all link */}
+        <div className="text-center mt-12">
+          <Link
+            href="/journal"
+            className="font-smallcaps text-[#faf9f6]/50 text-[9px] tracking-[0.18em] uppercase hover:text-[#BFAF8A] transition-colors inline-flex items-center gap-2"
+          >
+            VIEW ALL ARTICLES
+            <svg className="w-4 h-px" viewBox="0 0 16 1" fill="none">
+              <line x1="0" y1="0.5" x2="16" y2="0.5" stroke="currentColor" />
+            </svg>
+            →
+          </Link>
         </div>
       </div>
     </section>
@@ -93,12 +140,12 @@ export function TestimonialsSection() {
   const next = () => setCurrent((c) => (c + 1) % testimonials.length);
 
   return (
-    // Warm Stone background — clean, airy
+    // Warm Stone background. clean, airy
     <section className="bg-[#faf9f6] py-20 px-6">
       <div className="max-w-[1440px] mx-auto">
         {/* Desktop: 3-across layout with side arrows */}
         <div className="hidden md:flex items-start gap-6">
-          {/* Prev Arrow — Champagne Gold */}
+          {/* Prev Arrow. Champagne Gold */}
           <button
             onClick={prev}
             className="mt-8 flex-shrink-0 text-[#BFAF8A]/50 hover:text-[#BFAF8A] transition-colors"
@@ -155,14 +202,14 @@ function TestimonialCard({ item, dim = false }: { item: typeof testimonials[0]; 
       >
         {item.quote}
       </blockquote>
-      <p className="font-script text-[#384959]/60 text-base">— {item.author}</p>
+      <p className="font-script text-[#384959]/60 text-base">. {item.author}</p>
     </div>
   );
 }
 
 export function InstagramSection() {
   return (
-    // Champagne Gold background — warm, distinctive
+    // Champagne Gold background. warm, distinctive
     <section className="bg-[#BFAF8A] py-14 px-6">
       <div className="max-w-[1440px] mx-auto">
         <div className="text-center mb-8">
@@ -171,7 +218,7 @@ export function InstagramSection() {
             href={instagram.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="bta-section-title text-[#faf9f6] bta-h3 hover:text-[#faf9f6]/80 transition-colors"
+            className="bta-section-title text-[#faf9f6] text-2xl md:text-3xl hover:text-[#faf9f6]/80 transition-colors"
             style={{ fontWeight: 400 }}
           >
             {instagram.handle}
@@ -212,7 +259,7 @@ export function FinalCtaSection() {
           {finalCta.subheadline}
         </p>
         <h2
-          className="bta-section-title text-[#faf9f6] bta-h2 lg:bta-h2 mb-10"
+          className="bta-section-title text-[#faf9f6] text-4xl md:text-5xl lg:text-6xl mb-10"
           style={{ fontWeight: 400 }}
         >
           {finalCta.headline}
@@ -227,7 +274,7 @@ export function FinalCtaSection() {
 
 export function FooterSection() {
   return (
-    // Deep Navy footer — anchors the page
+    // Deep Navy footer. anchors the page
     <footer className="bg-[#384959] py-16 px-6">
       <div className="max-w-[1440px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
@@ -237,7 +284,7 @@ export function FooterSection() {
               <div className="font-smallcaps text-[9px] tracking-[0.25em] uppercase opacity-70">BOUTIQUE</div>
               <div
                 className="text-[28px] leading-none mt-[-2px]"
-                style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic", color: "#faf9f6" }}
+                style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", color: "#faf9f6" }}
               >
                 travel
               </div>

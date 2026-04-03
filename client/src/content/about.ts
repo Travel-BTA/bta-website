@@ -50,7 +50,7 @@ export interface AboutData {
 
 export const aboutData: AboutData = {
   hero: {
-    // Kefalonia/Assos coastal village — same hero used on advisor profiles on travelbta.com
+    // Kefalonia/Assos coastal village. same hero used on advisor profiles on travelbta.com
     backgroundImage:
       "https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?w=1600&q=80",
     headline: "Get To Know Our Team",
@@ -81,13 +81,13 @@ export const aboutData: AboutData = {
       id: "who-we-are",
       label: "Who We Are",
       content:
-        "We are a team of passionate travelers, curators, and transformational itinerary designers. Every advisor on our team has traveled extensively and brings firsthand expertise to every journey they design. We are not a call center — we are a boutique agency where every client is known by name.",
+        "We are a team of passionate travelers, curators, and transformational itinerary designers. Every advisor on our team has traveled extensively and brings firsthand expertise to every journey they design. We are not a call center. we are a boutique agency where every client is known by name.",
     },
     {
       id: "what-we-do",
       label: "What We Do",
       content:
-        "We design fully bespoke travel experiences — from intimate European escapes to multi-generational African safaris to Antarctic expeditions. We handle every detail: flights, accommodations, transfers, private guides, exclusive access, and on-the-ground support. We also offer concierge-level annual membership plans with multi-year travel roadmaps for clients who travel frequently.",
+        "We design fully bespoke travel experiences. from intimate European escapes to multi-generational African safaris to Antarctic expeditions. We handle every detail: flights, accommodations, transfers, private guides, exclusive access, and on-the-ground support. We also offer concierge-level annual membership plans with multi-year travel roadmaps for clients who travel frequently.",
     },
     {
       id: "what-we-believe",
@@ -115,7 +115,7 @@ export const aboutData: AboutData = {
         {
           label: "Best Travel Tip",
           value:
-            "Remember to be present in the moment. Travel experiences often provide opportunities for unexpected adventures, friendships and learning. Practice gratitude and patience — long after the trip is over you will not remember the delayed flight or the long queue. What you will remember is the look in your child's eyes when they first saw the Colosseum or climbed the steps of the Eiffel Tower.",
+            "Remember to be present in the moment. Travel experiences often provide opportunities for unexpected adventures, friendships and learning. Practice gratitude and patience. long after the trip is over you will not remember the delayed flight or the long queue. What you will remember is the look in your child's eyes when they first saw the Colosseum or climbed the steps of the Eiffel Tower.",
         },
         { label: "Favorite Book", value: "Love In The Time Of Cholera" },
         { label: "Countries Visited", value: "35" },
@@ -126,7 +126,7 @@ export const aboutData: AboutData = {
         {
           label: "Favorite Quote",
           value:
-            '"Man cannot discover new oceans unless he has the courage to lose sight of the shore." — André Gide',
+            '"Man cannot discover new oceans unless he has the courage to lose sight of the shore.". André Gide',
         },
         {
           label: "Best Gift I Ever Received",
@@ -181,7 +181,7 @@ export const aboutData: AboutData = {
         {
           label: "Favorite Quote",
           value:
-            '"When I do good I feel good, when I do bad I feel bad, and that\'s my religion." — Abraham Lincoln',
+            '"When I do good I feel good, when I do bad I feel bad, and that\'s my religion.". Abraham Lincoln',
         },
         { label: "Best Gift I Ever Received", value: "The gift of family." },
         {

@@ -1,5 +1,5 @@
 /**
- * StoryUnfoldSection — "Where Will Your Story Unfold?"
+ * StoryUnfoldSection. "Where Will Your Story Unfold?"
  * Appears after the Gives Back section.
  * Shows 3–5 featured itinerary cards that open in a new tab.
  */
@@ -30,18 +30,18 @@ export const storyUnfoldItineraries = [
 
 export function StoryUnfoldSection() {
   return (
-    <section className="bg-[#edeac4] py-24 px-6">
+    <section className="bg-[#edeae4] py-24 px-6">
       <div className="max-w-[1440px] mx-auto">
-        {/* Header — left aligned */}
+        {/* Header. left aligned */}
         <div className="text-left mb-14">
           <p
-            className="font-script text-[#bfaf8a] bta-h2 mb-3"
-            style={{ fontFamily: "'Allura', cursive" }}
+            className="font-script text-[#bfaf8a] text-3xl md:text-4xl mb-3"
+            style={{ fontFamily: "'Allura', 'Cormorant Garamond', serif" }}
           >
             Begin your journey
           </p>
           <h2
-            className="bta-section-title text-[#384959] bta-h2 lg:bta-h2 leading-tight"
+            className="bta-section-title text-[#384959] text-4xl md:text-5xl lg:text-6xl leading-tight"
             style={{ fontWeight: 400 }}
           >
             WHERE WILL YOUR<br />STORY UNFOLD?
@@ -75,7 +75,7 @@ export function StoryUnfoldSection() {
                   {item.destination}
                 </p>
                 <h3
-                  className="font-display text-[#faf9f6] bta-h3 mb-4 leading-snug"
+                  className="font-display text-[#faf9f6] text-2xl md:text-3xl mb-4 leading-snug"
                   style={{ fontWeight: 400 }}
                 >
                   {item.title}

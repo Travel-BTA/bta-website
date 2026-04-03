@@ -15,14 +15,14 @@ export const partnersHero = {
   eyebrow: "Exclusive Access",
   heading: "Preferred Partners",
   subheading:
-    "BTA holds direct preferred-partner status with the world's most coveted hotel programs — unlocking benefits, amenities, and access that simply cannot be booked any other way.",
+    "BTA holds direct preferred-partner status with the world's most coveted hotel programs. unlocking benefits, amenities, and access that simply cannot be booked any other way.",
   imageUrl:
     "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1600&q=85&auto=format&fit=crop",
 };
 
 export const partnersIntro = {
   heading: "Why Book Through BTA",
-  body: "As a Virtuoso member agency and certified preferred partner with many of the world's leading hotel programs, BTA advisors carry rate codes and direct relationships that translate into tangible, bookable value for every client. From daily breakfast and resort credits to suite upgrades and early check-in, these are not aspirational perks — they are guaranteed inclusions on every qualifying stay.",
+  body: "As a Virtuoso member agency and certified preferred partner with many of the world's leading hotel programs, BTA advisors carry rate codes and direct relationships that translate into tangible, bookable value for every client. From daily breakfast and resort credits to suite upgrades and early check-in, these are not aspirational perks. they are guaranteed inclusions on every qualifying stay.",
   stats: [
     { value: "3,000+", label: "Preferred Properties" },
     { value: "$550+", label: "Avg. Added Value Per Stay" },
@@ -83,7 +83,7 @@ export const partners: Partner[] = [
         name: "Grand Hyatt Vail",
         location: "Vail, Colorado",
         imageUrl:
-          "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=600&q=80&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1548777123-e216912df7d8?w=600&q=80&auto=format&fit=crop",
       },
       {
         name: "Thompson Chicago",
@@ -116,7 +116,7 @@ export const partners: Partner[] = [
     name: "SLH withIN",
     tagline: "Independent luxury, intimately curated.",
     description:
-      "Small Luxury Hotels of the World's withIN program is reserved for the upper echelon of travel agencies. BTA's membership unlocks exclusive perks at independently owned luxury hotels across 90+ countries — from historical city hotels to safari lodges. No two properties are alike.",
+      "Small Luxury Hotels of the World's withIN program is reserved for the upper echelon of travel agencies. BTA's membership unlocks exclusive perks at independently owned luxury hotels across 90+ countries. from historical city hotels to safari lodges. No two properties are alike.",
     category: "Collections",
     heroImage:
       "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=1600&q=85&auto=format&fit=crop",
@@ -142,7 +142,7 @@ export const partners: Partner[] = [
         name: "Borgo Egnazia",
         location: "Puglia, Italy",
         imageUrl:
-          "https://images.unsplash.com/photo-1534430480872-3498386e7856?w=600&q=80&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=600&q=80&auto=format&fit=crop",
       },
       {
         name: "Canaves Oia Suites",
@@ -173,9 +173,9 @@ export const partners: Partner[] = [
   {
     id: "ihg-lifestyle-luxury",
     name: "IHG Destined",
-    tagline: "Six Senses, Regent, and Kimpton — elevated.",
+    tagline: "Six Senses, Regent, and Kimpton. elevated.",
     description:
-      "IHG Destined unlocks exclusive amenities and experiences at participating IHG hotels worldwide. Available only to a select group of luxury travel agencies, the program spans Six Senses, Regent Hotels & Resorts, and Kimpton — ensuring every BTA client is recognized and rewarded from arrival.",
+      "IHG Destined unlocks exclusive amenities and experiences at participating IHG hotels worldwide. Available only to a select group of luxury travel agencies, the program spans Six Senses, Regent Hotels & Resorts, and Kimpton. ensuring every BTA client is recognized and rewarded from arrival.",
     category: "Hotels",
     heroImage:
       "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1600&q=85&auto=format&fit=crop",
@@ -207,13 +207,13 @@ export const partners: Partner[] = [
         name: "Carlton Cannes, a Regent Hotel",
         location: "Cannes, France",
         imageUrl:
-          "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600&q=80&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1533929736458-ca588d08c8be?w=600&q=80&auto=format&fit=crop",
       },
       {
         name: "Six Senses Zil Pasyon",
         location: "Félicité Island, Seychelles",
         imageUrl:
-          "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&q=80&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?w=600&q=80&auto=format&fit=crop",
       },
       {
         name: "Kimpton De Witt Amsterdam",
@@ -234,7 +234,7 @@ export const partners: Partner[] = [
     name: "Meliá Bravos",
     tagline: "European sophistication, global reach.",
     description:
-      "Bravos is an invitation-only preferred partner program exclusively for high-end travel agencies. BTA clients enjoy exclusive privileges at a curated group of 42 Meliá properties from Gran Meliá, the Meliá Collection, ME, and Paradisus — spanning Madrid, Ibiza, Tanzania, Playa del Carmen, and beyond.",
+      "Bravos is an invitation-only preferred partner program exclusively for high-end travel agencies. BTA clients enjoy exclusive privileges at a curated group of 42 Meliá properties from Gran Meliá, the Meliá Collection, ME, and Paradisus. spanning Madrid, Ibiza, Tanzania, Playa del Carmen, and beyond.",
     category: "Hotels",
     heroImage:
       "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1600&q=85&auto=format&fit=crop",
@@ -248,7 +248,7 @@ export const partners: Partner[] = [
       "Extended check-in and check-out",
       "Welcome amenity upon arrival",
     ],
-    // Properties verified via foratravel.com/partners/bravos — all confirmed Bravos-eligible
+    // Properties verified via foratravel.com/partners/bravos. all confirmed Bravos-eligible
     properties: [
       {
         name: "Gran Meliá Palacio de Isora",
@@ -300,7 +300,7 @@ export const partners: Partner[] = [
         name: "Borgo Egnazia",
         location: "Puglia, Italy",
         imageUrl:
-          "https://images.unsplash.com/photo-1534430480872-3498386e7856?w=600&q=80&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=600&q=80&auto=format&fit=crop",
       },
       {
         name: "Ashford Castle",
@@ -330,7 +330,7 @@ export const partners: Partner[] = [
         name: "The Fifth Avenue Hotel",
         location: "New York, USA",
         imageUrl:
-          "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=600&q=80&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1548777123-e216912df7d8?w=600&q=80&auto=format&fit=crop",
       },
     ],
   },
@@ -339,7 +339,7 @@ export const partners: Partner[] = [
     name: "Shangri-La",
     tagline: "Asian hospitality at its most refined.",
     description:
-      "BTA's preferred partnership with Shangri-La Hotels and Resorts grants clients exclusive access to one of Asia's most iconic luxury brands — spanning 100+ properties across 22 countries. From the Maldives to Paris, every Shangri-La stay through BTA is elevated with guaranteed amenities.",
+      "BTA's preferred partnership with Shangri-La Hotels and Resorts grants clients exclusive access to one of Asia's most iconic luxury brands. spanning 100+ properties across 22 countries. From the Maldives to Paris, every Shangri-La stay through BTA is elevated with guaranteed amenities.",
     category: "Hotels",
     heroImage:
       "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1600&q=85&auto=format&fit=crop",
@@ -359,7 +359,7 @@ export const partners: Partner[] = [
         name: "Shangri-La Paris",
         location: "Paris, France",
         imageUrl:
-          "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600&q=80&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1533929736458-ca588d08c8be?w=600&q=80&auto=format&fit=crop",
       },
       {
         name: "Shangri-La Villingili Resort & Spa",
@@ -386,7 +386,7 @@ export const partners: Partner[] = [
     name: "JMak",
     tagline: "Bespoke luxury, personally delivered.",
     description:
-      "J.MAK curates a portfolio of independently vetted luxury properties worldwide — from coastal sanctuaries to mountain retreats — and provides BTA clients with exclusive welcome amenities and curated on-property experiences that cannot be accessed through standard booking channels.",
+      "J.MAK curates a portfolio of independently vetted luxury properties worldwide. from coastal sanctuaries to mountain retreats. and provides BTA clients with exclusive welcome amenities and curated on-property experiences that cannot be accessed through standard booking channels.",
     category: "Collections",
     heroImage:
       "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1600&q=85&auto=format&fit=crop",
@@ -429,7 +429,7 @@ export const partners: Partner[] = [
   },
 ];
 
-// ─── Favourite properties (hub page — 2 rows of 3) ──────────────────────────────
+// ─── Favourite properties (hub page. 2 rows of 3) ──────────────────────────────
 // All verified against their respective partner programs above
 
 export const favouriteProperties = [

@@ -1,5 +1,5 @@
 /**
- * Philanthropic Initiatives Page — Fixed & Polished
+ * Philanthropic Initiatives Page. Fixed & Polished
  *
  * Fixes applied:
  *  - Pillars: 2-col mobile / 5-col desktop grid with proper card sizing
@@ -46,7 +46,7 @@ export default function PhilanthropicInitiatives() {
       <NavBar />
 
       {/* ══════════════════════════════════════════════════════════════
-          HERO — Full-screen cinematic with parallax
+          HERO. Full-screen cinematic with parallax
       ══════════════════════════════════════════════════════════════ */}
       <section className="relative h-screen min-h-[600px] overflow-hidden">
         <div
@@ -65,7 +65,7 @@ export default function PhilanthropicInitiatives() {
             {philanthropyHero.eyebrow}
           </p>
           <h1
-            className="text-white bta-h1 md:bta-h1 lg:bta-h1 leading-[1.0] mb-6 max-w-3xl"
+            className="text-white text-5xl md:text-7xl lg:text-8xl font-light leading-[1.0] mb-6 max-w-3xl"
             style={PF}
           >
             {philanthropyHero.headline.split("\n").map((l, i) => (
@@ -89,7 +89,7 @@ export default function PhilanthropicInitiatives() {
       </section>
 
       {/* ══════════════════════════════════════════════════════════════
-          INTRO — Text left, 3-image mosaic right
+          INTRO. Text left, 3-image mosaic right
       ══════════════════════════════════════════════════════════════ */}
       <section className="py-20 md:py-28 px-6 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -97,7 +97,7 @@ export default function PhilanthropicInitiatives() {
             <p className="text-[#9E8661] tracking-[0.25em] text-xs uppercase mb-4" style={PF}>
               {philanthropyIntro.eyebrow}
             </p>
-            <h2 className="text-[#384959] bta-h2 lg:bta-h1 font-light leading-tight mb-8" style={PF}>
+            <h2 className="text-[#384959] text-3xl md:text-4xl lg:text-5xl font-light leading-tight mb-8" style={PF}>
               {philanthropyIntro.headline.split("\n").map((l, i) => (
                 <span key={i} className="block">{l}</span>
               ))}
@@ -108,7 +108,7 @@ export default function PhilanthropicInitiatives() {
             <div className="w-14 h-px bg-[#BFAF8A]" />
           </div>
 
-          {/* 3-image mosaic — hidden on small screens, shown md+ */}
+          {/* 3-image mosaic. hidden on small screens, shown md+ */}
           <div className="hidden md:grid grid-cols-2 grid-rows-2 gap-3 h-[480px]">
             <div
               className="row-span-2 bg-cover bg-center"
@@ -135,7 +135,7 @@ export default function PhilanthropicInitiatives() {
       </section>
 
       {/* ══════════════════════════════════════════════════════════════
-          PILLARS — Section header + proper card grid (2-col mobile, 5-col desktop)
+          PILLARS. Section header + proper card grid (2-col mobile, 5-col desktop)
       ══════════════════════════════════════════════════════════════ */}
       <section className="bg-[#384959] py-20 md:py-28">
         <div className="px-6 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
@@ -144,12 +144,12 @@ export default function PhilanthropicInitiatives() {
             <p className="text-[#BFAF8A] tracking-[0.25em] text-xs uppercase mb-4" style={PF}>
               {philanthropyPillars.eyebrow}
             </p>
-            <h2 className="text-white bta-h2 lg:bta-h1 font-light" style={PF}>
+            <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-light" style={PF}>
               {philanthropyPillars.headline}
             </h2>
           </div>
 
-          {/* Mobile: horizontal scroll carousel — no dead space, no orphaned cards
+          {/* Mobile: horizontal scroll carousel. no dead space, no orphaned cards
                Desktop: 5-column full-width flex strip */}
 
           {/* Mobile scroll strip (hidden lg+) */}
@@ -180,7 +180,7 @@ export default function PhilanthropicInitiatives() {
             ))}
           </div>
 
-          {/* Scroll indicator dots — mobile only */}
+          {/* Scroll indicator dots. mobile only */}
           <div className="lg:hidden flex justify-center gap-2 mt-4">
             {philanthropyPillars.pillars.map((_, i) => (
               <div key={i} className="w-1 h-1 rounded-full bg-[#BFAF8A]/40" />
@@ -218,14 +218,14 @@ export default function PhilanthropicInitiatives() {
       </section>
 
       {/* ══════════════════════════════════════════════════════════════
-          BENEFICIARIES — 8 orgs in a clean uniform grid
+          BENEFICIARIES. 8 orgs in a clean uniform grid
       ══════════════════════════════════════════════════════════════ */}
       <section className="py-20 md:py-28 px-6 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
         <div className="text-center mb-14">
           <p className="text-[#9E8661] tracking-[0.25em] text-xs uppercase mb-4" style={PF}>
             {philanthropyBeneficiaries.eyebrow}
           </p>
-          <h2 className="text-[#384959] bta-h2 lg:bta-h1 font-light mb-6" style={PF}>
+          <h2 className="text-[#384959] text-3xl md:text-4xl lg:text-5xl font-light mb-6" style={PF}>
             {philanthropyBeneficiaries.headline}
           </h2>
           <p className="text-[#5A5A5A] text-base font-light max-w-xl mx-auto leading-relaxed">
@@ -233,7 +233,7 @@ export default function PhilanthropicInitiatives() {
           </p>
         </div>
 
-        {/* Uniform 2-col mobile / 4-col desktop grid — all same height */}
+        {/* Uniform 2-col mobile / 4-col desktop grid. all same height */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {philanthropyBeneficiaries.organizations.map((org, i) => (
             <div key={i} className="relative overflow-hidden group h-[220px] md:h-[260px]">
@@ -256,7 +256,7 @@ export default function PhilanthropicInitiatives() {
       </section>
 
       {/* ══════════════════════════════════════════════════════════════
-          NOT JUST TOURISTS — Split screen: image left, blue panel right
+          NOT JUST TOURISTS. Split screen: image left, blue panel right
       ══════════════════════════════════════════════════════════════ */}
       <section className="flex flex-col lg:flex-row min-h-[540px]">
         {/* Image */}
@@ -270,7 +270,7 @@ export default function PhilanthropicInitiatives() {
           <p className="text-[#BFAF8A] tracking-[0.25em] text-xs uppercase mb-4" style={PF}>
             {philanthropyNjt.eyebrow}
           </p>
-          <h2 className="text-white bta-h2 font-light leading-tight mb-6" style={PF}>
+          <h2 className="text-white text-3xl md:text-4xl font-light leading-tight mb-6" style={PF}>
             {philanthropyNjt.headline}
           </h2>
           <p className="text-white/65 text-base leading-relaxed font-light mb-8 max-w-md">
@@ -301,21 +301,21 @@ export default function PhilanthropicInitiatives() {
       </section>
 
       {/* ══════════════════════════════════════════════════════════════
-          PARTNERSHIPS — Full-bleed image overlay (city aerial, no hands)
+          PARTNERSHIPS. Full-bleed image overlay (city aerial, no hands)
       ══════════════════════════════════════════════════════════════ */}
       <section className="relative min-h-[480px] flex items-center justify-center overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${philanthropyPartnerships.backgroundImage})` }}
         />
-        {/* Aegean blue overlay — clean, no graphic imagery visible */}
+        {/* Aegean blue overlay. clean, no graphic imagery visible */}
         <div className="absolute inset-0 bg-[#384959]/85" />
 
         <div className="relative z-10 text-center px-6 max-w-2xl mx-auto py-20">
           <p className="text-[#BFAF8A] tracking-[0.3em] text-xs uppercase mb-5" style={PF}>
             {philanthropyPartnerships.eyebrow}
           </p>
-          <h2 className="text-white bta-h2 lg:bta-h1 font-light leading-tight mb-8" style={PF}>
+          <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-light leading-tight mb-8" style={PF}>
             {philanthropyPartnerships.headline}
           </h2>
           <p className="text-white/65 text-base leading-relaxed font-light mb-10">
@@ -332,7 +332,7 @@ export default function PhilanthropicInitiatives() {
       </section>
 
       {/* ══════════════════════════════════════════════════════════════
-          FUNDRAISE — Warm stone panel left, image right
+          FUNDRAISE. Warm stone panel left, image right
       ══════════════════════════════════════════════════════════════ */}
       <section className="flex flex-col lg:flex-row min-h-[500px]">
         {/* Text */}
@@ -340,7 +340,7 @@ export default function PhilanthropicInitiatives() {
           <p className="text-[#9E8661] tracking-[0.25em] text-xs uppercase mb-4" style={PF}>
             {philanthropyFundraise.eyebrow}
           </p>
-          <h2 className="text-[#384959] bta-h2 font-light leading-tight mb-6" style={PF}>
+          <h2 className="text-[#384959] text-3xl md:text-4xl font-light leading-tight mb-6" style={PF}>
             {philanthropyFundraise.headline}
           </h2>
           <p className="text-[#5A5A5A] text-base leading-relaxed font-light mb-10 max-w-md">
@@ -366,7 +366,7 @@ export default function PhilanthropicInitiatives() {
       </section>
 
       {/* ══════════════════════════════════════════════════════════════
-          FINAL CTA — Cinematic landscape close
+          FINAL CTA. Cinematic landscape close
       ══════════════════════════════════════════════════════════════ */}
       <section className="relative h-[65vh] min-h-[460px] flex items-center justify-center overflow-hidden">
         <div
@@ -380,7 +380,7 @@ export default function PhilanthropicInitiatives() {
             {philanthropyCta.eyebrow}
           </p>
           <h2
-            className="text-white bta-h3 md:bta-h1 lg:bta-h2 font-light leading-[1.05] mb-8"
+            className="text-white text-4xl md:text-5xl lg:text-6xl font-light leading-[1.05] mb-8"
             style={PF}
           >
             {philanthropyCta.headline.split("\n").map((l, i) => (

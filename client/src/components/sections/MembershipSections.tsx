@@ -1,5 +1,5 @@
 /**
- * MembershipSections — Exclusive Benefits + VIP Access + Gives Back
+ * MembershipSections. Exclusive Benefits + VIP Access + Gives Back
  *
  * Official BTA Brand Colors:
  *   Champagne Gold:  #BFAF8A  → icons, accents, tabs, buttons, borders
@@ -49,13 +49,13 @@ const benefitIcons: Record<string, React.ReactElement> = {
 
 export function ExclusiveBenefitsSection() {
   return (
-    // Dark Navy background — strong contrast, matches Figma
+    // Dark Navy background. strong contrast, matches Figma
     <section className="bg-[#384959] py-10 px-6">
       <div className="max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
         {/* Label */}
         <div className="flex-shrink-0 lg:w-48">
           <h2
-            className="bta-section-title text-[#faf9f6] bta-h3 leading-tight"
+            className="bta-section-title text-[#faf9f6] text-2xl md:text-3xl leading-tight"
             style={{ fontWeight: 400 }}
           >
             {exclusiveBenefits.headline.split("\n").map((line, i) => (
@@ -106,7 +106,7 @@ export function VipAccessSection() {
         {/* Right: Content */}
         <div className="px-10 lg:px-16 py-16 flex flex-col justify-center">
           <h2
-            className="bta-section-title text-[#BFAF8A] bta-h3 lg:bta-h3 leading-tight mb-3"
+            className="bta-section-title text-[#BFAF8A] text-2xl md:text-3xl lg:text-4xl leading-tight mb-3"
             style={{ fontWeight: 400 }}
           >
             {vipAccess.headline.split("\n").map((line, i) => (
@@ -159,7 +159,7 @@ export function VipAccessSection() {
               </svg>
               <input
                 type="text"
-                placeholder="Check-in — Check-out"
+                placeholder="Check-in. Check-out"
                 className="w-full pl-10 pr-4 py-3 border border-[#BFAF8A]/30 bg-white font-body text-[#384959] text-sm placeholder:text-[#384959]/40 focus:outline-none focus:border-[#BFAF8A]"
               />
             </div>
@@ -205,7 +205,7 @@ export function GivesBackSection() {
         <div>
           <p className="bta-eyebrow mb-3">{givesBack.eyebrow}</p>
           <h2
-            className="bta-section-title text-[#384959] bta-h2 mb-6 leading-tight"
+            className="bta-section-title text-[#384959] text-3xl md:text-4xl mb-6 leading-tight"
             style={{ fontWeight: 400 }}
           >
             {givesBack.headline}

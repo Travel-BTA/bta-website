@@ -1,7 +1,7 @@
 /**
  * Land Journeys Page
  *
- * Design Philosophy: Luxury editorial — cinematic hero, generous whitespace,
+ * Design Philosophy: Luxury editorial. cinematic hero, generous whitespace,
  * Playfair Display headings, gold (#bfaf8a) accents, BTA blue (#384959) panels.
  * Clean asymmetric layouts inspired by Virtuoso and top luxury travel agencies.
  *
@@ -59,18 +59,18 @@ export default function LandJourneys() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60" />
 
         <div className="relative z-10 h-full flex flex-col justify-end pb-20 px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
-          {/* Eyebrow */}
+          {/* Eyebrow: white on photo. Champagne Gold only on plain backgrounds */}
           <p
-            className="text-[#BFAF8A] tracking-[0.3em] text-sm uppercase mb-4"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+            className="tracking-[0.3em] text-sm uppercase mb-4"
+            style={{ color: "rgba(255,255,255,0.75)", fontFamily: "'Instrument Serif', Georgia, serif" }}
           >
             {landJourneysHero.eyebrow}
           </p>
 
-          {/* Headline */}
+          {/* H1: Instrument Serif ALL CAPS white on hero photo */}
           <h1
-            className="text-white bta-h1 md:bta-h2 lg:bta-h1 leading-[1.05] mb-6 max-w-3xl"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+            className="text-white text-5xl md:text-6xl lg:text-7xl uppercase leading-[1.05] mb-6 max-w-3xl"
+            style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400, letterSpacing: "0.04em" }}
           >
             {landJourneysHero.headline.split("\n").map((line, i) => (
               <span key={i} className="block">
@@ -103,7 +103,7 @@ export default function LandJourneys() {
               {landJourneysIntro.eyebrow}
             </p>
             <h2
-              className="text-[#384959] bta-h2 font-light leading-tight mb-8"
+              className="text-[#384959] text-4xl md:text-5xl font-light leading-tight mb-8"
               style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
             >
               {landJourneysIntro.headline}
@@ -146,7 +146,7 @@ export default function LandJourneys() {
               Explore by Style
             </p>
             <h2
-              className="text-[#384959] bta-h2 font-light"
+              className="text-[#384959] text-4xl md:text-5xl font-light"
               style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
             >
               Where Will You Go?
@@ -199,7 +199,7 @@ export default function LandJourneys() {
               {landJourneysProcess.eyebrow}
             </p>
             <h2
-              className="text-white bta-h2 font-light"
+              className="text-white text-4xl md:text-5xl font-light"
               style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
             >
               {landJourneysProcess.headline}
@@ -211,7 +211,7 @@ export default function LandJourneys() {
               <div key={i} className="relative">
                 {/* Step number */}
                 <p
-                  className="text-[#BFAF8A]/30 bta-h1 font-light mb-4 leading-none"
+                  className="text-[#BFAF8A]/30 text-6xl font-light mb-4 leading-none"
                   style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
                 >
                   {step.number}
@@ -260,7 +260,7 @@ export default function LandJourneys() {
               {landJourneysFeaturedJourney.eyebrow}
             </p>
             <h2
-              className="text-[#384959] bta-h2 font-light leading-tight mb-6"
+              className="text-[#384959] text-4xl md:text-5xl font-light leading-tight mb-6"
               style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
             >
               {landJourneysFeaturedJourney.headline}
@@ -270,7 +270,7 @@ export default function LandJourneys() {
             </p>
 
             {/* Journey details */}
-            <div className="grid grid-cols-2 gap-6 mb-10 border-t border-b border-[#edeac4] py-8">
+            <div className="grid grid-cols-2 gap-6 mb-10 border-t border-b border-[#edeae4] py-8">
               {landJourneysFeaturedJourney.details.map((d, i) => (
                 <div key={i}>
                   <p className="text-[#bfaf8a] text-xs tracking-[0.2em] uppercase mb-1">
@@ -307,7 +307,7 @@ export default function LandJourneys() {
               {landJourneysExperiences.eyebrow}
             </p>
             <h2
-              className="text-[#384959] bta-h2 font-light"
+              className="text-[#384959] text-4xl md:text-5xl font-light"
               style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
             >
               {landJourneysExperiences.headline}
@@ -352,7 +352,7 @@ export default function LandJourneys() {
             Land Journeys
           </p>
           <h2
-            className="text-white bta-h1 md:bta-h2 font-light mb-6 leading-tight"
+            className="text-white text-5xl md:text-6xl font-light mb-6 leading-tight"
             style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
             {landJourneysCta.headline}

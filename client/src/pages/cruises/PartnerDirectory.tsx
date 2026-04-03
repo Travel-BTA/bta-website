@@ -1,11 +1,11 @@
 /**
- * PartnerDirectory — /cruises/partners
+ * PartnerDirectory. /cruises/partners
  *
  * Photo-forward white-label co-branded partner directory.
  * Cards use full-bleed photography with name/tagline overlay (bottom gradient).
  * Design references: philanthropic-initiatives page card grid pattern.
  *
- * BTA brand: Instrument Serif headings, Playfair Display body,
+ * BTA brand: Instrument Serif headings, Cormorant Garamond body,
  * Champagne Gold #bfaf8a, Aegean Blue #384959, Linen White #faf9f6.
  */
 
@@ -241,20 +241,20 @@ function PhotoCard({
         className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
       />
 
-      {/* Gradient overlay — always visible at bottom, deepens on hover */}
+      {/* Gradient overlay. always visible at bottom, deepens on hover */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent group-hover:from-black/90 transition-all duration-500" />
 
-      {/* Category badge — top left */}
+      {/* Category badge. top left */}
       <div className="absolute top-4 left-4">
         <span
           className="inline-block bg-[#bfaf8a] text-white text-[9px] tracking-[0.25em] uppercase px-2.5 py-1"
-          style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+          style={{ fontFamily: "'Cormorant Garamond', serif" }}
         >
           {badge ?? category}
         </span>
       </div>
 
-      {/* Text overlay — bottom */}
+      {/* Text overlay. bottom */}
       <div className="absolute bottom-0 left-0 right-0 px-5 pb-5 pt-10">
         <h3
           className="text-white text-lg font-light leading-snug mb-1 group-hover:text-[#bfaf8a] transition-colors duration-300"
@@ -264,24 +264,24 @@ function PhotoCard({
         </h3>
         <p
           className="text-white/70 text-xs leading-relaxed mb-3"
-          style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic" }}
+          style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
         >
           {tagline}
         </p>
         {note && (
           <p
             className="text-[#bfaf8a]/80 text-[10px] tracking-[0.15em] uppercase"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+            style={{ fontFamily: "'Cormorant Garamond', serif" }}
           >
             ✦ {note}
           </p>
         )}
-        {/* Arrow CTA — slides in on hover */}
+        {/* Arrow CTA. slides in on hover */}
         <div className="mt-3 flex items-center gap-2 opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
           <div className="w-6 h-px bg-[#bfaf8a]" />
           <span
             className="text-[#bfaf8a] text-[10px] tracking-[0.2em] uppercase"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+            style={{ fontFamily: "'Cormorant Garamond', serif" }}
           >
             Explore
           </span>
@@ -308,19 +308,19 @@ function SectionHeader({
     <div className="mb-12 text-center">
       <p
         className={`text-xs tracking-[0.3em] uppercase mb-4 ${light ? "text-[#bfaf8a]" : "text-[#bfaf8a]"}`}
-        style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+        style={{ fontFamily: "'Cormorant Garamond', serif" }}
       >
         {eyebrow}
       </p>
       <h2
-        className={`font-display bta-h3 md:bta-h2 font-light leading-tight mb-4 ${light ? "text-white" : "text-[#384959]"}`}
+        className={`font-display text-4xl md:text-5xl font-light leading-tight mb-4 ${light ? "text-white" : "text-[#384959]"}`}
       >
         {title}
       </h2>
       {subtitle && (
         <p
           className={`text-lg max-w-2xl mx-auto leading-relaxed ${light ? "text-white/65" : "text-[#2F2F2F]/60"}`}
-          style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+          style={{ fontFamily: "'Cormorant Garamond', serif" }}
         >
           {subtitle}
         </p>
@@ -350,43 +350,39 @@ export default function PartnerDirectory() {
         <div className="absolute inset-0 bg-gradient-to-t from-[#2f2f2f]/90 via-[#2f2f2f]/30 to-transparent" />
 
         <div className="relative z-10 w-full max-w-[1440px] mx-auto px-8 lg:px-14 pb-20">
-          {/* Breadcrumb */}
+          {/* Breadcrumb: white on photo. Champagne Gold only on plain backgrounds */}
           <div className="flex items-center gap-2 mb-6">
             <Link
               href="/cruises"
-              className="text-white/55 text-xs tracking-[0.2em] uppercase hover:text-[#bfaf8a] transition-colors"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              className="text-white/55 text-xs tracking-[0.2em] uppercase hover:text-white transition-colors"
+              style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
             >
               Cruises
             </Link>
             <span className="text-white/35 text-xs">›</span>
             <span
-              className="text-[#bfaf8a] text-xs tracking-[0.2em] uppercase"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              className="text-white/75 text-xs tracking-[0.2em] uppercase"
+              style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
             >
               Partner Directory
             </span>
           </div>
 
-          <p
-            className="text-[#bfaf8a] mb-3"
-            style={{ fontFamily: "'Allura', cursive", fontSize: "1.8rem" }}
-          >
+          {/* Allura script: white on photo */}
+          <p className="mb-3" style={{ color: "rgba(255,255,255,0.9)", fontFamily: "'Allura', cursive", fontSize: "1.8rem", fontStyle: "italic" }}>
             Every Link Leads Back to BTA
           </p>
-          <h1 className="font-display text-white bta-h1 md:bta-h1 leading-none mb-6">
+          {/* H1: Instrument Serif ALL CAPS white */}
+          <h1 className="text-white text-5xl md:text-7xl uppercase leading-tight mb-6" style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400, letterSpacing: "0.04em" }}>
             Our Partner Directory
           </h1>
-          <p
-            className="text-white/70 text-xl max-w-xl leading-relaxed"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
-          >
-            Every co-branded platform and interactive experience — pre-configured so all enquiries route directly to Boutique Travel Advisors.
+          <p className="text-white/70 text-base max-w-xl leading-relaxed" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 400 }}>
+            Every co-branded platform and interactive experience. pre-configured so all enquiries route directly to Boutique Travel Advisors.
           </p>
         </div>
       </section>
 
-      {/* ── How It Works — Aegean Blue band ───────────────────────────────── */}
+      {/* ── How It Works. Aegean Blue band ───────────────────────────────── */}
       <section className="bg-[#384959] py-14">
         <div className="max-w-[1440px] mx-auto px-8 lg:px-14">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
@@ -404,7 +400,7 @@ export default function PartnerDirectory() {
               {
                 num: "03",
                 title: "Approach Guide Experiences",
-                body: "Immersive digital experiences on inspires.to — designed to inspire, with a direct CTA back to BTA.",
+                body: "Immersive digital experiences on inspires.to. designed to inspire, with a direct CTA back to BTA.",
               },
             ].map((item) => (
               <div key={item.num} className="flex gap-5">
@@ -418,7 +414,7 @@ export default function PartnerDirectory() {
                   <h3 className="font-display text-white text-lg font-light mb-2">{item.title}</h3>
                   <p
                     className="text-white/55 text-sm leading-relaxed"
-                    style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                    style={{ fontFamily: "'Cormorant Garamond', serif" }}
                   >
                     {item.body}
                   </p>
@@ -435,7 +431,7 @@ export default function PartnerDirectory() {
           <SectionHeader
             eyebrow="Co-Branded Partner Platforms"
             title="Cruise Collections"
-            subtitle="Twelve co-branded cruise partner sites — from ultra-luxury ocean liners to intimate river ships and polar expeditions."
+            subtitle="Twelve co-branded cruise partner sites. from ultra-luxury ocean liners to intimate river ships and polar expeditions."
           />
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {CRUISE_PARTNERS.map((p) => (
@@ -451,7 +447,7 @@ export default function PartnerDirectory() {
           <SectionHeader
             eyebrow="Land, Expedition & Private Residences"
             title="Beyond the Ship"
-            subtitle="Guided land journeys, African safaris, and curated villa stays — all co-branded and routing to BTA."
+            subtitle="Guided land journeys, African safaris, and curated villa stays. all co-branded and routing to BTA."
           />
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {LAND_PARTNERS.map((p) => (
@@ -467,7 +463,7 @@ export default function PartnerDirectory() {
           <SectionHeader
             eyebrow="Approach Guides · inspires.to"
             title="Curated Experiences"
-            subtitle="Immersive interactive experiences — designed to inspire. Every CTA routes directly to BTA for booking."
+            subtitle="Immersive interactive experiences. designed to inspire. Every CTA routes directly to BTA for booking."
             light
           />
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">

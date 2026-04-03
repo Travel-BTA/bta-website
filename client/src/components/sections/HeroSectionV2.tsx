@@ -1,5 +1,5 @@
 /**
- * HeroSection — Full-viewport hero with dramatic landscape photo
+ * HeroSection. Full-viewport hero with dramatic landscape photo
  *
  * Partner logos: each logo has a per-logo maxWidth cap based on its aspect ratio
  * so all logos occupy roughly the same visual footprint regardless of shape.
@@ -46,14 +46,14 @@ export default function HeroSection() {
             </h1>
             <p
               className="font-body text-white/85 text-xl md:text-2xl italic"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              style={{ fontFamily: "'Cormorant Garamond', serif" }}
             >
               {hero.subheadline}
             </p>
           </div>
         </div>
 
-        {/* Partner Logos — single row, width-capped per logo for visual balance */}
+        {/* Partner Logos. single row, width-capped per logo for visual balance */}
         <div className="pb-5 pt-6 bg-gradient-to-t from-black/45 to-transparent">
           <div
             className="max-w-[1440px] mx-auto px-4 md:px-8 lg:px-14"
@@ -96,7 +96,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Circular CTA — desktop only, right-center */}
+      {/* Circular CTA. desktop only, right-center */}
       <a
         href={hero.cta.href}
         className="hidden md:flex absolute right-[14%] lg:right-[18%] top-1/2 -translate-y-1/2 w-28 h-28 rounded-full border border-white/70 items-center justify-center text-center hover:bg-white/10 transition-colors"

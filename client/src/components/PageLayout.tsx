@@ -1,5 +1,5 @@
 /**
- * PageLayout — shared wrapper for all marketing pages
+ * PageLayout. shared wrapper for all marketing pages
  * Includes NavBar at top, FinalCta + Footer at bottom.
  * Use this on every page except the homepage (which manages its own order).
  */

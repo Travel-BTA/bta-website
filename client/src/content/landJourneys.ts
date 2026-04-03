@@ -1,22 +1,22 @@
 /**
- * BTA Land Journeys Page — Content Configuration
+ * BTA Land Journeys Page. Content Configuration
  *
  * PURPOSE: Single source of truth for all Land Journeys page content.
- * To update text, photos, or links — edit ONLY this file.
+ * To update text, photos, or links. edit ONLY this file.
  * Never modify component files for content changes.
  *
  * SEO: Title and meta description preserved from travelbta.com audit.
  */
 
 export const landJourneysSeo = {
-  title: "Land Journeys | Boutique Travel Advisors — Luxury Virtuoso Travel Agency",
+  title: "Land Journeys | Boutique Travel Advisors. Luxury Virtuoso Travel Agency",
   metaDescription:
     "Discover bespoke land journey experiences crafted by Boutique Travel Advisors. From African safaris to European immersions, our Virtuoso travel experts design once-in-a-lifetime itineraries tailored to you.",
   canonical: "https://travelbta.com/land-journeys/",
 };
 
 export const landJourneysHero = {
-  // Full-width cinematic hero — replace with your own CDN image
+  // Full-width cinematic hero. replace with your own CDN image
   backgroundImage:
     "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1920&q=85&auto=format&fit=crop",
   eyebrow: "Land Journeys",
@@ -152,7 +152,7 @@ export const landJourneysFeaturedJourney = {
 };
 
 export const landJourneysCta = {
-  // Dark, atmospheric background — replace with your own CDN image
+  // Dark, atmospheric background. replace with your own CDN image
   backgroundImage:
     "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1920&q=85&auto=format&fit=crop",
   headline: "Ready to Begin?",

@@ -1,14 +1,14 @@
 /**
- * OurPeople — /about/our-people
+ * OurPeople. /about/our-people
  *
  * Design language mirrors the Julie Rose advisor page:
  * - max-w-[1440px] mx-auto px-8 lg:px-14 container
  * - FAF0F6 Linen White background, white alternating sections
  * - Allura script eyebrows, Instrument Serif headings
- * - Playfair Display body, font-smallcaps labels
+ * - Cormorant Garamond body, font-smallcaps labels
  * - Gold #bfaf8a accents throughout
  * - 3-column portrait grid (4 on xl), generous gap-10 lg:gap-14 spacing
- * - Uniform 3:4 portrait cards — same size for every advisor
+ * - Uniform 3:4 portrait cards. same size for every advisor
  */
 
 import { useState } from "react";
@@ -82,8 +82,8 @@ const TRAVEL_COACHES: Advisor[] = [
 function AdvisorCard({ advisor }: { advisor: Advisor }) {
   return (
     <Link href={advisor.href ?? "#"} className="group block">
-      {/* Portrait photo — 3:4 ratio, same for all */}
-      <div className="relative overflow-hidden aspect-[3/4]" style={{ background: "#edeac4" }}>
+      {/* Portrait photo. 3:4 ratio, same for all */}
+      <div className="relative overflow-hidden aspect-[3/4]" style={{ background: "#edeae4" }}>
         <img
           src={advisor.photo}
           alt={advisor.name}
@@ -95,7 +95,7 @@ function AdvisorCard({ advisor }: { advisor: Advisor }) {
         />
         {/* Subtle dark vignette at bottom */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#384959]/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-        {/* "View Profile" pill — only shown on hover */}
+        {/* "View Profile" pill. only shown on hover */}
         <div className="absolute bottom-4 left-0 right-0 flex justify-center opacity-0 group-hover:opacity-100 transition-all duration-400 translate-y-2 group-hover:translate-y-0">
           <span className="font-smallcaps text-white text-[0.6rem] tracking-[0.22em] uppercase bg-[#bfaf8a]/90 px-4 py-1.5">
             View Profile
@@ -105,7 +105,7 @@ function AdvisorCard({ advisor }: { advisor: Advisor }) {
 
       {/* Name block */}
       <div className="pt-5 pb-2">
-        {/* Thin gold rule — expands on hover */}
+        {/* Thin gold rule. expands on hover */}
         <div className="w-6 h-px bg-[#bfaf8a] mb-3 transition-all duration-500 group-hover:w-12" />
         <p
           className="text-[#2F2F2F] font-smallcaps text-[0.72rem] tracking-[0.18em] uppercase leading-snug group-hover:text-[#bfaf8a] transition-colors duration-300"
@@ -115,7 +115,7 @@ function AdvisorCard({ advisor }: { advisor: Advisor }) {
         {advisor.title && (
           <p
             className="text-[#bfaf8a] text-[0.65rem] tracking-[0.1em] mt-1 italic"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+            style={{ fontFamily: "'Cormorant Garamond', serif" }}
           >
             {advisor.title}
           </p>
@@ -125,7 +125,7 @@ function AdvisorCard({ advisor }: { advisor: Advisor }) {
   );
 }
 
-// ─── Section Header — mirrors Julie Rose eyebrow + heading pattern ────────────
+// ─── Section Header. mirrors Julie Rose eyebrow + heading pattern ────────────
 
 function SectionHeader({ eyebrow, heading, sub }: { eyebrow: string; heading: string; sub?: string }) {
   return (
@@ -141,7 +141,7 @@ function SectionHeader({ eyebrow, heading, sub }: { eyebrow: string; heading: st
         </p>
       </div>
       {/* Heading */}
-      <h2 className="font-display text-[#2F2F2F] bta-h3 md:bta-h1 font-light leading-tight mb-4">
+      <h2 className="font-display text-[#2F2F2F] text-4xl md:text-5xl font-light leading-tight mb-4">
         {heading}
       </h2>
       {/* Horizontal gold rule below heading */}
@@ -149,7 +149,7 @@ function SectionHeader({ eyebrow, heading, sub }: { eyebrow: string; heading: st
       {sub && (
         <p
           className="text-[#2F2F2F]/60 text-lg leading-relaxed mt-6 max-w-2xl"
-          style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+          style={{ fontFamily: "'Cormorant Garamond', serif" }}
         >
           {sub}
         </p>
@@ -158,7 +158,7 @@ function SectionHeader({ eyebrow, heading, sub }: { eyebrow: string; heading: st
   );
 }
 
-// ─── Mission Tabs — Aegean Blue, mirrors Julie Rose stats bar aesthetic ────────
+// ─── Mission Tabs. Aegean Blue, mirrors Julie Rose stats bar aesthetic ────────
 
 const TABS = [
   {
@@ -177,7 +177,7 @@ const TABS = [
     id: "believe",
     label: "What We Believe",
     content:
-      "We believe travel is transformational. From remote lodges in Patagonia to alpine chalets to desert safari camps, our team of experts scours the globe to bring you the most unique, exceptional, awe-inspiring travel experiences. We aren't simply luxury travel agents — we are curators and transformational itinerary designers who practice a holistic team approach.",
+      "We believe travel is transformational. From remote lodges in Patagonia to alpine chalets to desert safari camps, our team of experts scours the globe to bring you the most unique, exceptional, awe-inspiring travel experiences. We aren't simply luxury travel agents. we are curators and transformational itinerary designers who practice a holistic team approach.",
   },
 ];
 
@@ -199,7 +199,7 @@ function MissionTabs() {
           </p>
         </div>
 
-        {/* Tab buttons — smallcaps, gold underline on active */}
+        {/* Tab buttons. smallcaps, gold underline on active */}
         <div className="flex gap-0 mb-12 border-b border-white/15">
           {TABS.map((tab) => (
             <button
@@ -219,7 +219,7 @@ function MissionTabs() {
         {/* Content */}
         <p
           className="text-white/75 text-xl md:text-2xl leading-relaxed max-w-3xl"
-          style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+          style={{ fontFamily: "'Cormorant Garamond', serif" }}
         >
           {current.content}
         </p>
@@ -252,7 +252,7 @@ export default function OurPeople() {
           >
             About BTA
           </p>
-          <h1 className="font-display text-white bta-h1 md:bta-h1 leading-[1.05]">
+          <h1 className="font-display text-white text-5xl md:text-7xl font-light leading-[1.05]">
             Get To Know<br />Our Team
           </h1>
         </div>
@@ -273,7 +273,7 @@ export default function OurPeople() {
                   Transformational Luxury
                 </p>
               </div>
-              <h2 className="font-display text-[#2F2F2F] bta-h3 md:bta-h1 font-light leading-tight">
+              <h2 className="font-display text-[#2F2F2F] text-4xl md:text-5xl font-light leading-tight">
                 Passionate Travelers.<br />Exceptional Designers.
               </h2>
               <div className="w-16 h-px bg-[#bfaf8a] mt-8" />
@@ -283,24 +283,24 @@ export default function OurPeople() {
             <div>
               <p
                 className="text-[#2F2F2F]/70 text-lg leading-relaxed mb-6"
-                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                style={{ fontFamily: "'Cormorant Garamond', serif" }}
               >
                 Boutique Travel Advisors™ is a luxury travel company headquartered in Scottsdale, AZ. Our advisors specialize in designing once-in-a-lifetime experiences for individuals, families, and teams that elevate, inspire, and transform.
               </p>
               <p
                 className="text-[#2F2F2F]/60 text-lg leading-relaxed mb-10"
-                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                style={{ fontFamily: "'Cormorant Garamond', serif" }}
               >
-                As a Virtuoso Travel Agency, our partnerships with the world's most respected suppliers allow our guests access to exclusive amenities, VIP experiences, and exceptional service. We aren't simply travel agents — we are curators and transformational itinerary designers.
+                As a Virtuoso Travel Agency, our partnerships with the world's most respected suppliers allow our guests access to exclusive amenities, VIP experiences, and exceptional service. We aren't simply travel agents. we are curators and transformational itinerary designers.
               </p>
-              {/* Quote — mirrors Julie Rose blockquote */}
+              {/* Quote. mirrors Julie Rose blockquote */}
               <blockquote
                 className="border-l-2 border-[#bfaf8a] pl-6 text-[#2F2F2F]/60 text-xl italic leading-relaxed"
-                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                style={{ fontFamily: "'Cormorant Garamond', serif" }}
               >
                 "To move, to breathe, to fly, to float, to gain all while you give, to roam the roads of lands remote: to travel is to live."
                 <footer className="font-smallcaps text-[#bfaf8a] text-xs tracking-[0.15em] uppercase mt-3 not-italic">
-                  — Hans Christian Andersen
+                 . Hans Christian Andersen
                 </footer>
               </blockquote>
             </div>
@@ -316,7 +316,7 @@ export default function OurPeople() {
             heading="Our Co-Founders"
             sub="Our designers are passionate travelers and the heart of BTA. Every person on our team has traveled extensively and specializes in creating unique experiences focused on discovery, exploration, and refined luxury."
           />
-          {/* 2 cards — centered, same size as all other cards */}
+          {/* 2 cards. centered, same size as all other cards */}
           <div className="grid grid-cols-2 sm:grid-cols-2 gap-10 lg:gap-14 max-w-lg">
             {CO_FOUNDERS.map((a) => (
               <AdvisorCard key={a.name} advisor={a} />

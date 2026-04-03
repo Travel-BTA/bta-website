@@ -1,19 +1,13 @@
 /**
- * CruisesHub — /cruises
+ * CruisesHub. /cruises
  *
- * Main cruise landing page. Showcases all 4 cruise categories as
- * full-bleed cards that link to their respective sub-pages.
- *
- * Sections:
- * 1. Hero — luxury marina, full-bleed
- * 2. Intro + Robert Henri quote
- * 3. Virtuoso Voyages Benefits band (Aegean Blue)
- * 4. Four Cruise Category Cards (grid → sub-page links)
- * 5. Private Charters — alternating image/text
- * 6. FinalCta + Footer (via PageLayout)
- *
- * Design: BTA brand guide — Instrument Serif headings, Playfair Display body,
- * Champagne Gold #bfaf8a, Aegean Blue #384959, Linen White #faf9f6.
+ * Typography (matches Figma exactly):
+ *   H1 hero / H2 section titles: Instrument Serif, ALL CAPS, Champagne Gold #bfaf8a
+ *   H3 card titles:               Instrument Serif, ALL CAPS, white (on dark overlay)
+ *   Script accents:               Allura italic. ONLY for one-off highlights
+ *   Body / descriptions:          Playfair Display Regular
+ *   Labels / eyebrows:            Instrument Serif, tracked uppercase
+ *   Zero Cormorant Garamond anywhere.
  */
 
 import { Link } from "wouter";
@@ -21,21 +15,17 @@ import { PageLayout } from "@/components/PageLayout";
 
 // ─── Images ──────────────────────────────────────────────────────────────────
 const IMAGES = {
-  // Hero: cruise ship at port with tropical hillside — provided by Janet to
-  // replace the underwater diver stock photo. Better represents the luxury
-  // ocean journey experience BTA curates for clients.
-  // Uploaded to CDN to avoid deployment timeout (was client/public/images/hero-cruises.jpg)
-  hero: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/hero-cruises_fb1c83c7.jpg",
-  // Luxury Ocean card: elegant ship bow at sea
-  luxuryOcean: "https://images.unsplash.com/photo-1548574505-5e239809ee19?auto=format&fit=crop&w=1200&q=80",
-  // Premium Ocean card: scenic ocean voyage, no mainstream ship branding
-  premiumOcean: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1200&q=80",
+  // WHY: User-provided photo. luxury cruise ship at golden hour in a tropical port
+  hero: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/cruise-hero_28af95b6.jpg",
+  // WHY: User-provided photo. Santorini blue domes for luxury Mediterranean cruises
+  luxuryOcean: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/santorini-luxury_c8b64a58.jpg",
+  // WHY: User-provided Azamara ship photo for premium ocean cruises
+  premiumOcean: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/azamara-premium_540395ea.jpg",
   river: "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1200&q=80",
   expedition: "https://images.unsplash.com/photo-1551415923-a2297c7fda79?auto=format&fit=crop&w=1200&q=80",
   privateCharter: "https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?auto=format&fit=crop&w=1400&q=80",
 };
 
-// ─── Virtuoso benefits ───────────────────────────────────────────────────────
 const VIRTUOSO_BENEFITS = [
   "Negotiated Rates",
   "VIP Welcome Receptions",
@@ -45,47 +35,47 @@ const VIRTUOSO_BENEFITS = [
   "Dedicated Onboard Hosts",
 ];
 
-// ─── Cruise category cards ────────────────────────────────────────────────────
 const CRUISE_CATEGORIES = [
   {
     title: "Luxury Ocean Cruises",
-    subtitle: "Ultra-luxury voyages — Explora, Regent, Silversea, Seabourn, Crystal",
-    description:
-      "All-inclusive ultra-luxury voyages where every detail is curated — from Michelin-calibre dining to private shore excursions and butler service.",
+    subtitle: "Ultra-luxury voyages. Explora, Regent, Silversea, Seabourn, Crystal",
+    description: "All-inclusive voyages. Butler service, Michelin-calibre dining, private shore excursions.",
     image: IMAGES.luxuryOcean,
     href: "/cruises/luxury-ocean",
     eyebrow: "Ultra-Luxury",
   },
   {
     title: "Premium Ocean Cruises",
-    subtitle: "Destination-focused — Viking, Oceania, Virgin Voyages, Azamara",
-    description:
-      "The sweet spot between premium and ultra-luxury: smaller ships, culinary-driven itineraries, and deep destination immersion.",
+    subtitle: "Destination-focused. Viking, Oceania, Virgin Voyages, Azamara",
+    description: "Smaller ships, culinary-driven itineraries, deep destination immersion.",
     image: IMAGES.premiumOcean,
     href: "/cruises/premium-ocean",
     eyebrow: "Premium",
   },
   {
     title: "River Cruises",
-    subtitle: "Intimate waterways — AmaWaterways, Uniworld, Viking River, Tauck",
-    description:
-      "Off-the-beaten-path journeys through towns and villages. Calm waterways, gourmet dining, and port-to-port cultural discovery.",
+    subtitle: "Intimate waterways. AmaWaterways, Uniworld, Viking River, Tauck",
+    description: "Drift through medieval villages and vineyard valleys. Unpack once, wake up somewhere new.",
     image: IMAGES.river,
     href: "/cruises/river",
     eyebrow: "River",
   },
   {
     title: "Expedition Cruises",
-    subtitle: "Untouched wilderness — HX, Lindblad, Atlas, Viking Expeditions",
-    description:
-      "Glaciers, fjords, icebergs, and exotic islands accessible only by zodiac — accompanied by expert naturalists, scientists, and photographers.",
+    subtitle: "Untouched wilderness. HX, Lindblad, Atlas, Viking Expeditions",
+    description: "Glaciers, fjords and remote islands by Zodiac. Expert naturalists, scientists, photographers.",
     image: IMAGES.expedition,
     href: "/cruises/expedition",
     eyebrow: "Expedition",
   },
 ];
 
-// ─── Main page ────────────────────────────────────────────────────────────────
+// Shared font constants. WHY: single source of truth keeps all text consistent
+const F = {
+  instrument: "'Instrument Serif', Georgia, serif",
+  playfair: "'Playfair Display', Georgia, serif",
+  allura: "'Allura', cursive",
+};
 
 export default function CruisesHub() {
   return (
@@ -98,31 +88,27 @@ export default function CruisesHub() {
           alt="Luxury yachts in a marina at golden hour"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
-        {/* Gradient overlay — bottom-heavy for text legibility */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#2f2f2f]/85 via-[#2f2f2f]/30 to-transparent" />
 
-        {/* Hero text */}
         <div className="relative z-10 w-full max-w-[1440px] mx-auto px-8 lg:px-14 pb-16 md:pb-24">
-          {/* Allura script eyebrow */}
-          <p
-            className="text-[#bfaf8a] mb-3"
-            style={{ fontFamily: "'Allura', cursive", fontSize: "1.6rem" }}
-          >
-            Extraordinary Places & Exclusive Amenities
+          {/* Allura script accent. white on photo background for legibility; Champagne Gold only on plain backgrounds */}
+          <p className="text-white/90 mb-3" style={{ fontFamily: F.allura, fontSize: "1.6rem", fontStyle: "italic" }}>
+            Extraordinary Places &amp; Exclusive Amenities
           </p>
-          <h1 className="font-display text-white bta-h1 md:bta-h1 leading-none mb-2">
-            Cruises &
-          </h1>
-          <h1 className="font-display text-white bta-h1 md:bta-h1 leading-none mb-8">
-            Water Journeys
+          {/* H1: Instrument Serif ALL CAPS white. matches Figma hero exactly */}
+          <h1
+            className="text-white text-5xl md:text-7xl uppercase mb-8 leading-tight"
+            style={{ fontFamily: F.instrument, fontWeight: 400, letterSpacing: "0.04em" }}
+          >
+            Cruises &amp; Water Journeys
           </h1>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-3 bg-[#bfaf8a] text-white px-8 py-3.5 text-xs tracking-[0.25em] uppercase hover:bg-[#bfaf8a] transition-all duration-300"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic" }}
+            className="inline-flex items-center gap-3 bg-[#bfaf8a] text-white px-8 py-3.5 text-xs tracking-[0.25em] uppercase hover:opacity-80 transition-all duration-300"
+            style={{ fontFamily: F.instrument }}
           >
             Start Planning
-            <span className="text-base not-italic">→</span>
+            <span className="text-base">→</span>
           </Link>
         </div>
       </section>
@@ -132,37 +118,32 @@ export default function CruisesHub() {
         <div className="max-w-[1440px] mx-auto px-8 lg:px-14">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
 
-            {/* Left — body copy */}
+            {/* Left. body copy */}
             <div>
-              {/* Virtuoso label */}
               <div className="flex items-center gap-3 mb-8">
                 <div className="w-10 h-px bg-[#bfaf8a]" />
-                <span
-                  className="text-[#bfaf8a] text-xs tracking-[0.25em] uppercase"
-                  style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
-                >
+                {/* Small label: Instrument Serif tracked uppercase */}
+                <span className="text-[#bfaf8a] text-xs tracking-[0.25em] uppercase" style={{ fontFamily: F.instrument }}>
                   Virtuoso Member
                 </span>
               </div>
 
-              <h2 className="font-display text-[#384959] bta-h2 font-light leading-tight mb-8">
+              {/* H2 section title: Instrument Serif ALL CAPS Champagne Gold */}
+              <h2
+                className="text-[#bfaf8a] text-3xl md:text-4xl uppercase mb-8 leading-tight"
+                style={{ fontFamily: F.instrument, fontWeight: 400, letterSpacing: "0.05em" }}
+              >
                 The Art of Cruising
               </h2>
 
-              <p
-                className="text-[#2F2F2F]/75 text-lg leading-relaxed mb-6"
-                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
-              >
+              <p className="text-[#2F2F2F]/75 text-base leading-relaxed mb-6" style={{ fontFamily: F.playfair, fontWeight: 400 }}>
                 Whether traveling on a river cruise or exploring wildlife, glaciers, and fjords on
                 an expedition cruise, cruising allows us to entertain, relax, and experience new
                 destinations. More of your vacation time is enjoyed when you can go to bed after
                 splurging on French wine in the French Riviera, only to wake up off the coast of
                 Italy to the smell of pastries and espresso.
               </p>
-              <p
-                className="text-[#2F2F2F]/65 text-lg leading-relaxed mb-10"
-                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
-              >
+              <p className="text-[#2F2F2F]/65 text-base leading-relaxed mb-10" style={{ fontFamily: F.playfair, fontWeight: 400 }}>
                 A cruise takes away the stressors of packing and unpacking and lost time transiting
                 between destinations. BTA works closely with our clients to determine the cruise
                 line, ship, destination, and itinerary. If you're looking for inspiration, explore
@@ -176,32 +157,28 @@ export default function CruisesHub() {
               <Link
                 href="/contact"
                 className="inline-flex items-center gap-3 border border-[#bfaf8a] text-[#bfaf8a] px-8 py-3 text-xs tracking-[0.2em] uppercase hover:bg-[#bfaf8a] hover:text-white transition-all duration-300"
-                style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic" }}
+                style={{ fontFamily: F.instrument }}
               >
                 Connect with an Advisor
-                <span className="text-base not-italic">→</span>
+                <span className="text-base">→</span>
               </Link>
             </div>
 
-            {/* Right — blockquote */}
+            {/* Right. blockquote */}
             <div className="relative">
               <div className="border-l-2 border-[#bfaf8a] pl-10 py-4">
+                {/* Blockquote uses Playfair Display italic. it is body text, not a heading */}
                 <p
-                  className="text-[#384959] bta-h3 leading-relaxed mb-6"
-                  style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic" }}
+                  className="text-[#384959] text-xl md:text-2xl leading-relaxed mb-6"
+                  style={{ fontFamily: F.playfair, fontWeight: 400, fontStyle: "italic" }}
                 >
                   "Why do we love the sea? It is because it has some potent power to make us think
                   things we like to think."
                 </p>
-                <p
-                  className="text-[#bfaf8a] text-sm tracking-[0.2em] uppercase"
-                  style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
-                >
-                  — Robert Henri
+                <p className="text-[#bfaf8a] text-xs tracking-[0.2em] uppercase" style={{ fontFamily: F.instrument }}>
+                 . Robert Henri
                 </p>
               </div>
-
-              {/* Decorative gold corner accent */}
               <div className="absolute -top-4 -left-4 w-8 h-8 border-t-2 border-l-2 border-[#bfaf8a]/30" />
               <div className="absolute -bottom-4 -right-4 w-8 h-8 border-b-2 border-r-2 border-[#bfaf8a]/30" />
             </div>
@@ -212,36 +189,31 @@ export default function CruisesHub() {
       {/* ── Virtuoso Benefits Band ────────────────────────────────────────── */}
       <section className="bg-[#384959] py-16 px-6">
         <div className="max-w-[1440px] mx-auto px-8 lg:px-14">
-          {/* Section header */}
           <div className="text-center mb-12">
             <div className="flex items-center justify-center gap-4 mb-6">
               <div className="w-12 h-px bg-[#bfaf8a]/50" />
-              <span
-                className="text-[#bfaf8a] text-xs tracking-[0.3em] uppercase"
-                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
-              >
+              <span className="text-[#bfaf8a] text-xs tracking-[0.3em] uppercase" style={{ fontFamily: F.instrument }}>
                 Exclusive to BTA Clients
               </span>
               <div className="w-12 h-px bg-[#bfaf8a]/50" />
             </div>
-            <h2 className="font-display text-white bta-h3 font-light tracking-wide">
+            {/* H2: Instrument Serif ALL CAPS white */}
+            <h2
+              className="text-white text-2xl md:text-3xl uppercase tracking-wide"
+              style={{ fontFamily: F.instrument, fontWeight: 400, letterSpacing: "0.06em" }}
+            >
               Virtuoso Voyages Cruise Amenities
             </h2>
           </div>
 
-          {/* Benefits grid */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {VIRTUOSO_BENEFITS.map((benefit) => (
               <div
                 key={benefit}
                 className="text-center py-4 px-3 border border-[#bfaf8a]/25 hover:border-[#bfaf8a]/60 transition-colors duration-300"
               >
-                {/* Gold star */}
                 <div className="text-[#bfaf8a] text-lg mb-2">✦</div>
-                <p
-                  className="text-white/85 text-xs tracking-[0.15em] uppercase leading-snug"
-                  style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
-                >
+                <p className="text-white/85 text-xs tracking-[0.15em] uppercase leading-snug" style={{ fontFamily: F.instrument }}>
                   {benefit}
                 </p>
               </div>
@@ -254,15 +226,16 @@ export default function CruisesHub() {
       <section className="bg-white py-24 px-6">
         <div className="max-w-[1440px] mx-auto px-8 lg:px-14">
 
-          {/* Section header */}
           <div className="text-center mb-16">
-            <p
-              className="text-[#bfaf8a] mb-3"
-              style={{ fontFamily: "'Allura', cursive", fontSize: "1.8rem" }}
-            >
+            {/* Allura script accent */}
+            <p className="text-[#bfaf8a] mb-3" style={{ fontFamily: F.allura, fontSize: "1.8rem", fontStyle: "italic" }}>
               Explore Our Cruises
             </p>
-            <h2 className="font-display text-[#384959] bta-h2 font-light mb-4">
+            {/* H2: Instrument Serif ALL CAPS Champagne Gold */}
+            <h2
+              className="text-[#bfaf8a] text-3xl md:text-4xl uppercase mb-4"
+              style={{ fontFamily: F.instrument, fontWeight: 400, letterSpacing: "0.05em" }}
+            >
               Choose Your Journey
             </h2>
             <div className="flex items-center justify-center gap-4">
@@ -272,48 +245,40 @@ export default function CruisesHub() {
             </div>
           </div>
 
-          {/* 2×2 grid of category cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {CRUISE_CATEGORIES.map((cat) => (
               <Link key={cat.href} href={cat.href} className="group block">
                 <div className="relative overflow-hidden" style={{ paddingBottom: "62%" }}>
-                  {/* Background image */}
                   <img
                     src={cat.image}
                     alt={cat.title}
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
-                  {/* Dark gradient overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#2f2f2f]/80 via-[#2f2f2f]/20 to-transparent" />
+                  {/* WHY: Strong overlay ensures card text is always legible regardless of image brightness */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/90 via-[#1a1a1a]/50 to-[#1a1a1a]/20" />
 
-                  {/* Gold top-left eyebrow label */}
-                  <div className="absolute top-6 left-6">
-                    <span
-                      className="text-[#bfaf8a] text-xs tracking-[0.25em] uppercase"
-                      style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
-                    >
+                  {/* Bottom text block. eyebrow sits above title inside the block to prevent overlap */}
+                  <div className="absolute bottom-0 left-0 right-0 px-5 pb-5 md:px-8 md:pb-8">
+                    {/* Eyebrow: white on photo. Champagne Gold only on plain backgrounds */}
+                    <p className="text-white/70 text-[10px] tracking-[0.25em] uppercase mb-1.5" style={{ fontFamily: F.instrument }}>
                       {cat.eyebrow}
-                    </span>
-                  </div>
-
-                  {/* Bottom text block */}
-                  <div className="absolute bottom-0 left-0 right-0 p-8">
-                    <h3 className="font-display text-white bta-h3 font-light leading-tight mb-2">
+                    </p>
+                    {/* H3 card title: Instrument Serif ALL CAPS white */}
+                    <h3
+                      className="text-white text-lg md:text-2xl lg:text-3xl uppercase leading-tight mb-2"
+                      style={{ fontFamily: F.instrument, fontWeight: 400, letterSpacing: "0.04em" }}
+                    >
                       {cat.title}
                     </h3>
-                    <p
-                      className="text-white/70 text-sm leading-relaxed mb-5 max-w-sm"
-                      style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
-                    >
+                    <p className="text-white/65 text-xs md:text-sm leading-snug mb-4 max-w-xs" style={{ fontFamily: F.playfair, fontWeight: 400 }}>
                       {cat.description}
                     </p>
-                    {/* CTA — gold outlined pill */}
                     <span
-                      className="inline-flex items-center gap-2 border border-[#bfaf8a] text-[#bfaf8a] px-6 py-2 text-xs tracking-[0.2em] uppercase group-hover:bg-[#bfaf8a] group-hover:text-white transition-all duration-300"
-                      style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic" }}
+                      className="inline-flex items-center gap-2 border border-[#bfaf8a] text-[#bfaf8a] px-5 py-2 text-xs tracking-[0.2em] uppercase group-hover:bg-[#bfaf8a] group-hover:text-white transition-all duration-300"
+                      style={{ fontFamily: F.instrument }}
                     >
                       Explore
-                      <span className="text-sm not-italic">→</span>
+                      <span className="text-sm">→</span>
                     </span>
                   </div>
                 </div>
@@ -327,7 +292,6 @@ export default function CruisesHub() {
       <section className="bg-[#faf9f6]">
         <div className="grid grid-cols-1 lg:grid-cols-2">
 
-          {/* Image — left */}
           <div className="relative overflow-hidden" style={{ minHeight: "520px" }}>
             <img
               src={IMAGES.privateCharter}
@@ -337,47 +301,36 @@ export default function CruisesHub() {
             <div className="absolute inset-0 bg-[#384959]/10" />
           </div>
 
-          {/* Text — right */}
           <div className="flex flex-col justify-center px-8 lg:px-16 py-16 lg:py-20">
             <div className="w-10 h-px bg-[#bfaf8a] mb-8" />
 
-            <p
-              className="text-[#bfaf8a] mb-3"
-              style={{ fontFamily: "'Allura', cursive", fontSize: "1.5rem" }}
-            >
+            {/* Allura script accent */}
+            <p className="text-[#bfaf8a] mb-3" style={{ fontFamily: F.allura, fontSize: "1.5rem", fontStyle: "italic" }}>
               The Ultimate Escape
             </p>
 
-            <h2 className="font-display text-[#384959] bta-h2 font-light leading-tight mb-8">
+            {/* H2: Instrument Serif ALL CAPS Champagne Gold */}
+            <h2
+              className="text-[#bfaf8a] text-3xl md:text-4xl uppercase leading-tight mb-8"
+              style={{ fontFamily: F.instrument, fontWeight: 400, letterSpacing: "0.05em" }}
+            >
               Private Charters
             </h2>
 
-            <p
-              className="text-[#2F2F2F]/75 text-lg leading-relaxed mb-5"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
-            >
-              Mention the word yachts and images of billionaires, royals, and celebrities cruising
-              along the riviera while sipping champagne are easily conjured up. But a private
-              charter is not just for the rich and famous — many of our itineraries start at only
-              $1,500 per person per week.
+            <p className="text-[#2F2F2F]/75 text-base leading-relaxed mb-5" style={{ fontFamily: F.playfair, fontWeight: 400 }}>
+              Private aviation and yacht charters are no longer reserved for the ultra-wealthy. BTA arranges private jet and yacht charters for discerning travelers who value their time, privacy, and comfort. Many itineraries begin at $1,500 per person per week.
             </p>
-            <p
-              className="text-[#2F2F2F]/65 text-lg leading-relaxed mb-10"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
-            >
-              We offer fully crewed charters that deliver the utmost value and service. All charters
-              come with a professional captain and many include a gourmet chef, hostess, and full
-              staff to cater to your every need. Our trusted yacht partners have decades of
-              experience and deliver only the highest quality boats and crew in the industry.
+            <p className="text-[#2F2F2F]/65 text-base leading-relaxed mb-10" style={{ fontFamily: F.playfair, fontWeight: 400 }}>
+              Every charter includes a professional captain and crew. Many include a gourmet chef, hostess, and full staff. Our trusted partners have decades of experience and deliver the highest quality vessels and service in the industry.
             </p>
 
             <Link
-              href="/contact"
+              href="/cruises/private-charters"
               className="inline-flex items-center gap-3 border border-[#bfaf8a] text-[#bfaf8a] px-8 py-3 text-xs tracking-[0.2em] uppercase hover:bg-[#bfaf8a] hover:text-white transition-all duration-300 self-start"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic" }}
+              style={{ fontFamily: F.instrument }}
             >
-              Enquire About a Charter
-              <span className="text-base not-italic">→</span>
+              Explore Private Charters
+              <span className="text-base">→</span>
             </Link>
           </div>
         </div>

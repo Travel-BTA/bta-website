@@ -20,6 +20,7 @@ import PremiumOcean from "@/pages/cruises/PremiumOcean";
 import RiverCruises from "@/pages/cruises/RiverCruises";
 import ExpeditionCruises from "@/pages/cruises/ExpeditionCruises";
 import PartnerDirectory from "@/pages/cruises/PartnerDirectory";
+import PrivateCharters from "@/pages/cruises/PrivateCharters";
 import OurPeople from "@/pages/OurPeople";
 import CustomItineraries from "@/pages/CustomItineraries";
 import JulieRose from "@/pages/advisors/JulieRose";
@@ -32,14 +33,19 @@ import PartnerDetail from "./pages/PartnerDetail";
 import PrivateJetCharters from "./pages/PrivateJetCharters";
 import Destinations from "./pages/Destinations";
 import Experiences from "./pages/Experiences";
-
+import TermsOfService from "./pages/TermsOfService";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsAndConditions from "./pages/TermsAndConditions";
+import FulfillmentPolicy from "./pages/FulfillmentPolicy";
+import CookiePolicy from "./pages/CookiePolicy";
 function Router() {
+  // make sure to consider if you need authentication for certain routes
   return (
     <Switch>
       {/* Core pages */}
       <Route path={"/"} component={HomeV2} />
 
-      {/* Land Journeys — parent + sub-pages */}
+      {/* Land Journeys. parent + sub-pages */}
       <Route path={"/land-journeys"} component={LandJourneys} />
       <Route path={"/land-journeys/safari"} component={SafariWildlife} />
       <Route path={"/land-journeys/europe"} component={EuropeanImmersions} />
@@ -47,7 +53,7 @@ function Router() {
       <Route path={"/land-journeys/cultural"} component={CulturalJourneys} />
       <Route path={"/book"} component={Book} />
       <Route path={"/about"} component={About} />
-      {/* HomeLegacy — original homepage kept for reference at /home-legacy */}
+      {/* HomeLegacy. original homepage kept for reference at /home-legacy */}
       <Route path={"/home-legacy"} component={HomeLegacy} />
       {/* Cruise pages */}
       <Route path={"/cruises"} component={CruisesHub} />
@@ -56,6 +62,7 @@ function Router() {
       <Route path={"/cruises/river"} component={RiverCruises} />
       <Route path={"/cruises/expedition"} component={ExpeditionCruises} />
       <Route path={"/cruises/partners"} component={PartnerDirectory} />
+      <Route path={"/cruises/private-charters"} component={PrivateCharters} />
       {/* About sub-pages */}
       <Route path={"/about/our-people"} component={OurPeople} />
       {/* Land Journeys sub-pages */}
@@ -79,6 +86,11 @@ function Router() {
       <Route path={"/experiences"} component={Experiences} />
       {/* Fallback */}
       <Route path={"/404"} component={NotFound} />
+      <Route path={"/terms-of-service"} component={TermsOfService} />
+      <Route path={"/privacy-policy"} component={PrivacyPolicy} />
+      <Route path={"/terms-and-conditions"} component={TermsAndConditions} />
+      <Route path={"/fulfillment-policy"} component={FulfillmentPolicy} />
+      <Route path={"/cookie-policy"} component={CookiePolicy} />
       {/*
         WHY: WordPress blog posts live at root-level slugs (e.g. /lake-garda-holidays-planning-guide).
         This catch-all route intercepts any unmatched path, treats it as a blog post slug,

@@ -1,5 +1,5 @@
 /**
- * Home — BTA Homepage
+ * Home. BTA Homepage
  *
  * Assembles all sections in the order defined by the Figma design:
  * 1. NavBar (sticky, transparent → solid on scroll)

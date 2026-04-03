@@ -2,7 +2,7 @@
  * Book / Begin Planning Page
  * Route: /book
  *
- * Design: Luxury consultation form — split layout, BTA blue left panel,
+ * Design: Luxury consultation form. split layout, BTA blue left panel,
  * clean form on right. Playfair Display headings, gold accents.
  * No emojis. No aggressive fonts.
  */
@@ -56,7 +56,7 @@ export default function Book() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Form submission — connect to your preferred CRM or email service
+    // Form submission. connect to your preferred CRM or email service
     setSubmitted(true);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -71,7 +71,7 @@ export default function Book() {
           <div className="text-center max-w-lg">
             <CheckCircle size={48} className="text-[#bfaf8a] mx-auto mb-8" strokeWidth={1} />
             <h1
-              className="text-[#384959] bta-h1 mb-6"
+              className="text-[#384959] text-5xl font-light mb-6"
               style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
             >
               Thank You
@@ -108,7 +108,7 @@ export default function Book() {
                 Boutique Travel Advisors
               </p>
               <h1
-                className="text-white bta-h1 md:bta-h2 leading-tight max-w-2xl"
+                className="text-white text-5xl md:text-6xl font-light leading-tight max-w-2xl"
                 style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
               >
                 Begin Planning Your Journey
@@ -123,7 +123,7 @@ export default function Book() {
           <section className="py-20 px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
             <div className="grid lg:grid-cols-3 gap-16">
 
-              {/* Left — What to Expect */}
+              {/* Left. What to Expect */}
               <div className="lg:col-span-1">
                 <p
                   className="text-[#bfaf8a] tracking-[0.25em] text-xs uppercase mb-4"
@@ -132,7 +132,7 @@ export default function Book() {
                   What to Expect
                 </p>
                 <h2
-                  className="text-[#384959] bta-h2 font-light mb-8 leading-snug"
+                  className="text-[#384959] text-3xl font-light mb-8 leading-snug"
                   style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
                 >
                   Your Journey Starts With a Conversation
@@ -175,7 +175,7 @@ export default function Book() {
                   ))}
                 </div>
 
-                <div className="mt-12 pt-8 border-t border-[#edeac4]">
+                <div className="mt-12 pt-8 border-t border-[#edeae4]">
                   <p className="text-[#2f2f2f] text-sm font-light mb-2">Prefer to speak directly?</p>
                   <a
                     href={`tel:${footer.contact.phone}`}
@@ -187,7 +187,7 @@ export default function Book() {
                 </div>
               </div>
 
-              {/* Right — Form */}
+              {/* Right. Form */}
               <form
                 onSubmit={handleSubmit}
                 className="lg:col-span-2 space-y-8"
@@ -203,7 +203,7 @@ export default function Book() {
                       type="text"
                       value={form.firstName}
                       onChange={(e) => setForm({ ...form, firstName: e.target.value })}
-                      className="w-full border-b border-[#edeac4] bg-transparent py-3 text-[#2F2F2F] text-base font-light focus:outline-none focus:border-[#384959] transition-colors placeholder:text-[#edeac4]"
+                      className="w-full border-b border-[#edeae4] bg-transparent py-3 text-[#2F2F2F] text-base font-light focus:outline-none focus:border-[#384959] transition-colors placeholder:text-[#edeae4]"
                       placeholder="Janet"
                     />
                   </div>
@@ -216,7 +216,7 @@ export default function Book() {
                       type="text"
                       value={form.lastName}
                       onChange={(e) => setForm({ ...form, lastName: e.target.value })}
-                      className="w-full border-b border-[#edeac4] bg-transparent py-3 text-[#2F2F2F] text-base font-light focus:outline-none focus:border-[#384959] transition-colors placeholder:text-[#edeac4]"
+                      className="w-full border-b border-[#edeae4] bg-transparent py-3 text-[#2F2F2F] text-base font-light focus:outline-none focus:border-[#384959] transition-colors placeholder:text-[#edeae4]"
                       placeholder="Semenova"
                     />
                   </div>
@@ -233,7 +233,7 @@ export default function Book() {
                       type="email"
                       value={form.email}
                       onChange={(e) => setForm({ ...form, email: e.target.value })}
-                      className="w-full border-b border-[#edeac4] bg-transparent py-3 text-[#2F2F2F] text-base font-light focus:outline-none focus:border-[#384959] transition-colors placeholder:text-[#edeac4]"
+                      className="w-full border-b border-[#edeae4] bg-transparent py-3 text-[#2F2F2F] text-base font-light focus:outline-none focus:border-[#384959] transition-colors placeholder:text-[#edeae4]"
                       placeholder="janet@example.com"
                     />
                   </div>
@@ -245,7 +245,7 @@ export default function Book() {
                       type="tel"
                       value={form.phone}
                       onChange={(e) => setForm({ ...form, phone: e.target.value })}
-                      className="w-full border-b border-[#edeac4] bg-transparent py-3 text-[#2F2F2F] text-base font-light focus:outline-none focus:border-[#384959] transition-colors placeholder:text-[#edeac4]"
+                      className="w-full border-b border-[#edeae4] bg-transparent py-3 text-[#2F2F2F] text-base font-light focus:outline-none focus:border-[#384959] transition-colors placeholder:text-[#edeae4]"
                       placeholder="+1 (555) 000-0000"
                     />
                   </div>
@@ -265,7 +265,7 @@ export default function Book() {
                         className={`px-5 py-2.5 text-sm border transition-all duration-200 ${
                           selectedJourneys.includes(j)
                             ? "bg-[#384959] border-[#384959] text-white"
-                            : "border-[#edeac4] text-[#2f2f2f] hover:border-[#384959] hover:text-[#384959]"
+                            : "border-[#edeae4] text-[#2f2f2f] hover:border-[#384959] hover:text-[#384959]"
                         }`}
                       >
                         {j}
@@ -288,7 +288,7 @@ export default function Book() {
                         className={`px-5 py-2.5 text-sm border transition-all duration-200 ${
                           selectedCount === c
                             ? "bg-[#384959] border-[#384959] text-white"
-                            : "border-[#edeac4] text-[#2f2f2f] hover:border-[#384959] hover:text-[#384959]"
+                            : "border-[#edeae4] text-[#2f2f2f] hover:border-[#384959] hover:text-[#384959]"
                         }`}
                       >
                         {c}
@@ -311,7 +311,7 @@ export default function Book() {
                         className={`px-5 py-2.5 text-sm border transition-all duration-200 ${
                           selectedBudget === b
                             ? "bg-[#bfaf8a] border-[#bfaf8a] text-white"
-                            : "border-[#edeac4] text-[#2f2f2f] hover:border-[#bfaf8a] hover:text-[#bfaf8a]"
+                            : "border-[#edeae4] text-[#2f2f2f] hover:border-[#bfaf8a] hover:text-[#bfaf8a]"
                         }`}
                       >
                         {b}
@@ -329,7 +329,7 @@ export default function Book() {
                     type="text"
                     value={form.travelDates}
                     onChange={(e) => setForm({ ...form, travelDates: e.target.value })}
-                    className="w-full border-b border-[#edeac4] bg-transparent py-3 text-[#2F2F2F] text-base font-light focus:outline-none focus:border-[#384959] transition-colors placeholder:text-[#edeac4]"
+                    className="w-full border-b border-[#edeae4] bg-transparent py-3 text-[#2F2F2F] text-base font-light focus:outline-none focus:border-[#384959] transition-colors placeholder:text-[#edeae4]"
                     placeholder="e.g. October 2026, or flexible"
                   />
                 </div>
@@ -343,7 +343,7 @@ export default function Book() {
                     rows={5}
                     value={form.message}
                     onChange={(e) => setForm({ ...form, message: e.target.value })}
-                    className="w-full border-b border-[#edeac4] bg-transparent py-3 text-[#2F2F2F] text-base font-light focus:outline-none focus:border-[#384959] transition-colors placeholder:text-[#edeac4] resize-none"
+                    className="w-full border-b border-[#edeae4] bg-transparent py-3 text-[#2F2F2F] text-base font-light focus:outline-none focus:border-[#384959] transition-colors placeholder:text-[#edeae4] resize-none"
                     placeholder="Destinations you have in mind, experiences you are looking for, any special occasions..."
                   />
                 </div>

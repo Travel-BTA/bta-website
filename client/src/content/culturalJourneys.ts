@@ -1,5 +1,5 @@
 /**
- * Cultural Journeys — Content Configuration
+ * Cultural Journeys. Content Configuration
  * Edit text, images, and links here. Do not touch the page component.
  * Route: /land-journeys/cultural
  */
@@ -10,12 +10,12 @@ export const culturalJourneysData: JourneySubPageData = {
   seo: {
     title: "Cultural Journeys | Boutique Travel Advisors",
     metaDescription:
-      "Japan, Morocco, India, Peru — BTA designs immersive cultural journeys with private access to UNESCO sites, local artisans, and experiences that reveal the true soul of a destination.",
+      "Japan, Morocco, India, Peru. BTA designs immersive cultural journeys with private access to UNESCO sites, local artisans, and experiences that reveal the true soul of a destination.",
   },
   hero: {
     backgroundImage:
       "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/kyoto-geisha_b1a8b6d7.webp",
-    eyebrow: "Land Journeys — Cultural Journeys",
+    eyebrow: "Land Journeys. Cultural Journeys",
     headline: "Travel That\nGoes Deeper",
     subheadline:
       "Private access, local connections, and experiences that reveal the true soul of a destination.",
@@ -23,7 +23,7 @@ export const culturalJourneysData: JourneySubPageData = {
   intro: {
     eyebrow: "The BTA Cultural Experience",
     headline: "Immersion, Not\nObservation",
-    body: "The most meaningful travel experiences come from genuine connection — with a place, its people, and its history. We design cultural journeys that move beyond the surface: a private tea ceremony in Kyoto with a master who has practiced for forty years, a dawn visit to Angkor Wat before the crowds arrive, a cooking lesson in a Marrakech riad with a family who has lived there for generations. These are the moments that stay with you long after you return home.",
+    body: "The most meaningful travel experiences come from genuine connection. with a place, its people, and its history. We design cultural journeys that move beyond the surface: a private tea ceremony in Kyoto with a master who has practiced for forty years, a dawn visit to Angkor Wat before the crowds arrive, a cooking lesson in a Marrakech riad with a family who has lived there for generations. These are the moments that stay with you long after you return home.",
     imageUrl:
       "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=900&q=85&auto=format&fit=crop",
   },
@@ -48,14 +48,14 @@ export const culturalJourneysData: JourneySubPageData = {
       name: "Sacred Valley & Machu Picchu, Peru",
       country: "Peru",
       description:
-        "The Inca heartland — Machu Picchu at sunrise before the crowds, the salt pans of Maras, and a private visit to a weaving community that has preserved ancient Andean traditions for centuries.",
+        "The Inca heartland. Machu Picchu at sunrise before the crowds, the salt pans of Maras, and a private visit to a weaving community that has preserved ancient Andean traditions for centuries.",
       imageUrl:
         "https://images.unsplash.com/photo-1526392060635-9d6019884377?w=800&q=80&auto=format&fit=crop",
     },
   ],
   featuredItinerary: {
     eyebrow: "Featured Journey",
-    headline: "Japan: Ancient &\nModern — 11 Days",
+    headline: "Japan: Ancient &\nModern. 11 Days",
     description:
       "Begin in Tokyo with three days of contemporary culture, world-class dining, and neighborhoods that continue to inspire. Travel by shinkansen to Kyoto for four nights: a private geisha dinner, a dawn walk through the bamboo groves of Arashiyama, and an afternoon with a master ceramicist. End in the mountain onsen town of Hakone with views of Fuji across the lake.",
     imageUrl:
@@ -84,7 +84,7 @@ export const culturalJourneysData: JourneySubPageData = {
       {
         title: "Bespoke Design",
         description:
-          "We match the depth and pace of your journey to your interests — whether you are drawn to art, architecture, cuisine, history, or the simple pleasure of being fully present in a remarkable place.",
+          "We match the depth and pace of your journey to your interests. whether you are drawn to art, architecture, cuisine, history, or the simple pleasure of being fully present in a remarkable place.",
       },
     ],
   },

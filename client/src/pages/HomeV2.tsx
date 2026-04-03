@@ -1,5 +1,5 @@
 /**
- * Home — BTA Homepage
+ * Home. BTA Homepage
  *
  * Section order (matches Figma):
  *  1. NavBar

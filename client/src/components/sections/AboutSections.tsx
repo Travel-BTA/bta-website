@@ -1,5 +1,5 @@
 /**
- * AboutSections — Who We Are + Stats + Philosophy + Curated Hotels
+ * AboutSections. Who We Are + Stats + Philosophy + Curated Hotels
  *
  * Official BTA Brand Colors:
  *   Champagne Gold:  #BFAF8A  → backgrounds, accents, buttons, eyebrows
@@ -18,7 +18,7 @@ export function WhoWeAreSection() {
     <section className="bg-[#BFAF8A] py-20 px-6 text-center">
       <div className="max-w-2xl mx-auto">
         <p className="bta-eyebrow text-[#faf9f6]/80 mb-3">{whoWeAre.eyebrow}</p>
-        <h2 className="bta-section-title text-[#faf9f6] bta-h2 mb-6" style={{ fontWeight: 400 }}>
+        <h2 className="bta-section-title text-[#faf9f6] text-3xl md:text-4xl mb-6" style={{ fontWeight: 400 }}>
           {whoWeAre.headline}
         </h2>
         <p className="font-body text-[#faf9f6]/90 text-lg md:text-xl leading-relaxed mb-8">
@@ -34,13 +34,13 @@ export function WhoWeAreSection() {
 
 export function StatsSection() {
   return (
-    // Dark Navy bar — keeps strong contrast, matches Figma
+    // Dark Navy bar. keeps strong contrast, matches Figma
     <section className="bg-[#384959] py-14 px-6">
       <div className="max-w-[1440px] mx-auto grid grid-cols-3 gap-8 text-center">
         {stats.map((stat) => (
           <div key={stat.label}>
             <div
-              className="font-display text-[#faf9f6] bta-h2 lg:bta-h2 mb-2"
+              className="font-display text-[#faf9f6] text-4xl md:text-5xl lg:text-6xl mb-2"
               style={{ fontWeight: 300 }}
             >
               {stat.value}
@@ -57,14 +57,14 @@ export function StatsSection() {
 
 export function PhilosophySection() {
   return (
-    // Warm Stone background — clean, airy
+    // Warm Stone background. clean, airy
     <section className="bg-[#faf9f6] py-20 px-6">
       <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         {/* Left: Text */}
         <div>
           <p className="bta-eyebrow mb-3">{philosophy.eyebrow}</p>
           <h2
-            className="bta-section-title text-[#384959] bta-h2 mb-5 leading-tight"
+            className="bta-section-title text-[#384959] text-3xl md:text-4xl mb-5 leading-tight"
             style={{ fontWeight: 400 }}
           >
             {philosophy.headline.split("\n").map((line, i) => (
@@ -123,14 +123,14 @@ export function CuratedHotelsSection() {
       <div className="relative h-full flex items-center justify-start px-10 lg:px-16">
         <div>
           <p
-            className="text-[#faf9f6] bta-h2 leading-tight"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic", fontWeight: 400 }}
+            className="text-[#faf9f6] text-4xl md:text-5xl leading-tight"
+            style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontWeight: 400 }}
           >
             {curatedHotels.scriptLine1}
           </p>
           <p
-            className="text-[#faf9f6] bta-h2 leading-tight"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic", fontWeight: 400 }}
+            className="text-[#faf9f6] text-4xl md:text-5xl leading-tight"
+            style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontWeight: 400 }}
           >
             {curatedHotels.scriptLine2}
           </p>
