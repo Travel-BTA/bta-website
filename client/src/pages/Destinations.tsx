@@ -25,7 +25,10 @@ const DESTINATIONS = [
     description:
       "Canopy bridges at dawn, private wildlife guides, and lodge-to-lodge journeys through cloud forest and coastline. Costa Rica is one of the world's great eco-destinations and we know how to experience it without the crowds.",
     highlights: ["Arenal volcano lodges", "Monteverde cloud forest", "Osa Peninsula wildlife", "Private naturalist guides"],
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/dest-costa-rica-user_863df311.jpg",
+    // WHY: Janet provided this specific jungle villa pool photo to replace the
+    // original generated image — it better represents the luxury eco-lodge
+    // experience BTA curates in Costa Rica.
+    image: "/images/dest-costa-rica.jpg",
   },
   {
     id: "portugal",
