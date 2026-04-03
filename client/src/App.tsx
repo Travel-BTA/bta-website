@@ -26,6 +26,7 @@ import JulieRose from "@/pages/advisors/JulieRose";
 import Journal from "@/pages/Journal";
 import BlogPost from "@/pages/BlogPost";
 import MediaManager from "@/pages/MediaManager";
+import PhilanthropicInitiatives from "./pages/PhilanthropicInitiatives";
 
 function Router() {
   return (
@@ -62,6 +63,8 @@ function Router() {
       <Route path={"/advisors/julie-rose"} component={JulieRose} />
       {/* Admin */}
       <Route path={"/admin/media"} component={MediaManager} />
+      {/* Philanthropic Initiatives */}
+      <Route path={"/philanthropic-initiatives"} component={PhilanthropicInitiatives} />
 
       {/* Fallback */}
       <Route path={"/404"} component={NotFound} />
