@@ -54,7 +54,7 @@ export const landJourneysCategories = [
     description:
       "Remote destinations for the curious — Antarctica, the Galápagos, Patagonia, and beyond.",
     imageUrl:
-      "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&q=80&auto=format&fit=crop",
+      "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/patagonia-guanaco_6307f230.webp",
     href: "/land-journeys/expedition",
   },
   {
@@ -62,7 +62,7 @@ export const landJourneysCategories = [
     description:
       "Authentic connections to local customs, traditions, and the people who define a destination.",
     imageUrl:
-      "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=800&q=80&auto=format&fit=crop",
+      "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/kyoto-geisha_b1a8b6d7.webp",
     href: "/land-journeys/cultural",
   },
 ];
@@ -141,7 +141,7 @@ export const landJourneysFeaturedJourney = {
   description:
     "Witness one of nature's most spectacular events — the annual wildebeest migration across the Serengeti and Masai Mara. Private camps, expert guides, and moments that stay with you for a lifetime.",
   imageUrl:
-    "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=1200&q=85&auto=format&fit=crop",
+    "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/masai-mara-balloon_fbd18a64.webp",
   details: [
     { label: "Duration", value: "10–14 Days" },
     { label: "Best Season", value: "July – October" },

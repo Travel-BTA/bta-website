@@ -14,7 +14,7 @@ export const expeditionTravelData: JourneySubPageData = {
   },
   hero: {
     backgroundImage:
-      "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=1920&q=85&auto=format&fit=crop",
+      "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/patagonia-guanaco_6307f230.webp",
     eyebrow: "Land Journeys — Expedition Travel",
     headline: "The World's Last\nWild Places",
     subheadline:
