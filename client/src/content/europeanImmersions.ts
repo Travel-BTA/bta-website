@@ -34,7 +34,7 @@ export const europeanImmersionsData: JourneySubPageData = {
       description:
         "Cliffside villages, cerulean waters, and the finest private villa estates in the Mediterranean. We arrange private boat transfers, exclusive restaurant access, and day trips to Capri and Positano.",
       imageUrl:
-        "https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?w=800&q=80&auto=format&fit=crop",
+        "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/amalfi-coast-wide_3d756d92.webp",
     },
     {
       name: "Tuscany, Italy",
@@ -42,7 +42,7 @@ export const europeanImmersionsData: JourneySubPageData = {
       description:
         "Rolling hills, Renaissance art, and world-class wine. Private villa rentals, harvest season visits to family estates, and exclusive access to Florence's most celebrated collections.",
       imageUrl:
-        "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=800&q=80&auto=format&fit=crop",
+        "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/tuscany_a874826f.webp",
     },
     {
       name: "Santorini, Greece",
