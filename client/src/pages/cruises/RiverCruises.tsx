@@ -135,7 +135,7 @@ export default function RiverCruises() {
 
       {/* ── Hero ──────────────────────────────────────────────────────────── */}
       {/* Stronger overlay (via/50) ensures white text is legible over any image */}
-      <section className="relative h-[75vh] min-h-[520px] flex items-end overflow-hidden">
+      <section className="relative h-[75vh] min-h-[520px] flex items-end overflow-hidden" style={{ marginTop: 0 }}>
         <img
           src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/riverside-rhine-symphony_dab3342f.png"
           alt="Luxury river cruise ship sailing through a European waterway at golden hour"

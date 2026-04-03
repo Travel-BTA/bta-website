@@ -92,7 +92,7 @@ const CRUISE_PARTNERS = [
     tagline: "Premium European river travel",
     category: "River",
     link: "https://inspires.to/riverside/copilot",
-    photo: "https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=800&q=80",
+    photo: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/riverside-rhine-symphony_dab3342f.png",
     note: "Interactive Experience",
   },
   {
@@ -189,14 +189,7 @@ const EXPERIENCES = [
     photo: "https://images.unsplash.com/photo-1589979481223-deb893043163?auto=format&fit=crop&w=800&q=80",
     badge: "Romance",
   },
-  {
-    name: "Riverside Cruises: Up to 18% Off",
-    tagline: "Luxury with rewards — European river cruises",
-    category: "River",
-    link: "https://inspires.to/experiences/luxury-with-rewards-up-to-18-off-european-river-cruises-xw4klq",
-    photo: "https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=800&q=80",
-    badge: "Offer",
-  },
+
   {
     name: "G-Adventures",
     tagline: "Curated itineraries for the independent traveller",
