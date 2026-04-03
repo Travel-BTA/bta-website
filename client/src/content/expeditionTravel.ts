@@ -23,7 +23,7 @@ export const expeditionTravelData: JourneySubPageData = {
   intro: {
     eyebrow: "The BTA Expedition Experience",
     headline: "Adventure Without\nCompromise",
-    body: "Expedition travel is not about roughing it — it is about reaching places of profound natural beauty with the comfort, expertise, and access that only the best operators provide. We partner with the world's leading expedition companies to place you aboard the finest small ships, in the most exclusive lodges, and in the hands of the most knowledgeable naturalist guides on earth. These are journeys that change your perspective permanently.",
+    body: "Expedition travel is not about roughing it, rather it is about reaching places of profound natural beauty with the comfort, expertise, and access that only the best operators provide. We partner with the world's leading expedition companies to place you aboard the finest small ships, in the most exclusive lodges, and in the hands of the most knowledgeable naturalist guides on earth. These are journeys that change your perspective permanently.",
     imageUrl:
       "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=900&q=85&auto=format&fit=crop",
   },
