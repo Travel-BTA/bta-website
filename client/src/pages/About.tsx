@@ -213,8 +213,9 @@ export default function About() {
               { name: "Justin Lintz", image: "https://travelbta.com/wp-content/uploads/2026/03/IMG_5590-1024x768.jpeg" },
               { name: "Laura Cosme", image: "https://travelbta.com/wp-content/uploads/2026/03/unnamed-10-1024x683.webp" },
               { name: "Rose Topisian", image: "https://travelbta.com/wp-content/uploads/2026/02/3.jpg" },
-            ] as { name: string; image: string }[]).map((a) => (
-              <AdvisorCard key={a.name} name={a.name} image={a.image} />
+              { name: "Sara Galarraga", image: "", placeholder: true },
+            ] as { name: string; image: string; placeholder?: boolean }[]).map((a) => (
+              <AdvisorCard key={a.name} name={a.name} image={a.image} placeholder={a.placeholder} />
             ))}
           </div>
         </div>
