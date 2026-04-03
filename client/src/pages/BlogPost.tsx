@@ -298,8 +298,8 @@ export default function BlogPost() {
             className="text-[#2F2F2F]/70 text-lg leading-relaxed mb-8 max-w-md mx-auto"
             style={{ fontFamily: "'Cormorant Garamond', serif" }}
           >
-            Let me help you create an unforgettable travel experience tailored
-            to your interests, style, and budget.
+            Let us help you create an unforgettable travel experience tailored
+              to your interests, style, and budget.
           </p>
           <a
             href="/contact"

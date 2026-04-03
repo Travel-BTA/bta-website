@@ -29,11 +29,15 @@ function estimateReadTime(html: string): number {
   return Math.max(1, Math.round(words / 200));
 }
 
-/** Remove the affiliate disclaimer paragraph that appears at the top of every post */
+/** Remove the affiliate/Virtuoso disclaimer that WordPress prepends to every post.
+ * WHY: Two variants exist across the 249 posts:
+ *   1. "Our users support our website... affiliate commissions..."
+ *   2. "We are a Virtuoso Member travel agency..."
+ * Both are legal boilerplate, not editorial content. We strip them here
+ * so the new site can render its own styled disclaimer if needed. */
 function removeDisclaimer(html: string): string {
-  // Strips the <h6> affiliate notice that WordPress prepends to every post
   return html.replace(
-    /<h6[^>]*>[\s\S]*?affiliate[\s\S]*?<\/h6>/i,
+    /<h6[^>]*>[\s\S]*?(?:affiliate|Virtuoso Member)[\s\S]*?<\/h6>/gi,
     ""
   );
 }

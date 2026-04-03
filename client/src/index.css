@@ -462,6 +462,24 @@
     color: #384959;
   }
 
+  /* ── h6 affiliate/Virtuoso disclaimer fallback ──
+     WHY: The removeDisclaimer() regex strips these in JS, but as a CSS
+     safety net we also style any remaining h6 at the top of a post to
+     be small, italic, non-caps, and muted — never large bold uppercase. */
+  .blog-body > h6:first-child,
+  .blog-body h6[data-start] {
+    font-size: 0.78rem !important;
+    font-style: italic !important;
+    font-weight: 400 !important;
+    text-transform: none !important;
+    color: #9C886A !important;
+    opacity: 0.8 !important;
+    letter-spacing: 0.01em !important;
+    line-height: 1.6 !important;
+    margin-bottom: 2rem !important;
+    text-align: left !important;
+  }
+
   /* ── BTA Travel Club box — make the outer container more subtle ──
      WHY: The WP source uses a heavy border and stark background. We soften
      it to a light stone border with a barely-there background so it reads
