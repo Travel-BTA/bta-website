@@ -3,8 +3,8 @@
  *
  * BTA Preferred Partners hub page — inspired by Fora's /partners layout
  * but built entirely in BTA brand aesthetic:
- *   - Aegean Blue (#384959) + Champagne Gold (#BFAF8A) + Warm Stone (#EDEAE4)
- *   - Playfair Display headings, Cormorant Garamond body
+ *   - Aegean Blue (#384959) + Champagne Gold (#BFAF8A) + Warm Stone (#edeac4)
+ *   - Playfair Display headings, Playfair Display body
  *   - Logo-forward partner cards with category filter tabs
  *   - Full-bleed hero, stats bar, partner grid, final CTA
  *
@@ -101,7 +101,7 @@ export default function PreferredPartners() {
       : partners.filter((p) => p.category === activeCategory);
 
   return (
-    <div className="bg-[#EDEAE4] min-h-screen">
+    <div className="bg-[#edeac4] min-h-screen">
       <NavBar />
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}

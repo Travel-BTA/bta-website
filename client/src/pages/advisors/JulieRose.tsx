@@ -67,7 +67,7 @@ function HeroSection() {
         </p>
         <p
           className="text-[#2F2F2F]/65 text-base italic max-w-xs mb-6"
-          style={{ fontFamily: "'Cormorant Garamond', serif" }}
+          style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
         >
           {h.tagline}
         </p>
@@ -121,7 +121,7 @@ function HeroSection() {
         </p>
         <p
           className="text-white/75 text-lg font-light italic max-w-xl mb-6"
-          style={{ fontFamily: "'Cormorant Garamond', serif" }}
+          style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
         >
           {h.tagline}
         </p>
@@ -199,7 +199,7 @@ function MeetSection() {
               <p
                 key={i}
                 className="text-[#2F2F2F]/70 text-lg leading-relaxed"
-                style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
               >
                 {para}
               </p>
@@ -209,7 +209,7 @@ function MeetSection() {
           {/* Quote */}
           <blockquote
             className="border-l-2 border-[#bfaf8a] pl-6 mb-10 text-[#2F2F2F]/60 text-xl italic leading-relaxed"
-            style={{ fontFamily: "'Cormorant Garamond', serif" }}
+            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
             {m.quote}
           </blockquote>
@@ -256,7 +256,7 @@ function StatsBar() {
 function HotelsSection() {
   const h = advisor.hotels;
   return (
-    <section className="bg-[#edeae4] py-24 lg:py-32">
+    <section className="bg-[#edeac4] py-24 lg:py-32">
       <div className="max-w-[1440px] mx-auto px-8 lg:px-14">
         {/* Header */}
         <div className="text-center mb-16">
@@ -275,7 +275,7 @@ function HotelsSection() {
           </h2>
           <p
             className="text-[#2F2F2F]/60 text-lg max-w-xl mx-auto"
-            style={{ fontFamily: "'Cormorant Garamond', serif" }}
+            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
             {h.subheading}
           </p>
@@ -312,7 +312,7 @@ function HotelsSection() {
                 </div>
                 <p
                   className="text-[#2F2F2F]/60 text-base italic mb-4 leading-relaxed"
-                  style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                  style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
                 >
                   {hotel.quote}
                 </p>
@@ -331,7 +331,7 @@ function HotelsSection() {
                       </svg>
                       <span
                         className="text-[#2F2F2F]/60 text-sm leading-snug"
-                        style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                        style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
                       >
                         {perk}
                       </span>
@@ -383,7 +383,7 @@ function SpecialtiesSection() {
               <div className="absolute bottom-0 left-0 right-0 p-5 transition-all duration-500 group-hover:opacity-0 group-hover:translate-y-2">
                 <p
                   className="text-white text-base italic"
-                  style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                  style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
                 >
                   {item.label}
                 </p>
@@ -393,13 +393,13 @@ function SpecialtiesSection() {
                 <div className="w-8 h-0.5 bg-[#bfaf8a] mb-3" />
                 <p
                   className="text-white text-lg italic mb-2 leading-snug"
-                  style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                  style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
                 >
                   {item.label}
                 </p>
                 <p
                   className="text-white/80 text-sm leading-relaxed"
-                  style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                  style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
                 >
                   {item.description}
                 </p>
@@ -437,7 +437,7 @@ function PhilosophySection() {
         <div className="max-w-3xl mx-auto mb-16 pl-8 border-l-4 border-[#bfaf8a]">
           <p
             className="text-[#2F2F2F] bta-h3 italic leading-relaxed"
-            style={{ fontFamily: "'Cormorant Garamond', serif" }}
+            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
             {p.quote}
           </p>
@@ -458,7 +458,7 @@ function PhilosophySection() {
               </h4>
               <p
                 className="text-[#2F2F2F]/60 text-base leading-relaxed"
-                style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
               >
                 {pillar.body}
               </p>
@@ -524,7 +524,7 @@ function ExperiencesSection() {
                 </h3>
                 <p
                   className="text-white/60 text-base leading-relaxed mb-6"
-                  style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                  style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
                 >
                   {trip.description}
                 </p>
@@ -590,7 +590,7 @@ function WhyWorkSection() {
                   </h4>
                   <p
                     className="text-[#2F2F2F]/60 text-base leading-relaxed"
-                    style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                    style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
                   >
                     {benefit.body}
                   </p>
@@ -645,7 +645,7 @@ function TestimonialsSection() {
         {/* Quote */}
         <blockquote
           className="text-white/80 text-xl md:text-2xl italic leading-relaxed mb-8"
-          style={{ fontFamily: "'Cormorant Garamond', serif" }}
+          style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
         >
           "{current.quote}"
         </blockquote>
@@ -657,7 +657,7 @@ function TestimonialsSection() {
           </p>
           <p
             className="text-white/40 text-sm mt-1"
-            style={{ fontFamily: "'Cormorant Garamond', serif" }}
+            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
             {current.trip}
           </p>
@@ -715,7 +715,7 @@ function ContactSection() {
   };
 
   return (
-    <section id="contact" className="bg-[#edeae4] py-24 lg:py-32">
+    <section id="contact" className="bg-[#edeac4] py-24 lg:py-32">
       <div className="max-w-[1440px] mx-auto px-8 lg:px-14 grid lg:grid-cols-2 gap-16">
         {/* Left — Contact Form */}
         <div>
@@ -734,7 +734,7 @@ function ContactSection() {
           </h2>
           <p
             className="text-[#2F2F2F]/60 text-lg mb-10"
-            style={{ fontFamily: "'Cormorant Garamond', serif" }}
+            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
             {c.subheading}
           </p>
@@ -743,7 +743,7 @@ function ContactSection() {
             <div className="bg-[#bfaf8a]/10 border border-[#bfaf8a]/30 p-8 text-center">
               <p
                 className="text-[#2F2F2F] text-xl italic"
-                style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
               >
                 Thank you! Julie will be in touch within 24 hours.
               </p>
@@ -758,7 +758,7 @@ function ContactSection() {
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   required
                   className="w-full bg-white border border-[#2F2F2F]/10 px-5 py-3.5 text-[#2F2F2F] placeholder:text-[#2F2F2F]/40 focus:outline-none focus:border-[#bfaf8a] transition-colors"
-                  style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                  style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
                 />
                 <input
                   type="email"
@@ -767,7 +767,7 @@ function ContactSection() {
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   required
                   className="w-full bg-white border border-[#2F2F2F]/10 px-5 py-3.5 text-[#2F2F2F] placeholder:text-[#2F2F2F]/40 focus:outline-none focus:border-[#bfaf8a] transition-colors"
-                  style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                  style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
                 />
               </div>
               <input
@@ -776,7 +776,7 @@ function ContactSection() {
                 value={formData.phone}
                 onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                 className="w-full bg-white border border-[#2F2F2F]/10 px-5 py-3.5 text-[#2F2F2F] placeholder:text-[#2F2F2F]/40 focus:outline-none focus:border-[#bfaf8a] transition-colors"
-                style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
               />
               <input
                 type="text"
@@ -784,7 +784,7 @@ function ContactSection() {
                 value={formData.destination}
                 onChange={(e) => setFormData({ ...formData, destination: e.target.value })}
                 className="w-full bg-white border border-[#2F2F2F]/10 px-5 py-3.5 text-[#2F2F2F] placeholder:text-[#2F2F2F]/40 focus:outline-none focus:border-[#bfaf8a] transition-colors"
-                style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
               />
               <textarea
                 placeholder={c.fields.messagePlaceholder}
@@ -792,7 +792,7 @@ function ContactSection() {
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 rows={5}
                 className="w-full bg-white border border-[#2F2F2F]/10 px-5 py-3.5 text-[#2F2F2F] placeholder:text-[#2F2F2F]/40 focus:outline-none focus:border-[#bfaf8a] transition-colors resize-none"
-                style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
               />
               <button
                 type="submit"
@@ -821,7 +821,7 @@ function ContactSection() {
           </h3>
           <p
             className="text-white/60 text-lg leading-relaxed mb-10"
-            style={{ fontFamily: "'Cormorant Garamond', serif" }}
+            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
             {c.club.body}
           </p>
@@ -847,7 +847,7 @@ function ClosingBanner() {
       <div className="relative z-10 text-center px-8 max-w-3xl mx-auto">
         <p
           className="text-white text-2xl md:bta-h3 italic leading-relaxed mb-4"
-          style={{ fontFamily: "'Cormorant Garamond', serif" }}
+          style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
         >
           {cb.quote}
         </p>

@@ -116,7 +116,7 @@ export default function PartnerDetail() {
   // 404 fallback
   if (!partner) {
     return (
-      <div className="bg-[#EDEAE4] min-h-screen flex flex-col items-center justify-center">
+      <div className="bg-[#edeac4] min-h-screen flex flex-col items-center justify-center">
         <NavBar />
         <div className="text-center py-40">
           <h1 className="font-display bta-h3 text-[#384959] mb-4">
@@ -133,7 +133,7 @@ export default function PartnerDetail() {
   }
 
   return (
-    <div className="bg-[#EDEAE4] min-h-screen">
+    <div className="bg-[#edeac4] min-h-screen">
       <NavBar />
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
@@ -193,7 +193,7 @@ export default function PartnerDetail() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-stretch">
 
             {/* Left — benefits text + pills */}
-            <div className="bg-[#EDEAE4] py-16 pr-0 lg:pr-12 flex flex-col justify-center">
+            <div className="bg-[#edeac4] py-16 pr-0 lg:pr-12 flex flex-col justify-center">
               <p className="bta-eyebrow mb-3">Exclusive Inclusions</p>
               <h2 className="font-display bta-h3 text-[#384959] uppercase tracking-wider mb-3">
                 {partner.name} Benefits

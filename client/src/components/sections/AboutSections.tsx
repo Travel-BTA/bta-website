@@ -124,13 +124,13 @@ export function CuratedHotelsSection() {
         <div>
           <p
             className="text-[#faf9f6] bta-h2 leading-tight"
-            style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontWeight: 400 }}
+            style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic", fontWeight: 400 }}
           >
             {curatedHotels.scriptLine1}
           </p>
           <p
             className="text-[#faf9f6] bta-h2 leading-tight"
-            style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontWeight: 400 }}
+            style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic", fontWeight: 400 }}
           >
             {curatedHotels.scriptLine2}
           </p>

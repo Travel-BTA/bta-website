@@ -5,7 +5,7 @@
  * - max-w-[1440px] mx-auto px-8 lg:px-14 container
  * - FAF0F6 Linen White background, white alternating sections
  * - Allura script eyebrows, Instrument Serif headings
- * - Cormorant Garamond body, font-smallcaps labels
+ * - Playfair Display body, font-smallcaps labels
  * - Gold #bfaf8a accents throughout
  * - 3-column portrait grid (4 on xl), generous gap-10 lg:gap-14 spacing
  * - Uniform 3:4 portrait cards — same size for every advisor
@@ -83,7 +83,7 @@ function AdvisorCard({ advisor }: { advisor: Advisor }) {
   return (
     <Link href={advisor.href ?? "#"} className="group block">
       {/* Portrait photo — 3:4 ratio, same for all */}
-      <div className="relative overflow-hidden aspect-[3/4]" style={{ background: "#edeae4" }}>
+      <div className="relative overflow-hidden aspect-[3/4]" style={{ background: "#edeac4" }}>
         <img
           src={advisor.photo}
           alt={advisor.name}
@@ -115,7 +115,7 @@ function AdvisorCard({ advisor }: { advisor: Advisor }) {
         {advisor.title && (
           <p
             className="text-[#bfaf8a] text-[0.65rem] tracking-[0.1em] mt-1 italic"
-            style={{ fontFamily: "'Cormorant Garamond', serif" }}
+            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
             {advisor.title}
           </p>
@@ -149,7 +149,7 @@ function SectionHeader({ eyebrow, heading, sub }: { eyebrow: string; heading: st
       {sub && (
         <p
           className="text-[#2F2F2F]/60 text-lg leading-relaxed mt-6 max-w-2xl"
-          style={{ fontFamily: "'Cormorant Garamond', serif" }}
+          style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
         >
           {sub}
         </p>
@@ -219,7 +219,7 @@ function MissionTabs() {
         {/* Content */}
         <p
           className="text-white/75 text-xl md:text-2xl leading-relaxed max-w-3xl"
-          style={{ fontFamily: "'Cormorant Garamond', serif" }}
+          style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
         >
           {current.content}
         </p>
@@ -283,20 +283,20 @@ export default function OurPeople() {
             <div>
               <p
                 className="text-[#2F2F2F]/70 text-lg leading-relaxed mb-6"
-                style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
               >
                 Boutique Travel Advisors™ is a luxury travel company headquartered in Scottsdale, AZ. Our advisors specialize in designing once-in-a-lifetime experiences for individuals, families, and teams that elevate, inspire, and transform.
               </p>
               <p
                 className="text-[#2F2F2F]/60 text-lg leading-relaxed mb-10"
-                style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
               >
                 As a Virtuoso Travel Agency, our partnerships with the world's most respected suppliers allow our guests access to exclusive amenities, VIP experiences, and exceptional service. We aren't simply travel agents — we are curators and transformational itinerary designers.
               </p>
               {/* Quote — mirrors Julie Rose blockquote */}
               <blockquote
                 className="border-l-2 border-[#bfaf8a] pl-6 text-[#2F2F2F]/60 text-xl italic leading-relaxed"
-                style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
               >
                 "To move, to breathe, to fly, to float, to gain all while you give, to roam the roads of lands remote: to travel is to live."
                 <footer className="font-smallcaps text-[#bfaf8a] text-xs tracking-[0.15em] uppercase mt-3 not-italic">

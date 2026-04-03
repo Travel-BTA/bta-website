@@ -38,7 +38,7 @@ export function JournalSection() {
           >
             {journal.headline}
           </h2>
-          <p className="font-body text-[#faf9f6]/60 text-xl" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+          <p className="font-body text-[#faf9f6]/60 text-xl" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
             {journal.subheadline}
           </p>
         </div>
@@ -101,7 +101,7 @@ function ReviewCard({ item, index }: { item: typeof testimonials[0]; index: numb
       {/* Context */}
       <p
         className="font-body text-[#384959]/60 text-base italic mb-4 leading-relaxed"
-        style={{ fontFamily: "'Cormorant Garamond', serif" }}
+        style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
       >
         {item.context}
       </p>
@@ -118,7 +118,7 @@ function ReviewCard({ item, index }: { item: typeof testimonials[0]; index: numb
       <div className="flex items-center justify-between">
         <p
           className="font-script text-[#384959]/60 text-lg"
-          style={{ fontFamily: "'Allura', 'Cormorant Garamond', serif" }}
+          style={{ fontFamily: "'Allura', cursive" }}
         >
           — {item.author}
         </p>
@@ -183,7 +183,7 @@ function LiveReviewCard({ review }: { review: LiveReview }) {
       {/* Summary */}
       <p
         className="font-body text-[#384959]/70 text-sm leading-relaxed flex-1 mb-4"
-        style={{ fontFamily: "'Cormorant Garamond', serif" }}
+        style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
       >
         {summary}
       </p>
@@ -236,7 +236,7 @@ export function TestimonialsSection() {
 
   if (isLoading) {
     return (
-      <section className="bg-[#edeae4] py-24 px-6">
+      <section className="bg-[#edeac4] py-24 px-6">
         <div className="max-w-[1440px] mx-auto text-center">
           <p className="text-[#bfaf8a]">Loading reviews...</p>
         </div>
@@ -248,13 +248,13 @@ export function TestimonialsSection() {
   const duplicatedReviews = [...reviews, ...reviews];
 
   return (
-    <section className="bg-[#edeae4] py-24 px-6 overflow-hidden">
+    <section className="bg-[#edeac4] py-24 px-6 overflow-hidden">
       <div className="max-w-[1440px] mx-auto">
         {/* Header */}
         <div className="text-center mb-14">
           <p
             className="font-script text-[#bfaf8a] text-3xl mb-3"
-            style={{ fontFamily: "'Allura', 'Cormorant Garamond', serif" }}
+            style={{ fontFamily: "'Allura', cursive" }}
           >
             Client Stories
           </p>
@@ -306,7 +306,7 @@ export function InstagramSection() {
         <div className="text-center mb-12 px-4">
           <p
             className="font-script text-[#faf9f6]/80 text-3xl mb-3"
-            style={{ fontFamily: "'Allura', 'Cormorant Garamond', serif" }}
+            style={{ fontFamily: "'Allura', cursive" }}
           >
             {instagram.eyebrow}
           </p>
@@ -347,13 +347,13 @@ export function InstagramSection() {
 // ─── "Your Next Journey Starts Today" section ──────────────────────────────────
 export function NextJourneySection() {
   return (
-    <section className="bg-[#edeae4] py-24 px-6">
+    <section className="bg-[#edeac4] py-24 px-6">
       <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-24 items-center">
         {/* Left: Text */}
         <div>
           <p
             className="font-script text-[#bfaf8a] text-3xl md:text-4xl mb-4"
-            style={{ fontFamily: "'Allura', 'Cormorant Garamond', serif" }}
+            style={{ fontFamily: "'Allura', cursive" }}
           >
             Your next adventure awaits
           </p>
@@ -365,7 +365,7 @@ export function NextJourneySection() {
           </h2>
           <p
             className="font-body text-[#2F2F2F]/70 text-xl leading-relaxed mb-10"
-            style={{ fontFamily: "'Cormorant Garamond', serif" }}
+            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
             Every extraordinary journey begins with a single conversation. Let our expert advisors craft a bespoke itinerary tailored to your dreams, your pace, and your vision of the perfect escape.
           </p>
@@ -399,7 +399,7 @@ export function FinalCtaSection() {
       <div className="relative text-center px-6">
         <p
           className="font-script text-[#faf9f6]/90 text-3xl md:text-4xl mb-5"
-          style={{ fontFamily: "'Allura', 'Cormorant Garamond', serif" }}
+          style={{ fontFamily: "'Allura', cursive" }}
         >
           {finalCta.subheadline}
         </p>
@@ -435,7 +435,7 @@ export function FooterSection() {
             </div>
             <p
               className="font-body text-[#faf9f6]/50 text-base mb-7 leading-relaxed"
-              style={{ fontFamily: "'Cormorant Garamond', serif" }}
+              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
             >
               {footer.tagline}
             </p>
@@ -479,7 +479,7 @@ export function FooterSection() {
                   <a
                     href={link.href}
                     className="font-body text-[#faf9f6]/55 text-base hover:text-[#bfaf8a] transition-colors"
-                    style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                    style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
                   >
                     {link.label}
                   </a>
@@ -497,7 +497,7 @@ export function FooterSection() {
                   <a
                     href={link.href}
                     className="font-body text-[#faf9f6]/55 text-base hover:text-[#bfaf8a] transition-colors"
-                    style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                    style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
                   >
                     {link.label}
                   </a>
@@ -515,7 +515,7 @@ export function FooterSection() {
                 type="email"
                 placeholder="Your email address here"
                 className="flex-1 bg-transparent px-4 py-3 font-body text-[#faf9f6] text-sm placeholder:text-[#faf9f6]/40 focus:outline-none"
-                style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
               />
               <button className="bg-transparent border-l border-white/20 px-4 py-3 text-[#faf9f6]/60 hover:text-[#bfaf8a] transition-colors">
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -529,7 +529,7 @@ export function FooterSection() {
               <a
                 href={`tel:${footer.contact.phone}`}
                 className="flex items-center gap-3 font-body text-[#faf9f6]/55 text-base hover:text-[#bfaf8a] transition-colors"
-                style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
               >
                 <svg className="w-4 h-4 flex-shrink-0 text-[#faf9f6]/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -539,7 +539,7 @@ export function FooterSection() {
               <a
                 href={`mailto:${footer.contact.email}`}
                 className="flex items-center gap-3 font-body text-[#faf9f6]/55 text-base hover:text-[#bfaf8a] transition-colors"
-                style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
               >
                 <svg className="w-4 h-4 flex-shrink-0 text-[#faf9f6]/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -548,7 +548,7 @@ export function FooterSection() {
               </a>
               <p
                 className="font-body text-[#faf9f6]/40 text-sm mt-3"
-                style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
               >
                 {footer.contact.virtuoso}
               </p>

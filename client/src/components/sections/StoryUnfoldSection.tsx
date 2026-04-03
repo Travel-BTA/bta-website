@@ -30,13 +30,13 @@ export const storyUnfoldItineraries = [
 
 export function StoryUnfoldSection() {
   return (
-    <section className="bg-[#edeae4] py-24 px-6">
+    <section className="bg-[#edeac4] py-24 px-6">
       <div className="max-w-[1440px] mx-auto">
         {/* Header — left aligned */}
         <div className="text-left mb-14">
           <p
             className="font-script text-[#bfaf8a] bta-h2 mb-3"
-            style={{ fontFamily: "'Allura', 'Cormorant Garamond', serif" }}
+            style={{ fontFamily: "'Allura', cursive" }}
           >
             Begin your journey
           </p>

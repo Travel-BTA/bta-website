@@ -1,5 +1,5 @@
 // Destinations page BTA top requested destinations for 2026 & 2027
-// Brand: #2f2f2f | #faf9f6 | #edeae4 | #384959 | #bfaf8a
+// Brand: #2f2f2f | #faf9f6 | #edeac4 | #384959 | #bfaf8a
 // Layout: Full-bleed hero → intro → destination grid with hover reveals → CTA
 
 import { Link } from "wouter";
@@ -138,18 +138,18 @@ export default function Destinations() {
         />
         <div className="relative z-10 w-full px-8 md:px-16 pb-16">
           {/* Breadcrumb */}
-          <p className="text-xs tracking-[0.25em] uppercase mb-4" style={{ color: "#bfaf8a", fontFamily: "'Cormorant Garamond', serif" }}>
+          <p className="text-xs tracking-[0.25em] uppercase mb-4" style={{ color: "#bfaf8a", fontFamily: "'Playfair Display', Georgia, serif" }}>
             <Link href="/" className="hover:underline">Home</Link>
             <span className="mx-2">›</span>
             Destinations
           </p>
-          <p className="bta-h3 mb-2" style={{ color: "#bfaf8a", fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}>
+          <p className="bta-h3 mb-2" style={{ color: "#bfaf8a", fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic" }}>
             Where Will You Go Next?
           </p>
-          <h1 className="bta-h1 md:bta-h1 text-white mb-6" style={{ fontFamily: "'Cormorant Garamond', serif", letterSpacing: "-0.02em" }}>
+          <h1 className="bta-h1 md:bta-h1 text-white mb-6" style={{ fontFamily: "'Playfair Display', Georgia, serif", letterSpacing: "-0.02em" }}>
             Destinations
           </h1>
-          <p className="text-white/80 max-w-xl text-base leading-relaxed" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+          <p className="text-white/80 max-w-xl text-base leading-relaxed" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
             Our most requested destinations for 2026 and 2027 each one chosen for its depth, its beauty, and the extraordinary experiences only a trusted advisor can unlock.
           </p>
         </div>
@@ -158,13 +158,13 @@ export default function Destinations() {
       {/* Intro */}
       <section className="py-16 px-8 md:px-16 max-w-4xl mx-auto text-center">
         <div className="w-12 h-px mx-auto mb-8" style={{ backgroundColor: "#bfaf8a" }} />
-        <p className="text-sm tracking-[0.2em] uppercase mb-4" style={{ color: "#bfaf8a", fontFamily: "'Cormorant Garamond', serif" }}>
+        <p className="text-sm tracking-[0.2em] uppercase mb-4" style={{ color: "#bfaf8a", fontFamily: "'Playfair Display', Georgia, serif" }}>
           Curated for 2026 &amp; 2027
         </p>
-        <h2 className="bta-h2 font-light mb-6" style={{ color: "#384959", fontFamily: "'Cormorant Garamond', serif" }}>
+        <h2 className="bta-h2 font-light mb-6" style={{ color: "#384959", fontFamily: "'Playfair Display', Georgia, serif" }}>
           The World, Thoughtfully Edited
         </h2>
-        <p className="text-base leading-relaxed" style={{ color: "#2f2f2f", fontFamily: "'Cormorant Garamond', serif", fontSize: "1.1rem" }}>
+        <p className="text-base leading-relaxed" style={{ color: "#2f2f2f", fontFamily: "'Playfair Display', Georgia, serif", fontSize: "1.1rem" }}>
           These are the destinations our advisors are most excited about right now places where we have deep relationships, insider access, and the knowledge to design a journey that goes far beyond what any booking platform can offer. Each destination supports local communities and charitable causes that matter.
         </p>
       </section>
@@ -180,19 +180,19 @@ export default function Destinations() {
 
       {/* CTA */}
       <section className="py-20 px-8 text-center" style={{ backgroundColor: "#384959" }}>
-        <p className="text-sm tracking-[0.2em] uppercase mb-4" style={{ color: "#bfaf8a", fontFamily: "'Cormorant Garamond', serif" }}>
+        <p className="text-sm tracking-[0.2em] uppercase mb-4" style={{ color: "#bfaf8a", fontFamily: "'Playfair Display', Georgia, serif" }}>
           Ready to Begin?
         </p>
-        <h2 className="bta-h2 font-light text-white mb-6" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+        <h2 className="bta-h2 font-light text-white mb-6" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
           Let's Design Your Journey
         </h2>
-        <p className="text-white/70 max-w-lg mx-auto mb-10 leading-relaxed" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.05rem" }}>
+        <p className="text-white/70 max-w-lg mx-auto mb-10 leading-relaxed" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "1.05rem" }}>
           Every destination above is one we know intimately. Tell us where you want to go and we'll craft an itinerary that exceeds every expectation.
         </p>
         <Link href="/contact">
           <button
             className="px-10 py-4 text-sm tracking-[0.2em] uppercase transition-all duration-300 hover:opacity-80"
-            style={{ backgroundColor: "#bfaf8a", color: "#faf9f6", fontFamily: "'Cormorant Garamond', serif", letterSpacing: "0.15em" }}
+            style={{ backgroundColor: "#bfaf8a", color: "#faf9f6", fontFamily: "'Playfair Display', Georgia, serif", letterSpacing: "0.15em" }}
           >
             Start Planning
           </button>
@@ -206,7 +206,7 @@ function DestinationCard({ dest, featured }: { dest: typeof DESTINATIONS[0]; fea
   return (
     <div
       className={`group relative overflow-hidden ${featured ? "md:col-span-2" : ""}`}
-      style={{ backgroundColor: "#edeae4" }}
+      style={{ backgroundColor: "#edeac4" }}
     >
       {/* Image */}
       <div className={`relative overflow-hidden ${featured ? "h-[480px]" : "h-[320px]"}`}>
@@ -222,23 +222,23 @@ function DestinationCard({ dest, featured }: { dest: typeof DESTINATIONS[0]; fea
         {/* Year badge */}
         <div
           className="absolute top-6 right-6 px-3 py-1 text-xs tracking-[0.15em] uppercase"
-          style={{ backgroundColor: "#bfaf8a", color: "#faf9f6", fontFamily: "'Cormorant Garamond', serif" }}
+          style={{ backgroundColor: "#bfaf8a", color: "#faf9f6", fontFamily: "'Playfair Display', Georgia, serif" }}
         >
           {dest.year}
         </div>
         {/* Region */}
         <p
           className="absolute top-6 left-6 text-xs tracking-[0.2em] uppercase"
-          style={{ color: "rgba(255,255,255,0.8)", fontFamily: "'Cormorant Garamond', serif" }}
+          style={{ color: "rgba(255,255,255,0.8)", fontFamily: "'Playfair Display', Georgia, serif" }}
         >
           {dest.region}
         </p>
         {/* Name overlay */}
         <div className="absolute bottom-0 left-0 right-0 p-8">
-          <p className="text-lg italic mb-1" style={{ color: "#bfaf8a", fontFamily: "'Cormorant Garamond', serif" }}>
+          <p className="text-lg italic mb-1" style={{ color: "#bfaf8a", fontFamily: "'Playfair Display', Georgia, serif" }}>
             {dest.tagline}
           </p>
-          <h3 className="bta-h3 font-light text-white" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+          <h3 className="bta-h3 font-light text-white" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
             {dest.name}
           </h3>
         </div>
@@ -246,19 +246,19 @@ function DestinationCard({ dest, featured }: { dest: typeof DESTINATIONS[0]; fea
 
       {/* Content */}
       <div className="p-8">
-        <p className="text-base leading-relaxed mb-6" style={{ color: "#2f2f2f", fontFamily: "'Cormorant Garamond', serif", fontSize: "1rem" }}>
+        <p className="text-base leading-relaxed mb-6" style={{ color: "#2f2f2f", fontFamily: "'Playfair Display', Georgia, serif", fontSize: "1rem" }}>
           {dest.description}
         </p>
         {/* Highlights */}
         <div className="mb-6">
-          <p className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: "#bfaf8a", fontFamily: "'Cormorant Garamond', serif" }}>
+          <p className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: "#bfaf8a", fontFamily: "'Playfair Display', Georgia, serif" }}>
             What We Curate
           </p>
           <div className="grid grid-cols-2 gap-2">
             {dest.highlights.map((h) => (
               <div key={h} className="flex items-start gap-2">
                 <span className="mt-1.5 w-1 h-1 rounded-full flex-shrink-0" style={{ backgroundColor: "#bfaf8a" }} />
-                <span className="text-sm" style={{ color: "#2f2f2f", fontFamily: "'Cormorant Garamond', serif" }}>{h}</span>
+                <span className="text-sm" style={{ color: "#2f2f2f", fontFamily: "'Playfair Display', Georgia, serif" }}>{h}</span>
               </div>
             ))}
           </div>
@@ -266,7 +266,7 @@ function DestinationCard({ dest, featured }: { dest: typeof DESTINATIONS[0]; fea
         <Link href="/contact">
           <button
             className="text-xs tracking-[0.2em] uppercase border px-6 py-3 transition-all duration-300 hover:opacity-70"
-            style={{ borderColor: "#384959", color: "#384959", fontFamily: "'Cormorant Garamond', serif" }}
+            style={{ borderColor: "#384959", color: "#384959", fontFamily: "'Playfair Display', Georgia, serif" }}
           >
             Plan This Journey
           </button>

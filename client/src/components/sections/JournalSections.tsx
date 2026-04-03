@@ -237,7 +237,7 @@ export function FooterSection() {
               <div className="font-smallcaps text-[9px] tracking-[0.25em] uppercase opacity-70">BOUTIQUE</div>
               <div
                 className="text-[28px] leading-none mt-[-2px]"
-                style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", color: "#faf9f6" }}
+                style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic", color: "#faf9f6" }}
               >
                 travel
               </div>

@@ -270,7 +270,7 @@ export default function LandJourneys() {
             </p>
 
             {/* Journey details */}
-            <div className="grid grid-cols-2 gap-6 mb-10 border-t border-b border-[#edeae4] py-8">
+            <div className="grid grid-cols-2 gap-6 mb-10 border-t border-b border-[#edeac4] py-8">
               {landJourneysFeaturedJourney.details.map((d, i) => (
                 <div key={i}>
                   <p className="text-[#bfaf8a] text-xs tracking-[0.2em] uppercase mb-1">

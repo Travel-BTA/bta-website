@@ -11,11 +11,11 @@
  *   Charcoal Ink:    #2F2F2F  → primary body text on light backgrounds
  *
  * Typography:
- *   Display (H1):  Playfair Display — large, uppercase, serif
- *   Script:        Cormorant Garamond italic — eyebrow labels, script accents
- *   Heading (H2):  Playfair Display — uppercase, tracked
- *   Body:          Cormorant Garamond — elegant serif body
- *   Labels:        Cormorant SC — small caps for nav/labels
+ *   H1 (hero):     Instrument Serif — uppercase, architectural display
+ *   Script:        Allura — decorative italic script accents
+ *   H2/H3 (heads): Playfair Display SemiBold Italic / Regular
+ *   Body:          Playfair Display Regular — elegant serif body
+ *   Labels:        Playfair Display — small caps / tracked uppercase
  */
 
 @import "tailwindcss";
@@ -29,7 +29,7 @@
   --color-bta-gold-dark:  oklch(0.68 0.055 87.4);   /* #bfaf8a/80 — Champagne Gold hover */
   --color-bta-aegean:     oklch(0.40 0.035 247.2);  /* #384959 — Aegean Blue */
   --color-bta-linen:      oklch(0.98 0.004 91.6);   /* #faf9f6 — Linen White */
-  --color-bta-stone:      oklch(0.94 0.009 84.6);   /* #edeae4 — Warm Stone */
+  --color-bta-stone:      oklch(0.94 0.009 84.6);   /* #edeac4 — Warm Stone */
   --color-bta-charcoal:   oklch(0.31 0.000 263.3);  /* #2f2f2f — Charcoal Ink */
   --color-bta-navy:       oklch(0.40 0.035 247.2);  /* #384959 — Aegean Blue (dark sections) */
 
@@ -95,7 +95,7 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-family: 'Playfair Display', Georgia, serif;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -151,27 +151,27 @@
   }
 
   .font-script {
-    font-family: 'Cormorant Garamond', Georgia, serif;
-    font-style: italic;
+    font-family: 'Allura', cursive;
+    font-style: normal;
     font-weight: 400;
   }
 
   .font-body {
-    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-family: 'Playfair Display', Georgia, serif;
     font-weight: 400;
   }
 
   .font-smallcaps {
-    font-family: 'Cormorant SC', 'Cormorant Garamond', Georgia, serif;
+    font-family: 'Playfair Display', Georgia, serif;
     font-weight: 400;
     letter-spacing: 0.12em;
   }
 
-  /* BTA Section Eyebrow Label — Champagne Gold italic */
+  /* BTA Section Eyebrow Label — Allura script, Champagne Gold */
   .bta-eyebrow {
-    font-family: 'Cormorant Garamond', Georgia, serif;
-    font-style: italic;
-    font-size: 1.25rem;
+    font-family: 'Allura', cursive;
+    font-style: normal;
+    font-size: 1.5rem;
     color: #BFAF8A;
     letter-spacing: 0.02em;
   }
@@ -182,7 +182,7 @@
     padding: 0.6rem 2rem;
     border: 1px solid rgba(255,255,255,0.8);
     color: white;
-    font-family: 'Cormorant SC', 'Cormorant Garamond', Georgia, serif;
+    font-family: 'Playfair Display', Georgia, serif;
     font-size: 0.75rem;
     letter-spacing: 0.18em;
     text-transform: uppercase;
@@ -199,7 +199,7 @@
     padding: 0.6rem 2rem;
     border: 1px solid #BFAF8A;
     color: #BFAF8A;
-    font-family: 'Cormorant SC', 'Cormorant Garamond', Georgia, serif;
+    font-family: 'Playfair Display', Georgia, serif;
     font-size: 0.75rem;
     letter-spacing: 0.18em;
     text-transform: uppercase;
@@ -217,7 +217,7 @@
     padding: 0.65rem 2.5rem;
     background: #BFAF8A;
     color: white;
-    font-family: 'Cormorant SC', 'Cormorant Garamond', Georgia, serif;
+    font-family: 'Playfair Display', Georgia, serif;
     font-size: 0.75rem;
     letter-spacing: 0.18em;
     text-transform: uppercase;
@@ -243,39 +243,40 @@
      All heading and body text should use these classes instead of ad-hoc
      inline styles or scattered Tailwind size utilities.
 
-     H1  — Playfair Display, light (300), 72px desktop / 48px mobile
+     H1  — Instrument Serif, regular (400), uppercase, 72px desktop / 48px mobile
             Used for: hero page titles only
-     H2  — Playfair Display, regular (400), 42px desktop / 30px mobile
+     H2  — Playfair Display SemiBold Italic (600i), 42px desktop / 30px mobile
             Used for: section headings, major content breaks
-     H3  — Playfair Display, regular (400), 28px desktop / 22px mobile
+     H3  — Playfair Display Regular (400), 28px desktop / 22px mobile
             Used for: card titles, sub-section headings
-     H4  — Cormorant SC small caps, 13px, tracked
+     H4  — Playfair Display, 13px, tracked uppercase
             Used for: eyebrow labels, category tags, nav items
-     Script — Cormorant Garamond italic, 28px desktop / 20px mobile
+     Script — Allura, 28px desktop / 20px mobile
             Used for: decorative script lines above H1/H2
-     Body — Cormorant Garamond, 18px / line-height 1.8
+     Body — Playfair Display Regular, 18px / line-height 1.8
             Used for: all paragraph text
   ─────────────────────────────────────────────────────────────────────────── */
 
-  /* H1 — Hero page titles */
+  /* H1 — Hero page titles: Instrument Serif uppercase */
   .bta-h1 {
-    font-family: 'Playfair Display', Georgia, serif;
-    font-weight: 300;
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-weight: 400;
     font-size: clamp(2.75rem, 6vw, 4.5rem); /* 44px → 72px */
     line-height: 1.08;
-    letter-spacing: -0.01em;
+    letter-spacing: 0.02em;
   }
 
-  /* H2 — Section headings */
+  /* H2 — Section headings: Playfair Display SemiBold Italic */
   .bta-h2 {
     font-family: 'Playfair Display', Georgia, serif;
-    font-weight: 400;
+    font-weight: 600;
+    font-style: italic;
     font-size: clamp(1.75rem, 3.5vw, 2.625rem); /* 28px → 42px */
     line-height: 1.2;
     letter-spacing: 0.01em;
   }
 
-  /* H3 — Card / sub-section titles */
+  /* H3 — Card / sub-section titles: Playfair Display Regular */
   .bta-h3 {
     font-family: 'Playfair Display', Georgia, serif;
     font-weight: 400;
@@ -284,9 +285,9 @@
     letter-spacing: 0.01em;
   }
 
-  /* H4 — Eyebrow labels, category tags, small caps */
+  /* H4 — Eyebrow labels, category tags, tracked uppercase */
   .bta-h4 {
-    font-family: 'Cormorant SC', 'Cormorant Garamond', Georgia, serif;
+    font-family: 'Playfair Display', Georgia, serif;
     font-weight: 400;
     font-size: 0.8125rem; /* 13px */
     letter-spacing: 0.2em;
@@ -294,28 +295,28 @@
     line-height: 1.5;
   }
 
-  /* Script — decorative italic lines above headings */
+  /* Script — Allura decorative script lines above headings */
   .bta-script {
-    font-family: 'Cormorant Garamond', Georgia, serif;
-    font-style: italic;
+    font-family: 'Allura', cursive;
+    font-style: normal;
     font-weight: 400;
-    font-size: clamp(1.25rem, 2.5vw, 1.75rem); /* 20px → 28px */
+    font-size: clamp(1.5rem, 3vw, 2.25rem); /* 24px → 36px — Allura renders smaller */
     line-height: 1.3;
     letter-spacing: 0.01em;
   }
 
-  /* Body — paragraph text */
+  /* Body — paragraph text: Playfair Display Regular */
   .bta-body {
-    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-family: 'Playfair Display', Georgia, serif;
     font-weight: 400;
     font-size: clamp(1rem, 1.5vw, 1.125rem); /* 16px → 18px */
     line-height: 1.8;
     letter-spacing: 0.01em;
   }
 
-  /* Body large — lead paragraphs, intro text */
+  /* Body large — lead paragraphs, intro text: Playfair Display Regular */
   .bta-body-lg {
-    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-family: 'Playfair Display', Georgia, serif;
     font-weight: 400;
     font-size: clamp(1.125rem, 1.75vw, 1.25rem); /* 18px → 20px */
     line-height: 1.85;
@@ -330,7 +331,7 @@
      body text, generous spacing, and brand-consistent colors throughout.
   ─────────────────────────────────────────────────────────────────────────── */
   .blog-body {
-    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-family: 'Playfair Display', Georgia, serif;
     font-size: 1.2rem;
     line-height: 1.9;
     color: #2F2F2F;
@@ -342,6 +343,7 @@
   .blog-body p {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+    font-family: 'Playfair Display', Georgia, serif;
     font-size: 1.2rem;
     line-height: 1.9;
   }
@@ -391,7 +393,7 @@
   .blog-body h2 {
     font-size: clamp(1.65rem, 3vw, 2.25rem);
     padding-bottom: 0.6rem;
-    border-bottom: 1px solid #edeae4;
+    border-bottom: 1px solid #edeac4;
   }
 
   /* H3 — sub-section headings */
@@ -499,7 +501,7 @@
   /* ── Horizontal Rule ── */
   .blog-body hr {
     border: none;
-    border-top: 1px solid #edeae4;
+    border-top: 1px solid #edeac4;
     margin: 3rem 0;
   }
 
@@ -525,7 +527,7 @@
 
   .blog-body td {
     padding: 0.75rem 1rem;
-    border-bottom: 1px solid #edeae4;
+    border-bottom: 1px solid #edeac4;
     vertical-align: top;
   }
 
@@ -570,7 +572,7 @@
      as an editorial aside rather than a hard-sell advertisement. */
   .blog-body .vip-box,
   .blog-body [class*="vip"] {
-    border: 1px solid #edeae4 !important;
+    border: 1px solid #edeac4 !important;
     background: #faf9f6 !important;
     border-radius: 0 !important;
   }
@@ -586,7 +588,7 @@
     padding: 9px 24px !important;
     background-color: #2f2f2f !important;
     color: #ffffff !important;
-    font-family: 'Cormorant SC', 'Cormorant Garamond', serif !important;
+    font-family: 'Playfair Display', Georgia, serif !important;
     font-size: 0.7rem !important;
     letter-spacing: 0.18em !important;
     text-transform: uppercase !important;
@@ -612,7 +614,7 @@
     padding: 0.75rem 2.5rem;
     background: #2F2F2F;
     color: #fff;
-    font-family: 'Cormorant SC', 'Cormorant Garamond', serif;
+    font-family: 'Playfair Display', Georgia, serif;
     font-size: 0.75rem;
     letter-spacing: 0.2em;
     text-transform: uppercase;

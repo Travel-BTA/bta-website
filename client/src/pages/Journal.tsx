@@ -58,7 +58,7 @@ const FILTER_LABELS = [
 function ImageMosaic({ imageUrl, title, large }: { imageUrl: string; title: string; large?: boolean }) {
   const h = large ? "h-[480px]" : "h-[260px] sm:h-[300px]";
   if (!imageUrl) {
-    return <div className={`w-full ${h} bg-[#edeae4]`} />;
+    return <div className={`w-full ${h} bg-[#edeac4]`} />;
   }
   return (
     <div className={`w-full ${h} overflow-hidden`}>
@@ -111,7 +111,7 @@ function FeaturedCard({ post }: { post: Post }) {
         <div className="flex items-center justify-between mb-3">
           <span
             className="text-[#bfaf8a] text-xs tracking-[0.16em] uppercase"
-            style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
+            style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic" }}
           >
             {primaryCategory}
           </span>
@@ -140,14 +140,14 @@ function FeaturedCard({ post }: { post: Post }) {
         </div>
         <p
           className="text-[#2F2F2F]/60 text-base leading-relaxed mb-6 line-clamp-3"
-          style={{ fontFamily: "'Cormorant Garamond', serif" }}
+          style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
         >
           {decodeHtml(post.excerpt)}
         </p>
         <Link
           href={`/journal/${post.slug}`}
           className="text-[#bfaf8a] text-xs tracking-[0.16em] uppercase flex items-center gap-2 hover:gap-3 transition-all"
-          style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
+          style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic" }}
         >
           Read Article <span>→</span>
         </Link>
@@ -169,7 +169,7 @@ function GridCard({ post }: { post: Post }) {
       <div className="flex items-center justify-between mb-2">
         <span
           className="text-[#bfaf8a] text-xs tracking-[0.14em] uppercase"
-          style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
+          style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic" }}
         >
           {primaryCategory}
         </span>
@@ -201,7 +201,7 @@ function GridCard({ post }: { post: Post }) {
       {/* Excerpt */}
       <p
         className="text-[#2F2F2F]/55 text-sm leading-relaxed mb-4 line-clamp-3"
-        style={{ fontFamily: "'Cormorant Garamond', serif" }}
+        style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
       >
         {decodeHtml(post.excerpt)}
       </p>
@@ -209,7 +209,7 @@ function GridCard({ post }: { post: Post }) {
       <Link
         href={`/journal/${post.slug}`}
         className="text-[#bfaf8a] text-xs tracking-[0.14em] uppercase flex items-center gap-1.5 hover:gap-2.5 transition-all"
-        style={{ fontFamily: "'Cormorant Garamond', serif" }}
+        style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
       >
         READ MORE <span>→</span>
       </Link>
@@ -231,12 +231,12 @@ function NewsletterSection() {
       </h2>
       <p
         className="text-white/70 text-lg leading-relaxed mb-8 max-w-lg mx-auto"
-        style={{ fontFamily: "'Cormorant Garamond', serif" }}
+        style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
       >
         Subscribe to receive travel inspiration, destination guides, and exclusive offers delivered to your inbox monthly.
       </p>
       {submitted ? (
-        <p className="text-[#bfaf8a] text-base italic" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+        <p className="text-[#bfaf8a] text-base italic" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
           Thank you for subscribing!
         </p>
       ) : (
@@ -251,7 +251,7 @@ function NewsletterSection() {
             onChange={e => setEmail(e.target.value)}
             placeholder="Your email address"
             className="flex-1 px-5 py-3 bg-white text-[#2F2F2F] text-sm outline-none border-0 placeholder:text-[#2F2F2F]/40"
-            style={{ fontFamily: "'Cormorant Garamond', serif" }}
+            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           />
           <button
             type="submit"
@@ -261,7 +261,7 @@ function NewsletterSection() {
           </button>
         </form>
       )}
-      <p className="text-white/30 text-xs mt-4" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+      <p className="text-white/30 text-xs mt-4" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
         No spam, unsubscribe anytime. Privacy policy applies.
       </p>
     </div>
@@ -322,20 +322,20 @@ export default function Journal() {
         </h1>
         <p
           className="text-white/90 text-xl md:text-2xl italic mb-4"
-          style={{ fontFamily: "'Cormorant Garamond', serif" }}
+          style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
         >
           Insights, guides, and inspiration for your next journey
         </p>
         <p
           className="text-white/75 text-base max-w-xl mx-auto leading-relaxed"
-          style={{ fontFamily: "'Cormorant Garamond', serif" }}
+          style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
         >
           Explore destination guides, travel tips, and cultural insights from years of luxury travel planning and personal exploration around the world.
         </p>
       </div>
 
       {/* ── Filter Bar ──────────────────────────────────────────────────── */}
-      <div className="bg-[#faf9f6] border-b border-[#edeae4] px-6 py-4">
+      <div className="bg-[#faf9f6] border-b border-[#edeac4] px-6 py-4">
         <div className="max-w-[1280px] mx-auto flex flex-wrap items-center justify-between gap-4">
           {/* Category pills */}
           <div className="flex flex-wrap items-center gap-1">
@@ -348,21 +348,21 @@ export default function Journal() {
                     ? "bg-[#bfaf8a] text-white"
                     : "text-[#2F2F2F]/50 hover:text-[#bfaf8a]"
                 }`}
-                style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
               >
                 {label}
               </button>
             ))}
           </div>
           {/* Search */}
-          <div className="flex items-center border border-[#edeae4] bg-white px-4 py-2 gap-2 min-w-[240px]">
+          <div className="flex items-center border border-[#edeac4] bg-white px-4 py-2 gap-2 min-w-[240px]">
             <input
               type="text"
               value={searchQuery}
               onChange={e => { setSearchQuery(e.target.value); setPage(1); }}
               placeholder="Search articles, destinations, topics..."
               className="flex-1 text-sm text-[#2F2F2F] outline-none bg-transparent placeholder:text-[#2F2F2F]/35"
-              style={{ fontFamily: "'Cormorant Garamond', serif" }}
+              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
             />
             <Search className="w-4 h-4 text-[#bfaf8a]" />
           </div>
@@ -377,7 +377,7 @@ export default function Journal() {
           </div>
         ) : filtered.length === 0 ? (
           <div className="max-w-[1280px] mx-auto px-6 py-24 text-center">
-            <p className="text-[#2F2F2F]/40 text-lg italic" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+            <p className="text-[#2F2F2F]/40 text-lg italic" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
               No articles found. Try a different search or category.
             </p>
           </div>
@@ -393,7 +393,7 @@ export default function Journal() {
             {/* Divider */}
             {grid.length > 0 && (
               <div className="max-w-[1280px] mx-auto px-6">
-                <div className="border-t border-[#edeae4] mb-12" />
+                <div className="border-t border-[#edeac4] mb-12" />
               </div>
             )}
 
@@ -414,7 +414,7 @@ export default function Journal() {
                 <button
                   onClick={() => setPage(p => Math.max(1, p - 1))}
                   disabled={page === 1}
-                  className="border border-[#edeae4] px-6 py-2.5 text-[#2F2F2F]/50 text-xs tracking-[0.14em] uppercase hover:border-[#bfaf8a] hover:text-[#bfaf8a] transition-colors disabled:opacity-30"
+                  className="border border-[#edeac4] px-6 py-2.5 text-[#2F2F2F]/50 text-xs tracking-[0.14em] uppercase hover:border-[#bfaf8a] hover:text-[#bfaf8a] transition-colors disabled:opacity-30"
                 >
                   Previous
                 </button>
@@ -425,7 +425,7 @@ export default function Journal() {
                     className={`w-10 h-10 text-xs tracking-[0.14em] transition-colors ${
                       page === n
                         ? "bg-[#bfaf8a] text-white border border-[#bfaf8a]"
-                        : "border border-[#edeae4] text-[#2F2F2F]/50 hover:border-[#bfaf8a] hover:text-[#bfaf8a]"
+                        : "border border-[#edeac4] text-[#2F2F2F]/50 hover:border-[#bfaf8a] hover:text-[#bfaf8a]"
                     }`}
                   >
                     {n}
@@ -434,7 +434,7 @@ export default function Journal() {
                 <button
                   onClick={() => setPage(p => Math.min(totalPages, p + 1))}
                   disabled={page === totalPages}
-                  className="border border-[#edeae4] px-6 py-2.5 text-[#2F2F2F]/50 text-xs tracking-[0.14em] uppercase hover:border-[#bfaf8a] hover:text-[#bfaf8a] transition-colors disabled:opacity-30"
+                  className="border border-[#edeac4] px-6 py-2.5 text-[#2F2F2F]/50 text-xs tracking-[0.14em] uppercase hover:border-[#bfaf8a] hover:text-[#bfaf8a] transition-colors disabled:opacity-30"
                 >
                   Next
                 </button>

@@ -175,7 +175,7 @@ export default function Book() {
                   ))}
                 </div>
 
-                <div className="mt-12 pt-8 border-t border-[#edeae4]">
+                <div className="mt-12 pt-8 border-t border-[#edeac4]">
                   <p className="text-[#2f2f2f] text-sm font-light mb-2">Prefer to speak directly?</p>
                   <a
                     href={`tel:${footer.contact.phone}`}
@@ -203,7 +203,7 @@ export default function Book() {
                       type="text"
                       value={form.firstName}
                       onChange={(e) => setForm({ ...form, firstName: e.target.value })}
-                      className="w-full border-b border-[#edeae4] bg-transparent py-3 text-[#2F2F2F] text-base font-light focus:outline-none focus:border-[#384959] transition-colors placeholder:text-[#edeae4]"
+                      className="w-full border-b border-[#edeac4] bg-transparent py-3 text-[#2F2F2F] text-base font-light focus:outline-none focus:border-[#384959] transition-colors placeholder:text-[#edeac4]"
                       placeholder="Janet"
                     />
                   </div>
@@ -216,7 +216,7 @@ export default function Book() {
                       type="text"
                       value={form.lastName}
                       onChange={(e) => setForm({ ...form, lastName: e.target.value })}
-                      className="w-full border-b border-[#edeae4] bg-transparent py-3 text-[#2F2F2F] text-base font-light focus:outline-none focus:border-[#384959] transition-colors placeholder:text-[#edeae4]"
+                      className="w-full border-b border-[#edeac4] bg-transparent py-3 text-[#2F2F2F] text-base font-light focus:outline-none focus:border-[#384959] transition-colors placeholder:text-[#edeac4]"
                       placeholder="Semenova"
                     />
                   </div>
@@ -233,7 +233,7 @@ export default function Book() {
                       type="email"
                       value={form.email}
                       onChange={(e) => setForm({ ...form, email: e.target.value })}
-                      className="w-full border-b border-[#edeae4] bg-transparent py-3 text-[#2F2F2F] text-base font-light focus:outline-none focus:border-[#384959] transition-colors placeholder:text-[#edeae4]"
+                      className="w-full border-b border-[#edeac4] bg-transparent py-3 text-[#2F2F2F] text-base font-light focus:outline-none focus:border-[#384959] transition-colors placeholder:text-[#edeac4]"
                       placeholder="janet@example.com"
                     />
                   </div>
@@ -245,7 +245,7 @@ export default function Book() {
                       type="tel"
                       value={form.phone}
                       onChange={(e) => setForm({ ...form, phone: e.target.value })}
-                      className="w-full border-b border-[#edeae4] bg-transparent py-3 text-[#2F2F2F] text-base font-light focus:outline-none focus:border-[#384959] transition-colors placeholder:text-[#edeae4]"
+                      className="w-full border-b border-[#edeac4] bg-transparent py-3 text-[#2F2F2F] text-base font-light focus:outline-none focus:border-[#384959] transition-colors placeholder:text-[#edeac4]"
                       placeholder="+1 (555) 000-0000"
                     />
                   </div>
@@ -265,7 +265,7 @@ export default function Book() {
                         className={`px-5 py-2.5 text-sm border transition-all duration-200 ${
                           selectedJourneys.includes(j)
                             ? "bg-[#384959] border-[#384959] text-white"
-                            : "border-[#edeae4] text-[#2f2f2f] hover:border-[#384959] hover:text-[#384959]"
+                            : "border-[#edeac4] text-[#2f2f2f] hover:border-[#384959] hover:text-[#384959]"
                         }`}
                       >
                         {j}
@@ -288,7 +288,7 @@ export default function Book() {
                         className={`px-5 py-2.5 text-sm border transition-all duration-200 ${
                           selectedCount === c
                             ? "bg-[#384959] border-[#384959] text-white"
-                            : "border-[#edeae4] text-[#2f2f2f] hover:border-[#384959] hover:text-[#384959]"
+                            : "border-[#edeac4] text-[#2f2f2f] hover:border-[#384959] hover:text-[#384959]"
                         }`}
                       >
                         {c}
@@ -311,7 +311,7 @@ export default function Book() {
                         className={`px-5 py-2.5 text-sm border transition-all duration-200 ${
                           selectedBudget === b
                             ? "bg-[#bfaf8a] border-[#bfaf8a] text-white"
-                            : "border-[#edeae4] text-[#2f2f2f] hover:border-[#bfaf8a] hover:text-[#bfaf8a]"
+                            : "border-[#edeac4] text-[#2f2f2f] hover:border-[#bfaf8a] hover:text-[#bfaf8a]"
                         }`}
                       >
                         {b}
@@ -329,7 +329,7 @@ export default function Book() {
                     type="text"
                     value={form.travelDates}
                     onChange={(e) => setForm({ ...form, travelDates: e.target.value })}
-                    className="w-full border-b border-[#edeae4] bg-transparent py-3 text-[#2F2F2F] text-base font-light focus:outline-none focus:border-[#384959] transition-colors placeholder:text-[#edeae4]"
+                    className="w-full border-b border-[#edeac4] bg-transparent py-3 text-[#2F2F2F] text-base font-light focus:outline-none focus:border-[#384959] transition-colors placeholder:text-[#edeac4]"
                     placeholder="e.g. October 2026, or flexible"
                   />
                 </div>
@@ -343,7 +343,7 @@ export default function Book() {
                     rows={5}
                     value={form.message}
                     onChange={(e) => setForm({ ...form, message: e.target.value })}
-                    className="w-full border-b border-[#edeae4] bg-transparent py-3 text-[#2F2F2F] text-base font-light focus:outline-none focus:border-[#384959] transition-colors placeholder:text-[#edeae4] resize-none"
+                    className="w-full border-b border-[#edeac4] bg-transparent py-3 text-[#2F2F2F] text-base font-light focus:outline-none focus:border-[#384959] transition-colors placeholder:text-[#edeac4] resize-none"
                     placeholder="Destinations you have in mind, experiences you are looking for, any special occasions..."
                   />
                 </div>

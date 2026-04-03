@@ -7,7 +7,7 @@
  * 3. Seven alternating image/text journey category sections
  * 4. Exclusive Planning Packages CTA
  *
- * Design: BTA brand guide — Instrument Serif headings, Cormorant Garamond body,
+ * Design: BTA brand guide — Instrument Serif headings, Playfair Display body,
  * Champagne Gold #bfaf8a, Aegean Blue #384959, Linen White #faf9f6.
  */
 
@@ -63,7 +63,7 @@ function JourneySection({
           <p
             key={i}
             className="text-[#2F2F2F]/75 text-base md:text-lg leading-relaxed"
-            style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.1rem" }}
+            style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "1.1rem" }}
           >
             {p}
           </p>
@@ -74,7 +74,7 @@ function JourneySection({
           <Link
             href={ctaHref}
             className="inline-flex items-center gap-3 border border-[#bfaf8a] text-[#bfaf8a] px-8 py-3 text-xs tracking-[0.2em] uppercase hover:bg-[#bfaf8a] hover:text-white transition-all duration-300"
-            style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
+            style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic" }}
           >
             {ctaText}
             <span className="text-base">→</span>
@@ -135,7 +135,7 @@ export default function CustomItineraries() {
         <div className="relative z-10 w-full px-8 md:px-16 pb-16 md:pb-24">
           <p
             className="text-[#bfaf8a] text-xs tracking-[0.3em] uppercase mb-4"
-            style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
+            style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic" }}
           >
             Land Journeys
           </p>
@@ -156,7 +156,7 @@ export default function CustomItineraries() {
             <div className="w-16 h-px bg-[#bfaf8a]" />
             <span
               className="text-[#bfaf8a] text-xs tracking-[0.25em] uppercase"
-              style={{ fontFamily: "'Cormorant Garamond', serif" }}
+              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
             >
               Virtuoso Member
             </span>
@@ -165,13 +165,13 @@ export default function CustomItineraries() {
 
           <p
             className="text-[#2F2F2F]/80 text-xl md:text-2xl leading-relaxed mb-8"
-            style={{ fontFamily: "'Cormorant Garamond', serif" }}
+            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
             Are you tired of finding the same cookie-cutter, uninspired itineraries? At BTA, our mission is to create transformational and fully custom travel experiences for our clients. Each itinerary designed by a BTA Virtuoso Advisor will be personally handcrafted to meet your unique needs and expectations. Whether you prefer to explore a new destination by air, land, or sea, you can rest assured that your journey will be unforgettable.
           </p>
           <p
             className="text-[#2F2F2F]/65 text-lg leading-relaxed"
-            style={{ fontFamily: "'Cormorant Garamond', serif" }}
+            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
             Our team is here to ensure that your travel goals are achieved. Our{" "}
             <Link href="#" className="text-[#bfaf8a] underline underline-offset-4 hover:text-[#bfaf8a] transition-colors">
@@ -183,7 +183,7 @@ export default function CustomItineraries() {
       </section>
 
       {/* ── Thin gold divider ─────────────────────────────────────────────── */}
-      <div className="w-full h-px bg-[#edeae4]" />
+      <div className="w-full h-px bg-[#edeac4]" />
 
       {/* ── Journey Sections ──────────────────────────────────────────────── */}
 
@@ -301,7 +301,7 @@ export default function CustomItineraries() {
             <div className="flex-1 h-px bg-[#bfaf8a]/40" />
             <span
               className="text-[#bfaf8a] text-xs tracking-[0.3em] uppercase whitespace-nowrap"
-              style={{ fontFamily: "'Cormorant Garamond', serif" }}
+              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
             >
               Our Services
             </span>
@@ -323,7 +323,7 @@ export default function CustomItineraries() {
             <div>
               <p
                 className="text-[#2F2F2F]/75 text-lg leading-relaxed mb-8"
-                style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
               >
                 BTA provides a 15-minute discovery call to all inquiries. If you choose to work with BTA, we offer a variety of service packages.{" "}
                 <Link
@@ -338,7 +338,7 @@ export default function CustomItineraries() {
               <Link
                 href="/contact"
                 className="inline-flex items-center gap-3 border border-[#bfaf8a] text-[#bfaf8a] px-8 py-3 text-xs tracking-[0.2em] uppercase hover:bg-[#bfaf8a] hover:text-white transition-all duration-300"
-                style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
+                style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic" }}
               >
                 Schedule Your Discovery Call
                 <span className="text-base">→</span>
