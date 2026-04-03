@@ -32,7 +32,7 @@ function Router() {
   return (
     <Switch>
       {/* Core pages */}
-      <Route path={"/"} component={HomeV2} />
+      <Route path={"/"} component={HomeLegacy} />
 
       {/* Land Journeys — parent + sub-pages */}
       <Route path={"/land-journeys"} component={LandJourneys} />
@@ -43,8 +43,8 @@ function Router() {
       <Route path={"/book"} component={Book} />
       <Route path={"/about"} component={About} />
       {/* Merged from boutique-travel-advisors repo */}
-      {/* HomeLegacy — original BTA project homepage, kept at /home-legacy */}
-      <Route path={"/home-legacy"} component={HomeLegacy} />
+      {/* HomeV2 — boutique-travel-advisors repo homepage, kept at /home-v2 */}
+      <Route path={"/home-v2"} component={HomeV2} />
       {/* Cruise pages */}
       <Route path={"/cruises"} component={CruisesHub} />
       <Route path={"/cruises/luxury-ocean"} component={LuxuryOcean} />
