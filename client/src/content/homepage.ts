@@ -116,7 +116,7 @@ export const givesBack = {
   headline: "TRAVEL THAT GIVES BACK",
   body: "Connection matters—to people, to places, and communities. Through select partnerships, your journeys quietly support arts, education, sports, travel and community. A portion of every booking supports local charities including childhood cancer, Make-A-Wish, veterans, and arts & culture where we travel.",
   // Children smiling — community impact
-  image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/children-charity_9d8a6581.png",
+  image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/travel-gives-back_ac83c349.webp",
 };
 
 export const experienceStrip = {
