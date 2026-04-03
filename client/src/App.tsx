@@ -74,6 +74,13 @@ function Router() {
       <Route path={"/private-jet-charters"} component={PrivateJetCharters} />
       {/* Fallback */}
       <Route path={"/404"} component={NotFound} />
+      {/*
+        WHY: WordPress blog posts live at root-level slugs (e.g. /lake-garda-holidays-planning-guide).
+        This catch-all route intercepts any unmatched path, treats it as a blog post slug,
+        and passes it to BlogPost.tsx which fetches from the WordPress REST API.
+        It must be LAST so it never intercepts named routes above.
+      */}
+      <Route path={"/:slug"} component={BlogPost} />
       <Route component={NotFound} />
     </Switch>
   );
