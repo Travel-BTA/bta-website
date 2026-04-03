@@ -21,7 +21,7 @@ import {
 } from "@/content/privateJet";
 
 // ─── Brand tokens ─────────────────────────────────────────────────────────────
-const AEGEAN   = "#7982A2";
+const AEGEAN   = "#384959";
 const GOLD     = "#9C886A";
 const DARK     = "#040619";
 
@@ -199,7 +199,7 @@ export default function PrivateJetCharters() {
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#040619]/60 hidden md:block" />
                 </div>
                 {/* Content */}
-                <div className="p-8 md:p-12" style={{ backgroundColor: "#0a0f2e" }}>
+                <div className="p-8 md:p-12" style={{ backgroundColor: "#384959" }}>
                   <h3
                     className="font-['Playfair_Display',serif] font-normal text-white mb-4"
                     style={{ fontSize: "clamp(22px, 3vw, 36px)" }}
