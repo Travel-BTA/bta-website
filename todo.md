@@ -76,3 +76,8 @@
 ## Philosophy Section Figma Match
 - [x] Update PhilosophySection in AboutSections.tsx to match Figma: gold heading, bold italic eyebrow, Lucide icons, bold item titles, Learn More button
 - [x] Update PhilosophySection in AboutSectionsV2.tsx to match same Figma design
+
+## Image and Copy Fixes
+- [x] Replace plane image in Philosophy section with hot air balloon over savanna image
+- [x] Fix grammar in Destinations page intro: add em dash after "right now" — "...right now — places where..."
+- [x] Update homepage stats: Trips Booked → 4,000+, Travel Designed → $60M+

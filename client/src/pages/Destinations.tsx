@@ -165,7 +165,7 @@ export default function Destinations() {
           The World, Thoughtfully Edited
         </h2>
         <p className="text-base leading-relaxed" style={{ color: "#2f2f2f", fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 400, fontSize: "1.05rem" }}>
-          These are the destinations our advisors are most excited about right now places where we have deep relationships, insider access, and the knowledge to design a journey that goes far beyond what any booking platform can offer. Each destination supports local communities and charitable causes that matter.
+          These are the destinations our advisors are most excited about right now — places where we have deep relationships, insider access, and the knowledge to design a journey that goes far beyond what any booking platform can offer. Each destination supports local communities and charitable causes that matter.
         </p>
       </section>
 

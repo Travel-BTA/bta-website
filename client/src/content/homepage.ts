@@ -51,8 +51,8 @@ export const whoWeAre = {
 
 export const stats = [
   { value: "125+", label: "Countries Planned" },
-  { value: "3,000+", label: "Trips Booked" },
-  { value: "$40M+", label: "in Travel Designed" },
+  { value: "4,000+", label: "Trips Booked" },
+  { value: "$60M+", label: "in Travel Designed" },
 ];
 
 export const philosophy = {
@@ -82,8 +82,8 @@ export const philosophy = {
     },
   ],
   cta: { label: "LEARN MORE", href: "/about" },
-  // Airplane window view. the journey begins
-  image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/airplane-window_98d2995f.webp",
+  // Hot air balloon over African savanna at sunset. couple with champagne. elevated, aspirational
+  image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/philosophy_3_elevated_experiences_ce33cc2b.jpg",
 };
 
 export const curatedHotels = {
