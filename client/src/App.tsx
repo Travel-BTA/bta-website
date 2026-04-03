@@ -30,6 +30,8 @@ import PhilanthropicInitiatives from "./pages/PhilanthropicInitiatives";
 import PreferredPartners from "./pages/PreferredPartners";
 import PartnerDetail from "./pages/PartnerDetail";
 import PrivateJetCharters from "./pages/PrivateJetCharters";
+import Destinations from "./pages/Destinations";
+import Experiences from "./pages/Experiences";
 
 function Router() {
   return (
@@ -72,6 +74,9 @@ function Router() {
       <Route path={"/preferred-partners/:id"} component={PartnerDetail} />
       {/* Private Jet Charters */}
       <Route path={"/private-jet-charters"} component={PrivateJetCharters} />
+      {/* Destinations & Experiences */}
+      <Route path={"/destinations"} component={Destinations} />
+      <Route path={"/experiences"} component={Experiences} />
       {/* Fallback */}
       <Route path={"/404"} component={NotFound} />
       {/*
