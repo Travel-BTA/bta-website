@@ -42,7 +42,7 @@ export const safariWildlifeData: JourneySubPageData = {
       description:
         "Navigate the world's largest inland delta by mokoro canoe and private boat. Exclusive-use camps, exceptional guiding, and wildlife density that rivals anywhere on the continent.",
       imageUrl:
-        "https://images.unsplash.com/photo-1551009175-8a68da93d5f9?w=800&q=80&auto=format&fit=crop",
+        "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/okavango-delta-5U29fRfhTJZooJsxx6vyY2.webp",
     },
     {
       name: "Kruger & Sabi Sand, South Africa",
@@ -50,7 +50,7 @@ export const safariWildlifeData: JourneySubPageData = {
       description:
         "The Big Five in one of Africa's most celebrated private game reserves. Intimate lodges, twice-daily drives with expert rangers, and the rare opportunity to track leopard on foot.",
       imageUrl:
-        "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=800&q=80&auto=format&fit=crop",
+        "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/kruger-sabi-sand-Xej2Krv3UcWYLjtmNwsCJC.webp",
     },
   ],
   featuredItinerary: {

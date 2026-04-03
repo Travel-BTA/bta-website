@@ -213,7 +213,7 @@ export default function JourneySubPage({ data }: Props) {
                 >
                   {dest.name}
                 </h3>
-                <p className="text-[#5A5A5A] text-sm leading-relaxed font-light">
+                <p className="text-[#5A5A5A] text-base leading-relaxed font-light">
                   {dest.description}
                 </p>
               </div>
@@ -303,7 +303,7 @@ export default function JourneySubPage({ data }: Props) {
                 >
                   {item.title}
                 </h3>
-                <p className="text-white/60 text-sm leading-relaxed font-light">{item.description}</p>
+                <p className="text-white/60 text-base leading-relaxed font-light">{item.description}</p>
               </div>
             ))}
           </div>
