@@ -173,8 +173,8 @@ export const testimonials = [
 
 export const instagram = {
   eyebrow: "Follow the Journey",
-  handle: "@BOUTIQUETRAVELADVISORS",
-  href: "https://www.instagram.com/boutiquetraveladvisors",
+  handle: "@travelbta",
+  href: "https://www.instagram.com/travelbta",
   // Replace with actual Instagram feed screenshots
   photos: [
     "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&q=80&auto=format&fit=crop",
