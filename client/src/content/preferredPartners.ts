@@ -23,9 +23,9 @@ export const partnersHero = {
 
 export const partnersIntro = {
   heading: "Why Book Through BTA",
-  body: "As a Virtuoso member agency and certified preferred partner with seven of the world's leading hotel programs, BTA advisors carry rate codes and direct relationships that translate into tangible, bookable value for every client. From daily breakfast and resort credits to suite upgrades and early check-in, these are not aspirational perks — they are guaranteed inclusions on every qualifying stay.",
+  body: "As a Virtuoso member agency and certified preferred partner with many of the world's leading hotel programs, BTA advisors carry rate codes and direct relationships that translate into tangible, bookable value for every client. From daily breakfast and resort credits to suite upgrades and early check-in, these are not aspirational perks — they are guaranteed inclusions on every qualifying stay.",
   stats: [
-    { value: "7", label: "Preferred Programs" },
+    { value: "3,000+", label: "Preferred Partners" },
     { value: "5,000+", label: "Partner Properties" },
     { value: "$500+", label: "Avg. Added Value Per Stay" },
   ],

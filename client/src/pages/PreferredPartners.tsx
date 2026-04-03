@@ -165,12 +165,13 @@ export default function PreferredPartners() {
       {/* ── Category filter tabs ──────────────────────────────────────────── */}
       <section className="pb-6 px-6">
         <div className="container mx-auto">
-          <div className="flex flex-wrap justify-center gap-2">
+          {/* Horizontal scroll on mobile so tabs never wrap or orphan */}
+          <div className="flex overflow-x-auto scrollbar-hide gap-2 justify-start md:justify-center pb-1">
             {categories.map((cat) => (
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
-                className={`font-smallcaps text-xs tracking-widest px-6 py-2.5 border transition-all duration-200 ${
+                className={`font-smallcaps text-xs tracking-widest px-6 py-2.5 border transition-all duration-200 flex-shrink-0 ${
                   activeCategory === cat
                     ? "bg-[#384959] text-white border-[#384959]"
                     : "bg-transparent text-[#384959] border-[#384959]/40 hover:border-[#384959]"
@@ -209,13 +210,14 @@ export default function PreferredPartners() {
       {/* ── Favourite properties ─────────────────────────────────────────────────── */}
       <section className="py-20 px-6 bg-[#FAF8F5]">
         <div className="container mx-auto">
-          {/* Section heading with decorative lines */}
-          <div className="flex items-center gap-4 mb-10">
-            <div className="flex-1 h-px bg-[#BFAF8A]/40" />
-            <h2 className="font-display text-2xl text-[#384959] uppercase tracking-widest whitespace-nowrap text-center">
+          {/* Section heading — stacks on mobile, inline with rules on desktop */}
+          <div className="flex flex-col md:flex-row items-center gap-4 mb-10">
+            <div className="hidden md:block flex-1 h-px bg-[#BFAF8A]/40" />
+            <h2 className="font-display text-xl md:text-2xl text-[#384959] uppercase tracking-widest text-center">
               A Few of Our Favourite Properties
             </h2>
-            <div className="flex-1 h-px bg-[#BFAF8A]/40" />
+            <div className="hidden md:block flex-1 h-px bg-[#BFAF8A]/40" />
+            <div className="md:hidden w-12 h-px bg-[#BFAF8A] mx-auto" />
           </div>
 
           {/* 2 rows × 3 columns grid */}
