@@ -30,7 +30,7 @@ export const storyUnfoldItineraries = [
 
 export function StoryUnfoldSection() {
   return (
-    <section className="bg-[#edcac4] py-24 px-6">
+    <section className="bg-[#EBE9E3] py-24 px-6">
       <div className="max-w-[1440px] mx-auto">
         {/* Header — left aligned */}
         <div className="text-left mb-14">

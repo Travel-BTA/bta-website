@@ -117,7 +117,7 @@ export default function BlogPost() {
     <PageLayout>
 
       {/* ── Article Header ─────────────────────────────────────────────── */}
-      <header className="bg-white pt-16 pb-10 px-6 border-b border-[#edcac4]">
+      <header className="bg-white pt-16 pb-10 px-6 border-b border-[#EBE9E3]">
         <div className="max-w-3xl mx-auto text-center">
           {/* Meta row */}
           <div className="flex items-center justify-center gap-5 mb-8 text-sm text-[#2F2F2F]/50">
@@ -163,7 +163,7 @@ export default function BlogPost() {
           )}
 
           {/* Divider */}
-          <div className="w-16 h-px bg-[#edcac4] mx-auto mb-10" />
+          <div className="w-16 h-px bg-[#EBE9E3] mx-auto mb-10" />
 
           {/* Author */}
           <div className="flex items-center justify-center gap-4">
@@ -174,7 +174,7 @@ export default function BlogPost() {
                 className="w-14 h-14 object-cover"
               />
             ) : (
-              <div className="w-14 h-14 bg-[#edcac4] flex items-center justify-center">
+              <div className="w-14 h-14 bg-[#EBE9E3] flex items-center justify-center">
                 <span className="text-[#bfa88a] text-xl font-light" style={{ fontFamily: "'Playfair Display', serif" }}>
                   {post.author.name.charAt(0)}
                 </span>
@@ -205,7 +205,7 @@ export default function BlogPost() {
 
       {/* ── Share bar ────────────────────────────────────────────── */}
       <div className="max-w-[720px] mx-auto px-6 pb-12">
-        <div className="flex items-center justify-between border-t border-[#edcac4] pt-8">
+        <div className="flex items-center justify-between border-t border-[#EBE9E3] pt-8">
           <span
             className="text-[#bfa88a] text-sm italic"
             style={{ fontFamily: "'Cormorant Garamond', serif" }}
@@ -220,7 +220,7 @@ export default function BlogPost() {
                 navigator.clipboard.writeText(window.location.href);
               }
             }}
-            className="flex items-center gap-2 border border-[#edcac4] px-4 py-2 text-[#2F2F2F]/60 text-sm hover:border-[#bfa88a] hover:text-[#bfa88a] transition-colors"
+            className="flex items-center gap-2 border border-[#EBE9E3] px-4 py-2 text-[#2F2F2F]/60 text-sm hover:border-[#bfa88a] hover:text-[#bfa88a] transition-colors"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <circle cx="18" cy="5" r="3" strokeWidth="1.5" />

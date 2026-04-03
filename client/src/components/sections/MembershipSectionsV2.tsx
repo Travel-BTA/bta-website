@@ -106,7 +106,7 @@ export function VipAccessSection() {
   };
 
   return (
-    <section className="bg-[#edcac4]">
+    <section className="bg-[#EBE9E3]">
       {/* Two-column layout: photo left | booking right */}
       <div className="flex flex-col lg:flex-row min-h-[600px]">
 
@@ -121,7 +121,7 @@ export function VipAccessSection() {
         </div>
 
         {/* RIGHT — Title + native booking form */}
-        <div className="flex-1 bg-[#edcac4] flex flex-col justify-center px-8 md:px-12 lg:px-16 py-12 lg:py-16">
+        <div className="flex-1 bg-[#EBE9E3] flex flex-col justify-center px-8 md:px-12 lg:px-16 py-12 lg:py-16">
           {/* Headline */}
           <h2
             className="bta-section-title text-[#bfa88a] text-3xl md:text-4xl lg:text-5xl leading-tight mb-3"

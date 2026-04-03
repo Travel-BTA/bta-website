@@ -256,7 +256,7 @@ function StatsBar() {
 function HotelsSection() {
   const h = advisor.hotels;
   return (
-    <section className="bg-[#edcac4] py-24 lg:py-32">
+    <section className="bg-[#EBE9E3] py-24 lg:py-32">
       <div className="max-w-[1440px] mx-auto px-8 lg:px-14">
         {/* Header */}
         <div className="text-center mb-16">
@@ -715,7 +715,7 @@ function ContactSection() {
   };
 
   return (
-    <section id="contact" className="bg-[#edcac4] py-24 lg:py-32">
+    <section id="contact" className="bg-[#EBE9E3] py-24 lg:py-32">
       <div className="max-w-[1440px] mx-auto px-8 lg:px-14 grid lg:grid-cols-2 gap-16">
         {/* Left — Contact Form */}
         <div>

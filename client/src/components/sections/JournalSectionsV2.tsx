@@ -236,7 +236,7 @@ export function TestimonialsSection() {
 
   if (isLoading) {
     return (
-      <section className="bg-[#edcac4] py-24 px-6">
+      <section className="bg-[#EBE9E3] py-24 px-6">
         <div className="max-w-[1440px] mx-auto text-center">
           <p className="text-[#bfa88a]">Loading reviews...</p>
         </div>
@@ -248,7 +248,7 @@ export function TestimonialsSection() {
   const duplicatedReviews = [...reviews, ...reviews];
 
   return (
-    <section className="bg-[#edcac4] py-24 px-6 overflow-hidden">
+    <section className="bg-[#EBE9E3] py-24 px-6 overflow-hidden">
       <div className="max-w-[1440px] mx-auto">
         {/* Header */}
         <div className="text-center mb-14">
@@ -347,7 +347,7 @@ export function InstagramSection() {
 // ─── "Your Next Journey Starts Today" section ──────────────────────────────────
 export function NextJourneySection() {
   return (
-    <section className="bg-[#edcac4] py-24 px-6">
+    <section className="bg-[#EBE9E3] py-24 px-6">
       <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-24 items-center">
         {/* Left: Text */}
         <div>

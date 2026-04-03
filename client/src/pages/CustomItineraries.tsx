@@ -183,7 +183,7 @@ export default function CustomItineraries() {
       </section>
 
       {/* ── Thin gold divider ─────────────────────────────────────────────── */}
-      <div className="w-full h-px bg-[#edcac4]" />
+      <div className="w-full h-px bg-[#EBE9E3]" />
 
       {/* ── Journey Sections ──────────────────────────────────────────────── */}
 

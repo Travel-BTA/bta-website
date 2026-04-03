@@ -125,7 +125,7 @@ export default function MediaManager() {
   return (
     <div className="min-h-screen bg-[#faf0f6]">
       {/* Header */}
-      <header className="bg-white border-b border-[#edcac4] sticky top-0 z-10 shadow-sm">
+      <header className="bg-white border-b border-[#EBE9E3] sticky top-0 z-10 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-4">
             <Link href="/">
@@ -133,7 +133,7 @@ export default function MediaManager() {
                 ← Back to Site
               </span>
             </Link>
-            <div className="w-px h-5 bg-[#edcac4]" />
+            <div className="w-px h-5 bg-[#EBE9E3]" />
             <h1 className="text-xl font-semibold text-[#2f2f2f] tracking-wide">
               Media Manager
             </h1>
@@ -157,7 +157,7 @@ export default function MediaManager() {
           className={`border-2 border-dashed rounded-xl p-10 text-center cursor-pointer transition-all mb-8 ${
             dragOver
               ? "border-[#bfa88a] bg-[#bfa88a]/10"
-              : "border-[#edcac4] bg-white hover:border-[#bfa88a] hover:bg-[#bfa88a]/5"
+              : "border-[#EBE9E3] bg-white hover:border-[#bfa88a] hover:bg-[#bfa88a]/5"
           }`}
         >
           <div className="text-4xl mb-3">📁</div>
@@ -179,7 +179,7 @@ export default function MediaManager() {
 
         {/* Upload Progress */}
         {uploading.length > 0 && (
-          <div className="bg-white rounded-xl border border-[#edcac4] p-4 mb-8 space-y-2">
+          <div className="bg-white rounded-xl border border-[#EBE9E3] p-4 mb-8 space-y-2">
             <p className="text-sm font-medium text-[#2f2f2f] mb-3">Uploading...</p>
             {uploading.map((u, i) => (
               <div key={i} className="flex items-center gap-3">
@@ -188,7 +188,7 @@ export default function MediaManager() {
                     <span className="truncate max-w-xs">{u.name}</span>
                     <span>{u.status === "done" ? "✓ Done" : u.status === "error" ? "✗ Error" : "Uploading..."}</span>
                   </div>
-                  <div className="h-1.5 bg-[#edcac4] rounded-full overflow-hidden">
+                  <div className="h-1.5 bg-[#EBE9E3] rounded-full overflow-hidden">
                     <div
                       className={`h-full rounded-full transition-all ${
                         u.status === "done" ? "bg-green-500 w-full" :
@@ -210,7 +210,7 @@ export default function MediaManager() {
             placeholder="Search by filename or label..."
             value={labelFilter}
             onChange={(e) => setLabelFilter(e.target.value)}
-            className="border border-[#edcac4] rounded-lg px-4 py-2 text-sm w-72 focus:outline-none focus:border-[#bfa88a] bg-white"
+            className="border border-[#EBE9E3] rounded-lg px-4 py-2 text-sm w-72 focus:outline-none focus:border-[#bfa88a] bg-white"
           />
           <span className="text-sm text-[#384959]/60">
             {filteredFiles?.length ?? 0} file{(filteredFiles?.length ?? 0) !== 1 ? "s" : ""}
@@ -221,7 +221,7 @@ export default function MediaManager() {
         {isLoading ? (
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
             {Array.from({ length: 10 }).map((_, i) => (
-              <div key={i} className="bg-white rounded-xl border border-[#edcac4] aspect-square animate-pulse" />
+              <div key={i} className="bg-white rounded-xl border border-[#EBE9E3] aspect-square animate-pulse" />
             ))}
           </div>
         ) : filteredFiles?.length === 0 ? (
@@ -235,7 +235,7 @@ export default function MediaManager() {
             {filteredFiles?.map((file: any) => (
               <div
                 key={file.id}
-                className="bg-white rounded-xl border border-[#edcac4] overflow-hidden group hover:shadow-md transition-shadow"
+                className="bg-white rounded-xl border border-[#EBE9E3] overflow-hidden group hover:shadow-md transition-shadow"
               >
                 {/* Preview */}
                 <div className="aspect-square bg-[#faf0f6] relative overflow-hidden">

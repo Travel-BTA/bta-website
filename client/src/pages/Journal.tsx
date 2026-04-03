@@ -58,7 +58,7 @@ const FILTER_LABELS = [
 function ImageMosaic({ imageUrl, title, large }: { imageUrl: string; title: string; large?: boolean }) {
   const h = large ? "h-[480px]" : "h-[260px] sm:h-[300px]";
   if (!imageUrl) {
-    return <div className={`w-full ${h} bg-[#edcac4]`} />;
+    return <div className={`w-full ${h} bg-[#EBE9E3]`} />;
   }
   return (
     <div className={`w-full ${h} overflow-hidden`}>
@@ -335,7 +335,7 @@ export default function Journal() {
       </div>
 
       {/* ── Filter Bar ──────────────────────────────────────────────────── */}
-      <div className="bg-[#FAF0F6] border-b border-[#edcac4] px-6 py-4">
+      <div className="bg-[#FAF0F6] border-b border-[#EBE9E3] px-6 py-4">
         <div className="max-w-[1280px] mx-auto flex flex-wrap items-center justify-between gap-4">
           {/* Category pills */}
           <div className="flex flex-wrap items-center gap-1">
@@ -355,7 +355,7 @@ export default function Journal() {
             ))}
           </div>
           {/* Search */}
-          <div className="flex items-center border border-[#edcac4] bg-white px-4 py-2 gap-2 min-w-[240px]">
+          <div className="flex items-center border border-[#EBE9E3] bg-white px-4 py-2 gap-2 min-w-[240px]">
             <input
               type="text"
               value={searchQuery}
@@ -393,7 +393,7 @@ export default function Journal() {
             {/* Divider */}
             {grid.length > 0 && (
               <div className="max-w-[1280px] mx-auto px-6">
-                <div className="border-t border-[#edcac4] mb-12" />
+                <div className="border-t border-[#EBE9E3] mb-12" />
               </div>
             )}
 
@@ -414,7 +414,7 @@ export default function Journal() {
                 <button
                   onClick={() => setPage(p => Math.max(1, p - 1))}
                   disabled={page === 1}
-                  className="border border-[#edcac4] px-6 py-2.5 text-[#2F2F2F]/50 text-xs tracking-[0.14em] uppercase hover:border-[#bfa88a] hover:text-[#bfa88a] transition-colors disabled:opacity-30"
+                  className="border border-[#EBE9E3] px-6 py-2.5 text-[#2F2F2F]/50 text-xs tracking-[0.14em] uppercase hover:border-[#bfa88a] hover:text-[#bfa88a] transition-colors disabled:opacity-30"
                 >
                   Previous
                 </button>
@@ -425,7 +425,7 @@ export default function Journal() {
                     className={`w-10 h-10 text-xs tracking-[0.14em] transition-colors ${
                       page === n
                         ? "bg-[#bfa88a] text-white border border-[#bfa88a]"
-                        : "border border-[#edcac4] text-[#2F2F2F]/50 hover:border-[#bfa88a] hover:text-[#bfa88a]"
+                        : "border border-[#EBE9E3] text-[#2F2F2F]/50 hover:border-[#bfa88a] hover:text-[#bfa88a]"
                     }`}
                   >
                     {n}
@@ -434,7 +434,7 @@ export default function Journal() {
                 <button
                   onClick={() => setPage(p => Math.min(totalPages, p + 1))}
                   disabled={page === totalPages}
-                  className="border border-[#edcac4] px-6 py-2.5 text-[#2F2F2F]/50 text-xs tracking-[0.14em] uppercase hover:border-[#bfa88a] hover:text-[#bfa88a] transition-colors disabled:opacity-30"
+                  className="border border-[#EBE9E3] px-6 py-2.5 text-[#2F2F2F]/50 text-xs tracking-[0.14em] uppercase hover:border-[#bfa88a] hover:text-[#bfa88a] transition-colors disabled:opacity-30"
                 >
                   Next
                 </button>

@@ -29,7 +29,7 @@
   --color-bta-gold-dark:  oklch(0.65 0.06 72);      /* #9E8661 — deeper gold for hover */
   --color-bta-aegean:     oklch(0.35 0.04 230);     /* #384959 — Aegean Blue */
   --color-bta-linen:      oklch(0.96 0.02 340);     /* #FAF0F6 — Linen White */
-  --color-bta-stone:      oklch(0.93 0.01 80);      /* #FAF0F6 — Warm Stone */
+  --color-bta-stone:      oklch(0.93 0.008 91.6);   /* #EBE9E3 — Warm Stone */
   --color-bta-charcoal:   oklch(0.23 0.00 0);       /* #2F2F2F — Charcoal Ink */
   --color-bta-navy:       oklch(0.17 0.04 255);     /* #384959 — Dark Navy (stats bar, footer) */
 
