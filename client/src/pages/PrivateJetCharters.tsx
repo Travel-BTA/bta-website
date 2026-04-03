@@ -8,8 +8,9 @@
  */
 
 import { useState } from "react";
+import { Link } from "wouter";
 import NavBar from "@/components/NavBar";
-import Footer from "@/components/Footer";
+import { footer } from "@/content/homepage";
 import {
   jetHero,
   jetIntro,
@@ -423,7 +424,52 @@ export default function PrivateJetCharters() {
         </div>
       </section>
 
-      <Footer />
+      {/* ── Footer ────────────────────────────────────────────────────── */}
+      <footer className="bg-[#384959] text-white/70 py-16 px-8 md:px-16 lg:px-24">
+        <div className="max-w-[1400px] mx-auto">
+          <div className="grid md:grid-cols-4 gap-12 mb-12">
+            <div className="md:col-span-1">
+              <img
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/bta-logo_aff60fe6.png"
+                alt="Boutique Travel Advisors"
+                className="h-14 w-auto mb-4 brightness-0 invert"
+              />
+              <p className="text-sm leading-relaxed font-light">Creating memories one destination at a time.</p>
+            </div>
+            <div>
+              <p className="text-white tracking-[0.2em] text-xs uppercase mb-6">Explore</p>
+              <ul className="space-y-3 text-sm font-light">
+                {footer.explore.map((l: {label: string; href: string}, i: number) => (
+                  <li key={i}><Link href={l.href} className="hover:text-[#BFAF8A] transition-colors">{l.label}</Link></li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <p className="text-white tracking-[0.2em] text-xs uppercase mb-6">Company</p>
+              <ul className="space-y-3 text-sm font-light">
+                {footer.company.map((l: {label: string; href: string}, i: number) => (
+                  <li key={i}><Link href={l.href} className="hover:text-[#BFAF8A] transition-colors">{l.label}</Link></li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <p className="text-white tracking-[0.2em] text-xs uppercase mb-6">Contact</p>
+              <ul className="space-y-3 text-sm font-light">
+                <li><a href={`tel:${footer.contact.phone}`} className="hover:text-[#BFAF8A] transition-colors">{footer.contact.phone}</a></li>
+                <li><a href={`mailto:${footer.contact.email}`} className="hover:text-[#BFAF8A] transition-colors">{footer.contact.email}</a></li>
+              </ul>
+            </div>
+          </div>
+          <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
+            <p>{footer.copyright}</p>
+            <div className="flex gap-6">
+              {footer.legal.map((l: {label: string; href: string}, i: number) => (
+                <Link key={i} href={l.href} className="hover:text-[#BFAF8A] transition-colors">{l.label}</Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
