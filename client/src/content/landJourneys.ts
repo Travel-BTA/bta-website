@@ -28,7 +28,7 @@ export const landJourneysHero = {
 export const landJourneysIntro = {
   eyebrow: "Bespoke by Design",
   headline: "Travel That Moves You",
-  body: "Are you a discerning traveler seeking to explore the world's most incredible destinations? Whether you dream of adventure on the African plains, a life-changing expedition through the Arctic, or a tranquil escape to a private island — Boutique Travel Advisors designs once-in-a-lifetime experiences for individuals, families, and teams. Stop settling for uninspired vacations. Discover how bespoke travel, explicitly crafted for you, will transform the way you see the world.",
+  body: "Are you a discerning traveler seeking to explore the world's most incredible destinations? Whether you dream of adventure on the African plains, a life-changing expedition through the Arctic, or a tranquil escape to a private island, Boutique Travel Advisors designs once-in-a-lifetime experiences for individuals, families, and teams. Stop settling for uninspired vacations. Discover how bespoke travel, explicitly crafted for you, will transform the way you see the world.",
   cta: { label: "Begin Planning", href: "/book" },
 };
 
