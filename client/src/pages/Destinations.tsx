@@ -140,10 +140,10 @@ export default function Destinations() {
             <span className="mx-2">›</span>
             Destinations
           </p>
-          <p className="text-2xl md:text-3xl mb-2" style={{ color: "#bfaf8a", fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}>
+          <p className="bta-h3 mb-2" style={{ color: "#bfaf8a", fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}>
             Where Will You Go Next?
           </p>
-          <h1 className="text-5xl md:text-7xl font-light text-white mb-6" style={{ fontFamily: "'Cormorant Garamond', serif", letterSpacing: "-0.02em" }}>
+          <h1 className="bta-h1 md:bta-h1 text-white mb-6" style={{ fontFamily: "'Cormorant Garamond', serif", letterSpacing: "-0.02em" }}>
             Destinations
           </h1>
           <p className="text-white/80 max-w-xl text-base leading-relaxed" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
@@ -158,7 +158,7 @@ export default function Destinations() {
         <p className="text-sm tracking-[0.2em] uppercase mb-4" style={{ color: "#bfaf8a", fontFamily: "'Cormorant Garamond', serif" }}>
           Curated for 2026 &amp; 2027
         </p>
-        <h2 className="text-3xl md:text-4xl font-light mb-6" style={{ color: "#384959", fontFamily: "'Cormorant Garamond', serif" }}>
+        <h2 className="bta-h2 font-light mb-6" style={{ color: "#384959", fontFamily: "'Cormorant Garamond', serif" }}>
           The World, Thoughtfully Edited
         </h2>
         <p className="text-base leading-relaxed" style={{ color: "#2f2f2f", fontFamily: "'Cormorant Garamond', serif", fontSize: "1.1rem" }}>
@@ -180,7 +180,7 @@ export default function Destinations() {
         <p className="text-sm tracking-[0.2em] uppercase mb-4" style={{ color: "#bfaf8a", fontFamily: "'Cormorant Garamond', serif" }}>
           Ready to Begin?
         </p>
-        <h2 className="text-3xl md:text-4xl font-light text-white mb-6" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+        <h2 className="bta-h2 font-light text-white mb-6" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
           Let's Design Your Journey
         </h2>
         <p className="text-white/70 max-w-lg mx-auto mb-10 leading-relaxed" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.05rem" }}>
@@ -235,7 +235,7 @@ function DestinationCard({ dest, featured }: { dest: typeof DESTINATIONS[0]; fea
           <p className="text-lg italic mb-1" style={{ color: "#bfaf8a", fontFamily: "'Cormorant Garamond', serif" }}>
             {dest.tagline}
           </p>
-          <h3 className="text-4xl font-light text-white" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+          <h3 className="bta-h3 font-light text-white" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
             {dest.name}
           </h3>
         </div>

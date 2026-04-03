@@ -45,7 +45,7 @@ export default function About() {
           <p className="text-bta-gold font-[Cormorant_Garamond,serif] italic text-lg tracking-[0.2em] mb-3 uppercase">
             {aboutData.hero.subheadline}
           </p>
-          <h1 className="font-[Playfair_Display,serif] text-4xl md:text-6xl text-white uppercase tracking-widest">
+          <h1 className="font-[Playfair_Display,serif] bta-h1 text-white uppercase tracking-widest">
             {aboutData.hero.headline}
           </h1>
         </div>
@@ -57,7 +57,7 @@ export default function About() {
           <p className="text-bta-gold font-[Cormorant_Garamond,serif] italic tracking-[0.25em] text-base uppercase mb-4">
             About Us
           </p>
-          <h2 className="font-[Playfair_Display,serif] text-3xl md:text-4xl text-bta-aegean uppercase tracking-widest mb-10">
+          <h2 className="font-[Playfair_Display,serif] bta-h2 text-bta-aegean uppercase tracking-widest mb-10">
             {aboutData.overview.headline}
           </h2>
 
@@ -114,7 +114,7 @@ export default function About() {
           <p className="text-bta-gold font-[Cormorant_Garamond,serif] italic tracking-[0.25em] text-base uppercase mb-2 text-center">
             The Heart of BTA
           </p>
-          <h2 className="font-[Playfair_Display,serif] text-3xl md:text-4xl text-bta-aegean uppercase tracking-widest mb-10 text-center">
+          <h2 className="font-[Playfair_Display,serif] bta-h2 text-bta-aegean uppercase tracking-widest mb-10 text-center">
             BTA Co-Founders
           </h2>
 
@@ -138,7 +138,7 @@ export default function About() {
                     />
                   </div>
                   <div className="text-center">
-                    <h3 className="font-[Playfair_Display,serif] text-xl text-bta-aegean uppercase tracking-widest">
+                    <h3 className="font-[Playfair_Display,serif] bta-h3 text-bta-aegean uppercase tracking-widest">
                       {advisor.name}
                     </h3>
                     <p className="font-[Cormorant_Garamond,serif] italic text-bta-gold text-base mt-1">
@@ -161,7 +161,7 @@ export default function About() {
 
                   {/* Favorite Things */}
                   <div className="border-t border-bta-gold/30 pt-8">
-                    <h4 className="font-[Cormorant_Garamond,serif] italic text-bta-gold text-xl mb-6">
+                    <h4 className="font-[Cormorant_Garamond,serif] italic text-bta-gold bta-h4 mb-6">
                       A Few of My Favorite Things
                     </h4>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-5">
@@ -204,7 +204,7 @@ export default function About() {
         <p className="text-bta-gold font-[Cormorant_Garamond,serif] italic tracking-[0.25em] text-base uppercase mb-4">
           Ready to Begin?
         </p>
-        <h2 className="font-[Playfair_Display,serif] text-3xl md:text-4xl text-bta-aegean uppercase tracking-widest mb-6">
+        <h2 className="font-[Playfair_Display,serif] bta-h2 text-bta-aegean uppercase tracking-widest mb-6">
           Start Planning Your Journey
         </h2>
         <p className="text-bta-charcoal text-lg max-w-xl mx-auto mb-10">

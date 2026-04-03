@@ -40,7 +40,7 @@ export function JournalSection() {
         <div className="text-center mb-12">
           <p className="font-script text-[#BFAF8A] text-xl mb-2">{journal.eyebrow}</p>
           <h2
-            className="bta-section-title text-[#faf9f6] text-3xl md:text-4xl mb-4"
+            className="bta-section-title text-[#faf9f6] bta-h2 mb-4"
             style={{ fontWeight: 400 }}
           >
             {journal.headline}
@@ -171,7 +171,7 @@ export function InstagramSection() {
             href={instagram.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="bta-section-title text-[#faf9f6] text-2xl md:text-3xl hover:text-[#faf9f6]/80 transition-colors"
+            className="bta-section-title text-[#faf9f6] bta-h3 hover:text-[#faf9f6]/80 transition-colors"
             style={{ fontWeight: 400 }}
           >
             {instagram.handle}
@@ -212,7 +212,7 @@ export function FinalCtaSection() {
           {finalCta.subheadline}
         </p>
         <h2
-          className="bta-section-title text-[#faf9f6] text-4xl md:text-5xl lg:text-6xl mb-10"
+          className="bta-section-title text-[#faf9f6] bta-h2 lg:bta-h2 mb-10"
           style={{ fontWeight: 400 }}
         >
           {finalCta.headline}

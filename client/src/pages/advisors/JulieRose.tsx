@@ -58,7 +58,7 @@ function HeroSection() {
       {/* Text block */}
       <div className="px-6 pt-10 pb-8">
         <h1
-            className="text-[#2F2F2F] font-heading text-4xl font-light leading-none mb-2 font-display"
+            className="text-[#2F2F2F] font-heading bta-h3 leading-none mb-2 font-display"
         >
           {h.name}
         </h1>
@@ -112,7 +112,7 @@ function HeroSection() {
 
       <div className="relative z-10 w-full max-w-[1440px] mx-auto px-14">
         <h1
-            className="text-white font-heading text-6xl lg:text-7xl font-light leading-none mb-2 font-display"
+            className="text-white font-heading bta-h1 lg:bta-h1 leading-none mb-2 font-display"
         >
           {h.name}
         </h1>
@@ -186,7 +186,7 @@ function MeetSection() {
           </p>
           {/* Heading */}
           <h2
-            className="text-[#2F2F2F] font-heading text-4xl md:text-5xl font-light leading-tight mb-8 font-display"
+            className="text-[#2F2F2F] font-heading bta-h3 md:bta-h1 font-light leading-tight mb-8 font-display"
           >
             {m.heading.split("\n").map((line, i) => (
               <span key={i}>{line}{i < m.heading.split("\n").length - 1 && <br />}</span>
@@ -236,7 +236,7 @@ function StatsBar() {
           {advisor.stats.map((stat, i) => (
             <div key={i} className="text-center lg:px-8">
               <div
-                className="text-[#bfaf8a] text-5xl md:text-6xl font-light mb-2"
+                className="text-[#bfaf8a] bta-h1 md:bta-h2 font-light mb-2"
                 style={{ fontFamily: "'Playfair Display', serif" }}
               >
                 {stat.value}
@@ -267,7 +267,7 @@ function HotelsSection() {
             {h.eyebrow}
           </p>
           <h2
-            className="text-[#2F2F2F] font-heading text-4xl md:text-5xl font-light leading-tight mb-4 font-display"
+            className="text-[#2F2F2F] font-heading bta-h3 md:bta-h1 font-light leading-tight mb-4 font-display"
           >
             {h.heading.split("\n").map((line, i) => (
               <span key={i}>{line}{i < h.heading.split("\n").length - 1 && <br />}</span>
@@ -305,7 +305,7 @@ function HotelsSection() {
                 <div className="flex items-start gap-3 mb-4">
                   <div className="w-0.5 bg-[#bfaf8a] self-stretch mt-1 flex-shrink-0" style={{ minHeight: '2rem' }} />
                   <h3
-            className="text-[#2F2F2F] text-2xl font-light leading-snug font-display"
+            className="text-[#2F2F2F] bta-h3 font-light leading-snug font-display"
                   >
                     {hotel.name}
                   </h3>
@@ -362,7 +362,7 @@ function SpecialtiesSection() {
             {s.eyebrow}
           </p>
           <h2
-            className="text-white font-heading text-4xl md:text-5xl font-light font-display"
+            className="text-white font-heading bta-h3 md:bta-h1 font-light font-display"
           >
             {s.heading}
           </h2>
@@ -427,7 +427,7 @@ function PhilosophySection() {
             {p.eyebrow}
           </p>
           <h2
-            className="text-[#2F2F2F] font-heading text-4xl md:text-5xl font-light mb-8 font-display"
+            className="text-[#2F2F2F] font-heading bta-h3 md:bta-h1 font-light mb-8 font-display"
           >
             {p.heading}
           </h2>
@@ -436,7 +436,7 @@ function PhilosophySection() {
         {/* Central quote — gold left border, no box */}
         <div className="max-w-3xl mx-auto mb-16 pl-8 border-l-4 border-[#bfaf8a]">
           <p
-            className="text-[#2F2F2F] text-2xl md:text-3xl italic leading-relaxed"
+            className="text-[#2F2F2F] bta-h3 italic leading-relaxed"
             style={{ fontFamily: "'Cormorant Garamond', serif" }}
           >
             {p.quote}
@@ -451,7 +451,7 @@ function PhilosophySection() {
                 <PillarIcon icon={pillar.icon} />
               </div>
               <h4
-                className="text-[#2F2F2F] text-lg font-medium mb-3"
+                className="text-[#2F2F2F] bta-h4 font-medium mb-3"
                 style={{ fontFamily: "'Playfair Display', serif" }}
               >
                 {pillar.title}
@@ -485,7 +485,7 @@ function ExperiencesSection() {
             {e.eyebrow}
           </p>
           <h2
-            className="text-white font-heading text-4xl md:text-5xl font-light font-display"
+            className="text-white font-heading bta-h3 md:bta-h1 font-light font-display"
           >
             {e.heading.split("\n").map((line, i) => (
               <span key={i}>{line}{i < e.heading.split("\n").length - 1 && <br />}</span>
@@ -567,7 +567,7 @@ function WhyWorkSection() {
             {w.eyebrow}
           </p>
           <h2
-            className="text-[#2F2F2F] font-heading text-4xl md:text-5xl font-light leading-tight mb-10 font-display"
+            className="text-[#2F2F2F] font-heading bta-h3 md:bta-h1 font-light leading-tight mb-10 font-display"
           >
             {w.heading.split("\n").map((line, i) => (
               <span key={i}>{line}{i < w.heading.split("\n").length - 1 && <br />}</span>
@@ -583,7 +583,7 @@ function WhyWorkSection() {
                 </div>
                 <div>
                   <h4
-                    className="text-[#2F2F2F] text-lg font-medium mb-1"
+                    className="text-[#2F2F2F] bta-h4 font-medium mb-1"
                     style={{ fontFamily: "'Playfair Display', serif" }}
                   >
                     {benefit.title}
@@ -628,7 +628,7 @@ function TestimonialsSection() {
           {t.eyebrow}
         </p>
         <h2
-            className="text-white font-heading text-4xl md:text-5xl font-light leading-tight mb-14 font-display"
+            className="text-white font-heading bta-h3 md:bta-h1 font-light leading-tight mb-14 font-display"
         >
           {t.heading.split("\n").map((line, i) => (
             <span key={i}>{line}{i < t.heading.split("\n").length - 1 && <br />}</span>
@@ -726,7 +726,7 @@ function ContactSection() {
             {c.eyebrow}
           </p>
           <h2
-            className="text-[#2F2F2F] font-heading text-4xl md:text-5xl font-light leading-tight mb-4 font-display"
+            className="text-[#2F2F2F] font-heading bta-h3 md:bta-h1 font-light leading-tight mb-4 font-display"
           >
             {c.heading.split("\n").map((line, i) => (
               <span key={i}>{line}{i < c.heading.split("\n").length - 1 && <br />}</span>
@@ -813,7 +813,7 @@ function ContactSection() {
             {c.club.eyebrow}
           </p>
           <h3
-            className="text-white font-heading text-3xl md:text-4xl font-light leading-tight mb-6 font-display"
+            className="text-white font-heading bta-h2 font-light leading-tight mb-6 font-display"
           >
             {c.club.heading.split("\n").map((line, i) => (
               <span key={i}>{line}{i < c.club.heading.split("\n").length - 1 && <br />}</span>
@@ -846,7 +846,7 @@ function ClosingBanner() {
       <div className="absolute inset-0 bg-[#384959]/65" />
       <div className="relative z-10 text-center px-8 max-w-3xl mx-auto">
         <p
-          className="text-white text-2xl md:text-4xl italic leading-relaxed mb-4"
+          className="text-white text-2xl md:bta-h3 italic leading-relaxed mb-4"
           style={{ fontFamily: "'Cormorant Garamond', serif" }}
         >
           {cb.quote}

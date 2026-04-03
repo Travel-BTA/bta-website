@@ -69,7 +69,7 @@ export default function LandJourneys() {
 
           {/* Headline */}
           <h1
-            className="text-white text-5xl md:text-6xl lg:text-7xl font-light leading-[1.05] mb-6 max-w-3xl"
+            className="text-white bta-h1 md:bta-h2 lg:bta-h1 leading-[1.05] mb-6 max-w-3xl"
             style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
             {landJourneysHero.headline.split("\n").map((line, i) => (
@@ -103,7 +103,7 @@ export default function LandJourneys() {
               {landJourneysIntro.eyebrow}
             </p>
             <h2
-              className="text-[#384959] text-4xl md:text-5xl font-light leading-tight mb-8"
+              className="text-[#384959] bta-h2 font-light leading-tight mb-8"
               style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
             >
               {landJourneysIntro.headline}
@@ -146,7 +146,7 @@ export default function LandJourneys() {
               Explore by Style
             </p>
             <h2
-              className="text-[#384959] text-4xl md:text-5xl font-light"
+              className="text-[#384959] bta-h2 font-light"
               style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
             >
               Where Will You Go?
@@ -199,7 +199,7 @@ export default function LandJourneys() {
               {landJourneysProcess.eyebrow}
             </p>
             <h2
-              className="text-white text-4xl md:text-5xl font-light"
+              className="text-white bta-h2 font-light"
               style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
             >
               {landJourneysProcess.headline}
@@ -211,7 +211,7 @@ export default function LandJourneys() {
               <div key={i} className="relative">
                 {/* Step number */}
                 <p
-                  className="text-[#BFAF8A]/30 text-6xl font-light mb-4 leading-none"
+                  className="text-[#BFAF8A]/30 bta-h1 font-light mb-4 leading-none"
                   style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
                 >
                   {step.number}
@@ -260,7 +260,7 @@ export default function LandJourneys() {
               {landJourneysFeaturedJourney.eyebrow}
             </p>
             <h2
-              className="text-[#384959] text-4xl md:text-5xl font-light leading-tight mb-6"
+              className="text-[#384959] bta-h2 font-light leading-tight mb-6"
               style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
             >
               {landJourneysFeaturedJourney.headline}
@@ -307,7 +307,7 @@ export default function LandJourneys() {
               {landJourneysExperiences.eyebrow}
             </p>
             <h2
-              className="text-[#384959] text-4xl md:text-5xl font-light"
+              className="text-[#384959] bta-h2 font-light"
               style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
             >
               {landJourneysExperiences.headline}
@@ -352,7 +352,7 @@ export default function LandJourneys() {
             Land Journeys
           </p>
           <h2
-            className="text-white text-5xl md:text-6xl font-light mb-6 leading-tight"
+            className="text-white bta-h1 md:bta-h2 font-light mb-6 leading-tight"
             style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
             {landJourneysCta.headline}

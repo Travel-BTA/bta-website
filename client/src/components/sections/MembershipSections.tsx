@@ -55,7 +55,7 @@ export function ExclusiveBenefitsSection() {
         {/* Label */}
         <div className="flex-shrink-0 lg:w-48">
           <h2
-            className="bta-section-title text-[#faf9f6] text-2xl md:text-3xl leading-tight"
+            className="bta-section-title text-[#faf9f6] bta-h3 leading-tight"
             style={{ fontWeight: 400 }}
           >
             {exclusiveBenefits.headline.split("\n").map((line, i) => (
@@ -106,7 +106,7 @@ export function VipAccessSection() {
         {/* Right: Content */}
         <div className="px-10 lg:px-16 py-16 flex flex-col justify-center">
           <h2
-            className="bta-section-title text-[#BFAF8A] text-2xl md:text-3xl lg:text-4xl leading-tight mb-3"
+            className="bta-section-title text-[#BFAF8A] bta-h3 lg:bta-h3 leading-tight mb-3"
             style={{ fontWeight: 400 }}
           >
             {vipAccess.headline.split("\n").map((line, i) => (
@@ -205,7 +205,7 @@ export function GivesBackSection() {
         <div>
           <p className="bta-eyebrow mb-3">{givesBack.eyebrow}</p>
           <h2
-            className="bta-section-title text-[#384959] text-3xl md:text-4xl mb-6 leading-tight"
+            className="bta-section-title text-[#384959] bta-h2 mb-6 leading-tight"
             style={{ fontWeight: 400 }}
           >
             {givesBack.headline}

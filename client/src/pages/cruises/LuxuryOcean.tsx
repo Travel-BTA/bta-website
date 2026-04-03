@@ -161,7 +161,7 @@ export default function LuxuryOcean() {
           >
             Ultra-Luxury at Sea
           </p>
-          <h1 className="font-display text-white text-5xl md:text-6xl font-light leading-none mb-6">
+          <h1 className="font-display text-white bta-h1 md:bta-h2 leading-none mb-6">
             Luxury Ocean Cruises
           </h1>
           <p
@@ -191,7 +191,7 @@ export default function LuxuryOcean() {
                 Virtuoso Member Benefits
               </span>
             </div>
-            <h2 className="font-display text-[#384959] text-3xl md:text-4xl font-light leading-tight mb-6">
+            <h2 className="font-display text-[#384959] bta-h2 font-light leading-tight mb-6">
               What Sets Luxury Ocean Apart
             </h2>
             <p className="text-[#2F2F2F]/75 text-lg leading-relaxed mb-4" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
@@ -246,7 +246,7 @@ export default function LuxuryOcean() {
                   {line.parent}
                 </p>
 
-                <h2 className="font-display text-[#384959] text-3xl md:text-4xl font-light leading-tight mb-2">
+                <h2 className="font-display text-[#384959] bta-h2 font-light leading-tight mb-2">
                   {line.name}
                 </h2>
 
@@ -321,7 +321,7 @@ export default function LuxuryOcean() {
                   Also Available
                 </span>
               </div>
-              <h2 className="font-display text-white text-3xl md:text-4xl font-light leading-tight mb-6">
+              <h2 className="font-display text-white bta-h2 font-light leading-tight mb-6">
                 Yacht & Boutique Lines
               </h2>
               <p className="text-white/70 text-lg leading-relaxed mb-8" style={{ fontFamily: "'Cormorant Garamond', serif" }}>

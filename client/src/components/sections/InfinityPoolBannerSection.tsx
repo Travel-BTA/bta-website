@@ -22,13 +22,13 @@ export function InfinityPoolBannerSection() {
       {/* Centered text overlay */}
       <div className="relative h-full flex flex-col items-center justify-center text-center px-6">
         <p
-          className="font-script text-white/90 text-3xl md:text-4xl lg:text-5xl mb-4"
+          className="font-script text-white/90 bta-h2 lg:bta-h2 mb-4"
           style={{ fontFamily: "'Allura', 'Cormorant Garamond', serif" }}
         >
           The world is yours to explore
         </p>
         <h2
-          className="bta-section-title text-white text-3xl md:text-4xl lg:text-5xl mb-8 leading-tight"
+          className="bta-section-title text-white bta-h2 lg:bta-h2 mb-8 leading-tight"
           style={{ fontWeight: 400 }}
         >
           CRAFTED FOR THE<br />DISCERNING TRAVELER

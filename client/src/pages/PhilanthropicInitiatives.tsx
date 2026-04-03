@@ -65,7 +65,7 @@ export default function PhilanthropicInitiatives() {
             {philanthropyHero.eyebrow}
           </p>
           <h1
-            className="text-white text-5xl md:text-7xl lg:text-8xl font-light leading-[1.0] mb-6 max-w-3xl"
+            className="text-white bta-h1 md:bta-h1 lg:bta-h1 leading-[1.0] mb-6 max-w-3xl"
             style={PF}
           >
             {philanthropyHero.headline.split("\n").map((l, i) => (
@@ -97,7 +97,7 @@ export default function PhilanthropicInitiatives() {
             <p className="text-[#9E8661] tracking-[0.25em] text-xs uppercase mb-4" style={PF}>
               {philanthropyIntro.eyebrow}
             </p>
-            <h2 className="text-[#384959] text-3xl md:text-4xl lg:text-5xl font-light leading-tight mb-8" style={PF}>
+            <h2 className="text-[#384959] bta-h2 lg:bta-h1 font-light leading-tight mb-8" style={PF}>
               {philanthropyIntro.headline.split("\n").map((l, i) => (
                 <span key={i} className="block">{l}</span>
               ))}
@@ -144,7 +144,7 @@ export default function PhilanthropicInitiatives() {
             <p className="text-[#BFAF8A] tracking-[0.25em] text-xs uppercase mb-4" style={PF}>
               {philanthropyPillars.eyebrow}
             </p>
-            <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-light" style={PF}>
+            <h2 className="text-white bta-h2 lg:bta-h1 font-light" style={PF}>
               {philanthropyPillars.headline}
             </h2>
           </div>
@@ -225,7 +225,7 @@ export default function PhilanthropicInitiatives() {
           <p className="text-[#9E8661] tracking-[0.25em] text-xs uppercase mb-4" style={PF}>
             {philanthropyBeneficiaries.eyebrow}
           </p>
-          <h2 className="text-[#384959] text-3xl md:text-4xl lg:text-5xl font-light mb-6" style={PF}>
+          <h2 className="text-[#384959] bta-h2 lg:bta-h1 font-light mb-6" style={PF}>
             {philanthropyBeneficiaries.headline}
           </h2>
           <p className="text-[#5A5A5A] text-base font-light max-w-xl mx-auto leading-relaxed">
@@ -270,7 +270,7 @@ export default function PhilanthropicInitiatives() {
           <p className="text-[#BFAF8A] tracking-[0.25em] text-xs uppercase mb-4" style={PF}>
             {philanthropyNjt.eyebrow}
           </p>
-          <h2 className="text-white text-3xl md:text-4xl font-light leading-tight mb-6" style={PF}>
+          <h2 className="text-white bta-h2 font-light leading-tight mb-6" style={PF}>
             {philanthropyNjt.headline}
           </h2>
           <p className="text-white/65 text-base leading-relaxed font-light mb-8 max-w-md">
@@ -315,7 +315,7 @@ export default function PhilanthropicInitiatives() {
           <p className="text-[#BFAF8A] tracking-[0.3em] text-xs uppercase mb-5" style={PF}>
             {philanthropyPartnerships.eyebrow}
           </p>
-          <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-light leading-tight mb-8" style={PF}>
+          <h2 className="text-white bta-h2 lg:bta-h1 font-light leading-tight mb-8" style={PF}>
             {philanthropyPartnerships.headline}
           </h2>
           <p className="text-white/65 text-base leading-relaxed font-light mb-10">
@@ -340,7 +340,7 @@ export default function PhilanthropicInitiatives() {
           <p className="text-[#9E8661] tracking-[0.25em] text-xs uppercase mb-4" style={PF}>
             {philanthropyFundraise.eyebrow}
           </p>
-          <h2 className="text-[#384959] text-3xl md:text-4xl font-light leading-tight mb-6" style={PF}>
+          <h2 className="text-[#384959] bta-h2 font-light leading-tight mb-6" style={PF}>
             {philanthropyFundraise.headline}
           </h2>
           <p className="text-[#5A5A5A] text-base leading-relaxed font-light mb-10 max-w-md">
@@ -380,7 +380,7 @@ export default function PhilanthropicInitiatives() {
             {philanthropyCta.eyebrow}
           </p>
           <h2
-            className="text-white text-4xl md:text-5xl lg:text-6xl font-light leading-[1.05] mb-8"
+            className="text-white bta-h3 md:bta-h1 lg:bta-h2 font-light leading-[1.05] mb-8"
             style={PF}
           >
             {philanthropyCta.headline.split("\n").map((l, i) => (

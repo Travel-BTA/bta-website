@@ -127,10 +127,10 @@ export default function Experiences() {
             <span className="mx-2">›</span>
             Experiences
           </p>
-          <p className="text-2xl md:text-3xl mb-2" style={{ color: "#bfaf8a", fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}>
+          <p className="bta-h3 mb-2" style={{ color: "#bfaf8a", fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}>
             Curated Around the Globe
           </p>
-          <h1 className="text-5xl md:text-7xl font-light text-white mb-6" style={{ fontFamily: "'Cormorant Garamond', serif", letterSpacing: "-0.02em" }}>
+          <h1 className="bta-h1 md:bta-h1 text-white mb-6" style={{ fontFamily: "'Cormorant Garamond', serif", letterSpacing: "-0.02em" }}>
             Experiences
           </h1>
           <p className="text-white/80 max-w-xl text-base leading-relaxed" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
@@ -185,7 +185,7 @@ export default function Experiences() {
                 {cat.eyebrow}
               </p>
               <h2
-                className="text-3xl md:text-4xl font-light mb-4"
+                className="bta-h2 font-light mb-4"
                 style={{ color: cat.textColor, fontFamily: "'Cormorant Garamond', serif" }}
               >
                 {cat.name}
@@ -242,7 +242,7 @@ export default function Experiences() {
           <p className="text-sm tracking-[0.2em] uppercase mb-4" style={{ color: "#bfaf8a", fontFamily: "'Cormorant Garamond', serif" }}>
             Travel With Purpose
           </p>
-          <h3 className="text-2xl md:text-3xl font-light mb-5" style={{ color: "#384959", fontFamily: "'Cormorant Garamond', serif" }}>
+          <h3 className="bta-h3 font-light mb-5" style={{ color: "#384959", fontFamily: "'Cormorant Garamond', serif" }}>
             Every Experience Gives Back
           </h3>
           <p className="text-base leading-relaxed" style={{ color: "#2f2f2f", fontFamily: "'Cormorant Garamond', serif", fontSize: "1rem" }}>
@@ -256,7 +256,7 @@ export default function Experiences() {
         <p className="text-sm tracking-[0.2em] uppercase mb-4" style={{ color: "#bfaf8a", fontFamily: "'Cormorant Garamond', serif" }}>
           Your Story Starts Here
         </p>
-        <h2 className="text-3xl md:text-4xl font-light text-white mb-6" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+        <h2 className="bta-h2 font-light text-white mb-6" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
           Design Your Perfect Experience
         </h2>
         <p className="text-white/70 max-w-lg mx-auto mb-10 leading-relaxed" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.05rem" }}>

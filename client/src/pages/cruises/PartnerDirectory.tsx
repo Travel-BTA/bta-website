@@ -313,7 +313,7 @@ function SectionHeader({
         {eyebrow}
       </p>
       <h2
-        className={`font-display text-4xl md:text-5xl font-light leading-tight mb-4 ${light ? "text-white" : "text-[#384959]"}`}
+        className={`font-display bta-h3 md:bta-h2 font-light leading-tight mb-4 ${light ? "text-white" : "text-[#384959]"}`}
       >
         {title}
       </h2>
@@ -374,7 +374,7 @@ export default function PartnerDirectory() {
           >
             Every Link Leads Back to BTA
           </p>
-          <h1 className="font-display text-white text-5xl md:text-7xl font-light leading-none mb-6">
+          <h1 className="font-display text-white bta-h1 md:bta-h1 leading-none mb-6">
             Our Partner Directory
           </h1>
           <p

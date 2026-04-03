@@ -71,7 +71,7 @@ export default function Book() {
           <div className="text-center max-w-lg">
             <CheckCircle size={48} className="text-[#bfaf8a] mx-auto mb-8" strokeWidth={1} />
             <h1
-              className="text-[#384959] text-5xl font-light mb-6"
+              className="text-[#384959] bta-h1 mb-6"
               style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
             >
               Thank You
@@ -108,7 +108,7 @@ export default function Book() {
                 Boutique Travel Advisors
               </p>
               <h1
-                className="text-white text-5xl md:text-6xl font-light leading-tight max-w-2xl"
+                className="text-white bta-h1 md:bta-h2 leading-tight max-w-2xl"
                 style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
               >
                 Begin Planning Your Journey
@@ -132,7 +132,7 @@ export default function Book() {
                   What to Expect
                 </p>
                 <h2
-                  className="text-[#384959] text-3xl font-light mb-8 leading-snug"
+                  className="text-[#384959] bta-h2 font-light mb-8 leading-snug"
                   style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
                 >
                   Your Journey Starts With a Conversation

@@ -18,7 +18,7 @@ export function WhoWeAreSection() {
     <section className="bg-[#BFAF8A] py-20 px-6 text-center">
       <div className="max-w-2xl mx-auto">
         <p className="bta-eyebrow text-[#faf9f6]/80 mb-3">{whoWeAre.eyebrow}</p>
-        <h2 className="bta-section-title text-[#faf9f6] text-3xl md:text-4xl mb-6" style={{ fontWeight: 400 }}>
+        <h2 className="bta-section-title text-[#faf9f6] bta-h2 mb-6" style={{ fontWeight: 400 }}>
           {whoWeAre.headline}
         </h2>
         <p className="font-body text-[#faf9f6]/90 text-lg md:text-xl leading-relaxed mb-8">
@@ -40,7 +40,7 @@ export function StatsSection() {
         {stats.map((stat) => (
           <div key={stat.label}>
             <div
-              className="font-display text-[#faf9f6] text-4xl md:text-5xl lg:text-6xl mb-2"
+              className="font-display text-[#faf9f6] bta-h2 lg:bta-h2 mb-2"
               style={{ fontWeight: 300 }}
             >
               {stat.value}
@@ -64,7 +64,7 @@ export function PhilosophySection() {
         <div>
           <p className="bta-eyebrow mb-3">{philosophy.eyebrow}</p>
           <h2
-            className="bta-section-title text-[#384959] text-3xl md:text-4xl mb-5 leading-tight"
+            className="bta-section-title text-[#384959] bta-h2 mb-5 leading-tight"
             style={{ fontWeight: 400 }}
           >
             {philosophy.headline.split("\n").map((line, i) => (
@@ -123,13 +123,13 @@ export function CuratedHotelsSection() {
       <div className="relative h-full flex items-center justify-start px-10 lg:px-16">
         <div>
           <p
-            className="text-[#faf9f6] text-4xl md:text-5xl leading-tight"
+            className="text-[#faf9f6] bta-h2 leading-tight"
             style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontWeight: 400 }}
           >
             {curatedHotels.scriptLine1}
           </p>
           <p
-            className="text-[#faf9f6] text-4xl md:text-5xl leading-tight"
+            className="text-[#faf9f6] bta-h2 leading-tight"
             style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontWeight: 400 }}
           >
             {curatedHotels.scriptLine2}

@@ -159,7 +159,7 @@ export default function RiverCruises() {
           <p className="text-[#bfaf8a] mb-3" style={{ fontFamily: "'Allura', cursive", fontSize: "1.6rem" }}>
             Intimate Waterway Journeys
           </p>
-          <h1 className="font-display text-white text-5xl md:text-6xl font-light leading-none mb-6">
+          <h1 className="font-display text-white bta-h1 md:bta-h2 leading-none mb-6">
             River Cruises
           </h1>
           <p className="text-white/85 text-xl max-w-2xl leading-relaxed mb-8" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
@@ -187,7 +187,7 @@ export default function RiverCruises() {
                   Why River Cruising
                 </span>
               </div>
-              <h2 className="font-display text-[#384959] text-3xl md:text-4xl font-light leading-tight mb-6">
+              <h2 className="font-display text-[#384959] bta-h2 font-light leading-tight mb-6">
                 The Off-the-Beaten-Path Journey
               </h2>
               <p className="text-[#2f2f2f]/75 text-lg leading-relaxed mb-4" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
@@ -198,7 +198,7 @@ export default function RiverCruises() {
               </p>
             </div>
             <div className="border-l-2 border-[#bfaf8a] pl-10 py-4">
-              <p className="text-[#384959] text-2xl md:text-3xl leading-relaxed mb-6" style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}>
+              <p className="text-[#384959] bta-h3 leading-relaxed mb-6" style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}>
                 "Enjoy gourmet food, decadent cocktails, and entertainment on board — then explore a variety of activities and tours at each port."
               </p>
               <p className="text-[#bfaf8a] text-sm tracking-[0.2em] uppercase" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
@@ -225,7 +225,7 @@ export default function RiverCruises() {
               </div>
 
               <div className={`flex flex-col justify-center px-8 lg:px-14 py-16 lg:py-20 ${line.imageRight ? "lg:order-1" : "lg:order-2"}`}>
-                <h2 className="font-display text-[#384959] text-3xl md:text-4xl font-light leading-tight mb-2">
+                <h2 className="font-display text-[#384959] bta-h2 font-light leading-tight mb-2">
                   {line.name}
                 </h2>
                 <p className="text-[#bfaf8a] text-lg mb-6" style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}>

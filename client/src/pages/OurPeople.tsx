@@ -141,7 +141,7 @@ function SectionHeader({ eyebrow, heading, sub }: { eyebrow: string; heading: st
         </p>
       </div>
       {/* Heading */}
-      <h2 className="font-display text-[#2F2F2F] text-4xl md:text-5xl font-light leading-tight mb-4">
+      <h2 className="font-display text-[#2F2F2F] bta-h3 md:bta-h1 font-light leading-tight mb-4">
         {heading}
       </h2>
       {/* Horizontal gold rule below heading */}
@@ -252,7 +252,7 @@ export default function OurPeople() {
           >
             About BTA
           </p>
-          <h1 className="font-display text-white text-5xl md:text-7xl font-light leading-[1.05]">
+          <h1 className="font-display text-white bta-h1 md:bta-h1 leading-[1.05]">
             Get To Know<br />Our Team
           </h1>
         </div>
@@ -273,7 +273,7 @@ export default function OurPeople() {
                   Transformational Luxury
                 </p>
               </div>
-              <h2 className="font-display text-[#2F2F2F] text-4xl md:text-5xl font-light leading-tight">
+              <h2 className="font-display text-[#2F2F2F] bta-h3 md:bta-h1 font-light leading-tight">
                 Passionate Travelers.<br />Exceptional Designers.
               </h2>
               <div className="w-16 h-px bg-[#bfaf8a] mt-8" />

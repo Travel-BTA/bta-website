@@ -35,13 +35,13 @@ export function StoryUnfoldSection() {
         {/* Header — left aligned */}
         <div className="text-left mb-14">
           <p
-            className="font-script text-[#bfaf8a] text-3xl md:text-4xl mb-3"
+            className="font-script text-[#bfaf8a] bta-h2 mb-3"
             style={{ fontFamily: "'Allura', 'Cormorant Garamond', serif" }}
           >
             Begin your journey
           </p>
           <h2
-            className="bta-section-title text-[#384959] text-4xl md:text-5xl lg:text-6xl leading-tight"
+            className="bta-section-title text-[#384959] bta-h2 lg:bta-h2 leading-tight"
             style={{ fontWeight: 400 }}
           >
             WHERE WILL YOUR<br />STORY UNFOLD?
@@ -75,7 +75,7 @@ export function StoryUnfoldSection() {
                   {item.destination}
                 </p>
                 <h3
-                  className="font-display text-[#faf9f6] text-2xl md:text-3xl mb-4 leading-snug"
+                  className="font-display text-[#faf9f6] bta-h3 mb-4 leading-snug"
                   style={{ fontWeight: 400 }}
                 >
                   {item.title}

@@ -54,7 +54,7 @@ function JourneySection({
       {/* Gold accent line */}
       <div className="w-10 h-px bg-[#bfaf8a] mb-8" />
       <h2
-        className="font-display text-[#384959] text-3xl md:text-4xl font-light leading-tight mb-8"
+        className="font-display text-[#384959] bta-h2 font-light leading-tight mb-8"
       >
         {heading}
       </h2>
@@ -139,10 +139,10 @@ export default function CustomItineraries() {
           >
             Land Journeys
           </p>
-          <h1 className="font-display text-white text-5xl md:text-7xl font-light leading-none mb-0">
+          <h1 className="font-display text-white bta-h1 md:bta-h1 leading-none mb-0">
             Custom
           </h1>
-          <h1 className="font-display text-white text-5xl md:text-7xl font-light leading-none">
+          <h1 className="font-display text-white bta-h1 md:bta-h1 leading-none">
             Itineraries
           </h1>
         </div>
@@ -313,7 +313,7 @@ export default function CustomItineraries() {
             {/* Left: heading */}
             <div>
               <h2
-                className="font-display text-[#384959] text-4xl md:text-5xl font-light leading-tight"
+                className="font-display text-[#384959] bta-h3 md:bta-h1 font-light leading-tight"
               >
                 Exclusive Planning Packages
               </h2>

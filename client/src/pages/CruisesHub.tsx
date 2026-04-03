@@ -107,10 +107,10 @@ export default function CruisesHub() {
           >
             Extraordinary Places & Exclusive Amenities
           </p>
-          <h1 className="font-display text-white text-5xl md:text-7xl font-light leading-none mb-2">
+          <h1 className="font-display text-white bta-h1 md:bta-h1 leading-none mb-2">
             Cruises &
           </h1>
-          <h1 className="font-display text-white text-5xl md:text-7xl font-light leading-none mb-8">
+          <h1 className="font-display text-white bta-h1 md:bta-h1 leading-none mb-8">
             Water Journeys
           </h1>
           <Link
@@ -142,7 +142,7 @@ export default function CruisesHub() {
                 </span>
               </div>
 
-              <h2 className="font-display text-[#384959] text-3xl md:text-4xl font-light leading-tight mb-8">
+              <h2 className="font-display text-[#384959] bta-h2 font-light leading-tight mb-8">
                 The Art of Cruising
               </h2>
 
@@ -184,7 +184,7 @@ export default function CruisesHub() {
             <div className="relative">
               <div className="border-l-2 border-[#bfaf8a] pl-10 py-4">
                 <p
-                  className="text-[#384959] text-2xl md:text-3xl leading-relaxed mb-6"
+                  className="text-[#384959] bta-h3 leading-relaxed mb-6"
                   style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
                 >
                   "Why do we love the sea? It is because it has some potent power to make us think
@@ -221,7 +221,7 @@ export default function CruisesHub() {
               </span>
               <div className="w-12 h-px bg-[#bfaf8a]/50" />
             </div>
-            <h2 className="font-display text-white text-2xl md:text-3xl font-light tracking-wide">
+            <h2 className="font-display text-white bta-h3 font-light tracking-wide">
               Virtuoso Voyages Cruise Amenities
             </h2>
           </div>
@@ -259,7 +259,7 @@ export default function CruisesHub() {
             >
               Explore Our Cruises
             </p>
-            <h2 className="font-display text-[#384959] text-3xl md:text-4xl font-light mb-4">
+            <h2 className="font-display text-[#384959] bta-h2 font-light mb-4">
               Choose Your Journey
             </h2>
             <div className="flex items-center justify-center gap-4">
@@ -295,7 +295,7 @@ export default function CruisesHub() {
 
                   {/* Bottom text block */}
                   <div className="absolute bottom-0 left-0 right-0 p-8">
-                    <h3 className="font-display text-white text-2xl md:text-3xl font-light leading-tight mb-2">
+                    <h3 className="font-display text-white bta-h3 font-light leading-tight mb-2">
                       {cat.title}
                     </h3>
                     <p
@@ -345,7 +345,7 @@ export default function CruisesHub() {
               The Ultimate Escape
             </p>
 
-            <h2 className="font-display text-[#384959] text-3xl md:text-4xl font-light leading-tight mb-8">
+            <h2 className="font-display text-[#384959] bta-h2 font-light leading-tight mb-8">
               Private Charters
             </h2>
 

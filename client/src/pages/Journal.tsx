@@ -125,7 +125,7 @@ function FeaturedCard({ post }: { post: Post }) {
         </div>
         <Link href={`/journal/${post.slug}`} className="group">
           <h2
-            className="text-[#2F2F2F] text-2xl lg:text-3xl font-light leading-snug mb-4 group-hover:text-[#bfaf8a] transition-colors font-display"
+            className="text-[#2F2F2F] text-2xl lg:bta-h2 font-light leading-snug mb-4 group-hover:text-[#bfaf8a] transition-colors font-display"
             dangerouslySetInnerHTML={{ __html: post.title }}
           />
         </Link>
@@ -225,7 +225,7 @@ function NewsletterSection() {
   return (
     <div className="bg-[#384959] py-16 px-6 text-center">
           <h2
-        className="text-white text-3xl md:text-4xl font-light mb-4 font-display"
+        className="text-white bta-h2 font-light mb-4 font-display"
       >
         Stay Inspired
       </h2>
@@ -316,7 +316,7 @@ export default function Journal() {
       {/* ── Tan Header ──────────────────────────────────────────────────── */}
       <div className="bg-[#bfaf8a]/70 pt-28 pb-16 px-6 text-center">
         <h1
-          className="text-white text-5xl md:text-6xl font-light mb-4 font-display"
+          className="text-white bta-h1 md:bta-h2 mb-4 font-display"
         >
           Travel Inspiration
         </h1>

@@ -238,6 +238,90 @@
     line-height: 1.15;
   }
 
+  /* ─── BTA Global Typography Hierarchy ─────────────────────────────────────
+     WHY: Enforces a single, consistent type scale across every page.
+     All heading and body text should use these classes instead of ad-hoc
+     inline styles or scattered Tailwind size utilities.
+
+     H1  — Playfair Display, light (300), 72px desktop / 48px mobile
+            Used for: hero page titles only
+     H2  — Playfair Display, regular (400), 42px desktop / 30px mobile
+            Used for: section headings, major content breaks
+     H3  — Playfair Display, regular (400), 28px desktop / 22px mobile
+            Used for: card titles, sub-section headings
+     H4  — Cormorant SC small caps, 13px, tracked
+            Used for: eyebrow labels, category tags, nav items
+     Script — Cormorant Garamond italic, 28px desktop / 20px mobile
+            Used for: decorative script lines above H1/H2
+     Body — Cormorant Garamond, 18px / line-height 1.8
+            Used for: all paragraph text
+  ─────────────────────────────────────────────────────────────────────────── */
+
+  /* H1 — Hero page titles */
+  .bta-h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 300;
+    font-size: clamp(2.75rem, 6vw, 4.5rem); /* 44px → 72px */
+    line-height: 1.08;
+    letter-spacing: -0.01em;
+  }
+
+  /* H2 — Section headings */
+  .bta-h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 400;
+    font-size: clamp(1.75rem, 3.5vw, 2.625rem); /* 28px → 42px */
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+  }
+
+  /* H3 — Card / sub-section titles */
+  .bta-h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 400;
+    font-size: clamp(1.25rem, 2.5vw, 1.75rem); /* 20px → 28px */
+    line-height: 1.3;
+    letter-spacing: 0.01em;
+  }
+
+  /* H4 — Eyebrow labels, category tags, small caps */
+  .bta-h4 {
+    font-family: 'Cormorant SC', 'Cormorant Garamond', Georgia, serif;
+    font-weight: 400;
+    font-size: 0.8125rem; /* 13px */
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    line-height: 1.5;
+  }
+
+  /* Script — decorative italic lines above headings */
+  .bta-script {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(1.25rem, 2.5vw, 1.75rem); /* 20px → 28px */
+    line-height: 1.3;
+    letter-spacing: 0.01em;
+  }
+
+  /* Body — paragraph text */
+  .bta-body {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 400;
+    font-size: clamp(1rem, 1.5vw, 1.125rem); /* 16px → 18px */
+    line-height: 1.8;
+    letter-spacing: 0.01em;
+  }
+
+  /* Body large — lead paragraphs, intro text */
+  .bta-body-lg {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 400;
+    font-size: clamp(1.125rem, 1.75vw, 1.25rem); /* 18px → 20px */
+    line-height: 1.85;
+    letter-spacing: 0.01em;
+  }
+
   /* ─── Blog Body Typography ──────────────────────────────────────────────────
      WHY: WordPress post content arrives as raw HTML with no styling applied.
      These rules style every element the WordPress editor can produce — headings,

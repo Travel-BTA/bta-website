@@ -136,7 +136,7 @@ export default function PremiumOcean() {
           <p className="text-[#bfaf8a] mb-3" style={{ fontFamily: "'Allura', cursive", fontSize: "1.6rem" }}>
             Destination-Driven Voyages
           </p>
-          <h1 className="font-display text-white text-5xl md:text-6xl font-light leading-none mb-6">
+          <h1 className="font-display text-white bta-h1 md:bta-h2 leading-none mb-6">
             Premium Ocean Cruises
           </h1>
           <p className="text-white/85 text-xl max-w-2xl leading-relaxed mb-8" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
@@ -163,7 +163,7 @@ export default function PremiumOcean() {
                 The Sweet Spot
               </span>
             </div>
-            <h2 className="font-display text-[#384959] text-3xl md:text-4xl font-light leading-tight mb-6">
+            <h2 className="font-display text-[#384959] bta-h2 font-light leading-tight mb-6">
               Premium Without Compromise
             </h2>
             <p className="text-[#2f2f2f]/75 text-lg leading-relaxed mb-4" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
@@ -191,7 +191,7 @@ export default function PremiumOcean() {
               </div>
 
               <div className={`flex flex-col justify-center px-8 lg:px-14 py-16 lg:py-20 ${line.imageRight ? "lg:order-1" : "lg:order-2"}`}>
-                <h2 className="font-display text-[#384959] text-3xl md:text-4xl font-light leading-tight mb-2">
+                <h2 className="font-display text-[#384959] bta-h2 font-light leading-tight mb-2">
                   {line.name}
                 </h2>
                 <p className="text-[#bfaf8a] text-lg mb-6" style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}>
