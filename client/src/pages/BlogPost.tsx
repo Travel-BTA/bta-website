@@ -78,6 +78,19 @@ function processWordPressHtml(html: string): string {
     .replace(
       /<span[^>]*font-size:\s*16px[^>]*>(\s*\*Benefits apply[\s\S]*?)<\/span>/gi,
       '<span style="display:block;font-size:0.72rem;font-style:italic;color:#9C886A;opacity:0.75;text-align:center;margin-top:0.5rem;letter-spacing:0.02em;text-transform:none;">$1</span>'
+    )
+    // ── Strip travel insurance sentence ─────────────────────────────────────
+    // WHY: Every WP post ends with a boilerplate travel insurance paragraph
+    // and a follow-up sentence about contacting a BTA advisor. These are
+    // WordPress editorial footers that don't belong in the new editorial
+    // design — the site's own CTA section handles this instead.
+    .replace(
+      /<p[^>]*>[^<]*(?:If you would like assistance purchasing a travel insurance|please get in touch with a[^<]*BTA advisor)[\s\S]*?<\/p>/gi,
+      ''
+    )
+    .replace(
+      /<p[^>]*>[^<]*We highly recommend the purchase of travel insurance[\s\S]*?<\/p>/gi,
+      ''
     );
 }
 
@@ -231,10 +244,12 @@ export default function BlogPost() {
         </div>
       </header>
 
-      {/* ── Article body panel (white on cream for visual separation) ────── */}
-      <div className="bg-white shadow-sm">
+      {/* ── Article body panel (white on cream for visual separation) ──── */}
+      {/* overflow-hidden: prevents WP images with absolute/fixed widths from
+          bleeding outside the white column into the cream sidebar area */}
+      <div className="bg-white shadow-sm overflow-hidden">
 
-      {/* ── Article Body ───────────────────────────────────────────── */}
+      {/* ── Article Body ──────────────────────────────────────────────────── */}
       <article className="max-w-[720px] mx-auto px-6 py-16 md:py-20">
         <BlogBody html={post.content} />
       </article>
