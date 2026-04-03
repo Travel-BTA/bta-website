@@ -135,7 +135,7 @@ const LAND_PARTNERS = [
     tagline: "Nature and science-focused exploration",
     category: "Expedition",
     link: "https://www.expeditions.com?insider=zq18x-boutique-travel-advisors",
-    photo: "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=800&q=80",
+    photo: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/safari_bush_dining_v2_e2293e19.jpg",
     note: "All Inquiries Route to BTA",
   },
   {

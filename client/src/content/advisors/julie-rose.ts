@@ -93,7 +93,7 @@ export const advisor = {
     heading: "Her Specialties",
     items: [
       { label: "European River Cruises",    description: "Intimate sailings through France, Germany & the Danube with handpicked shore excursions.",  image: "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=600&q=80" },
-      { label: "African Safaris",           description: "Private game reserves, expert guides, and camp upgrades across Kenya, Tanzania & Botswana.", image: "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=600&q=80" },
+      { label: "African Safaris",           description: "Private game reserves, expert guides, and camp upgrades across Kenya, Tanzania & Botswana.", image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/safari_bush_dining_v2_e2293e19.jpg" },
       { label: "Japan & Asia",              description: "Curated cultural immersions from Kyoto ryokans to Maldivian overwater villas.",               image: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=600&q=80" },
       { label: "Mediterranean Escapes",     description: "Amalfi, Santorini & the Riviera. villa stays, yacht charters, and insider dining.",          image: "https://images.unsplash.com/photo-1533105079780-92b9be482077?w=600&q=80" },
       { label: "Luxury Expedition Cruises", description: "Antarctica, Patagonia & the Arctic aboard intimate expedition ships with world-class lecturers.", image: "https://images.unsplash.com/photo-1548574505-5e239809ee19?w=600&q=80" },
@@ -148,7 +148,7 @@ export const advisor = {
         region:   "East Africa",
         title:    "Tanzania Safari & Zanzibar Beach Escape",
         description: "Witness the Great Migration in the Serengeti, then unwind on the spice-scented beaches of Zanzibar.",
-        image:    "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&q=80",
+        image:    "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/safari_bush_dining_v2_e2293e19.jpg",
         href:     "#contact",
       },
       {

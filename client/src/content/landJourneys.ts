@@ -18,7 +18,7 @@ export const landJourneysSeo = {
 export const landJourneysHero = {
   // Full-width cinematic hero. replace with your own CDN image
   backgroundImage:
-    "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1920&q=85&auto=format&fit=crop",
+    "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/safari_bush_dining_v2_e2293e19.jpg",
   eyebrow: "Land Journeys",
   headline: "EXTRAORDINARY\nJOURNEYS BY LAND",
   subheadline:
@@ -38,7 +38,7 @@ export const landJourneysCategories = [
     description:
       "Immersive encounters with the natural world, from the Serengeti to the Okavango Delta.",
     imageUrl:
-      "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&q=80&auto=format&fit=crop",
+      "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/safari_bush_dining_v2_e2293e19.jpg",
     href: "/land-journeys/safari",
   },
   {

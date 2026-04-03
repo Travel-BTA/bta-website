@@ -14,7 +14,7 @@ export const safariWildlifeData: JourneySubPageData = {
   },
   hero: {
     backgroundImage:
-      "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1920&q=85&auto=format&fit=crop",
+      "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/safari_bush_dining_v2_e2293e19.jpg",
     eyebrow: "Land Journeys. Safari & Wildlife",
     headline: "Where the Wild\nStill Reigns",
     subheadline:
@@ -59,7 +59,7 @@ export const safariWildlifeData: JourneySubPageData = {
     description:
       "Begin in the Ngorongoro Crater, one of the world's great wildlife amphitheatres, before moving north into the central Serengeti to follow the migration. Your final nights are spent at a luxury tented camp on the Mara River. front-row seats to the most dramatic river crossings on earth.",
     imageUrl:
-      "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=900&q=85&auto=format&fit=crop",
+      "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/safari_bush_dining_v2_e2293e19.jpg",
     details: [
       { label: "Duration", value: "10 Days / 9 Nights" },
       { label: "Best Season", value: "July – October" },

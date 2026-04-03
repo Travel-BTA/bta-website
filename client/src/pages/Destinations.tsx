@@ -25,7 +25,8 @@ const DESTINATIONS = [
     description:
       "Canopy bridges at dawn, private wildlife guides, and lodge-to-lodge journeys through cloud forest and coastline. Costa Rica is one of the world's great eco-destinations and we know how to experience it without the crowds.",
     highlights: ["Arenal volcano lodges", "Monteverde cloud forest", "Osa Peninsula wildlife", "Private naturalist guides"],
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/dest-costa-rica-5fGppq6wxU6xJdSoikCVu9.webp",
+    // Monteverde canopy bridge. lush jungle. wide landscape. royalty-free Unsplash
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/costa-rica-canopy_4fd08f43.jpg",
   },
   {
     id: "portugal",

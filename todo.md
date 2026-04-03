@@ -81,3 +81,7 @@
 - [x] Replace plane image in Philosophy section with hot air balloon over savanna image
 - [x] Fix grammar in Destinations page intro: add em dash after "right now" — "...right now — places where..."
 - [x] Update homepage stats: Trips Booked → 4,000+, Travel Designed → $60M+
+
+## Photo Swaps
+- [x] Replace unrealistic elephant photo with safari bush dining image (6 locations replaced)
+- [x] Update Costa Rica destination card with Monteverde canopy bridge photo (royalty-free Unsplash)
