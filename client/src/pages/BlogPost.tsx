@@ -44,12 +44,48 @@ function decodeHtml(html: string) {
 }
 
 // ─── Blog body renderer ───────────────────────────────────────────────────────
-// Renders WordPress HTML with BTA brand styles applied
+// WHY: WordPress embeds inline styles directly on elements (button colors,
+// image dimensions, font sizes). We post-process the HTML string here to
+// override those inline styles so our design system takes precedence without
+// needing to edit WordPress content.
+function processWordPressHtml(html: string): string {
+  return html
+    // ── BOOK WITH VIP AMENITIES button ──────────────────────────────────────
+    // Override WP inline style: change bg to #2f2f2f, reduce padding for a
+    // smaller, more refined button that fits the editorial context
+    .replace(
+      /(<a)([^>]*href="https:\/\/luxurytravelclubs\.com[^"]*")([^>]*)style="[^"]*"([^>]*>)/gi,
+      '$1$2$3 style="display:inline-block;padding:10px 28px;background-color:#2f2f2f;color:#ffffff;text-align:center;text-decoration:none;font-family:\'Cormorant SC\',serif;font-size:0.7rem;letter-spacing:0.18em;text-transform:uppercase;border:none;"$4'
+    )
+    // ── Images ──────────────────────────────────────────────────────────────
+    // Remove inline width/height/style attrs that cause images to overflow
+    // the article column or render at wrong aspect ratios. CSS handles sizing.
+    .replace(
+      /<img([^>]*?)>/gi,
+      (_match, attrs) => {
+        const cleaned = attrs
+          .replace(/\s+width="[^"]*"/gi, '')
+          .replace(/\s+height="[^"]*"/gi, '')
+          .replace(/\s+style="[^"]*"/gi, '')
+          .replace(/\s+class="[^"]*"/gi, '');
+        return `<img${cleaned} loading="lazy" style="width:100%;height:auto;display:block;margin:2rem auto;">`;
+      }
+    )
+    // ── *Benefits apply disclaimer ───────────────────────────────────────────
+    // The WP source wraps this in a <span style="font-size:16px"> which makes
+    // it look the same weight as the amenity list items. Override to make it
+    // small, italic, and muted so it reads as a footnote, not a feature.
+    .replace(
+      /<span[^>]*font-size:\s*16px[^>]*>(\s*\*Benefits apply[\s\S]*?)<\/span>/gi,
+      '<span style="display:block;font-size:0.72rem;font-style:italic;color:#9C886A;opacity:0.75;text-align:center;margin-top:0.5rem;letter-spacing:0.02em;text-transform:none;">$1</span>'
+    );
+}
+
 function BlogBody({ html }: { html: string }) {
   return (
     <div
       className="blog-body"
-      dangerouslySetInnerHTML={{ __html: html }}
+      dangerouslySetInnerHTML={{ __html: processWordPressHtml(html) }}
     />
   );
 }

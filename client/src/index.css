@@ -462,6 +462,17 @@
     color: #384959;
   }
 
+  /* ── BTA Travel Club box — make the outer container more subtle ──
+     WHY: The WP source uses a heavy border and stark background. We soften
+     it to a light stone border with a barely-there background so it reads
+     as an editorial aside rather than a hard-sell advertisement. */
+  .blog-body .vip-box,
+  .blog-body [class*="vip"] {
+    border: 1px solid #edeae4 !important;
+    background: #faf9f6 !important;
+    border-radius: 0 !important;
+  }
+
   /* ── WordPress CTA buttons ── */
   .blog-body .wp-block-buttons,
   .blog-body .wp-block-button {
