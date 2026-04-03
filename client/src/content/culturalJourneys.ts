@@ -14,7 +14,7 @@ export const culturalJourneysData: JourneySubPageData = {
   },
   hero: {
     backgroundImage:
-      "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1920&q=85&auto=format&fit=crop",
+      "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/kyoto-geisha_b1a8b6d7.webp",
     eyebrow: "Land Journeys — Cultural Journeys",
     headline: "Travel That\nGoes Deeper",
     subheadline:
@@ -34,7 +34,7 @@ export const culturalJourneysData: JourneySubPageData = {
       description:
         "Ancient temples, Michelin-starred dining, and the precise beauty of Japanese aesthetics. Private tea ceremonies, after-hours access to Fushimi Inari, and a ryokan stay in the mountains of Hakone.",
       imageUrl:
-        "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=800&q=80&auto=format&fit=crop",
+        "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/kyoto-geisha_b1a8b6d7.webp",
     },
     {
       name: "Marrakech & the Atlas, Morocco",
@@ -57,7 +57,7 @@ export const culturalJourneysData: JourneySubPageData = {
     eyebrow: "Featured Journey",
     headline: "Japan: Ancient &\nModern — 11 Days",
     description:
-      "Begin in Tokyo — three days of contemporary culture, world-class dining, and neighborhoods that reward the curious. Travel by shinkansen to Kyoto for four nights: a private geisha dinner, a dawn walk through the bamboo groves of Arashiyama, and an afternoon with a master ceramicist. End in the mountain onsen town of Hakone with views of Fuji across the lake.",
+      "Begin in Tokyo with three days of contemporary culture, world-class dining, and neighborhoods that continue to inspire. Travel by shinkansen to Kyoto for four nights: a private geisha dinner, a dawn walk through the bamboo groves of Arashiyama, and an afternoon with a master ceramicist. End in the mountain onsen town of Hakone with views of Fuji across the lake.",
     imageUrl:
       "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=900&q=85&auto=format&fit=crop",
     details: [
