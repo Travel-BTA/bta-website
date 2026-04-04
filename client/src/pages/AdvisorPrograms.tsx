@@ -532,7 +532,11 @@ export default function AdvisorPrograms() {
         </div>
       </section>
 
-      {/* ── Coming Soon ───────────────────────────────────────────────────── */}
+      {/* ── Innovation Never Stops ────────────────────────────────────────── */}
+      {/*
+       * WHY: Itinerary Tool is now live; only Custom Client App is still coming soon.
+       * Split into two explicit cards instead of a .map() so each can have its own status badge.
+       */}
       <section className="py-20 bg-white border-t border-[#bfaf8a]/20">
         <div className="max-w-[1440px] mx-auto px-8 lg:px-14 text-center">
           <h3
@@ -542,43 +546,52 @@ export default function AdvisorPrograms() {
             Innovation Never Stops
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-            {[
-              {
-                label: "Integrated Itinerary Tool",
-                desc: "Build stunning, interactive itineraries directly within the platform.",
-                img: CDN.itineraryToolShowcase,
-                alt: "Integrated Itinerary Tool Interface",
-              },
-              {
-                label: "Custom Client App",
-                desc: "A dedicated mobile experience for your travelers to access everything on the go.",
-                img: CDN.mobileAppShowcase,
-                alt: "BTA Mobile App Interface",
-              },
-            ].map(({ label, desc, img, alt }) => (
-              <div key={label} className="flex flex-col h-full">
-                <div className="bg-[#faf9f6] p-8 border border-[#bfaf8a]/20 flex flex-col items-center mb-8 h-44 justify-center">
-                  <span
-                    className="text-[#bfaf8a] text-[0.6rem] tracking-[0.2em] uppercase mb-3"
-                    style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
-                  >
-                    Coming Soon
-                  </span>
-                  <h4
-                    className="text-[#384959] text-xl font-light mb-2"
-                    style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
-                  >
-                    {label}
-                  </h4>
-                  <p className="text-[#2F2F2F]/55 text-sm font-light text-center" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
-                    {desc}
-                  </p>
-                </div>
-                <div className="flex-grow flex items-start justify-center">
-                  <img src={img} alt={alt} className="w-full h-auto shadow-lg border border-[#bfaf8a]/15" />
-                </div>
+            {/* Itinerary Tool — NOW LIVE */}
+            <div className="flex flex-col h-full">
+              <div className="bg-[#384959] p-8 border border-[#384959] flex flex-col items-center mb-8 h-44 justify-center">
+                <span
+                  className="text-[#bfaf8a] text-[0.6rem] tracking-[0.2em] uppercase mb-3"
+                  style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                >
+                  Now Live
+                </span>
+                <h4
+                  className="text-white text-xl font-light mb-2"
+                  style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
+                >
+                  Integrated Itinerary Tool
+                </h4>
+                <p className="text-white/65 text-sm font-light text-center" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+                  Build stunning, interactive itineraries directly within the platform.
+                </p>
               </div>
-            ))}
+              <div className="flex-grow flex items-start justify-center">
+                <img src={CDN.itineraryToolShowcase} alt="Integrated Itinerary Tool Interface" className="w-full h-auto shadow-lg border border-[#bfaf8a]/15" />
+              </div>
+            </div>
+            {/* Custom Client App — COMING SOON */}
+            <div className="flex flex-col h-full">
+              <div className="bg-[#faf9f6] p-8 border border-[#bfaf8a]/20 flex flex-col items-center mb-8 h-44 justify-center">
+                <span
+                  className="text-[#bfaf8a] text-[0.6rem] tracking-[0.2em] uppercase mb-3"
+                  style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                >
+                  Coming Soon
+                </span>
+                <h4
+                  className="text-[#384959] text-xl font-light mb-2"
+                  style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
+                >
+                  Custom Client App
+                </h4>
+                <p className="text-[#2F2F2F]/55 text-sm font-light text-center" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+                  A dedicated mobile experience for your travelers to access everything on the go.
+                </p>
+              </div>
+              <div className="flex-grow flex items-start justify-center">
+                <img src={CDN.mobileAppShowcase} alt="BTA Mobile App Interface" className="w-full h-auto shadow-lg border border-[#bfaf8a]/15" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -711,6 +724,113 @@ export default function AdvisorPrograms() {
                 ))}
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── BTA Academy ───────────────────────────────────────────────────── */}
+      {/*
+       * WHY: Academy is an exclusive members-only learning platform for BTA advisors.
+       * Using alternating light/dark sections to visually separate from the tools above.
+       */}
+      <section className="py-24 md:py-32 bg-[#384959] text-white">
+        <div className="max-w-[1440px] mx-auto px-8 lg:px-14">
+          {/* Header */}
+          <div className="text-center mb-20">
+            <div className="flex items-center justify-center gap-4 mb-6">
+              <div className="w-12 h-px bg-[#bfaf8a]" />
+              <p className="text-[#bfaf8a] text-2xl italic" style={{ fontFamily: "'Allura', cursive" }}>
+                Members Only
+              </p>
+              <div className="w-12 h-px bg-[#bfaf8a]" />
+            </div>
+            <h2
+              className="text-white text-4xl md:text-5xl font-light mb-6"
+              style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
+            >
+              BTA Academy
+            </h2>
+            <p className="text-white/70 text-lg max-w-3xl mx-auto font-light leading-relaxed" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+              Your training ground for building a luxury travel business that actually works.
+            </p>
+          </div>
+
+          {/* Intro */}
+          <div className="max-w-3xl mx-auto text-center mb-20">
+            <p className="text-white/75 text-base leading-relaxed" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+              The BTA Academy is an exclusive, members-only learning platform built specifically for BTA advisors.
+              From your first day to your most advanced booking, every resource you need to grow — confidently
+              and professionally — lives in one place.
+            </p>
+          </div>
+
+          {/* What's Inside grid */}
+          <div className="mb-16">
+            <h3
+              className="text-[#bfaf8a] text-xs tracking-[0.2em] uppercase text-center mb-12"
+              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+            >
+              What's Inside
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {[
+                {
+                  title: "Structured Learning Paths",
+                  desc: "Every advisor gets a personalized training roadmap based on their role, experience level, and specialty. No guesswork. No hunting for the right course. Your path is built for you.",
+                },
+                {
+                  title: "70+ Courses — and Growing",
+                  desc: "From mastering the BTA CRM and booking platforms to luxury hotel sourcing, cruise advisory, client communication, AI tools, villa sourcing, private air, and business development.",
+                },
+                {
+                  title: "Real Tools, Real Workflows",
+                  desc: "Courses are built around the actual platforms and processes BTA advisors use every day — Virtuoso, Frosch Air, DMC vetting, MAPS business development, and more.",
+                },
+                {
+                  title: "Iris — Your AI Academy Assistant",
+                  desc: "Ask any training question, get instant answers, and practice client scenarios with Iris, the BTA Academy's built-in AI advisor coach.",
+                },
+                {
+                  title: "Certificates & Progress Tracking",
+                  desc: "Complete a category, earn a certificate. Every module you finish is tracked so you always know where you stand and what's next.",
+                },
+                {
+                  title: "Supplier Library",
+                  desc: "A curated, searchable reference of BTA's preferred suppliers — hotels, DMCs, air partners, and insurance — linked directly to the training that supports each relationship.",
+                },
+              ].map(({ title, desc }) => (
+                <div key={title} className="border border-white/10 p-8 hover:border-[#bfaf8a]/40 transition-colors duration-300">
+                  <div className="w-8 h-px bg-[#bfaf8a] mb-6" />
+                  <h4
+                    className="text-white text-lg font-light mb-4"
+                    style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
+                  >
+                    {title}
+                  </h4>
+                  <p className="text-white/60 text-sm leading-relaxed" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+                    {desc}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Why It Matters */}
+          <div className="border-t border-white/10 pt-16 text-center">
+            <h3
+              className="text-white text-2xl font-light mb-6"
+              style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
+            >
+              Why It Matters for Advisors
+            </h3>
+            <p className="text-white/70 text-base max-w-2xl mx-auto leading-relaxed mb-8" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+              Most agencies hand you a PDF and wish you luck. BTA built a platform. The Academy means you spend
+              less time figuring things out and more time closing bookings, building client relationships, and
+              growing your income.
+            </p>
+            <p className="text-[#bfaf8a] text-sm tracking-[0.15em] uppercase" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+              Available exclusively to BTA advisors. Access begins on your first day.
+            </p>
           </div>
         </div>
       </section>
