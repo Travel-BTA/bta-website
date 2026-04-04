@@ -49,14 +49,29 @@ function decodeHtml(html: string) {
 // override those inline styles so our design system takes precedence without
 // needing to edit WordPress content.
 function processWordPressHtml(html: string): string {
-  return html
-    // ── BOOK WITH VIP AMENITIES button ──────────────────────────────────────
-    // Override WP inline style: change bg to #2f2f2f, reduce padding for a
-    // smaller, more refined button that fits the editorial context
-    .replace(
-      /(<a)([^>]*href="https:\/\/luxurytravelclubs\.com[^"]*")([^>]*)style="[^"]*"([^>]*>)/gi,
-      "$1$2$3 style=\"display:inline-block;padding:10px 28px;background-color:#2f2f2f;color:#ffffff;text-align:center;text-decoration:none;font-family:Georgia,serif;font-size:0.7rem;letter-spacing:0.18em;text-transform:uppercase;border:none;\"$4"
-    )
+  // ── luxurytravelclubs.com link handler ────────────────────────────────────
+  // WHY: WordPress uses luxurytravelclubs.com links for two distinct purposes:
+  //   1. Hotel name links (e.g. "Grand Hotel Fasano") — inline <a> tags inside <p>
+  //      These should render as elegant gold text links, NOT as button boxes.
+  //   2. "Book with VIP Amenities" CTA buttons — standalone <a> tags with that
+  //      exact text. These should render as a centered ghost outline button.
+  // We process the full HTML as a string, replacing <a>…</a> blocks based on
+  // their inner text content to apply the correct treatment to each type.
+  const processedHtml = html.replace(
+    /<a([^>]*href="https:\/\/luxurytravelclubs\.com[^"]*")[^>]*>([\/\s\S]*?)<\/a>/gi,
+    (_match: string, attrs: string, innerText: string) => {
+      const text = innerText.replace(/<[^>]+>/g, '').trim().toUpperCase();
+      if (text.includes('BOOK WITH VIP AMENITIES')) {
+        // CTA button: gold outline ghost style, centered block
+        return `<a${attrs} style="display:inline-block;padding:11px 32px;background-color:transparent;color:#9C886A;border:1px solid #9C886A;font-family:'Playfair Display',Georgia,serif;font-size:0.65rem;letter-spacing:0.22em;text-transform:uppercase;text-decoration:none;border-radius:0;">${innerText}</a>`;
+      } else {
+        // Hotel name link: elegant inline gold text link, no box
+        return `<a${attrs} style="color:#9C886A;text-decoration:underline;text-underline-offset:3px;font-weight:400;">${innerText}</a>`;
+      }
+    }
+  );
+
+  return processedHtml
     // ── Images ──────────────────────────────────────────────────────────────
     // Remove inline width/height/style attrs that cause images to overflow
     // the article column or render at wrong aspect ratios. CSS handles sizing.
