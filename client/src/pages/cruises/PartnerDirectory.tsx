@@ -369,7 +369,7 @@ export default function PartnerDirectory() {
           </div>
 
           {/* Allura script: white on photo */}
-          <p className="mb-3" style={{ color: "rgba(255,255,255,0.9)", fontFamily: "'Allura', cursive", fontSize: "1.8rem", fontStyle: "italic" }}>
+          <p className="mb-3" style={{ color: "rgba(255,255,255,0.9)", fontFamily: "'Allura', cursive", fontSize: "1.8rem" }}>
             Every Link Leads Back to BTA
           </p>
           {/* H1: Instrument Serif ALL CAPS white */}

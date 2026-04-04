@@ -129,7 +129,7 @@ export default function Experiences() {
             Experiences
           </p>
           {/* Allura script: white on photo */}
-          <p className="text-2xl md:text-3xl mb-2" style={{ color: "rgba(255,255,255,0.9)", fontFamily: "'Allura', cursive", fontStyle: "italic" }}>
+          <p className="text-2xl md:text-3xl mb-2" style={{ color: "rgba(255,255,255,0.9)", fontFamily: "'Allura', cursive" }}>
             Curated Around the Globe
           </p>
           {/* H1: Instrument Serif ALL CAPS white */}

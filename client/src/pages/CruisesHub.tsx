@@ -92,7 +92,7 @@ export default function CruisesHub() {
 
         <div className="relative z-10 w-full max-w-[1440px] mx-auto px-8 lg:px-14 pb-16 md:pb-24">
           {/* Allura script accent. white on photo background for legibility; Champagne Gold only on plain backgrounds */}
-          <p className="text-white/90 mb-3" style={{ fontFamily: F.allura, fontSize: "1.6rem", fontStyle: "italic" }}>
+          <p className="text-white/90 mb-3" style={{ fontFamily: F.allura, fontSize: "1.6rem" }}>
             Extraordinary Places &amp; Exclusive Amenities
           </p>
           {/* H1: Instrument Serif ALL CAPS white. matches Figma hero exactly */}
@@ -228,7 +228,7 @@ export default function CruisesHub() {
 
           <div className="text-center mb-16">
             {/* Allura script accent */}
-            <p className="text-[#bfaf8a] mb-3" style={{ fontFamily: F.allura, fontSize: "1.8rem", fontStyle: "italic" }}>
+            <p className="text-[#bfaf8a] mb-3" style={{ fontFamily: F.allura, fontSize: "1.8rem" }}>
               Explore Our Cruises
             </p>
             {/* H2: Instrument Serif ALL CAPS Champagne Gold */}

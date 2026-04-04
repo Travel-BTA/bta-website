@@ -142,7 +142,7 @@ export default function Destinations() {
             Destinations
           </p>
           {/* Allura script accent. white on photo; Champagne Gold only on plain backgrounds */}
-          <p className="text-2xl md:text-3xl mb-2" style={{ color: "rgba(255,255,255,0.9)", fontFamily: "'Allura', cursive", fontStyle: "italic" }}>
+          <p className="text-2xl md:text-3xl mb-2" style={{ color: "rgba(255,255,255,0.9)", fontFamily: "'Allura', cursive" }}>
             Where Will You Go Next?
           </p>
           {/* H1: Instrument Serif ALL CAPS white on hero photo. Champagne Gold only on plain backgrounds */}
@@ -162,7 +162,7 @@ export default function Destinations() {
           Curated for 2026 &amp; 2027
         </p>
         {/* H2 subheading: Playfair Display SemiBold Italic, NOT caps. matches Figma */}
-        <h2 className="text-3xl md:text-4xl mb-6" style={{ color: "#384959", fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 500, fontStyle: "italic" }}>
+        <h2 className="text-3xl md:text-4xl mb-6" style={{ color: "#384959", fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 500 }}>
           The World, Thoughtfully Edited
         </h2>
         <p className="text-base leading-relaxed" style={{ color: "#2f2f2f", fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 400, fontSize: "1.05rem" }}>
@@ -182,7 +182,7 @@ export default function Destinations() {
       {/* CTA */}
       <section className="py-20 px-8 text-center" style={{ backgroundColor: "#384959" }}>
         {/* Allura script accent for CTA eyebrow */}
-        <p className="text-2xl mb-3" style={{ color: "#bfaf8a", fontFamily: "'Allura', cursive", fontStyle: "italic" }}>
+        <p className="text-2xl mb-3" style={{ color: "#bfaf8a", fontFamily: "'Allura', cursive" }}>
           Ready to Begin?
         </p>
         {/* H1: Instrument Serif ALL CAPS Champagne Gold */}
@@ -239,7 +239,7 @@ function DestinationCard({ dest, featured }: { dest: typeof DESTINATIONS[0]; fea
         {/* Name overlay */}
         <div className="absolute bottom-0 left-0 right-0 p-8">
           {/* Allura script for tagline. white on photo overlay; Champagne Gold only on plain backgrounds */}
-          <p className="text-xl mb-1" style={{ color: "rgba(255,255,255,0.85)", fontFamily: "'Allura', cursive", fontStyle: "italic" }}>
+          <p className="text-xl mb-1" style={{ color: "rgba(255,255,255,0.85)", fontFamily: "'Allura', cursive" }}>
             {dest.tagline}
           </p>
           {/* H3 card title: Instrument Serif ALL CAPS, white on dark overlay */}

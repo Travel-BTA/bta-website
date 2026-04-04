@@ -159,7 +159,7 @@ export default function LuxuryOcean() {
           </div>
 
           {/* Allura script: white on photo. Champagne Gold only on plain backgrounds */}
-          <p className="mb-3" style={{ color: "rgba(255,255,255,0.9)", fontFamily: "'Allura', cursive", fontSize: "1.6rem", fontStyle: "italic" }}>
+          <p className="mb-3" style={{ color: "rgba(255,255,255,0.9)", fontFamily: "'Allura', cursive", fontSize: "1.6rem" }}>
             Ultra-Luxury at Sea
           </p>
           {/* H1: Instrument Serif ALL CAPS white on hero photo */}
@@ -320,7 +320,7 @@ export default function LuxuryOcean() {
                   Also Available
                 </span>
               </div>
-              <h2 className="text-white text-3xl md:text-4xl leading-tight mb-6" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 500, fontStyle: "italic" }}>
+              <h2 className="text-white text-3xl md:text-4xl leading-tight mb-6" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 500 }}>
                 Yacht &amp; Boutique Lines
               </h2>
               <p className="text-white/70 text-lg leading-relaxed mb-8" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
