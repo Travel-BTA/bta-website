@@ -175,12 +175,12 @@ export default function FulfillmentPolicy() {
           <h1
             className="text-white uppercase mb-6"
             style={{
-              fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal",
+              fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal", textTransform: "uppercase",
               fontWeight: 400,
               fontSize: "clamp(2.4rem, 6vw, 4.5rem)",
               letterSpacing: "0.12em",
               lineHeight: 1.05,
-              textTransform: "uppercase"
+              
             }}
           >
             Fulfillment Policy

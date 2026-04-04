@@ -46,7 +46,7 @@ function PartnerCard({ partner }: { partner: Partner }) {
         {/* Card body */}
         <div className="flex flex-col flex-1 p-6">
           {/* Partner name */}
-          <h3 className="text-xl text-[#384959] mb-1 leading-tight" style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal", fontWeight: 500 }}>
+          <h3 className="text-xl text-[#384959] mb-1 leading-tight" style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal", textTransform: "uppercase", fontWeight: 500 }}>
             {partner.name}
           </h3>
 
@@ -239,7 +239,7 @@ export default function PreferredPartners() {
                     <span className="bta-eyebrow text-[10px] tracking-widest text-[#BFAF8A] mb-1 block">
                       {prop.partner}
                     </span>
-                    <h3 className="text-white text-lg leading-tight mb-0.5" style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal", fontWeight: 500 }}>
+                    <h3 className="text-white text-lg leading-tight mb-0.5" style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal", textTransform: "uppercase", fontWeight: 500 }}>
                       {prop.name}
                     </h3>
                     <p className="bta-eyebrow text-white/60 text-[10px] tracking-widest">

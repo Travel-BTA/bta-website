@@ -429,12 +429,12 @@ export default function TermsAndConditions() {
           <h1
             className="uppercase tracking-widest text-white mb-4"
             style={{
-              fontFamily: "'Instrument Serif', serif", fontStyle: "normal",
+              fontFamily: "'Instrument Serif', serif", fontStyle: "normal", textTransform: "uppercase",
               fontSize: "clamp(2rem, 5vw, 3.5rem)",
               fontWeight: 400,
               lineHeight: 1.1,
               letterSpacing: "0.08em",
-              textTransform: "uppercase"
+              
             }}
           >
             Terms &amp; Conditions
@@ -542,10 +542,10 @@ export default function TermsAndConditions() {
                 <span
                   className="text-xs font-semibold tracking-widest shrink-0"
                   style={{
-                    fontFamily: "'Instrument Serif', serif", fontStyle: "normal",
+                    fontFamily: "'Instrument Serif', serif", fontStyle: "normal", textTransform: "uppercase",
                     color: "#bfaf8a",
                     letterSpacing: "0.12em",
-                    textTransform: "uppercase"
+                    
                   }}
                 >
                   {String(i + 1).padStart(2, "0")}
@@ -591,12 +591,12 @@ export default function TermsAndConditions() {
           <h2
             className="uppercase tracking-widest text-center mb-2"
             style={{
-              fontFamily: "'Instrument Serif', serif", fontStyle: "normal",
+              fontFamily: "'Instrument Serif', serif", fontStyle: "normal", textTransform: "uppercase",
               fontSize: "1.4rem",
               fontWeight: 400,
               color: "#bfaf8a",
               letterSpacing: "0.1em",
-              textTransform: "uppercase"
+              
             }}
           >
             Questions or Concerns?
@@ -637,10 +637,10 @@ export default function TermsAndConditions() {
                 <p
                   className="text-xs uppercase tracking-widest mb-3"
                   style={{
-                    fontFamily: "'Instrument Serif', serif", fontStyle: "normal",
+                    fontFamily: "'Instrument Serif', serif", fontStyle: "normal", textTransform: "uppercase",
                     color: "#bfaf8a",
                     letterSpacing: "0.12em",
-                    textTransform: "uppercase"
+                    
                   }}
                 >
                   {item.label}
@@ -678,9 +678,9 @@ export default function TermsAndConditions() {
           className="mt-12 pt-8 flex flex-wrap justify-center gap-8 text-xs tracking-widest uppercase"
           style={{
             borderTop: "1px solid rgba(191,175,138,0.3)",
-            fontFamily: "'Instrument Serif', serif", fontStyle: "normal",
+            fontFamily: "'Instrument Serif', serif", fontStyle: "normal", textTransform: "uppercase",
             letterSpacing: "0.1em",
-            textTransform: "uppercase"
+            
           }}
         >
           {[

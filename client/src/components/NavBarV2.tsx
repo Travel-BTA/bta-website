@@ -90,10 +90,9 @@ export default function NavBar() {
                 href={link.href}
                 className="relative text-white/85 hover:text-white transition-colors duration-300 group"
                 style={{
-                  fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal",
+                  fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal", textTransform: "uppercase",
                   fontSize: "11px",
                   letterSpacing: "0.22em",
-                  textTransform: "uppercase",
                   fontWeight: 400,
                 }}
               >
@@ -112,10 +111,9 @@ export default function NavBar() {
               href={nav.cta.href}
               className="inline-flex items-center gap-2 border border-white/40 hover:border-[#bfaf8a] text-white/90 hover:text-white px-6 py-2.5 transition-all duration-300 hover:bg-[#bfaf8a]/10"
               style={{
-                fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal",
+                fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal", textTransform: "uppercase",
                 fontSize: "10px",
                 letterSpacing: "0.25em",
-                textTransform: "uppercase",
               }}
             >
               {nav.cta.label}
@@ -189,10 +187,9 @@ export default function NavBar() {
               onClick={() => setMenuOpen(false)}
               className="text-white/75 hover:text-white transition-colors duration-200 flex items-center justify-between group"
               style={{
-                fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal",
+                fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal", textTransform: "uppercase",
                 fontSize: "12px",
                 letterSpacing: "0.22em",
-                textTransform: "uppercase",
                 // WHY: staggered opacity gives a subtle cascade feel
                 opacity: menuOpen ? 1 : 0,
                 transitionDelay: menuOpen ? `${i * 40}ms` : "0ms",
@@ -214,10 +211,9 @@ export default function NavBar() {
             onClick={() => setMenuOpen(false)}
             className="block text-center border border-[#bfaf8a]/50 hover:border-[#bfaf8a] text-[#bfaf8a] hover:bg-[#bfaf8a]/10 py-3 transition-all duration-300"
             style={{
-              fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal",
+              fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal", textTransform: "uppercase",
               fontSize: "10px",
               letterSpacing: "0.25em",
-              textTransform: "uppercase",
             }}
           >
             {nav.cta.label}

@@ -170,10 +170,10 @@ export default function PrivateCharters() {
           <h1
             className="text-white text-5xl md:text-6xl lg:text-7xl uppercase leading-tight mb-6"
             style={{
-              fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal",
+              fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal", textTransform: "uppercase",
               fontWeight: 400,
               letterSpacing: "0.04em",
-              textTransform: "uppercase"
+              
             }}
           >
             Private Charters

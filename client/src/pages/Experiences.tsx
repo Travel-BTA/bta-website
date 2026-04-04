@@ -189,7 +189,7 @@ export default function Experiences() {
               </p>
               <h2
                 className="text-3xl md:text-4xl mb-4 uppercase"
-                style={{ color: cat.textColor, fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400, fontStyle: "normal", letterSpacing: "0.06em", lineHeight: 1.15 }}
+                style={{ color: cat.textColor, fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400, fontStyle: "normal", textTransform: "uppercase", letterSpacing: "0.06em", lineHeight: 1.15 }}
               >
                 {cat.name}
               </h2>

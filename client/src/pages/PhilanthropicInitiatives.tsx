@@ -167,7 +167,7 @@ export default function PhilanthropicInitiatives() {
                     0{i + 1}
                   </p>
                   <div className="w-5 h-px bg-[#BFAF8A] mb-3" />
-                  <h3 className="text-white text-xl tracking-wide" style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal", fontWeight: 500 }}>
+                  <h3 className="text-white text-xl tracking-wide" style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal", textTransform: "uppercase", fontWeight: 500 }}>
                     {pillar.name}
                   </h3>
                   <p className="text-white/60 text-[10px] tracking-widest uppercase font-light mt-1 leading-relaxed">
@@ -202,7 +202,7 @@ export default function PhilanthropicInitiatives() {
                     0{i + 1}
                   </p>
                   <div className="w-5 h-px bg-[#BFAF8A] mb-3" />
-                  <h3 className="text-white text-lg tracking-wide" style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal", fontWeight: 500 }}>
+                  <h3 className="text-white text-lg tracking-wide" style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal", textTransform: "uppercase", fontWeight: 500 }}>
                     {pillar.name}
                   </h3>
                   <p className="text-white/0 group-hover:text-white/60 text-[10px] tracking-widest uppercase font-light mt-1 transition-all duration-500 leading-relaxed">
@@ -244,7 +244,7 @@ export default function PhilanthropicInitiatives() {
               {/* Name overlay */}
               <div className="absolute bottom-0 left-0 right-0 p-4">
                 <div className="w-6 h-px bg-[#BFAF8A] mb-2" />
-                <h3 className="text-white text-sm leading-snug" style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal", fontWeight: 500 }}>
+                <h3 className="text-white text-sm leading-snug" style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal", textTransform: "uppercase", fontWeight: 500 }}>
                   {org.name}
                 </h3>
               </div>

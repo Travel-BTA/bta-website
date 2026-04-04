@@ -140,14 +140,13 @@ export default function LandJourneys() {
         <div className="px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
           <div className="text-center mb-16">
             <p
-              className="text-[#bfaf8a] tracking-[0.25em] text-xs uppercase mb-4"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              className="bta-eyebrow text-xs tracking-[0.25em] mb-4"
             >
               Explore by Style
             </p>
             <h2
-              className="text-[#384959] text-4xl md:text-5xl font-light"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              className="text-[#384959] text-4xl md:text-5xl"
+              style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal", fontWeight: 400, textTransform: "uppercase", letterSpacing: "0.05em" }}
             >
               Where Will You Go?
             </h2>

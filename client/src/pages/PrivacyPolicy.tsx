@@ -182,9 +182,8 @@ export default function PrivacyPolicy() {
           {/* H1 — Instrument Serif ALL CAPS, white on photo */}
           <h1
             style={{
-              fontFamily: "'Instrument Serif', serif", fontStyle: "normal",
+              fontFamily: "'Instrument Serif', serif", fontStyle: "normal", textTransform: "uppercase",
               fontWeight: 400,
-              textTransform: "uppercase",
               letterSpacing: "0.08em",
               fontSize: "clamp(2rem, 6vw, 3.5rem)",
               color: "#ffffff",
@@ -283,12 +282,11 @@ export default function PrivacyPolicy() {
               <div className="flex items-center gap-4 mb-5">
                 <span
                   style={{
-                    fontFamily: "'Instrument Serif', serif", fontStyle: "normal",
+                    fontFamily: "'Instrument Serif', serif", fontStyle: "normal", textTransform: "uppercase",
                     fontWeight: 400,
                     fontSize: "0.7rem",
                     letterSpacing: "0.15em",
                     color: "#bfaf8a",
-                    textTransform: "uppercase",
                   }}
                 >
                   {section.number.padStart(2, "0")}
@@ -320,12 +318,11 @@ export default function PrivacyPolicy() {
             <div className="flex items-center gap-4 mb-5">
               <span
                 style={{
-                  fontFamily: "'Instrument Serif', serif", fontStyle: "normal",
+                  fontFamily: "'Instrument Serif', serif", fontStyle: "normal", textTransform: "uppercase",
                   fontWeight: 400,
                   fontSize: "0.7rem",
                   letterSpacing: "0.15em",
                   color: "#bfaf8a",
-                  textTransform: "uppercase",
                 }}
               >
                 07
@@ -367,9 +364,8 @@ export default function PrivacyPolicy() {
               >
                 <p
                   style={{
-                    fontFamily: "'Instrument Serif', serif", fontStyle: "normal",
+                    fontFamily: "'Instrument Serif', serif", fontStyle: "normal", textTransform: "uppercase",
                     fontWeight: 400,
-                    textTransform: "uppercase",
                     letterSpacing: "0.12em",
                     fontSize: "0.7rem",
                     color: "#bfaf8a",
@@ -396,9 +392,8 @@ export default function PrivacyPolicy() {
               >
                 <p
                   style={{
-                    fontFamily: "'Instrument Serif', serif", fontStyle: "normal",
+                    fontFamily: "'Instrument Serif', serif", fontStyle: "normal", textTransform: "uppercase",
                     fontWeight: 400,
-                    textTransform: "uppercase",
                     letterSpacing: "0.12em",
                     fontSize: "0.7rem",
                     color: "#bfaf8a",
@@ -432,9 +427,8 @@ export default function PrivacyPolicy() {
         <div
           className="flex items-center justify-center gap-6 flex-wrap"
           style={{
-            fontFamily: "'Instrument Serif', serif", fontStyle: "normal",
+            fontFamily: "'Instrument Serif', serif", fontStyle: "normal", textTransform: "uppercase",
             fontWeight: 400,
-            textTransform: "uppercase",
             letterSpacing: "0.12em",
             fontSize: "0.7rem",
             color: "rgba(191,175,138,0.8)",
