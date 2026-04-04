@@ -49,6 +49,7 @@ const ABOUT_SUBMENU = [
   { label: "We Give Back",                  href: "/about/philanthropic-initiatives" },
   { label: "Hotel Specialist Program",      href: "/hotel-specialist-program" },
   { label: "Hotel Collection Application",  href: "/hotel-collection-application" },
+  { label: "Advisor Programs",              href: "/advisor-programs" },
   { label: "Pricing",                       href: "/pricing" },
   { label: "Press",                         href: "/press" },
   { label: "Contact Us",                    href: "/contact-us" },

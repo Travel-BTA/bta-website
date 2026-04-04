@@ -340,7 +340,9 @@ export default function OurPeople() {
             ))}
           </div>
         </div>
-      </section>      {/* ── Independent Affiliate Advisors ─────────────────────────────────────── */}
+      </section>
+
+      {/* ── Independent Affiliate Advisors ─────────────────────────────────────── */}
       <section className="bg-white py-24 lg:py-32">
         <div className="max-w-[1440px] mx-auto px-8 lg:px-14">
           <SectionHeader
@@ -355,7 +357,9 @@ export default function OurPeople() {
             ))}
           </div>
         </div>
-      </section>     {/* ── Luxury Travel Coaches ─────────────────────────────────────────── */}
+      </section>
+
+      {/* ── Luxury Travel Coaches ─────────────────────────────────────────── */}
       <section className="bg-[#faf9f6] py-24 lg:py-32">
         <div className="max-w-[1440px] mx-auto px-8 lg:px-14">
           <SectionHeader
