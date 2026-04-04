@@ -72,7 +72,7 @@ const FONT = {
 function Eyebrow({ children, light = false }: { children: React.ReactNode; light?: boolean }) {
   return (
     <p
-      className={`text-sm mb-4 ${light ? "text-[#BFAF8A]" : "text-[#bfaf8a]"}`}
+      className={`text-sm mb-4 ${light ? "text-[#bfaf8a]" : "text-[#bfaf8a]"}`}
       style={{ fontFamily: FONT.eyebrow, fontWeight: 500, fontStyle: "italic" }}
     >
       {children}
@@ -247,7 +247,7 @@ const ITALY_TABS = [
     label: "Young Children",
     sub: "Ages 3–10",
     Icon: Baby,
-    accentColor: "#9C886A",
+    accentColor: "#bfaf8a",
     days: [
       {
         day: "Nights 1–3",
@@ -319,7 +319,7 @@ const ITALY_TABS = [
     label: "Multigenerational",
     sub: "All Ages Together",
     Icon: Users,
-    accentColor: "#7982A2",
+    accentColor: "#384959",
     days: [
       {
         day: "Nights 1–3",
@@ -360,13 +360,13 @@ function ItalyTimeline() {
   const day = tab.days[activeDay];
 
   return (
-    <section className="py-24 md:py-32 bg-[#041E42] overflow-hidden">
+    <section className="py-24 md:py-32 bg-[#384959] overflow-hidden">
       <div className="px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
 
         {/* Section header */}
         <div className="text-center mb-14">
           <p
-            className="text-[#BFAF8A] text-sm mb-4"
+            className="text-[#bfaf8a] text-sm mb-4"
             style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 500, fontStyle: "italic" }}
           >
             One Destination, Three Journeys
@@ -393,7 +393,7 @@ function ItalyTimeline() {
                   onClick={() => { setActiveTab(i); setActiveDay(0); }}
                   className={`flex items-center gap-2.5 px-6 py-4 text-sm transition-all duration-300 ${
                     activeTab === i
-                      ? "bg-[#BFAF8A] text-[#384959]"
+                      ? "bg-[#bfaf8a] text-[#384959]"
                       : "text-white/60 hover:text-white hover:bg-white/5"
                   }`}
                 >
@@ -427,14 +427,14 @@ function ItalyTimeline() {
                 onClick={() => setActiveDay(i)}
                 className={`flex-shrink-0 text-left border transition-all duration-300 ${
                   activeDay === i
-                    ? "border-[#BFAF8A] bg-[#BFAF8A]/10"
+                    ? "border-[#bfaf8a] bg-[#bfaf8a]/10"
                     : "border-white/10 hover:border-white/30"
                 }`}
               >
                 <div className="px-5 py-4">
                   <p
                     className={`text-xs uppercase tracking-widest mb-1 ${
-                      activeDay === i ? "text-[#BFAF8A]" : "text-white/40"
+                      activeDay === i ? "text-[#bfaf8a]" : "text-white/40"
                     }`}
                     style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic", fontWeight: 500 }}
                   >
@@ -466,10 +466,10 @@ function ItalyTimeline() {
               }}
             >
               {/* Gradient overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#041E42]/80 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#384959]/80 via-transparent to-transparent" />
               {/* Location badge */}
               <div className="absolute bottom-5 left-5 flex items-center gap-2">
-                <MapPin size={12} className="text-[#BFAF8A]" />
+                <MapPin size={12} className="text-[#bfaf8a]" />
                 <span
                   className="text-white text-xs uppercase tracking-widest"
                   style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
@@ -483,7 +483,7 @@ function ItalyTimeline() {
             <div className="p-8 md:p-10 flex flex-col justify-between bg-[#384959]/30">
               <div>
                 <p
-                  className="text-[#BFAF8A] text-xs mb-3"
+                  className="text-[#bfaf8a] text-xs mb-3"
                   style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic", fontWeight: 500 }}
                 >
                   {day.day} · {day.location}
@@ -499,10 +499,10 @@ function ItalyTimeline() {
                 </p>
 
                 {/* Highlight pill */}
-                <div className="flex items-start gap-3 border-l-2 border-[#BFAF8A] pl-4">
+                <div className="flex items-start gap-3 border-l-2 border-[#bfaf8a] pl-4">
                   <div>
                     <p
-                      className="text-[#BFAF8A] text-xs mb-1"
+                      className="text-[#bfaf8a] text-xs mb-1"
                       style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic", fontWeight: 500 }}
                     >
                       Signature Moment
@@ -543,7 +543,7 @@ function ItalyTimeline() {
               onClick={() => setActiveDay(i)}
               className={`transition-all duration-300 ${
                 activeDay === i
-                  ? "w-8 h-1 bg-[#BFAF8A]"
+                  ? "w-8 h-1 bg-[#bfaf8a]"
                   : "w-4 h-1 bg-white/20 hover:bg-white/40"
               }`}
             />
@@ -594,7 +594,7 @@ export default function FamilyTravel() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#faf9f6] text-[#2F2F2F]">
+    <div className="min-h-screen bg-[#faf9f6] text-[#2f2f2f]">
       <NavBar />
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
@@ -613,7 +613,7 @@ export default function FamilyTravel() {
         <div className="relative z-10 h-full flex flex-col justify-end pb-20 px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
           {/* Eyebrow — Playfair Display 500 italic */}
           <p
-            className="text-[#BFAF8A] text-sm mb-4"
+            className="text-[#bfaf8a] text-sm mb-4"
             style={{ fontFamily: FONT.eyebrow, fontWeight: 500, fontStyle: "italic" }}
           >
             Experiences · Family Travel
@@ -686,7 +686,7 @@ export default function FamilyTravel() {
               { label: "Dining & Downtime", desc: "Arranged with real-life family travel in mind" },
             ].map((item, i) => (
               <div key={i} className="text-center">
-                <div className="w-8 h-px bg-[#BFAF8A] mx-auto mb-5" />
+                <div className="w-8 h-px bg-[#bfaf8a] mx-auto mb-5" />
                 <h3
                   className="text-white text-lg font-light mb-2 uppercase"
                   style={{ fontFamily: FONT.heading, fontStyle: "normal" }}
@@ -796,7 +796,7 @@ export default function FamilyTravel() {
           {/* Header */}
           <div className="text-center mb-16">
             <p
-              className="text-[#BFAF8A] text-sm mb-4"
+              className="text-[#bfaf8a] text-sm mb-4"
               style={{ fontFamily: FONT.eyebrow, fontWeight: 500, fontStyle: "italic" }}
             >
               One Destination, Three Journeys
@@ -827,8 +827,8 @@ export default function FamilyTravel() {
                 ].map(({ label, sub, Icon }, ci) => (
                   <div key={ci} className="text-center pb-6 px-3">
                     <div className="flex justify-center mb-3">
-                      <div className="w-10 h-10 rounded-full border border-[#BFAF8A]/40 flex items-center justify-center">
-                        <Icon size={18} className="text-[#BFAF8A]" />
+                      <div className="w-10 h-10 rounded-full border border-[#bfaf8a]/40 flex items-center justify-center">
+                        <Icon size={18} className="text-[#bfaf8a]" />
                       </div>
                     </div>
                     <p
@@ -838,7 +838,7 @@ export default function FamilyTravel() {
                       {label}
                     </p>
                     <p
-                      className="text-[#BFAF8A] text-xs mt-1"
+                      className="text-[#bfaf8a] text-xs mt-1"
                       style={{ fontFamily: FONT.eyebrow, fontStyle: "italic", fontWeight: 500 }}
                     >
                       {sub}
@@ -889,9 +889,9 @@ export default function FamilyTravel() {
                 <div key={ri} className="grid grid-cols-4 border-t border-white/10">
                   {/* Row label */}
                   <div className="flex items-center gap-2 py-6 pr-4">
-                    <RowIcon size={14} className="text-[#BFAF8A] flex-shrink-0" />
+                    <RowIcon size={14} className="text-[#bfaf8a] flex-shrink-0" />
                     <p
-                      className="text-[#BFAF8A] text-xs tracking-widest"
+                      className="text-[#bfaf8a] text-xs tracking-widest"
                       style={{ fontFamily: FONT.eyebrow, fontStyle: "italic", fontWeight: 500 }}
                     >
                       {rowLabel}
@@ -925,7 +925,7 @@ export default function FamilyTravel() {
               {/* Footer rule */}
               <div className="border-t border-white/10 mt-2 pt-8 text-center">
                 <p
-                  className="text-[#BFAF8A] text-xs tracking-widest"
+                  className="text-[#bfaf8a] text-xs tracking-widest"
                   style={{ fontFamily: FONT.eyebrow, fontStyle: "italic", fontWeight: 500 }}
                 >
                   Every itinerary is built from scratch
@@ -939,7 +939,7 @@ export default function FamilyTravel() {
       </section>}
 
       {/* ── Favorite Destinations grid ────────────────────────────────────── */}
-      <section className="py-24 bg-[#f3f0eb]">
+      <section className="py-24 bg-[#edeae4]">
         <div className="px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
           <div className="text-center mb-16">
             <Eyebrow>Favorite Family Destinations</Eyebrow>
@@ -1026,7 +1026,7 @@ export default function FamilyTravel() {
               ))}
             </ul>
             <Link href="/book">
-              <button className="group flex items-center gap-3 bg-[#384959] text-white tracking-[0.2em] text-sm uppercase px-10 py-4 hover:bg-[#2a3844] transition-colors duration-300">
+              <button className="group flex items-center gap-3 bg-[#384959] text-white tracking-[0.2em] text-sm uppercase px-10 py-4 hover:bg-[#384959] transition-colors duration-300">
                 Enquire About Accommodations
                 <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
               </button>
@@ -1060,7 +1060,7 @@ export default function FamilyTravel() {
                   "Specialty guides in history, food, art, or nature",
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-4">
-                    <div className="w-4 h-px bg-[#BFAF8A] mt-3 flex-shrink-0" />
+                    <div className="w-4 h-px bg-[#bfaf8a] mt-3 flex-shrink-0" />
                     <span className="text-white/70 text-base leading-relaxed font-light">{item}</span>
                   </li>
                 ))}
@@ -1076,8 +1076,8 @@ export default function FamilyTravel() {
                   backgroundPosition: "center",
                 }}
               />
-              <div className="absolute -top-4 -right-4 w-16 h-16 border-t-2 border-r-2 border-[#BFAF8A]" />
-              <div className="absolute -bottom-4 -left-4 w-16 h-16 border-b-2 border-l-2 border-[#BFAF8A]" />
+              <div className="absolute -top-4 -right-4 w-16 h-16 border-t-2 border-r-2 border-[#bfaf8a]" />
+              <div className="absolute -bottom-4 -left-4 w-16 h-16 border-b-2 border-l-2 border-[#bfaf8a]" />
             </div>
           </div>
         </div>
@@ -1128,7 +1128,7 @@ export default function FamilyTravel() {
         <div className="relative z-10 h-full flex items-center justify-center text-center px-8">
           <div>
             <p
-              className="text-[#BFAF8A] text-sm mb-4"
+              className="text-[#bfaf8a] text-sm mb-4"
               style={{ fontFamily: FONT.eyebrow, fontWeight: 500, fontStyle: "italic" }}
             >
               Iceland
@@ -1156,7 +1156,7 @@ export default function FamilyTravel() {
         <div className="absolute inset-0 bg-[#384959]/75" />
         <div className="relative z-10 text-center px-8">
           <p
-            className="text-[#BFAF8A] text-sm mb-6"
+            className="text-[#bfaf8a] text-sm mb-6"
             style={{ fontFamily: FONT.eyebrow, fontWeight: 500, fontStyle: "italic" }}
           >
             Begin Your Family Journey
@@ -1196,7 +1196,7 @@ export default function FamilyTravel() {
               <ul className="space-y-3 text-sm font-light">
                 {footer.explore.map((l: { label: string; href: string }, i: number) => (
                   <li key={i}>
-                    <Link href={l.href} className="hover:text-[#BFAF8A] transition-colors">{l.label}</Link>
+                    <Link href={l.href} className="hover:text-[#bfaf8a] transition-colors">{l.label}</Link>
                   </li>
                 ))}
               </ul>
@@ -1206,7 +1206,7 @@ export default function FamilyTravel() {
               <ul className="space-y-3 text-sm font-light">
                 {footer.company.map((l: { label: string; href: string }, i: number) => (
                   <li key={i}>
-                    <Link href={l.href} className="hover:text-[#BFAF8A] transition-colors">{l.label}</Link>
+                    <Link href={l.href} className="hover:text-[#bfaf8a] transition-colors">{l.label}</Link>
                   </li>
                 ))}
               </ul>
@@ -1215,12 +1215,12 @@ export default function FamilyTravel() {
               <p className="text-white tracking-[0.2em] text-xs uppercase mb-6">Contact</p>
               <ul className="space-y-3 text-sm font-light">
                 <li>
-                  <a href={`tel:${footer.contact.phone}`} className="hover:text-[#BFAF8A] transition-colors">
+                  <a href={`tel:${footer.contact.phone}`} className="hover:text-[#bfaf8a] transition-colors">
                     {footer.contact.phone}
                   </a>
                 </li>
                 <li>
-                  <a href={`mailto:${footer.contact.email}`} className="hover:text-[#BFAF8A] transition-colors">
+                  <a href={`mailto:${footer.contact.email}`} className="hover:text-[#bfaf8a] transition-colors">
                     {footer.contact.email}
                   </a>
                 </li>
@@ -1232,7 +1232,7 @@ export default function FamilyTravel() {
             <p className="text-xs text-white/40">{footer.copyright}</p>
             <div className="flex gap-6 text-xs">
               {footer.legal.map((l: { label: string; href: string }, i: number) => (
-                <Link key={i} href={l.href} className="hover:text-[#BFAF8A] transition-colors text-white/40">
+                <Link key={i} href={l.href} className="hover:text-[#bfaf8a] transition-colors text-white/40">
                   {l.label}
                 </Link>
               ))}
