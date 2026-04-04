@@ -8,7 +8,7 @@
  * luxury editorial design language as the rest of the site.
  *
  * Typography:
- *   - All headings (h1, h2, h3): 'Instrument Serif', serif — light weight, elegant
+ *   - All headings (h1, h2, h3): 'Instrument Serif', serif — light weight, ALWAYS UPPERCASE (text-transform: uppercase), NEVER italic
  *   - Eyebrow labels: 'Playfair Display', serif — weight 500, italic, gold, tracked
  *   - Body copy: system sans-serif stack, font-light
  *
@@ -252,7 +252,7 @@ export default function FamilyTravel() {
     <div className="min-h-screen bg-[#faf9f6] text-[#2F2F2F]">
       <NavBar />
 
-      {/* ── Hero ─────────────────────────────────────────────────────────── */}
+      {// ── Hero ─────────────────────────────────────────────────────────── */
       <section className="relative h-[90vh] min-h-[600px] overflow-hidden">
         <div
           ref={heroRef}
@@ -273,13 +273,13 @@ export default function FamilyTravel() {
           >
             Experiences · Family Travel
           </p>
-          {/* H1 — Instrument Serif */}
+          {/* H1 — Instrument Serif, UPPERCASE, never italic */}
           <h1
-            className="text-white text-5xl md:text-6xl lg:text-7xl font-light leading-[1.05] mb-6 max-w-3xl"
-            style={{ fontFamily: FONT.heading }}
+            className="text-white text-5xl md:text-6xl lg:text-7xl font-light leading-[1.05] mb-6 max-w-3xl uppercase"
+            style={{ fontFamily: FONT.heading, fontStyle: "normal" }}
           >
             Travel Designed for<br />Every Generation
-          </h1>
+          </h1>>
           <p className="text-white/80 text-lg md:text-xl font-light max-w-xl leading-relaxed">
             Journeys that reflect the interests, preferences, and practical needs of every traveler in your family.
           </p>
@@ -296,8 +296,8 @@ export default function FamilyTravel() {
           <div>
             <Eyebrow>The BTA Approach</Eyebrow>
             <h2
-              className="text-[#384959] text-4xl md:text-5xl font-light leading-tight mb-8"
-              style={{ fontFamily: FONT.heading }}
+              className="text-[#384959] text-4xl md:text-5xl font-light leading-tight mb-8 uppercase"
+              style={{ fontFamily: FONT.heading, fontStyle: "normal" }}
             >
               Thoughtful Planning,<br />Tailored to Your Family
             </h2>
@@ -343,8 +343,8 @@ export default function FamilyTravel() {
               <div key={i} className="text-center">
                 <div className="w-8 h-px bg-[#BFAF8A] mx-auto mb-5" />
                 <h3
-                  className="text-white text-lg font-light mb-2"
-                  style={{ fontFamily: FONT.heading }}
+                  className="text-white text-lg font-light mb-2 uppercase"
+                  style={{ fontFamily: FONT.heading, fontStyle: "normal" }}
                 >
                   {item.label}
                 </h3>
@@ -377,8 +377,8 @@ export default function FamilyTravel() {
                   </p>
                 </div>
                 <h2
-                  className="text-[#384959] text-4xl md:text-5xl font-light leading-tight mb-7"
-                  style={{ fontFamily: FONT.heading }}
+                  className="text-[#384959] text-4xl md:text-5xl font-light leading-tight mb-7 uppercase"
+                  style={{ fontFamily: FONT.heading, fontStyle: "normal" }}
                 >
                   {group.headline.split("\n").map((line, i) => (
                     <span key={i}>
@@ -426,12 +426,12 @@ export default function FamilyTravel() {
         <div className="px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
           <div className="text-center mb-16">
             <Eyebrow>Favorite Family Destinations</Eyebrow>
-            <h2
-              className="text-[#384959] text-4xl md:text-5xl font-light"
-              style={{ fontFamily: FONT.heading }}
-            >
-              Where Families Thrive
-            </h2>
+          <h2
+            className="text-[#384959] text-4xl md:text-5xl font-light uppercase"
+            style={{ fontFamily: FONT.heading, fontStyle: "normal" }}
+          >
+            Where Families Thrive
+          </h2>
             <p className="text-[#2f2f2f] text-lg font-light mt-5 max-w-2xl mx-auto leading-relaxed">
               Some destinations lend themselves especially well to family travel, offering the right balance of comfort, culture, scenery, and memorable experiences.
             </p>
@@ -454,8 +454,8 @@ export default function FamilyTravel() {
                   </div>
                 </div>
                 <h3
-                  className="text-[#384959] text-2xl font-light mb-3"
-                  style={{ fontFamily: FONT.heading }}
+                  className="text-[#384959] text-2xl font-light mb-3 uppercase"
+                  style={{ fontFamily: FONT.heading, fontStyle: "normal" }}
                 >
                   {dest.name}
                 </h3>
@@ -487,8 +487,8 @@ export default function FamilyTravel() {
           <div>
             <Eyebrow>Our Approach to Accommodations</Eyebrow>
             <h2
-              className="text-[#384959] text-4xl md:text-5xl font-light leading-tight mb-7"
-              style={{ fontFamily: FONT.heading }}
+              className="text-[#384959] text-4xl md:text-5xl font-light leading-tight mb-7 uppercase"
+              style={{ fontFamily: FONT.heading, fontStyle: "normal" }}
             >
               Where You Stay Shapes<br />the Entire Experience
             </h2>
@@ -525,8 +525,8 @@ export default function FamilyTravel() {
             <div>
               <Eyebrow light>Curated Experiences</Eyebrow>
               <h2
-                className="text-white text-4xl md:text-5xl font-light leading-tight mb-7"
-                style={{ fontFamily: FONT.heading }}
+                className="text-white text-4xl md:text-5xl font-light leading-tight mb-7 uppercase"
+                style={{ fontFamily: FONT.heading, fontStyle: "normal" }}
               >
                 Experiences That Go<br />Beyond the Expected
               </h2>
@@ -571,8 +571,8 @@ export default function FamilyTravel() {
         <div className="text-center mb-16">
           <Eyebrow>Why Families Work With BTA</Eyebrow>
           <h2
-            className="text-[#384959] text-4xl md:text-5xl font-light"
-            style={{ fontFamily: FONT.heading }}
+            className="text-[#384959] text-4xl md:text-5xl font-light uppercase"
+            style={{ fontFamily: FONT.heading, fontStyle: "normal" }}
           >
             More Than a Hotel<br />and a Few Reservations
           </h2>
@@ -586,8 +586,8 @@ export default function FamilyTravel() {
             <div key={i}>
               <div className="w-8 h-px bg-[#bfaf8a] mb-6" />
               <h3
-                className="text-[#384959] text-xl font-light mb-4"
-                style={{ fontFamily: FONT.heading }}
+                className="text-[#384959] text-xl font-light mb-4 uppercase"
+                style={{ fontFamily: FONT.heading, fontStyle: "normal" }}
               >
                 {item.title}
               </h3>
@@ -617,8 +617,8 @@ export default function FamilyTravel() {
               Iceland
             </p>
             <h2
-              className="text-white text-4xl md:text-5xl font-light"
-              style={{ fontFamily: FONT.heading }}
+              className="text-white text-4xl md:text-5xl font-light uppercase"
+              style={{ fontFamily: FONT.heading, fontStyle: "normal" }}
             >
               Some Destinations Change<br />the Way Children See the World
             </h2>
@@ -645,8 +645,8 @@ export default function FamilyTravel() {
             Begin Your Family Journey
           </p>
           <h2
-            className="text-white text-5xl md:text-6xl font-light mb-6 leading-tight"
-            style={{ fontFamily: FONT.heading }}
+            className="text-white text-5xl md:text-6xl font-light mb-6 leading-tight uppercase"
+            style={{ fontFamily: FONT.heading, fontStyle: "normal" }}
           >
             Let Us Create a Journey<br />Worth Remembering
           </h2>
