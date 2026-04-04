@@ -59,13 +59,12 @@ const FONT = {
 };
 
 // ── Eyebrow component ──────────────────────────────────────────────────────
-// Playfair Display 500 italic, gold, tracked — used above every section title.
+// WHY: Playfair Display 500 italic, mixed case (NOT uppercase) — Janet's brand rule.
+// Eyebrows are always sentence-case or title-case, never all-caps.
 function Eyebrow({ children, light = false }: { children: React.ReactNode; light?: boolean }) {
   return (
     <p
-      className={`tracking-[0.25em] text-xs uppercase mb-4 font-medium italic ${
-        light ? "text-[#BFAF8A]" : "text-[#bfaf8a]"
-      }`}
+      className={`text-sm mb-4 ${light ? "text-[#BFAF8A]" : "text-[#bfaf8a]"}`}
       style={{ fontFamily: FONT.eyebrow, fontWeight: 500, fontStyle: "italic" }}
     >
       {children}
@@ -275,7 +274,7 @@ export default function FamilyTravel() {
         <div className="relative z-10 h-full flex flex-col justify-end pb-20 px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
           {/* Eyebrow — Playfair Display 500 italic */}
           <p
-            className="text-[#BFAF8A] tracking-[0.3em] text-sm uppercase mb-4 font-medium italic"
+            className="text-[#BFAF8A] text-sm mb-4"
             style={{ fontFamily: FONT.eyebrow, fontWeight: 500, fontStyle: "italic" }}
           >
             Experiences · Family Travel
@@ -377,7 +376,7 @@ export default function FamilyTravel() {
                 <div className="flex items-center gap-3 mb-5">
                   <Icon size={16} className="text-[#bfaf8a]" />
                   <p
-                    className="text-[#bfaf8a] tracking-[0.25em] text-xs uppercase font-medium italic"
+                    className="text-[#bfaf8a] text-sm"
                     style={{ fontFamily: FONT.eyebrow, fontWeight: 500, fontStyle: "italic" }}
                   >
                     {group.eyebrow}
@@ -618,7 +617,7 @@ export default function FamilyTravel() {
         <div className="relative z-10 h-full flex items-center justify-center text-center px-8">
           <div>
             <p
-              className="text-[#BFAF8A] tracking-[0.3em] text-sm uppercase mb-4 font-medium italic"
+              className="text-[#BFAF8A] text-sm mb-4"
               style={{ fontFamily: FONT.eyebrow, fontWeight: 500, fontStyle: "italic" }}
             >
               Iceland
@@ -646,7 +645,7 @@ export default function FamilyTravel() {
         <div className="absolute inset-0 bg-[#384959]/75" />
         <div className="relative z-10 text-center px-8">
           <p
-            className="text-[#BFAF8A] tracking-[0.3em] text-sm uppercase mb-6 font-medium italic"
+            className="text-[#BFAF8A] text-sm mb-6"
             style={{ fontFamily: FONT.eyebrow, fontWeight: 500, fontStyle: "italic" }}
           >
             Begin Your Family Journey
