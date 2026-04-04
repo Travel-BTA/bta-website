@@ -142,7 +142,7 @@ export default function JourneySubPage({ data }: Props) {
               {data.intro.eyebrow}
             </p>
             {/* H2: Playfair Display uppercase aegean */}
-            <h2 className="font-[Playfair_Display,serif] text-3xl md:text-4xl text-bta-aegean uppercase tracking-widest leading-tight mb-8">
+            <h2 className="bta-section-title text-3xl md:text-4xl text-bta-aegean uppercase tracking-widest leading-tight mb-8">
               {data.intro.headline}
             </h2>
             {/* Body: Playfair Display */}
@@ -178,7 +178,7 @@ export default function JourneySubPage({ data }: Props) {
             <p className="font-['Playfair_Display',Georgia,serif] italic text-bta-gold tracking-[0.25em] text-base uppercase mb-4">
               Featured Destinations
             </p>
-            <h2 className="font-[Playfair_Display,serif] text-3xl md:text-4xl text-bta-aegean uppercase tracking-widest">
+            <h2 className="bta-section-title text-3xl md:text-4xl text-bta-aegean uppercase tracking-widest">
               Where We Take You
             </h2>
           </div>
@@ -196,7 +196,7 @@ export default function JourneySubPage({ data }: Props) {
                   {dest.country}
                 </p>
                 {/* H3: Playfair Display uppercase aegean */}
-                <h3 className="font-[Playfair_Display,serif] text-xl md:text-2xl text-bta-aegean uppercase tracking-widest mb-3">
+                <h3 className="bta-section-title text-xl md:text-2xl text-bta-aegean uppercase tracking-widest mb-3">
                   {dest.name}
                 </h3>
                 <p className="font-['Playfair_Display',Georgia,serif] text-lg leading-relaxed text-[#2f2f2f]">
@@ -228,7 +228,7 @@ export default function JourneySubPage({ data }: Props) {
             <p className="font-['Playfair_Display',Georgia,serif] italic text-bta-gold tracking-[0.25em] text-base uppercase mb-4">
               {data.featuredItinerary.eyebrow}
             </p>
-            <h2 className="font-[Playfair_Display,serif] text-3xl md:text-4xl text-bta-aegean uppercase tracking-widest leading-tight mb-6">
+            <h2 className="bta-section-title text-3xl md:text-4xl text-bta-aegean uppercase tracking-widest leading-tight mb-6">
               {data.featuredItinerary.headline}
             </h2>
             <p className="font-['Playfair_Display',Georgia,serif] text-lg leading-relaxed text-[#2f2f2f] mb-10">
@@ -263,7 +263,7 @@ export default function JourneySubPage({ data }: Props) {
             <p className="font-['Playfair_Display',Georgia,serif] italic text-bta-gold tracking-[0.25em] text-base uppercase mb-4">
               {data.whyBta.eyebrow}
             </p>
-            <h2 className="font-[Playfair_Display,serif] text-3xl md:text-4xl text-white uppercase tracking-widest">
+            <h2 className="bta-section-title text-3xl md:text-4xl text-white uppercase tracking-widest">
               {data.whyBta.headline}
             </h2>
           </div>
@@ -271,7 +271,7 @@ export default function JourneySubPage({ data }: Props) {
             {data.whyBta.items.map((item, i) => (
               <div key={i}>
                 <div className="w-8 h-px bg-bta-gold mb-6" />
-                <h3 className="font-[Playfair_Display,serif] text-white text-xl uppercase tracking-widest mb-4">
+                <h3 className="bta-section-title text-white text-xl uppercase tracking-widest mb-4">
                   {item.title}
                 </h3>
                 <p className="font-['Playfair_Display',Georgia,serif] text-white/70 text-lg leading-relaxed">
@@ -295,7 +295,7 @@ export default function JourneySubPage({ data }: Props) {
       >
         <div className="absolute inset-0 bg-bta-aegean/75" />
         <div className="relative z-10 text-center px-8">
-          <h2 className="font-[Playfair_Display,serif] text-4xl md:text-5xl text-white uppercase tracking-widest mb-6 leading-tight">
+          <h2 className="bta-section-title text-4xl md:text-5xl text-white uppercase tracking-widest mb-6 leading-tight">
             {data.cta.headline}
           </h2>
           <p className="font-['Playfair_Display',Georgia,serif] italic text-white/70 text-xl md:text-2xl mb-12 max-w-xl mx-auto">

@@ -55,7 +55,7 @@ function processWordPressHtml(html: string): string {
     // smaller, more refined button that fits the editorial context
     .replace(
       /(<a)([^>]*href="https:\/\/luxurytravelclubs\.com[^"]*")([^>]*)style="[^"]*"([^>]*>)/gi,
-      `$1$2$3 style="display:inline-block;padding:10px 28px;background-color:#2f2f2f;color:#ffffff;text-align:center;text-decoration:none;font-family:'Playfair Display',Georgia,serif;font-size:0.7rem;letter-spacing:0.18em;text-transform:uppercase;border:none;"$4`
+      "$1$2$3 style=\"display:inline-block;padding:10px 28px;background-color:#2f2f2f;color:#ffffff;text-align:center;text-decoration:none;font-family:Georgia,serif;font-size:0.7rem;letter-spacing:0.18em;text-transform:uppercase;border:none;\"$4"
     )
     // ── Images ──────────────────────────────────────────────────────────────
     // Remove inline width/height/style attrs that cause images to overflow

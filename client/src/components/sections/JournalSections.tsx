@@ -48,7 +48,7 @@ export function JournalSection() {
       <div className="max-w-[1440px] mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <p className="font-script text-[#BFAF8A] text-xl mb-2">{journal.eyebrow}</p>
+          <p className="bta-eyebrow text-[#BFAF8A] text-xl mb-2">{journal.eyebrow}</p>
           <h2
             className="bta-section-title text-[#faf9f6] text-3xl md:text-4xl mb-4"
             style={{ fontWeight: 400 }}
@@ -202,7 +202,7 @@ function TestimonialCard({ item, dim = false }: { item: typeof testimonials[0]; 
       >
         {item.quote}
       </blockquote>
-      <p className="font-script text-[#384959]/60 text-base">. {item.author}</p>
+      <p className="bta-eyebrow text-[#384959]/60 text-base">. {item.author}</p>
     </div>
   );
 }
@@ -213,7 +213,7 @@ export function InstagramSection() {
     <section className="bg-[#BFAF8A] py-14 px-6">
       <div className="max-w-[1440px] mx-auto">
         <div className="text-center mb-8">
-          <p className="font-script text-[#faf9f6]/80 text-xl mb-2">{instagram.eyebrow}</p>
+          <p className="bta-eyebrow text-[#faf9f6]/80 text-xl mb-2">{instagram.eyebrow}</p>
           <a
             href={instagram.href}
             target="_blank"
@@ -255,7 +255,7 @@ export function FinalCtaSection() {
       />
       <div className="absolute inset-0 bg-black/40" />
       <div className="relative text-center px-6">
-        <p className="font-script text-[#faf9f6]/90 text-xl md:text-2xl mb-4">
+        <p className="bta-eyebrow text-[#faf9f6]/90 text-xl md:text-2xl mb-4">
           {finalCta.subheadline}
         </p>
         <h2

@@ -89,7 +89,7 @@ function SectionHeader({
       <p className="text-bta-gold font-['Playfair_Display',Georgia,serif] italic tracking-[0.25em] text-sm uppercase mb-2">
         {eyebrow}
       </p>
-      <h2 className="font-[Playfair_Display,serif] bta-h2 text-bta-aegean uppercase tracking-widest mb-5">
+      <h2 className="bta-section-title bta-h2 text-bta-aegean uppercase tracking-widest mb-5">
         {heading}
       </h2>
       <p className="text-bta-charcoal text-base leading-relaxed">{description}</p>
@@ -128,7 +128,7 @@ export default function About() {
           <p className="text-bta-gold font-['Playfair_Display',Georgia,serif] italic tracking-[0.25em] text-base uppercase mb-4">
             About Us
           </p>
-          <h2 className="font-[Playfair_Display,serif] text-3xl md:text-4xl text-bta-aegean uppercase tracking-widest mb-10">
+          <h2 className="bta-section-title text-3xl md:text-4xl text-bta-aegean uppercase tracking-widest mb-10">
             {aboutData.overview.headline}
           </h2>
           <div className="space-y-5 text-bta-charcoal text-lg leading-relaxed text-left">
@@ -299,7 +299,7 @@ export default function About() {
         <p className="text-bta-gold font-['Playfair_Display',Georgia,serif] italic tracking-[0.25em] text-base uppercase mb-4">
           Ready to Begin?
         </p>
-        <h2 className="font-[Playfair_Display,serif] text-3xl md:text-4xl text-bta-aegean uppercase tracking-widest mb-6">
+        <h2 className="bta-section-title text-3xl md:text-4xl text-bta-aegean uppercase tracking-widest mb-6">
           Start Planning Your Journey
         </h2>
         <p className="text-bta-charcoal text-lg max-w-xl mx-auto mb-10">

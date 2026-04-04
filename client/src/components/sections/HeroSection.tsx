@@ -33,8 +33,11 @@ export default function HeroSection() {
               <span key={i} className="block">{line}</span>
             ))}
           </h1>
-          {/* Subheadline */}
-          <p className="font-script text-white/90 text-lg md:text-xl italic">
+          {/* Subheadline — Playfair Display regular italic, not an eyebrow label */}
+          <p
+            className="text-white/90 text-lg md:text-xl"
+            style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 500, fontStyle: "italic" }}
+          >
             {hero.subheadline}
           </p>
         </div>

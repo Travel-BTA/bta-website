@@ -150,7 +150,7 @@ function ReviewCard({ item, index }: { item: typeof testimonials[0]; index: numb
       {/* Author + Google badge */}
       <div className="flex items-center justify-between">
         <p
-          className="font-script text-[#384959]/60 text-lg"
+          className="bta-eyebrow text-[#384959]/60 text-lg"
           style={{ fontFamily: "'Allura', 'Playfair Display', Georgia, serif" }}
         >
          . {item.author}

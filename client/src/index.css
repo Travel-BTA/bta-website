@@ -12,10 +12,10 @@
  *
  * Typography:
  *   Display (H1):  Playfair Display — large, uppercase, serif
- *   Script:        Cormorant Garamond italic — eyebrow labels, script accents
+ *   Script:        Allura — decorative script pops and quotes only
  *   Heading (H2):  Playfair Display — uppercase, tracked
- *   Body:          Cormorant Garamond — elegant serif body
- *   Labels:        Cormorant SC — small caps for nav/labels
+ *   Body:          Playfair Display 400 — body text
+ *   Labels:        Playfair Display 600 italic — eyebrow labels (champagne gold)
  */
 
 @import "tailwindcss";
@@ -103,8 +103,9 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    /* WHY: Instrument Serif is the BTA brand title font — always uppercase per brand guide */
+    /* WHY: Instrument Serif is the BTA brand title font — always uppercase, always weight 400 per brand guide */
     font-family: 'Instrument Serif', Georgia, serif;
+    font-weight: 400;
     text-transform: uppercase;
   }
 

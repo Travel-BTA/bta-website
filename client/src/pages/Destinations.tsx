@@ -162,7 +162,7 @@ export default function Destinations() {
           Curated for 2026 &amp; 2027
         </p>
         {/* H2 subheading: Playfair Display SemiBold Italic, NOT caps. matches Figma */}
-        <h2 className="text-3xl md:text-4xl mb-6" style={{ color: "#384959", fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 500 }}>
+        <h2 className="text-3xl md:text-4xl mb-6" style={{ color: "#384959", fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400 }}>
           The World, Thoughtfully Edited
         </h2>
         <p className="text-base leading-relaxed" style={{ color: "#2f2f2f", fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 400, fontSize: "1.05rem" }}>
