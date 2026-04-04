@@ -26,7 +26,7 @@ export const nav = {
     { label: "Pricing", href: "/pricing" },
     { label: "About", href: "/about" },
   ],
-  cta: { label: "BOOK NOW", href: "/book" },
+  cta: { label: "BOOK NOW", href: "/contact-us" },
 };
 
 export const hero = {
@@ -34,7 +34,7 @@ export const hero = {
   backgroundImage: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/infinity-pool-sunset_1070585b.webp",
   headline: "WHERE WILL YOUR\nJOURNEY TAKE YOU?",
   subheadline: "Travel that transforms your world and shapes unforgettable moments.",
-  cta: { label: "PLAN YOUR\nJOURNEY", href: "/plan" },
+  cta: { label: "PLAN YOUR\nJOURNEY", href: "/contact-us" },
   partnerLogos: [
     { name: "Virtuoso", imageUrl: "" },
     { name: "ASTA", imageUrl: "" },
@@ -194,7 +194,7 @@ export const finalCta = {
   backgroundImage: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/infinity-pool-sunset_1070585b.webp",
   subheadline: "Live life with no excuses, travel with no regrets",
   headline: "BEGIN YOUR NEXT CHAPTER",
-  cta: { label: "START PLANNING", href: "/plan" },
+  cta: { label: "START PLANNING", href: "/contact-us" },
 };
 
 export const footer = {
@@ -213,7 +213,7 @@ export const footer = {
   ],
   company: [
     { label: "About", href: "/about" },
-    { label: "Contact", href: "/contact" },
+    { label: "Contact", href: "/contact-us" },
     { label: "Careers", href: "/careers" },
     { label: "Press", href: "/press" },
   ],
@@ -231,4 +231,6 @@ export const footer = {
     { label: "Cookie Policy",        href: "/cookie-policy" },
   ],
   copyright: "© 2026 Travel BTA All Rights Reserved",
+  // WHY: Admin link is intentionally discreet — visible only to team members who know it exists.
+  adminHref: "/admin",
 };

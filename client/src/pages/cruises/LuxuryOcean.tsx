@@ -170,7 +170,7 @@ export default function LuxuryOcean() {
             All-inclusive voyages aboard the world's finest ships. where butler service, Michelin-calibre dining, and private shore excursions are simply the beginning.
           </p>
           <Link
-            href="/contact"
+            href="/contact-us"
             className="inline-flex items-center gap-3 bg-[#bfaf8a] text-white px-8 py-3.5 text-xs tracking-[0.25em] uppercase hover:bg-[#bfaf8a] transition-all duration-300"
             style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal" , textTransform: "uppercase" }}
           >
@@ -327,7 +327,7 @@ export default function LuxuryOcean() {
                 For the ultimate in intimate luxury, explore our portfolio of yacht and boutique cruise lines: The Ritz-Carlton Yacht Collection, Four Seasons Yachts (launching 2026), Emerald Cruises Yacht Series, Scenic Discovery Yachts, Windstar Cruises, and Paul Gauguin Cruises. These vessels carry as few as 36 guests, offering a truly private-yacht experience with full-service amenities.
               </p>
               <Link
-                href="/contact"
+                href="/contact-us"
                 className="inline-flex items-center gap-3 border border-[#bfaf8a] text-[#bfaf8a] px-8 py-3 text-xs tracking-[0.2em] uppercase hover:bg-[#bfaf8a] hover:text-white transition-all duration-300"
                style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal" , textTransform: "uppercase" }}>
                   Inquire About Yacht Cruises

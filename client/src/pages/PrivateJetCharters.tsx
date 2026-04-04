@@ -57,7 +57,7 @@ export default function PrivateJetCharters() {
             {jetHero.subheading}
           </p>
           <a
-            href="/book"
+            href="/contact-us"
             className="inline-block px-8 py-3 border border-white/60 text-white text-xs tracking-[0.2em] uppercase hover:bg-white hover:text-[#2f2f2f] transition-all duration-300"
           >
             Request a Charter

@@ -67,7 +67,7 @@ function PillarIcon({ icon }: { icon: string }) {
 
 function HeroSection({ a }: { a: Advisor }) {
   const badges = (a.badges as string[]) ?? [];
-  const ctaPrimary = (a.ctaPrimary as { label: string; href: string } | null) ?? { label: "Start Planning", href: "#contact" };
+  const ctaPrimary = (a.ctaPrimary as { label: string; href: string } | null) ?? { label: "Start Planning", href: "/contact-us" };
   const ctaSecondary = (a.ctaSecondary as { label: string; href: string } | null) ?? { label: "View Specialties", href: "#specialties" };
 
   return (
@@ -147,7 +147,7 @@ function HeroSection({ a }: { a: Advisor }) {
 
 function MeetSection({ a }: { a: Advisor }) {
   const bio = (a.bio as string[]) ?? [];
-  const ctaHref = (a.ctaPrimary as any)?.href ?? "#contact";
+  const ctaHref = (a.ctaPrimary as any)?.href ?? "/contact-us";
   return (
     <section className="bg-[#faf9f6] py-24 lg:py-32">
       <div className="max-w-[1440px] mx-auto px-8 lg:px-14 grid lg:grid-cols-2 gap-16 items-center">
@@ -363,7 +363,7 @@ function ExperiencesSection({ a }: { a: Advisor }) {
 
 function WhyWorkSection({ a }: { a: Advisor }) {
   const benefits = (a.whyWorkBenefits as Array<{ title: string; body: string }>) ?? [];
-  const ctaHref = (a.ctaPrimary as any)?.href ?? "#contact";
+  const ctaHref = (a.ctaPrimary as any)?.href ?? "/contact-us";
   if (!benefits.length && !a.whyWorkImage) return null;
   return (
     <section className="bg-white">
@@ -517,7 +517,7 @@ function ClosingBannerSection({ a }: { a: Advisor }) {
             {a.closingBannerQuote}
           </blockquote>
         )}
-        <a href="#contact" className="inline-block bg-[#bfaf8a] text-white bta-eyebrow text-xs tracking-[0.2em] uppercase px-8 py-4">
+        <a href="/contact-us" className="inline-block bg-[#bfaf8a] text-white bta-eyebrow text-xs tracking-[0.2em] uppercase px-8 py-4">
           Plan Your Journey
         </a>
       </div>

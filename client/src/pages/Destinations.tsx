@@ -192,7 +192,7 @@ export default function Destinations() {
         <p className="text-white/70 max-w-lg mx-auto mb-10 leading-relaxed" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 400, fontSize: "1.05rem" }}>
           Every destination above is one we know intimately. Tell us where you want to go and we'll craft an itinerary that exceeds every expectation.
         </p>
-        <Link href="/contact">
+        <Link href="/contact-us">
           <button
             className="px-10 py-4 text-sm tracking-[0.2em] uppercase transition-all duration-300 hover:opacity-80"
             style={{ backgroundColor: "#bfaf8a", color: "#faf9f6", fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal", letterSpacing: "0.15em" , textTransform: "uppercase" }}
@@ -268,7 +268,7 @@ function DestinationCard({ dest, featured }: { dest: typeof DESTINATIONS[0]; fea
             ))}
           </div>
         </div>
-        <Link href="/contact">
+        <Link href="/contact-us">
           <button
             className="text-xs tracking-[0.2em] uppercase border px-6 py-3 transition-all duration-300 hover:opacity-70"
             style={{ borderColor: "#384959", color: "#384959", fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal" , textTransform: "uppercase" }}

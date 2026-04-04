@@ -217,7 +217,7 @@ const EMPTY_FORM: FormData = {
   name: "", slug: "", title: "", tagline: "", email: "",
   heroImage: "", photoMain: "", photoAccent: "",
   badges: [],
-  ctaPrimary: { label: "Start Planning", href: "#contact" },
+  ctaPrimary: { label: "Start Planning", href: "/contact-us" },
   ctaSecondary: { label: "View Specialties", href: "#specialties" },
   meetEyebrow: "", meetHeading: "", bio: [], meetQuote: "",
   stats: [],
@@ -243,7 +243,7 @@ function advisorToForm(a: Advisor): FormData { // eslint-disable-line @typescrip
     photoMain: a.photoMain ?? "",
     photoAccent: a.photoAccent ?? "",
     badges: (a.badges as string[]) ?? [],
-    ctaPrimary: (a.ctaPrimary as any) ?? { label: "Start Planning", href: "#contact" },
+    ctaPrimary: (a.ctaPrimary as any) ?? { label: "Start Planning", href: "/contact-us" },
     ctaSecondary: (a.ctaSecondary as any) ?? { label: "View Specialties", href: "#specialties" },
     meetEyebrow: a.meetEyebrow ?? "",
     meetHeading: a.meetHeading ?? "",
@@ -533,11 +533,11 @@ function AdvisorEditor({ advisor, onBack }: { advisor: Advisor | null; onBack: (
                 <Textarea value={exp.description} onChange={(e) => { const n = [...form.experiences]; n[i] = { ...n[i], description: e.target.value }; set("experiences", n); }} placeholder="Short description…" rows={2} className="rounded-none border-[#2F2F2F]/15 focus:border-[#9C886A] text-sm resize-none" />
                 <div className="grid sm:grid-cols-2 gap-3">
                   <Input value={exp.image} onChange={(e) => { const n = [...form.experiences]; n[i] = { ...n[i], image: e.target.value }; set("experiences", n); }} placeholder="Image CDN URL" className="rounded-none border-[#2F2F2F]/15 focus:border-[#9C886A] text-sm" />
-                  <Input value={exp.href} onChange={(e) => { const n = [...form.experiences]; n[i] = { ...n[i], href: e.target.value }; set("experiences", n); }} placeholder="Link (e.g. #contact)" className="rounded-none border-[#2F2F2F]/15 focus:border-[#9C886A] text-sm" />
+                  <Input value={exp.href} onChange={(e) => { const n = [...form.experiences]; n[i] = { ...n[i], href: e.target.value }; set("experiences", n); }} placeholder="Link (e.g. /contact-us)" className="rounded-none border-[#2F2F2F]/15 focus:border-[#9C886A] text-sm" />
                 </div>
               </div>
             ))}
-            <Button variant="outline" size="sm" onClick={() => set("experiences", [...form.experiences, { duration: "", region: "", title: "", description: "", image: "", href: "#contact" }])} className="rounded-none border-[#9C886A] text-[#9C886A] text-xs bta-eyebrow tracking-widest uppercase h-8">
+            <Button variant="outline" size="sm" onClick={() => set("experiences", [...form.experiences, { duration: "", region: "", title: "", description: "", image: "", href: "/contact-us" }])} className="rounded-none border-[#9C886A] text-[#9C886A] text-xs bta-eyebrow tracking-widest uppercase h-8">
               <Plus size={12} className="mr-1" /> Add Experience
             </Button>
           </div>

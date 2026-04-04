@@ -34,7 +34,7 @@ export function InfinityPoolBannerSection() {
           CRAFTED FOR THE<br />DISCERNING TRAVELER
         </h2>
         <a
-          href="/book"
+          href="/contact-us"
           className="bta-btn-gold"
         >
           Begin Planning

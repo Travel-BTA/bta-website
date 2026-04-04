@@ -166,7 +166,7 @@ export default function RiverCruises() {
             Wake up in a new town every morning. Drift through medieval villages, vineyard-lined valleys, and historic city centres. unpacking only once.
           </p>
           <Link
-            href="/contact"
+            href="/contact-us"
             className="inline-flex items-center gap-3 bg-[#bfaf8a] text-white px-8 py-3.5 text-xs tracking-[0.25em] uppercase hover:bg-[#bfaf8a] transition-all duration-300"
             style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic" }}
           >

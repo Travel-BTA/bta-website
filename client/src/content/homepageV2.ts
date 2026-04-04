@@ -62,7 +62,7 @@ export const nav = {
   cta: {
     // The "BOOK NOW" button in the top-right corner
     label: "BOOK NOW",
-    href: "/book",
+    href: "/contact-us",
   },
 };
 
@@ -84,7 +84,7 @@ export const hero = {
   // 🔗 CIRCULAR CTA BUTTON  (bottom-right of hero)
   cta: {
     label: "PLAN YOUR\nJOURNEY",
-    href: "/plan",
+    href: "/contact-us",
   },
 
   // 🖼️ PARTNER LOGOS BAR  (bottom of hero, white/translucent)
@@ -328,7 +328,7 @@ export const finalCta = {
   // 🔗 BUTTON
   cta: {
     label: "START PLANNING",
-    href: "/plan",
+    href: "/contact-us",
   },
 };
 
@@ -358,7 +358,7 @@ export const footer = {
   // 🔗 COMPANY COLUMN LINKS
   company: [
     { label: "About",   href: "/about" },
-    { label: "Contact", href: "/contact" },
+    { label: "Contact", href: "/contact-us" },
     { label: "Careers", href: "/careers" },
     { label: "Press",   href: "/press" },
   ],

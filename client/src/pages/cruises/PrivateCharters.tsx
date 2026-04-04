@@ -187,7 +187,7 @@ export default function PrivateCharters() {
           </p>
 
           <Link
-            href="/contact"
+            href="/contact-us"
             className="inline-flex items-center gap-3 bg-[#bfaf8a] text-white px-8 py-3.5 text-xs tracking-[0.25em] uppercase hover:bg-[#a89a76] transition-all duration-300"
             style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal" , textTransform: "uppercase" }}
           >
@@ -322,7 +322,7 @@ export default function PrivateCharters() {
                 </ul>
 
                 <Link
-                  href="/contact"
+                  href="/contact-us"
                   className="inline-flex items-center gap-3 border border-[#bfaf8a] text-[#bfaf8a] px-8 py-3 text-xs tracking-[0.2em] uppercase hover:bg-[#bfaf8a] hover:text-white transition-all duration-300 self-start"
                   style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal" , textTransform: "uppercase" }}
                 >
@@ -471,7 +471,7 @@ export default function PrivateCharters() {
             Schedule your complimentary 15-minute discovery call and let BTA find the perfect aircraft for your journey. Every detail, handled.
           </p>
           <Link
-            href="/contact"
+            href="/contact-us"
             className="inline-flex items-center gap-3 bg-[#bfaf8a] text-white px-10 py-4 text-xs tracking-[0.25em] uppercase hover:bg-[#a89a76] transition-all duration-300"
             style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal" , textTransform: "uppercase" }}
           >

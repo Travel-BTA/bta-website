@@ -81,7 +81,7 @@ function PropertyCard({
 
       {/* Book link. appears on hover */}
       <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-        <Link href="/book">
+        <Link href="/contact-us">
           <span className="bg-[#BFAF8A] text-white bta-eyebrow text-[10px] tracking-widest px-3 py-1.5 inline-block">
             Book
           </span>
@@ -160,7 +160,7 @@ export default function PartnerDetail() {
 
           <div className="w-12 h-px bg-[#BFAF8A] mx-auto mb-6" />
 
-          <Link href="/book">
+          <Link href="/contact-us">
             <span className="bta-btn-outline-white inline-block">
               Plan Your Journey
             </span>
@@ -316,7 +316,7 @@ export default function PartnerDetail() {
             Tell us your travel plans and a BTA advisor will reach out within 24 hours
             with a fully personalised proposal. including all {partner.name} benefits.
           </p>
-          <Link href="/book">
+          <Link href="/contact-us">
             <span className="bta-btn-outline-white inline-block">
               Start Planning
             </span>

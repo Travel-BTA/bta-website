@@ -686,7 +686,7 @@ export default function TermsAndConditions() {
           {[
             { label: "Terms of Service", href: "/terms-of-service" },
             { label: "Privacy Policy", href: "/privacy-policy" },
-            { label: "Contact Us", href: "/contact" },
+            { label: "Contact Us", href: "/contact-us" },
           ].map((link) => (
             <Link
               key={link.href}

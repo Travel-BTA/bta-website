@@ -198,7 +198,7 @@ export default function LuxuryTravelAgency() {
           Start Your Journey With Us
         </h2>
         <a
-          href="/contact"
+          href="/contact-us"
           className="inline-block px-10 py-3 border border-[#BFAF8A] text-[#BFAF8A] hover:bg-[#BFAF8A] hover:text-white transition-colors duration-300"
           style={{
             fontFamily: "'Instrument Serif', serif",

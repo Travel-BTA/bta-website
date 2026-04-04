@@ -370,7 +370,7 @@ export default function FulfillmentPolicy() {
                 Privacy Policy
               </Link>
               <Link
-                href="/contact"
+                href="/contact-us"
                 className="text-[#bfaf8a] text-xs tracking-[0.15em] uppercase hover:text-[#384959] transition-colors"
                 style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal" , textTransform: "uppercase" }}
               >

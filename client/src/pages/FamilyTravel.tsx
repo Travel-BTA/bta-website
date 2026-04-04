@@ -655,7 +655,7 @@ export default function FamilyTravel() {
             <p className="text-[#2f2f2f] text-lg leading-relaxed mb-10 font-light">
               Each itinerary is created with care, balancing structure with flexibility and ensuring that every member of the family feels considered. From the first conversation through your return home, our role is to simplify complexity while elevating the overall experience.
             </p>
-            <Link href="/book">
+            <Link href="/contact-us">
               <button className="group flex items-center gap-3 text-[#bfaf8a] tracking-[0.2em] text-sm uppercase border border-[#bfaf8a] px-8 py-4 hover:bg-[#bfaf8a] hover:text-white transition-all duration-300">
                 Begin Planning
                 <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
@@ -1060,7 +1060,7 @@ export default function FamilyTravel() {
                 </li>
               ))}
             </ul>
-            <Link href="/book">
+            <Link href="/contact-us">
               <button className="group flex items-center gap-3 bg-[#384959] text-white tracking-[0.2em] text-sm uppercase px-10 py-4 hover:bg-[#384959] transition-colors duration-300">
                 Enquire About Accommodations
                 <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
@@ -1205,7 +1205,7 @@ export default function FamilyTravel() {
           <p className="text-white/70 text-xl font-light mb-12 max-w-xl mx-auto leading-relaxed">
             Whether you are planning a first trip with little ones, a more engaging experience for teenagers, or a meaningful journey with multiple generations, we would be honored to help you design it with care.
           </p>
-          <Link href="/book">
+          <Link href="/contact-us">
             <button className="group inline-flex items-center gap-3 border border-white/60 text-white tracking-[0.2em] text-sm uppercase px-12 py-5 hover:bg-white hover:text-[#384959] transition-all duration-300">
               Start Planning
               <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />

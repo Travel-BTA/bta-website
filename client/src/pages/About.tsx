@@ -325,7 +325,7 @@ export default function About() {
           Whether you are dreaming of a private safari, an Antarctic expedition, or a multi-generational European immersion, we are here to make it extraordinary.
         </p>
         <Link
-          href="/book"
+          href="/contact-us"
           className="inline-block bg-bta-gold text-white font-['Playfair_Display',Georgia,serif] tracking-widest uppercase text-sm px-10 py-4 hover:bg-bta-gold-dark transition-colors duration-200"
         >
           Start Planning

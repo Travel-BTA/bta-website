@@ -149,7 +149,7 @@ export default function JourneySubPage({ data }: Props) {
             <p className="font-['Playfair_Display',Georgia,serif] text-lg leading-relaxed text-[#2f2f2f] mb-10">
               {data.intro.body}
             </p>
-            <Link href="/book">
+            <Link href="/contact-us">
               <button className="group inline-flex items-center gap-3 bg-bta-gold text-white font-['Playfair_Display',Georgia,serif] tracking-widest uppercase text-sm px-10 py-4 hover:bg-bta-gold-dark transition-colors duration-200">
                 Begin Planning
                 <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
@@ -246,7 +246,7 @@ export default function JourneySubPage({ data }: Props) {
                 </div>
               ))}
             </div>
-            <Link href="/book">
+            <Link href="/contact-us">
               <button className="group inline-flex items-center gap-3 bg-bta-aegean text-white font-['Playfair_Display',Georgia,serif] tracking-widest uppercase text-sm px-10 py-4 hover:bg-[#2a3a4a] transition-colors duration-200">
                 Enquire About This Journey
                 <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
@@ -301,7 +301,7 @@ export default function JourneySubPage({ data }: Props) {
           <p className="font-['Playfair_Display',Georgia,serif] italic text-white/70 text-xl md:text-2xl mb-12 max-w-xl mx-auto">
             {data.cta.subheadline}
           </p>
-          <Link href="/book">
+          <Link href="/contact-us">
             <button className="group inline-flex items-center gap-3 border border-white/60 text-white font-['Playfair_Display',Georgia,serif] tracking-widest uppercase text-sm px-12 py-5 hover:bg-white hover:text-bta-aegean transition-all duration-300">
               Start Planning
               <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />

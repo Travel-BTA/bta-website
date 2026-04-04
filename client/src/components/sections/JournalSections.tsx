@@ -405,6 +405,19 @@ export function FooterSection() {
             ))}
           </div>
         </div>
+        {/* WHY: Hidden admin entry point — a single low-opacity dot at the very bottom.
+            Invisible to clients scanning the footer, but accessible to team members
+            who know it exists. No label text to avoid drawing attention. */}
+        <div className="mt-6 flex justify-center">
+          <a
+            href={footer.adminHref ?? "/admin"}
+            className="text-[#faf9f6]/10 hover:text-[#faf9f6]/40 transition-colors duration-300 text-base select-none"
+            aria-label="Team portal"
+            title=""
+          >
+            &middot;
+          </a>
+        </div>
       </div>
     </footer>
   );

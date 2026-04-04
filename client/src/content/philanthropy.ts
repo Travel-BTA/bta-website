@@ -164,5 +164,5 @@ export const philanthropyCta = {
   eyebrow: "Travel That Transforms",
   headline: "JOIN US IN MAKING\nA DIFFERENCE",
   subheadline: "Every journey you take with BTA contributes to something greater.",
-  cta: { label: "Plan Your Journey", href: "/book" },
+  cta: { label: "Plan Your Journey", href: "/contact-us" },
 };

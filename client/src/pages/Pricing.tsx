@@ -31,7 +31,7 @@ const PRICING_TIERS = [
       "Thoughtful pre-arrival planning",
     ],
     cta: "Start Planning",
-    ctaHref: "/book",
+    ctaHref: "/contact-us",
     accent: "#7982A2", // slate blue
   },
   {
@@ -52,7 +52,7 @@ const PRICING_TIERS = [
       "Thoughtful pre-arrival planning & on-trip support",
     ],
     cta: "Start Planning",
-    ctaHref: "/book",
+    ctaHref: "/contact-us",
     accent: "#9C886A", // gold
     featured: true,
   },
@@ -443,7 +443,7 @@ export default function Pricing() {
         >
           Connect with a BTA advisor to discuss your travel vision and receive a personalized proposal.
         </p>
-        <Link href="/book">
+        <Link href="/contact-us">
           <button
             className="px-10 py-4 tracking-[0.2em] text-xs transition-all duration-300"
             style={{

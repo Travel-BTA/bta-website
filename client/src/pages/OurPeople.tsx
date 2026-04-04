@@ -11,9 +11,10 @@
  * - Uniform 3:4 portrait cards. same size for every advisor
  */
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { Link } from "wouter";
 import { PageLayout } from "@/components/PageLayout";
+import { trpc } from "@/lib/trpc";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -235,6 +236,27 @@ function MissionTabs() {
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
 export default function OurPeople() {
+  /*
+   * WHY: Fetch published advisor profiles from the database so that any advisor
+   * added via /admin/team automatically gets a clickable profile link on this page.
+   * We build a lookup map keyed by name (lowercase, trimmed) for O(1) matching.
+   */
+  const { data: dbAdvisors } = trpc.advisors.list.useQuery();
+
+  const dbSlugByName = useMemo(() => {
+    const map = new Map<string, string>();
+    (dbAdvisors ?? []).forEach((a: { name: string; slug: string; isPublished: boolean }) => {
+      if (a.isPublished) map.set(a.name.toLowerCase().trim(), a.slug);
+    });
+    return map;
+  }, [dbAdvisors]);
+
+  // Resolve href for an affiliate advisor: use DB slug if a profile exists, else keep existing href
+  const resolveHref = (a: Advisor) => {
+    const slug = dbSlugByName.get(a.name.toLowerCase().trim());
+    return slug ? `/advisors/${slug}` : (a.href ?? "#");
+  };
+
   return (
     <PageLayout hideCta={false}>
 
@@ -318,9 +340,7 @@ export default function OurPeople() {
             ))}
           </div>
         </div>
-      </section>
-
-      {/* ── Independent Affiliate Advisors ────────────────────────────────── */}
+      </section>      {/* ── Independent Affiliate Advisors ─────────────────────────────────────── */}
       <section className="bg-white py-24 lg:py-32">
         <div className="max-w-[1440px] mx-auto px-8 lg:px-14">
           <SectionHeader
@@ -329,13 +349,13 @@ export default function OurPeople() {
           />
           <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-10 lg:gap-14">
             {AFFILIATE_ADVISORS.map((a) => (
-              <AdvisorCard key={a.name} advisor={a} />
+              // WHY: resolveHref checks the DB first so any advisor added via
+              // /admin/team automatically gets a live profile link here
+              <AdvisorCard key={a.name} advisor={{ ...a, href: resolveHref(a) }} />
             ))}
           </div>
         </div>
-      </section>
-
-      {/* ── Luxury Travel Coaches ─────────────────────────────────────────── */}
+      </section>     {/* ── Luxury Travel Coaches ─────────────────────────────────────────── */}
       <section className="bg-[#faf9f6] py-24 lg:py-32">
         <div className="max-w-[1440px] mx-auto px-8 lg:px-14">
           <SectionHeader

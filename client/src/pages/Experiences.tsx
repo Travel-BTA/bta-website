@@ -221,7 +221,7 @@ export default function Experiences() {
                   ))}
                 </div>
               </div>
-              <Link href="/contact">
+              <Link href="/contact-us">
                 <button
                   className="self-start px-8 py-3 text-xs tracking-[0.2em] uppercase border transition-all duration-300 hover:opacity-70"
                   style={{
@@ -265,7 +265,7 @@ export default function Experiences() {
         <p className="text-white/70 max-w-lg mx-auto mb-10 leading-relaxed" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "1.05rem" }}>
           Tell us what moves you a landscape, a cuisine, a culture, a challenge and we will build an experience around it that exceeds every expectation.
         </p>
-        <Link href="/contact">
+        <Link href="/contact-us">
           <button
             className="px-10 py-4 text-sm tracking-[0.2em] uppercase transition-all duration-300 hover:opacity-80"
             style={{ backgroundColor: "#bfaf8a", color: "#faf9f6", fontFamily: "'Playfair Display', Georgia, serif", letterSpacing: "0.15em" }}

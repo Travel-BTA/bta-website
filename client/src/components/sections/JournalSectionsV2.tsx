@@ -402,7 +402,7 @@ export function NextJourneySection() {
           >
             Every extraordinary journey begins with a single conversation. Let our expert advisors craft a bespoke itinerary tailored to your dreams, your pace, and your vision of the perfect escape.
           </p>
-          <a href="/book" className="bta-btn-gold">
+          <a href="/contact-us" className="bta-btn-gold">
             BEGIN PLANNING
           </a>
         </div>

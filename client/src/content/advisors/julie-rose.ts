@@ -25,7 +25,7 @@ export const advisor = {
       "Certified Luxury Specialist",
       "15+ Years Experience",
     ],
-    ctaPrimary:   { label: "Start Planning With Julie", href: "#contact" },
+    ctaPrimary:   { label: "Start Planning With Julie", href: "/contact-us" },
     ctaSecondary: { label: "View Her Specialties",      href: "#specialties" },
     // Replace with real hero photo. full-width, landscape orientation
     heroImage: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1440&q=80",
@@ -40,7 +40,7 @@ export const advisor = {
       "Julie's approach is simple: every journey should feel effortlessly personal. She listens deeply, designs meticulously, and stays with you every step of the way. before, during, and after your trip.",
     ],
     quote: "\"Travel is not just a destination. it's a transformation. My job is to make sure yours is unforgettable.\"",
-    cta: { label: "Begin Planning With Julie", href: "#contact" },
+    cta: { label: "Begin Planning With Julie", href: "/contact-us" },
     // Two overlapping portrait photos. replace with real advisor photos
     photoMain:   "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=600&q=80",
     photoAccent: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
@@ -141,7 +141,7 @@ export const advisor = {
         title:    "Amalfi to Santorini. A Mediterranean Dream",
         description: "Private villa stays, yacht charters, and Michelin-starred dining along the world's most beautiful coastlines.",
         image:    "https://images.unsplash.com/photo-1533105079780-92b9be482077?w=800&q=80",
-        href:     "#contact",
+        href:     "/contact-us",
       },
       {
         duration: "10 Days",
@@ -149,7 +149,7 @@ export const advisor = {
         title:    "Tanzania Safari & Zanzibar Beach Escape",
         description: "Witness the Great Migration in the Serengeti, then unwind on the spice-scented beaches of Zanzibar.",
         image:    "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/safari_bush_dining_v2_e2293e19.jpg",
-        href:     "#contact",
+        href:     "/contact-us",
       },
       {
         duration: "12 Days",
@@ -157,7 +157,7 @@ export const advisor = {
         title:    "Japan in Full Bloom. Cherry Blossom Season",
         description: "Tokyo, Kyoto, and Hakone timed perfectly for sakura season, with private ryokan stays and tea ceremony experiences.",
         image:    "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800&q=80",
-        href:     "#contact",
+        href:     "/contact-us",
       },
     ],
   },
@@ -174,7 +174,7 @@ export const advisor = {
       { title: "Trusted Vendor Network",               body: "Relationships with the world's finest hotels, guides, and operators. built over 15 years." },
     ],
     image: "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=800&q=80",
-    cta:   { label: "Start Planning With Julie", href: "#contact" },
+    cta:   { label: "Start Planning With Julie", href: "/contact-us" },
   },
 
   // ─── TESTIMONIALS ─────────────────────────────────────────────────────────────
@@ -230,6 +230,6 @@ export const advisor = {
     quote:  "\"The world is a book, and those who do not travel read only one page.\"",
     credit: ". Saint Augustine",
     image:  "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1440&q=80",
-    cta:    { label: "Plan Your Journey", href: "#contact" },
+    cta:    { label: "Plan Your Journey", href: "/contact-us" },
   },
 };

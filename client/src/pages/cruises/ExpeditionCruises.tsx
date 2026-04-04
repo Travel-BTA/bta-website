@@ -172,7 +172,7 @@ export default function ExpeditionCruises() {
             Observe glaciers, exotic islands, fjords, and icebergs accessible only from a Zodiac. accompanied by expert naturalists, scientists, and photographers.
           </p>
           <Link
-            href="/contact"
+            href="/contact-us"
             className="inline-flex items-center gap-3 bg-[#bfaf8a] text-white px-8 py-3.5 text-xs tracking-[0.25em] uppercase hover:bg-[#bfaf8a] transition-all duration-300"
             style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic" }}
           >

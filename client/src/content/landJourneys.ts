@@ -29,7 +29,7 @@ export const landJourneysIntro = {
   eyebrow: "Bespoke by Design",
   headline: "Travel That Moves You",
   body: "Are you a discerning traveler seeking to explore the world's most incredible destinations? Whether you dream of adventure on the African plains, a life-changing expedition through the Arctic, or a tranquil escape to a private island, Boutique Travel Advisors designs once-in-a-lifetime experiences for individuals, families, and teams. Stop settling for uninspired vacations. Discover how bespoke travel, explicitly crafted for you, will transform the way you see the world.",
-  cta: { label: "Begin Planning", href: "/book" },
+  cta: { label: "Begin Planning", href: "/contact-us" },
 };
 
 export const landJourneysCategories = [
@@ -148,7 +148,7 @@ export const landJourneysFeaturedJourney = {
     { label: "Style", value: "Private & Small Group" },
     { label: "Level", value: "Moderate" },
   ],
-  cta: { label: "Enquire About This Journey", href: "/book" },
+  cta: { label: "Enquire About This Journey", href: "/contact-us" },
 };
 
 export const landJourneysCta = {
@@ -158,5 +158,5 @@ export const landJourneysCta = {
   headline: "Ready to Begin?",
   subheadline:
     "Tell us where you want to go. We will design the rest.",
-  cta: { label: "Start Planning", href: "/book" },
+  cta: { label: "Start Planning", href: "/contact-us" },
 };

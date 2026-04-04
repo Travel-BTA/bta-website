@@ -440,7 +440,7 @@ export default function PrivacyPolicy() {
           <span style={{ color: "rgba(191,175,138,0.4)" }}>|</span>
           <span style={{ color: "rgba(191,175,138,1)" }}>Privacy Policy</span>
           <span style={{ color: "rgba(191,175,138,0.4)" }}>|</span>
-          <Link href="/contact" style={{ color: "rgba(191,175,138,0.8)", textDecoration: "none" }}>
+          <Link href="/contact-us" style={{ color: "rgba(191,175,138,0.8)", textDecoration: "none" }}>
             Contact Us
           </Link>
         </div>
