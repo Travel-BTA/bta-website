@@ -6,31 +6,115 @@
  * Typography: Instrument Serif ALL CAPS upright — nav links.
  * Colors: White text on transparent/dark background.
  *
- * About dropdown: hover reveals sub-pages (Our People, We Give Back,
- * Hotel Specialist Program, Hotel Collection Application).
+ * Structure:
+ *   6 main links: Destinations, Experiences, Journal, Press, Pricing, About ▾
+ *   About dropdown: About BTA, We Give Back, Hotel Specialist Program, Hotel Collection Application
+ *   More dropdown: Land Journeys, Cruises, Partners
+ *
+ * WHY: Limiting to 6 main links prevents NavBar overflow on mid-size screens.
+ * Secondary pages (Land Journeys, Cruises, Partners) are grouped under "More".
  */
 
 import { useState, useEffect, useRef } from "react";
 import { nav } from "@/content/homepage";
 
-// Sub-pages that appear under the About dropdown
-// WHY: 'Our People' removed — About page already shows all team members (duplicate removed per request)
+// Sub-pages under the About dropdown
 const ABOUT_SUBMENU = [
+  { label: "About BTA",                    href: "/about" },
   { label: "We Give Back",                 href: "/about/philanthropic-initiatives" },
   { label: "Hotel Specialist Program",     href: "/hotel-specialist-program" },
   { label: "Hotel Collection Application", href: "/hotel-collection-application" },
 ];
 
-// Mobile accordion item for About with expandable sub-pages
-function MobileAboutItem({ onClose }: { onClose: () => void }) {
+// Secondary pages grouped under the More dropdown
+const MORE_SUBMENU = [
+  { label: "Land Journeys", href: "/land-journeys" },
+  { label: "Cruises",       href: "/cruises" },
+  { label: "Partners",      href: "/preferred-partners" },
+];
+
+// The 6 primary nav links shown directly in the bar
+const PRIMARY_LINKS = ["Destinations", "Experiences", "Journal", "Press", "Pricing", "About"];
+
+// Shared dropdown panel styles
+const dropdownPanelClass =
+  "absolute top-full right-0 mt-2 bg-[#384959] border border-white/10 shadow-xl min-w-[220px] z-50";
+const dropdownLinkClass =
+  "block px-5 py-3 bta-nav-link text-[10px] tracking-[0.16em] text-white/80 hover:text-white hover:bg-white/5 uppercase transition-colors border-b border-white/10 last:border-b-0";
+
+// Reusable desktop dropdown wrapper
+function DesktopDropdown({
+  label,
+  href,
+  items,
+  open,
+  setOpen,
+  dropRef,
+}: {
+  label: string;
+  href?: string;
+  items: { label: string; href: string }[];
+  open: boolean;
+  setOpen: (v: boolean) => void;
+  dropRef: React.RefObject<HTMLDivElement | null>;
+}) {
+  return (
+    <div
+      ref={dropRef}
+      className="relative"
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={() => setOpen(false)}
+    >
+      {href ? (
+        <a
+          href={href}
+          className="bta-nav-link text-[11px] tracking-[0.18em] text-white/90 hover:text-white transition-colors uppercase flex items-center gap-1"
+        >
+          {label}
+          <span className="text-white/60 text-[9px]">▾</span>
+        </a>
+      ) : (
+        <button
+          className="bta-nav-link text-[11px] tracking-[0.18em] text-white/90 hover:text-white transition-colors uppercase flex items-center gap-1 bg-transparent border-0 cursor-pointer"
+        >
+          {label}
+          <span className="text-white/60 text-[9px]">▾</span>
+        </button>
+      )}
+
+      {open && (
+        <div className={dropdownPanelClass}>
+          {items.map((item) => (
+            <a key={item.href} href={item.href} className={dropdownLinkClass}>
+              {item.label}
+            </a>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+// Mobile accordion item with expandable sub-links
+function MobileAccordionItem({
+  label,
+  href,
+  items,
+  onClose,
+}: {
+  label: string;
+  href?: string;
+  items: { label: string; href: string }[];
+  onClose: () => void;
+}) {
   const [open, setOpen] = useState(false);
   return (
     <div>
       <button
-        className="bta-nav-link text-[12px] tracking-[0.18em] text-white/90 hover:text-white uppercase flex items-center gap-2 w-full text-left"
+        className="bta-nav-link text-[12px] tracking-[0.18em] text-white/90 hover:text-white uppercase flex items-center gap-2 w-full text-left bg-transparent border-0 cursor-pointer"
         onClick={() => setOpen((v) => !v)}
       >
-        About
+        {label}
         <span
           className="text-white/60 text-[10px] transition-transform"
           style={{ transform: open ? "rotate(180deg)" : "rotate(0deg)" }}
@@ -40,14 +124,16 @@ function MobileAboutItem({ onClose }: { onClose: () => void }) {
       </button>
       {open && (
         <div className="mt-3 ml-3 flex flex-col gap-3 border-l border-white/20 pl-4">
-          <a
-            href="/about"
-            className="bta-nav-link text-[11px] tracking-[0.16em] text-white/80 hover:text-white uppercase"
-            onClick={onClose}
-          >
-            About BTA
-          </a>
-          {ABOUT_SUBMENU.map((item) => (
+          {href && (
+            <a
+              href={href}
+              className="bta-nav-link text-[11px] tracking-[0.16em] text-white/80 hover:text-white uppercase"
+              onClick={onClose}
+            >
+              {label}
+            </a>
+          )}
+          {items.map((item) => (
             <a
               key={item.href}
               href={item.href}
@@ -64,10 +150,13 @@ function MobileAboutItem({ onClose }: { onClose: () => void }) {
 }
 
 export default function NavBar() {
-  const [scrolled, setScrolled] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled]   = useState(false);
+  const [menuOpen, setMenuOpen]   = useState(false);
   const [aboutOpen, setAboutOpen] = useState(false);
+  const [moreOpen, setMoreOpen]   = useState(false);
+
   const aboutRef = useRef<HTMLDivElement>(null);
+  const moreRef  = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 60);
@@ -75,16 +164,20 @@ export default function NavBar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Close dropdown when clicking outside
+  // Close dropdowns when clicking outside
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
-      if (aboutRef.current && !aboutRef.current.contains(e.target as Node)) {
-        setAboutOpen(false);
-      }
+      if (aboutRef.current && !aboutRef.current.contains(e.target as Node)) setAboutOpen(false);
+      if (moreRef.current  && !moreRef.current.contains(e.target as Node))  setMoreOpen(false);
     };
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
+
+  // Filter nav.links to only the 6 primary ones (in defined order)
+  const primaryLinks = PRIMARY_LINKS
+    .map((label) => nav.links.find((l) => l.label === label))
+    .filter(Boolean) as { label: string; href: string }[];
 
   return (
     <header
@@ -95,6 +188,7 @@ export default function NavBar() {
       }`}
     >
       <div className="max-w-[1440px] mx-auto px-6 lg:px-10 flex items-center justify-between h-[68px]">
+
         {/* Logo */}
         <a href="/" className="flex-shrink-0">
           {nav.logo.imageUrl ? (
@@ -108,56 +202,22 @@ export default function NavBar() {
           )}
         </a>
 
-        {/* Desktop Nav */}
-        <nav className="hidden lg:flex items-center gap-8">
-          {nav.links.map((link) => {
-            // About gets a hover dropdown
+        {/* Desktop Nav — 6 primary links + More dropdown */}
+        <nav className="hidden lg:flex items-center gap-7">
+          {primaryLinks.map((link) => {
             if (link.label === "About") {
               return (
-                <div
-                  key="about-dropdown"
-                  ref={aboutRef}
-                  className="relative"
-                  onMouseEnter={() => setAboutOpen(true)}
-                  onMouseLeave={() => setAboutOpen(false)}
-                >
-                  <a
-                    href="/about"
-                    className="bta-nav-link text-[11px] tracking-[0.18em] text-white/90 hover:text-white transition-colors uppercase flex items-center gap-1"
-                  >
-                    About
-                    <span className="text-white/60 text-[9px]">▾</span>
-                  </a>
-
-                  {/* Dropdown panel */}
-                  {aboutOpen && (
-                    <div
-                      className="absolute top-full right-0 mt-2 bg-[#384959] border border-white/10 shadow-xl"
-                      style={{ minWidth: "240px" }}
-                    >
-                      {/* "About BTA" top link */}
-                      <a
-                        href="/about"
-                        className="block px-5 py-3 bta-nav-link text-[10px] tracking-[0.16em] text-white/80 hover:text-white hover:bg-white/5 uppercase border-b border-white/10 transition-colors"
-                      >
-                        About BTA
-                      </a>
-                      {ABOUT_SUBMENU.map((item) => (
-                        <a
-                          key={item.href}
-                          href={item.href}
-                          className="block px-5 py-3 bta-nav-link text-[10px] tracking-[0.16em] text-white/80 hover:text-white hover:bg-white/5 uppercase transition-colors"
-                        >
-                          {item.label}
-                        </a>
-                      ))}
-                    </div>
-                  )}
-                </div>
+                <DesktopDropdown
+                  key="about"
+                  label="About"
+                  href="/about"
+                  items={ABOUT_SUBMENU}
+                  open={aboutOpen}
+                  setOpen={setAboutOpen}
+                  dropRef={aboutRef}
+                />
               );
             }
-
-            // All other links render normally
             return (
               <a
                 key={link.label}
@@ -168,6 +228,16 @@ export default function NavBar() {
               </a>
             );
           })}
+
+          {/* More dropdown for secondary pages */}
+          <DesktopDropdown
+            key="more"
+            label="More"
+            items={MORE_SUBMENU}
+            open={moreOpen}
+            setOpen={setMoreOpen}
+            dropRef={moreRef}
+          />
         </nav>
 
         {/* CTA */}
@@ -191,14 +261,20 @@ export default function NavBar() {
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu — all links in accordion groups */}
       {menuOpen && (
         <div className="lg:hidden bg-[#384959] border-t border-white/10">
           <div className="px-6 py-6 flex flex-col gap-5">
-            {nav.links.map((link) => {
+            {primaryLinks.map((link) => {
               if (link.label === "About") {
                 return (
-                  <MobileAboutItem key="about-mobile" onClose={() => setMenuOpen(false)} />
+                  <MobileAccordionItem
+                    key="about-mobile"
+                    label="About"
+                    href="/about"
+                    items={ABOUT_SUBMENU.filter((i) => i.href !== "/about")}
+                    onClose={() => setMenuOpen(false)}
+                  />
                 );
               }
               return (
@@ -212,6 +288,15 @@ export default function NavBar() {
                 </a>
               );
             })}
+
+            {/* More accordion on mobile */}
+            <MobileAccordionItem
+              key="more-mobile"
+              label="More"
+              items={MORE_SUBMENU}
+              onClose={() => setMenuOpen(false)}
+            />
+
             <a href={nav.cta.href} className="bta-btn-outline-white text-[10px] py-2 px-5 self-start mt-2">
               {nav.cta.label}
             </a>
