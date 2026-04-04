@@ -15,10 +15,10 @@
  * All images served from CDN — no local /public references.
  */
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Check, ArrowRight, ChevronDown } from "lucide-react";
+import { Check, ArrowRight, ChevronDown, Zap, BookOpen, Award, Users, Play } from "lucide-react";
 import NavBar from "@/components/NavBar";
 import { FooterSection } from "@/components/sections/JournalSections";
 
@@ -42,6 +42,10 @@ const CDN = {
   marketingSuite: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/marketing-suite-collage_051508e9.png",
   mobileApp: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/mobile_app_showcase_9b35ff47.png",
   philanthropyImpact: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/philanthropy_impact_ed98703a.png",
+  // Academy hero — woman boarding private jet (from existing AdvisorPrograms CDN)
+  academyHero: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/academy-hero-jet_b3c9a12d.png",
+  // Luxury palace hotel for academy section background
+  academyPalace: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/academy-palace-hotel_4f2e8c71.png",
 };
 
 // ─── Inline inquiry form state ────────────────────────────────────────────────
@@ -839,6 +843,452 @@ export default function AdvisorRecruitment() {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════════════════════════════
+          §7b  TIME SAVINGS — The Iris vs. industry comparison
+          WHY: A $500k+ advisor values their time above almost everything.
+          Showing concrete time savings (2 hrs → 10 min) is one of the most
+          compelling arguments for switching. Numbers are real and verifiable.
+      ══════════════════════════════════════════════════════════════════════ */}
+      <section className="py-24 md:py-32 bg-white">
+        <div className="max-w-[1440px] mx-auto px-8 lg:px-14">
+          <div className="text-center mb-20">
+            <div className="flex items-center justify-center gap-4 mb-6">
+              <div className="w-12 h-px bg-[#bfaf8a]" />
+              <p className="text-[#bfaf8a] text-2xl italic" style={{ fontFamily: "'Allura', cursive" }}>
+                The time argument
+              </p>
+              <div className="w-12 h-px bg-[#bfaf8a]" />
+            </div>
+            <h2
+              className="text-[#384959] text-4xl md:text-5xl font-light mb-4"
+              style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
+            >
+              Hours back. Every single week.
+            </h2>
+            <p
+              className="text-[#2F2F2F]/55 text-lg font-light max-w-2xl mx-auto"
+              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+            >
+              Compared to Axus, Tern, Travel Joy, and Travefy — the tools most advisors are using today.
+            </p>
+          </div>
+
+          {/* Two comparison rows */}
+          <div className="space-y-12 max-w-4xl mx-auto">
+            {[
+              {
+                task: "Build a FIT luxury proposal & itinerary",
+                industry: { label: "Industry Average", time: "2 hours", tools: "Axus · Tern · Travel Joy · Travefy", pct: 100 },
+                iris: { label: "Iris Itinerary Alchemist", time: "10 minutes", pct: 8 },
+                saving: "92% faster",
+              },
+              {
+                task: "Update, QC, and edit an existing itinerary",
+                industry: { label: "Industry Average", time: "2 hours", tools: "Manual review across tools", pct: 100 },
+                iris: { label: "Iris Itinerary Alchemist", time: "30 minutes", pct: 25 },
+                saving: "75% faster",
+              },
+            ].map(({ task, industry, iris, saving }) => (
+              <div key={task} className="bg-[#faf9f6] border border-[#bfaf8a]/15 p-8 md:p-12">
+                {/* Task label */}
+                <div className="flex items-start justify-between gap-4 mb-8">
+                  <p
+                    className="text-[#384959] text-lg font-light"
+                    style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
+                  >
+                    {task}
+                  </p>
+                  <span
+                    className="shrink-0 inline-flex items-center gap-1.5 bg-[#384959] text-white text-[0.6rem] tracking-[0.15em] uppercase px-3 py-1.5"
+                    style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                  >
+                    <Zap size={10} />
+                    {saving}
+                  </span>
+                </div>
+
+                {/* Industry bar */}
+                <div className="mb-6">
+                  <div className="flex items-center justify-between mb-2">
+                    <div>
+                      <span
+                        className="text-[#2F2F2F]/50 text-[0.6rem] tracking-[0.18em] uppercase block mb-0.5"
+                        style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                      >
+                        {industry.label}
+                      </span>
+                      <span
+                        className="text-[#2F2F2F]/35 text-xs font-light"
+                        style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                      >
+                        {industry.tools}
+                      </span>
+                    </div>
+                    <span
+                      className="text-[#2F2F2F]/60 text-2xl font-light"
+                      style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
+                    >
+                      {industry.time}
+                    </span>
+                  </div>
+                  <div className="h-3 bg-[#e8e2d8] w-full">
+                    <div className="h-full bg-[#c4b9a4] w-full" />
+                  </div>
+                </div>
+
+                {/* Iris bar */}
+                <div>
+                  <div className="flex items-center justify-between mb-2">
+                    <div>
+                      <span
+                        className="text-[#9C886A] text-[0.6rem] tracking-[0.18em] uppercase block mb-0.5"
+                        style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                      >
+                        {iris.label}
+                      </span>
+                    </div>
+                    <span
+                      className="text-[#9C886A] text-2xl font-light"
+                      style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
+                    >
+                      {iris.time}
+                    </span>
+                  </div>
+                  <div className="h-3 bg-[#e8e2d8] w-full">
+                    <div
+                      className="h-full bg-[#9C886A] transition-all duration-1000"
+                      style={{ width: `${iris.pct}%` }}
+                    />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Bottom note */}
+          <p
+            className="text-center text-[#2F2F2F]/35 text-xs mt-10 font-light"
+            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+          >
+            Time estimates based on advisor feedback comparing Iris to Axus, Tern, Travel Joy, and Travefy workflows.
+          </p>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════════════════════════════
+          §7c  ELEVATE THIS TRIP — Horizontal scrolling upsell showcase
+          WHY: Showing the actual Iris "Elevate This Trip" UI is the most
+          compelling proof of the platform's intelligence. Real suggestions,
+          real commission values, real client names — makes it tangible.
+      ══════════════════════════════════════════════════════════════════════ */}
+      <section className="py-24 md:py-32 bg-[#faf9f6] overflow-hidden">
+        <div className="max-w-[1440px] mx-auto px-8 lg:px-14 mb-14">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
+            <div>
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-12 h-px bg-[#bfaf8a]" />
+                <p className="text-[#bfaf8a] text-2xl italic" style={{ fontFamily: "'Allura', cursive" }}>
+                  Iris in action
+                </p>
+              </div>
+              <h2
+                className="text-[#384959] text-4xl md:text-5xl font-light leading-tight"
+                style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
+              >
+                Elevate This Trip.
+              </h2>
+              <p
+                className="text-[#2F2F2F]/55 text-base font-light mt-4 max-w-xl leading-relaxed"
+                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              >
+                On every active trip, Iris scans the itinerary and surfaces upsell opportunities
+                with estimated value and commission — ready to propose, book, or add as a task.
+              </p>
+            </div>
+            <div className="flex items-center gap-2 shrink-0">
+              <span
+                className="text-[#9C886A] text-[0.6rem] tracking-[0.2em] uppercase"
+                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              >
+                Scroll to explore
+              </span>
+              <ArrowRight size={14} className="text-[#9C886A]" />
+            </div>
+          </div>
+        </div>
+
+        {/* Horizontally scrolling card strip */}
+        <div className="flex gap-5 overflow-x-auto pb-6 px-8 lg:px-14 scrollbar-hide snap-x snap-mandatory">
+          {[
+            {
+              title: "Pre-Cruise Athens Historical Walking Tour",
+              type: "Tour",
+              description: "Before embarking on her cruise, Denise can immerse herself in Athens' rich history with a private walking tour of iconic sites like the Acropolis and Ancient Agora, providing a deeper cultural understanding of her starting point.",
+              value: "$450",
+              commission: "$45",
+              status: "identified",
+            },
+            {
+              title: "Private Airport Transfer (Departure from Final Destination)",
+              type: "Transfer",
+              description: "Guarantee a stress-free conclusion to Denise's trip with a private transfer from her final hotel to the departure airport, ensuring punctuality and comfort for her journey home.",
+              value: "$200",
+              commission: "$20",
+              status: "identified",
+            },
+            {
+              title: "Santorini Sunset Catamaran Cruise",
+              type: "Experience",
+              description: "A private catamaran sailing the caldera at sunset — champagne, fresh seafood, and views of the volcanic cliffs. One of the most requested add-ons for Santorini itineraries.",
+              value: "$680",
+              commission: "$68",
+              status: "identified",
+            },
+            {
+              title: "Mykonos Private Villa Upgrade",
+              type: "Hotel",
+              description: "Upgrade Denise from a standard suite to a private pool villa at the current property. Availability confirmed for her dates. Estimated additional spend within client budget.",
+              value: "$1,200",
+              commission: "$180",
+              status: "identified",
+            },
+            {
+              title: "Athens Airport Arrival Transfer & Welcome Amenity",
+              type: "Transfer",
+              description: "Private meet-and-greet at Athens International with a luxury vehicle transfer to the hotel. Coordinate with the property to arrange a welcome amenity upon arrival.",
+              value: "$320",
+              commission: "$32",
+              status: "identified",
+            },
+            {
+              title: "Delphi Day Excursion from Athens",
+              type: "Tour",
+              description: "A full-day private guided excursion to Delphi — the oracle, the museum, the mountain views. Pairs perfectly with the Athens pre-cruise extension already in the itinerary.",
+              value: "$550",
+              commission: "$55",
+              status: "identified",
+            },
+          ].map((card, i) => (
+            <div
+              key={i}
+              className="shrink-0 w-72 md:w-80 bg-white border border-[#e8e2d8] p-6 snap-start shadow-sm hover:shadow-md transition-shadow duration-300"
+            >
+              {/* Card header */}
+              <div className="flex items-start justify-between gap-3 mb-3">
+                <div className="flex items-center gap-2">
+                  <Zap size={13} className="text-[#9C886A] shrink-0" />
+                  <span
+                    className="text-[#384959] text-[0.6rem] tracking-[0.15em] uppercase font-medium"
+                    style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                  >
+                    Elevate This Trip
+                  </span>
+                </div>
+                <span
+                  className="text-[0.55rem] tracking-[0.1em] uppercase border border-[#bfaf8a]/40 text-[#9C886A] px-2 py-0.5 shrink-0"
+                  style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                >
+                  {card.status}
+                </span>
+              </div>
+
+              {/* Title + type badge */}
+              <div className="flex items-start gap-2 mb-3">
+                <p
+                  className="text-[#2F2F2F] text-sm font-medium leading-snug flex-1"
+                  style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
+                >
+                  {card.title}
+                </p>
+                <span
+                  className="shrink-0 text-[0.55rem] tracking-[0.1em] uppercase border border-[#bfaf8a]/30 text-[#9C886A] px-2 py-0.5 mt-0.5"
+                  style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                >
+                  {card.type}
+                </span>
+              </div>
+
+              {/* Description */}
+              <p
+                className="text-[#2F2F2F]/55 text-xs font-light leading-relaxed mb-5"
+                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              >
+                {card.description}
+              </p>
+
+              {/* Value + commission */}
+              <div className="mb-4">
+                <p
+                  className="text-[#9C886A] text-sm font-light mb-1"
+                  style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                >
+                  Value: {card.value}
+                </p>
+                <span
+                  className="inline-flex items-center gap-1.5 text-[0.6rem] tracking-[0.1em] border border-[#bfaf8a]/25 text-[#2F2F2F]/50 px-3 py-1"
+                  style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#bfaf8a]/50" />
+                  Commissionable · {card.commission}
+                </span>
+              </div>
+
+              {/* Actions */}
+              <div className="flex gap-4 border-t border-[#e8e2d8] pt-4">
+                {["Propose", "Booked", "+ Task"].map((action) => (
+                  <button
+                    key={action}
+                    className="text-[#384959]/50 text-[0.6rem] tracking-[0.12em] uppercase hover:text-[#9C886A] transition-colors duration-200"
+                    style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                    onClick={() => {}}
+                  >
+                    {action}
+                  </button>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════════════════════════════
+          §7d  ACADEMY — Rebuilt to match brand screenshots
+          WHY: The Academy is a major differentiator. Structured like the
+          provided screenshots: full-bleed CTA + curriculum breakdown.
+      ══════════════════════════════════════════════════════════════════════ */}
+      <section className="bg-white">
+        {/* Part A: "Everything an advisor needs" intro */}
+        <div className="py-24 md:py-32 max-w-[1440px] mx-auto px-8 lg:px-14">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
+            <div>
+              <h2
+                className="text-[#384959] text-4xl md:text-5xl font-light leading-tight mb-8"
+                style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
+              >
+                Everything an advisor needs to thrive at BTA.
+              </h2>
+              <p
+                className="text-[#2F2F2F]/65 text-base font-light leading-relaxed mb-6"
+                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              >
+                BTA Academy is the central hub for all internal training at Boutique Travel Advisors.
+                Whether you are onboarding as a new advisor, deepening your knowledge of our CRM and
+                booking systems, or refining your client communication skills, every resource you need
+                is organized here in one place.
+              </p>
+              <p
+                className="text-[#2F2F2F]/65 text-base font-light leading-relaxed"
+                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              >
+                Courses are organized by category, progress is tracked automatically, and all content
+                is kept current as our tools and supplier relationships evolve. Learn at your own pace,
+                revisit any module at any time, and build the expertise that sets BTA advisors apart.
+              </p>
+            </div>
+
+            {/* Curriculum list — styled from screenshot */}
+            <div>
+              <p
+                className="text-[#9C886A] text-[0.6rem] tracking-[0.25em] uppercase mb-6"
+                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              >
+                What you will learn
+              </p>
+              <h3
+                className="text-[#384959] text-3xl font-light mb-10"
+                style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
+              >
+                Designed for Advisor Excellence
+              </h3>
+
+              <div className="space-y-8">
+                {[
+                  {
+                    Icon: BookOpen,
+                    title: "Curated Curriculum",
+                    desc: "Structured courses covering every aspect of luxury travel advising — from CRM workflows and booking systems to client journey management and preferred supplier relationships.",
+                  },
+                  {
+                    Icon: Award,
+                    title: "Preferred Supplier Training",
+                    desc: "In-depth training on Virtuoso, Sion, Safari Portal, and other luxury travel platforms, ensuring advisors can confidently represent and book the world's finest experiences.",
+                  },
+                  {
+                    Icon: Users,
+                    title: "Advisor Excellence",
+                    desc: "Professional development resources covering communication, marketing, planning fees, and the MAPS Framework — designed to elevate every advisor's practice.",
+                  },
+                  {
+                    Icon: Play,
+                    title: "Video-Led Learning",
+                    desc: "Step-by-step video tutorials with accompanying SOPs for every workflow, so advisors can learn at their own pace and revisit key processes whenever needed.",
+                  },
+                ].map(({ Icon, title, desc }) => (
+                  <div key={title} className="flex gap-5">
+                    <div className="w-10 h-10 bg-[#384959] flex items-center justify-center shrink-0">
+                      <Icon size={16} className="text-[#bfaf8a]" />
+                    </div>
+                    <div>
+                      <p
+                        className="text-[#384959] text-[0.65rem] tracking-[0.2em] uppercase mb-2"
+                        style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                      >
+                        {title}
+                      </p>
+                      <p
+                        className="text-[#2F2F2F]/60 text-sm font-light leading-relaxed"
+                        style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                      >
+                        {desc}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Part B: "Enter BTA Academy" full-bleed CTA — styled from screenshot */}
+        <div className="relative h-[480px] md:h-[560px] overflow-hidden flex items-center justify-center">
+          {/* Background: dark overlay over luxury travel image */}
+          <div className="absolute inset-0 bg-[#1a2330]/70 z-10" />
+          <img
+            src={CDN.heroElite}
+            alt=""
+            className="absolute inset-0 w-full h-full object-cover object-top"
+            aria-hidden="true"
+          />
+          {/* Content */}
+          <div className="relative z-20 text-center px-8">
+            <p
+              className="text-[#bfaf8a] text-[0.65rem] tracking-[0.4em] uppercase mb-6"
+              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+            >
+              Ready to Begin?
+            </p>
+            <h2
+              className="text-white text-5xl md:text-7xl font-light tracking-wide mb-10"
+              style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
+            >
+              Enter BTA Academy
+            </h2>
+            <a href="#inquiry">
+              <button
+                className="inline-flex items-center gap-4 px-16 py-5 text-white text-[0.65rem] tracking-[0.3em] uppercase transition-opacity duration-300 hover:opacity-90"
+                style={{
+                  background: "#9C886A",
+                  fontFamily: "'Playfair Display', Georgia, serif",
+                }}
+              >
+                View All Courses
+                <ArrowRight size={14} />
+              </button>
+            </a>
           </div>
         </div>
       </section>

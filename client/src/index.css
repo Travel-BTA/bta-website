@@ -687,3 +687,14 @@
     }
   }
 }
+
+/* ── Utility: hide scrollbar while preserving scroll behaviour ─────────────
+   WHY: The Elevate This Trip horizontal scroll strip needs to scroll without
+   showing a browser scrollbar, keeping the design clean on all platforms. */
+.scrollbar-hide {
+  -ms-overflow-style: none;   /* IE / Edge */
+  scrollbar-width: none;      /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;              /* Chrome / Safari / Opera */
+}
