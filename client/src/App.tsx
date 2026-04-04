@@ -35,6 +35,7 @@ import PartnerDetail from "./pages/PartnerDetail";
 import PrivateJetCharters from "./pages/PrivateJetCharters";
 import Destinations from "./pages/Destinations";
 import Experiences from "./pages/Experiences";
+import FamilyTravel from "./pages/FamilyTravel";
 import TermsOfService from "./pages/TermsOfService";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsAndConditions from "./pages/TermsAndConditions";
@@ -99,6 +100,8 @@ function Router() {
       {/* Destinations & Experiences */}
       <Route path={"/destinations"} component={Destinations} />
       <Route path={"/experiences"} component={Experiences} />
+      {/* Experience sub-pages */}
+      <Route path={"/experiences/family-travel"} component={FamilyTravel} />
       {/* Fallback */}
       <Route path={"/404"} component={NotFound} />
       <Route path={"/terms-of-service"} component={TermsOfService} />
