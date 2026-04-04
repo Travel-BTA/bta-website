@@ -19,22 +19,25 @@ import { useState, useEffect, useRef } from "react";
 import { nav } from "@/content/homepage";
 
 // Sub-pages under the About dropdown
+// WHY: Pricing moved here to keep primary nav clean; About renamed to Our Team per Janet's request
 const ABOUT_SUBMENU = [
-  { label: "About BTA",                    href: "/about" },
+  { label: "Our Team",                     href: "/about" },
   { label: "We Give Back",                 href: "/about/philanthropic-initiatives" },
   { label: "Hotel Specialist Program",     href: "/hotel-specialist-program" },
   { label: "Hotel Collection Application", href: "/hotel-collection-application" },
+  { label: "Pricing",                      href: "/pricing" },
 ];
 
 // Secondary pages grouped under the More dropdown
+// WHY: Cruises moved to primary nav per Janet's request
 const MORE_SUBMENU = [
   { label: "Land Journeys", href: "/land-journeys" },
-  { label: "Cruises",       href: "/cruises" },
   { label: "Partners",      href: "/preferred-partners" },
 ];
 
 // The 6 primary nav links shown directly in the bar
-const PRIMARY_LINKS = ["Destinations", "Experiences", "Journal", "Press", "Pricing", "About"];
+// WHY: Pricing moved under About dropdown; Cruises promoted to primary nav
+const PRIMARY_LINKS = ["Destinations", "Experiences", "Cruises", "Journal", "Press", "About"];
 
 // Shared dropdown panel styles
 const dropdownPanelClass =
