@@ -8,6 +8,13 @@
       "when": 1775241608613,
       "tag": "0000_unknown_guardian",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1775320277410,
+      "tag": "0001_slim_pride",
+      "breakpoints": true
     }
   ]
 }

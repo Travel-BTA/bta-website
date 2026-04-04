@@ -47,6 +47,9 @@ import LuxuryTravelAgency from "./pages/LuxuryTravelAgency";
 import ContactUs from "./pages/ContactUs";
 import Pricing from "./pages/Pricing";
 import Press from "./pages/Press";
+import PagesDashboard from "./pages/PagesDashboard";
+import PageBuilder from "./pages/PageBuilder";
+import LivePageRenderer from "./pages/LivePageRenderer";
 function Router() {
   // make sure to consider if you need authentication for certain routes
   return (
@@ -90,6 +93,12 @@ function Router() {
       <Route path={"/advisors/julie-rose"} component={JulieRose} />
       {/* Admin */}
       <Route path={"/admin/media"} component={MediaManager} />
+      {/* Page Builder — admin only, no NavBar/Footer wrapper needed (full-screen editor) */}
+      <Route path={"/admin/pages"} component={PagesDashboard} />
+      <Route path={"/admin/page-builder"} component={PageBuilder} />
+      <Route path={"/admin/page-builder/:id"} component={PageBuilder} />
+      {/* Live pages published via the Page Builder */}
+      <Route path={"/pages/:slug"} component={LivePageRenderer} />
       {/* New pages */}
       <Route path={"/philanthropic-initiatives"} component={PhilanthropicInitiatives} />
       {/* Preferred Partners hub + individual partner pages */}
