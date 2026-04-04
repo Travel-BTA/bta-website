@@ -454,14 +454,16 @@ export default function AdvisorPrograms() {
 
       {/* ── Iris: CRM Intelligence ─────────────────────────────────────────── */}
       {/*
-       * WHY: Janet's exact copy describing Iris's CRM intelligence features —
-       * morning briefings, trip QC, call transcription, passport scanning, and marketing.
-       * Placed between the CRM platform section and the Iris Itinerary section.
+       * WHY: Three alternating split-screen rows, each pairing a real platform screenshot
+       * with its feature copy. Screenshots are actual Iris/DASH UI captures uploaded to CDN.
+       * Row 1: Morning Briefing (image right) | Row 2: Intelligence Center (image left)
+       * Row 3: Elevate Upsell (image right) | Closing stat row
        */}
-      <section className="py-24 md:py-32 bg-[#faf9f6]">
-        <div className="max-w-6xl mx-auto px-6">
-          {/* Header */}
-          <div className="text-center mb-16">
+      <section className="py-24 md:py-32 bg-[#faf9f6] overflow-hidden">
+        <div className="max-w-[1440px] mx-auto px-8 lg:px-14">
+
+          {/* Section header */}
+          <div className="text-center mb-20">
             <p className="bta-eyebrow text-[10px] tracking-[0.22em] text-[#9C886A] uppercase mb-4">Iris Intelligence</p>
             <h2
               className="text-3xl md:text-4xl text-[#2F2F2F] mb-6 font-light"
@@ -469,50 +471,150 @@ export default function AdvisorPrograms() {
             >
               Your Practice, Fully Organized
             </h2>
-            <p className="text-[#2F2F2F]/70 text-base max-w-2xl mx-auto leading-relaxed" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+            <p
+              className="text-[#2F2F2F]/70 text-base max-w-2xl mx-auto leading-relaxed"
+              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+            >
               Iris works inside your CRM — reading your data, surfacing what matters, and handling
               the documentation so you can focus on advising.
             </p>
           </div>
 
-          {/* Feature cards */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-            {/* Morning Briefing */}
-            <div className="bg-white border border-[#9C886A]/15 p-8">
+          {/* ── Row 1: Morning Briefing — text left, screenshot right ── */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-28">
+            <div>
               <div className="w-8 h-px bg-[#9C886A] mb-6" />
               <h3
-                className="text-lg text-[#2F2F2F] mb-3 font-light"
+                className="text-2xl md:text-3xl text-[#2F2F2F] mb-5 font-light"
                 style={{ fontFamily: "'Instrument Serif', serif" }}
               >
                 Morning Pipeline Briefing
               </h3>
-              <p className="text-[#2F2F2F]/65 text-sm leading-relaxed" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+              <p
+                className="text-[#2F2F2F]/65 text-base leading-relaxed mb-6"
+                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              >
                 Every morning Iris scans your full pipeline and delivers a prioritized briefing —
                 overdue tasks, payment deadlines, departing trips, and unconfirmed bookings — with
                 direct links to what needs attention first. Nothing slips through.
               </p>
+              {/* Stat pills */}
+              <div className="flex flex-wrap gap-3">
+                {["Overdue Tasks", "Departing Trips", "Unconfirmed Bookings", "Payment Deadlines"].map(tag => (
+                  <span
+                    key={tag}
+                    className="text-[0.65rem] tracking-[0.15em] uppercase px-3 py-1.5 border border-[#9C886A]/30 text-[#9C886A]"
+                    style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
             </div>
+            {/* Screenshot — phone-frame style with shadow */}
+            <div className="relative flex justify-center lg:justify-end">
+              <div className="relative max-w-xs w-full">
+                <div className="absolute -inset-4 bg-[#9C886A]/8 rounded-3xl blur-2xl" />
+                <img
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/iris-morning-briefing_d2c55cfb.png"
+                  alt="Iris Morning Advisor Briefing"
+                  className="relative z-10 w-full rounded-2xl shadow-2xl border border-[#9C886A]/10"
+                />
+              </div>
+            </div>
+          </div>
 
-            {/* Trip QC Audit */}
-            <div className="bg-white border border-[#9C886A]/15 p-8">
+          {/* ── Row 2: Intelligence Center — screenshot left, text right ── */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-28">
+            {/* Screenshot */}
+            <div className="relative flex justify-center lg:justify-start order-2 lg:order-1">
+              <div className="relative max-w-xs w-full">
+                <div className="absolute -inset-4 bg-[#384959]/8 rounded-3xl blur-2xl" />
+                <img
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/iris-intelligence-center_d2c8b9c9.png"
+                  alt="Iris Intelligence Center — Travel Disruption Feed"
+                  className="relative z-10 w-full rounded-2xl shadow-2xl border border-[#9C886A]/10"
+                />
+              </div>
+            </div>
+            {/* Text */}
+            <div className="order-1 lg:order-2">
               <div className="w-8 h-px bg-[#9C886A] mb-6" />
               <h3
-                className="text-lg text-[#2F2F2F] mb-3 font-light"
+                className="text-2xl md:text-3xl text-[#2F2F2F] mb-5 font-light"
                 style={{ fontFamily: "'Instrument Serif', serif" }}
               >
-                Trip QC &amp; Departure Audit
+                Intelligence Center
               </h3>
-              <p className="text-[#2F2F2F]/65 text-sm leading-relaxed" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
-                On every trip, Iris runs a full QC audit and surfaces what's missing: bookings,
-                documents, supplier requests, Axus publication status. She flags passport expiry
-                risks and tells you exactly what to do before departure. Her Elevate section suggests
-                1–2 specific upsell or experience opportunities personalized to the destination and
-                client profile — with estimated commission.
+              <p
+                className="text-[#2F2F2F]/65 text-base leading-relaxed mb-6"
+                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              >
+                A live feed of travel disruptions, geopolitical alerts, and security events —
+                filtered by severity and tagged by region. Iris surfaces what's relevant to your
+                active clients so you can advise proactively, not reactively.
               </p>
+              <div className="flex flex-wrap gap-3">
+                {["Critical Alerts", "Geopolitical", "Infrastructure", "Security"].map(tag => (
+                  <span
+                    key={tag}
+                    className="text-[0.65rem] tracking-[0.15em] uppercase px-3 py-1.5 border border-[#9C886A]/30 text-[#9C886A]"
+                    style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
             </div>
+          </div>
 
-            {/* Call Transcription */}
+          {/* ── Row 3: Elevate Upsell — text left, screenshot right ── */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
+            <div>
+              <div className="w-8 h-px bg-[#9C886A] mb-6" />
+              <h3
+                className="text-2xl md:text-3xl text-[#2F2F2F] mb-5 font-light"
+                style={{ fontFamily: "'Instrument Serif', serif" }}
+              >
+                Elevate — AI Upsell Engine
+              </h3>
+              <p
+                className="text-[#2F2F2F]/65 text-base leading-relaxed mb-6"
+                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              >
+                On every trip, Iris's Elevate section suggests 1–2 specific upsell or experience
+                opportunities personalized to the destination and client profile — with estimated
+                commission shown. Pre-cruise tours, private transfers, curated excursions — all
+                identified automatically, ready to propose in one click.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                {["Personalized Suggestions", "Commission Estimates", "One-Click Propose"].map(tag => (
+                  <span
+                    key={tag}
+                    className="text-[0.65rem] tracking-[0.15em] uppercase px-3 py-1.5 border border-[#9C886A]/30 text-[#9C886A]"
+                    style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div className="relative flex justify-center lg:justify-end">
+              <div className="relative max-w-xs w-full">
+                <div className="absolute -inset-4 bg-[#9C886A]/8 rounded-3xl blur-2xl" />
+                <img
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/iris-elevate-upsell_8d75e61c.png"
+                  alt="Iris Elevate — AI Upsell Suggestions"
+                  className="relative z-10 w-full rounded-2xl shadow-2xl border border-[#9C886A]/10"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* ── Closing stat row + remaining features ── */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8 border-t border-[#9C886A]/15">
+
+            {/* AI Call Summaries */}
             <div className="bg-white border border-[#9C886A]/15 p-8">
               <div className="w-8 h-px bg-[#9C886A] mb-6" />
               <h3
@@ -521,14 +623,17 @@ export default function AdvisorPrograms() {
               >
                 AI Call Summaries
               </h3>
-              <p className="text-[#2F2F2F]/65 text-sm leading-relaxed" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
-                Every call is automatically transcribed and summarized. Iris reads the transcript
-                and pulls out key topics, client preferences, action items, and urgent needs —
-                saved to the call record and the traveler profile.
+              <p
+                className="text-[#2F2F2F]/65 text-sm leading-relaxed"
+                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              >
+                Every call is automatically transcribed and summarized. Iris pulls out key topics,
+                client preferences, action items, and urgent needs — saved to the call record and
+                traveler profile.
               </p>
             </div>
 
-            {/* Passport Scanning */}
+            {/* Passport Scan */}
             <div className="bg-white border border-[#9C886A]/15 p-8">
               <div className="w-8 h-px bg-[#9C886A] mb-6" />
               <h3
@@ -537,35 +642,23 @@ export default function AdvisorPrograms() {
               >
                 Passport Scan &amp; Auto-Extract
               </h3>
-              <p className="text-[#2F2F2F]/65 text-sm leading-relaxed" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+              <p
+                className="text-[#2F2F2F]/65 text-sm leading-relaxed"
+                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              >
                 Upload a passport scan and Iris extracts the document number, expiry, and country
                 of issue automatically. No manual entry.
               </p>
             </div>
 
-            {/* Marketing */}
-            <div className="bg-white border border-[#9C886A]/15 p-8">
-              <div className="w-8 h-px bg-[#9C886A] mb-6" />
-              <h3
-                className="text-lg text-[#2F2F2F] mb-3 font-light"
-                style={{ fontFamily: "'Instrument Serif', serif" }}
-              >
-                Marketing in Your Voice
-              </h3>
-              <p className="text-[#2F2F2F]/65 text-sm leading-relaxed" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
-                In Marketing, Iris drafts campaign briefs, email copy, social posts, and landing
-                page sections in your brand voice — ready to send or refine.
-              </p>
-            </div>
-
-            {/* Result card */}
+            {/* Closing card */}
             <div className="bg-[#384959] p-8 flex flex-col justify-between">
               <div className="w-8 h-px bg-[#9C886A] mb-6" />
               <p
                 className="text-xl text-white leading-snug font-light"
                 style={{ fontFamily: "'Instrument Serif', serif" }}
               >
-                Less time documenting. More time advising.
+                Less time documenting.<br />More time advising.
               </p>
               <a
                 href="/contact-us"

@@ -44,6 +44,7 @@ import CookiePolicy from "./pages/CookiePolicy";
 import HotelSpecialistProgram from "./pages/HotelSpecialistProgram";
 import HotelCollectionApplication from "./pages/HotelCollectionApplication";
 import AdvisorPrograms from "./pages/AdvisorPrograms";
+import AdvisorRecruitment from "./pages/AdvisorRecruitment";
 import LuxuryTravelAgency from "./pages/LuxuryTravelAgency";
 import ContactUs from "./pages/ContactUs";
 import Pricing from "./pages/Pricing";
@@ -85,6 +86,8 @@ function Router() {
       <Route path={"/hotel-specialist-program"} component={HotelSpecialistProgram} />
       <Route path={"/hotel-collection-application"} component={HotelCollectionApplication} />
       <Route path={"/advisor-programs"} component={AdvisorPrograms} />
+      {/* WHY: New elite recruitment page — separate from /advisor-programs for A/B comparison */}
+      <Route path={"/advisor-recruitment"} component={AdvisorRecruitment} />
       <Route path={"/luxury-travel-agency-bta"} component={LuxuryTravelAgency} />
       <Route path={"/contact-us"} component={ContactUs} />
       <Route path={"/pricing"} component={Pricing} />
