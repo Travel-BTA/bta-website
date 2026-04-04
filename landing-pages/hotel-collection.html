@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTA Hotel Collection Landing Page - Complete WordPress Export</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ========================================
+           COMPLETE INLINE CSS FOR WORDPRESS
+           Copy this entire file into a WordPress Custom HTML block
+           ======================================== */
+        
+        /* Reset & Base */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Playfair Display', serif;
+            line-height: 1.6;
+            color: #2f2f2f;
+            background: #ffffff;
+            overflow-x: hidden;
+        }
+        
+        /* Typography */
+        .heading-display {
+            font-family: 'Instrument Serif', serif;
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            line-height: 1.1;
+            font-weight: 400;
+            letter-spacing: -0.02em;
+        }
+        
+        .heading-section {
+            font-family: 'Instrument Serif', serif;
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            line-height: 1.2;
+            font-weight: 400;
+        }
+        
+        .subheading {
+            font-size: clamp(1.125rem, 2vw, 1.5rem);
+            line-height: 1.6;
+            font-style: italic;
+            color: #384959;
+        }
+        
+        .body-text { font-size: 1rem; line-height: 1.8; color: #384959; }
+        .body-large { font-size: 1.125rem; line-height: 1.8; color: #2f2f2f; }
+        
+        /* Container */
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .container { padding: 0; }
+        }
+        
+        /* Divider */
+        .divider-gold {
+            width: 60px;
+            height: 2px;
+            background: #bfaf8a;
+            margin-bottom: 1.5rem;
+        }
+        
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            font-weight: 500;
+            border-radius: 0.25rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            border: none;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .btn-primary {
+            background: #bfaf8a;
+            color: #2f2f2f;
+        }
+        
+        .btn-primary:hover {
+            background: #a89977;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(191, 175, 138, 0.3);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: #2f2f2f;
+            border: 2px solid #bfaf8a;
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(191, 175, 138, 0.1);
+        }
+        
+        /* Backgrounds */
+        .bg-warm-gradient {
+            background: linear-gradient(135deg, #ffffff 0%, #edeae4 100%);
+        }
+        
+        .bg-stone-gradient {
+            background: linear-gradient(180deg, #edeae4 0%, #ffffff 50%, #edeae4 100%);
+        }
+        
+        .bg-luxury-texture {
+            background: linear-gradient(135deg, #ffffff 0%, #edeae4 50%, #ffffff 100%);
+        }
+        
+        /* Grid */
+        .grid { display: grid; gap: 2rem; }
+        .grid-2 { grid-template-columns: repeat(2, 1fr); }
+        .grid-3 { grid-template-columns: repeat(3, 1fr); }
+        .grid-4 { grid-template-columns: repeat(4, 1fr); }
+        
+        @media (max-width: 1024px) {
+            .grid-3, .grid-4 { grid-template-columns: repeat(2, 1fr); }
+        }
+        
+        @media (max-width: 768px) {
+            .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+        }
+        
+        /* Sections */
+        section { padding: 6rem 0; position: relative; }
+        
+        @media (max-width: 768px) {
+            section { padding: 3rem 0; }
+        }
+        
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #edeae4;
+            padding: 1rem 0;
+        }
+        
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        header img { height: 2rem; }
+        
+        /* Hero */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 5rem;
+            position: relative;
+        }
+        
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+        }
+        
+        .hero-bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.3;
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to right, rgba(255,255,255,0.95), rgba(255,255,255,0.75), rgba(255,255,255,0.4));
+        }
+        
+        /* Cards */
+        .card {
+            padding: 2.5rem;
+            border-radius: 0.25rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card:hover {
+            transform: translateY(-0.5rem);
+        }
+        
+        .card-shadow {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .card-shadow:hover {
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        .card-gold-gradient {
+            background: linear-gradient(135deg, #bfaf8a 0%, #a89977 100%);
+            color: white;
+        }
+        
+        .card-navy {
+            background: #384959;
+            color: white;
+        }
+        
+        .card-white {
+            background: white;
+            border: 2px solid rgba(191, 175, 138, 0.3);
+        }
+        
+        .card-white:hover {
+            border-color: #bfaf8a;
+        }
+        
+        .card-border-left {
+            border-left: 4px solid #bfaf8a;
+            background: white;
+        }
+        
+        .card-border-left-navy {
+            border-left: 4px solid #384959;
+            background: white;
+        }
+        
+        /* Utility Classes */
+        .text-center { text-align: center; }
+        .mx-auto { margin-left: auto; margin-right: auto; }
+        .max-w-4xl { max-width: 56rem; }
+        .max-w-6xl { max-width: 72rem; }
+        .relative { position: relative; }
+        .absolute { position: absolute; }
+        .z-10 { z-index: 10; }
+        .flex { display: flex; }
+        .items-center { align-items: center; }
+        .items-start { align-items: flex-start; }
+        .justify-between { justify-content: space-between; }
+        .justify-center { justify-content: center; }
+        .gap-3 { gap: 0.75rem; }
+        .gap-4 { gap: 1rem; }
+        .gap-6 { gap: 1.5rem; }
+        .gap-8 { gap: 2rem; }
+        .space-y-4 > * + * { margin-top: 1rem; }
+        .space-y-6 > * + * { margin-top: 1.5rem; }
+        .space-y-8 > * + * { margin-top: 2rem; }
+        .space-y-12 > * + * { margin-top: 3rem; }
+        .space-y-16 > * + * { margin-top: 4rem; }
+        
+        /* Colors */
+        .text-gold { color: #bfaf8a; }
+        .text-navy { color: #384959; }
+        .text-charcoal { color: #2f2f2f; }
+        .text-white { color: white; }
+        .bg-gold { background: #bfaf8a; }
+        .bg-navy { background: #384959; }
+        .bg-white { background: white; }
+        .bg-stone { background: #edeae4; }
+        
+        /* Numbers */
+        .number-display {
+            font-family: 'Instrument Serif', serif;
+            font-size: 4rem;
+            font-weight: 400;
+            line-height: 1;
+        }
+        
+        .number-large {
+            font-family: 'Instrument Serif', serif;
+            font-size: 3.5rem;
+            font-weight: 400;
+            line-height: 1;
+        }
+        
+        /* Decorative Elements */
+        .circle-decoration {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .circle-top-right {
+            top: -2rem;
+            right: -2rem;
+            width: 8rem;
+            height: 8rem;
+        }
+        
+        .circle-bottom-left {
+            bottom: -2rem;
+            left: -2rem;
+            width: 6rem;
+            height: 6rem;
+        }
+        
+        /* Check List */
+        .check-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .check-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .check-list li::before {
+            content: "✓";
+            color: #bfaf8a;
+            font-weight: bold;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .flex-mobile-col {
+                flex-direction: column;
+            }
+            
+            /* Mobile card improvements */
+            .card {
+                padding: 2rem 1.5rem;
+            }
+            
+            .number-large {
+                font-size: 2.5rem;
+            }
+            
+            .card h4 {
+                font-size: 1.125rem !important;
+            }
+            
+            .card .body-text {
+                font-size: 0.95rem;
+                line-height: 1.7;
+            }
+            
+            /* Fix grid-column span on mobile */
+            .card[style*="grid-column"] {
+                grid-column: span 1 !important;
+            }
+            
+            /* Ensure proper spacing between cards */
+            .grid {
+                gap: 1.5rem;
+            }
+        }
+        
+        /* Glow orbs */
+        .glow-orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(60px);
+            opacity: 0.15;
+        }
+    </style>
+</head>
+<body>
+
+<!-- ========================================
+     PASTE EVERYTHING BELOW INTO WORDPRESS
+     ======================================== -->
+
+
+
+<!-- Hero Section -->
+<section class="hero bg-warm-gradient">
+    <div class="hero-bg">
+        <img src="https://private-us-east-1.manuscdn.com/sessionFile/hJAKCV6wwDEpUCn7Sd7X6B/sandbox/ZFVbmjd7l9nA7HtmyTVUoq-img-1_1770878361000_na1fn_aGVyby1sdXh1cnktaG90ZWw.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvaEpBS0NWNnd3REVwVUNuN1NkN1g2Qi9zYW5kYm94L1pGVmJtamQ3bDluQTdIdG15VFZVb3EtaW1nLTFfMTc3MDg3ODM2MTAwMF9uYTFmbl9hR1Z5Ynkxc2RYaDFjbmt0YUc5MFpXdy5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=nvGIkLsge~V2IDcwTS7ASZnSOfJg7oRqn9pMVJFUmVSd03TPVg7qFFbct3aeEgbb-eSxzApVMaGMUeTlYiIv5l9uaazuU68Wu08wJ40KjNHANWs5hVscikMxq5wrw5tZmz9PhQGcFZOFk2dWk9OA-QAqPA5inwhf00IwjT7oxFUQGUXePtmk8FTgAM7VMJFoQWRlh7jK5E2Trd7lYMPbsxPE1rSRNdoOwz~LvikYL5FthXJ~IhIabyM~UuAByEGyKkzKhSrSBHd6rbsMYjbR9h8fuA74bFI10U2CALdIGej3v3X49ah9F7UToU7-E5wS7iIukV~~b4Ay-ftx8Y5P3w__" alt="Luxury Hotel">
+        <div class="hero-overlay"></div>
+    </div>
+    <div class="container relative z-10">
+        <div class="space-y-8" style="max-width: 50rem;">
+            <div class="divider-gold"></div>
+            <h1 class="heading-display text-charcoal">BOUTIQUE TRAVEL ADVISORS HOTEL COLLECTION</h1>
+            <p class="subheading">A Curated Platform for Hotels That Value Relationship-Based Distribution</p>
+            <p class="body-large text-charcoal">We invite select properties to apply for inclusion in our Hotel Collection, a curated booking platform used by our advisors, their private travel clubs, and aligned communities seeking trusted luxury accommodations.</p>
+            <div class="flex gap-4 flex-mobile-col">
+                <a href="#apply" class="btn btn-primary">Apply for Consideration →</a>
+                <a href="#learn-more" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Who We Are -->
+<section id="learn-more" class="bg-luxury-texture">
+    <div class="container">
+        <div class="grid grid-2" style="gap: 3rem;">
+            <div class="space-y-6">
+                <div class="divider-gold"></div>
+                <h2 class="heading-section text-charcoal">WHO WE ARE</h2>
+            </div>
+            <div class="space-y-6">
+                <p class="body-large text-charcoal">Boutique Travel Advisors is a luxury travel advisory firm built on long-standing industry relationships, strategic partnerships, and a commitment to traveler advocacy.</p>
+                <p class="body-text">We are advisors first. Our team works directly with affluent families, philanthropic leaders, cultural institutions, professional organizations, and private membership communities. Through our proprietary technology, we power Luxury Travel Clubs that allow advisors and trusted community leaders to curate travel for their audiences.</p>
+                <p class="body-text">Our booking engine is powered by Sabre and is not designed for mass consumption. It is a professional research and recommendation platform used by BTA advisors researching and shortlisting properties, travelers who are members of their advisor's private travel club, and approved club communities affiliated with our network.</p>
+                <p class="body-text">BTA maintains a proprietary rate code for preferred partners, ensuring seamless booking integration and recognition across our advisor network.</p>
+                <p class="body-text text-charcoal" style="font-weight: 600;">Every hotel within our system has been intentionally selected. Our advisors rely on the platform to confidently recommend properties that reflect our standards and protect our reputation.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How Our Platform Is Used -->
+<section class="bg-stone-gradient" style="position: relative; overflow: hidden;">
+    <div class="glow-orb" style="top: 0; right: 0; width: 24rem; height: 24rem; background: #bfaf8a;"></div>
+    <div class="glow-orb" style="bottom: 0; left: 0; width: 24rem; height: 24rem; background: #384959;"></div>
+    <div class="container" style="position: relative; z-index: 10;">
+        <div class="max-w-6xl mx-auto space-y-16">
+            <div class="text-center space-y-4">
+                <div class="divider-gold mx-auto"></div>
+                <h2 class="heading-section text-charcoal">HOW OUR PLATFORM IS USED</h2>
+                <p class="subheading">Our Hotel Collection serves three interconnected audiences</p>
+            </div>
+            
+            <div class="grid grid-3">
+                <!-- Card 1: Advisors -->
+                <div class="card card-gold-gradient card-shadow space-y-6">
+                    <div class="circle-decoration circle-top-right"></div>
+                    <div class="circle-decoration circle-bottom-left"></div>
+                    <div class="flex items-start justify-between relative z-10">
+                        <div class="number-large text-white">01</div>
+                        <svg style="width: 2.5rem; height: 2.5rem; color: rgba(255,255,255,0.6);" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                    </div>
+                    <h3 style="font-size: 1.5rem; font-family: 'Instrument Serif', serif; text-transform: uppercase; letter-spacing: 0.05em; color: white;">ADVISORS</h3>
+                    <p class="body-text" style="color: rgba(255,255,255,0.9);">Our advisors use the platform to research properties, confirm amenity inclusions, validate renovation timelines, access preferred partner details, and recommend hotels within curated club portals.</p>
+                    <div style="padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.3);">
+                        <p class="body-text" style="color: white; font-weight: 500; font-style: italic;">This is a working tool, not a directory.</p>
+                    </div>
+                </div>
+                
+                <!-- Card 2: Club Members -->
+                <div class="card card-white card-shadow space-y-6">
+                    <div style="position: absolute; top: 0; right: 0; width: 5rem; height: 5rem; border-top: 2px solid rgba(56,73,89,0.2); border-right: 2px solid rgba(56,73,89,0.2);"></div>
+                    <div class="flex items-start justify-between relative z-10">
+                        <div class="number-large text-navy">02</div>
+                        <svg style="width: 2.5rem; height: 2.5rem; color: #bfaf8a;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+                    </div>
+                    <h3 style="font-size: 1.5rem; font-family: 'Instrument Serif', serif; text-transform: uppercase; letter-spacing: 0.05em; color: #2f2f2f;">ADVISOR CLUB MEMBERS</h3>
+                    <p class="body-text">Each BTA advisor may operate a private Luxury Travel Club. Members of those clubs access a curated collection of approved hotels. They do not browse indiscriminately. They view properties their advisor stands behind.</p>
+                </div>
+                
+                <!-- Card 3: Community Clubs -->
+                <div class="card card-navy card-shadow space-y-6">
+                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 2px; background: linear-gradient(to right, transparent, #bfaf8a, transparent);"></div>
+                    <div class="flex items-start justify-between relative z-10">
+                        <div class="number-large text-gold">03</div>
+                        <svg style="width: 2.5rem; height: 2.5rem; color: rgba(191,175,138,0.6);" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" /></svg>
+                    </div>
+                    <h3 style="font-size: 1.5rem; font-family: 'Instrument Serif', serif; text-transform: uppercase; letter-spacing: 0.05em; color: white;">COMMUNITY-BASED TRAVEL CLUBS</h3>
+                    <p class="body-text" style="color: rgba(255,255,255,0.9);">We power travel platforms for philanthropic organizations, arts institutions, professional associations, and membership communities. These groups rely on our standards and advisor support.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Endorsement Requirement -->
+<section style="background: linear-gradient(rgba(255,255,255,0.92), rgba(237,234,228,0.92)), url('https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1920&q=80'); background-size: cover; background-position: center; background-attachment: fixed;">
+    <div class="container">
+        <div class="max-w-4xl mx-auto text-center space-y-8">
+            <div class="divider-gold mx-auto"></div>
+            <h2 class="heading-section text-charcoal">OUR ENDORSEMENT REQUIREMENT</h2>
+            <p class="body-large text-charcoal">Inclusion in the Boutique Travel Advisors Hotel Collection requires endorsement.</p>
+            
+            <div class="card card-white card-shadow space-y-8" style="text-align: left; max-width: 42rem; margin: 2rem auto;">
+                <h3 style="font-size: 1.5rem; font-family: 'Instrument Serif', serif; color: #2f2f2f;">A property must be recommended by:</h3>
+                
+                <ul class="check-list">
+                    <li>A BTA advisor who has personally experienced the hotel</li>
+                </ul>
+                
+                <div class="text-center">
+                    <p class="text-gold" style="font-size: 1.5rem; font-weight: 600;">OR</p>
+                </div>
+                
+                <ul class="check-list">
+                    <li>One of our preferred marketing representation partners</li>
+                </ul>
+                
+                <div style="padding-top: 1.5rem; border-top: 2px solid #edeae4;">
+                    <p class="body-text text-charcoal" style="font-style: italic;">We do not onboard properties based solely on brand recognition or public reputation. Personal experience and professional validation are essential.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Property Standards -->
+<section style="background: linear-gradient(rgba(255,255,255,0.95), rgba(237,234,228,0.90)), url('https://images.unsplash.com/photo-1582719508461-905c673771fd?w=1920&q=80'); background-size: cover; background-position: center; background-attachment: fixed;">
+    <div class="container">
+        <div class="max-w-6xl mx-auto space-y-16">
+            <div class="text-center space-y-4">
+                <div class="divider-gold mx-auto"></div>
+                <h2 class="heading-section text-charcoal">OUR PROPERTY STANDARDS</h2>
+                <p class="subheading">We maintain high standards to protect both our travelers and our hotel partners</p>
+            </div>
+            
+            <div class="card card-white card-shadow space-y-6" style="max-width: 48rem; margin: 0 auto;">
+                <p class="body-text">For new hotels in our collection, we prioritize <strong>boutique and family-owned properties</strong> where relationships are the driving force and off-the-beaten-path locations.</p>
+                <p class="body-text"><strong>All properties must be 4 or 5 star caliber.</strong></p>
+            </div>
+            
+            <div class="grid grid-3">
+                <div class="space-y-6">
+                    <h3 style="font-size: 1.5rem; font-family: 'Instrument Serif', serif; color: #2f2f2f;">Physical Standards</h3>
+                    <ul class="check-list">
+                        <li>4 or 5 star caliber property</li>
+                        <li>Built or comprehensively renovated within the last five years</li>
+                        <li>Contemporary design integrity</li>
+                        <li>Demonstrated investment in maintenance and guest experience</li>
+                    </ul>
+                </div>
+                
+                <div class="space-y-6">
+                    <h3 style="font-size: 1.5rem; font-family: 'Instrument Serif', serif; color: #2f2f2f;">Operational Standards</h3>
+                    <ul class="check-list">
+                        <li>Direct relationship with General Manager or Sales Leadership</li>
+                        <li>Commitment to VIP recognition for BTA guests</li>
+                        <li>Transparent communication</li>
+                    </ul>
+                </div>
+                
+                <div class="space-y-6">
+                    <h3 style="font-size: 1.5rem; font-family: 'Instrument Serif', serif; color: #2f2f2f;">Amenity Standards</h3>
+                    <ul class="check-list">
+                        <li>Breakfast for two daily</li>
+                        <li>Property credit</li>
+                        <li>Upgrade consideration</li>
+                        <li>Welcome amenity</li>
+                        <li>Priority status recognition</li>
+                    </ul>
+                    <p class="body-text" style="font-style: italic; padding-top: 1rem;">Our travelers expect parity with programs such as Virtuoso and other preferred networks. Consistency is essential.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Commercial Alignment -->
+<section class="bg-white">
+    <div class="container">
+        <div class="max-w-4xl mx-auto space-y-12">
+            <div class="text-center space-y-4">
+                <div class="divider-gold mx-auto"></div>
+                <h2 class="heading-section text-charcoal">COMMERCIAL ALIGNMENT & ADVISOR PRIORITIZATION</h2>
+                <p class="subheading">We prioritize partners who prioritize the advisory relationship</p>
+            </div>
+            
+            <div class="space-y-6">
+                <p class="body-large text-charcoal">Boutique Travel Advisors is a relationship-driven advisory firm. Our advisors invest significant time in research, personalization, and guest advocacy. In return, we seek commercial structures that reflect the value of that partnership.</p>
+                
+                <div class="card card-white card-shadow space-y-6">
+                    <h3 style="font-size: 1.5rem; font-family: 'Instrument Serif', serif; color: #2f2f2f;">To be considered for inclusion in our Hotel Collection, we ask for:</h3>
+                    <ul class="check-list">
+                        <li>A competitive commission structure that supports advisor prioritization</li>
+                        <li>Elevated commission consideration for preferred partners</li>
+                        <li>Direct booking recognition through our advisory channel</li>
+                        <li>Clear and consistent commission processing</li>
+                    </ul>
+                </div>
+                
+                <div class="space-y-4">
+                    <h3 style="font-size: 1.5rem; font-family: 'Instrument Serif', serif; color: #2f2f2f;">Why This Matters</h3>
+                    <p class="body-text">Our advisors guide clients toward properties that align with guest experience standards, operational reliability, amenity consistency, relationship responsiveness, and commercial alignment.</p>
+                    <p class="body-text">When a property offers an elevated commission structure, it signals commitment to the partnership and allows our advisory team to confidently prioritize that hotel within recommendations.</p>
+                    <p class="body-text"><strong>This is not about rate manipulation. It is about alignment.</strong> Hotels that invest in advisor relationships benefit from increased recommendation frequency, greater visibility inside private club portals, direct bookings over OTA displacement, and long-term loyalty from our advisor network.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Hotels Partner With BTA -->
+<section class="bg-warm-gradient">
+    <div class="container">
+        <div class="max-w-6xl mx-auto space-y-16">
+            <div class="text-center space-y-4">
+                <div class="divider-gold mx-auto"></div>
+                <h2 class="heading-section text-charcoal">WHY HOTELS PARTNER WITH BTA</h2>
+                <p class="subheading">Four compelling reasons to join our collection</p>
+            </div>
+            
+            <div class="grid grid-2">
+                <div class="card card-border-left card-shadow space-y-6">
+                    <div class="flex items-center gap-3">
+                        <svg style="width: 2.5rem; height: 2.5rem; color: #bfaf8a;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                        <h3 style="font-size: 1.25rem; font-family: 'Instrument Serif', serif; text-transform: uppercase; letter-spacing: 0.05em; color: #2f2f2f;">ACCESS TO HIGH-INTENT TRAVELERS</h3>
+                    </div>
+                    <p class="body-text">Our clubs generate qualified demand from trusted audiences. These are members of communities, not anonymous shoppers.</p>
+                </div>
+                
+                <div class="card card-border-left-navy card-shadow space-y-6">
+                    <div class="flex items-center gap-3">
+                        <svg style="width: 2.5rem; height: 2.5rem; color: #384959;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+                        <h3 style="font-size: 1.25rem; font-family: 'Instrument Serif', serif; text-transform: uppercase; letter-spacing: 0.05em; color: #2f2f2f;">ADVISOR ADVOCACY</h3>
+                    </div>
+                    <p class="body-text">Every booking is supported by an experienced advisor who communicates preferences, advocates for recognition, and ensures alignment before arrival.</p>
+                </div>
+                
+                <div class="card card-white card-shadow space-y-6" style="background: linear-gradient(135deg, rgba(191,175,138,0.1), white); border: 1px solid rgba(191,175,138,0.3);">
+                    <div class="flex items-center gap-3">
+                        <svg style="width: 2.5rem; height: 2.5rem; color: #bfaf8a;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+                        <h3 style="font-size: 1.25rem; font-family: 'Instrument Serif', serif; text-transform: uppercase; letter-spacing: 0.05em; color: #2f2f2f;">ELEVATED BOOKING VALUE</h3>
+                    </div>
+                    <p class="body-text">Our typical bookings exceed $3,000 and often include suite categories, extended stays, and experiential add-ons.</p>
+                </div>
+                
+                <div class="card card-white card-shadow space-y-6" style="background: linear-gradient(135deg, rgba(56,73,89,0.1), white); border: 1px solid rgba(56,73,89,0.3);">
+                    <div class="flex items-center gap-3">
+                        <svg style="width: 2.5rem; height: 2.5rem; color: #384959;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+                        <h3 style="font-size: 1.25rem; font-family: 'Instrument Serif', serif; text-transform: uppercase; letter-spacing: 0.05em; color: #2f2f2f;">BRAND-FORWARD POSITIONING</h3>
+                    </div>
+                    <p class="body-text">We focus on storytelling, destination alignment, and long-term relationship building rather than discount-led marketing.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Our Reach & Impact -->
+<section class="bg-luxury-texture">
+    <div class="container">
+        <div class="max-w-6xl mx-auto space-y-16">
+            <div class="text-center space-y-4">
+                <div class="divider-gold mx-auto"></div>
+                <h2 class="heading-section text-charcoal">OUR REACH & IMPACT</h2>
+                <p class="subheading">We are growing. Here's what that means for our hotel partners.</p>
+            </div>
+            
+            <!-- Key Metrics -->
+            <div class="grid grid-2">
+                <div class="card card-white card-shadow text-center space-y-4">
+                    <div class="number-display text-gold">$3,066</div>
+                    <h3 style="font-size: 1.25rem; font-family: 'Instrument Serif', serif; text-transform: uppercase; letter-spacing: 0.05em; color: #2f2f2f;">AVERAGE BOOKING VALUE</h3>
+                    <p class="body-text">Our travelers book premium accommodations with extended stays and experiential add-ons</p>
+                </div>
+                
+                <div class="card card-white card-shadow text-center space-y-4">
+                    <div class="number-display text-gold">2.64</div>
+                    <h3 style="font-size: 1.25rem; font-family: 'Instrument Serif', serif; text-transform: uppercase; letter-spacing: 0.05em; color: #2f2f2f;">AVERAGE LENGTH OF STAY</h3>
+                    <p class="body-text">Longer stays mean deeper guest relationships and higher property revenue per booking</p>
+                </div>
+            </div>
+            
+            <!-- Audience Reach -->
+            <div class="card card-navy card-shadow space-y-8 text-center">
+                <div class="flex items-center justify-center gap-4">
+                    <svg style="width: 4rem; height: 4rem; color: #bfaf8a;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+                    <div class="number-display text-gold" style="font-size: 4.5rem;">27M+</div>
+                </div>
+                <h3 style="font-size: 1.75rem; font-family: 'Instrument Serif', serif; text-transform: uppercase; letter-spacing: 0.05em; color: white;">ANNUAL REACH</h3>
+                <p class="body-large" style="color: white; max-width: 48rem; margin: 0 auto;">Through our Hotel Specialists, Independent Advisors, BTA in-house advisors, and Travel Club partners including The Hotel Guide, The Phoenix Symphony, First Tee Phoenix, Giving Back Magazine, and more</p>
+                
+                <div class="grid grid-3" style="padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.2);">
+                    <div class="text-center space-y-2">
+                        <div class="text-gold" style="font-size: 2rem; font-family: 'Instrument Serif', serif;">$250K+</div>
+                        <p class="body-text" style="color: white;">Average Household Income</p>
+                    </div>
+                    <div class="text-center space-y-2">
+                        <div class="text-gold" style="font-size: 2rem; font-family: 'Instrument Serif', serif;">30–65</div>
+                        <p class="body-text" style="color: white;">Age Range</p>
+                    </div>
+                    <div class="text-center space-y-2">
+                        <div class="text-gold" style="font-size: 2rem; font-family: 'Instrument Serif', serif;">Multiple</div>
+                        <p class="body-text" style="color: white;">Trips Per Year</p>
+                    </div>
+                </div>
+                
+                <p class="body-text text-center" style="color: white; font-style: italic; padding-top: 1rem;">Experience-driven travelers who value quality, service, and brand reputation</p>
+            </div>
+            
+            <!-- Strategic Visibility -->
+            <div class="space-y-12">
+                <div class="text-center space-y-4">
+                    <h3 class="heading-section text-charcoal">STRATEGIC VISIBILITY THAT CONVERTS TO HIGH-VALUE BOOKINGS</h3>
+                    <p class="body-text text-center" style="max-width: 48rem; margin: 0 auto;">We position your property in front of discerning, affluent travelers through authority, editorial credibility, and sustained digital presence.</p>
+                </div>
+                
+                <div class="grid grid-3" style="gap: 1.5rem;">
+                    <!-- Card 1 -->
+                    <div class="card card-gold-gradient card-shadow space-y-6" style="position: relative;">
+                        <div class="circle-decoration circle-top-right"></div>
+                        <div class="circle-decoration circle-bottom-left"></div>
+                        <div class="flex items-start justify-between relative z-10">
+                            <div class="number-large text-white">01</div>
+                            <svg style="width: 2.5rem; height: 2.5rem; color: rgba(255,255,255,0.6);" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" /></svg>
+                        </div>
+                        <h4 style="font-size: 1.25rem; font-family: 'Instrument Serif', serif; color: white; text-transform: uppercase;">AUTHORITY & RECOGNITION</h4>
+                        <p class="body-text" style="color: rgba(255,255,255,0.9);">Industry awards, thought leadership, and curated partnerships that elevate brand perception and distinguish your property within a competitive luxury landscape.</p>
+                    </div>
+                    
+                    <!-- Card 2 -->
+                    <div class="card card-white card-shadow space-y-6">
+                        <div class="flex items-start justify-between">
+                            <div class="number-large text-navy">02</div>
+                            <svg style="width: 2.5rem; height: 2.5rem; color: #bfaf8a;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+                        </div>
+                        <h4 style="font-size: 1.25rem; font-family: 'Instrument Serif', serif; color: #2f2f2f; text-transform: uppercase;">EDITORIAL INFLUENCE</h4>
+                        <p class="body-text">Refined, experience-driven storytelling placed where sophisticated travelers seek inspiration and validation.</p>
+                    </div>
+                    
+                    <!-- Card 3 -->
+                    <div class="card card-white card-shadow space-y-6" style="background: linear-gradient(135deg, rgba(191,175,138,0.05), white);">
+                        <div class="flex items-start justify-between">
+                            <div class="number-large text-gold">03</div>
+                            <svg style="width: 2.5rem; height: 2.5rem; color: #384959;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+                        </div>
+                        <h4 style="font-size: 1.25rem; font-family: 'Instrument Serif', serif; color: #2f2f2f; text-transform: uppercase;">TRUST & CREDIBILITY</h4>
+                        <p class="body-text">Authentic recommendations built on firsthand experience and an established reputation with a highly educated, high-net-worth audience.</p>
+                    </div>
+                    
+                    <!-- Card 4 -->
+                    <div class="card card-navy card-shadow space-y-6">
+                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 2px; background: linear-gradient(to right, transparent, #bfaf8a, transparent);"></div>
+                        <div class="flex items-start justify-between relative z-10">
+                            <div class="number-large text-gold">04</div>
+                            <svg style="width: 2.5rem; height: 2.5rem; color: rgba(191,175,138,0.6);" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                        </div>
+                        <h4 style="font-size: 1.25rem; font-family: 'Instrument Serif', serif; color: white; text-transform: uppercase;">SEARCH VISIBILITY (SEO)</h4>
+                        <p class="body-text" style="color: rgba(255,255,255,0.9);">Long-term digital positioning that ensures your property remains discoverable during high-intent planning moments.</p>
+                    </div>
+                    
+                    <!-- Card 5 -->
+                    <div class="card card-white card-shadow space-y-6" style="background: linear-gradient(135deg, white, rgba(56,73,89,0.05)); grid-column: span 2;">
+                        <div class="flex items-start justify-between">
+                            <div class="number-large text-navy">05</div>
+                            <svg style="width: 2.5rem; height: 2.5rem; color: #bfaf8a;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                        </div>
+                        <h4 style="font-size: 1.25rem; font-family: 'Instrument Serif', serif; color: #2f2f2f; text-transform: uppercase;">TARGETED LUXURY AUDIENCE EXPOSURE</h4>
+                        <p class="body-text">Strategic email and social distribution that extends reach, reinforces messaging, and accelerates engagement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Final CTA -->
+<section id="apply" style="background: linear-gradient(rgba(56,73,89,0.75), rgba(47,47,47,0.80)), url(https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=1920&q=80 ); background-size: cover; background-position: center; background-attachment: fixed; padding: 6rem 0; position: relative;">
+
+    <div style="max-width: 1280px; margin: 0 auto; padding: 0 2rem;">
+        <div style="max-width: 56rem; margin: 0 auto; text-align: center;">
+            <div style="width: 60px; height: 2px; background: #bfaf8a; margin: 0 auto 1.5rem;"></div>
+            <h2 style="font-family: 'Instrument Serif', serif; font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.2; font-weight: 400; color: #ffffff; margin-bottom: 2rem;">READY TO APPLY?</h2>
+            <p style="font-family: 'Playfair Display', serif; font-size: 1.125rem; line-height: 1.8; color: #ffffff; margin-bottom: 1.5rem;">Boutique Travel Advisors is building a curated distribution ecosystem designed for long-term partnership, community-based demand, and brand integrity.</p>
+            <p style="font-family: 'Playfair Display', serif; font-size: 1.125rem; line-height: 1.8; color: #ffffff; margin-bottom: 2rem;">If your property values thoughtful growth over volume exposure, we welcome your application.</p>
+            <a href="mailto:hotels@boutiquetraveladvisors.com" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 1.25rem 2.5rem; font-size: 1.125rem; font-weight: 500; border-radius: 0.25rem; background: #bfaf8a; color: #2f2f2f; text-decoration: none; font-family: 'Playfair Display', serif; transition: all 0.3s ease;">Apply for Consideration →</a>
+        </div>
+    </div>
+</section>
+
+
+
+
+</body>
+</html>
