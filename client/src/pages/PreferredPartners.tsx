@@ -281,11 +281,7 @@ export default function PreferredPartners() {
       </section>
 
       {/* ── Footer ───────────────────────────────────────────────────────── */}
-      <footer className="bg-[#384959] text-white/60 py-10 px-6 text-center">
-        <p className="bta-eyebrow text-xs tracking-widest">
-          © {new Date().getFullYear()} Boutique Travel Advisors · All Rights Reserved
-        </p>
-      </footer>
+      {/* WHY: Footer is rendered globally in App.tsx — no inline footer needed here */}
     </div>
   );
 }

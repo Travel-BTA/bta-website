@@ -53,8 +53,10 @@ export const aboutData: AboutData = {
     // Kefalonia/Assos coastal village. same hero used on advisor profiles on travelbta.com
     backgroundImage:
       "https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?w=1600&q=80",
-    headline: "Get To Know Our Team",
-    subheadline: "Transformational Luxury",
+    // WHY: 'Get To Know Our Team' was moved to OurPeople page. The About page
+    // hero now focuses on the company story, not the team roster.
+    headline: "About Boutique Travel Advisors",
+    subheadline: "Luxury Travel, Thoughtfully Designed",
   },
 
   overview: {

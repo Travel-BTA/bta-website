@@ -24,7 +24,8 @@
 
 import { useState } from "react";
 import { Link } from "wouter";
-import { footer } from "@/content/homepage";
+// WHY: footer import removed — About.tsx no longer renders its own footer.
+// FooterSection is rendered globally in App.tsx.
 import { aboutData } from "@/content/about";
 
 /* ── Reusable advisor card ── */
@@ -239,9 +240,7 @@ export default function About() {
               { name: "Julie Plummer", image: "/images/advisor-julie-plummer.jpg" },
               { name: "Baylee Shapiro", image: "https://travelbta.com/wp-content/uploads/2025/07/009A8159-scaled.jpeg" },
               { name: "Danitza & Esteban Villanueva", image: "https://travelbta.com/wp-content/uploads/2025/09/Danitza-and-Esteban-Villaneuva-at-The-Tower-Birdge-e1757596376865.jpg" },
-              { name: "Chloe Cottingham", image: "https://travelbta.com/wp-content/uploads/2022/12/Chloe-Cottingham-About.jpg" },
-              { name: "Camila Dominguez", image: "https://travelbta.com/wp-content/uploads/2025/02/IMG_5029-2-scaled.jpg" },
-              { name: "Malou Sarmiento", image: "https://travelbta.com/wp-content/uploads/2025/08/Screenshot-2025-08-19-at-9.38.30-PM.png" },
+              // WHY: Chloe removed per request. Camila and Malou moved to Support Staff section.
             ] as { name: string; image: string }[]).map((a) => (
               <AdvisorCard key={a.name} name={a.name} image={a.image} />
             ))}
@@ -279,7 +278,27 @@ export default function About() {
         </div>
       </section>
 
-      {/* ── 8. MISSION BAND ── */}
+      {/* ── 8. SUPPORT STAFF ── */}
+      {/* WHY: Camila and Malou moved here from Independent Advisors per request */}
+      <section className="bg-white py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <SectionHeader
+            eyebrow="Our Team"
+            heading="Support Staff"
+            description="We are proud of the people who keep things moving. Our support staff bring kindness, consistency, and a genuine desire to help."
+          />
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+            {([
+              { name: "Camila Dominguez", image: "https://travelbta.com/wp-content/uploads/2025/02/IMG_5029-2-scaled.jpg" },
+              { name: "Malou Sarmiento", image: "https://travelbta.com/wp-content/uploads/2025/08/Screenshot-2025-08-19-at-9.38.30-PM.png" },
+            ] as { name: string; image: string }[]).map((a) => (
+              <AdvisorCard key={a.name} name={a.name} image={a.image} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── 9. MISSION BAND ── */}
       <section className="bg-bta-aegean py-20 px-6">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-bta-gold font-['Playfair_Display',Georgia,serif] italic tracking-[0.25em] text-base uppercase mb-4">
@@ -313,72 +332,7 @@ export default function About() {
         </Link>
       </section>
 
-      {/* ── FOOTER ── */}
-      <footer className="bg-[#384959] text-white/70 py-16 px-8 md:px-16 lg:px-24">
-        <div className="max-w-[1400px] mx-auto">
-          <div className="grid md:grid-cols-4 gap-12 mb-12">
-            <div className="md:col-span-1">
-              <img
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/bta-logo_aff60fe6.png"
-                alt="Boutique Travel Advisors"
-                className="h-14 w-auto mb-4 brightness-0 invert"
-              />
-              <p className="text-sm leading-relaxed font-light">
-                Creating memories one destination at a time.
-              </p>
-            </div>
-            <div>
-              <p className="text-white tracking-[0.2em] text-xs uppercase mb-6">Explore</p>
-              <ul className="space-y-3 text-sm font-light">
-                {footer.explore.map((l: { label: string; href: string }, i: number) => (
-                  <li key={i}>
-                    <Link href={l.href} className="hover:text-[#BFAF8A] transition-colors">
-                      {l.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <p className="text-white tracking-[0.2em] text-xs uppercase mb-6">Company</p>
-              <ul className="space-y-3 text-sm font-light">
-                {footer.company.map((l: { label: string; href: string }, i: number) => (
-                  <li key={i}>
-                    <Link href={l.href} className="hover:text-[#BFAF8A] transition-colors">
-                      {l.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <p className="text-white tracking-[0.2em] text-xs uppercase mb-6">Contact</p>
-              <ul className="space-y-3 text-sm font-light">
-                <li>
-                  <a href={`tel:${footer.contact.phone}`} className="hover:text-[#BFAF8A] transition-colors">
-                    {footer.contact.phone}
-                  </a>
-                </li>
-                <li>
-                  <a href={`mailto:${footer.contact.email}`} className="hover:text-[#BFAF8A] transition-colors">
-                    {footer.contact.email}
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
-            <p>{footer.copyright}</p>
-            <div className="flex gap-6">
-              {footer.legal.map((l: { label: string; href: string }, i: number) => (
-                <Link key={i} href={l.href} className="hover:text-[#BFAF8A] transition-colors">
-                  {l.label}
-                </Link>
-              ))}
-            </div>
-          </div>
-        </div>
-      </footer>
+      {/* WHY: Footer is rendered globally in App.tsx — no inline footer needed here */}
     </div>
   );
 }

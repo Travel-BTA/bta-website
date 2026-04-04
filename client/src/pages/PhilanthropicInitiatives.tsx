@@ -12,7 +12,6 @@
  * Content managed in: client/src/content/philanthropy.ts
  */
 
-import { footer } from "@/content/homepage";
 import {
   philanthropyBeneficiaries,
   philanthropyCta,
@@ -401,64 +400,7 @@ export default function PhilanthropicInitiatives() {
       {/* ══════════════════════════════════════════════════════════════
           FOOTER
       ══════════════════════════════════════════════════════════════ */}
-      <footer className="bg-[#1E2B38] text-white">
-        <div className="px-6 md:px-16 lg:px-24 max-w-[1400px] mx-auto py-16 grid md:grid-cols-2 lg:grid-cols-4 gap-12">
-          <div>
-            <a href="/" className="inline-block mb-6">
-              <img
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/bta-logo_aff60fe6.png"
-                alt="Boutique Travel Advisors"
-                className="h-10 w-auto"
-              />
-            </a>
-            <p className="text-white/40 text-xs leading-relaxed font-light mb-6">{footer.tagline}</p>
-            <div className="flex gap-4">
-              {footer.social.map((s) => (
-                <a key={s.platform} href={s.href} target="_blank" rel="noopener noreferrer"
-                  className="text-white/35 hover:text-[#BFAF8A] text-[10px] tracking-widest uppercase transition-colors">
-                  {s.platform.slice(0, 2)}
-                </a>
-              ))}
-            </div>
-          </div>
-          <div>
-            <h4 className="text-[#BFAF8A] text-[10px] tracking-[0.2em] uppercase mb-5" style={PF}>Explore</h4>
-            <ul className="space-y-3">
-              {footer.explore.map((l) => (
-                <li key={l.label}>
-                  <a href={l.href} className="text-white/45 hover:text-white text-xs tracking-wide transition-colors">{l.label}</a>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h4 className="text-[#BFAF8A] text-[10px] tracking-[0.2em] uppercase mb-5" style={PF}>Company</h4>
-            <ul className="space-y-3">
-              {footer.company.map((l) => (
-                <li key={l.label}>
-                  <a href={l.href} className="text-white/45 hover:text-white text-xs tracking-wide transition-colors">{l.label}</a>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h4 className="text-[#BFAF8A] text-[10px] tracking-[0.2em] uppercase mb-5" style={PF}>Contact</h4>
-            <p className="text-white/45 text-xs leading-loose font-light">
-              {footer.contact.phone}<br />
-              {footer.contact.email}<br />
-              <span className="text-white/25">{footer.contact.virtuoso}</span>
-            </p>
-          </div>
-        </div>
-        <div className="border-t border-white/10 px-6 md:px-16 lg:px-24 max-w-[1400px] mx-auto py-5 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-white/25 text-[10px] tracking-wide">{footer.copyright}</p>
-          <div className="flex gap-6">
-            {footer.legal.map((l) => (
-              <a key={l.label} href={l.href} className="text-white/25 hover:text-white/50 text-[10px] tracking-wide transition-colors">{l.label}</a>
-            ))}
-          </div>
-        </div>
-      </footer>
+      {/* WHY: Footer is rendered globally in App.tsx — no inline footer needed here */}
     </div>
   );
 }

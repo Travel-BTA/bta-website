@@ -100,8 +100,9 @@ export const philanthropyBeneficiaries = {
     {
       name: "CASA Orange County",
       description: "Advocating for abused and neglected children in court.",
-      // Child with book in safe, warm setting
-      imageUrl: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=600&q=80&auto=format&fit=crop",
+      // WHY: Replaced duplicate-looking child photo with a justice/advocacy image
+      // Scales of justice / courthouse steps — represents CASA's court advocacy mission
+      imageUrl: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600&q=80&auto=format&fit=crop",
       logoUrl: "",
     },
 

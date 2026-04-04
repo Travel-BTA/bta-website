@@ -62,7 +62,9 @@ const AFFILIATE_ADVISORS: Advisor[] = [
   { name: "Julie Plummer", photo: "https://travelbta.com/wp-content/uploads/2025/06/Screenshot-2025-06-02-at-7.08.48-AM.jpg", href: "#" },
   { name: "Baylee Shapiro", photo: "https://travelbta.com/wp-content/uploads/2025/01/009A8159-scaled.jpg", href: "#" },
   { name: "Danitza & Esteban Villanueva", photo: "https://travelbta.com/wp-content/uploads/2025/01/Danitza-and-Esteban-Villaneuva-at-The-Tower-Birdge.jpg", href: "#" },
-  { name: "Chloe Cottingham", photo: "https://travelbta.com/wp-content/uploads/2022/01/Chloe-Cottingham-About.jpg", href: "#" },
+];
+
+const SUPPORT_STAFF: Advisor[] = [
   { name: "Camila Dominguez", photo: "https://travelbta.com/wp-content/uploads/2025/01/IMG_5029-2-scaled.jpg", href: "#" },
   { name: "Malou Sarmiento", photo: "https://travelbta.com/wp-content/uploads/2025/08/Screenshot-2025-08-19-at-9.38.30-PM.jpg", href: "#" },
 ];
@@ -236,30 +238,6 @@ export default function OurPeople() {
   return (
     <PageLayout hideCta={false}>
 
-      {/* ── Hero ──────────────────────────────────────────────────────────── */}
-      <section
-        className="relative h-[55vh] min-h-[400px] flex items-end overflow-hidden"
-        style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=1800&q=80')",
-          backgroundSize: "cover",
-          backgroundPosition: "center 35%",
-        }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-t from-[#384959]/80 via-[#384959]/20 to-transparent" />
-        <div className="relative z-10 w-full max-w-[1440px] mx-auto px-8 lg:px-14 pb-14">
-          <p
-            className="text-[#bfaf8a] text-2xl italic mb-3"
-            style={{ fontFamily: "'Allura', cursive" }}
-          >
-            About BTA
-          </p>
-          <h1 className="font-display text-white text-5xl md:text-7xl font-light leading-[1.05]">
-            Get To Know<br />Our Team
-          </h1>
-        </div>
-      </section>
-
       {/* ── Intro ─────────────────────────────────────────────────────────── */}
       <section className="bg-[#faf9f6] py-24 lg:py-32">
         <div className="max-w-[1440px] mx-auto px-8 lg:px-14">
@@ -371,10 +349,23 @@ export default function OurPeople() {
           </div>
         </div>
       </section>
+      {/* ── Support Staff ─────────────────────────────────────────────────── */}
+      <section className="bg-white py-24 lg:py-32">
+        <div className="max-w-[1440px] mx-auto px-8 lg:px-14">
+          <SectionHeader
+            eyebrow="Behind the Scenes"
+            heading="Support Staff"
+            sub="We are proud of the people who keep things moving. Our support staff bring kindness, consistency, and a genuine desire to help."
+          />
+          <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-10 lg:gap-14 max-w-2xl">
+            {SUPPORT_STAFF.map((a) => (
+              <AdvisorCard key={a.name} advisor={a} />
+            ))}
+          </div>
+        </div>
+      </section>
 
-      {/* ── Mission Tabs ──────────────────────────────────────────────────── */}
-      <MissionTabs />
-
-    </PageLayout>
+      {/* ── Mission Tabs ──────────────────────────────────────────────────────── */}
+      <MissionTabs />   </PageLayout>
   );
 }

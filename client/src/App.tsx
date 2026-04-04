@@ -42,6 +42,8 @@ import FulfillmentPolicy from "./pages/FulfillmentPolicy";
 import CookiePolicy from "./pages/CookiePolicy";
 import HotelSpecialistProgram from "./pages/HotelSpecialistProgram";
 import HotelCollectionApplication from "./pages/HotelCollectionApplication";
+import LuxuryTravelAgency from "./pages/LuxuryTravelAgency";
+import ContactUs from "./pages/ContactUs";
 function Router() {
   // make sure to consider if you need authentication for certain routes
   return (
@@ -72,6 +74,8 @@ function Router() {
       <Route path={"/about/philanthropic-initiatives"} component={PhilanthropicInitiatives} />
       <Route path={"/hotel-specialist-program"} component={HotelSpecialistProgram} />
       <Route path={"/hotel-collection-application"} component={HotelCollectionApplication} />
+      <Route path={"/luxury-travel-agency-bta"} component={LuxuryTravelAgency} />
+      <Route path={"/contact-us"} component={ContactUs} />
       {/* Land Journeys sub-pages */}
       <Route path={"/custom-itineraries"} component={CustomItineraries} />
       {/* Journal / Blog */}

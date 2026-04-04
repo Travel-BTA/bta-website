@@ -14,8 +14,8 @@ import { useState, useEffect, useRef } from "react";
 import { nav } from "@/content/homepage";
 
 // Sub-pages that appear under the About dropdown
+// WHY: 'Our People' removed — About page already shows all team members (duplicate removed per request)
 const ABOUT_SUBMENU = [
-  { label: "Our People",                   href: "/about/our-people" },
   { label: "We Give Back",                 href: "/about/philanthropic-initiatives" },
   { label: "Hotel Specialist Program",     href: "/hotel-specialist-program" },
   { label: "Hotel Collection Application", href: "/hotel-collection-application" },

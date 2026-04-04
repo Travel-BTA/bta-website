@@ -1,11 +1,14 @@
 /**
- * PageLayout. shared wrapper for all marketing pages
- * Includes NavBar at top, FinalCta + Footer at bottom.
- * Use this on every page except the homepage (which manages its own order).
+ * PageLayout. shared wrapper for all marketing pages.
+ *
+ * WHY: NavBar and FooterSection are already rendered globally in App.tsx,
+ * so PageLayout must NOT include them here — doing so creates a double
+ * header and double footer on every page that uses this wrapper.
+ *
+ * PageLayout only adds the optional FinalCta section before the global footer.
  */
 
-import NavBar from "@/components/NavBar";
-import { FinalCtaSection, FooterSection } from "@/components/sections/JournalSections";
+import { FinalCtaSection } from "@/components/sections/JournalSections";
 
 interface PageLayoutProps {
   children: React.ReactNode;
@@ -15,10 +18,8 @@ interface PageLayoutProps {
 export function PageLayout({ children, hideCta = false }: PageLayoutProps) {
   return (
     <div className="min-h-screen flex flex-col">
-      <NavBar />
       <main className="flex-1">{children}</main>
       {!hideCta && <FinalCtaSection />}
-      <FooterSection />
     </div>
   );
 }
