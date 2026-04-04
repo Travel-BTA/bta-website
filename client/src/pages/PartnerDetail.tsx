@@ -34,7 +34,7 @@ function BenefitPill({
   return (
     <button
       onClick={onClick}
-      className={`font-smallcaps text-xs tracking-wider px-4 py-2 border transition-all duration-200 text-left ${
+      className={`bta-eyebrow text-xs tracking-wider px-4 py-2 border transition-all duration-200 text-left ${
         active
           ? "bg-[#384959] text-white border-[#384959]"
           : "bg-transparent text-[#384959] border-[#384959]/40 hover:border-[#384959]"
@@ -74,7 +74,7 @@ function PropertyCard({
         <h4 className="font-display text-white text-base leading-tight mb-0.5">
           {name}
         </h4>
-        <p className="font-smallcaps text-[#BFAF8A] text-[10px] tracking-widest">
+        <p className="bta-eyebrow text-[#BFAF8A] text-[10px] tracking-widest">
           {location}
         </p>
       </div>
@@ -82,7 +82,7 @@ function PropertyCard({
       {/* Book link. appears on hover */}
       <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
         <Link href="/book">
-          <span className="bg-[#BFAF8A] text-white font-smallcaps text-[10px] tracking-widest px-3 py-1.5 inline-block">
+          <span className="bg-[#BFAF8A] text-white bta-eyebrow text-[10px] tracking-widest px-3 py-1.5 inline-block">
             Book
           </span>
         </Link>
@@ -149,7 +149,7 @@ export default function PartnerDetail() {
         <div className="relative z-10 text-center px-6">
           {/* Back breadcrumb */}
           <Link href="/preferred-partners">
-            <span className="font-smallcaps text-[11px] tracking-widest text-white/60 hover:text-[#BFAF8A] transition-colors mb-6 inline-block">
+            <span className="bta-eyebrow text-[11px] tracking-widest text-white/60 hover:text-[#BFAF8A] transition-colors mb-6 inline-block">
               ← Preferred Partners
             </span>
           </Link>
@@ -326,7 +326,7 @@ export default function PartnerDetail() {
 
       {/* ── Footer ───────────────────────────────────────────────────────── */}
       <footer className="bg-[#384959] text-white/60 py-10 px-6 text-center">
-        <p className="font-smallcaps text-xs tracking-widest">
+        <p className="bta-eyebrow text-xs tracking-widest">
           © {new Date().getFullYear()} Boutique Travel Advisors · All Rights Reserved
         </p>
       </footer>

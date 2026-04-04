@@ -43,7 +43,7 @@ export function StatsSection() {
             >
               {stat.value}
             </div>
-            <div className="font-smallcaps text-[#bfaf8a] text-xs sm:text-sm tracking-[0.22em] uppercase">
+            <div className="bta-eyebrow text-[#bfaf8a] text-xs sm:text-sm tracking-[0.22em] uppercase">
               {stat.label}
             </div>
           </div>

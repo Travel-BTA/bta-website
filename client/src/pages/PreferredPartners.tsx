@@ -38,7 +38,7 @@ function PartnerCard({ partner }: { partner: Partner }) {
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
           />
           {/* Category badge */}
-          <span className="absolute top-3 left-3 bg-[#384959]/80 text-[#BFAF8A] font-smallcaps text-[10px] tracking-widest px-3 py-1">
+          <span className="absolute top-3 left-3 bg-[#384959]/80 text-[#BFAF8A] bta-eyebrow text-[10px] tracking-widest px-3 py-1">
             {partner.category}
           </span>
         </div>
@@ -64,7 +64,7 @@ function PartnerCard({ partner }: { partner: Partner }) {
           </p>
 
           {/* CTA */}
-          <div className="mt-4 flex items-center gap-1 text-[#BFAF8A] font-smallcaps text-xs tracking-widest group-hover:gap-2 transition-all duration-200">
+          <div className="mt-4 flex items-center gap-1 text-[#BFAF8A] bta-eyebrow text-xs tracking-widest group-hover:gap-2 transition-all duration-200">
             <span>Explore Benefits</span>
             <span>→</span>
           </div>
@@ -137,7 +137,7 @@ export default function PreferredPartners() {
                 <div className="text-3xl text-[#BFAF8A] mb-1" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 500 }}>
                   {stat.value}
                 </div>
-                <div className="font-smallcaps text-[11px] tracking-widest text-white/60 uppercase">
+                <div className="bta-eyebrow text-[11px] tracking-widest text-white/60 uppercase">
                   {stat.label}
                 </div>
               </div>
@@ -169,7 +169,7 @@ export default function PreferredPartners() {
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
-                className={`font-smallcaps text-xs tracking-widest px-6 py-2.5 border transition-all duration-200 flex-shrink-0 ${
+                className={`bta-eyebrow text-xs tracking-widest px-6 py-2.5 border transition-all duration-200 flex-shrink-0 ${
                   activeCategory === cat
                     ? "bg-[#384959] text-white border-[#384959]"
                     : "bg-transparent text-[#384959] border-[#384959]/40 hover:border-[#384959]"
@@ -236,13 +236,13 @@ export default function PreferredPartners() {
                   {/* Text overlay */}
                   <div className="absolute bottom-0 left-0 right-0 p-5">
                     {/* Partner badge */}
-                    <span className="font-smallcaps text-[10px] tracking-widest text-[#BFAF8A] mb-1 block">
+                    <span className="bta-eyebrow text-[10px] tracking-widest text-[#BFAF8A] mb-1 block">
                       {prop.partner}
                     </span>
                     <h3 className="text-white text-lg leading-tight mb-0.5" style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 500 }}>
                       {prop.name}
                     </h3>
-                    <p className="font-smallcaps text-white/60 text-[10px] tracking-widest">
+                    <p className="bta-eyebrow text-white/60 text-[10px] tracking-widest">
                       {prop.location}
                     </p>
                   </div>
@@ -282,7 +282,7 @@ export default function PreferredPartners() {
 
       {/* ── Footer ───────────────────────────────────────────────────────── */}
       <footer className="bg-[#384959] text-white/60 py-10 px-6 text-center">
-        <p className="font-smallcaps text-xs tracking-widest">
+        <p className="bta-eyebrow text-xs tracking-widest">
           © {new Date().getFullYear()} Boutique Travel Advisors · All Rights Reserved
         </p>
       </footer>

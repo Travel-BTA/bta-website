@@ -68,7 +68,7 @@ export function ExclusiveBenefitsSection() {
                   </svg>
                 )}
               </div>
-              <span className="font-smallcaps text-[#faf9f6]/75 text-xs tracking-[0.14em] uppercase leading-snug">
+              <span className="bta-eyebrow text-[#faf9f6]/85 text-[10px] leading-snug">
                 {benefit.label}
               </span>
             </div>
@@ -124,7 +124,7 @@ export function VipAccessSection() {
         <div className="flex-1 bg-[#edeae4] flex flex-col justify-center px-8 md:px-12 lg:px-16 py-12 lg:py-16">
           {/* Headline */}
           <h2
-            className="bta-section-title text-[#bfaf8a] text-3xl md:text-4xl lg:text-5xl leading-tight mb-3"
+            className="bta-section-title text-[#384959] text-3xl md:text-4xl lg:text-5xl leading-tight mb-3"
             style={{ fontWeight: 400 }}
           >
             {vipAccess.headline.split("\n").map((line, i) => (

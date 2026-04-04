@@ -76,7 +76,7 @@ export function ExclusiveBenefitsSection() {
                   </svg>
                 )}
               </div>
-              <span className="font-smallcaps text-[#faf9f6]/70 text-[9px] tracking-[0.12em] uppercase leading-snug">
+              <span className="bta-eyebrow text-[#BFAF8A] text-[9px] leading-snug">
                 {benefit.label}
               </span>
             </div>
@@ -106,7 +106,7 @@ export function VipAccessSection() {
         {/* Right: Content */}
         <div className="px-10 lg:px-16 py-16 flex flex-col justify-center">
           <h2
-            className="bta-section-title text-[#BFAF8A] text-2xl md:text-3xl lg:text-4xl leading-tight mb-3"
+            className="bta-section-title text-[#384959] text-2xl md:text-3xl lg:text-4xl leading-tight mb-3"
             style={{ fontWeight: 400 }}
           >
             {vipAccess.headline.split("\n").map((line, i) => (
@@ -121,7 +121,7 @@ export function VipAccessSection() {
           <div className="flex mb-6 border-b border-[#BFAF8A]/30">
             <button
               onClick={() => setActiveTab("stays")}
-              className={`font-smallcaps text-[10px] tracking-[0.18em] uppercase px-6 py-2 transition-all ${
+              className={`bta-nav-link text-[10px] tracking-[0.18em] uppercase px-6 py-2 transition-all ${
                 activeTab === "stays"
                   ? "border-b-2 border-[#BFAF8A] text-[#BFAF8A]"
                   : "text-[#384959]/50 hover:text-[#384959]"
@@ -131,7 +131,7 @@ export function VipAccessSection() {
             </button>
             <button
               onClick={() => setActiveTab("hotel")}
-              className={`font-smallcaps text-[10px] tracking-[0.18em] uppercase px-6 py-2 transition-all ${
+              className={`bta-nav-link text-[10px] tracking-[0.18em] uppercase px-6 py-2 transition-all ${
                 activeTab === "hotel"
                   ? "border-b-2 border-[#BFAF8A] text-[#BFAF8A]"
                   : "text-[#384959]/50 hover:text-[#384959]"

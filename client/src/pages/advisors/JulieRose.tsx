@@ -61,7 +61,7 @@ function HeroSection() {
         <h1 className="text-[#2F2F2F] text-4xl uppercase leading-none mb-2" style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400, letterSpacing: "0.04em" , textTransform: "uppercase" }}>
           {h.name}
         </h1>
-        <p className="font-smallcaps text-[#bfaf8a] text-[10px] tracking-[0.25em] uppercase mb-3">
+        <p className="bta-eyebrow text-[#bfaf8a] text-[10px] tracking-[0.25em] uppercase mb-3">
           {h.title}
         </p>
         <p
@@ -73,20 +73,20 @@ function HeroSection() {
         <div className="flex flex-col gap-3 mb-4">
           <a
             href={h.ctaPrimary.href}
-            className="inline-block bg-[#bfaf8a] text-white font-smallcaps text-xs tracking-[0.2em] uppercase px-7 py-3 text-center hover:bg-[#bfaf8a] transition-colors"
+            className="inline-block bg-[#bfaf8a] text-white bta-eyebrow text-xs tracking-[0.2em] uppercase px-7 py-3 text-center hover:bg-[#bfaf8a] transition-colors"
           >
             {h.ctaPrimary.label}
           </a>
           <a
             href={h.ctaSecondary.href}
-            className="inline-block border border-[#bfaf8a] text-[#2F2F2F] font-smallcaps text-xs tracking-[0.2em] uppercase px-7 py-3 text-center hover:bg-[#bfaf8a]/10 transition-colors"
+            className="inline-block border border-[#bfaf8a] text-[#2F2F2F] bta-eyebrow text-xs tracking-[0.2em] uppercase px-7 py-3 text-center hover:bg-[#bfaf8a]/10 transition-colors"
           >
             {h.ctaSecondary.label}
           </a>
         </div>
         <div className="flex flex-wrap gap-x-4 gap-y-1">
           {h.badges.map((badge) => (
-            <span key={badge} className="flex items-center gap-1.5 text-[#2F2F2F]/50 text-[10px] font-smallcaps tracking-[0.15em] uppercase">
+            <span key={badge} className="flex items-center gap-1.5 text-[#2F2F2F]/50 text-[10px] bta-eyebrow tracking-[0.15em] uppercase">
               <svg className="w-3 h-3 text-[#bfaf8a] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
@@ -124,20 +124,20 @@ function HeroSection() {
         <div className="flex flex-wrap gap-3 mb-4">
           <a
             href={h.ctaPrimary.href}
-            className="inline-block bg-[#bfaf8a] text-white font-smallcaps text-xs tracking-[0.2em] uppercase px-7 py-3 hover:bg-[#bfaf8a] transition-colors"
+            className="inline-block bg-[#bfaf8a] text-white bta-eyebrow text-xs tracking-[0.2em] uppercase px-7 py-3 hover:bg-[#bfaf8a] transition-colors"
           >
             {h.ctaPrimary.label}
           </a>
           <a
             href={h.ctaSecondary.href}
-            className="inline-block border border-white/50 text-white font-smallcaps text-xs tracking-[0.2em] uppercase px-7 py-3 hover:border-white hover:bg-white/10 transition-colors"
+            className="inline-block border border-white/50 text-white bta-eyebrow text-xs tracking-[0.2em] uppercase px-7 py-3 hover:border-white hover:bg-white/10 transition-colors"
           >
             {h.ctaSecondary.label}
           </a>
         </div>
         <div className="flex flex-wrap gap-x-5 gap-y-1">
           {h.badges.map((badge) => (
-            <span key={badge} className="flex items-center gap-1.5 text-white/50 text-xs font-smallcaps tracking-[0.15em] uppercase">
+            <span key={badge} className="flex items-center gap-1.5 text-white/50 text-xs bta-eyebrow tracking-[0.15em] uppercase">
               <svg className="w-3 h-3 text-[#bfaf8a] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
@@ -214,7 +214,7 @@ function MeetSection() {
           {/* CTA */}
           <a
             href={m.cta.href}
-            className="inline-block bg-[#bfaf8a] text-white font-smallcaps text-xs tracking-[0.2em] uppercase px-8 py-4 hover:bg-[#bfaf8a] transition-colors"
+            className="inline-block bg-[#bfaf8a] text-white bta-eyebrow text-xs tracking-[0.2em] uppercase px-8 py-4 hover:bg-[#bfaf8a] transition-colors"
           >
             {m.cta.label}
           </a>
@@ -238,7 +238,7 @@ function StatsBar() {
               >
                 {stat.value}
               </div>
-              <div className="font-smallcaps text-white/60 text-xs tracking-[0.2em] uppercase">
+              <div className="bta-eyebrow text-white/60 text-xs tracking-[0.2em] uppercase">
                 {stat.label}
               </div>
             </div>
@@ -289,13 +289,13 @@ function HotelsSection() {
                   alt={hotel.name}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
-                <span className="absolute top-4 left-4 bg-[#bfaf8a] text-white font-smallcaps text-xs tracking-[0.18em] uppercase px-3 py-1.5">
+                <span className="absolute top-4 left-4 bg-[#bfaf8a] text-white bta-eyebrow text-xs tracking-[0.18em] uppercase px-3 py-1.5">
                   {hotel.badge}
                 </span>
               </div>
               {/* Content */}
               <div className="p-7">
-                <p className="font-smallcaps text-[#bfaf8a] text-xs tracking-[0.18em] uppercase mb-2">
+                <p className="bta-eyebrow text-[#bfaf8a] text-xs tracking-[0.18em] uppercase mb-2">
                   {hotel.location}
                 </p>
                 {/* Hotel name with vertical gold line */}
@@ -316,7 +316,7 @@ function HotelsSection() {
                 {/* Horizontal divider */}
                 <div className="border-t border-[#bfaf8a]/30 mb-4" />
                 {/* Perks title */}
-                <p className="font-smallcaps text-[#bfaf8a] text-[10px] tracking-[0.2em] uppercase mb-3">
+                <p className="bta-eyebrow text-[#bfaf8a] text-[10px] tracking-[0.2em] uppercase mb-3">
                   Exclusive Perks When You Book Through Julie
                 </p>
                 {/* Perks with check icons */}
@@ -504,10 +504,10 @@ function ExperiencesSection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-[#384959]/80 to-transparent" />
                 {/* Duration + Region badges */}
                 <div className="absolute top-4 left-4 flex gap-2">
-                  <span className="bg-[#bfaf8a] text-white font-smallcaps text-xs tracking-[0.15em] uppercase px-3 py-1">
+                  <span className="bg-[#bfaf8a] text-white bta-eyebrow text-xs tracking-[0.15em] uppercase px-3 py-1">
                     {trip.duration}
                   </span>
-                  <span className="bg-white/20 backdrop-blur-sm text-white font-smallcaps text-xs tracking-[0.15em] uppercase px-3 py-1">
+                  <span className="bg-white/20 backdrop-blur-sm text-white bta-eyebrow text-xs tracking-[0.15em] uppercase px-3 py-1">
                     {trip.region}
                   </span>
                 </div>
@@ -527,7 +527,7 @@ function ExperiencesSection() {
                 </p>
                 <a
                   href={trip.href}
-                  className="inline-flex items-center gap-2 font-smallcaps text-[#bfaf8a] text-xs tracking-[0.2em] uppercase hover:gap-3 transition-all"
+                  className="inline-flex items-center gap-2 bta-eyebrow text-[#bfaf8a] text-xs tracking-[0.2em] uppercase hover:gap-3 transition-all"
                 >
                   Learn More
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -576,7 +576,7 @@ function WhyWorkSection() {
             {w.benefits.map((benefit, i) => (
               <div key={i} className="flex gap-5">
                 <div className="w-8 h-8 rounded-full bg-[#bfaf8a]/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <span className="text-[#bfaf8a] font-smallcaps text-xs">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="text-[#bfaf8a] bta-eyebrow text-xs">{String(i + 1).padStart(2, "0")}</span>
                 </div>
                 <div>
                   <h4
@@ -598,7 +598,7 @@ function WhyWorkSection() {
 
           <a
             href={w.cta.href}
-            className="inline-block self-start bg-[#bfaf8a] text-white font-smallcaps text-xs tracking-[0.2em] uppercase px-8 py-4 hover:bg-[#bfaf8a] transition-colors"
+            className="inline-block self-start bg-[#bfaf8a] text-white bta-eyebrow text-xs tracking-[0.2em] uppercase px-8 py-4 hover:bg-[#bfaf8a] transition-colors"
           >
             {w.cta.label}
           </a>
@@ -649,7 +649,7 @@ function TestimonialsSection() {
 
         {/* Author */}
         <div className="mb-10">
-          <p className="font-smallcaps text-[#bfaf8a] text-sm tracking-[0.2em] uppercase">
+          <p className="bta-eyebrow text-[#bfaf8a] text-sm tracking-[0.2em] uppercase">
             {current.author}
           </p>
           <p
@@ -793,7 +793,7 @@ function ContactSection() {
               />
               <button
                 type="submit"
-                className="w-full bg-[#bfaf8a] text-white font-smallcaps text-xs tracking-[0.2em] uppercase py-4 hover:bg-[#bfaf8a] transition-colors"
+                className="w-full bg-[#bfaf8a] text-white bta-eyebrow text-xs tracking-[0.2em] uppercase py-4 hover:bg-[#bfaf8a] transition-colors"
               >
                 {c.fields.submitLabel}
               </button>
@@ -824,7 +824,7 @@ function ContactSection() {
           </p>
           <a
             href={c.club.cta.href}
-            className="inline-block self-start border border-[#bfaf8a] text-[#bfaf8a] font-smallcaps text-xs tracking-[0.2em] uppercase px-8 py-4 hover:bg-[#bfaf8a] hover:text-white transition-colors"
+            className="inline-block self-start border border-[#bfaf8a] text-[#bfaf8a] bta-eyebrow text-xs tracking-[0.2em] uppercase px-8 py-4 hover:bg-[#bfaf8a] hover:text-white transition-colors"
           >
             {c.club.cta.label}
           </a>
@@ -848,12 +848,12 @@ function ClosingBanner() {
         >
           {cb.quote}
         </p>
-        <p className="font-smallcaps text-[#bfaf8a] text-xs tracking-[0.25em] uppercase mb-8">
+        <p className="bta-eyebrow text-[#bfaf8a] text-xs tracking-[0.25em] uppercase mb-8">
           {cb.credit}
         </p>
         <a
           href={cb.cta.href}
-          className="inline-block border border-white/50 text-white font-smallcaps text-xs tracking-[0.2em] uppercase px-8 py-4 hover:bg-white/10 hover:border-white transition-colors"
+          className="inline-block border border-white/50 text-white bta-eyebrow text-xs tracking-[0.2em] uppercase px-8 py-4 hover:bg-white/10 hover:border-white transition-colors"
         >
           {cb.cta.label}
         </a>

@@ -147,7 +147,7 @@ export default function BlogPost() {
   return (
     <PageLayout>
       <div className="max-w-3xl mx-auto px-6 py-32 text-center">
-        <p className="text-[#bfaf8a] text-sm tracking-[0.15em] uppercase font-smallcaps mb-4">Article Not Found</p>
+        <p className="text-[#bfaf8a] text-sm tracking-[0.15em] uppercase bta-eyebrow mb-4">Article Not Found</p>
         <h1 className="text-[#384959] text-4xl font-light mb-6 font-display">
           This article couldn't be loaded
         </h1>
@@ -172,7 +172,7 @@ export default function BlogPost() {
           {/* Meta row */}
           <div className="flex items-center justify-center gap-5 mb-8 text-sm text-[#2F2F2F]/50">
             <span
-              className="text-[#bfaf8a] font-smallcaps tracking-[0.15em] uppercase text-xs"
+              className="text-[#bfaf8a] bta-eyebrow tracking-[0.15em] uppercase text-xs"
             >
               {primaryCategory}
             </span>
@@ -304,7 +304,7 @@ export default function BlogPost() {
           </p>
           <a
             href="/contact"
-            className="inline-block bg-[#bfaf8a] text-white font-smallcaps text-xs tracking-[0.2em] uppercase px-10 py-4 hover:bg-[#bfaf8a] transition-colors"
+            className="inline-block bg-[#bfaf8a] text-white bta-eyebrow text-xs tracking-[0.2em] uppercase px-10 py-4 hover:bg-[#bfaf8a] transition-colors"
           >
             Start Planning Your Journey
           </a>

@@ -35,11 +35,11 @@ export default function NavBar() {
             <img src={nav.logo.imageUrl} alt="Boutique Travel Advisors" className="h-10 w-auto" />
           ) : (
             <div className="text-white leading-none">
-              <div className="font-smallcaps text-[9px] tracking-[0.25em] uppercase opacity-90">BOUTIQUE</div>
+              <div className="bta-eyebrow text-[9px] tracking-[0.25em] uppercase opacity-90">BOUTIQUE</div>
               <div className="font-script text-[22px] leading-none mt-[-2px]">
                 travel
               </div>
-              <div className="font-smallcaps text-[9px] tracking-[0.25em] uppercase opacity-90 mt-[-2px]">ADVISORS</div>
+              <div className="bta-eyebrow text-[9px] tracking-[0.25em] uppercase opacity-90 mt-[-2px]">ADVISORS</div>
             </div>
           )}
         </a>
@@ -50,7 +50,7 @@ export default function NavBar() {
             <a
               key={link.label}
               href={link.href}
-              className="font-smallcaps text-[11px] tracking-[0.18em] text-white/90 hover:text-white transition-colors uppercase"
+              className="bta-nav-link text-[11px] tracking-[0.18em] text-white/90 hover:text-white transition-colors uppercase"
             >
               {link.label}
             </a>
@@ -86,7 +86,7 @@ export default function NavBar() {
               <a
                 key={link.label}
                 href={link.href}
-                className="font-smallcaps text-[12px] tracking-[0.18em] text-white/90 hover:text-white uppercase"
+                className="bta-nav-link text-[12px] tracking-[0.18em] text-white/90 hover:text-white uppercase"
                 onClick={() => setMenuOpen(false)}
               >
                 {link.label}

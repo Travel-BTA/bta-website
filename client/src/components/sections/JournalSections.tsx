@@ -84,15 +84,14 @@ export function JournalSection() {
                       // Fallback when no featured image is set on the WordPress post
                       <div className="w-full h-64 bg-white/10 flex items-center justify-center">
                         <span
-                          className="text-white/20 text-[9px] tracking-widest uppercase"
-                          style={{ fontFamily: "'Instrument Serif', serif" , textTransform: "uppercase" }}
+                          className="bta-nav-link text-white/20 text-[9px]"
                         >
                           Boutique Travel
                         </span>
                       </div>
                     )}
                   </div>
-                  <div className="font-smallcaps text-[#BFAF8A] text-[9px] tracking-[0.18em] uppercase mb-2">
+                  <div className="bta-eyebrow text-[#BFAF8A] text-[9px] tracking-[0.18em] uppercase mb-2">
                     {post.categories?.[0] ?? "Travel"} &middot; {post.readTime}
                   </div>
                   <h3
@@ -103,7 +102,7 @@ export function JournalSection() {
                   </h3>
                   <Link
                     href={`/${post.slug}`}
-                    className="font-smallcaps text-[#faf9f6]/50 text-[9px] tracking-[0.18em] uppercase hover:text-[#BFAF8A] transition-colors flex items-center gap-2"
+                    className="bta-eyebrow text-[#faf9f6]/50 text-[9px] tracking-[0.18em] uppercase hover:text-[#BFAF8A] transition-colors flex items-center gap-2"
                   >
                     READ MORE
                     <svg className="w-4 h-px" viewBox="0 0 16 1" fill="none">
@@ -119,7 +118,7 @@ export function JournalSection() {
         <div className="text-center mt-12">
           <Link
             href="/journal"
-            className="font-smallcaps text-[#faf9f6]/50 text-[9px] tracking-[0.18em] uppercase hover:text-[#BFAF8A] transition-colors inline-flex items-center gap-2"
+            className="bta-eyebrow text-[#faf9f6]/50 text-[9px] tracking-[0.18em] uppercase hover:text-[#BFAF8A] transition-colors inline-flex items-center gap-2"
           >
             VIEW ALL ARTICLES
             <svg className="w-4 h-px" viewBox="0 0 16 1" fill="none">
@@ -281,14 +280,14 @@ export function FooterSection() {
           {/* Brand */}
           <div>
             <div className="text-[#faf9f6] mb-4 leading-none">
-              <div className="font-smallcaps text-[9px] tracking-[0.25em] uppercase opacity-70">BOUTIQUE</div>
+              <div className="bta-eyebrow text-[9px] tracking-[0.25em] uppercase opacity-70">BOUTIQUE</div>
               <div
                 className="text-[28px] leading-none mt-[-2px]"
                 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic", color: "#faf9f6" }}
               >
                 travel
               </div>
-              <div className="font-smallcaps text-[9px] tracking-[0.25em] uppercase opacity-70 mt-[-2px]">ADVISORS</div>
+              <div className="bta-eyebrow text-[9px] tracking-[0.25em] uppercase opacity-70 mt-[-2px]">ADVISORS</div>
             </div>
             <p className="font-body text-[#faf9f6]/50 text-sm mb-6 leading-relaxed">{footer.tagline}</p>
             <div className="flex gap-4">
@@ -323,7 +322,7 @@ export function FooterSection() {
 
           {/* Explore */}
           <div>
-            <h4 className="font-smallcaps text-[#faf9f6] text-[10px] tracking-[0.2em] uppercase mb-5">Explore</h4>
+            <h4 className="bta-eyebrow text-[#faf9f6] text-[10px] tracking-[0.2em] uppercase mb-5">Explore</h4>
             <ul className="space-y-3">
               {footer.explore.map((link) => (
                 <li key={link.label}>
@@ -337,7 +336,7 @@ export function FooterSection() {
 
           {/* Company */}
           <div>
-            <h4 className="font-smallcaps text-[#faf9f6] text-[10px] tracking-[0.2em] uppercase mb-5">Company</h4>
+            <h4 className="bta-eyebrow text-[#faf9f6] text-[10px] tracking-[0.2em] uppercase mb-5">Company</h4>
             <ul className="space-y-3">
               {footer.company.map((link) => (
                 <li key={link.label}>
@@ -351,7 +350,7 @@ export function FooterSection() {
 
           {/* Contact + Newsletter */}
           <div>
-            <h4 className="font-smallcaps text-[#faf9f6] text-[10px] tracking-[0.2em] uppercase mb-5">Subscribe</h4>
+            <h4 className="bta-eyebrow text-[#faf9f6] text-[10px] tracking-[0.2em] uppercase mb-5">Subscribe</h4>
             <p className="font-body text-[#faf9f6]/50 text-xs mb-4 leading-relaxed uppercase tracking-wide">
               Newsletter for latest updates
             </p>
@@ -368,7 +367,7 @@ export function FooterSection() {
               </button>
             </div>
 
-            <h4 className="font-smallcaps text-[#faf9f6] text-[10px] tracking-[0.2em] uppercase mb-4">Get in Touch</h4>
+            <h4 className="bta-eyebrow text-[#faf9f6] text-[10px] tracking-[0.2em] uppercase mb-4">Get in Touch</h4>
             <div className="space-y-2">
               <a href={`tel:${footer.contact.phone}`} className="flex items-center gap-2 font-body text-[#faf9f6]/50 text-sm hover:text-[#BFAF8A] transition-colors">
                 <svg className="w-3.5 h-3.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -382,7 +381,7 @@ export function FooterSection() {
                 </svg>
                 {footer.contact.email}
               </a>
-              <p className="font-smallcaps text-[#faf9f6]/30 text-[9px] tracking-[0.12em] uppercase mt-2">
+              <p className="bta-eyebrow text-[#faf9f6]/30 text-[9px] tracking-[0.12em] uppercase mt-2">
                 {footer.contact.virtuoso}
               </p>
             </div>
@@ -391,7 +390,7 @@ export function FooterSection() {
 
         {/* Bottom Bar */}
         <div className="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-3">
-          <p className="font-smallcaps text-[#faf9f6]/30 text-[9px] tracking-[0.15em] uppercase">
+          <p className="bta-eyebrow text-[#faf9f6]/30 text-[9px] tracking-[0.15em] uppercase">
             {footer.copyright}
           </p>
           <div className="flex gap-4">
@@ -399,7 +398,7 @@ export function FooterSection() {
               <a
                 key={link.label}
                 href={link.href}
-                className="font-smallcaps text-[#faf9f6]/30 text-[9px] tracking-[0.12em] uppercase hover:text-[#faf9f6]/60 transition-colors"
+                className="bta-eyebrow text-[#faf9f6]/30 text-[9px] tracking-[0.12em] uppercase hover:text-[#faf9f6]/60 transition-colors"
               >
                 {link.label}
               </a>

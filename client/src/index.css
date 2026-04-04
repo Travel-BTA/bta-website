@@ -186,6 +186,15 @@
   }
 
   /* BTA Outlined Button — white version (on dark/image backgrounds) */
+  /* BTA Nav Link — Instrument Serif 400 upright, never italic, never bold */
+  .bta-nav-link {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+  }
+
   .bta-btn-outline-white {
     display: inline-block;
     padding: 0.6rem 2rem;

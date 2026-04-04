@@ -105,10 +105,7 @@ function FeaturedCard({ post }: { post: Post }) {
       <div className="flex flex-col justify-center px-8 lg:px-12 py-10 bg-white">
         {/* Category + read time */}
         <div className="flex items-center justify-between mb-4">
-          <span
-            className="text-[#bfaf8a] text-[10px] tracking-[0.22em] uppercase"
-            style={{ fontFamily: "'Instrument Serif', serif" , textTransform: "uppercase" }}
-          >
+          <span className="bta-eyebrow text-[#bfaf8a] text-[10px]">
             {primaryCategory}
           </span>
           <span className="text-xs text-[#2F2F2F]/40" style={{ fontFamily: "'Playfair Display', serif" }}>
@@ -173,10 +170,7 @@ function GridCard({ post }: { post: Post }) {
 
       {/* Category + read time */}
       <div className="flex items-center justify-between mb-2">
-        <span
-          className="text-[#bfaf8a] text-[10px] tracking-[0.2em] uppercase"
-          style={{ fontFamily: "'Instrument Serif', serif" , textTransform: "uppercase" }}
-        >
+        <span className="bta-eyebrow text-[#bfaf8a] text-[10px]">
           {primaryCategory}
         </span>
         <span className="text-[11px] text-[#2F2F2F]/40" style={{ fontFamily: "'Playfair Display', serif" }}>
@@ -209,8 +203,7 @@ function GridCard({ post }: { post: Post }) {
       {/* Read more */}
       <Link
         href={`/journal/${post.slug}`}
-        className="inline-flex items-center gap-1.5 text-[#bfaf8a] text-[10px] tracking-[0.2em] uppercase hover:gap-2.5 transition-all mt-auto"
-        style={{ fontFamily: "'Instrument Serif', serif" , textTransform: "uppercase" }}
+        className="inline-flex items-center gap-1.5 bta-eyebrow text-[#bfaf8a] text-[10px] hover:gap-2.5 transition-all mt-auto"
       >
         READ MORE <span>&#8594;</span>
       </Link>
@@ -410,10 +403,7 @@ export default function Journal() {
             {grid.length > 0 && (
               <div className="max-w-[1280px] mx-auto px-6 mb-10 flex items-center gap-4">
                 <div className="flex-1 border-t border-[#edeae4]" />
-                <span
-                  className="text-[#bfaf8a] text-[10px] tracking-[0.22em] uppercase shrink-0"
-                  style={{ fontFamily: "'Instrument Serif', serif" , textTransform: "uppercase" }}
-                >
+                <span className="bta-eyebrow text-[#bfaf8a] text-[10px] shrink-0">
                   More Articles
                 </span>
                 <div className="flex-1 border-t border-[#edeae4]" />

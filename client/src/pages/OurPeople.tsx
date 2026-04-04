@@ -5,7 +5,7 @@
  * - max-w-[1440px] mx-auto px-8 lg:px-14 container
  * - FAF0F6 Linen White background, white alternating sections
  * - Allura script eyebrows, Instrument Serif headings
- * - Playfair Display body, font-smallcaps labels
+ * - Playfair Display body, bta-eyebrow labels
  * - Gold #bfaf8a accents throughout
  * - 3-column portrait grid (4 on xl), generous gap-10 lg:gap-14 spacing
  * - Uniform 3:4 portrait cards. same size for every advisor
@@ -97,7 +97,7 @@ function AdvisorCard({ advisor }: { advisor: Advisor }) {
         <div className="absolute inset-0 bg-gradient-to-t from-[#384959]/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
         {/* "View Profile" pill. only shown on hover */}
         <div className="absolute bottom-4 left-0 right-0 flex justify-center opacity-0 group-hover:opacity-100 transition-all duration-400 translate-y-2 group-hover:translate-y-0">
-          <span className="font-smallcaps text-white text-[0.6rem] tracking-[0.22em] uppercase bg-[#bfaf8a]/90 px-4 py-1.5">
+          <span className="bta-eyebrow text-white text-[0.6rem] tracking-[0.22em] uppercase bg-[#bfaf8a]/90 px-4 py-1.5">
             View Profile
           </span>
         </div>
@@ -207,7 +207,7 @@ function MissionTabs() {
             <button
               key={tab.id}
               onClick={() => setActive(tab.id)}
-              className={`font-smallcaps text-[0.65rem] tracking-[0.22em] uppercase px-6 pb-4 transition-all duration-300 ${
+              className={`bta-eyebrow text-[0.65rem] tracking-[0.22em] uppercase px-6 pb-4 transition-all duration-300 ${
                 active === tab.id
                   ? "text-[#bfaf8a] border-b-2 border-[#bfaf8a] -mb-px"
                   : "text-white/40 hover:text-white/70"
@@ -301,7 +301,7 @@ export default function OurPeople() {
                 style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
               >
                 "To move, to breathe, to fly, to float, to gain all while you give, to roam the roads of lands remote: to travel is to live."
-                <footer className="font-smallcaps text-[#bfaf8a] text-xs tracking-[0.15em] uppercase mt-3 not-italic">
+                <footer className="bta-eyebrow text-[#bfaf8a] text-xs tracking-[0.15em] uppercase mt-3 not-italic">
                  . Hans Christian Andersen
                 </footer>
               </blockquote>

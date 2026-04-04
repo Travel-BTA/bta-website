@@ -74,11 +74,11 @@ export function JournalSection() {
                       />
                     ) : (
                       <div className="w-full bg-white/10 flex items-center justify-center" style={{ height: "420px" }}>
-                        <span className="text-white/20 text-xs tracking-widest uppercase" style={{ fontFamily: "'Instrument Serif', serif" , textTransform: "uppercase" }}>Boutique Travel</span>
+                        <span className="bta-nav-link text-white/20 text-xs">Boutique Travel</span>
                       </div>
                     )}
                   </div>
-                  <div className="font-smallcaps text-[#bfaf8a] text-xs tracking-[0.18em] uppercase mb-3">
+                  <div className="bta-eyebrow text-[#bfaf8a] text-xs tracking-[0.18em] uppercase mb-3">
                     {post.categories?.[0] ?? "Travel"} &middot; {post.readTime}
                   </div>
                   <h3
@@ -89,7 +89,7 @@ export function JournalSection() {
                   </h3>
                   <Link
                     href={`/${post.slug}`}
-                    className="font-smallcaps text-[#faf9f6]/50 text-xs tracking-[0.18em] uppercase hover:text-[#bfaf8a] transition-colors flex items-center gap-2"
+                    className="bta-eyebrow text-[#faf9f6]/50 text-xs tracking-[0.18em] uppercase hover:text-[#bfaf8a] transition-colors flex items-center gap-2"
                   >
                     READ MORE →
                   </Link>
@@ -101,7 +101,7 @@ export function JournalSection() {
         <div className="text-center mt-14">
           <Link
             href="/journal"
-            className="font-smallcaps text-[#faf9f6]/50 text-xs tracking-[0.18em] uppercase hover:text-[#bfaf8a] transition-colors inline-flex items-center gap-2"
+            className="bta-eyebrow text-[#faf9f6]/50 text-xs tracking-[0.18em] uppercase hover:text-[#bfaf8a] transition-colors inline-flex items-center gap-2"
           >
             VIEW ALL ARTICLES →
           </Link>
@@ -155,7 +155,7 @@ function ReviewCard({ item, index }: { item: typeof testimonials[0]; index: numb
         >
          . {item.author}
         </p>
-        <span className="font-smallcaps text-[#bfaf8a] text-xs tracking-[0.14em] uppercase group-hover:text-[#384959] transition-colors flex items-center gap-1">
+        <span className="bta-eyebrow text-[#bfaf8a] text-xs tracking-[0.14em] uppercase group-hover:text-[#384959] transition-colors flex items-center gap-1">
           View on Google
           <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -226,7 +226,7 @@ function LiveReviewCard({ review }: { review: LiveReview }) {
         href={review.reviewUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="font-smallcaps text-[#bfaf8a] text-xs tracking-[0.14em] uppercase hover:text-[#384959] transition-colors flex items-center gap-1 self-start"
+        className="bta-eyebrow text-[#bfaf8a] text-xs tracking-[0.14em] uppercase hover:text-[#384959] transition-colors flex items-center gap-1 self-start"
       >
         Read More on Google
         <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -316,7 +316,7 @@ export function TestimonialsSection() {
             href="https://www.google.com/search?q=Boutique+Travel+Advisors+reviews"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 font-smallcaps text-[#384959]/60 text-xs tracking-[0.18em] uppercase hover:text-[#bfaf8a] transition-colors"
+            className="inline-flex items-center gap-2 bta-eyebrow text-[#384959]/60 text-xs tracking-[0.18em] uppercase hover:text-[#bfaf8a] transition-colors"
           >
             <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
               <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
@@ -505,7 +505,7 @@ export function FooterSection() {
 
           {/* Explore */}
           <div>
-            <h4 className="font-smallcaps text-[#faf9f6] text-sm tracking-[0.22em] uppercase mb-6">Explore</h4>
+            <h4 className="bta-eyebrow text-[#faf9f6] text-sm tracking-[0.22em] uppercase mb-6">Explore</h4>
             <ul className="space-y-4">
               {footer.explore.map((link) => (
                 <li key={link.label}>
@@ -523,7 +523,7 @@ export function FooterSection() {
 
           {/* Company */}
           <div>
-            <h4 className="font-smallcaps text-[#faf9f6] text-sm tracking-[0.22em] uppercase mb-6">Company</h4>
+            <h4 className="bta-eyebrow text-[#faf9f6] text-sm tracking-[0.22em] uppercase mb-6">Company</h4>
             <ul className="space-y-4">
               {footer.company.map((link) => (
                 <li key={link.label}>
@@ -541,8 +541,8 @@ export function FooterSection() {
 
           {/* Subscribe + Contact */}
           <div>
-            <h4 className="font-smallcaps text-[#faf9f6] text-xs tracking-[0.22em] uppercase mb-2">Subscribe to Our</h4>
-            <h4 className="font-smallcaps text-[#faf9f6] text-xs tracking-[0.22em] uppercase mb-5">Newsletter for Latest Update</h4>
+            <h4 className="bta-eyebrow text-[#faf9f6] text-xs tracking-[0.22em] uppercase mb-2">Subscribe to Our</h4>
+            <h4 className="bta-eyebrow text-[#faf9f6] text-xs tracking-[0.22em] uppercase mb-5">Newsletter for Latest Update</h4>
             <div className="flex mb-10 border border-white/20">
               <input
                 type="email"
@@ -557,7 +557,7 @@ export function FooterSection() {
               </button>
             </div>
 
-            <h4 className="font-smallcaps text-[#faf9f6] text-xs tracking-[0.22em] uppercase mb-5">Get in Touch</h4>
+            <h4 className="bta-eyebrow text-[#faf9f6] text-xs tracking-[0.22em] uppercase mb-5">Get in Touch</h4>
             <div className="space-y-3">
               <a
                 href={`tel:${footer.contact.phone}`}
@@ -591,7 +591,7 @@ export function FooterSection() {
 
         {/* Bottom Bar */}
         <div className="border-t border-white/10 pt-7 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="font-smallcaps text-[#faf9f6]/35 text-xs tracking-[0.18em] uppercase">
+          <p className="bta-eyebrow text-[#faf9f6]/35 text-xs tracking-[0.18em] uppercase">
             {footer.copyright}
           </p>
           <div className="flex gap-6">
@@ -599,7 +599,7 @@ export function FooterSection() {
               <a
                 key={link.label}
                 href={link.href}
-                className="font-smallcaps text-[#faf9f6]/35 text-xs tracking-[0.14em] uppercase hover:text-[#faf9f6]/60 transition-colors"
+                className="bta-eyebrow text-[#faf9f6]/35 text-xs tracking-[0.14em] uppercase hover:text-[#faf9f6]/60 transition-colors"
               >
                 {link.label}
               </a>

@@ -47,7 +47,7 @@ export default function HeroSection() {
           href={hero.cta.href}
           className="absolute right-10 top-1/2 -translate-y-1/2 w-24 h-24 rounded-full border border-white/70 flex items-center justify-center text-center hover:bg-white/10 transition-colors"
         >
-          <span className="font-smallcaps text-white text-[9px] tracking-[0.15em] uppercase leading-tight px-2">
+          <span className="bta-eyebrow text-white text-[9px] tracking-[0.15em] uppercase leading-tight px-2">
             {hero.cta.label.split("\n").map((line, i) => (
               <span key={i} className="block">{line}</span>
             ))}
@@ -59,11 +59,11 @@ export default function HeroSection() {
       <div className="absolute bottom-0 left-0 right-0 border-t border-white/10 bg-black/20 backdrop-blur-sm">
         <div className="max-w-[1440px] mx-auto px-6 lg:px-10 py-4 flex items-center justify-center gap-8 md:gap-16 flex-wrap">
           {/* Virtuoso text logo */}
-          <span className="font-smallcaps text-white/60 text-[10px] tracking-[0.2em] uppercase">Virtuoso</span>
-          <span className="font-smallcaps text-white/60 text-[10px] tracking-[0.2em] uppercase">ASTA</span>
-          <span className="font-smallcaps text-white/60 text-[10px] tracking-[0.2em] uppercase">Best of Our Valley</span>
-          <span className="font-smallcaps text-white/60 text-[10px] tracking-[0.2em] uppercase">IATAN</span>
-          <span className="font-smallcaps text-white/60 text-[10px] tracking-[0.2em] uppercase">Forbes</span>
+          <span className="bta-eyebrow text-white/60 text-[10px] tracking-[0.2em] uppercase">Virtuoso</span>
+          <span className="bta-eyebrow text-white/60 text-[10px] tracking-[0.2em] uppercase">ASTA</span>
+          <span className="bta-eyebrow text-white/60 text-[10px] tracking-[0.2em] uppercase">Best of Our Valley</span>
+          <span className="bta-eyebrow text-white/60 text-[10px] tracking-[0.2em] uppercase">IATAN</span>
+          <span className="bta-eyebrow text-white/60 text-[10px] tracking-[0.2em] uppercase">Forbes</span>
         </div>
       </div>
     </section>

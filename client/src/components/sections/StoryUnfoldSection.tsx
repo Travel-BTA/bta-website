@@ -71,7 +71,7 @@ export function StoryUnfoldSection() {
 
               {/* Content */}
               <div className="absolute bottom-0 left-0 right-0 p-8">
-                <p className="font-smallcaps text-[#bfaf8a] text-xs tracking-[0.22em] uppercase mb-2">
+                <p className="bta-eyebrow text-[#bfaf8a] text-xs mb-2">
                   {item.destination}
                 </p>
                 <h3
@@ -80,7 +80,7 @@ export function StoryUnfoldSection() {
                 >
                   {item.title}
                 </h3>
-                <span className="inline-flex items-center gap-2 font-smallcaps text-[#bfaf8a] text-xs tracking-[0.18em] uppercase group-hover:gap-4 transition-all duration-300">
+                <span className="inline-flex items-center gap-2 bta-eyebrow text-[#bfaf8a] text-xs group-hover:gap-4 transition-all duration-300">
                   VIEW ITINERARY
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />

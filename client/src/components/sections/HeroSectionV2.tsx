@@ -85,7 +85,7 @@ export default function HeroSection() {
               ) : (
                 <span
                   key={logo.name}
-                  className="font-smallcaps text-white/50 text-sm tracking-[0.2em] uppercase"
+                  className="bta-eyebrow text-white/50 text-sm tracking-[0.2em] uppercase"
                   style={{ flexShrink: 0 }}
                 >
                   {logo.name}
@@ -101,7 +101,7 @@ export default function HeroSection() {
         href={hero.cta.href}
         className="hidden md:flex absolute right-[14%] lg:right-[18%] top-1/2 -translate-y-1/2 w-28 h-28 rounded-full border border-white/70 items-center justify-center text-center hover:bg-white/10 transition-colors"
       >
-        <span className="font-smallcaps text-white text-[11px] tracking-[0.15em] uppercase leading-tight px-3">
+        <span className="bta-eyebrow text-white text-[11px] tracking-[0.15em] uppercase leading-tight px-3">
           {hero.cta.label.split("\n").map((line, i) => (
             <span key={i} className="block">{line}</span>
           ))}
