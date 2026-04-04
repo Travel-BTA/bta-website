@@ -175,6 +175,80 @@ export interface StatsRowBlock {
   paddingY: PaddingSize;
 }
 
+// ── Advisor / Team Member ────────────────────────────────────────────────────
+// WHY: Each advisor has a rich profile page (based on the Julie Rose template).
+// All content is stored as JSON so the admin form can edit every section without
+// a schema migration every time copy changes.
+
+export const advisors = mysqlTable("advisors", {
+  id: int("id").autoincrement().primaryKey(),
+  /** URL slug — e.g. "julie-rose" renders at /advisors/julie-rose */
+  slug: varchar("slug", { length: 200 }).notNull().unique(),
+  /** Display name used in nav, listings, and the hero section */
+  name: varchar("name", { length: 200 }).notNull(),
+  /** Short title shown under the name, e.g. "Luxury Travel Advisor & Virtuoso Member" */
+  title: varchar("title", { length: 300 }).notNull().default(""),
+  /** One-line tagline shown in the hero */
+  tagline: text("tagline"),
+  /** Hero background image CDN URL */
+  heroImage: text("heroImage"),
+  /** Credential badges array, e.g. ["Virtuoso Member", "15+ Years Experience"] */
+  badges: json("badges").$type<string[]>().default([]),
+  /** Primary CTA in hero, e.g. { label: "Start Planning", href: "#contact" } */
+  ctaPrimary: json("ctaPrimary").$type<{ label: string; href: string }>(),
+  /** Secondary CTA in hero */
+  ctaSecondary: json("ctaSecondary").$type<{ label: string; href: string }>(),
+  /** Meet section: main portrait photo CDN URL */
+  photoMain: text("photoMain"),
+  /** Meet section: accent/overlap portrait photo CDN URL */
+  photoAccent: text("photoAccent"),
+  /** Meet section eyebrow script text, e.g. "Meet Julie" */
+  meetEyebrow: varchar("meetEyebrow", { length: 100 }).default(""),
+  /** Meet section heading (use \n for line breaks) */
+  meetHeading: text("meetHeading"),
+  /** Bio paragraphs array */
+  bio: json("bio").$type<string[]>().default([]),
+  /** Blockquote shown in the meet section */
+  meetQuote: text("meetQuote"),
+  /** Stats bar: array of { value, label } */
+  stats: json("stats").$type<Array<{ value: string; label: string }>>().default([]),
+  /** Curated hotels: array of { badge, location, name, quote, perks[], image } */
+  hotels: json("hotels").$type<Array<{
+    badge: string; location: string; name: string;
+    quote: string; perks: string[]; image: string;
+  }>>().default([]),
+  /** Specialties: array of { label, description, image } */
+  specialties: json("specialties").$type<Array<{ label: string; description: string; image: string }>>().default([]),
+  /** Philosophy pillars: array of { icon, title, body } */
+  pillars: json("pillars").$type<Array<{ icon: string; title: string; body: string }>>().default([]),
+  /** Featured experiences: array of { duration, region, title, description, image, href } */
+  experiences: json("experiences").$type<Array<{
+    duration: string; region: string; title: string;
+    description: string; image: string; href: string;
+  }>>().default([]),
+  /** Why work with section: array of { title, body } */
+  whyWorkBenefits: json("whyWorkBenefits").$type<Array<{ title: string; body: string }>>().default([]),
+  /** Why work with section: side image CDN URL */
+  whyWorkImage: text("whyWorkImage"),
+  /** Testimonials: array of { quote, author, trip, rating } */
+  testimonials: json("testimonials").$type<Array<{ quote: string; author: string; trip: string; rating: number }>>().default([]),
+  /** Closing banner image CDN URL */
+  closingBannerImage: text("closingBannerImage"),
+  /** Closing banner quote text */
+  closingBannerQuote: text("closingBannerQuote"),
+  /** Email address shown on the contact form */
+  email: varchar("email", { length: 320 }),
+  /** Whether this advisor is visible on the public Our People page */
+  published: boolean("published").default(false).notNull(),
+  /** Sort order on the Our People listing */
+  sortOrder: int("sortOrder").default(0).notNull(),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+  updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+});
+
+export type Advisor = typeof advisors.$inferSelect;
+export type InsertAdvisor = typeof advisors.$inferInsert;
+
 export type PageBlock =
   | HeroBlock
   | TextBlock

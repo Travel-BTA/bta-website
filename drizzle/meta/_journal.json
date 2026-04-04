@@ -15,6 +15,13 @@
       "when": 1775320277410,
       "tag": "0001_slim_pride",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1775321087792,
+      "tag": "0002_dashing_magus",
+      "breakpoints": true
     }
   ]
 }

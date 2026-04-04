@@ -50,6 +50,8 @@ import Press from "./pages/Press";
 import PagesDashboard from "./pages/PagesDashboard";
 import PageBuilder from "./pages/PageBuilder";
 import LivePageRenderer from "./pages/LivePageRenderer";
+import AdvisorPage from "./pages/advisors/AdvisorPage";
+import TeamAdmin from "./pages/admin/TeamAdmin";
 function Router() {
   // make sure to consider if you need authentication for certain routes
   return (
@@ -89,10 +91,12 @@ function Router() {
       {/* Journal / Blog */}
       <Route path={"/journal"} component={Journal} />
       <Route path={"/journal/:slug"} component={BlogPost} />
-      {/* Advisor profile pages */}
+      {/* Advisor profile pages — static Julie Rose + dynamic template for all DB-driven advisors */}
       <Route path={"/advisors/julie-rose"} component={JulieRose} />
+      <Route path={"/advisors/:slug"} component={AdvisorPage} />
       {/* Admin */}
       <Route path={"/admin/media"} component={MediaManager} />
+      <Route path={"/admin/team"} component={TeamAdmin} />
       {/* Page Builder — admin only, no NavBar/Footer wrapper needed (full-screen editor) */}
       <Route path={"/admin/pages"} component={PagesDashboard} />
       <Route path={"/admin/page-builder"} component={PageBuilder} />

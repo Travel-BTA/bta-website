@@ -3,6 +3,7 @@ import { getSessionCookieOptions } from "./_core/cookies";
 import { systemRouter } from "./_core/systemRouter";
 import { publicProcedure, router } from "./_core/trpc";
 import { pagesRouter } from "./routers/pages";
+import { advisorsRouter } from "./routers/advisors";
 
 export const appRouter = router({
     // if you need to use socket.io, read and register route in server/_core/index.ts, all api should start with '/api/' so that the gateway can route correctly
@@ -20,6 +21,9 @@ export const appRouter = router({
 
   // Page Builder — brand-locked visual editor for the BTA team
   pages: pagesRouter,
+
+  // Team member / advisor profiles
+  advisors: advisorsRouter,
 
   // TODO: add feature routers here, e.g.
   // todo: router({

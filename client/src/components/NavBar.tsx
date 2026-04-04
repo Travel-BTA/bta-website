@@ -52,6 +52,8 @@ const ABOUT_SUBMENU = [
   { label: "Pricing",                       href: "/pricing" },
   { label: "Press",                         href: "/press" },
   { label: "Contact Us",                    href: "/contact-us" },
+  { label: "Team Management",               href: "/admin/team" },
+  { label: "Page Builder",                  href: "/admin/pages" },
 ];
 
 // Shared dropdown panel styles
