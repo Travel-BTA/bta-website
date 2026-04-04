@@ -16,6 +16,7 @@
  */
 
 import NavBar from "@/components/NavBar";
+import { DestinationTimelineModal, DESTINATION_ITINERARIES } from "@/components/DestinationTimeline";
 import { footer } from "@/content/homepage";
 import { ArrowRight, Baby, Users, Globe, MapPin, Home, Compass, Luggage, Sparkles, Utensils, Camera, TreePine, GlassWater, Heart } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
@@ -567,6 +568,8 @@ function ItalyTimeline() {
 
 export default function FamilyTravel() {
   const heroRef = useRef<HTMLDivElement>(null);
+  // WHY: Modal state for destination timeline — tracks which destination card was clicked
+  const [activeDestination, setActiveDestination] = useState<string | null>(null);
 
   // SEO meta tags
   useEffect(() => {
@@ -955,33 +958,65 @@ export default function FamilyTravel() {
           </div>
 
           {/* 3-column grid — 9 destinations */}
+          {/* WHY: Cards with itinerary have a "View Sample Itinerary" button that opens a modal.
+              Italy has its own inline ItalyTimeline above; the other 8 use DestinationTimelineModal. */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {DESTINATIONS.map((dest, i) => (
-              <div key={i} className="group">
-                <div className="w-full h-64 overflow-hidden mb-5 relative">
-                  <div
-                    className="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-                    style={{ backgroundImage: `url(${dest.imageUrl})` }}
-                  />
-                  <div className="absolute top-4 left-4 bg-black/40 backdrop-blur-sm px-3 py-1">
-                    <span className="text-white/80 text-xs tracking-[0.15em] uppercase flex items-center gap-1.5">
-                      <MapPin size={10} />
-                      {dest.region}
-                    </span>
+            {DESTINATIONS.map((dest, i) => {
+              const hasTimeline = dest.name !== "Italy" && !!DESTINATION_ITINERARIES[dest.name];
+              return (
+                <div key={i} className="group flex flex-col">
+                  <div className="w-full h-64 overflow-hidden mb-5 relative">
+                    <div
+                      className="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                      style={{ backgroundImage: `url(${dest.imageUrl})` }}
+                    />
+                    <div className="absolute top-4 left-4 bg-black/40 backdrop-blur-sm px-3 py-1">
+                      <span className="text-white/80 text-xs tracking-[0.15em] uppercase flex items-center gap-1.5">
+                        <MapPin size={10} />
+                        {dest.region}
+                      </span>
+                    </div>
                   </div>
+                  <h3
+                    className="text-[#384959] text-2xl font-light mb-3 uppercase"
+                    style={{ fontFamily: FONT.heading, fontStyle: "normal" }}
+                  >
+                    {dest.name}
+                  </h3>
+                  <p className="text-[#2f2f2f] text-base leading-relaxed font-light mb-5 flex-1">
+                    {dest.description}
+                  </p>
+                  {hasTimeline && (
+                    <button
+                      onClick={() => setActiveDestination(dest.name)}
+                      className="group/btn flex items-center gap-2.5 text-[#384959] border border-[#384959] px-5 py-2.5 text-xs uppercase tracking-widest hover:bg-[#384959] hover:text-white transition-all duration-300 self-start"
+                      style={{ fontFamily: FONT.heading }}
+                    >
+                      View Sample Itinerary
+                      <ArrowRight size={12} className="group-hover/btn:translate-x-1 transition-transform" />
+                    </button>
+                  )}
+                  {dest.name === "Italy" && (
+                    <p
+                      className="text-[#bfaf8a] text-xs self-start"
+                      style={{ fontFamily: FONT.eyebrow, fontStyle: "italic", fontWeight: 500 }}
+                    >
+                      See the 9-day Italy timeline above ↑
+                    </p>
+                  )}
                 </div>
-                <h3
-                  className="text-[#384959] text-2xl font-light mb-3 uppercase"
-                  style={{ fontFamily: FONT.heading, fontStyle: "normal" }}
-                >
-                  {dest.name}
-                </h3>
-                <p className="text-[#2f2f2f] text-base leading-relaxed font-light">
-                  {dest.description}
-                </p>
-              </div>
-            ))}
+              );
+            })}
           </div>
+
+          {/* Destination timeline modals — one per destination */}
+          {activeDestination && (
+            <DestinationTimelineModal
+              destination={activeDestination}
+              open={!!activeDestination}
+              onClose={() => setActiveDestination(null)}
+            />
+          )}
         </div>
       </section>
 
