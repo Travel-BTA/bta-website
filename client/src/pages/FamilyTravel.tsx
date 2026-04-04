@@ -365,68 +365,81 @@ export default function FamilyTravel() {
       </section>
 
       {/* ── Age-group sections (alternating split layout) ─────────────────── */}
+      {/* WHY: On mobile we use a simple flex-col stack (image → text, no gap between).
+          On desktop (lg+) we switch to a 2-column grid with alternating image side.
+          This eliminates the dead-space bug caused by order + gap fighting on small screens. */}
       {AGE_GROUPS.map((group, idx) => {
         const Icon = group.icon;
         return (
-          <section key={idx} className="py-24 md:py-32 px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
+          <section key={idx} className="pt-0 pb-24 md:pb-32">
+            {/* Mobile: full-width image flush above section padding */}
             <div
-              className={`grid lg:grid-cols-2 gap-16 items-center ${
-                group.imageLeft ? "" : "lg:[&>div:first-child]:order-2 lg:[&>div:last-child]:order-1"
-              }`}
-            >
-              {/* Text column */}
-              <div>
-                <div className="flex items-center gap-3 mb-5">
-                  <Icon size={16} className="text-[#bfaf8a]" />
-                  <p
-                    className="text-[#bfaf8a] text-sm"
-                    style={{ fontFamily: FONT.eyebrow, fontWeight: 500, fontStyle: "italic" }}
-                  >
-                    {group.eyebrow}
-                  </p>
-                </div>
-                <h2
-                  className="text-[#384959] text-4xl md:text-5xl font-light leading-tight mb-7 uppercase"
-                  style={{ fontFamily: FONT.heading, fontStyle: "normal" }}
-                >
-                  {group.headline.split("\n").map((line, i) => (
-                    <span key={i}>
-                      {line}
-                      {i < group.headline.split("\n").length - 1 && <br />}
-                    </span>
-                  ))}
-                </h2>
-                <p className="text-[#2f2f2f] text-lg leading-relaxed mb-8 font-light">
-                  {group.body}
-                </p>
-                <ul className="space-y-4">
-                  {group.bullets.map((bullet, bi) => (
-                    <li key={bi} className="flex items-start gap-4">
-                      <div className="w-4 h-px bg-[#bfaf8a] mt-3 flex-shrink-0" />
-                      <span className="text-[#2f2f2f] text-base leading-relaxed font-light">{bullet}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              className="w-full h-72 sm:h-80 lg:hidden"
+              style={{
+                backgroundImage: `url(${group.imageUrl})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            />
 
-              {/* Image column — visible on all screen sizes.
-                  WHY: mobile was showing text-only because 'hidden lg:block' suppressed
-                  the photo below the lg breakpoint. Now shows as a full-width image on
-                  mobile (above the text via order-first) and as the split panel on desktop. */}
-              <div className="relative order-first lg:order-none">
-                <div
-                  className="w-full h-64 sm:h-80 lg:h-[500px]"
-                  style={{
-                    backgroundImage: `url(${group.imageUrl})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                  }}
-                />
-                {group.imageLeft ? (
-                  <div className="absolute -bottom-4 -right-4 w-24 h-1 bg-[#bfaf8a] hidden lg:block" />
-                ) : (
-                  <div className="absolute -bottom-4 -left-4 w-24 h-1 bg-[#bfaf8a] hidden lg:block" />
-                )}
+            {/* Content wrapper — adds padding only around text on mobile */}
+            <div className="px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
+              <div
+                className={`lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center ${
+                  group.imageLeft ? "" : "lg:[&>div:first-child]:order-2 lg:[&>div:last-child]:order-1"
+                }`}
+              >
+                {/* Text column */}
+                <div className="pt-10 lg:pt-0">
+                  <div className="flex items-center gap-3 mb-5">
+                    <Icon size={16} className="text-[#bfaf8a]" />
+                    <p
+                      className="text-[#bfaf8a] text-sm"
+                      style={{ fontFamily: FONT.eyebrow, fontWeight: 500, fontStyle: "italic" }}
+                    >
+                      {group.eyebrow}
+                    </p>
+                  </div>
+                  <h2
+                    className="text-[#384959] text-4xl md:text-5xl font-light leading-tight mb-7 uppercase"
+                    style={{ fontFamily: FONT.heading, fontStyle: "normal" }}
+                  >
+                    {group.headline.split("\n").map((line, i) => (
+                      <span key={i}>
+                        {line}
+                        {i < group.headline.split("\n").length - 1 && <br />}
+                      </span>
+                    ))}
+                  </h2>
+                  <p className="text-[#2f2f2f] text-lg leading-relaxed mb-8 font-light">
+                    {group.body}
+                  </p>
+                  <ul className="space-y-4">
+                    {group.bullets.map((bullet, bi) => (
+                      <li key={bi} className="flex items-start gap-4">
+                        <div className="w-4 h-px bg-[#bfaf8a] mt-3 flex-shrink-0" />
+                        <span className="text-[#2f2f2f] text-base leading-relaxed font-light">{bullet}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Desktop-only image column */}
+                <div className="relative hidden lg:block">
+                  <div
+                    className="w-full h-[500px]"
+                    style={{
+                      backgroundImage: `url(${group.imageUrl})`,
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                    }}
+                  />
+                  {group.imageLeft ? (
+                    <div className="absolute -bottom-4 -right-4 w-24 h-1 bg-[#bfaf8a]" />
+                  ) : (
+                    <div className="absolute -bottom-4 -left-4 w-24 h-1 bg-[#bfaf8a]" />
+                  )}
+                </div>
               </div>
             </div>
           </section>
