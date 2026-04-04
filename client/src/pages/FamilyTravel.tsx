@@ -5,11 +5,14 @@
  * WHY: Family travel is one of BTA's most requested service categories.
  * This page communicates the agency's expertise across all family types —
  * young children, teenagers, and multigenerational groups — using the same
- * luxury editorial design language as the Land Journey sub-pages.
+ * luxury editorial design language as the rest of the site.
  *
- * Content: Edit inline below. Images use Unsplash CDN for royalty-free assets.
- * Layout: Cinematic hero → intro split → age-group panels → destinations grid
- *         → accommodations → experiences → why BTA → final CTA
+ * Typography:
+ *   - All headings (h1, h2, h3): 'Instrument Serif', serif — light weight, elegant
+ *   - Eyebrow labels: 'Playfair Display', serif — weight 500, italic, gold, tracked
+ *   - Body copy: system sans-serif stack, font-light
+ *
+ * Images: Janet's uploaded photos (CDN) + Unsplash for destinations not covered.
  */
 
 import NavBar from "@/components/NavBar";
@@ -18,26 +21,52 @@ import { ArrowRight, Baby, Users, Globe, MapPin } from "lucide-react";
 import { useEffect, useRef } from "react";
 import { Link } from "wouter";
 
-// ── Image URLs ─────────────────────────────────────────────────────────────
-// All images are from Unsplash (royalty-free). Replace any URL with a
-// CloudFront-hosted asset once available in the media library.
-const IMAGES = {
-  hero: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1920&q=85&auto=format&fit=crop",
-  intro: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=900&q=85&auto=format&fit=crop",
-  youngChildren: "https://images.unsplash.com/photo-1503220317375-aaad61436b1b?w=900&q=85&auto=format&fit=crop",
-  teenagers: "https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=900&q=85&auto=format&fit=crop",
-  multigenerational: "https://images.unsplash.com/photo-1511895426328-dc8714191011?w=900&q=85&auto=format&fit=crop",
-  accommodations: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=900&q=85&auto=format&fit=crop",
-  experiences: "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=900&q=85&auto=format&fit=crop",
-  cta: "https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=1920&q=85&auto=format&fit=crop",
-  // Destination images
-  italy: "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=800&q=80&auto=format&fit=crop",
-  costaRica: "https://images.unsplash.com/photo-1518259102261-b40117eabbc9?w=800&q=80&auto=format&fit=crop",
-  japan: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800&q=80&auto=format&fit=crop",
-  southAfrica: "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&q=80&auto=format&fit=crop",
-  hawaii: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80&auto=format&fit=crop",
-  europe: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800&q=80&auto=format&fit=crop",
+// ── CDN image URLs ─────────────────────────────────────────────────────────
+// Janet's uploaded photos (Manus CDN — permanent):
+const CDN = {
+  familyBeach:       "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/wXVbMyseEaNXhhWW.jpg",
+  costaRicaKayak:    "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/kRsvJFPLBTtRLtDJ.jpg",
+  italyVenice:       "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/vffZjZaZyJeIONSB.jpg",
+  thailandElephant:  "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/XVaYiUfdLMyvtpWJ.jpg",
+  icelandWaterfall:  "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/XstSWWeGpNaXPXhd.jpg",
+  fijiPool:          "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/jgMUTHJPGDhVRPwt.jpg",
 };
+
+// Unsplash for sections / destinations not covered by uploaded photos:
+const UNS = {
+  hero:              "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1920&q=85&auto=format&fit=crop",
+  multigenerational: "https://images.unsplash.com/photo-1511895426328-dc8714191011?w=900&q=85&auto=format&fit=crop",
+  accommodations:    "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=900&q=85&auto=format&fit=crop",
+  experiences:       "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=900&q=85&auto=format&fit=crop",
+  cta:               "https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=1920&q=85&auto=format&fit=crop",
+  // Destination images
+  japan:             "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800&q=80&auto=format&fit=crop",
+  southAfrica:       "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&q=80&auto=format&fit=crop",
+  hawaii:            "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80&auto=format&fit=crop",
+  france:            "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800&q=80&auto=format&fit=crop",
+};
+
+// ── Typography helper ──────────────────────────────────────────────────────
+// WHY: Centralise font-family strings so a single edit updates the whole page.
+const FONT = {
+  heading: "'Instrument Serif', 'Georgia', serif",
+  eyebrow: "'Playfair Display', 'Georgia', serif",
+};
+
+// ── Eyebrow component ──────────────────────────────────────────────────────
+// Playfair Display 500 italic, gold, tracked — used above every section title.
+function Eyebrow({ children, light = false }: { children: React.ReactNode; light?: boolean }) {
+  return (
+    <p
+      className={`tracking-[0.25em] text-xs uppercase mb-4 font-medium italic ${
+        light ? "text-[#BFAF8A]" : "text-[#bfaf8a]"
+      }`}
+      style={{ fontFamily: FONT.eyebrow, fontWeight: 500, fontStyle: "italic" }}
+    >
+      {children}
+    </p>
+  );
+}
 
 // ── Age-group section data ─────────────────────────────────────────────────
 const AGE_GROUPS = [
@@ -52,7 +81,8 @@ const AGE_GROUPS = [
       "Access to vetted childcare services and professionally run kids programs",
       "Engaging experiences such as interactive museums, nature outings, and cultural storytelling",
     ],
-    imageUrl: IMAGES.youngChildren,
+    // Janet's family beach photo — perfect for young children section
+    imageUrl: CDN.familyBeach,
     imageLeft: false,
   },
   {
@@ -66,7 +96,8 @@ const AGE_GROUPS = [
       "Hands-on experiences including cooking classes, artisan workshops, and cultural immersion",
       "Time built into the itinerary for independence and personal exploration",
     ],
-    imageUrl: IMAGES.teenagers,
+    // Thailand elephant encounter — perfect for teen adventure
+    imageUrl: CDN.thailandElephant,
     imageLeft: true,
   },
   {
@@ -80,54 +111,76 @@ const AGE_GROUPS = [
       "Private guides and drivers who can adjust plans as needed",
       "Experiences that encourage connection, from shared meals to meaningful cultural encounters",
     ],
-    imageUrl: IMAGES.multigenerational,
+    imageUrl: UNS.multigenerational,
     imageLeft: false,
   },
 ];
 
 // ── Destination data ───────────────────────────────────────────────────────
+// 9 destinations: Janet's requested additions (Iceland, Thailand, Fiji, France, Italy) + originals
 const DESTINATIONS = [
   {
     name: "Italy",
     region: "Europe",
     description:
       "Ideal for multigenerational travel, Italy offers villa stays, private boat outings, cooking classes, history, and family-friendly culture in destinations such as Tuscany, Lake Como, Puglia, and the Amalfi Coast.",
-    imageUrl: IMAGES.italy,
+    imageUrl: CDN.italyVenice,
+  },
+  {
+    name: "France",
+    region: "Europe",
+    description:
+      "From Paris to Provence and the Côte d'Azur, France offers extraordinary variety for families — private château stays, lavender fields, world-class museums, and coastal villages that feel made for slow, memorable travel.",
+    imageUrl: UNS.france,
+  },
+  {
+    name: "Iceland",
+    region: "Northern Europe",
+    description:
+      "An extraordinary destination for families who want to experience something truly different — waterfalls, geysers, glaciers, the Northern Lights, and a sense of wonder that stays with children long after they return home.",
+    imageUrl: CDN.icelandWaterfall,
+  },
+  {
+    name: "Thailand",
+    region: "Southeast Asia",
+    description:
+      "Warm, welcoming, and endlessly varied, Thailand offers elephant sanctuaries, temple visits, cooking classes, island beaches, and some of the most family-friendly luxury resorts in the world.",
+    imageUrl: CDN.thailandElephant,
+  },
+  {
+    name: "Fiji",
+    region: "South Pacific",
+    description:
+      "One of the most beautiful places on earth for families, with overwater bungalows, pristine reefs, private island resorts, and a culture of warmth and hospitality that makes every guest feel genuinely welcomed.",
+    imageUrl: CDN.fijiPool,
   },
   {
     name: "Costa Rica",
     region: "Central America",
     description:
       "A wonderful choice for active families, with wildlife, beaches, zip lining, surfing, rainforest lodges, and guides who are wonderful with children and teens.",
-    imageUrl: IMAGES.costaRica,
+    imageUrl: CDN.costaRicaKayak,
   },
   {
     name: "Japan",
     region: "Asia",
     description:
       "An excellent option for families seeking culture, safety, and variety, with experiences ranging from private sushi workshops and temple visits to modern city exploration and countryside stays.",
-    imageUrl: IMAGES.japan,
-  },
-  {
-    name: "England & France",
-    region: "Europe",
-    description:
-      "Well suited to families who enjoy history, gardens, museums, and city experiences, with opportunities for private tours tailored to children and teenagers.",
-    imageUrl: IMAGES.europe,
+    imageUrl: UNS.japan,
   },
   {
     name: "South Africa",
     region: "Africa",
     description:
       "One of the most memorable choices for families, particularly when safari is paired with Cape Town and the Winelands. Many lodges offer family programs, private guides, and educational wildlife experiences.",
-    imageUrl: IMAGES.southAfrica,
+    imageUrl: UNS.southAfrica,
   },
   {
     name: "Hawaii",
     region: "United States",
     description:
       "A reliable favorite for families seeking ease, beauty, and a wide range of accommodations, from resorts with excellent family facilities to private residences.",
-    imageUrl: IMAGES.hawaii,
+    imageUrl: UNS.hawaii,
   },
 ];
 
@@ -165,10 +218,12 @@ const WHY_BTA = [
   },
 ];
 
+// ─────────────────────────────────────────────────────────────────────────────
+
 export default function FamilyTravel() {
   const heroRef = useRef<HTMLDivElement>(null);
 
-  // Set SEO meta tags on mount
+  // SEO meta tags
   useEffect(() => {
     document.title = "Family Travel | Boutique Travel Advisors";
     const meta = document.querySelector('meta[name="description"]');
@@ -203,24 +258,25 @@ export default function FamilyTravel() {
           ref={heroRef}
           className="absolute inset-0 scale-110"
           style={{
-            backgroundImage: `url(${IMAGES.hero})`,
+            backgroundImage: `url(${UNS.hero})`,
             backgroundSize: "cover",
             backgroundPosition: "center 40%",
           }}
         />
-        {/* Gradient overlay — darker at bottom for legibility */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/70" />
 
         <div className="relative z-10 h-full flex flex-col justify-end pb-20 px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
+          {/* Eyebrow — Playfair Display 500 italic */}
           <p
-            className="text-[#BFAF8A] tracking-[0.3em] text-sm uppercase mb-4"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+            className="text-[#BFAF8A] tracking-[0.3em] text-sm uppercase mb-4 font-medium italic"
+            style={{ fontFamily: FONT.eyebrow, fontWeight: 500, fontStyle: "italic" }}
           >
             Experiences · Family Travel
           </p>
+          {/* H1 — Instrument Serif */}
           <h1
             className="text-white text-5xl md:text-6xl lg:text-7xl font-light leading-[1.05] mb-6 max-w-3xl"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+            style={{ fontFamily: FONT.heading }}
           >
             Travel Designed for<br />Every Generation
           </h1>
@@ -234,19 +290,14 @@ export default function FamilyTravel() {
         </div>
       </section>
 
-      {/* ── Intro ────────────────────────────────────────────────────────── */}
+      {/* ── Intro split ──────────────────────────────────────────────────── */}
       <section className="py-24 md:py-32 px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <p
-              className="text-[#bfaf8a] tracking-[0.25em] text-xs uppercase mb-4"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
-            >
-              The BTA Approach
-            </p>
+            <Eyebrow>The BTA Approach</Eyebrow>
             <h2
               className="text-[#384959] text-4xl md:text-5xl font-light leading-tight mb-8"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              style={{ fontFamily: FONT.heading }}
             >
               Thoughtful Planning,<br />Tailored to Your Family
             </h2>
@@ -263,16 +314,16 @@ export default function FamilyTravel() {
               </button>
             </Link>
           </div>
+          {/* Janet's family beach photo as the intro image */}
           <div className="relative hidden lg:block">
             <div
-              className="w-full h-[500px]"
+              className="w-full h-[520px]"
               style={{
-                backgroundImage: `url(${IMAGES.intro})`,
+                backgroundImage: `url(${CDN.familyBeach})`,
                 backgroundSize: "cover",
-                backgroundPosition: "center",
+                backgroundPosition: "center top",
               }}
             />
-            {/* Decorative gold accent */}
             <div className="absolute -bottom-4 -left-4 w-24 h-1 bg-[#bfaf8a]" />
             <div className="absolute -top-4 -right-4 w-16 h-16 border-t-2 border-r-2 border-[#bfaf8a]" />
           </div>
@@ -293,7 +344,7 @@ export default function FamilyTravel() {
                 <div className="w-8 h-px bg-[#BFAF8A] mx-auto mb-5" />
                 <h3
                   className="text-white text-lg font-light mb-2"
-                  style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                  style={{ fontFamily: FONT.heading }}
                 >
                   {item.label}
                 </h3>
@@ -308,12 +359,7 @@ export default function FamilyTravel() {
       {AGE_GROUPS.map((group, idx) => {
         const Icon = group.icon;
         return (
-          <section
-            key={idx}
-            className={`py-24 md:py-32 px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto ${
-              idx % 2 === 1 ? "" : ""
-            }`}
-          >
+          <section key={idx} className="py-24 md:py-32 px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
             <div
               className={`grid lg:grid-cols-2 gap-16 items-center ${
                 group.imageLeft ? "" : "lg:[&>div:first-child]:order-2 lg:[&>div:last-child]:order-1"
@@ -324,15 +370,15 @@ export default function FamilyTravel() {
                 <div className="flex items-center gap-3 mb-5">
                   <Icon size={16} className="text-[#bfaf8a]" />
                   <p
-                    className="text-[#bfaf8a] tracking-[0.25em] text-xs uppercase"
-                    style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                    className="text-[#bfaf8a] tracking-[0.25em] text-xs uppercase font-medium italic"
+                    style={{ fontFamily: FONT.eyebrow, fontWeight: 500, fontStyle: "italic" }}
                   >
                     {group.eyebrow}
                   </p>
                 </div>
                 <h2
                   className="text-[#384959] text-4xl md:text-5xl font-light leading-tight mb-7"
-                  style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                  style={{ fontFamily: FONT.heading }}
                 >
                   {group.headline.split("\n").map((line, i) => (
                     <span key={i}>
@@ -357,7 +403,7 @@ export default function FamilyTravel() {
               {/* Image column */}
               <div className="relative hidden lg:block">
                 <div
-                  className="w-full h-[480px]"
+                  className="w-full h-[500px]"
                   style={{
                     backgroundImage: `url(${group.imageUrl})`,
                     backgroundSize: "cover",
@@ -379,15 +425,10 @@ export default function FamilyTravel() {
       <section className="py-24 bg-[#f3f0eb]">
         <div className="px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
           <div className="text-center mb-16">
-            <p
-              className="text-[#bfaf8a] tracking-[0.25em] text-xs uppercase mb-4"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
-            >
-              Favorite Family Destinations
-            </p>
+            <Eyebrow>Favorite Family Destinations</Eyebrow>
             <h2
               className="text-[#384959] text-4xl md:text-5xl font-light"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              style={{ fontFamily: FONT.heading }}
             >
               Where Families Thrive
             </h2>
@@ -396,6 +437,7 @@ export default function FamilyTravel() {
             </p>
           </div>
 
+          {/* 3-column grid — 9 destinations */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {DESTINATIONS.map((dest, i) => (
               <div key={i} className="group">
@@ -404,7 +446,6 @@ export default function FamilyTravel() {
                     className="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
                     style={{ backgroundImage: `url(${dest.imageUrl})` }}
                   />
-                  {/* Region badge */}
                   <div className="absolute top-4 left-4 bg-black/40 backdrop-blur-sm px-3 py-1">
                     <span className="text-white/80 text-xs tracking-[0.15em] uppercase flex items-center gap-1.5">
                       <MapPin size={10} />
@@ -414,7 +455,7 @@ export default function FamilyTravel() {
                 </div>
                 <h3
                   className="text-[#384959] text-2xl font-light mb-3"
-                  style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                  style={{ fontFamily: FONT.heading }}
                 >
                   {dest.name}
                 </h3>
@@ -430,11 +471,12 @@ export default function FamilyTravel() {
       {/* ── Accommodations split section ──────────────────────────────────── */}
       <section className="py-24 md:py-32 px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
+          {/* Fiji pool photo — perfect for accommodations */}
           <div className="relative hidden lg:block">
             <div
-              className="w-full h-[500px]"
+              className="w-full h-[520px]"
               style={{
-                backgroundImage: `url(${IMAGES.accommodations})`,
+                backgroundImage: `url(${CDN.fijiPool})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
@@ -443,15 +485,10 @@ export default function FamilyTravel() {
             <div className="absolute -bottom-4 -right-4 w-24 h-1 bg-[#bfaf8a]" />
           </div>
           <div>
-            <p
-              className="text-[#bfaf8a] tracking-[0.25em] text-xs uppercase mb-4"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
-            >
-              Our Approach to Accommodations
-            </p>
+            <Eyebrow>Our Approach to Accommodations</Eyebrow>
             <h2
               className="text-[#384959] text-4xl md:text-5xl font-light leading-tight mb-7"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              style={{ fontFamily: FONT.heading }}
             >
               Where You Stay Shapes<br />the Entire Experience
             </h2>
@@ -486,15 +523,10 @@ export default function FamilyTravel() {
         <div className="px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <p
-                className="text-[#BFAF8A] tracking-[0.25em] text-xs uppercase mb-4"
-                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
-              >
-                Curated Experiences
-              </p>
+              <Eyebrow light>Curated Experiences</Eyebrow>
               <h2
                 className="text-white text-4xl md:text-5xl font-light leading-tight mb-7"
-                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                style={{ fontFamily: FONT.heading }}
               >
                 Experiences That Go<br />Beyond the Expected
               </h2>
@@ -517,11 +549,12 @@ export default function FamilyTravel() {
                 ))}
               </ul>
             </div>
+            {/* Costa Rica kayak aerial — dramatic, adventurous */}
             <div className="relative hidden lg:block">
               <div
                 className="w-full h-[520px]"
                 style={{
-                  backgroundImage: `url(${IMAGES.experiences})`,
+                  backgroundImage: `url(${CDN.costaRicaKayak})`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
@@ -536,15 +569,10 @@ export default function FamilyTravel() {
       {/* ── Why Families Work With BTA ────────────────────────────────────── */}
       <section className="py-24 md:py-32 px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
         <div className="text-center mb-16">
-          <p
-            className="text-[#bfaf8a] tracking-[0.25em] text-xs uppercase mb-4"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
-          >
-            Why Families Work With BTA
-          </p>
+          <Eyebrow>Why Families Work With BTA</Eyebrow>
           <h2
             className="text-[#384959] text-4xl md:text-5xl font-light"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+            style={{ fontFamily: FONT.heading }}
           >
             More Than a Hotel<br />and a Few Reservations
           </h2>
@@ -559,7 +587,7 @@ export default function FamilyTravel() {
               <div className="w-8 h-px bg-[#bfaf8a] mb-6" />
               <h3
                 className="text-[#384959] text-xl font-light mb-4"
-                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                style={{ fontFamily: FONT.heading }}
               >
                 {item.title}
               </h3>
@@ -569,11 +597,40 @@ export default function FamilyTravel() {
         </div>
       </section>
 
+      {/* ── Iceland photo banner — full-width editorial break ─────────────── */}
+      <section className="relative h-[50vh] min-h-[340px] overflow-hidden">
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `url(${CDN.icelandWaterfall})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center 30%",
+          }}
+        />
+        <div className="absolute inset-0 bg-[#384959]/50" />
+        <div className="relative z-10 h-full flex items-center justify-center text-center px-8">
+          <div>
+            <p
+              className="text-[#BFAF8A] tracking-[0.3em] text-sm uppercase mb-4 font-medium italic"
+              style={{ fontFamily: FONT.eyebrow, fontWeight: 500, fontStyle: "italic" }}
+            >
+              Iceland
+            </p>
+            <h2
+              className="text-white text-4xl md:text-5xl font-light"
+              style={{ fontFamily: FONT.heading }}
+            >
+              Some Destinations Change<br />the Way Children See the World
+            </h2>
+          </div>
+        </div>
+      </section>
+
       {/* ── Final CTA ────────────────────────────────────────────────────── */}
       <section
         className="relative py-40 overflow-hidden"
         style={{
-          backgroundImage: `url(${IMAGES.cta})`,
+          backgroundImage: `url(${UNS.cta})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundAttachment: "fixed",
@@ -582,14 +639,14 @@ export default function FamilyTravel() {
         <div className="absolute inset-0 bg-[#384959]/75" />
         <div className="relative z-10 text-center px-8">
           <p
-            className="text-[#BFAF8A] tracking-[0.3em] text-sm uppercase mb-6"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+            className="text-[#BFAF8A] tracking-[0.3em] text-sm uppercase mb-6 font-medium italic"
+            style={{ fontFamily: FONT.eyebrow, fontWeight: 500, fontStyle: "italic" }}
           >
             Begin Your Family Journey
           </p>
           <h2
             className="text-white text-5xl md:text-6xl font-light mb-6 leading-tight"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+            style={{ fontFamily: FONT.heading }}
           >
             Let Us Create a Journey<br />Worth Remembering
           </h2>
