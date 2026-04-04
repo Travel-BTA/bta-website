@@ -94,15 +94,17 @@ export default function LandJourneys() {
       <section className="py-24 md:py-32 px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
+            {/* Eyebrow: Cormorant Garamond italic subtitle */}
             <p
-              className="text-[#bfaf8a] tracking-[0.25em] text-xs uppercase mb-4"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              className="text-[#bfaf8a] text-xl italic mb-3"
+              style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontWeight: 400 }}
             >
               {landJourneysIntro.eyebrow}
             </p>
+            {/* H1-style section title: Instrument Serif, uppercase */}
             <h2
-              className="text-[#384959] text-4xl md:text-5xl font-light leading-tight mb-8"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              className="text-[#384959] text-4xl md:text-5xl leading-tight mb-8 uppercase tracking-wide"
+              style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400 }}
             >
               {landJourneysIntro.headline}
             </h2>
@@ -190,15 +192,17 @@ export default function LandJourneys() {
       <section className="py-24 md:py-32 bg-[#384959]">
         <div className="px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
           <div className="text-center mb-20">
+            {/* Eyebrow: Cormorant Garamond italic subtitle */}
             <p
-              className="text-[#BFAF8A] tracking-[0.25em] text-xs uppercase mb-4"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              className="text-[#BFAF8A] text-xl italic mb-3"
+              style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontWeight: 400 }}
             >
               {landJourneysProcess.eyebrow}
             </p>
+            {/* H1-style section title: Instrument Serif, uppercase */}
             <h2
-              className="text-white text-4xl md:text-5xl font-light"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              className="text-white text-4xl md:text-5xl uppercase tracking-wide"
+              style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400 }}
             >
               {landJourneysProcess.headline}
             </h2>
@@ -251,15 +255,17 @@ export default function LandJourneys() {
 
           {/* Content */}
           <div>
+            {/* Eyebrow: Cormorant Garamond italic subtitle */}
             <p
-              className="text-[#bfaf8a] tracking-[0.25em] text-xs uppercase mb-4"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              className="text-[#bfaf8a] text-xl italic mb-3"
+              style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontWeight: 400 }}
             >
               {landJourneysFeaturedJourney.eyebrow}
             </p>
+            {/* H1-style section title: Instrument Serif, uppercase */}
             <h2
-              className="text-[#384959] text-4xl md:text-5xl font-light leading-tight mb-6"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              className="text-[#384959] text-4xl md:text-5xl leading-tight mb-6 uppercase tracking-wide"
+              style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400 }}
             >
               {landJourneysFeaturedJourney.headline}
             </h2>
@@ -298,15 +304,17 @@ export default function LandJourneys() {
       <section className="py-24 bg-[#faf9f6]">
         <div className="px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
           <div className="text-center mb-16">
+            {/* Eyebrow: Cormorant Garamond italic subtitle */}
             <p
-              className="text-[#bfaf8a] tracking-[0.25em] text-xs uppercase mb-4"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              className="text-[#bfaf8a] text-xl italic mb-3"
+              style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontWeight: 400 }}
             >
               {landJourneysExperiences.eyebrow}
             </p>
+            {/* H1-style section title: Instrument Serif, uppercase */}
             <h2
-              className="text-[#384959] text-4xl md:text-5xl font-light"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              className="text-[#384959] text-4xl md:text-5xl leading-tight mb-8 uppercase tracking-wide"
+              style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400 }}
             >
               {landJourneysExperiences.headline}
             </h2>

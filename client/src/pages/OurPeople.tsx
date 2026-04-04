@@ -107,8 +107,10 @@ function AdvisorCard({ advisor }: { advisor: Advisor }) {
       <div className="pt-5 pb-2">
         {/* Thin gold rule. expands on hover */}
         <div className="w-6 h-px bg-[#bfaf8a] mb-3 transition-all duration-500 group-hover:w-12" />
+        {/* Advisor name: Playfair Display Medium, steel blue — readable, not all-caps smallcaps */}
         <p
-          className="text-[#2F2F2F] font-smallcaps text-[0.72rem] tracking-[0.18em] uppercase leading-snug group-hover:text-[#bfaf8a] transition-colors duration-300"
+          className="text-[#384959] leading-snug group-hover:text-[#bfaf8a] transition-colors duration-300"
+          style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 500, fontSize: "0.9rem" }}
         >
           {advisor.name}
         </p>

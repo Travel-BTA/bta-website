@@ -100,3 +100,10 @@
 - [x] Push latest changes to GitHub (user_github remote) — synced via checkpoint
 - [ ] Audit all pages for non-BTA-standard fonts, heading weights, and colors
 - [ ] Fix all pages with incorrect typography
+
+## Typography Hierarchy Fixes (Janet screenshots Apr 3)
+- [x] Land Journeys: "Africa: The Great Migration" → H1 Instrument Serif; "FEATURED JOURNEY" → Cormorant Garamond italic subtitle
+- [x] Land Journeys: "Your Journey, Designed Around You" → H1 Instrument Serif; "HOW WE WORK" → Cormorant Garamond italic subtitle
+- [x] Experiences/WhoWeAre: "Travel That Moves You" → H1 Instrument Serif; "BESPOKE BY DESIGN" → Cormorant Garamond italic subtitle
+- [x] About/OurPeople: advisor name labels → Playfair Display Medium steel blue (not all-caps smallcaps)
+- [x] Cruises Hub: category labels (ULTRA-LUXURY, PREMIUM, RIVER) → Playfair Display subtitle style

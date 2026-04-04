@@ -259,8 +259,11 @@ export default function CruisesHub() {
 
                   {/* Bottom text block. eyebrow sits above title inside the block to prevent overlap */}
                   <div className="absolute bottom-0 left-0 right-0 px-5 pb-5 md:px-8 md:pb-8">
-                    {/* Eyebrow: white on photo. Champagne Gold only on plain backgrounds */}
-                    <p className="text-white/70 text-[10px] tracking-[0.25em] uppercase mb-1.5" style={{ fontFamily: F.instrument }}>
+                    {/* Eyebrow: Playfair Display italic subtitle — not smallcaps/uppercase, per Janet's request */}
+                    <p
+                      className="text-white/80 text-sm italic mb-2"
+                      style={{ fontFamily: F.playfair, fontWeight: 400 }}
+                    >
                       {cat.eyebrow}
                     </p>
                     {/* H3 card title: Instrument Serif ALL CAPS white */}
