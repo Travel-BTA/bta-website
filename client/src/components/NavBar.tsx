@@ -43,16 +43,20 @@ const CRUISES_SUBMENU = [
 ];
 
 // WHY: Renamed from "Our Team" to "About Us" per Janet's request.
-// Press moved here from primary nav to keep the top bar clean.
+// Client-facing items (Contact Us, Pricing, FAQ) appear first so clients find them immediately.
+// Company and advisor items follow below.
 const ABOUT_SUBMENU = [
+  // ── Client-facing ──────────────────────────────────────────────────────────
+  { label: "Contact Us",                    href: "/contact-us" },
+  { label: "Pricing",                       href: "/pricing" },
+  { label: "FAQ",                           href: "/faq" },
+  // ── Company & Advisor ──────────────────────────────────────────────────────
   { label: "Our Team",                      href: "/about" },
   { label: "We Give Back",                  href: "/about/philanthropic-initiatives" },
+  { label: "Press",                         href: "/press" },
   { label: "Hotel Specialist Program",      href: "/hotel-specialist-program" },
   { label: "Hotel Collection Application",  href: "/hotel-collection-application" },
   { label: "Advisor Programs",              href: "/advisor-programs" },
-  { label: "Pricing",                       href: "/pricing" },
-  { label: "Press",                         href: "/press" },
-  { label: "Contact Us",                    href: "/contact-us" },
 ];
 
 // Shared dropdown panel styles
