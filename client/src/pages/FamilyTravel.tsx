@@ -30,6 +30,11 @@ const CDN = {
   thailandElephant:  "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/XVaYiUfdLMyvtpWJ.jpg",
   icelandWaterfall:  "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/XstSWWeGpNaXPXhd.jpg",
   fijiPool:          "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/jgMUTHJPGDhVRPwt.jpg",
+  // New photos from Janet (Apr 2026):
+  franceSeine:       "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/QlJufeKDhrsRXhjQ.jpg",
+  youngChildrenGladiator: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/PWcuHQqNrzfXGoHd.jpg",
+  teensKayak:        "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/tbPzfzZeuafYHJfi.jpg",
+  multigenSafari:    "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/ELgTElGtHWcRdwrV.jpg",
 };
 
 // Unsplash for sections / destinations not covered by uploaded photos:
@@ -81,8 +86,8 @@ const AGE_GROUPS = [
       "Access to vetted childcare services and professionally run kids programs",
       "Engaging experiences such as interactive museums, nature outings, and cultural storytelling",
     ],
-    // Janet's family beach photo — perfect for young children section
-    imageUrl: CDN.familyBeach,
+    // Gladiator experience at the Colosseum — captures the magic of travel for young children
+    imageUrl: CDN.youngChildrenGladiator,
     imageLeft: false,
   },
   {
@@ -96,8 +101,8 @@ const AGE_GROUPS = [
       "Hands-on experiences including cooking classes, artisan workshops, and cultural immersion",
       "Time built into the itinerary for independence and personal exploration",
     ],
-    // Thailand elephant encounter — perfect for teen adventure
-    imageUrl: CDN.thailandElephant,
+    // Kayaking through jungle river — immersive teen adventure
+    imageUrl: CDN.teensKayak,
     imageLeft: true,
   },
   {
@@ -111,7 +116,8 @@ const AGE_GROUPS = [
       "Private guides and drivers who can adjust plans as needed",
       "Experiences that encourage connection, from shared meals to meaningful cultural encounters",
     ],
-    imageUrl: UNS.multigenerational,
+    // Safari game drive — the ultimate multigenerational shared experience
+    imageUrl: CDN.multigenSafari,
     imageLeft: false,
   },
 ];
@@ -131,7 +137,8 @@ const DESTINATIONS = [
     region: "Europe",
     description:
       "From Paris to Provence and the Côte d'Azur, France offers extraordinary variety for families — private château stays, lavender fields, world-class museums, and coastal villages that feel made for slow, memorable travel.",
-    imageUrl: UNS.france,
+    // Family on private boat on the Seine at dusk with Eiffel Tower — quintessential Paris
+    imageUrl: CDN.franceSeine,
   },
   {
     name: "Iceland",
