@@ -17,7 +17,7 @@
 
 import NavBar from "@/components/NavBar";
 import { footer } from "@/content/homepage";
-import { ArrowRight, Baby, Users, Globe, MapPin } from "lucide-react";
+import { ArrowRight, Baby, Users, Globe, MapPin, Home, Compass, Luggage, Sparkles, Utensils, Camera, TreePine, GlassWater, Heart } from "lucide-react";
 import { useEffect, useRef } from "react";
 import { Link } from "wouter";
 
@@ -432,6 +432,157 @@ export default function FamilyTravel() {
           </section>
         );
       })}
+
+      {/* ── Comparison Matrix: The Right Trip for Every Age ─────────────── */}
+      {/* WHY: Graphic icon-tile matrix — shows at a glance how BTA tailors Italy
+          for each family type. Minimal text, maximum visual clarity. */}
+      <section className="py-24 md:py-32 bg-[#041E42]">
+        <div className="px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
+
+          {/* Header */}
+          <div className="text-center mb-16">
+            <p
+              className="text-[#BFAF8A] text-sm mb-4"
+              style={{ fontFamily: FONT.eyebrow, fontWeight: 500, fontStyle: "italic" }}
+            >
+              One Destination, Three Journeys
+            </p>
+            <h2
+              className="text-white text-4xl md:text-5xl font-light uppercase mb-4"
+              style={{ fontFamily: FONT.heading, fontStyle: "normal" }}
+            >
+              The Right Trip for Every Age
+            </h2>
+            <p className="text-white/50 text-base font-light">
+              Italy — curated three ways
+            </p>
+          </div>
+
+          {/* ── Matrix grid ─────────────────────────────────────────────────── */}
+          {/* Structure: sticky row-label column + 3 audience columns */}
+          <div className="overflow-x-auto -mx-4 px-4">
+            <div className="min-w-[640px]">
+
+              {/* Column headers */}
+              <div className="grid grid-cols-4 mb-2">
+                <div />{/* empty row-label cell */}
+                {[
+                  { label: "Young Children", sub: "Ages 3–10",        Icon: Baby },
+                  { label: "Teenagers",       sub: "Ages 11–17",       Icon: Compass },
+                  { label: "Multigenerational", sub: "All Ages",       Icon: Users },
+                ].map(({ label, sub, Icon }, ci) => (
+                  <div key={ci} className="text-center pb-6 px-3">
+                    <div className="flex justify-center mb-3">
+                      <div className="w-10 h-10 rounded-full border border-[#BFAF8A]/40 flex items-center justify-center">
+                        <Icon size={18} className="text-[#BFAF8A]" />
+                      </div>
+                    </div>
+                    <p
+                      className="text-white text-sm font-light uppercase tracking-widest"
+                      style={{ fontFamily: FONT.heading }}
+                    >
+                      {label}
+                    </p>
+                    <p
+                      className="text-[#BFAF8A] text-xs mt-1"
+                      style={{ fontFamily: FONT.eyebrow, fontStyle: "italic", fontWeight: 500 }}
+                    >
+                      {sub}
+                    </p>
+                  </div>
+                ))}
+              </div>
+
+              {/* Rows */}
+              {[
+                {
+                  rowLabel: "Where You Stay",
+                  RowIcon: Home,
+                  cells: [
+                    { Icon: TreePine,  label: "Tuscany Villa",        note: "Private pool · connecting rooms" },
+                    { Icon: Home,      label: "Rome Boutique Hotel",   note: "Rooftop terrace · city access" },
+                    { Icon: GlassWater, label: "Umbrian Estate",       note: "Private chef · multi-wing" },
+                  ],
+                },
+                {
+                  rowLabel: "Signature Experience",
+                  RowIcon: Sparkles,
+                  cells: [
+                    { Icon: Sparkles,  label: "Gladiator School",      note: "Colosseum arena · pasta class" },
+                    { Icon: Camera,    label: "Photography Tour",      note: "Trastevere · Ferrari factory" },
+                    { Icon: Utensils,  label: "Vatican & Wine",        note: "Private guide · sunset terrace" },
+                  ],
+                },
+                {
+                  rowLabel: "Logistics",
+                  RowIcon: Luggage,
+                  cells: [
+                    { Icon: Baby,      label: "Car Seats Confirmed",   note: "Stroller routes · rest built in" },
+                    { Icon: Compass,   label: "Flexible Schedule",     note: "Downtime · local SIM" },
+                    { Icon: Luggage,   label: "One Point of Contact",  note: "Luggage handled · accessible" },
+                  ],
+                },
+                {
+                  rowLabel: "The Memory",
+                  RowIcon: Heart,
+                  cells: [
+                    { Icon: Heart,     label: "Best Day of Their Life", note: "Gladiator helmet moment" },
+                    { Icon: Compass,   label: "Already Planning Next",  note: "Reluctant teen → convert" },
+                    { Icon: Users,     label: "Long Lunch Under Olives", note: "Three generations, one table" },
+                  ],
+                },
+              ].map(({ rowLabel, RowIcon, cells }, ri) => (
+                <div key={ri} className="grid grid-cols-4 border-t border-white/10">
+                  {/* Row label */}
+                  <div className="flex items-center gap-2 py-6 pr-4">
+                    <RowIcon size={14} className="text-[#BFAF8A] flex-shrink-0" />
+                    <p
+                      className="text-[#BFAF8A] text-xs tracking-widest"
+                      style={{ fontFamily: FONT.eyebrow, fontStyle: "italic", fontWeight: 500 }}
+                    >
+                      {rowLabel}
+                    </p>
+                  </div>
+                  {/* Cells */}
+                  {cells.map(({ Icon: CellIcon, label, note }, ci) => (
+                    <div
+                      key={ci}
+                      className={`py-6 px-3 flex flex-col items-center text-center ${
+                        ci === 1 ? "border-x border-white/10" : ""
+                      }`}
+                    >
+                      <div className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center mb-3">
+                        <CellIcon size={16} className="text-white/60" />
+                      </div>
+                      <p
+                        className="text-white text-sm font-light uppercase tracking-wide mb-1"
+                        style={{ fontFamily: FONT.heading }}
+                      >
+                        {label}
+                      </p>
+                      <p className="text-white/40 text-xs font-light leading-snug">
+                        {note}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              ))}
+
+              {/* Footer rule */}
+              <div className="border-t border-white/10 mt-2 pt-8 text-center">
+                <p
+                  className="text-[#BFAF8A] text-xs tracking-widest"
+                  style={{ fontFamily: FONT.eyebrow, fontStyle: "italic", fontWeight: 500 }}
+                >
+                  Every itinerary is built from scratch
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
 
       {/* ── Favorite Destinations grid ────────────────────────────────────── */}
       <section className="py-24 bg-[#f3f0eb]">
