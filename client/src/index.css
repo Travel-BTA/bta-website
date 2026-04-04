@@ -510,71 +510,73 @@
 
   /* ── BTA Luxury Travel Club box ──────────────────────────────────────────
      WHY: The WP source uses a light stone background with a grey border.
-     We override to a dark navy (#040619) with gold accents to match BTA's
-     luxury brand identity — sophisticated, editorial, not promotional. */
+     We override to a warm sand (#f5ede0) with slate blue text and gold accents —
+     light, editorial, and magazine-adjacent. Pairs beautifully with the article
+     body text and doesn't compete with hero imagery. */
 
-  /* Outer container: dark navy, generous padding, no radius */
+  /* Outer container: warm sand, gold border, generous padding */
   .blog-body > div[style*="background-color: #faf9f7"],
   .blog-body > div[style*="background-color:#faf9f7"],
   .blog-body > div[style*="border: 1px solid #7a7a7a"] {
-    background-color: #040619 !important;
+    background-color: #f5ede0 !important;
     border: 1px solid #9C886A !important;
     padding: 48px 40px !important;
     margin: 3rem 0 !important;
   }
 
-  /* Title (h2.vip-main-heading): Instrument Serif, white, smaller — reads as editorial label */
+  /* Title (h2.vip-main-heading): Instrument Serif, slate blue — editorial label */
   .blog-body .vip-main-heading {
     font-family: 'Instrument Serif', Georgia, serif !important;
     font-size: clamp(1.1rem, 2.5vw, 1.35rem) !important;
     font-weight: 400 !important;
-    color: #ffffff !important;
+    color: #384959 !important;
     letter-spacing: 0.12em !important;
     text-transform: uppercase !important;
-    background-color: #040619 !important;
+    background-color: #f5ede0 !important;
     padding: 0 20px !important;
   }
 
-  /* The decorative rule behind the title: gold instead of grey */
+  /* The decorative rule behind the title: gold, softened */
   .blog-body > div[style*="border: 1px solid #7a7a7a"] > div[style*="border-top"] > div,
   .blog-body > div[style*="background-color: #faf9f7"] > div[style*="border-top"] > div {
     border-top-color: #9C886A !important;
+    opacity: 0.5;
   }
 
-  /* Subheading (p.vip-subheading): italic, muted gold, smaller */
+  /* Subheading (p.vip-subheading): italic, warm brown-gold */
   .blog-body .vip-subheading {
     font-family: 'Playfair Display', Georgia, serif !important;
     font-size: 0.95rem !important;
     font-style: italic !important;
-    color: rgba(156, 136, 106, 0.85) !important;
+    color: #7a6a55 !important;
     line-height: 1.75 !important;
     margin: 0 0 28px !important;
   }
   .blog-body .vip-subheading em {
     font-style: italic !important;
-    color: rgba(156, 136, 106, 0.85) !important;
+    color: #7a6a55 !important;
   }
 
-  /* Amenity list items (h6 inside the box): white, spaced, no bold */
+  /* Amenity list items (h6 inside the box): slate blue, spaced, no bold */
   .blog-body > div[style*="border: 1px solid #7a7a7a"] h6,
   .blog-body > div[style*="background-color: #faf9f7"] h6 {
     font-family: 'Playfair Display', Georgia, serif !important;
     font-size: 0.72rem !important;
     font-weight: 400 !important;
     font-style: normal !important;
-    color: #ffffff !important;
+    color: #384959 !important;
     letter-spacing: 0.14em !important;
     text-transform: uppercase !important;
     margin: 0 !important;
     padding: 10px 0 !important;
-    border-bottom: 1px solid rgba(156, 136, 106, 0.2) !important;
+    border-bottom: 1px solid rgba(156, 136, 106, 0.3) !important;
     line-height: 1.4 !important;
   }
 
   /* First amenity item: gold top rule */
   .blog-body > div[style*="border: 1px solid #7a7a7a"] h6:first-of-type,
   .blog-body > div[style*="background-color: #faf9f7"] h6:first-of-type {
-    border-top: 1px solid rgba(156, 136, 106, 0.2) !important;
+    border-top: 1px solid rgba(156, 136, 106, 0.3) !important;
   }
 
   /* Disclaimer h6 (the *Benefits apply one): muted, italic, no border */
@@ -582,7 +584,7 @@
   .blog-body > div[style*="background-color: #faf9f7"] h6:last-of-type {
     font-size: 0.62rem !important;
     font-style: italic !important;
-    color: rgba(156, 136, 106, 0.55) !important;
+    color: rgba(122, 106, 85, 0.6) !important;
     letter-spacing: 0.04em !important;
     text-transform: none !important;
     border-bottom: none !important;
