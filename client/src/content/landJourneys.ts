@@ -38,7 +38,7 @@ export const landJourneysCategories = [
     description:
       "Immersive encounters with the natural world, from the Serengeti to the Okavango Delta.",
     imageUrl:
-      "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/safari_bush_dining_v2_e2293e19.jpg",
+      "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/masai_mara_horseback_v1_b87f55cc.jpg",
     href: "/land-journeys/safari",
   },
   {

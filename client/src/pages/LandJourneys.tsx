@@ -212,7 +212,7 @@ export default function LandJourneys() {
                 {/* Step number */}
                 <p
                   className="text-[#BFAF8A]/30 text-6xl font-light mb-4 leading-none"
-                  style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                  style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal" }}
                 >
                   {step.number}
                 </p>
@@ -351,13 +351,13 @@ export default function LandJourneys() {
         <div className="relative z-10 text-center px-8">
           <p
             className="text-[#BFAF8A] tracking-[0.3em] text-sm uppercase mb-6"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+            style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal" }}
           >
             Land Journeys
           </p>
           <h2
-            className="text-white text-5xl md:text-6xl font-light mb-6 leading-tight"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+            className="text-white text-5xl md:text-6xl uppercase mb-6 leading-tight"
+            style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal", fontWeight: 400, textTransform: "uppercase", letterSpacing: "0.04em" }}
           >
             {landJourneysCta.headline}
           </h2>
