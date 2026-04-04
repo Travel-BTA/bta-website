@@ -15,7 +15,11 @@
  *   Script:        Allura — decorative script pops and quotes only
  *   Heading (H2):  Playfair Display — uppercase, tracked
  *   Body:          Playfair Display 400 — body text
- *   Labels:        Playfair Display 600 italic — eyebrow labels (champagne gold)
+ *   Labels:        Playfair Display 500 italic — eyebrow labels (champagne gold)
+ *
+ * HARD TYPOGRAPHY RULES:
+ *   Instrument Serif  → ALWAYS uppercase, weight 400, upright. No exceptions.
+ *   Playfair Display  → ALWAYS 500 italic (subheadings) OR 400 upright (body). Never uppercase, never 600+, never light.
  */
 
 @import "tailwindcss";
@@ -103,10 +107,13 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    /* WHY: Instrument Serif is the BTA brand title font — always uppercase, always weight 400 per brand guide */
+    /* WHY: Instrument Serif is the BTA default heading font at weight 400 upright.
+       HARD RULE: Instrument Serif is ALWAYS uppercase and NEVER italic.
+       text-transform is NOT set globally — uppercase is applied per element.
+       Playfair Display headings must NEVER be forced uppercase. */
     font-family: 'Instrument Serif', Georgia, serif;
     font-weight: 400;
-    text-transform: uppercase;
+    font-style: normal;
   }
 
   button:not(:disabled),
@@ -168,17 +175,19 @@
   }
 
   .font-smallcaps {
-    /* WHY: Playfair Display semi-bold italic is the BTA eyebrow/label font */
+    /* WHY: Playfair Display 500 italic is the BTA eyebrow/label font — hard rule, never 600, never upright */
     font-family: 'Playfair Display', Georgia, serif;
-    font-weight: 600;
+    font-weight: 500;
     font-style: italic;
     letter-spacing: 0.02em;
   }
 
-  /* BTA Section Eyebrow Label — Playfair Display semi-bold italic, Champagne Gold */
+  /* BTA Section Eyebrow Label — Playfair Display 500 italic, Champagne Gold
+     HARD RULE: Playfair Display is ALWAYS 500 italic (subheadings) or 400 upright (body).
+     Never use 600, 700, or uppercase with Playfair Display. */
   .bta-eyebrow {
     font-family: 'Playfair Display', Georgia, serif;
-    font-weight: 600;
+    font-weight: 500;
     font-style: italic;
     font-size: 1.1rem;
     color: #BFAF8A;

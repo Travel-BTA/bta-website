@@ -60,7 +60,7 @@ export default function LandJourneys() {
           {/* Eyebrow: white on photo. Champagne Gold only on plain backgrounds */}
           <p
             className="tracking-[0.3em] text-sm uppercase mb-4"
-            style={{ color: "rgba(255,255,255,0.75)", fontFamily: "'Instrument Serif', Georgia, serif" , textTransform: "uppercase" }}
+            style={{ color: "rgba(255,255,255,0.75)", fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal" , textTransform: "uppercase" }}
           >
             {landJourneysHero.eyebrow}
           </p>
@@ -68,7 +68,7 @@ export default function LandJourneys() {
           {/* H1: Instrument Serif ALL CAPS white on hero photo */}
           <h1
             className="text-white text-5xl md:text-6xl lg:text-7xl uppercase leading-[1.05] mb-6 max-w-3xl"
-            style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400, letterSpacing: "0.04em" , textTransform: "uppercase" }}
+            style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal", fontWeight: 400, letterSpacing: "0.04em" , textTransform: "uppercase" }}
           >
             {landJourneysHero.headline.split("\n").map((line, i) => (
               <span key={i} className="block">
@@ -104,7 +104,7 @@ export default function LandJourneys() {
             {/* H1-style section title: Instrument Serif, uppercase */}
             <h2
               className="text-[#384959] text-4xl md:text-5xl leading-tight mb-8 uppercase tracking-wide"
-              style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400 , textTransform: "uppercase" }}
+              style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal", fontWeight: 400 , textTransform: "uppercase" }}
             >
               {landJourneysIntro.headline}
             </h2>
@@ -168,8 +168,8 @@ export default function LandJourneys() {
                   {/* Content */}
                   <div className="absolute bottom-0 left-0 right-0 p-6">
                     <h3
-                      className="text-white text-xl font-light mb-2"
-                      style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                      className="text-white text-xl mb-2"
+                      style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 500, fontStyle: "italic" }}
                     >
                       {cat.title}
                     </h3>
@@ -202,7 +202,7 @@ export default function LandJourneys() {
             {/* H1-style section title: Instrument Serif, uppercase */}
             <h2
               className="text-white text-4xl md:text-5xl uppercase tracking-wide"
-              style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400 , textTransform: "uppercase" }}
+              style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal", fontWeight: 400 , textTransform: "uppercase" }}
             >
               {landJourneysProcess.headline}
             </h2>
@@ -221,8 +221,8 @@ export default function LandJourneys() {
                 {/* Divider */}
                 <div className="w-8 h-px bg-[#BFAF8A] mb-6" />
                 <h3
-                  className="text-white text-xl font-light mb-4"
-                  style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                  className="text-white text-xl mb-4"
+                  style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 400, fontStyle: "normal" }}
                 >
                   {step.title}
                 </h3>
@@ -265,7 +265,7 @@ export default function LandJourneys() {
             {/* H1-style section title: Instrument Serif, uppercase */}
             <h2
               className="text-[#384959] text-4xl md:text-5xl leading-tight mb-6 uppercase tracking-wide"
-              style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400 , textTransform: "uppercase" }}
+              style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal", fontWeight: 400 , textTransform: "uppercase" }}
             >
               {landJourneysFeaturedJourney.headline}
             </h2>
@@ -314,7 +314,7 @@ export default function LandJourneys() {
             {/* H1-style section title: Instrument Serif, uppercase */}
             <h2
               className="text-[#384959] text-4xl md:text-5xl leading-tight mb-8 uppercase tracking-wide"
-              style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400 , textTransform: "uppercase" }}
+              style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal", fontWeight: 400 , textTransform: "uppercase" }}
             >
               {landJourneysExperiences.headline}
             </h2>
@@ -325,8 +325,8 @@ export default function LandJourneys() {
               <div key={i} className="group">
                 <div className="w-8 h-px bg-[#bfaf8a] mb-6" />
                 <h3
-                  className="text-[#384959] text-xl font-light mb-3"
-                  style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                  className="text-[#384959] text-xl mb-3"
+                  style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 400, fontStyle: "normal" }}
                 >
                   {item.title}
                 </h3>

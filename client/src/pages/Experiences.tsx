@@ -123,7 +123,7 @@ export default function Experiences() {
         />
         <div className="relative z-10 w-full px-8 md:px-16 pb-16">
           {/* Breadcrumb: white on photo. Champagne Gold only on plain backgrounds */}
-          <p className="text-xs tracking-[0.25em] uppercase mb-4" style={{ color: "rgba(255,255,255,0.75)", fontFamily: "'Instrument Serif', Georgia, serif" , textTransform: "uppercase" }}>
+          <p className="text-xs tracking-[0.25em] uppercase mb-4" style={{ color: "rgba(255,255,255,0.75)", fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal" , textTransform: "uppercase" }}>
             <Link href="/" className="hover:underline">Home</Link>
             <span className="mx-2">›</span>
             Experiences
@@ -133,7 +133,7 @@ export default function Experiences() {
             Curated Around the Globe
           </p>
           {/* H1: Instrument Serif ALL CAPS white */}
-          <h1 className="text-5xl md:text-7xl uppercase mb-6" style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400, color: "#ffffff", letterSpacing: "0.06em", lineHeight: 1.1 , textTransform: "uppercase" }}>
+          <h1 className="text-5xl md:text-7xl uppercase mb-6" style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal", fontWeight: 400, color: "#ffffff", letterSpacing: "0.06em", lineHeight: 1.1 , textTransform: "uppercase" }}>
             Experiences
           </h1>
           <p className="text-white/80 max-w-xl text-base leading-relaxed" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 400 }}>

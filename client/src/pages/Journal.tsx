@@ -139,7 +139,7 @@ function FeaturedCard({ post }: { post: Post }) {
         <Link
           href={`/journal/${post.slug}`}
           className="inline-flex items-center gap-2 text-[#bfaf8a] text-[10px] tracking-[0.22em] uppercase hover:gap-3 transition-all"
-          style={{ fontFamily: "'Instrument Serif', serif" , textTransform: "uppercase" }}
+          style={{ fontFamily: "'Instrument Serif', serif", fontStyle: "normal" , textTransform: "uppercase" }}
         >
           Read Article <span>&#8594;</span>
         </Link>
@@ -227,7 +227,7 @@ function NewsletterSection() {
       </p>
       <h2
         className="text-white text-3xl md:text-4xl tracking-[0.12em] uppercase mb-5"
-        style={{ fontFamily: "'Instrument Serif', serif" , textTransform: "uppercase" }}
+        style={{ fontFamily: "'Instrument Serif', serif", fontStyle: "normal" , textTransform: "uppercase" }}
       >
         Never Miss a Journey
       </h2>
@@ -258,7 +258,7 @@ function NewsletterSection() {
           <button
             type="submit"
             className="bg-[#bfaf8a] text-white text-[10px] tracking-[0.22em] uppercase px-7 py-3 hover:bg-[#a89a76] transition-colors whitespace-nowrap"
-            style={{ fontFamily: "'Instrument Serif', serif" , textTransform: "uppercase" }}
+            style={{ fontFamily: "'Instrument Serif', serif", fontStyle: "normal" , textTransform: "uppercase" }}
           >
             Subscribe
           </button>
@@ -328,7 +328,7 @@ export default function Journal() {
         {/* H1 — Instrument Serif ALL CAPS Champagne Gold on plain bg */}
         <h1
           className="text-[#bfaf8a] text-4xl md:text-5xl tracking-[0.14em] uppercase mb-5"
-          style={{ fontFamily: "'Instrument Serif', serif" , textTransform: "uppercase" }}
+          style={{ fontFamily: "'Instrument Serif', serif", fontStyle: "normal" , textTransform: "uppercase" }}
         >
           The Journal
         </h1>
@@ -354,7 +354,7 @@ export default function Journal() {
                     ? "bg-[#bfaf8a] text-white"
                     : "text-[#2F2F2F]/45 hover:text-[#bfaf8a]"
                 }`}
-                style={{ fontFamily: "'Instrument Serif', serif" , textTransform: "uppercase" }}
+                style={{ fontFamily: "'Instrument Serif', serif", fontStyle: "normal" , textTransform: "uppercase" }}
               >
                 {label}
               </button>
@@ -428,7 +428,7 @@ export default function Journal() {
                   onClick={() => setPage(p => Math.max(1, p - 1))}
                   disabled={page === 1}
                   className="border border-[#edeae4] px-6 py-2.5 text-[#2F2F2F]/50 text-[10px] tracking-[0.18em] uppercase hover:border-[#bfaf8a] hover:text-[#bfaf8a] transition-colors disabled:opacity-30"
-                  style={{ fontFamily: "'Instrument Serif', serif" , textTransform: "uppercase" }}
+                  style={{ fontFamily: "'Instrument Serif', serif", fontStyle: "normal" , textTransform: "uppercase" }}
                 >
                   Previous
                 </button>
@@ -442,7 +442,7 @@ export default function Journal() {
                   onClick={() => setPage(p => p + 1)}
                   disabled={!hasMore}
                   className="border border-[#edeae4] px-6 py-2.5 text-[#2F2F2F]/50 text-[10px] tracking-[0.18em] uppercase hover:border-[#bfaf8a] hover:text-[#bfaf8a] transition-colors disabled:opacity-30"
-                  style={{ fontFamily: "'Instrument Serif', serif" , textTransform: "uppercase" }}
+                  style={{ fontFamily: "'Instrument Serif', serif", fontStyle: "normal" , textTransform: "uppercase" }}
                 >
                   Next
                 </button>

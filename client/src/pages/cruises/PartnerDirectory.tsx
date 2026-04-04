@@ -258,7 +258,7 @@ function PhotoCard({
       <div className="absolute bottom-0 left-0 right-0 px-5 pb-5 pt-10">
         <h3
           className="text-white text-lg font-light leading-snug mb-1 group-hover:text-[#bfaf8a] transition-colors duration-300"
-          style={{ fontFamily: "'Instrument Serif', 'Playfair Display', serif" , textTransform: "uppercase" }}
+          style={{ fontFamily: "'Instrument Serif', 'Playfair Display', serif", fontStyle: "normal" , textTransform: "uppercase" }}
         >
           {name}
         </h3>
@@ -355,14 +355,14 @@ export default function PartnerDirectory() {
             <Link
               href="/cruises"
               className="text-white/55 text-xs tracking-[0.2em] uppercase hover:text-white transition-colors"
-              style={{ fontFamily: "'Instrument Serif', Georgia, serif" , textTransform: "uppercase" }}
+              style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal" , textTransform: "uppercase" }}
             >
               Cruises
             </Link>
             <span className="text-white/35 text-xs">›</span>
             <span
               className="text-white/75 text-xs tracking-[0.2em] uppercase"
-              style={{ fontFamily: "'Instrument Serif', Georgia, serif" , textTransform: "uppercase" }}
+              style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal" , textTransform: "uppercase" }}
             >
               Partner Directory
             </span>
@@ -373,7 +373,7 @@ export default function PartnerDirectory() {
             Every Link Leads Back to BTA
           </p>
           {/* H1: Instrument Serif ALL CAPS white */}
-          <h1 className="text-white text-5xl md:text-7xl uppercase leading-tight mb-6" style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400, letterSpacing: "0.04em" , textTransform: "uppercase" }}>
+          <h1 className="text-white text-5xl md:text-7xl uppercase leading-tight mb-6" style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal", fontWeight: 400, letterSpacing: "0.04em" , textTransform: "uppercase" }}>
             Our Partner Directory
           </h1>
           <p className="text-white/70 text-base max-w-xl leading-relaxed" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 400 }}>
@@ -406,7 +406,7 @@ export default function PartnerDirectory() {
               <div key={item.num} className="flex gap-5">
                 <span
                   className="text-[#bfaf8a]/35 text-3xl font-light flex-shrink-0 leading-none mt-0.5"
-                  style={{ fontFamily: "'Instrument Serif', serif" , textTransform: "uppercase" }}
+                  style={{ fontFamily: "'Instrument Serif', serif", fontStyle: "normal" , textTransform: "uppercase" }}
                 >
                   {item.num}
                 </span>

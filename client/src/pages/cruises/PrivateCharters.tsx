@@ -140,14 +140,14 @@ export default function PrivateCharters() {
             <Link
               href="/cruises"
               className="text-white/55 text-xs tracking-[0.2em] uppercase hover:text-white transition-colors"
-              style={{ fontFamily: "'Instrument Serif', Georgia, serif" , textTransform: "uppercase" }}
+              style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal" , textTransform: "uppercase" }}
             >
               Cruises
             </Link>
             <span className="text-white/35 text-xs">›</span>
             <span
               className="text-white/70 text-xs tracking-[0.2em] uppercase"
-              style={{ fontFamily: "'Instrument Serif', Georgia, serif" , textTransform: "uppercase" }}
+              style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal" , textTransform: "uppercase" }}
             >
               Private Charters
             </span>
@@ -170,7 +170,7 @@ export default function PrivateCharters() {
           <h1
             className="text-white text-5xl md:text-6xl lg:text-7xl uppercase leading-tight mb-6"
             style={{
-              fontFamily: "'Instrument Serif', Georgia, serif",
+              fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal",
               fontWeight: 400,
               letterSpacing: "0.04em",
               textTransform: "uppercase"
@@ -189,7 +189,7 @@ export default function PrivateCharters() {
           <Link
             href="/contact"
             className="inline-flex items-center gap-3 bg-[#bfaf8a] text-white px-8 py-3.5 text-xs tracking-[0.25em] uppercase hover:bg-[#a89a76] transition-all duration-300"
-            style={{ fontFamily: "'Instrument Serif', Georgia, serif" , textTransform: "uppercase" }}
+            style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal" , textTransform: "uppercase" }}
           >
             Request a Charter Quote
             <span className="text-base">→</span>
@@ -206,7 +206,7 @@ export default function PrivateCharters() {
               <div className="w-10 h-px bg-[#bfaf8a]" />
               <span
                 className="text-[#bfaf8a] text-xs tracking-[0.25em] uppercase"
-                style={{ fontFamily: "'Instrument Serif', Georgia, serif" , textTransform: "uppercase" }}
+                style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal" , textTransform: "uppercase" }}
               >
                 Private Aviation
               </span>
@@ -256,7 +256,7 @@ export default function PrivateCharters() {
                 <div className="absolute top-8 left-8">
                   <span
                     className="bg-[#bfaf8a]/90 text-white text-xs tracking-[0.22em] uppercase px-4 py-1.5"
-                    style={{ fontFamily: "'Instrument Serif', Georgia, serif" , textTransform: "uppercase" }}
+                    style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal" , textTransform: "uppercase" }}
                   >
                     {aircraft.eyebrow}
                   </span>
@@ -277,7 +277,7 @@ export default function PrivateCharters() {
                     <div key={spec.label}>
                       <p
                         className="text-[#bfaf8a] text-[10px] tracking-[0.2em] uppercase mb-0.5"
-                        style={{ fontFamily: "'Instrument Serif', Georgia, serif" , textTransform: "uppercase" }}
+                        style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal" , textTransform: "uppercase" }}
                       >
                         {spec.label}
                       </p>
@@ -324,7 +324,7 @@ export default function PrivateCharters() {
                 <Link
                   href="/contact"
                   className="inline-flex items-center gap-3 border border-[#bfaf8a] text-[#bfaf8a] px-8 py-3 text-xs tracking-[0.2em] uppercase hover:bg-[#bfaf8a] hover:text-white transition-all duration-300 self-start"
-                  style={{ fontFamily: "'Instrument Serif', Georgia, serif" , textTransform: "uppercase" }}
+                  style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal" , textTransform: "uppercase" }}
                 >
                   Inquire About {aircraft.name}
                   <span className="text-base">→</span>
@@ -348,7 +348,7 @@ export default function PrivateCharters() {
             </p>
             <h2
               className="text-white text-3xl md:text-4xl uppercase tracking-[0.1em]"
-              style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400 , textTransform: "uppercase" }}
+              style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal", fontWeight: 400 , textTransform: "uppercase" }}
             >
               How to Book a Private Charter
             </h2>
@@ -359,7 +359,7 @@ export default function PrivateCharters() {
               <div key={step.step} className="border-t border-[#bfaf8a]/30 pt-8">
                 <p
                   className="text-[#bfaf8a]/50 text-4xl mb-4 leading-none"
-                  style={{ fontFamily: "'Instrument Serif', Georgia, serif" , textTransform: "uppercase" }}
+                  style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal" , textTransform: "uppercase" }}
                 >
                   {step.step}
                 </p>
@@ -390,7 +390,7 @@ export default function PrivateCharters() {
                 <div className="w-10 h-px bg-[#bfaf8a]" />
                 <span
                   className="text-[#bfaf8a] text-xs tracking-[0.25em] uppercase"
-                  style={{ fontFamily: "'Instrument Serif', Georgia, serif" , textTransform: "uppercase" }}
+                  style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal" , textTransform: "uppercase" }}
                 >
                   Planning Guidance
                 </span>
@@ -460,7 +460,7 @@ export default function PrivateCharters() {
           </p>
           <h2
             className="text-white text-4xl md:text-5xl uppercase tracking-[0.1em] mb-6"
-            style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400 , textTransform: "uppercase" }}
+            style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal", fontWeight: 400 , textTransform: "uppercase" }}
           >
             Ready to Fly Private?
           </h2>
@@ -473,7 +473,7 @@ export default function PrivateCharters() {
           <Link
             href="/contact"
             className="inline-flex items-center gap-3 bg-[#bfaf8a] text-white px-10 py-4 text-xs tracking-[0.25em] uppercase hover:bg-[#a89a76] transition-all duration-300"
-            style={{ fontFamily: "'Instrument Serif', Georgia, serif" , textTransform: "uppercase" }}
+            style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal" , textTransform: "uppercase" }}
           >
             Schedule a Discovery Call
             <span className="text-base">→</span>

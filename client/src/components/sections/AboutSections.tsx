@@ -86,7 +86,7 @@ export function PhilosophySection() {
           {/* Eyebrow: bold italic Playfair Display in Champagne Gold — matches Figma script style */}
           <p
             className="text-[#BFAF8A] text-xl mb-3"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic", fontWeight: 600 }}
+            style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic", fontWeight: 500 }}
           >
             {philosophy.eyebrow}
           </p>

@@ -73,11 +73,11 @@ export default function NavBar() {
             ) : (
               <div className="text-white leading-none">
                 <div className="text-[9px] tracking-[0.35em] uppercase opacity-80"
-                  style={{ fontFamily: "'Instrument Serif', Georgia, serif" , textTransform: "uppercase" }}>BOUTIQUE</div>
+                  style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal" , textTransform: "uppercase" }}>BOUTIQUE</div>
                 <div className="text-xl leading-none mt-[-1px]"
                   style={{ fontFamily: "'Allura', cursive" }}>travel</div>
                 <div className="text-[9px] tracking-[0.35em] uppercase opacity-80 mt-[-2px]"
-                  style={{ fontFamily: "'Instrument Serif', Georgia, serif" , textTransform: "uppercase" }}>ADVISORS</div>
+                  style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal" , textTransform: "uppercase" }}>ADVISORS</div>
               </div>
             )}
           </a>
@@ -90,7 +90,7 @@ export default function NavBar() {
                 href={link.href}
                 className="relative text-white/85 hover:text-white transition-colors duration-300 group"
                 style={{
-                  fontFamily: "'Instrument Serif', Georgia, serif",
+                  fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal",
                   fontSize: "11px",
                   letterSpacing: "0.22em",
                   textTransform: "uppercase",
@@ -112,7 +112,7 @@ export default function NavBar() {
               href={nav.cta.href}
               className="inline-flex items-center gap-2 border border-white/40 hover:border-[#bfaf8a] text-white/90 hover:text-white px-6 py-2.5 transition-all duration-300 hover:bg-[#bfaf8a]/10"
               style={{
-                fontFamily: "'Instrument Serif', Georgia, serif",
+                fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal",
                 fontSize: "10px",
                 letterSpacing: "0.25em",
                 textTransform: "uppercase",
@@ -165,7 +165,7 @@ export default function NavBar() {
         >
           <span
             className="text-[#bfaf8a] text-[9px] tracking-[0.3em] uppercase"
-            style={{ fontFamily: "'Instrument Serif', Georgia, serif" , textTransform: "uppercase" }}
+            style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal" , textTransform: "uppercase" }}
           >
             Menu
           </span>
@@ -189,7 +189,7 @@ export default function NavBar() {
               onClick={() => setMenuOpen(false)}
               className="text-white/75 hover:text-white transition-colors duration-200 flex items-center justify-between group"
               style={{
-                fontFamily: "'Instrument Serif', Georgia, serif",
+                fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal",
                 fontSize: "12px",
                 letterSpacing: "0.22em",
                 textTransform: "uppercase",
@@ -214,7 +214,7 @@ export default function NavBar() {
             onClick={() => setMenuOpen(false)}
             className="block text-center border border-[#bfaf8a]/50 hover:border-[#bfaf8a] text-[#bfaf8a] hover:bg-[#bfaf8a]/10 py-3 transition-all duration-300"
             style={{
-              fontFamily: "'Instrument Serif', Georgia, serif",
+              fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal",
               fontSize: "10px",
               letterSpacing: "0.25em",
               textTransform: "uppercase",
@@ -224,7 +224,7 @@ export default function NavBar() {
           </a>
           <p
             className="text-center text-white/25 text-[9px] tracking-[0.2em] uppercase mt-5"
-            style={{ fontFamily: "'Instrument Serif', Georgia, serif" , textTransform: "uppercase" }}
+            style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal" , textTransform: "uppercase" }}
           >
             Virtuoso Member
           </p>

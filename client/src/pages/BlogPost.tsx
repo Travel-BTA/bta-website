@@ -225,7 +225,7 @@ export default function BlogPost() {
               />
             ) : (
               <div className="w-14 h-14 bg-[#edeae4] flex items-center justify-center">
-                <span className="text-[#bfaf8a] text-xl font-light" style={{ fontFamily: "'Playfair Display', serif" }}>
+ <span className="text-[#bfaf8a] text-xl " style={{ fontFamily: "'Playfair Display', serif" }}>
                   {post.author.name.charAt(0)}
                 </span>
               </div>

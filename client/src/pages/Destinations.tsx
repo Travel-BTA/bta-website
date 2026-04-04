@@ -136,7 +136,7 @@ export default function Destinations() {
         />
         <div className="relative z-10 w-full px-8 md:px-16 pb-16">
           {/* Breadcrumb. white over photo, never Champagne Gold on images */}
-          <p className="text-xs tracking-[0.25em] uppercase mb-4" style={{ color: "rgba(255,255,255,0.75)", fontFamily: "'Instrument Serif', Georgia, serif" , textTransform: "uppercase" }}>
+          <p className="text-xs tracking-[0.25em] uppercase mb-4" style={{ color: "rgba(255,255,255,0.75)", fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal" , textTransform: "uppercase" }}>
             <Link href="/" className="hover:underline">Home</Link>
             <span className="mx-2">›</span>
             Destinations
@@ -146,7 +146,7 @@ export default function Destinations() {
             Where Will You Go Next?
           </p>
           {/* H1: Instrument Serif ALL CAPS white on hero photo. Champagne Gold only on plain backgrounds */}
-          <h1 className="text-5xl md:text-7xl mb-6 uppercase" style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400, color: "#ffffff", letterSpacing: "0.06em", lineHeight: 1.1 , textTransform: "uppercase" }}>
+          <h1 className="text-5xl md:text-7xl mb-6 uppercase" style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal", fontWeight: 400, color: "#ffffff", letterSpacing: "0.06em", lineHeight: 1.1 , textTransform: "uppercase" }}>
             Destinations
           </h1>
           <p className="text-white/80 max-w-xl text-base leading-relaxed" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 400 }}>
@@ -158,11 +158,11 @@ export default function Destinations() {
       {/* Intro */}
       <section className="py-16 px-8 md:px-16 max-w-4xl mx-auto text-center">
         <div className="w-12 h-px mx-auto mb-8" style={{ backgroundColor: "#bfaf8a" }} />
-        <p className="text-sm tracking-[0.2em] uppercase mb-4" style={{ color: "#bfaf8a", fontFamily: "'Instrument Serif', Georgia, serif" , textTransform: "uppercase" }}>
+        <p className="text-sm tracking-[0.2em] uppercase mb-4" style={{ color: "#bfaf8a", fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal" , textTransform: "uppercase" }}>
           Curated for 2026 &amp; 2027
         </p>
         {/* H2 subheading: Playfair Display SemiBold Italic, NOT caps. matches Figma */}
-        <h2 className="text-3xl md:text-4xl mb-6" style={{ color: "#384959", fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400 }}>
+        <h2 className="text-3xl md:text-4xl mb-6" style={{ color: "#384959", fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal", fontWeight: 400 }}>
           The World, Thoughtfully Edited
         </h2>
         <p className="text-base leading-relaxed" style={{ color: "#2f2f2f", fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 400, fontSize: "1.05rem" }}>
@@ -186,7 +186,7 @@ export default function Destinations() {
           Ready to Begin?
         </p>
         {/* H1: Instrument Serif ALL CAPS Champagne Gold */}
-        <h2 className="text-3xl md:text-4xl mb-6 uppercase" style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400, color: "#faf9f6", letterSpacing: "0.06em" , textTransform: "uppercase" }}>
+        <h2 className="text-3xl md:text-4xl mb-6 uppercase" style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal", fontWeight: 400, color: "#faf9f6", letterSpacing: "0.06em" , textTransform: "uppercase" }}>
           Let's Design Your Journey
         </h2>
         <p className="text-white/70 max-w-lg mx-auto mb-10 leading-relaxed" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 400, fontSize: "1.05rem" }}>
@@ -195,7 +195,7 @@ export default function Destinations() {
         <Link href="/contact">
           <button
             className="px-10 py-4 text-sm tracking-[0.2em] uppercase transition-all duration-300 hover:opacity-80"
-            style={{ backgroundColor: "#bfaf8a", color: "#faf9f6", fontFamily: "'Instrument Serif', Georgia, serif", letterSpacing: "0.15em" , textTransform: "uppercase" }}
+            style={{ backgroundColor: "#bfaf8a", color: "#faf9f6", fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal", letterSpacing: "0.15em" , textTransform: "uppercase" }}
           >
             Start Planning
           </button>
@@ -225,14 +225,14 @@ function DestinationCard({ dest, featured }: { dest: typeof DESTINATIONS[0]; fea
         {/* Year badge */}
         <div
           className="absolute top-6 right-6 px-3 py-1 text-xs tracking-[0.15em] uppercase"
-          style={{ backgroundColor: "#bfaf8a", color: "#faf9f6", fontFamily: "'Instrument Serif', Georgia, serif" , textTransform: "uppercase" }}
+          style={{ backgroundColor: "#bfaf8a", color: "#faf9f6", fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal" , textTransform: "uppercase" }}
         >
           {dest.year}
         </div>
         {/* Region */}
         <p
           className="absolute top-6 left-6 text-xs tracking-[0.2em] uppercase"
-          style={{ color: "rgba(255,255,255,0.8)", fontFamily: "'Instrument Serif', Georgia, serif" , textTransform: "uppercase" }}
+          style={{ color: "rgba(255,255,255,0.8)", fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal" , textTransform: "uppercase" }}
         >
           {dest.region}
         </p>
@@ -243,7 +243,7 @@ function DestinationCard({ dest, featured }: { dest: typeof DESTINATIONS[0]; fea
             {dest.tagline}
           </p>
           {/* H3 card title: Instrument Serif ALL CAPS, white on dark overlay */}
-          <h3 className="text-3xl uppercase" style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400, color: "#faf9f6", letterSpacing: "0.06em" , textTransform: "uppercase" }}>
+          <h3 className="text-3xl uppercase" style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal", fontWeight: 400, color: "#faf9f6", letterSpacing: "0.06em" , textTransform: "uppercase" }}>
             {dest.name}
           </h3>
         </div>
@@ -256,7 +256,7 @@ function DestinationCard({ dest, featured }: { dest: typeof DESTINATIONS[0]; fea
         </p>
         {/* Highlights */}
         <div className="mb-6">
-          <p className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: "#bfaf8a", fontFamily: "'Instrument Serif', Georgia, serif" , textTransform: "uppercase" }}>
+          <p className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: "#bfaf8a", fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal" , textTransform: "uppercase" }}>
             What We Curate
           </p>
           <div className="grid grid-cols-2 gap-2">
@@ -271,7 +271,7 @@ function DestinationCard({ dest, featured }: { dest: typeof DESTINATIONS[0]; fea
         <Link href="/contact">
           <button
             className="text-xs tracking-[0.2em] uppercase border px-6 py-3 transition-all duration-300 hover:opacity-70"
-            style={{ borderColor: "#384959", color: "#384959", fontFamily: "'Instrument Serif', Georgia, serif" , textTransform: "uppercase" }}
+            style={{ borderColor: "#384959", color: "#384959", fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal" , textTransform: "uppercase" }}
           >
             Plan This Journey
           </button>
