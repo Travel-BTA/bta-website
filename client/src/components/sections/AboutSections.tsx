@@ -61,7 +61,7 @@ export function PhilosophySection() {
   /*
    * WHY: Updated to match Figma design:
    * - Heading color changed from Aegean Blue (#384959) to Champagne Gold (#BFAF8A)
-   * - Eyebrow uses bold italic Cormorant Garamond (script style) in Champagne Gold
+   * - Eyebrow uses bold italic Playfair Display (script style) in Champagne Gold
    * - Body text uses bold Playfair Display weight matching Figma
    * - Decorative dashes replaced with Lucide icons in Champagne Gold
    * - Feature titles use bold Playfair Display in sentence case (not all-caps)
@@ -83,10 +83,10 @@ export function PhilosophySection() {
       <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         {/* Left: Text */}
         <div>
-          {/* Eyebrow: bold italic Cormorant Garamond in Champagne Gold — matches Figma script style */}
+          {/* Eyebrow: bold italic Playfair Display in Champagne Gold — matches Figma script style */}
           <p
             className="text-[#BFAF8A] text-xl mb-3"
-            style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontWeight: 600 }}
+            style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic", fontWeight: 600 }}
           >
             {philosophy.eyebrow}
           </p>
@@ -104,7 +104,7 @@ export function PhilosophySection() {
           {/* Body: bold Playfair Display — matches Figma weight */}
           <p
             className="text-[#2F2F2F] text-lg mb-8 leading-relaxed"
-            style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700 }}
+            style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600 }}
           >
             {philosophy.body}
           </p>
@@ -118,7 +118,7 @@ export function PhilosophySection() {
                   {/* Feature title: bold Playfair Display, sentence case, Aegean Blue */}
                   <div
                     className="text-[#384959] text-sm mb-1"
-                    style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700 }}
+                    style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600 }}
                   >
                     {feature.title}
                   </div>
@@ -165,13 +165,13 @@ export function CuratedHotelsSection() {
         <div>
           <p
             className="text-[#faf9f6] text-4xl md:text-5xl leading-tight"
-            style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontWeight: 400 }}
+            style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic", fontWeight: 400 }}
           >
             {curatedHotels.scriptLine1}
           </p>
           <p
             className="text-[#faf9f6] text-4xl md:text-5xl leading-tight"
-            style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontWeight: 400 }}
+            style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic", fontWeight: 400 }}
           >
             {curatedHotels.scriptLine2}
           </p>

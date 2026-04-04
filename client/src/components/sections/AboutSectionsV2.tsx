@@ -4,7 +4,7 @@
  * Updated to match Figma brand guide:
  * - Allura script for eyebrows
  * - Playfair Display for headings (larger, more prominent)
- * - Cormorant Garamond for body text
+ * - Playfair Display for body text
  * - Correct brand colors and spacing
  */
 
@@ -20,7 +20,7 @@ export function WhoWeAreSection() {
         <h2 className="bta-section-title text-[#faf9f6] text-4xl md:text-5xl mb-8" style={{ fontWeight: 400 }}>
           {whoWeAre.headline}
         </h2>
-        <p className="font-body text-[#faf9f6]/90 text-xl md:text-2xl leading-relaxed mb-10" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+        <p className="font-body text-[#faf9f6]/90 text-xl md:text-2xl leading-relaxed mb-10" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
           {whoWeAre.body}
         </p>
         <a href={whoWeAre.cta.href} className="bta-btn-gold">
@@ -57,7 +57,7 @@ export function PhilosophySection() {
   /*
    * WHY: Updated to match Figma design:
    * - Heading color changed to Champagne Gold (#BFAF8A)
-   * - Eyebrow uses bold italic Cormorant Garamond in Champagne Gold
+   * - Eyebrow uses bold italic Playfair Display in Champagne Gold
    * - Body text uses bold Playfair Display
    * - Decorative dashes replaced with Lucide icons in Champagne Gold
    * - Feature titles use bold Playfair Display in sentence case
@@ -77,10 +77,10 @@ export function PhilosophySection() {
       <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-24 items-center">
         {/* Left: Text */}
         <div>
-          {/* Eyebrow: bold italic Cormorant Garamond in Champagne Gold */}
+          {/* Eyebrow: bold italic Playfair Display in Champagne Gold */}
           <p
             className="text-[#bfaf8a] text-xl mb-4"
-            style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontWeight: 600 }}
+            style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic", fontWeight: 600 }}
           >
             {philosophy.eyebrow}
           </p>
@@ -98,7 +98,7 @@ export function PhilosophySection() {
           {/* Body: bold Playfair Display — matches Figma weight */}
           <p
             className="text-[#2F2F2F] text-xl leading-relaxed mb-10"
-            style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700 }}
+            style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600 }}
           >
             {philosophy.body}
           </p>
@@ -112,13 +112,13 @@ export function PhilosophySection() {
                   {/* Feature title: bold Playfair Display, sentence case */}
                   <div
                     className="text-[#384959] text-sm mb-1.5"
-                    style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700 }}
+                    style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600 }}
                   >
                     {feature.title}
                   </div>
                   <p
                     className="text-[#2F2F2F]/65 text-lg leading-snug"
-                    style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 400 }}
+                    style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 400 }}
                   >
                     {feature.description}
                   </p>
@@ -159,13 +159,13 @@ export function CuratedHotelsSection() {
         <div>
           <p
             className="text-[#faf9f6] text-5xl md:text-6xl lg:text-7xl leading-tight"
-            style={{ fontFamily: "'Allura', 'Cormorant Garamond', serif", fontWeight: 400 }}
+            style={{ fontFamily: "'Allura', 'Playfair Display', Georgia, serif", fontWeight: 400 }}
           >
             {curatedHotels.scriptLine1}
           </p>
           <p
             className="text-[#faf9f6] text-5xl md:text-6xl lg:text-7xl leading-tight"
-            style={{ fontFamily: "'Allura', 'Cormorant Garamond', serif", fontWeight: 400 }}
+            style={{ fontFamily: "'Allura', 'Playfair Display', Georgia, serif", fontWeight: 400 }}
           >
             {curatedHotels.scriptLine2}
           </p>

@@ -131,7 +131,7 @@ export function VipAccessSection() {
               <span key={i} className="block">{line}</span>
             ))}
           </h2>
-          <p className="font-body text-[#384959]/70 text-lg mb-8" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+          <p className="font-body text-[#384959]/70 text-lg mb-8" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
             {vipAccess.subheadline}
           </p>
 
@@ -176,7 +176,7 @@ export function VipAccessSection() {
                       value={destination}
                       onChange={e => setDestination(e.target.value)}
                       className="flex-1 bg-transparent text-sm text-[#2F2F2F] placeholder-[#2F2F2F]/40 outline-none"
-                      style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                      style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
                     />
                   </div>
 
@@ -191,7 +191,7 @@ export function VipAccessSection() {
                         value={checkIn}
                         onChange={e => setCheckIn(e.target.value)}
                         className="flex-1 bg-transparent text-sm text-[#2F2F2F] outline-none"
-                        style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                        style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
                       />
                     </div>
                     <div className="flex-1 flex items-center gap-3 border border-[#bfaf8a]/30 bg-white/60 px-4 py-3">
@@ -203,7 +203,7 @@ export function VipAccessSection() {
                         value={checkOut}
                         onChange={e => setCheckOut(e.target.value)}
                         className="flex-1 bg-transparent text-sm text-[#2F2F2F] outline-none"
-                        style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                        style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
                       />
                     </div>
                   </div>
@@ -213,7 +213,7 @@ export function VipAccessSection() {
                     <svg className="w-4 h-4 text-[#bfaf8a] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                     </svg>
-                    <span className="text-sm text-[#2F2F2F]/60 flex-1" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+                    <span className="text-sm text-[#2F2F2F]/60 flex-1" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
                       Guests: {guests}, Rooms: {rooms}
                     </span>
                     <div className="flex items-center gap-4">
@@ -242,7 +242,7 @@ export function VipAccessSection() {
                     value={hotelName}
                     onChange={e => setHotelName(e.target.value)}
                     className="flex-1 bg-transparent text-sm text-[#2F2F2F] placeholder-[#2F2F2F]/40 outline-none"
-                    style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                    style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
                   />
                 </div>
               )}
@@ -288,13 +288,13 @@ export function GivesBackSection() {
           >
             {givesBack.headline}
           </h2>
-          <p className="font-body text-[#2F2F2F]/75 text-xl leading-relaxed" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+          <p className="font-body text-[#2F2F2F]/75 text-xl leading-relaxed" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
             {givesBack.body}
           </p>
 
           {/* Proud partners of */}
           <div className="mt-10">
-            <p className="font-body text-[#2F2F2F]/60 text-base mb-6" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+            <p className="font-body text-[#2F2F2F]/60 text-base mb-6" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
               Proud partners of:
             </p>
             {/* Single non-wrapping row. grayscale on light background */}

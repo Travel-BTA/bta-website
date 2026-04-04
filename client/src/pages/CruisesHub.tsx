@@ -7,7 +7,7 @@
  *   Script accents:               Allura italic. ONLY for one-off highlights
  *   Body / descriptions:          Playfair Display Regular
  *   Labels / eyebrows:            Instrument Serif, tracked uppercase
- *   Zero Cormorant Garamond anywhere.
+ *   Zero Playfair Display anywhere.
  */
 
 import { Link } from "wouter";

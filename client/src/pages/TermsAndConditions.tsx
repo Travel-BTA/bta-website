@@ -6,7 +6,7 @@
  * - H2 (section headings): Playfair Display SemiBold Italic, Champagne Gold #bfaf8a — on plain background
  * - Body: Playfair Display Regular, Charcoal #2f2f2f
  * - Allura: script accent only, white on photo, Champagne Gold on plain
- * - NO Cormorant Garamond anywhere
+ * - NO Playfair Display anywhere
  * - NO Champagne Gold over photos
  * - NO em dashes
  */

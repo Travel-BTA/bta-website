@@ -367,7 +367,7 @@ export default function PrivateJetCharters() {
           aria-hidden="true"
         >
           <span
-            className="text-white/5 font-['Playfair_Display',serif] font-bold leading-none"
+            className="text-white/5 font-['Playfair_Display',serif] font-semibold leading-none"
             style={{ fontSize: "clamp(80px, 18vw, 220px)" }}
           >
             FLY

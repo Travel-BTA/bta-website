@@ -23,7 +23,7 @@ export function InfinityPoolBannerSection() {
       <div className="relative h-full flex flex-col items-center justify-center text-center px-6">
         <p
           className="font-script text-white/90 text-3xl md:text-4xl lg:text-5xl mb-4"
-          style={{ fontFamily: "'Allura', 'Cormorant Garamond', serif" }}
+          style={{ fontFamily: "'Allura', 'Playfair Display', Georgia, serif" }}
         >
           The world is yours to explore
         </p>

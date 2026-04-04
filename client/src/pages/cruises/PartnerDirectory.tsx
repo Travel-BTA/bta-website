@@ -5,7 +5,7 @@
  * Cards use full-bleed photography with name/tagline overlay (bottom gradient).
  * Design references: philanthropic-initiatives page card grid pattern.
  *
- * BTA brand: Instrument Serif headings, Cormorant Garamond body,
+ * BTA brand: Instrument Serif headings, Playfair Display body,
  * Champagne Gold #bfaf8a, Aegean Blue #384959, Linen White #faf9f6.
  */
 
@@ -248,7 +248,7 @@ function PhotoCard({
       <div className="absolute top-4 left-4">
         <span
           className="inline-block bg-[#bfaf8a] text-white text-[9px] tracking-[0.25em] uppercase px-2.5 py-1"
-          style={{ fontFamily: "'Cormorant Garamond', serif" }}
+          style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
         >
           {badge ?? category}
         </span>
@@ -264,14 +264,14 @@ function PhotoCard({
         </h3>
         <p
           className="text-white/70 text-xs leading-relaxed mb-3"
-          style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
+          style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic" }}
         >
           {tagline}
         </p>
         {note && (
           <p
             className="text-[#bfaf8a]/80 text-[10px] tracking-[0.15em] uppercase"
-            style={{ fontFamily: "'Cormorant Garamond', serif" }}
+            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
             ✦ {note}
           </p>
@@ -281,7 +281,7 @@ function PhotoCard({
           <div className="w-6 h-px bg-[#bfaf8a]" />
           <span
             className="text-[#bfaf8a] text-[10px] tracking-[0.2em] uppercase"
-            style={{ fontFamily: "'Cormorant Garamond', serif" }}
+            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
             Explore
           </span>
@@ -308,7 +308,7 @@ function SectionHeader({
     <div className="mb-12 text-center">
       <p
         className={`text-xs tracking-[0.3em] uppercase mb-4 ${light ? "text-[#bfaf8a]" : "text-[#bfaf8a]"}`}
-        style={{ fontFamily: "'Cormorant Garamond', serif" }}
+        style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
       >
         {eyebrow}
       </p>
@@ -320,7 +320,7 @@ function SectionHeader({
       {subtitle && (
         <p
           className={`text-lg max-w-2xl mx-auto leading-relaxed ${light ? "text-white/65" : "text-[#2F2F2F]/60"}`}
-          style={{ fontFamily: "'Cormorant Garamond', serif" }}
+          style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
         >
           {subtitle}
         </p>
@@ -414,7 +414,7 @@ export default function PartnerDirectory() {
                   <h3 className="font-display text-white text-lg font-light mb-2">{item.title}</h3>
                   <p
                     className="text-white/55 text-sm leading-relaxed"
-                    style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                    style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
                   >
                     {item.body}
                   </p>

@@ -204,7 +204,7 @@ export default function BlogPost() {
           {displayExcerpt && (
             <p
               className="text-[#bfaf8a] text-xl md:text-2xl italic leading-relaxed mb-10 max-w-2xl mx-auto"
-              style={{ fontFamily: "'Cormorant Garamond', serif" }}
+              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
             >
               {displayExcerpt.length > 160
                 ? displayExcerpt.slice(0, 160).replace(/\s\S+$/, "") + "…"
@@ -237,7 +237,7 @@ export default function BlogPost() {
               >
                 {post.author.name.split(" ").map((w: string) => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()).join(" ")}
               </p>
-              <p className="text-[#2F2F2F]/50 text-sm" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+              <p className="text-[#2F2F2F]/50 text-sm" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
                 {post.author.role}
               </p>
             </div>
@@ -260,7 +260,7 @@ export default function BlogPost() {
         <div className="flex items-center justify-between border-t border-[#edeae4] pt-8">
           <span
             className="text-[#bfaf8a] text-sm italic"
-            style={{ fontFamily: "'Cormorant Garamond', serif" }}
+            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
             Share this article
           </span>
@@ -297,7 +297,7 @@ export default function BlogPost() {
           </p>
           <p
             className="text-[#2F2F2F]/70 text-lg leading-relaxed mb-8 max-w-md mx-auto"
-            style={{ fontFamily: "'Cormorant Garamond', serif" }}
+            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
             Let us help you create an unforgettable travel experience tailored
               to your interests, style, and budget.

@@ -36,7 +36,7 @@ export default function NavBar() {
           ) : (
             <div className="text-white leading-none">
               <div className="font-smallcaps text-[9px] tracking-[0.25em] uppercase opacity-90">BOUTIQUE</div>
-              <div className="font-script text-[22px] leading-none mt-[-2px]" style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}>
+              <div className="font-script text-[22px] leading-none mt-[-2px]" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic" }}>
                 travel
               </div>
               <div className="font-smallcaps text-[9px] tracking-[0.25em] uppercase opacity-90 mt-[-2px]">ADVISORS</div>

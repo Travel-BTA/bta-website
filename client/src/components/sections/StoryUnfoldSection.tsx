@@ -36,7 +36,7 @@ export function StoryUnfoldSection() {
         <div className="text-left mb-14">
           <p
             className="font-script text-[#bfaf8a] text-3xl md:text-4xl mb-3"
-            style={{ fontFamily: "'Allura', 'Cormorant Garamond', serif" }}
+            style={{ fontFamily: "'Allura', 'Playfair Display', Georgia, serif" }}
           >
             Begin your journey
           </p>

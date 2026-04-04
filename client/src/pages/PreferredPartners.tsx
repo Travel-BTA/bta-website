@@ -4,7 +4,7 @@
  * BTA Preferred Partners hub page. inspired by Fora's /partners layout
  * but built entirely in BTA brand aesthetic:
  *   - Aegean Blue (#384959) + Champagne Gold (#BFAF8A) + Warm Stone (#EDEAE4)
- *   - Playfair Display headings, Cormorant Garamond body
+ *   - Playfair Display headings, Playfair Display body
  *   - Logo-forward partner cards with category filter tabs
  *   - Full-bleed hero, stats bar, partner grid, final CTA
  *
@@ -46,7 +46,7 @@ function PartnerCard({ partner }: { partner: Partner }) {
         {/* Card body */}
         <div className="flex flex-col flex-1 p-6">
           {/* Partner name */}
-          <h3 className="font-display text-xl text-[#384959] mb-1 leading-tight">
+          <h3 className="text-xl text-[#384959] mb-1 leading-tight" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 600 }}>
             {partner.name}
           </h3>
 
@@ -134,7 +134,7 @@ export default function PreferredPartners() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-16">
             {partnersIntro.stats.map((stat) => (
               <div key={stat.label} className="text-center">
-                <div className="font-display text-3xl text-[#BFAF8A] mb-1">
+                <div className="text-3xl text-[#BFAF8A] mb-1" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 600 }}>
                   {stat.value}
                 </div>
                 <div className="font-smallcaps text-[11px] tracking-widest text-white/60 uppercase">
@@ -150,7 +150,7 @@ export default function PreferredPartners() {
       <section className="py-20 px-6">
         <div className="container mx-auto max-w-3xl text-center">
           <p className="bta-eyebrow mb-3">Why It Matters</p>
-          <h2 className="font-display text-3xl md:text-4xl text-[#384959] uppercase tracking-wider mb-6">
+          <h2 className="text-3xl md:text-4xl text-[#384959] uppercase tracking-wider mb-6" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 600 }}>
             {partnersIntro.heading}
           </h2>
           <div className="w-12 h-px bg-[#BFAF8A] mx-auto mb-6" />
@@ -188,7 +188,7 @@ export default function PreferredPartners() {
           {/* Section heading with decorative lines. mirrors Fora's style */}
           <div className="flex items-center gap-4 mb-10">
             <div className="flex-1 h-px bg-[#BFAF8A]/40" />
-            <h2 className="font-display text-2xl text-[#384959] uppercase tracking-widest whitespace-nowrap">
+            <h2 className="text-2xl text-[#384959] uppercase tracking-widest whitespace-nowrap" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 600 }}>
               {activeCategory === "All"
                 ? "Preferred Partners"
                 : `${activeCategory} Partners`}
@@ -211,7 +211,7 @@ export default function PreferredPartners() {
           {/* Section heading. stacks on mobile, inline with rules on desktop */}
           <div className="flex flex-col md:flex-row items-center gap-4 mb-10">
             <div className="hidden md:block flex-1 h-px bg-[#BFAF8A]/40" />
-            <h2 className="font-display text-xl md:text-2xl text-[#384959] uppercase tracking-widest text-center">
+            <h2 className="text-xl md:text-2xl text-[#384959] uppercase tracking-widest text-center" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 600 }}>
               A Few of Our Favourite Properties
             </h2>
             <div className="hidden md:block flex-1 h-px bg-[#BFAF8A]/40" />
@@ -239,7 +239,7 @@ export default function PreferredPartners() {
                     <span className="font-smallcaps text-[10px] tracking-widest text-[#BFAF8A] mb-1 block">
                       {prop.partner}
                     </span>
-                    <h3 className="font-display text-white text-lg leading-tight mb-0.5">
+                    <h3 className="text-white text-lg leading-tight mb-0.5" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 600 }}>
                       {prop.name}
                     </h3>
                     <p className="font-smallcaps text-white/60 text-[10px] tracking-widest">
@@ -265,7 +265,7 @@ export default function PreferredPartners() {
         />
         <div className="absolute inset-0 bg-[#384959]/65" />
         <div className="relative z-10 text-center px-6 max-w-2xl mx-auto">
-          <h2 className="font-display text-3xl md:text-5xl text-white uppercase tracking-wider mb-4">
+          <h2 className="text-3xl md:text-5xl text-white uppercase tracking-wider mb-4" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 600 }}>
             {partnersCta.heading}
           </h2>
           <div className="w-10 h-px bg-[#BFAF8A] mx-auto mb-6" />

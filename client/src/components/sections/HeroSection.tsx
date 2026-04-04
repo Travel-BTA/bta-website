@@ -5,7 +5,7 @@
  * circular "PLAN YOUR JOURNEY" CTA right-center,
  * partner logos bar at the bottom.
  * Text: White on dark image. Headline in Playfair Display uppercase.
- * Subheadline in Cormorant Garamond italic.
+ * Subheadline in Playfair Display italic.
  */
 
 import { hero } from "@/content/homepage";

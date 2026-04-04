@@ -4,11 +4,11 @@
  * Used by: Safari & Wildlife, European Immersions, Expedition Travel, Cultural Journeys
  *
  * Typography standard (matches About, Destinations, Experiences):
- *  - Eyebrow: Cormorant Garamond italic, gold, tracking-[0.25em], uppercase, text-sm
+ *  - Eyebrow: Playfair Display italic, gold, tracking-[0.25em], uppercase, text-sm
  *  - H1 (hero): Playfair Display, uppercase, tracking-widest, text-white, text-4xl→text-6xl
  *  - H2 (section): Playfair Display, uppercase, tracking-widest, text-bta-aegean, text-3xl→text-4xl
  *  - H3 (card): Playfair Display, uppercase, tracking-widest, text-bta-aegean, text-xl→text-2xl
- *  - Body: Cormorant Garamond, text-lg, leading-relaxed
+ *  - Body: Playfair Display, text-lg, leading-relaxed
  *  - Colors: text-bta-gold (#A18B6E), text-bta-aegean (#384959), bg-bta-stone (#faf9f6)
  *
  * NavBar and Footer are rendered globally in App.tsx — do NOT add them here.
@@ -114,7 +114,7 @@ export default function JourneySubPage({ data }: Props) {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/25 to-black/65" />
         <div className="relative z-10 h-full flex flex-col justify-end pb-20 px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
-          {/* Eyebrow: Cormorant Garamond italic gold on photo */}
+          {/* Eyebrow: Playfair Display italic gold on photo */}
           <p className="font-[Cormorant_Garamond,serif] italic text-bta-gold tracking-[0.25em] text-base uppercase mb-3">
             {data.hero.eyebrow}
           </p>
@@ -122,7 +122,7 @@ export default function JourneySubPage({ data }: Props) {
           <h1 className="font-[Playfair_Display,serif] text-4xl md:text-6xl text-white uppercase tracking-widest leading-tight mb-6 max-w-3xl">
             {data.hero.headline}
           </h1>
-          {/* Subheadline: Cormorant Garamond italic white */}
+          {/* Subheadline: Playfair Display italic white */}
           <p className="font-[Cormorant_Garamond,serif] italic text-white/80 text-xl md:text-2xl max-w-xl leading-relaxed">
             {data.hero.subheadline}
           </p>
@@ -145,7 +145,7 @@ export default function JourneySubPage({ data }: Props) {
             <h2 className="font-[Playfair_Display,serif] text-3xl md:text-4xl text-bta-aegean uppercase tracking-widest leading-tight mb-8">
               {data.intro.headline}
             </h2>
-            {/* Body: Cormorant Garamond */}
+            {/* Body: Playfair Display */}
             <p className="font-[Cormorant_Garamond,serif] text-lg leading-relaxed text-[#2f2f2f] mb-10">
               {data.intro.body}
             </p>
