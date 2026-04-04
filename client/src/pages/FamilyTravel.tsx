@@ -18,7 +18,7 @@
 import NavBar from "@/components/NavBar";
 import { footer } from "@/content/homepage";
 import { ArrowRight, Baby, Users, Globe, MapPin, Home, Compass, Luggage, Sparkles, Utensils, Camera, TreePine, GlassWater, Heart } from "lucide-react";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "wouter";
 
 // ── CDN image URLs ─────────────────────────────────────────────────────────
@@ -37,6 +37,12 @@ const CDN = {
   teensDiving:            "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/feoAhmboCuSZhyiC.jpg",
   multigenSafari:         "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/hpOuwkpcETbNVhZQ.jpg",
   japanTeaCeremony:       "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/hcjSCfPHPPTSsfpg.jpg",
+  // Italy timeline images:
+  italyRome:              "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/LyGhkzFTaqAffZLN.jpg",
+  italyTuscany:           "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/hYfEHzdFIlOpnyZs.jpg",
+  italyAmalfi:            "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/EorfCZAQDYxVwjKH.jpg",
+  italyFlorence:          "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/hvUVxwtvPipkXycm.jpg",
+  italyVeniceCanal:       "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/DXMbKalGojJSFbbl.jpg",
 };
 
 // Unsplash for sections / destinations not covered by uploaded photos:
@@ -226,6 +232,361 @@ const WHY_BTA = [
       "A portion of every booking supports local charities including childhood cancer research, Make-A-Wish, veterans, and arts and culture in the communities where you travel.",
   },
 ];
+
+// ─────────────────────────────────────────────────────────────────────────────
+
+// ── Italy Timeline data ────────────────────────────────────────────────────
+// WHY: Each tab represents the same 8-day Italy itinerary curated differently
+// for each family type. The data-driven approach makes it easy to update or
+// expand to other destinations in the future.
+const ITALY_TABS = [
+  {
+    id: "children",
+    label: "Young Children",
+    sub: "Ages 3–10",
+    Icon: Baby,
+    accentColor: "#9C886A",
+    days: [
+      {
+        day: "Days 1–2",
+        location: "Rome",
+        image: CDN.italyRome,
+        headline: "Arrival & Ancient Wonders",
+        experience: "Private transfer to your family suite. Next morning: a dedicated family guide leads an interactive Colosseum tour — kids dress as gladiators in the arena floor.",
+        stay: "Hotel de Russie",
+        highlight: "Gladiator experience at the Colosseum",
+      },
+      {
+        day: "Days 3–4",
+        location: "Tuscany",
+        image: CDN.italyTuscany,
+        headline: "Villa Life & Olive Groves",
+        experience: "Private villa with pool and connecting suites. Morning pasta-making class with a local nonna. Afternoon gelato tour through a medieval hill town.",
+        stay: "Private Tuscan Villa",
+        highlight: "Pasta class with a local nonna",
+      },
+      {
+        day: "Days 5–6",
+        location: "Florence",
+        image: CDN.italyFlorence,
+        headline: "Art & Discovery",
+        experience: "Family-focused Uffizi tour with a storytelling guide who brings Botticelli to life for young minds. Afternoon leather workshop — children make their own bracelet.",
+        stay: "Portrait Firenze",
+        highlight: "Storytelling tour of the Uffizi",
+      },
+      {
+        day: "Days 7–8",
+        location: "Amalfi Coast",
+        image: CDN.italyAmalfi,
+        headline: "Coastal Magic & Departure",
+        experience: "Private boat along the Amalfi Coast. Swim in hidden coves. Lunch at a cliffside restaurant with a children's menu. Private transfer to Naples for departure.",
+        stay: "Belmond Hotel Caruso",
+        highlight: "Private boat to hidden sea caves",
+      },
+    ],
+  },
+  {
+    id: "teens",
+    label: "Teenagers",
+    sub: "Ages 11–17",
+    Icon: Compass,
+    accentColor: "#384959",
+    days: [
+      {
+        day: "Days 1–2",
+        location: "Rome",
+        image: CDN.italyRome,
+        headline: "Underground Rome",
+        experience: "Skip-the-line Colosseum with access to the underground hypogeum — where gladiators waited before battle. Evening street food tour through Trastevere with a local teen guide.",
+        stay: "J.K. Place Roma",
+        highlight: "Underground Colosseum hypogeum access",
+      },
+      {
+        day: "Days 3–4",
+        location: "Tuscany",
+        image: CDN.italyTuscany,
+        headline: "Speed, Craft & Countryside",
+        experience: "Ferrari factory tour in Maranello. Afternoon off-road e-bike through Chianti vineyards. Evening photography walk through a medieval village at golden hour.",
+        stay: "Castiglion del Bosco",
+        highlight: "Ferrari factory + Chianti e-bike ride",
+      },
+      {
+        day: "Days 5–6",
+        location: "Florence",
+        image: CDN.italyFlorence,
+        headline: "Craft & Culture",
+        experience: "Private graffiti art workshop with a local street artist. Afternoon at a leather artisan studio — teens design and make their own wallet. Evening rooftop dinner with city views.",
+        stay: "Soprarno Suites",
+        highlight: "Street art workshop + leather craft",
+      },
+      {
+        day: "Days 7–8",
+        location: "Amalfi Coast",
+        image: CDN.italyAmalfi,
+        headline: "Adrenaline & Departure",
+        experience: "Cliff jumping at Positano with a local guide. Snorkeling in the Blue Grotto. Sunset boat back to Amalfi. Private transfer to Naples airport.",
+        stay: "Le Sirenuse",
+        highlight: "Cliff jumping at Positano",
+      },
+    ],
+  },
+  {
+    id: "multigen",
+    label: "Multigenerational",
+    sub: "All Ages Together",
+    Icon: Users,
+    accentColor: "#7982A2",
+    days: [
+      {
+        day: "Days 1–2",
+        location: "Rome",
+        image: CDN.italyRome,
+        headline: "Grand Arrival",
+        experience: "Private fleet of vehicles. Vatican after-hours tour for the whole family — no crowds, personal guide. Dinner at a private dining room in a 16th-century palazzo.",
+        stay: "Hotel Eden",
+        highlight: "Vatican after-hours private tour",
+      },
+      {
+        day: "Days 3–4",
+        location: "Tuscany",
+        image: CDN.italyTuscany,
+        headline: "Estate & Togetherness",
+        experience: "Exclusive-use Tuscan estate with private chef, wine cellar, and pool. Morning truffle hunt with a local hunter and his dogs. Long family lunch under the olive trees.",
+        stay: "Exclusive-Use Tuscan Estate",
+        highlight: "Truffle hunt + long lunch under olives",
+      },
+      {
+        day: "Days 5–6",
+        location: "Florence",
+        image: CDN.italyFlorence,
+        headline: "Art, History & Leisure",
+        experience: "Private Uffizi tour split by interest — grandparents with art historian, teens with photography guide. Afternoon free for shopping, gelato, and the Ponte Vecchio.",
+        stay: "Four Seasons Firenze",
+        highlight: "Parallel private tours for every generation",
+      },
+      {
+        day: "Days 7–8",
+        location: "Amalfi Coast",
+        image: CDN.italyAmalfi,
+        headline: "Coastal Farewell",
+        experience: "Private yacht charter for the whole family. Swimming, lunch on board, and a final sunset toast. Private transfers staggered to match each generation's flight.",
+        stay: "Belmond Hotel Caruso",
+        highlight: "Private yacht charter for the whole family",
+      },
+    ],
+  },
+];
+
+// ── ItalyTimeline component ────────────────────────────────────────────────
+function ItalyTimeline() {
+  const [activeTab, setActiveTab] = useState(0);
+  const [activeDay, setActiveDay] = useState(0);
+  const tab = ITALY_TABS[activeTab];
+  const day = tab.days[activeDay];
+
+  return (
+    <section className="py-24 md:py-32 bg-[#041E42] overflow-hidden">
+      <div className="px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
+
+        {/* Section header */}
+        <div className="text-center mb-14">
+          <p
+            className="text-[#BFAF8A] text-sm mb-4"
+            style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 500, fontStyle: "italic" }}
+          >
+            One Destination, Three Journeys
+          </p>
+          <h2
+            className="text-white text-4xl md:text-5xl font-light uppercase mb-4"
+            style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal" }}
+          >
+            8 Days in Italy, 3 Ways
+          </h2>
+          <p className="text-white/50 text-base font-light max-w-xl mx-auto">
+            The same destination. Completely different journeys. See how BTA tailors every detail to your family.
+          </p>
+        </div>
+
+        {/* Tab switcher */}
+        <div className="flex justify-center mb-12">
+          <div className="inline-flex border border-white/20 divide-x divide-white/20">
+            {ITALY_TABS.map((t, i) => {
+              const TabIcon = t.Icon;
+              return (
+                <button
+                  key={t.id}
+                  onClick={() => { setActiveTab(i); setActiveDay(0); }}
+                  className={`flex items-center gap-2.5 px-6 py-4 text-sm transition-all duration-300 ${
+                    activeTab === i
+                      ? "bg-[#BFAF8A] text-[#041E42]"
+                      : "text-white/60 hover:text-white hover:bg-white/5"
+                  }`}
+                >
+                  <TabIcon size={14} />
+                  <span
+                    className="hidden sm:inline uppercase tracking-widest text-xs"
+                    style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
+                  >
+                    {t.label}
+                  </span>
+                  <span
+                    className="sm:hidden uppercase tracking-widest text-xs"
+                    style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
+                  >
+                    {t.label.split(" ")[0]}
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Main content: day selector + detail panel */}
+        <div className="grid lg:grid-cols-[280px_1fr] gap-8 items-start">
+
+          {/* Day selector — vertical list on desktop, horizontal scroll on mobile */}
+          <div className="flex lg:flex-col gap-3 overflow-x-auto lg:overflow-visible pb-2 lg:pb-0">
+            {tab.days.map((d, i) => (
+              <button
+                key={i}
+                onClick={() => setActiveDay(i)}
+                className={`flex-shrink-0 text-left border transition-all duration-300 ${
+                  activeDay === i
+                    ? "border-[#BFAF8A] bg-[#BFAF8A]/10"
+                    : "border-white/10 hover:border-white/30"
+                }`}
+              >
+                <div className="px-5 py-4">
+                  <p
+                    className={`text-xs uppercase tracking-widest mb-1 ${
+                      activeDay === i ? "text-[#BFAF8A]" : "text-white/40"
+                    }`}
+                    style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic", fontWeight: 500 }}
+                  >
+                    {d.day}
+                  </p>
+                  <p
+                    className={`text-sm uppercase tracking-wide ${
+                      activeDay === i ? "text-white" : "text-white/60"
+                    }`}
+                    style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
+                  >
+                    {d.location}
+                  </p>
+                </div>
+              </button>
+            ))}
+          </div>
+
+          {/* Detail panel */}
+          <div className="grid md:grid-cols-2 gap-0 border border-white/10">
+
+            {/* Photo side */}
+            <div
+              className="relative h-64 md:h-auto min-h-[300px]"
+              style={{
+                backgroundImage: `url(${day.image})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              {/* Gradient overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[#041E42]/80 via-transparent to-transparent" />
+              {/* Location badge */}
+              <div className="absolute bottom-5 left-5 flex items-center gap-2">
+                <MapPin size={12} className="text-[#BFAF8A]" />
+                <span
+                  className="text-white text-xs uppercase tracking-widest"
+                  style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
+                >
+                  {day.location}, Italy
+                </span>
+              </div>
+            </div>
+
+            {/* Text side */}
+            <div className="p-8 md:p-10 flex flex-col justify-between">
+              <div>
+                <p
+                  className="text-[#BFAF8A] text-xs mb-3"
+                  style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic", fontWeight: 500 }}
+                >
+                  {day.day} · {day.location}
+                </p>
+                <h3
+                  className="text-white text-2xl md:text-3xl font-light uppercase mb-5"
+                  style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal" }}
+                >
+                  {day.headline}
+                </h3>
+                <p className="text-white/70 text-sm leading-relaxed font-light mb-6">
+                  {day.experience}
+                </p>
+
+                {/* Highlight pill */}
+                <div className="flex items-start gap-3 border-l-2 border-[#BFAF8A] pl-4">
+                  <div>
+                    <p
+                      className="text-[#BFAF8A] text-xs mb-1"
+                      style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic", fontWeight: 500 }}
+                    >
+                      Signature Moment
+                    </p>
+                    <p className="text-white/80 text-sm font-light">{day.highlight}</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Stay */}
+              <div className="mt-8 pt-6 border-t border-white/10 flex items-center gap-3">
+                <Home size={13} className="text-white/30 flex-shrink-0" />
+                <div>
+                  <p
+                    className="text-white/30 text-xs uppercase tracking-widest"
+                    style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
+                  >
+                    Where You Stay
+                  </p>
+                  <p
+                    className="text-white/70 text-sm font-light"
+                    style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic" }}
+                  >
+                    {day.stay}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        {/* Progress dots */}
+        <div className="flex justify-center gap-3 mt-10">
+          {tab.days.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setActiveDay(i)}
+              className={`transition-all duration-300 ${
+                activeDay === i
+                  ? "w-8 h-1 bg-[#BFAF8A]"
+                  : "w-4 h-1 bg-white/20 hover:bg-white/40"
+              }`}
+            />
+          ))}
+        </div>
+
+        {/* Footer note */}
+        <p
+          className="text-center text-white/30 text-xs mt-10"
+          style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic", fontWeight: 500 }}
+        >
+          Every itinerary is built from scratch — this is an example of what BTA creates for your family.
+        </p>
+
+      </div>
+    </section>
+  );
+}
 
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -446,10 +807,15 @@ export default function FamilyTravel() {
         );
       })}
 
-      {/* ── Comparison Matrix: The Right Trip for Every Age ─────────────── */}
-      {/* WHY: Graphic icon-tile matrix — shows at a glance how BTA tailors Italy
-          for each family type. Minimal text, maximum visual clarity. */}
-      <section className="py-24 md:py-32 bg-[#041E42]">
+      {/* ── 8 Days in Italy, 3 Ways — Interactive Timeline Infographic ─────── */}
+      {/* WHY: An interactive timeline is far more compelling than a static table.
+          It shows the actual journey arc — arrival, exploration, signature moments,
+          departure — and lets visitors self-identify with their family type.
+          Tab switcher keeps it scannable; day cards with photos make it visceral. */}
+      <ItalyTimeline />
+
+      {/* old matrix removed — replaced by ItalyTimeline above */}
+      {false && <section className="hidden">
         <div className="px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
 
           {/* Header */}
@@ -595,7 +961,7 @@ export default function FamilyTravel() {
           </div>
 
         </div>
-      </section>
+      </section>}
 
       {/* ── Favorite Destinations grid ────────────────────────────────────── */}
       <section className="py-24 bg-[#f3f0eb]">
