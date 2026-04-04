@@ -252,7 +252,7 @@ export default function FamilyTravel() {
     <div className="min-h-screen bg-[#faf9f6] text-[#2F2F2F]">
       <NavBar />
 
-      {// ── Hero ─────────────────────────────────────────────────────────── */
+      {/* ── Hero ─────────────────────────────────────────────────────────── */}
       <section className="relative h-[90vh] min-h-[600px] overflow-hidden">
         <div
           ref={heroRef}
@@ -279,7 +279,7 @@ export default function FamilyTravel() {
             style={{ fontFamily: FONT.heading, fontStyle: "normal" }}
           >
             Travel Designed for<br />Every Generation
-          </h1>>
+          </h1>
           <p className="text-white/80 text-lg md:text-xl font-light max-w-xl leading-relaxed">
             Journeys that reflect the interests, preferences, and practical needs of every traveler in your family.
           </p>
