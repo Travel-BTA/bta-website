@@ -118,8 +118,8 @@ export const givesBack = {
   eyebrow: "Purpose and Meaning",
   headline: "TRAVEL THAT GIVES BACK",
   body: "Connection matters.to people, to places, and communities. Through select partnerships, your journeys quietly support arts, education, sports, travel and community. A portion of every booking supports local charities including childhood cancer, Make-A-Wish, veterans, and arts & culture where we travel.",
-  // Children smiling. community impact
-  image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/travel-gives-back_ac83c349.webp",
+  // Make-A-Wish moment: child with cancer at the ocean with parent. quiet, hopeful, deeply moving
+  image: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/XTZGAnRItfMNUTBk.jpg",
 };
 
 export const experienceStrip = {
