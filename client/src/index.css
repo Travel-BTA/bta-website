@@ -508,40 +508,119 @@
     text-align: left !important;
   }
 
-  /* ── BTA Travel Club box — make the outer container more subtle ──
-     WHY: The WP source uses a heavy border and stark background. We soften
-     it to a light stone border with a barely-there background so it reads
-     as an editorial aside rather than a hard-sell advertisement. */
-  .blog-body .vip-box,
-  .blog-body [class*="vip"] {
-    border: 1px solid #edeae4 !important;
-    background: #faf9f6 !important;
-    border-radius: 0 !important;
+  /* ── BTA Luxury Travel Club box ──────────────────────────────────────────
+     WHY: The WP source uses a light stone background with a grey border.
+     We override to a dark navy (#040619) with gold accents to match BTA's
+     luxury brand identity — sophisticated, editorial, not promotional. */
+
+  /* Outer container: dark navy, generous padding, no radius */
+  .blog-body > div[style*="background-color: #faf9f7"],
+  .blog-body > div[style*="background-color:#faf9f7"],
+  .blog-body > div[style*="border: 1px solid #7a7a7a"] {
+    background-color: #040619 !important;
+    border: 1px solid #9C886A !important;
+    padding: 48px 40px !important;
+    margin: 3rem 0 !important;
+  }
+
+  /* Title (h2.vip-main-heading): Instrument Serif, white, smaller — reads as editorial label */
+  .blog-body .vip-main-heading {
+    font-family: 'Instrument Serif', Georgia, serif !important;
+    font-size: clamp(1.1rem, 2.5vw, 1.35rem) !important;
+    font-weight: 400 !important;
+    color: #ffffff !important;
+    letter-spacing: 0.12em !important;
+    text-transform: uppercase !important;
+    background-color: #040619 !important;
+    padding: 0 20px !important;
+  }
+
+  /* The decorative rule behind the title: gold instead of grey */
+  .blog-body > div[style*="border: 1px solid #7a7a7a"] > div[style*="border-top"] > div,
+  .blog-body > div[style*="background-color: #faf9f7"] > div[style*="border-top"] > div {
+    border-top-color: #9C886A !important;
+  }
+
+  /* Subheading (p.vip-subheading): italic, muted gold, smaller */
+  .blog-body .vip-subheading {
+    font-family: 'Playfair Display', Georgia, serif !important;
+    font-size: 0.95rem !important;
+    font-style: italic !important;
+    color: rgba(156, 136, 106, 0.85) !important;
+    line-height: 1.75 !important;
+    margin: 0 0 28px !important;
+  }
+  .blog-body .vip-subheading em {
+    font-style: italic !important;
+    color: rgba(156, 136, 106, 0.85) !important;
+  }
+
+  /* Amenity list items (h6 inside the box): white, spaced, no bold */
+  .blog-body > div[style*="border: 1px solid #7a7a7a"] h6,
+  .blog-body > div[style*="background-color: #faf9f7"] h6 {
+    font-family: 'Playfair Display', Georgia, serif !important;
+    font-size: 0.72rem !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+    color: #ffffff !important;
+    letter-spacing: 0.14em !important;
+    text-transform: uppercase !important;
+    margin: 0 !important;
+    padding: 10px 0 !important;
+    border-bottom: 1px solid rgba(156, 136, 106, 0.2) !important;
+    line-height: 1.4 !important;
+  }
+
+  /* First amenity item: gold top rule */
+  .blog-body > div[style*="border: 1px solid #7a7a7a"] h6:first-of-type,
+  .blog-body > div[style*="background-color: #faf9f7"] h6:first-of-type {
+    border-top: 1px solid rgba(156, 136, 106, 0.2) !important;
+  }
+
+  /* Disclaimer h6 (the *Benefits apply one): muted, italic, no border */
+  .blog-body > div[style*="border: 1px solid #7a7a7a"] h6:last-of-type,
+  .blog-body > div[style*="background-color: #faf9f7"] h6:last-of-type {
+    font-size: 0.62rem !important;
+    font-style: italic !important;
+    color: rgba(156, 136, 106, 0.55) !important;
+    letter-spacing: 0.04em !important;
+    text-transform: none !important;
+    border-bottom: none !important;
+    padding-top: 16px !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 24px !important;
+  }
+
+  /* Strong tags inside amenity h6s: inherit weight (no bold) */
+  .blog-body > div[style*="border: 1px solid #7a7a7a"] h6 strong,
+  .blog-body > div[style*="background-color: #faf9f7"] h6 strong {
+    font-weight: 400 !important;
+    color: inherit !important;
   }
 
   /* ── BOOK WITH VIP AMENITIES button ──
      WHY: WordPress embeds inline styles (padding:16px 40px, background:#040619)
-     directly on the <a> tag. Inline styles have higher specificity than class
-     selectors, so we use !important here to guarantee our values win.
-     The [href*="luxurytravelclubs"] attribute selector targets this button
-     precisely without touching any other links in the article. */
+     directly on the <a> tag. We override to a gold outline ghost button that
+     feels editorial and refined — not a hard-sell dark block. */
   .blog-body a[href*="luxurytravelclubs"] {
     display: inline-block !important;
-    padding: 9px 24px !important;
-    background-color: #2f2f2f !important;
-    color: #ffffff !important;
+    padding: 11px 32px !important;
+    background-color: transparent !important;
+    color: #9C886A !important;
+    border: 1px solid #9C886A !important;
     font-family: 'Playfair Display', Georgia, serif !important;
-    font-size: 0.7rem !important;
-    letter-spacing: 0.18em !important;
+    font-size: 0.65rem !important;
+    letter-spacing: 0.22em !important;
     text-transform: uppercase !important;
     text-decoration: none !important;
-    border: none !important;
     border-radius: 0 !important;
-    transition: background-color 0.25s ease !important;
+    transition: background-color 0.3s ease, color 0.3s ease !important;
+    margin-top: 8px !important;
   }
 
   .blog-body a[href*="luxurytravelclubs"]:hover {
     background-color: #9C886A !important;
+    color: #ffffff !important;
   }
 
   /* ── WordPress CTA buttons ── */
