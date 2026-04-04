@@ -107,3 +107,8 @@
 - [x] Experiences/WhoWeAre: "Travel That Moves You" → H1 Instrument Serif; "BESPOKE BY DESIGN" → Cormorant Garamond italic subtitle
 - [x] About/OurPeople: advisor name labels → Playfair Display Medium steel blue (not all-caps smallcaps)
 - [x] Cruises Hub: category labels (ULTRA-LUXURY, PREMIUM, RIVER) → Playfair Display subtitle style
+
+## About Sub-Pages & Navigation (Apr 2026)
+- [ ] Build Hotel Specialist Program page (/hotel-specialist-program)
+- [ ] Build Hotel Collection Application page (/hotel-collection-application)
+- [ ] Add About dropdown nav: Our People, We Give Back, Hotel Specialist Program, Hotel Collection Application

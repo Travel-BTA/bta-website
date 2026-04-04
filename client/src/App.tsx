@@ -40,6 +40,8 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import FulfillmentPolicy from "./pages/FulfillmentPolicy";
 import CookiePolicy from "./pages/CookiePolicy";
+import HotelSpecialistProgram from "./pages/HotelSpecialistProgram";
+import HotelCollectionApplication from "./pages/HotelCollectionApplication";
 function Router() {
   // make sure to consider if you need authentication for certain routes
   return (
@@ -67,6 +69,9 @@ function Router() {
       <Route path={"/cruises/private-charters"} component={PrivateCharters} />
       {/* About sub-pages */}
       <Route path={"/about/our-people"} component={OurPeople} />
+      <Route path={"/about/philanthropic-initiatives"} component={PhilanthropicInitiatives} />
+      <Route path={"/hotel-specialist-program"} component={HotelSpecialistProgram} />
+      <Route path={"/hotel-collection-application"} component={HotelCollectionApplication} />
       {/* Land Journeys sub-pages */}
       <Route path={"/custom-itineraries"} component={CustomItineraries} />
       {/* Journal / Blog */}
