@@ -325,7 +325,7 @@ export default function Pricing() {
       {/* ── What You Get ── */}
       <section
         className="py-24 px-6"
-        style={{ background: "#040619" }}
+        style={{ background: "#3d3f47" }}
       >
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
@@ -454,7 +454,7 @@ export default function Pricing() {
               cursor: "pointer",
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.background = "#040619";
+              e.currentTarget.style.background = "#3d3f47";
               e.currentTarget.style.color = "#ffffff";
             }}
             onMouseLeave={(e) => {

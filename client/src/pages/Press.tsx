@@ -165,10 +165,10 @@ const PRESS_ITEMS: PressItem[] = [
 const TYPE_COLORS: Record<PressItem["outletType"], { bg: string; text: string }> = {
   TV:          { bg: "#7982A2", text: "#ffffff" },
   PODCAST:     { bg: "#9C886A", text: "#ffffff" },
-  PRINT:       { bg: "#040619", text: "#ffffff" },
+  PRINT:       { bg: "#3d3f47", text: "#ffffff" },
   ONLINE:      { bg: "#edeae4", text: "#040619" },
   AWARD:       { bg: "#9C886A", text: "#ffffff" },
-  PARTNERSHIP: { bg: "#040619", text: "#ffffff" },
+  PARTNERSHIP: { bg: "#3d3f47", text: "#ffffff" },
 };
 
 // ── Component ─────────────────────────────────────────────────────────────────
@@ -487,7 +487,7 @@ export default function Press() {
       {/* ── Media Inquiries ── */}
       <section
         className="py-20 px-6 text-center"
-        style={{ background: "#040619" }}
+        style={{ background: "#3d3f47" }}
       >
         <div className="max-w-xl mx-auto">
           <p
