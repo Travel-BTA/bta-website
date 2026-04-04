@@ -57,6 +57,7 @@ const ABOUT_SUBMENU = [
   { label: "Hotel Specialist Program",      href: "/hotel-specialist-program" },
   { label: "Hotel Collection Application",  href: "/hotel-collection-application" },
   { label: "Advisor Programs",              href: "/advisor-programs" },
+  { label: "Advisor Recruitment",            href: "/advisor-recruitment" },
 ];
 
 // Shared dropdown panel styles
