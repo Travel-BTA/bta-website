@@ -37,7 +37,7 @@ const MORE_SUBMENU = [
 
 // The 6 primary nav links shown directly in the bar
 // WHY: Pricing moved under About dropdown; Cruises promoted to primary nav
-const PRIMARY_LINKS = ["Destinations", "Experiences", "Cruises", "Journal", "Press", "About"];
+const PRIMARY_LINKS = ["Destinations", "Experiences", "Cruises", "Journal", "Press", "Our Team"];
 
 // Shared dropdown panel styles
 const dropdownPanelClass =
@@ -208,11 +208,11 @@ export default function NavBar() {
         {/* Desktop Nav — 6 primary links + More dropdown */}
         <nav className="hidden lg:flex items-center gap-7">
           {primaryLinks.map((link) => {
-            if (link.label === "About") {
+            if (link.label === "Our Team") {
               return (
                 <DesktopDropdown
                   key="about"
-                  label="About"
+                  label="Our Team"
                   href="/about"
                   items={ABOUT_SUBMENU}
                   open={aboutOpen}
@@ -269,11 +269,11 @@ export default function NavBar() {
         <div className="lg:hidden bg-[#384959] border-t border-white/10">
           <div className="px-6 py-6 flex flex-col gap-5">
             {primaryLinks.map((link) => {
-              if (link.label === "About") {
+              if (link.label === "Our Team") {
                 return (
                   <MobileAccordionItem
                     key="about-mobile"
-                    label="About"
+                    label="Our Team"
                     href="/about"
                     items={ABOUT_SUBMENU.filter((i) => i.href !== "/about")}
                     onClose={() => setMenuOpen(false)}
