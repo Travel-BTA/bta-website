@@ -351,52 +351,182 @@ export default function AdvisorPrograms() {
         </div>
       </section>
 
-      {/* ── Iris AI ───────────────────────────────────────────────────────── */}
+      {/* ── CRM: Your Practice, Fully Organized ──────────────────────────── */}
+      {/*
+       * WHY: This section uses Janet's exact copy about the BTA Advisor Platform CRM.
+       * It replaces the previous generic Iris placeholder with real product description.
+       */}
       <section className="py-24 md:py-32 bg-[#faf9f6]">
         <div className="max-w-[1440px] mx-auto px-8 lg:px-14">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-            <div className="relative">
-              <div className="absolute -inset-10 bg-[#bfaf8a]/8 rounded-full blur-3xl" />
-              <img src={CDN.irisAiMapNetwork} alt="Iris AI Knowledge Base" className="relative z-10 w-full shadow-2xl" />
+          {/* Section header */}
+          <div className="max-w-3xl mb-20">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-12 h-px bg-[#bfaf8a]" />
+              <p className="text-[#bfaf8a] text-2xl italic" style={{ fontFamily: "'Allura', cursive" }}>
+                Your Practice
+              </p>
             </div>
-            <div>
+            <h2
+              className="text-[#384959] text-4xl md:text-5xl font-light leading-tight mb-6"
+              style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
+            >
+              Fully Organized
+            </h2>
+            <p
+              className="text-[#2F2F2F]/65 text-lg font-light leading-relaxed"
+              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+            >
+              The BTA Advisor Platform is a purpose-built workspace for luxury travel advisors — designed around
+              the way you actually work, not the way generic software thinks you should.
+            </p>
+          </div>
+
+          {/* Intro paragraphs */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-20 items-start">
+            <div className="space-y-6">
+              <p
+                className="text-[#2F2F2F]/65 text-lg font-light leading-relaxed"
+                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              >
+                Every client, trip, booking, supplier, and conversation lives in one place. When a traveler calls,
+                their full history is already on screen. When a trip is in motion, every booking, task, and
+                communication tied to it is a single click away.
+              </p>
+              <p
+                className="text-[#2F2F2F]/65 text-lg font-light leading-relaxed"
+                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              >
+                Nothing gets lost between your inbox, your notes, and your memory.
+              </p>
+            </div>
+            <div className="overflow-hidden shadow-xl border border-[#bfaf8a]/15">
+              <img src={CDN.workflowKanbanGlass} alt="BTA Advisor Platform Dashboard" className="w-full h-auto" />
+            </div>
+          </div>
+
+          {/* Feature list */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                title: "Complete Client Records",
+                desc: "Contact details, travel preferences, passport information, past trips, upcoming bookings, and every call, email, and message in one timeline.",
+              },
+              {
+                title: "Live Phone & SMS",
+                desc: "Call or text any client from your browser. Inbound calls ring your screen and log automatically with a recording you can replay at any time.",
+              },
+              {
+                title: "Real-Time Task Board",
+                desc: "Follow-ups, document deadlines, deposit reminders, and supplier confirmations all tracked against the right trip and client.",
+              },
+              {
+                title: "Supplier Directory",
+                desc: "Your direct contacts at every hotel, cruise line, DMC, and tour operator — names, titles, emails, and phone numbers for the people who actually pick up.",
+              },
+              {
+                title: "AI-Assisted Notes",
+                desc: "AI-assisted call summaries and client notes so you spend less time documenting and more time advising.",
+              },
+              {
+                title: "Built for Luxury Advisors",
+                desc: "No learning curve, no clutter — just the information you need, when you need it. Designed for complex, high-touch itineraries at the luxury level.",
+              },
+            ].map(({ title, desc }) => (
+              <div key={title} className="p-8 bg-white border border-[#bfaf8a]/15 shadow-sm hover:shadow-md transition-shadow duration-300">
+                <div className="w-8 h-px bg-[#bfaf8a] mb-5" />
+                <h4
+                  className="text-[#384959] text-xl font-light mb-3"
+                  style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
+                >
+                  {title}
+                </h4>
+                <p
+                  className="text-[#2F2F2F]/60 text-sm font-light leading-relaxed"
+                  style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                >
+                  {desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Iris: Your Itinerary Alchemist ────────────────────────────────── */}
+      {/*
+       * WHY: This section uses Janet's exact Iris copy — the proprietary AI itinerary tool.
+       * Replaces the previous generic placeholder with the real product description.
+       */}
+      <section className="py-24 md:py-32 bg-[#384959] text-white">
+        <div className="max-w-[1440px] mx-auto px-8 lg:px-14">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+
+            {/* Image */}
+            <div className="relative order-2 lg:order-1">
+              <div className="absolute -inset-10 bg-[#bfaf8a]/8 rounded-full blur-3xl" />
+              <img src={CDN.irisAiMapNetwork} alt="Iris AI Itinerary Platform" className="relative z-10 w-full shadow-2xl border border-white/10" />
+            </div>
+
+            {/* Copy */}
+            <div className="order-1 lg:order-2">
               <div className="flex items-center gap-4 mb-6">
-                <div className="w-12 h-px bg-[#bfaf8a]" />
+                <div className="w-12 h-px bg-[#bfaf8a]/50" />
                 <p className="text-[#bfaf8a] text-2xl italic" style={{ fontFamily: "'Allura', cursive" }}>
-                  Meet Your New Assistant
+                  Your Itinerary Alchemist
                 </p>
               </div>
               <h2
-                className="text-[#384959] text-4xl md:text-5xl font-light mb-8"
+                className="text-white text-4xl md:text-5xl font-light mb-8"
                 style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
               >
-                Iris AI Knowledge Base
+                Meet Iris
               </h2>
               <p
-                className="text-[#2F2F2F]/65 text-lg font-light leading-relaxed mb-8"
+                className="text-white/70 text-lg font-light leading-relaxed mb-6"
                 style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
               >
-                Iris isn't just a chatbot — she's a luxury travel expert trained on thousands of BTA data sets.
-                Integrated directly with our drive and intranet, Iris understands the nuances of bespoke planning.
+                Iris is Boutique Travel Advisors' proprietary AI platform, built exclusively for our advisor team.
+                Brief Iris the way you'd brief a colleague — tell it about the trip, the travelers, and their vision —
+                and it transforms that conversation into a fully structured, beautifully branded itinerary in minutes.
               </p>
-              <div className="space-y-4">
+              <p
+                className="text-white/70 text-lg font-light leading-relaxed mb-10"
+                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              >
+                Iris handles the craft: day-by-day programming, destination guides, hotel overviews, dining
+                recommendations, gratuity tables, travel requirements, and client-ready PDF exports. You stay in
+                control — every section is editable, every photo is swappable, and Iris is always one message away
+                to refine, reorder, or reimagine any part of the journey.
+              </p>
+
+              {/* Feature tiles */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
                 {[
-                  { title: "Deep Knowledge Access", desc: "Instantly retrieve supplier details, training materials, and itinerary templates." },
-                  { title: "Brand Voice Expert", desc: "Drafts emails and client communications that perfectly match the BTA tone of voice." },
+                  { title: "Day-by-Day Programming", desc: "Full itinerary structure generated from a single briefing conversation." },
+                  { title: "Destination Guides", desc: "Hotel overviews, dining recommendations, and local context included automatically." },
+                  { title: "Client-Ready PDF Export", desc: "Beautifully branded documents ready to send the moment you approve them." },
+                  { title: "Virtuoso Inventory Access", desc: "Hotel inventory, curated experiences, and cruise search — all searchable from inside the same workspace." },
                 ].map(({ title, desc }) => (
-                  <div key={title} className="p-6 bg-[#384959]/5 border border-[#384959]/10">
+                  <div key={title} className="p-5 bg-white/5 border border-white/10 hover:bg-white/8 transition-colors duration-200">
                     <h4
-                      className="text-[#384959] text-lg mb-2"
+                      className="text-white text-base mb-2"
                       style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
                     >
                       {title}
                     </h4>
-                    <p className="text-sm text-[#2F2F2F]/55 font-light" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+                    <p className="text-white/55 text-sm font-light" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
                       {desc}
                     </p>
                   </div>
                 ))}
               </div>
+
+              <p
+                className="text-[#bfaf8a] text-base font-light italic"
+                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              >
+                Less time building documents. More time building relationships.
+              </p>
             </div>
           </div>
         </div>
