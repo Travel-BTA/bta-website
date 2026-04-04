@@ -31,10 +31,12 @@ const CDN = {
   icelandWaterfall:  "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/XstSWWeGpNaXPXhd.jpg",
   fijiPool:          "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/jgMUTHJPGDhVRPwt.jpg",
   // New photos from Janet (Apr 2026):
-  franceSeine:       "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/QlJufeKDhrsRXhjQ.jpg",
-  youngChildrenGladiator: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/PWcuHQqNrzfXGoHd.jpg",
-  teensKayak:        "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/tbPzfzZeuafYHJfi.jpg",
-  multigenSafari:    "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/ELgTElGtHWcRdwrV.jpg",
+  franceSeine:            "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/QlJufeKDhrsRXhjQ.jpg",
+  // v2 replacements — correct photos per Janet's direction:
+  youngChildrenGladiator: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/fSWIIBAYqwfCGZNT.jpg",
+  teensDiving:            "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/feoAhmboCuSZhyiC.jpg",
+  multigenSafari:         "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/hpOuwkpcETbNVhZQ.jpg",
+  japanTeaCeremony:       "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/hcjSCfPHPPTSsfpg.jpg",
 };
 
 // Unsplash for sections / destinations not covered by uploaded photos:
@@ -100,8 +102,8 @@ const AGE_GROUPS = [
       "Hands-on experiences including cooking classes, artisan workshops, and cultural immersion",
       "Time built into the itinerary for independence and personal exploration",
     ],
-    // Kayaking through jungle river — immersive teen adventure
-    imageUrl: CDN.teensKayak,
+    // Freediving through coral cave — breathtaking teen adventure
+    imageUrl: CDN.teensDiving,
     imageLeft: true,
   },
   {
@@ -172,7 +174,8 @@ const DESTINATIONS = [
     region: "Asia",
     description:
       "An excellent option for families seeking culture, safety, and variety, with experiences ranging from private sushi workshops and temple visits to modern city exploration and countryside stays.",
-    imageUrl: UNS.japan,
+    // Kyoto tea ceremony with mother and daughter in kimono — quintessential Japan family experience
+    imageUrl: CDN.japanTeaCeremony,
   },
   {
     name: "South Africa",
