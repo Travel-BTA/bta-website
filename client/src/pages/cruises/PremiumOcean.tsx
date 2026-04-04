@@ -137,7 +137,7 @@ export default function PremiumOcean() {
           <p className="text-[#bfaf8a] mb-3" style={{ fontFamily: "'Allura', cursive", fontSize: "1.6rem" }}>
             Destination-Driven Voyages
           </p>
-          <h1 className="text-white text-5xl md:text-6xl uppercase leading-none mb-6" style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400, letterSpacing: "0.04em" }}>
+          <h1 className="text-white text-5xl md:text-6xl uppercase leading-none mb-6" style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400, letterSpacing: "0.04em" , textTransform: "uppercase" }}>
             Premium Ocean Cruises
           </h1>
           <p className="text-white/85 text-xl max-w-2xl leading-relaxed mb-8" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>

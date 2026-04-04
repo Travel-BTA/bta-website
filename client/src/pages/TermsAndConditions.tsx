@@ -434,6 +434,7 @@ export default function TermsAndConditions() {
               fontWeight: 400,
               lineHeight: 1.1,
               letterSpacing: "0.08em",
+              textTransform: "uppercase"
             }}
           >
             Terms &amp; Conditions
@@ -544,6 +545,7 @@ export default function TermsAndConditions() {
                     fontFamily: "'Instrument Serif', serif",
                     color: "#bfaf8a",
                     letterSpacing: "0.12em",
+                    textTransform: "uppercase"
                   }}
                 >
                   {String(i + 1).padStart(2, "0")}
@@ -594,6 +596,7 @@ export default function TermsAndConditions() {
               fontWeight: 400,
               color: "#bfaf8a",
               letterSpacing: "0.1em",
+              textTransform: "uppercase"
             }}
           >
             Questions or Concerns?
@@ -637,6 +640,7 @@ export default function TermsAndConditions() {
                     fontFamily: "'Instrument Serif', serif",
                     color: "#bfaf8a",
                     letterSpacing: "0.12em",
+                    textTransform: "uppercase"
                   }}
                 >
                   {item.label}
@@ -676,6 +680,7 @@ export default function TermsAndConditions() {
             borderTop: "1px solid rgba(191,175,138,0.3)",
             fontFamily: "'Instrument Serif', serif",
             letterSpacing: "0.1em",
+            textTransform: "uppercase"
           }}
         >
           {[

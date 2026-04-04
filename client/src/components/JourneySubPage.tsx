@@ -99,7 +99,7 @@ export default function JourneySubPage({ data }: Props) {
   }, []);
 
   return (
-    <div className="min-h-screen bg-bta-stone text-[#2F2F2F] font-[Cormorant_Garamond,serif]">
+    <div className="min-h-screen bg-bta-stone text-[#2F2F2F] font-['Playfair_Display',Georgia,serif]">
 
       {/* ── Hero ───────────────────────────────────────────────────────── */}
       <section className="relative h-[90vh] min-h-[600px] overflow-hidden">
@@ -115,7 +115,7 @@ export default function JourneySubPage({ data }: Props) {
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/25 to-black/65" />
         <div className="relative z-10 h-full flex flex-col justify-end pb-20 px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
           {/* Eyebrow: Playfair Display italic gold on photo */}
-          <p className="font-[Cormorant_Garamond,serif] italic text-bta-gold tracking-[0.25em] text-base uppercase mb-3">
+          <p className="font-['Playfair_Display',Georgia,serif] italic text-bta-gold tracking-[0.25em] text-base uppercase mb-3">
             {data.hero.eyebrow}
           </p>
           {/* H1: Playfair Display uppercase white on hero photo */}
@@ -123,12 +123,12 @@ export default function JourneySubPage({ data }: Props) {
             {data.hero.headline}
           </h1>
           {/* Subheadline: Playfair Display italic white */}
-          <p className="font-[Cormorant_Garamond,serif] italic text-white/80 text-xl md:text-2xl max-w-xl leading-relaxed">
+          <p className="font-['Playfair_Display',Georgia,serif] italic text-white/80 text-xl md:text-2xl max-w-xl leading-relaxed">
             {data.hero.subheadline}
           </p>
           <div className="mt-10 flex items-center gap-3 text-white/50">
             <div className="w-8 h-px bg-white/40" />
-            <span className="font-[Cormorant_SC,serif] text-xs tracking-[0.2em] uppercase">Scroll to explore</span>
+            <span className="font-['Playfair_Display',Georgia,serif] text-xs tracking-[0.2em] uppercase">Scroll to explore</span>
           </div>
         </div>
       </section>
@@ -138,7 +138,7 @@ export default function JourneySubPage({ data }: Props) {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             {/* Eyebrow */}
-            <p className="font-[Cormorant_Garamond,serif] italic text-bta-gold tracking-[0.25em] text-base uppercase mb-4">
+            <p className="font-['Playfair_Display',Georgia,serif] italic text-bta-gold tracking-[0.25em] text-base uppercase mb-4">
               {data.intro.eyebrow}
             </p>
             {/* H2: Playfair Display uppercase aegean */}
@@ -146,11 +146,11 @@ export default function JourneySubPage({ data }: Props) {
               {data.intro.headline}
             </h2>
             {/* Body: Playfair Display */}
-            <p className="font-[Cormorant_Garamond,serif] text-lg leading-relaxed text-[#2f2f2f] mb-10">
+            <p className="font-['Playfair_Display',Georgia,serif] text-lg leading-relaxed text-[#2f2f2f] mb-10">
               {data.intro.body}
             </p>
             <Link href="/book">
-              <button className="group inline-flex items-center gap-3 bg-bta-gold text-white font-[Cormorant_SC,serif] tracking-widest uppercase text-sm px-10 py-4 hover:bg-bta-gold-dark transition-colors duration-200">
+              <button className="group inline-flex items-center gap-3 bg-bta-gold text-white font-['Playfair_Display',Georgia,serif] tracking-widest uppercase text-sm px-10 py-4 hover:bg-bta-gold-dark transition-colors duration-200">
                 Begin Planning
                 <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
               </button>
@@ -175,7 +175,7 @@ export default function JourneySubPage({ data }: Props) {
       <section className="py-24 bg-bta-stone">
         <div className="px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
           <div className="text-center mb-16">
-            <p className="font-[Cormorant_Garamond,serif] italic text-bta-gold tracking-[0.25em] text-base uppercase mb-4">
+            <p className="font-['Playfair_Display',Georgia,serif] italic text-bta-gold tracking-[0.25em] text-base uppercase mb-4">
               Featured Destinations
             </p>
             <h2 className="font-[Playfair_Display,serif] text-3xl md:text-4xl text-bta-aegean uppercase tracking-widest">
@@ -192,14 +192,14 @@ export default function JourneySubPage({ data }: Props) {
                   />
                 </div>
                 {/* Country label */}
-                <p className="font-[Cormorant_Garamond,serif] italic text-bta-gold text-sm tracking-[0.2em] uppercase mb-2">
+                <p className="font-['Playfair_Display',Georgia,serif] italic text-bta-gold text-sm tracking-[0.2em] uppercase mb-2">
                   {dest.country}
                 </p>
                 {/* H3: Playfair Display uppercase aegean */}
                 <h3 className="font-[Playfair_Display,serif] text-xl md:text-2xl text-bta-aegean uppercase tracking-widest mb-3">
                   {dest.name}
                 </h3>
-                <p className="font-[Cormorant_Garamond,serif] text-lg leading-relaxed text-[#2f2f2f]">
+                <p className="font-['Playfair_Display',Georgia,serif] text-lg leading-relaxed text-[#2f2f2f]">
                   {dest.description}
                 </p>
               </div>
@@ -225,19 +225,19 @@ export default function JourneySubPage({ data }: Props) {
             <div className="absolute -bottom-4 -left-4 w-16 h-16 border-b-2 border-l-2 border-bta-gold" />
           </div>
           <div>
-            <p className="font-[Cormorant_Garamond,serif] italic text-bta-gold tracking-[0.25em] text-base uppercase mb-4">
+            <p className="font-['Playfair_Display',Georgia,serif] italic text-bta-gold tracking-[0.25em] text-base uppercase mb-4">
               {data.featuredItinerary.eyebrow}
             </p>
             <h2 className="font-[Playfair_Display,serif] text-3xl md:text-4xl text-bta-aegean uppercase tracking-widest leading-tight mb-6">
               {data.featuredItinerary.headline}
             </h2>
-            <p className="font-[Cormorant_Garamond,serif] text-lg leading-relaxed text-[#2f2f2f] mb-10">
+            <p className="font-['Playfair_Display',Georgia,serif] text-lg leading-relaxed text-[#2f2f2f] mb-10">
               {data.featuredItinerary.description}
             </p>
             <div className="grid grid-cols-2 gap-6 mb-10 border-t border-b border-[#edeae4] py-8">
               {data.featuredItinerary.details.map((d, i) => (
                 <div key={i}>
-                  <p className="font-[Cormorant_Garamond,serif] italic text-bta-gold text-xs tracking-[0.2em] uppercase mb-1">
+                  <p className="font-['Playfair_Display',Georgia,serif] italic text-bta-gold text-xs tracking-[0.2em] uppercase mb-1">
                     {d.label}
                   </p>
                   <p className="font-[Playfair_Display,serif] text-bta-aegean text-lg tracking-wide">
@@ -247,7 +247,7 @@ export default function JourneySubPage({ data }: Props) {
               ))}
             </div>
             <Link href="/book">
-              <button className="group inline-flex items-center gap-3 bg-bta-aegean text-white font-[Cormorant_SC,serif] tracking-widest uppercase text-sm px-10 py-4 hover:bg-[#2a3a4a] transition-colors duration-200">
+              <button className="group inline-flex items-center gap-3 bg-bta-aegean text-white font-['Playfair_Display',Georgia,serif] tracking-widest uppercase text-sm px-10 py-4 hover:bg-[#2a3a4a] transition-colors duration-200">
                 Enquire About This Journey
                 <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
               </button>
@@ -260,7 +260,7 @@ export default function JourneySubPage({ data }: Props) {
       <section className="py-24 bg-bta-aegean">
         <div className="px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
           <div className="text-center mb-16">
-            <p className="font-[Cormorant_Garamond,serif] italic text-bta-gold tracking-[0.25em] text-base uppercase mb-4">
+            <p className="font-['Playfair_Display',Georgia,serif] italic text-bta-gold tracking-[0.25em] text-base uppercase mb-4">
               {data.whyBta.eyebrow}
             </p>
             <h2 className="font-[Playfair_Display,serif] text-3xl md:text-4xl text-white uppercase tracking-widest">
@@ -274,7 +274,7 @@ export default function JourneySubPage({ data }: Props) {
                 <h3 className="font-[Playfair_Display,serif] text-white text-xl uppercase tracking-widest mb-4">
                   {item.title}
                 </h3>
-                <p className="font-[Cormorant_Garamond,serif] text-white/70 text-lg leading-relaxed">
+                <p className="font-['Playfair_Display',Georgia,serif] text-white/70 text-lg leading-relaxed">
                   {item.description}
                 </p>
               </div>
@@ -298,11 +298,11 @@ export default function JourneySubPage({ data }: Props) {
           <h2 className="font-[Playfair_Display,serif] text-4xl md:text-5xl text-white uppercase tracking-widest mb-6 leading-tight">
             {data.cta.headline}
           </h2>
-          <p className="font-[Cormorant_Garamond,serif] italic text-white/70 text-xl md:text-2xl mb-12 max-w-xl mx-auto">
+          <p className="font-['Playfair_Display',Georgia,serif] italic text-white/70 text-xl md:text-2xl mb-12 max-w-xl mx-auto">
             {data.cta.subheadline}
           </p>
           <Link href="/book">
-            <button className="group inline-flex items-center gap-3 border border-white/60 text-white font-[Cormorant_SC,serif] tracking-widest uppercase text-sm px-12 py-5 hover:bg-white hover:text-bta-aegean transition-all duration-300">
+            <button className="group inline-flex items-center gap-3 border border-white/60 text-white font-['Playfair_Display',Georgia,serif] tracking-widest uppercase text-sm px-12 py-5 hover:bg-white hover:text-bta-aegean transition-all duration-300">
               Start Planning
               <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
             </button>

@@ -85,7 +85,7 @@ export function JournalSection() {
                       <div className="w-full h-64 bg-white/10 flex items-center justify-center">
                         <span
                           className="text-white/20 text-[9px] tracking-widest uppercase"
-                          style={{ fontFamily: "'Instrument Serif', serif" }}
+                          style={{ fontFamily: "'Instrument Serif', serif" , textTransform: "uppercase" }}
                         >
                           Boutique Travel
                         </span>

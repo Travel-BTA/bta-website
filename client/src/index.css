@@ -95,14 +95,17 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Cormorant Garamond', Georgia, serif;
+    /* WHY: Playfair Display Regular is the BTA brand body font */
+    font-family: 'Playfair Display', Georgia, serif;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', Georgia, serif;
+    /* WHY: Instrument Serif is the BTA brand title font — always uppercase per brand guide */
+    font-family: 'Instrument Serif', Georgia, serif;
+    text-transform: uppercase;
   }
 
   button:not(:disabled),
@@ -151,27 +154,32 @@
   }
 
   .font-script {
-    font-family: 'Cormorant Garamond', Georgia, serif;
+    /* WHY: Allura is the BTA brand script/pop font */
+    font-family: 'Allura', cursive;
     font-style: italic;
     font-weight: 400;
   }
 
   .font-body {
-    font-family: 'Cormorant Garamond', Georgia, serif;
+    /* WHY: Playfair Display Regular is the BTA brand body font */
+    font-family: 'Playfair Display', Georgia, serif;
     font-weight: 400;
   }
 
   .font-smallcaps {
-    font-family: 'Cormorant SC', 'Cormorant Garamond', Georgia, serif;
-    font-weight: 400;
-    letter-spacing: 0.12em;
+    /* WHY: Playfair Display semi-bold italic is the BTA eyebrow/label font */
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 0.02em;
   }
 
-  /* BTA Section Eyebrow Label — Champagne Gold italic */
+  /* BTA Section Eyebrow Label — Playfair Display semi-bold italic, Champagne Gold */
   .bta-eyebrow {
-    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 600;
     font-style: italic;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     color: #BFAF8A;
     letter-spacing: 0.02em;
   }
@@ -182,7 +190,7 @@
     padding: 0.6rem 2rem;
     border: 1px solid rgba(255,255,255,0.8);
     color: white;
-    font-family: 'Cormorant SC', 'Cormorant Garamond', Georgia, serif;
+    font-family: 'Playfair Display', Georgia, serif;
     font-size: 0.75rem;
     letter-spacing: 0.18em;
     text-transform: uppercase;
@@ -199,7 +207,7 @@
     padding: 0.6rem 2rem;
     border: 1px solid #BFAF8A;
     color: #BFAF8A;
-    font-family: 'Cormorant SC', 'Cormorant Garamond', Georgia, serif;
+    font-family: 'Playfair Display', Georgia, serif;
     font-size: 0.75rem;
     letter-spacing: 0.18em;
     text-transform: uppercase;
@@ -217,7 +225,7 @@
     padding: 0.65rem 2.5rem;
     background: #BFAF8A;
     color: white;
-    font-family: 'Cormorant SC', 'Cormorant Garamond', Georgia, serif;
+    font-family: 'Playfair Display', Georgia, serif;
     font-size: 0.75rem;
     letter-spacing: 0.18em;
     text-transform: uppercase;
@@ -229,10 +237,10 @@
     border-color: #bfaf8a;
   }
 
-  /* Section heading style */
+  /* Section heading style — Instrument Serif is the BTA title font, always uppercase */
   .bta-section-title {
-    font-family: 'Playfair Display', Georgia, serif;
-    font-weight: 500;
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-weight: 400;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     line-height: 1.15;
@@ -242,11 +250,11 @@
      WHY: WordPress post content arrives as raw HTML with no styling applied.
      These rules style every element the WordPress editor can produce — headings,
      paragraphs, lists, blockquotes, images, tables — to match the BTA luxury
-     editorial aesthetic. Playfair Display for headings, Cormorant Garamond for
+     editorial aesthetic. Instrument Serif for headings, Playfair Display for
      body text, generous spacing, and brand-consistent colors throughout.
   ─────────────────────────────────────────────────────────────────────────── */
   .blog-body {
-    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-family: 'Playfair Display', Georgia, serif;
     font-size: 1.2rem;
     line-height: 1.9;
     color: #2F2F2F;
@@ -260,6 +268,7 @@
     margin-bottom: 1.5rem;
     font-size: 1.2rem;
     line-height: 1.9;
+    font-family: 'Playfair Display', Georgia, serif;
   }
 
   /* First paragraph directly after a heading should not double-stack space */
@@ -288,14 +297,14 @@
     margin-top: 3rem;
   }
 
-  /* ── Headings — Playfair Display, light weight, never aggressive ── */
+  /* ── Headings — Instrument Serif for blog post headings ── */
   .blog-body h1,
   .blog-body h2,
   .blog-body h3,
   .blog-body h4,
   .blog-body h5,
   .blog-body h6 {
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family: 'Instrument Serif', Georgia, serif;
     font-weight: 400;
     color: #2F2F2F;
     line-height: 1.25;
@@ -502,7 +511,7 @@
     padding: 9px 24px !important;
     background-color: #2f2f2f !important;
     color: #ffffff !important;
-    font-family: 'Cormorant SC', 'Cormorant Garamond', serif !important;
+    font-family: 'Playfair Display', Georgia, serif !important;
     font-size: 0.7rem !important;
     letter-spacing: 0.18em !important;
     text-transform: uppercase !important;
@@ -528,7 +537,7 @@
     padding: 0.75rem 2.5rem;
     background: #2F2F2F;
     color: #fff;
-    font-family: 'Cormorant SC', 'Cormorant Garamond', serif;
+    font-family: 'Playfair Display', Georgia, serif;
     font-size: 0.75rem;
     letter-spacing: 0.2em;
     text-transform: uppercase;

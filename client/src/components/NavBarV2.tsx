@@ -73,11 +73,11 @@ export default function NavBar() {
             ) : (
               <div className="text-white leading-none">
                 <div className="text-[9px] tracking-[0.35em] uppercase opacity-80"
-                  style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}>BOUTIQUE</div>
+                  style={{ fontFamily: "'Instrument Serif', Georgia, serif" , textTransform: "uppercase" }}>BOUTIQUE</div>
                 <div className="text-xl leading-none mt-[-1px]"
                   style={{ fontFamily: "'Allura', cursive" }}>travel</div>
                 <div className="text-[9px] tracking-[0.35em] uppercase opacity-80 mt-[-2px]"
-                  style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}>ADVISORS</div>
+                  style={{ fontFamily: "'Instrument Serif', Georgia, serif" , textTransform: "uppercase" }}>ADVISORS</div>
               </div>
             )}
           </a>
@@ -165,7 +165,7 @@ export default function NavBar() {
         >
           <span
             className="text-[#bfaf8a] text-[9px] tracking-[0.3em] uppercase"
-            style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
+            style={{ fontFamily: "'Instrument Serif', Georgia, serif" , textTransform: "uppercase" }}
           >
             Menu
           </span>
@@ -224,7 +224,7 @@ export default function NavBar() {
           </a>
           <p
             className="text-center text-white/25 text-[9px] tracking-[0.2em] uppercase mt-5"
-            style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
+            style={{ fontFamily: "'Instrument Serif', Georgia, serif" , textTransform: "uppercase" }}
           >
             Virtuoso Member
           </p>

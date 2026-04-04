@@ -58,7 +58,7 @@ function HeroSection() {
       {/* Text block */}
       <div className="px-6 pt-10 pb-8">
         {/* H1: Instrument Serif ALL CAPS on cream background */}
-        <h1 className="text-[#2F2F2F] text-4xl uppercase leading-none mb-2" style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400, letterSpacing: "0.04em" }}>
+        <h1 className="text-[#2F2F2F] text-4xl uppercase leading-none mb-2" style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400, letterSpacing: "0.04em" , textTransform: "uppercase" }}>
           {h.name}
         </h1>
         <p className="font-smallcaps text-[#bfaf8a] text-[10px] tracking-[0.25em] uppercase mb-3">
@@ -111,11 +111,11 @@ function HeroSection() {
 
       <div className="relative z-10 w-full max-w-[1440px] mx-auto px-14">
         {/* H1: Instrument Serif ALL CAPS white on hero photo */}
-        <h1 className="text-white text-6xl lg:text-7xl uppercase leading-none mb-2" style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400, letterSpacing: "0.04em" }}>
+        <h1 className="text-white text-6xl lg:text-7xl uppercase leading-none mb-2" style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400, letterSpacing: "0.04em" , textTransform: "uppercase" }}>
           {h.name}
         </h1>
         {/* Title label: white on photo. Champagne Gold only on plain backgrounds */}
-        <p className="text-white/75 text-xs tracking-[0.25em] uppercase mb-3" style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}>
+        <p className="text-white/75 text-xs tracking-[0.25em] uppercase mb-3" style={{ fontFamily: "'Instrument Serif', Georgia, serif" , textTransform: "uppercase" }}>
           {h.title}
         </p>
         <p className="text-white/75 text-lg italic max-w-xl mb-6" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 400 }}>

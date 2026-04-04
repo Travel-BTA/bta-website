@@ -4,7 +4,7 @@
  *
  * Design Philosophy: Luxury, Elevated, Modern, Sophisticated
  * Colors: Champagne Gold (#BFAF8A), Aegean Blue (#384959), Warm Stone (#faf9f6)
- * Typography: Playfair Display (headings), Cormorant SC (name labels)
+ * Typography: Playfair Display (headings + body), Instrument Serif (titles), Allura (script accents)
  *
  * Layout:
  *  1. Hero — full-width image with overlay headline
@@ -62,7 +62,7 @@ function AdvisorCard({
           />
         )}
       </div>
-      <p className="font-[Cormorant_SC,serif] tracking-widest text-xs uppercase text-bta-aegean leading-snug">
+      <p className="font-['Playfair_Display',Georgia,serif] tracking-widest text-xs uppercase text-bta-aegean leading-snug">
         {name}
       </p>
       {subtitle && (
@@ -102,7 +102,7 @@ export default function About() {
   const activeTabContent = aboutData.tabs.find((t) => t.id === activeTab);
 
   return (
-    <div className="min-h-screen bg-bta-stone font-[Cormorant_Garamond,serif]">
+    <div className="min-h-screen bg-bta-stone font-['Playfair_Display',Georgia,serif]">
 
       {/* ── 1. HERO ── */}
       <section className="relative h-[55vh] min-h-[400px] overflow-hidden">
@@ -113,7 +113,7 @@ export default function About() {
         />
         <div className="absolute inset-0 bg-bta-aegean/50" />
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-6">
-          <p className="text-bta-gold font-[Cormorant_Garamond,serif] italic text-lg tracking-[0.2em] mb-3 uppercase">
+          <p className="text-bta-gold font-['Playfair_Display',Georgia,serif] italic text-lg tracking-[0.2em] mb-3 uppercase">
             {aboutData.hero.subheadline}
           </p>
           <h1 className="font-[Playfair_Display,serif] text-4xl md:text-6xl text-white uppercase tracking-widest">
@@ -125,7 +125,7 @@ export default function About() {
       {/* ── 2. COMPANY OVERVIEW ── */}
       <section className="bg-white py-20 px-6">
         <div className="max-w-3xl mx-auto text-center">
-          <p className="text-bta-gold font-[Cormorant_Garamond,serif] italic tracking-[0.25em] text-base uppercase mb-4">
+          <p className="text-bta-gold font-['Playfair_Display',Georgia,serif] italic tracking-[0.25em] text-base uppercase mb-4">
             About Us
           </p>
           <h2 className="font-[Playfair_Display,serif] text-3xl md:text-4xl text-bta-aegean uppercase tracking-widest mb-10">
@@ -137,10 +137,10 @@ export default function About() {
             ))}
           </div>
           <blockquote className="mt-14 border-l-2 border-bta-gold pl-6 text-left">
-            <p className="font-[Cormorant_Garamond,serif] italic text-xl md:text-2xl text-bta-aegean leading-relaxed">
+            <p className="font-['Playfair_Display',Georgia,serif] italic text-xl md:text-2xl text-bta-aegean leading-relaxed">
               "{aboutData.overview.quote}"
             </p>
-            <footer className="mt-3 text-bta-gold tracking-widest text-sm uppercase font-[Cormorant_SC,serif]">
+            <footer className="mt-3 text-bta-gold tracking-widest text-sm uppercase font-['Playfair_Display',Georgia,serif]">
              . {aboutData.overview.quoteAuthor}
             </footer>
           </blockquote>
@@ -155,7 +155,7 @@ export default function About() {
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`px-6 py-3 font-[Cormorant_SC,serif] text-sm tracking-widest uppercase transition-all duration-200 whitespace-nowrap ${
+                className={`px-6 py-3 font-['Playfair_Display',Georgia,serif] text-sm tracking-widest uppercase transition-all duration-200 whitespace-nowrap ${
                   activeTab === tab.id
                     ? "border-b-2 border-bta-gold text-bta-aegean"
                     : "text-bta-charcoal/60 hover:text-bta-aegean"
@@ -282,10 +282,10 @@ export default function About() {
       {/* ── 8. MISSION BAND ── */}
       <section className="bg-bta-aegean py-20 px-6">
         <div className="max-w-3xl mx-auto text-center">
-          <p className="text-bta-gold font-[Cormorant_Garamond,serif] italic tracking-[0.25em] text-base uppercase mb-4">
+          <p className="text-bta-gold font-['Playfair_Display',Georgia,serif] italic tracking-[0.25em] text-base uppercase mb-4">
             Our Mission
           </p>
-          <p className="font-[Cormorant_Garamond,serif] italic text-white text-xl md:text-2xl leading-relaxed mb-8">
+          <p className="font-['Playfair_Display',Georgia,serif] italic text-white text-xl md:text-2xl leading-relaxed mb-8">
             We work tirelessly to craft unforgettable journeys that spark the imagination, elevate the spirit, and foster meaningful connections.
           </p>
           <p className="text-white/80 text-lg leading-relaxed">
@@ -296,7 +296,7 @@ export default function About() {
 
       {/* ── 9. CTA ── */}
       <section className="bg-bta-stone py-20 px-6 text-center">
-        <p className="text-bta-gold font-[Cormorant_Garamond,serif] italic tracking-[0.25em] text-base uppercase mb-4">
+        <p className="text-bta-gold font-['Playfair_Display',Georgia,serif] italic tracking-[0.25em] text-base uppercase mb-4">
           Ready to Begin?
         </p>
         <h2 className="font-[Playfair_Display,serif] text-3xl md:text-4xl text-bta-aegean uppercase tracking-widest mb-6">
@@ -307,7 +307,7 @@ export default function About() {
         </p>
         <Link
           href="/book"
-          className="inline-block bg-bta-gold text-white font-[Cormorant_SC,serif] tracking-widest uppercase text-sm px-10 py-4 hover:bg-bta-gold-dark transition-colors duration-200"
+          className="inline-block bg-bta-gold text-white font-['Playfair_Display',Georgia,serif] tracking-widest uppercase text-sm px-10 py-4 hover:bg-bta-gold-dark transition-colors duration-200"
         >
           Start Planning
         </Link>

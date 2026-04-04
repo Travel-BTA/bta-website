@@ -166,6 +166,7 @@ export default function CookiePolicy() {
               fontSize: "clamp(2.4rem, 6vw, 4.5rem)",
               letterSpacing: "0.12em",
               lineHeight: 1.05,
+              textTransform: "uppercase"
             }}
           >
             Cookie Policy
@@ -179,7 +180,7 @@ export default function CookiePolicy() {
           {/* Date */}
           <p
             className="text-white/45 text-xs tracking-[0.2em] uppercase"
-            style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
+            style={{ fontFamily: "'Instrument Serif', Georgia, serif" , textTransform: "uppercase" }}
           >
             Last Modified: December 28, 2025
           </p>
@@ -215,7 +216,7 @@ export default function CookiePolicy() {
               <div className="flex items-center gap-4 mb-5">
                 <span
                   className="text-[#bfaf8a] text-xs tracking-[0.25em] uppercase flex-shrink-0"
-                  style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
+                  style={{ fontFamily: "'Instrument Serif', Georgia, serif" , textTransform: "uppercase" }}
                 >
                   {section.number.padStart(2, "0")}
                 </span>
@@ -268,7 +269,7 @@ export default function CookiePolicy() {
                   <div className="border border-[#bfaf8a]/25 p-6">
                     <p
                       className="text-[#bfaf8a] text-xs tracking-[0.2em] uppercase mb-2"
-                      style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
+                      style={{ fontFamily: "'Instrument Serif', Georgia, serif" , textTransform: "uppercase" }}
                     >
                       Physical Address
                     </p>
@@ -284,7 +285,7 @@ export default function CookiePolicy() {
                   <div className="border border-[#bfaf8a]/25 p-6">
                     <p
                       className="text-[#bfaf8a] text-xs tracking-[0.2em] uppercase mb-2"
-                      style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
+                      style={{ fontFamily: "'Instrument Serif', Georgia, serif" , textTransform: "uppercase" }}
                     >
                       Email
                     </p>
@@ -313,21 +314,21 @@ export default function CookiePolicy() {
               <Link
                 href="/privacy-policy"
                 className="text-[#bfaf8a] text-xs tracking-[0.15em] uppercase hover:text-[#384959] transition-colors"
-                style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
+                style={{ fontFamily: "'Instrument Serif', Georgia, serif" , textTransform: "uppercase" }}
               >
                 Privacy Policy
               </Link>
               <Link
                 href="/terms-of-service"
                 className="text-[#bfaf8a] text-xs tracking-[0.15em] uppercase hover:text-[#384959] transition-colors"
-                style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
+                style={{ fontFamily: "'Instrument Serif', Georgia, serif" , textTransform: "uppercase" }}
               >
                 Terms of Service
               </Link>
               <Link
                 href="/contact"
                 className="text-[#bfaf8a] text-xs tracking-[0.15em] uppercase hover:text-[#384959] transition-colors"
-                style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
+                style={{ fontFamily: "'Instrument Serif', Georgia, serif" , textTransform: "uppercase" }}
               >
                 Contact Us
               </Link>

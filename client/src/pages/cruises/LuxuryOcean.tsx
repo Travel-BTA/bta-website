@@ -148,12 +148,12 @@ export default function LuxuryOcean() {
         <div className="relative z-10 w-full max-w-[1440px] mx-auto px-8 lg:px-14 pb-16 md:pb-20">
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 mb-6">
-            <Link href="/cruises" className="text-white/60 text-xs tracking-[0.2em] uppercase hover:text-white transition-colors" style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}>
+            <Link href="/cruises" className="text-white/60 text-xs tracking-[0.2em] uppercase hover:text-white transition-colors" style={{ fontFamily: "'Instrument Serif', Georgia, serif" , textTransform: "uppercase" }}>
               Cruises
             </Link>
             <span className="text-white/40 text-xs">›</span>
             {/* Current page label: white on photo, not Champagne Gold */}
-            <span className="text-white/75 text-xs tracking-[0.2em] uppercase" style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}>
+            <span className="text-white/75 text-xs tracking-[0.2em] uppercase" style={{ fontFamily: "'Instrument Serif', Georgia, serif" , textTransform: "uppercase" }}>
               Luxury Ocean
             </span>
           </div>
@@ -163,7 +163,7 @@ export default function LuxuryOcean() {
             Ultra-Luxury at Sea
           </p>
           {/* H1: Instrument Serif ALL CAPS white on hero photo */}
-          <h1 className="text-white text-5xl md:text-6xl uppercase leading-tight mb-6" style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400, letterSpacing: "0.04em" }}>
+          <h1 className="text-white text-5xl md:text-6xl uppercase leading-tight mb-6" style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400, letterSpacing: "0.04em" , textTransform: "uppercase" }}>
             Luxury Ocean Cruises
           </h1>
           <p className="text-white/75 text-base max-w-2xl leading-relaxed mb-8" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 400 }}>
@@ -172,7 +172,7 @@ export default function LuxuryOcean() {
           <Link
             href="/contact"
             className="inline-flex items-center gap-3 bg-[#bfaf8a] text-white px-8 py-3.5 text-xs tracking-[0.25em] uppercase hover:bg-[#bfaf8a] transition-all duration-300"
-            style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
+            style={{ fontFamily: "'Instrument Serif', Georgia, serif" , textTransform: "uppercase" }}
           >
             Start Planning
             <span className="text-base">→</span>
@@ -316,7 +316,7 @@ export default function LuxuryOcean() {
             <div>
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-10 h-px bg-[#bfaf8a]/60" />
-                <span className="text-[#bfaf8a] text-xs tracking-[0.25em] uppercase" style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}>
+                <span className="text-[#bfaf8a] text-xs tracking-[0.25em] uppercase" style={{ fontFamily: "'Instrument Serif', Georgia, serif" , textTransform: "uppercase" }}>
                   Also Available
                 </span>
               </div>
@@ -329,7 +329,7 @@ export default function LuxuryOcean() {
               <Link
                 href="/contact"
                 className="inline-flex items-center gap-3 border border-[#bfaf8a] text-[#bfaf8a] px-8 py-3 text-xs tracking-[0.2em] uppercase hover:bg-[#bfaf8a] hover:text-white transition-all duration-300"
-               style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}>
+               style={{ fontFamily: "'Instrument Serif', Georgia, serif" , textTransform: "uppercase" }}>
                   Inquire About Yacht Cruises
                 <span className="text-base not-italic">→</span>
               </Link>

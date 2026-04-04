@@ -86,7 +86,7 @@ export function PhilosophySection() {
           {/* Eyebrow: bold italic Playfair Display in Champagne Gold — matches Figma script style */}
           <p
             className="text-[#BFAF8A] text-xl mb-3"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic", fontWeight: 500 }}
+            style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic", fontWeight: 600 }}
           >
             {philosophy.eyebrow}
           </p>
@@ -165,13 +165,13 @@ export function CuratedHotelsSection() {
         <div>
           <p
             className="text-[#faf9f6] text-4xl md:text-5xl leading-tight"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic", fontWeight: 400 }}
+            style={{ fontFamily: "'Allura', cursive", fontWeight: 400 }}
           >
             {curatedHotels.scriptLine1}
           </p>
           <p
             className="text-[#faf9f6] text-4xl md:text-5xl leading-tight"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic", fontWeight: 400 }}
+            style={{ fontFamily: "'Allura', cursive", fontWeight: 400 }}
           >
             {curatedHotels.scriptLine2}
           </p>

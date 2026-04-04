@@ -3,7 +3,7 @@
  *
  * Design: Transparent overlay on hero image, becomes solid on scroll.
  * Logo: top-left, small. Nav links: center. CTA: right.
- * Typography: Cormorant SC (small caps), light weight, tracked.
+ * Typography: Playfair Display (labels), Instrument Serif (brand name), Allura (script accents).
  * Colors: White text on transparent/dark background.
  */
 
@@ -36,7 +36,7 @@ export default function NavBar() {
           ) : (
             <div className="text-white leading-none">
               <div className="font-smallcaps text-[9px] tracking-[0.25em] uppercase opacity-90">BOUTIQUE</div>
-              <div className="font-script text-[22px] leading-none mt-[-2px]" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic" }}>
+              <div className="font-script text-[22px] leading-none mt-[-2px]" style={{ fontFamily: "'Allura', cursive" }}>
                 travel
               </div>
               <div className="font-smallcaps text-[9px] tracking-[0.25em] uppercase opacity-90 mt-[-2px]">ADVISORS</div>
