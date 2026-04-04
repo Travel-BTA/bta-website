@@ -360,7 +360,7 @@ function ItalyTimeline() {
   const day = tab.days[activeDay];
 
   return (
-    <section className="py-24 md:py-32 bg-[#7982A2] overflow-hidden">
+    <section className="py-24 md:py-32 bg-[#041E42] overflow-hidden">
       <div className="px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
 
         {/* Section header */}
@@ -466,7 +466,7 @@ function ItalyTimeline() {
               }}
             >
               {/* Gradient overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#384959]/90 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#041E42]/80 via-transparent to-transparent" />
               {/* Location badge */}
               <div className="absolute bottom-5 left-5 flex items-center gap-2">
                 <MapPin size={12} className="text-[#BFAF8A]" />
@@ -480,7 +480,7 @@ function ItalyTimeline() {
             </div>
 
             {/* Text side — slightly darker panel for contrast against slate blue bg */}
-            <div className="p-8 md:p-10 flex flex-col justify-between bg-[#384959]/40">
+            <div className="p-8 md:p-10 flex flex-col justify-between bg-[#384959]/30">
               <div>
                 <p
                   className="text-[#BFAF8A] text-xs mb-3"
