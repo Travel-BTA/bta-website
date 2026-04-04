@@ -452,6 +452,133 @@ export default function AdvisorPrograms() {
         </div>
       </section>
 
+      {/* ── Iris: CRM Intelligence ─────────────────────────────────────────── */}
+      {/*
+       * WHY: Janet's exact copy describing Iris's CRM intelligence features —
+       * morning briefings, trip QC, call transcription, passport scanning, and marketing.
+       * Placed between the CRM platform section and the Iris Itinerary section.
+       */}
+      <section className="py-24 md:py-32 bg-[#faf9f6]">
+        <div className="max-w-6xl mx-auto px-6">
+          {/* Header */}
+          <div className="text-center mb-16">
+            <p className="bta-eyebrow text-[10px] tracking-[0.22em] text-[#9C886A] uppercase mb-4">Iris Intelligence</p>
+            <h2
+              className="text-3xl md:text-4xl text-[#2F2F2F] mb-6 font-light"
+              style={{ fontFamily: "'Instrument Serif', serif" }}
+            >
+              Your Practice, Fully Organized
+            </h2>
+            <p className="text-[#2F2F2F]/70 text-base max-w-2xl mx-auto leading-relaxed" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+              Iris works inside your CRM — reading your data, surfacing what matters, and handling
+              the documentation so you can focus on advising.
+            </p>
+          </div>
+
+          {/* Feature cards */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            {/* Morning Briefing */}
+            <div className="bg-white border border-[#9C886A]/15 p-8">
+              <div className="w-8 h-px bg-[#9C886A] mb-6" />
+              <h3
+                className="text-lg text-[#2F2F2F] mb-3 font-light"
+                style={{ fontFamily: "'Instrument Serif', serif" }}
+              >
+                Morning Pipeline Briefing
+              </h3>
+              <p className="text-[#2F2F2F]/65 text-sm leading-relaxed" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+                Every morning Iris scans your full pipeline and delivers a prioritized briefing —
+                overdue tasks, payment deadlines, departing trips, and unconfirmed bookings — with
+                direct links to what needs attention first. Nothing slips through.
+              </p>
+            </div>
+
+            {/* Trip QC Audit */}
+            <div className="bg-white border border-[#9C886A]/15 p-8">
+              <div className="w-8 h-px bg-[#9C886A] mb-6" />
+              <h3
+                className="text-lg text-[#2F2F2F] mb-3 font-light"
+                style={{ fontFamily: "'Instrument Serif', serif" }}
+              >
+                Trip QC &amp; Departure Audit
+              </h3>
+              <p className="text-[#2F2F2F]/65 text-sm leading-relaxed" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+                On every trip, Iris runs a full QC audit and surfaces what's missing: bookings,
+                documents, supplier requests, Axus publication status. She flags passport expiry
+                risks and tells you exactly what to do before departure. Her Elevate section suggests
+                1–2 specific upsell or experience opportunities personalized to the destination and
+                client profile — with estimated commission.
+              </p>
+            </div>
+
+            {/* Call Transcription */}
+            <div className="bg-white border border-[#9C886A]/15 p-8">
+              <div className="w-8 h-px bg-[#9C886A] mb-6" />
+              <h3
+                className="text-lg text-[#2F2F2F] mb-3 font-light"
+                style={{ fontFamily: "'Instrument Serif', serif" }}
+              >
+                AI Call Summaries
+              </h3>
+              <p className="text-[#2F2F2F]/65 text-sm leading-relaxed" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+                Every call is automatically transcribed and summarized. Iris reads the transcript
+                and pulls out key topics, client preferences, action items, and urgent needs —
+                saved to the call record and the traveler profile.
+              </p>
+            </div>
+
+            {/* Passport Scanning */}
+            <div className="bg-white border border-[#9C886A]/15 p-8">
+              <div className="w-8 h-px bg-[#9C886A] mb-6" />
+              <h3
+                className="text-lg text-[#2F2F2F] mb-3 font-light"
+                style={{ fontFamily: "'Instrument Serif', serif" }}
+              >
+                Passport Scan &amp; Auto-Extract
+              </h3>
+              <p className="text-[#2F2F2F]/65 text-sm leading-relaxed" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+                Upload a passport scan and Iris extracts the document number, expiry, and country
+                of issue automatically. No manual entry.
+              </p>
+            </div>
+
+            {/* Marketing */}
+            <div className="bg-white border border-[#9C886A]/15 p-8">
+              <div className="w-8 h-px bg-[#9C886A] mb-6" />
+              <h3
+                className="text-lg text-[#2F2F2F] mb-3 font-light"
+                style={{ fontFamily: "'Instrument Serif', serif" }}
+              >
+                Marketing in Your Voice
+              </h3>
+              <p className="text-[#2F2F2F]/65 text-sm leading-relaxed" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+                In Marketing, Iris drafts campaign briefs, email copy, social posts, and landing
+                page sections in your brand voice — ready to send or refine.
+              </p>
+            </div>
+
+            {/* Result card */}
+            <div className="bg-[#384959] p-8 flex flex-col justify-between">
+              <div className="w-8 h-px bg-[#9C886A] mb-6" />
+              <p
+                className="text-xl text-white leading-snug font-light"
+                style={{ fontFamily: "'Instrument Serif', serif" }}
+              >
+                Less time documenting. More time advising.
+              </p>
+              <a
+                href="/contact-us"
+                className="mt-8 inline-block bta-eyebrow text-[9px] tracking-[0.22em] text-[#9C886A] uppercase border-b border-[#9C886A]/40 pb-px hover:border-[#9C886A] transition-colors"
+              >
+                Request Access
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
       {/* ── Iris: Your Itinerary Alchemist ────────────────────────────────── */}
       {/*
        * WHY: This section uses Janet's exact Iris copy — the proprietary AI itinerary tool.
