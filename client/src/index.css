@@ -394,9 +394,15 @@
     margin-bottom: 0;
   }
 
-  /* ── Images — full width, generous vertical spacing ── */
+  /* ── Images — natural dimensions, generous vertical spacing ── */
+  /* WHY: Blog photos come in varying sizes (not always 800x600). We must NOT
+     force width:100% as that stretches portrait/square images to fill the
+     full column width and distorts the composition. Instead we use max-width
+     so images never overflow the column but always render at their natural
+     aspect ratio and size. */
   .blog-body img {
-    width: 100%;
+    max-width: 100%;
+    width: auto;
     height: auto;
     display: block;
     margin: 2.5rem auto;

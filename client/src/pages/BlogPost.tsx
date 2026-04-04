@@ -83,7 +83,10 @@ function processWordPressHtml(html: string): string {
           .replace(/\s+height="[^"]*"/gi, '')
           .replace(/\s+style="[^"]*"/gi, '')
           .replace(/\s+class="[^"]*"/gi, '');
-        return `<img${cleaned} loading="lazy" style="width:100%;height:auto;display:block;margin:2rem auto;">`;
+        // WHY: Use max-width not width:100% — images must render at their natural
+        // dimensions. Forcing width:100% stretches portrait/square photos to fill
+        // the full column and distorts the composition. max-width lets them breathe.
+        return `<img${cleaned} loading="lazy" style="max-width:100%;width:auto;height:auto;display:block;margin:2rem auto;">`;
       }
     )
     // ── *Benefits apply disclaimer ───────────────────────────────────────────
