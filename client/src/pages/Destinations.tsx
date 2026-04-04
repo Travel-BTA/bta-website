@@ -70,7 +70,7 @@ const DESTINATIONS = [
     description:
       "Phang Nga Bay by private longtail, Chiang Mai's temple-studded old city, and the Andaman's quieter islands. Thailand's depth goes far beyond its beaches and we know exactly where to find it.",
     highlights: ["Phang Nga private charter", "Chiang Mai temple immersions", "Northern hill tribe villages", "Koh Yao Noi seclusion"],
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/dest-thailand-WY3LpXhnLc2oyojQCG2oN3.webp",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/thailand-phi-phi_98006b71.jpg",
   },
   {
     id: "vietnam",
