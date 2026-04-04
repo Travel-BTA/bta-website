@@ -95,7 +95,7 @@ export default function PhilanthropicInitiatives() {
             <p className="text-[#9E8661] tracking-[0.25em] text-xs uppercase mb-4" style={PF}>
               {philanthropyIntro.eyebrow}
             </p>
-            <h2 className="text-[#384959] text-3xl md:text-4xl lg:text-5xl leading-tight mb-8" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 600, fontStyle: "italic" }}>
+            <h2 className="text-[#384959] text-3xl md:text-4xl lg:text-5xl leading-tight mb-8" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 500, fontStyle: "italic" }}>
               {philanthropyIntro.headline.split("\n").map((l, i) => (
                 <span key={i} className="block">{l}</span>
               ))}
@@ -142,7 +142,7 @@ export default function PhilanthropicInitiatives() {
             <p className="text-[#BFAF8A] tracking-[0.25em] text-xs uppercase mb-4" style={PF}>
               {philanthropyPillars.eyebrow}
             </p>
-            <h2 className="text-white text-3xl md:text-4xl lg:text-5xl" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 600, fontStyle: "italic" }}>
+            <h2 className="text-white text-3xl md:text-4xl lg:text-5xl" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 500, fontStyle: "italic" }}>
               {philanthropyPillars.headline}
             </h2>
           </div>
@@ -167,7 +167,7 @@ export default function PhilanthropicInitiatives() {
                     0{i + 1}
                   </p>
                   <div className="w-5 h-px bg-[#BFAF8A] mb-3" />
-                  <h3 className="text-white text-xl tracking-wide" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 600 }}>
+                  <h3 className="text-white text-xl tracking-wide" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 500 }}>
                     {pillar.name}
                   </h3>
                   <p className="text-white/60 text-[10px] tracking-widest uppercase font-light mt-1 leading-relaxed">
@@ -202,7 +202,7 @@ export default function PhilanthropicInitiatives() {
                     0{i + 1}
                   </p>
                   <div className="w-5 h-px bg-[#BFAF8A] mb-3" />
-                  <h3 className="text-white text-lg tracking-wide" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 600 }}>
+                  <h3 className="text-white text-lg tracking-wide" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 500 }}>
                     {pillar.name}
                   </h3>
                   <p className="text-white/0 group-hover:text-white/60 text-[10px] tracking-widest uppercase font-light mt-1 transition-all duration-500 leading-relaxed">
@@ -223,7 +223,7 @@ export default function PhilanthropicInitiatives() {
           <p className="text-[#9E8661] tracking-[0.25em] text-xs uppercase mb-4" style={PF}>
             {philanthropyBeneficiaries.eyebrow}
           </p>
-          <h2 className="text-[#384959] text-3xl md:text-4xl lg:text-5xl mb-6" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 600, fontStyle: "italic" }}>
+          <h2 className="text-[#384959] text-3xl md:text-4xl lg:text-5xl mb-6" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 500, fontStyle: "italic" }}>
             {philanthropyBeneficiaries.headline}
           </h2>
           <p className="text-[#5A5A5A] text-base font-light max-w-xl mx-auto leading-relaxed">
@@ -244,7 +244,7 @@ export default function PhilanthropicInitiatives() {
               {/* Name overlay */}
               <div className="absolute bottom-0 left-0 right-0 p-4">
                 <div className="w-6 h-px bg-[#BFAF8A] mb-2" />
-                <h3 className="text-white text-sm leading-snug" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 600 }}>
+                <h3 className="text-white text-sm leading-snug" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 500 }}>
                   {org.name}
                 </h3>
               </div>
@@ -268,7 +268,7 @@ export default function PhilanthropicInitiatives() {
           <p className="text-[#BFAF8A] tracking-[0.25em] text-xs uppercase mb-4" style={PF}>
             {philanthropyNjt.eyebrow}
           </p>
-          <h2 className="text-white text-3xl md:text-4xl leading-tight mb-6" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 600, fontStyle: "italic" }}>
+          <h2 className="text-white text-3xl md:text-4xl leading-tight mb-6" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 500, fontStyle: "italic" }}>
             {philanthropyNjt.headline}
           </h2>
           <p className="text-white/65 text-base leading-relaxed font-light mb-8 max-w-md">
@@ -313,7 +313,7 @@ export default function PhilanthropicInitiatives() {
           <p className="text-[#BFAF8A] tracking-[0.3em] text-xs uppercase mb-5" style={PF}>
             {philanthropyPartnerships.eyebrow}
           </p>
-          <h2 className="text-white text-3xl md:text-4xl lg:text-5xl leading-tight mb-8" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 600, fontStyle: "italic" }}>
+          <h2 className="text-white text-3xl md:text-4xl lg:text-5xl leading-tight mb-8" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 500, fontStyle: "italic" }}>
             {philanthropyPartnerships.headline}
           </h2>
           <p className="text-white/65 text-base leading-relaxed font-light mb-10">
@@ -338,7 +338,7 @@ export default function PhilanthropicInitiatives() {
           <p className="text-[#9E8661] tracking-[0.25em] text-xs uppercase mb-4" style={PF}>
             {philanthropyFundraise.eyebrow}
           </p>
-          <h2 className="text-[#384959] text-3xl md:text-4xl leading-tight mb-6" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 600, fontStyle: "italic" }}>
+          <h2 className="text-[#384959] text-3xl md:text-4xl leading-tight mb-6" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 500, fontStyle: "italic" }}>
             {philanthropyFundraise.headline}
           </h2>
           <p className="text-[#5A5A5A] text-base leading-relaxed font-light mb-10 max-w-md">

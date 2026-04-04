@@ -187,7 +187,7 @@ export default function RiverCruises() {
                   Why River Cruising
                 </span>
               </div>
-              <h2 className="text-[#384959] text-3xl md:text-4xl leading-tight mb-6" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 600, fontStyle: "italic" }}>
+              <h2 className="text-[#384959] text-3xl md:text-4xl leading-tight mb-6" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 500, fontStyle: "italic" }}>
                 The Off-the-Beaten-Path Journey
               </h2>
               <p className="text-[#2f2f2f]/75 text-lg leading-relaxed mb-4" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
@@ -225,7 +225,7 @@ export default function RiverCruises() {
               </div>
 
               <div className={`flex flex-col justify-center px-8 lg:px-14 py-16 lg:py-20 ${line.imageRight ? "lg:order-1" : "lg:order-2"}`}>
-                <h2 className="text-[#384959] text-3xl md:text-4xl leading-tight mb-2" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 600, fontStyle: "italic" }}>
+                <h2 className="text-[#384959] text-3xl md:text-4xl leading-tight mb-2" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 500, fontStyle: "italic" }}>
                   {line.name}
                 </h2>
                 <p className="text-[#bfaf8a] text-lg mb-6" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic" }}>

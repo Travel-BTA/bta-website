@@ -212,7 +212,7 @@ export default function PrivateCharters() {
             </div>
             <h2
               className="text-[#384959] text-3xl md:text-4xl leading-tight mb-6"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 600, fontStyle: "italic" }}
+              style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 500, fontStyle: "italic" }}
             >
               Travel on Your Terms
             </h2>
@@ -295,7 +295,7 @@ export default function PrivateCharters() {
                 {/* H2 — Playfair Display SemiBold Italic on plain background */}
                 <h2
                   className="text-[#384959] text-3xl md:text-4xl leading-tight mb-5"
-                  style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 600, fontStyle: "italic" }}
+                  style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 500, fontStyle: "italic" }}
                 >
                   {aircraft.name}
                 </h2>
@@ -364,7 +364,7 @@ export default function PrivateCharters() {
                 </p>
                 <h3
                   className="text-white text-lg mb-3"
-                  style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 600, fontStyle: "italic" }}
+                  style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 500, fontStyle: "italic" }}
                 >
                   {step.title}
                 </h3>
@@ -396,7 +396,7 @@ export default function PrivateCharters() {
               </div>
               <h2
                 className="text-[#384959] text-3xl md:text-4xl leading-tight mb-6"
-                style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 600, fontStyle: "italic" }}
+                style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 500, fontStyle: "italic" }}
               >
                 Charter Considerations
               </h2>
@@ -424,7 +424,7 @@ export default function PrivateCharters() {
                 <div key={item.title} className="border-l-2 border-[#bfaf8a]/40 pl-5">
                   <h3
                     className="text-[#384959] text-base mb-1"
-                    style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 600, fontStyle: "italic" }}
+                    style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 500, fontStyle: "italic" }}
                   >
                     {item.title}
                   </h3>

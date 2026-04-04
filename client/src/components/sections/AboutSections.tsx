@@ -86,7 +86,7 @@ export function PhilosophySection() {
           {/* Eyebrow: bold italic Playfair Display in Champagne Gold — matches Figma script style */}
           <p
             className="text-[#BFAF8A] text-xl mb-3"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic", fontWeight: 600 }}
+            style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic", fontWeight: 500 }}
           >
             {philosophy.eyebrow}
           </p>
@@ -104,7 +104,7 @@ export function PhilosophySection() {
           {/* Body: bold Playfair Display — matches Figma weight */}
           <p
             className="text-[#2F2F2F] text-lg mb-8 leading-relaxed"
-            style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600 }}
+            style={{ fontFamily: "'Playfair Display', serif", fontWeight: 500 }}
           >
             {philosophy.body}
           </p>
@@ -118,7 +118,7 @@ export function PhilosophySection() {
                   {/* Feature title: bold Playfair Display, sentence case, Aegean Blue */}
                   <div
                     className="text-[#384959] text-sm mb-1"
-                    style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600 }}
+                    style={{ fontFamily: "'Playfair Display', serif", fontWeight: 500 }}
                   >
                     {feature.title}
                   </div>

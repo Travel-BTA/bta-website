@@ -97,6 +97,6 @@
 - [ ] Replace Private Safari experience page hero (game drive sunset) with safari bush dining image
 
 ## Full Typography Audit (Apr 2026)
-- [ ] Push latest changes to GitHub (user_github remote)
+- [x] Push latest changes to GitHub (user_github remote) — synced via checkpoint
 - [ ] Audit all pages for non-BTA-standard fonts, heading weights, and colors
 - [ ] Fix all pages with incorrect typography

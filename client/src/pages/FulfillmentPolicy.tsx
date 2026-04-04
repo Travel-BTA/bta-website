@@ -238,7 +238,7 @@ export default function FulfillmentPolicy() {
               {/* H2 — Playfair Display SemiBold Italic on plain background */}
               <h2
                 className="text-[#384959] text-xl md:text-2xl leading-snug mb-5"
-                style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 600, fontStyle: "italic" }}
+                style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 500, fontStyle: "italic" }}
               >
                 {section.title}
               </h2>

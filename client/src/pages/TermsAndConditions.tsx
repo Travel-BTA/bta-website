@@ -54,7 +54,7 @@ const SECTIONS = [
     title: "Booking Confirmation, Payment Terms & Cancellation Policies",
     content: (
       <>
-        <p className="mb-3 font-semibold" style={{ fontFamily: "'Playfair Display', serif" }}>Full-Service Travel Itineraries</p>
+        <p className="mb-3 font-medium" style={{ fontFamily: "'Playfair Display', serif" }}>Full-Service Travel Itineraries</p>
         <ul className="space-y-2 mb-6 list-none">
           {[
             "Pricing and availability are subject to change and cannot be guaranteed until a deposit has been made.",
@@ -70,7 +70,7 @@ const SECTIONS = [
             </li>
           ))}
         </ul>
-        <p className="mb-2 font-semibold" style={{ fontFamily: "'Playfair Display', serif" }}>Special Services</p>
+        <p className="mb-2 font-medium" style={{ fontFamily: "'Playfair Display', serif" }}>Special Services</p>
         <p>
           Boat services, helicopter tours/transfers, special vehicles, and special locations may have different cancellation policies. Generally, these services are not refundable but depend on the season, kind of service, and destination.
         </p>
@@ -505,7 +505,7 @@ export default function TermsAndConditions() {
             className="mb-6 italic"
             style={{
               fontFamily: "'Playfair Display', serif",
-              fontWeight: 600,
+              fontWeight: 500,
               fontSize: "1.1rem",
               color: "#bfaf8a",
               letterSpacing: "0.02em",
@@ -552,7 +552,7 @@ export default function TermsAndConditions() {
                   className="italic"
                   style={{
                     fontFamily: "'Playfair Display', serif",
-                    fontWeight: 600,
+                    fontWeight: 500,
                     fontSize: "clamp(1.1rem, 2.5vw, 1.35rem)",
                     color: "#384959",
                     lineHeight: 1.3,

@@ -193,7 +193,7 @@ export default function ExpeditionCruises() {
                   Expedition Philosophy
                 </span>
               </div>
-              <h2 className="text-[#384959] text-3xl md:text-4xl leading-tight mb-6" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 600, fontStyle: "italic" }}>
+              <h2 className="text-[#384959] text-3xl md:text-4xl leading-tight mb-6" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 500, fontStyle: "italic" }}>
                 There Is Nothing Quite Like Exploring by Expedition
               </h2>
               <p className="text-[#2f2f2f]/75 text-lg leading-relaxed mb-4" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
@@ -208,7 +208,7 @@ export default function ExpeditionCruises() {
             <div className="grid grid-cols-2 gap-4">
               {DESTINATIONS.map((dest) => (
                 <div key={dest.name} className="border border-[#bfaf8a]/25 px-6 py-5 hover:border-[#bfaf8a]/60 transition-colors duration-300">
-                  <p className="text-[#384959] text-lg mb-1" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 600 }}>{dest.name}</p>
+                  <p className="text-[#384959] text-lg mb-1" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 500 }}>{dest.name}</p>
                   <p className="text-[#2f2f2f]/55 text-sm" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
                     {dest.desc}
                   </p>
@@ -234,7 +234,7 @@ export default function ExpeditionCruises() {
               </div>
 
               <div className={`flex flex-col justify-center px-8 lg:px-14 py-16 lg:py-20 ${line.imageRight ? "lg:order-1" : "lg:order-2"}`}>
-                <h2 className="text-[#384959] text-3xl md:text-4xl leading-tight mb-2" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 600, fontStyle: "italic" }}>
+                <h2 className="text-[#384959] text-3xl md:text-4xl leading-tight mb-2" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 500, fontStyle: "italic" }}>
                   {line.name}
                 </h2>
                 <p className="text-[#bfaf8a] text-lg mb-6" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic" }}>

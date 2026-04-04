@@ -183,7 +183,7 @@ function MeetSection() {
           {/* Heading */}
           <h2
             className="text-[#2F2F2F] text-4xl md:text-5xl leading-tight mb-8"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 600, fontStyle: "italic" }}
+            style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 500, fontStyle: "italic" }}
           >
             {m.heading.split("\n").map((line, i) => (
               <span key={i}>{line}{i < m.heading.split("\n").length - 1 && <br />}</span>

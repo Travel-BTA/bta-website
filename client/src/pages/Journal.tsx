@@ -119,8 +119,8 @@ function FeaturedCard({ post }: { post: Post }) {
         {/* Title — Playfair Display SemiBold Italic (H2 role on plain bg) */}
         <Link href={`/journal/${post.slug}`} className="group">
           <h2
-            className="text-[#2F2F2F] text-2xl lg:text-[1.75rem] leading-snug mb-4 group-hover:text-[#bfaf8a] transition-colors"
-            style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600, fontStyle: "italic" }}
+            className="text-[#384959] text-2xl lg:text-[1.75rem] leading-snug mb-4 group-hover:text-[#bfaf8a] transition-colors"
+            style={{ fontFamily: "'Playfair Display', serif", fontWeight: 500 }}
             dangerouslySetInnerHTML={{ __html: post.title }}
           />
         </Link>
@@ -187,8 +187,8 @@ function GridCard({ post }: { post: Post }) {
       {/* Title */}
       <Link href={`/journal/${post.slug}`}>
         <h3
-          className="text-[#2F2F2F] text-base leading-snug mb-2 group-hover:text-[#bfaf8a] transition-colors line-clamp-2"
-          style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600, fontStyle: "italic" }}
+          className="text-[#384959] text-base leading-snug mb-2 group-hover:text-[#bfaf8a] transition-colors line-clamp-2"
+          style={{ fontFamily: "'Playfair Display', serif", fontWeight: 500 }}
           dangerouslySetInnerHTML={{ __html: post.title }}
         />
       </Link>

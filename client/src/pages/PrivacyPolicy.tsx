@@ -25,7 +25,7 @@ const sections = [
         <p className="mb-4" style={{ fontFamily: "'Playfair Display', serif", fontSize: "1rem", color: "#3a3228", lineHeight: "1.8" }}>
           We collect information that identifies, relates to, describes, or is capable of being associated with you ("Personal Data"). This includes information you provide directly to us and information we collect automatically.
         </p>
-        <h3 className="mb-2" style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600, fontStyle: "italic", fontSize: "1.05rem", color: "#384959" }}>
+        <h3 className="mb-2" style={{ fontFamily: "'Playfair Display', serif", fontWeight: 500, fontStyle: "italic", fontSize: "1.05rem", color: "#384959" }}>
           Personal Data You Provide
         </h3>
         <ul className="mb-4 space-y-2 pl-4" style={{ fontFamily: "'Playfair Display', serif", fontSize: "0.95rem", color: "#3a3228", lineHeight: "1.8", listStyleType: "disc" }}>
@@ -34,7 +34,7 @@ const sections = [
           <li><strong>Financial Information:</strong> Credit card details or bank account information for payment processing, collected securely and not stored longer than necessary.</li>
           <li><strong>Communication Data:</strong> Records of your correspondence with us, including emails and phone calls.</li>
         </ul>
-        <h3 className="mb-2" style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600, fontStyle: "italic", fontSize: "1.05rem", color: "#384959" }}>
+        <h3 className="mb-2" style={{ fontFamily: "'Playfair Display', serif", fontWeight: 500, fontStyle: "italic", fontSize: "1.05rem", color: "#384959" }}>
           Information Collected Automatically
         </h3>
         <p style={{ fontFamily: "'Playfair Display', serif", fontSize: "0.95rem", color: "#3a3228", lineHeight: "1.8" }}>
@@ -69,19 +69,19 @@ const sections = [
         <p className="mb-4" style={{ fontFamily: "'Playfair Display', serif", fontSize: "1rem", color: "#3a3228", lineHeight: "1.8" }}>
           We only share your Personal Data with third parties when necessary to provide our services or when legally required.
         </p>
-        <h3 className="mb-2" style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600, fontStyle: "italic", fontSize: "1.05rem", color: "#384959" }}>
+        <h3 className="mb-2" style={{ fontFamily: "'Playfair Display', serif", fontWeight: 500, fontStyle: "italic", fontSize: "1.05rem", color: "#384959" }}>
           Third-Party Travel Suppliers
         </h3>
         <p className="mb-4" style={{ fontFamily: "'Playfair Display', serif", fontSize: "0.95rem", color: "#3a3228", lineHeight: "1.8" }}>
           We must share essential Personal Data with airlines, hotels, tour operators, and other third-party suppliers to facilitate your bookings. We only provide the information necessary for them to fulfill their services.
         </p>
-        <h3 className="mb-2" style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600, fontStyle: "italic", fontSize: "1.05rem", color: "#384959" }}>
+        <h3 className="mb-2" style={{ fontFamily: "'Playfair Display', serif", fontWeight: 500, fontStyle: "italic", fontSize: "1.05rem", color: "#384959" }}>
           Service Providers
         </h3>
         <p className="mb-4" style={{ fontFamily: "'Playfair Display', serif", fontSize: "0.95rem", color: "#3a3228", lineHeight: "1.8" }}>
           We engage trusted third-party companies and individuals to perform services on our behalf, such as payment processing, website hosting, and analytics. These providers are obligated to protect your data and use it only for the purposes for which it was disclosed.
         </p>
-        <h3 className="mb-2" style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600, fontStyle: "italic", fontSize: "1.05rem", color: "#384959" }}>
+        <h3 className="mb-2" style={{ fontFamily: "'Playfair Display', serif", fontWeight: 500, fontStyle: "italic", fontSize: "1.05rem", color: "#384959" }}>
           Legal Requirements
         </h3>
         <p style={{ fontFamily: "'Playfair Display', serif", fontSize: "0.95rem", color: "#3a3228", lineHeight: "1.8" }}>
@@ -301,7 +301,7 @@ export default function PrivacyPolicy() {
                 className="mb-4"
                 style={{
                   fontFamily: "'Playfair Display', serif",
-                  fontWeight: 600,
+                  fontWeight: 500,
                   fontStyle: "italic",
                   fontSize: "clamp(1.2rem, 3vw, 1.5rem)",
                   color: "#bfaf8a",
@@ -337,7 +337,7 @@ export default function PrivacyPolicy() {
               className="mb-4"
               style={{
                 fontFamily: "'Playfair Display', serif",
-                fontWeight: 600,
+                fontWeight: 500,
                 fontStyle: "italic",
                 fontSize: "clamp(1.2rem, 3vw, 1.5rem)",
                 color: "#bfaf8a",
