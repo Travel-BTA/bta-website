@@ -188,8 +188,8 @@ export default function Experiences() {
                 {cat.eyebrow}
               </p>
               <h2
-                className="text-3xl md:text-4xl mb-4"
-                style={{ color: cat.textColor, fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 500, fontStyle: "italic" }}
+                className="text-3xl md:text-4xl mb-4 uppercase"
+                style={{ color: cat.textColor, fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400, fontStyle: "normal", letterSpacing: "0.06em", lineHeight: 1.15 }}
               >
                 {cat.name}
               </h2>
@@ -245,7 +245,7 @@ export default function Experiences() {
           <p className="text-sm tracking-[0.2em] uppercase mb-4" style={{ color: "#bfaf8a", fontFamily: "'Playfair Display', Georgia, serif" }}>
             Travel With Purpose
           </p>
-          <h3 className="text-2xl md:text-3xl mb-5" style={{ color: "#384959", fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 500, fontStyle: "italic" }}>
+          <h3 className="text-2xl md:text-3xl mb-5 uppercase" style={{ color: "#384959", fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400, fontStyle: "normal", letterSpacing: "0.06em", lineHeight: 1.15 }}>
             Every Experience Gives Back
           </h3>
           <p className="text-base leading-relaxed" style={{ color: "#2f2f2f", fontFamily: "'Playfair Display', Georgia, serif", fontSize: "1rem" }}>
@@ -259,7 +259,7 @@ export default function Experiences() {
         <p className="text-sm tracking-[0.2em] uppercase mb-4" style={{ color: "#bfaf8a", fontFamily: "'Playfair Display', Georgia, serif" }}>
           Your Story Starts Here
         </p>
-        <h2 className="text-3xl md:text-4xl text-white mb-6" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 500, fontStyle: "italic" }}>
+        <h2 className="text-3xl md:text-4xl text-white mb-6 uppercase" style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontWeight: 400, fontStyle: "normal", letterSpacing: "0.06em", lineHeight: 1.15 }}>
           Design Your Perfect Experience
         </h2>
         <p className="text-white/70 max-w-lg mx-auto mb-10 leading-relaxed" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: "1.05rem" }}>
