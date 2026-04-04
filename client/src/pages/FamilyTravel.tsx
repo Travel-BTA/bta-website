@@ -409,10 +409,13 @@ export default function FamilyTravel() {
                 </ul>
               </div>
 
-              {/* Image column */}
-              <div className="relative hidden lg:block">
+              {/* Image column — visible on all screen sizes.
+                  WHY: mobile was showing text-only because 'hidden lg:block' suppressed
+                  the photo below the lg breakpoint. Now shows as a full-width image on
+                  mobile (above the text via order-first) and as the split panel on desktop. */}
+              <div className="relative order-first lg:order-none">
                 <div
-                  className="w-full h-[500px]"
+                  className="w-full h-64 sm:h-80 lg:h-[500px]"
                   style={{
                     backgroundImage: `url(${group.imageUrl})`,
                     backgroundSize: "cover",
@@ -420,9 +423,9 @@ export default function FamilyTravel() {
                   }}
                 />
                 {group.imageLeft ? (
-                  <div className="absolute -bottom-4 -right-4 w-24 h-1 bg-[#bfaf8a]" />
+                  <div className="absolute -bottom-4 -right-4 w-24 h-1 bg-[#bfaf8a] hidden lg:block" />
                 ) : (
-                  <div className="absolute -bottom-4 -left-4 w-24 h-1 bg-[#bfaf8a]" />
+                  <div className="absolute -bottom-4 -left-4 w-24 h-1 bg-[#bfaf8a] hidden lg:block" />
                 )}
               </div>
             </div>
