@@ -518,7 +518,7 @@
   .blog-body > div[style*="background-color: #faf9f7"],
   .blog-body > div[style*="background-color:#faf9f7"],
   .blog-body > div[style*="border: 1px solid #7a7a7a"] {
-    background-color: #f5ede0 !important;
+    background-color: #edeae4 !important;
     border: 1px solid #9C886A !important;
     padding: 48px 40px !important;
     margin: 3rem 0 !important;
@@ -532,7 +532,7 @@
     color: #384959 !important;
     letter-spacing: 0.12em !important;
     text-transform: uppercase !important;
-    background-color: #f5ede0 !important;
+    background-color: #edeae4 !important;
     padding: 0 20px !important;
   }
 
