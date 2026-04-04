@@ -236,9 +236,11 @@ const WHY_BTA = [
 // ─────────────────────────────────────────────────────────────────────────────
 
 // ── Italy Timeline data ────────────────────────────────────────────────────
-// WHY: Each tab represents the same 8-day Italy itinerary curated differently
-// for each family type. The data-driven approach makes it easy to update or
-// expand to other destinations in the future.
+// WHY: 9-night structure — Rome 3 nights, Florence 3 nights, Portofino 3 nights.
+// All Virtuoso properties. Truffle hunting and a private boat day are shared
+// across all three family types; the style of each experience differs.
+// Grand Minerva Florence chosen for its rooftop pool (Janet's direction).
+// Four Seasons Firenze for multigenerational (Janet's direction).
 const ITALY_TABS = [
   {
     id: "children",
@@ -248,40 +250,31 @@ const ITALY_TABS = [
     accentColor: "#9C886A",
     days: [
       {
-        day: "Days 1–2",
+        day: "Nights 1–3",
         location: "Rome",
         image: CDN.italyRome,
-        headline: "Arrival & Ancient Wonders",
-        experience: "Private transfer to your family suite. Next morning: a dedicated family guide leads an interactive Colosseum tour — kids dress as gladiators in the arena floor.",
-        stay: "Hotel de Russie",
-        highlight: "Gladiator experience at the Colosseum",
+        headline: "Ancient Wonders, Child-Sized",
+        experience: "Private transfer to your family suite at Hotel de la Ville. A dedicated family guide leads an interactive Colosseum tour — kids dress as gladiators on the arena floor. Evenings are slow: gelato walks, fountains, and early dinners at family-friendly trattorias.",
+        stay: "Hotel de la Ville, Autograph Collection · Virtuoso",
+        highlight: "Gladiator experience inside the Colosseum",
       },
       {
-        day: "Days 3–4",
-        location: "Tuscany",
-        image: CDN.italyTuscany,
-        headline: "Villa Life & Olive Groves",
-        experience: "Private villa with pool and connecting suites. Morning pasta-making class with a local nonna. Afternoon gelato tour through a medieval hill town.",
-        stay: "Private Tuscan Villa",
-        highlight: "Pasta class with a local nonna",
-      },
-      {
-        day: "Days 5–6",
+        day: "Nights 4–6",
         location: "Florence",
         image: CDN.italyFlorence,
-        headline: "Art & Discovery",
-        experience: "Family-focused Uffizi tour with a storytelling guide who brings Botticelli to life for young minds. Afternoon leather workshop — children make their own bracelet.",
-        stay: "Portrait Firenze",
-        highlight: "Storytelling tour of the Uffizi",
+        headline: "Art, Leather & the Rooftop Pool",
+        experience: "Check in to Grand Minerva, steps from Santa Maria Novella. Morning truffle hunt in the Chianti hills with a local hunter and his dogs, followed by a family lunch with the harvest. Afternoon storytelling tour of the Uffizi designed for young minds. Pool time at the rooftop before dinner.",
+        stay: "Grand Hotel Minerva · Virtuoso",
+        highlight: "Truffle hunt in the Chianti hills",
       },
       {
-        day: "Days 7–8",
-        location: "Amalfi Coast",
+        day: "Nights 7–9",
+        location: "Portofino",
         image: CDN.italyAmalfi,
-        headline: "Coastal Magic & Departure",
-        experience: "Private boat along the Amalfi Coast. Swim in hidden coves. Lunch at a cliffside restaurant with a children's menu. Private transfer to Naples for departure.",
-        stay: "Belmond Hotel Caruso",
-        highlight: "Private boat to hidden sea caves",
+        headline: "Riviera Days & Boat Adventures",
+        experience: "Settle into Belmond Splendido with its iconic terraced gardens above the harbour. A full private boat day along the Ligurian coast — swimming in hidden coves, a seafood lunch on board, and a stop at San Fruttuoso abbey only accessible by sea. Evenings on the terrace watching the lights of the village.",
+        stay: "Belmond Splendido · Virtuoso",
+        highlight: "Private boat day to San Fruttuoso abbey",
       },
     ],
   },
@@ -293,40 +286,31 @@ const ITALY_TABS = [
     accentColor: "#384959",
     days: [
       {
-        day: "Days 1–2",
+        day: "Nights 1–3",
         location: "Rome",
         image: CDN.italyRome,
-        headline: "Underground Rome",
-        experience: "Skip-the-line Colosseum with access to the underground hypogeum — where gladiators waited before battle. Evening street food tour through Trastevere with a local teen guide.",
-        stay: "J.K. Place Roma",
+        headline: "Underground Rome & Street Culture",
+        experience: "Hotel de la Ville puts you steps from the Spanish Steps. Private Colosseum tour with access to the underground hypogeum — where gladiators waited before battle. Evening street food tour through Trastevere with a local guide who connects over photography and food culture.",
+        stay: "Hotel de la Ville, Autograph Collection · Virtuoso",
         highlight: "Underground Colosseum hypogeum access",
       },
       {
-        day: "Days 3–4",
-        location: "Tuscany",
-        image: CDN.italyTuscany,
-        headline: "Speed, Craft & Countryside",
-        experience: "Ferrari factory tour in Maranello. Afternoon off-road e-bike through Chianti vineyards. Evening photography walk through a medieval village at golden hour.",
-        stay: "Castiglion del Bosco",
-        highlight: "Ferrari factory + Chianti e-bike ride",
-      },
-      {
-        day: "Days 5–6",
+        day: "Nights 4–6",
         location: "Florence",
         image: CDN.italyFlorence,
-        headline: "Craft & Culture",
-        experience: "Private graffiti art workshop with a local street artist. Afternoon at a leather artisan studio — teens design and make their own wallet. Evening rooftop dinner with city views.",
-        stay: "Soprarno Suites",
-        highlight: "Street art workshop + leather craft",
+        headline: "Craft, Truffles & the Rooftop",
+        experience: "Grand Minerva's rooftop pool is the perfect base. Morning truffle hunt in the Chianti hills — teens dig for truffles alongside the hunter's dogs, then cook with the harvest. Afternoon leather artisan workshop where teens design and make their own wallet. Rooftop dinner with panoramic city views.",
+        stay: "Grand Hotel Minerva · Virtuoso",
+        highlight: "Truffle hunt + leather craft workshop",
       },
       {
-        day: "Days 7–8",
-        location: "Amalfi Coast",
+        day: "Nights 7–9",
+        location: "Portofino",
         image: CDN.italyAmalfi,
-        headline: "Adrenaline & Departure",
-        experience: "Cliff jumping at Positano with a local guide. Snorkeling in the Blue Grotto. Sunset boat back to Amalfi. Private transfer to Naples airport.",
-        stay: "Le Sirenuse",
-        highlight: "Cliff jumping at Positano",
+        headline: "Riviera Adrenaline & Departure",
+        experience: "Belmond Splendido for three nights of Riviera living. Private boat day with cliff jumping off the rocks at Paraggi, snorkeling in crystal-clear coves, and a long lunch on board. Final evening: sunset aperitivo on the Splendido terrace before private transfer to Genoa.",
+        stay: "Belmond Splendido · Virtuoso",
+        highlight: "Cliff jumping + private boat day",
       },
     ],
   },
@@ -338,39 +322,30 @@ const ITALY_TABS = [
     accentColor: "#7982A2",
     days: [
       {
-        day: "Days 1–2",
+        day: "Nights 1–3",
         location: "Rome",
         image: CDN.italyRome,
-        headline: "Grand Arrival",
-        experience: "Private fleet of vehicles. Vatican after-hours tour for the whole family — no crowds, personal guide. Dinner at a private dining room in a 16th-century palazzo.",
-        stay: "Hotel Eden",
+        headline: "Grand Arrival in the Eternal City",
+        experience: "Private fleet of vehicles transfers the whole family to Hotel de la Ville. Vatican after-hours tour — no crowds, personal guide for every generation. Private dinner in a 16th-century palazzo dining room. Mornings at leisure: espresso, markets, and the Borghese Gardens at your own pace.",
+        stay: "Hotel de la Ville, Autograph Collection · Virtuoso",
         highlight: "Vatican after-hours private tour",
       },
       {
-        day: "Days 3–4",
-        location: "Tuscany",
-        image: CDN.italyTuscany,
-        headline: "Estate & Togetherness",
-        experience: "Exclusive-use Tuscan estate with private chef, wine cellar, and pool. Morning truffle hunt with a local hunter and his dogs. Long family lunch under the olive trees.",
-        stay: "Exclusive-Use Tuscan Estate",
-        highlight: "Truffle hunt + long lunch under olives",
-      },
-      {
-        day: "Days 5–6",
+        day: "Nights 4–6",
         location: "Florence",
         image: CDN.italyFlorence,
-        headline: "Art, History & Leisure",
-        experience: "Private Uffizi tour split by interest — grandparents with art historian, teens with photography guide. Afternoon free for shopping, gelato, and the Ponte Vecchio.",
-        stay: "Four Seasons Firenze",
-        highlight: "Parallel private tours for every generation",
+        headline: "Four Seasons, Truffles & the Uffizi",
+        experience: "The Four Seasons Firenze occupies a 15th-century palazzo with a private garden — space for every generation to breathe. Morning truffle hunt in the Chianti hills, followed by a long family lunch with the day's harvest. Private Uffizi tour with parallel guides: art historian for grandparents, storytelling guide for the children.",
+        stay: "Four Seasons Firenze · Virtuoso",
+        highlight: "Truffle hunt + parallel Uffizi tours",
       },
       {
-        day: "Days 7–8",
-        location: "Amalfi Coast",
+        day: "Nights 7–9",
+        location: "Portofino",
         image: CDN.italyAmalfi,
-        headline: "Coastal Farewell",
-        experience: "Private yacht charter for the whole family. Swimming, lunch on board, and a final sunset toast. Private transfers staggered to match each generation's flight.",
-        stay: "Belmond Hotel Caruso",
+        headline: "Riviera Farewell on the Water",
+        experience: "Belmond Splendido for the final chapter. A private yacht charter for the whole family — swimming, a long seafood lunch on board, and a final sunset toast as the harbour lights come on. Private transfers staggered to match each generation's departure flight.",
+        stay: "Belmond Splendido · Virtuoso",
         highlight: "Private yacht charter for the whole family",
       },
     ],
@@ -385,7 +360,7 @@ function ItalyTimeline() {
   const day = tab.days[activeDay];
 
   return (
-    <section className="py-24 md:py-32 bg-[#041E42] overflow-hidden">
+    <section className="py-24 md:py-32 bg-[#7982A2] overflow-hidden">
       <div className="px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
 
         {/* Section header */}
@@ -400,7 +375,7 @@ function ItalyTimeline() {
             className="text-white text-4xl md:text-5xl font-light uppercase mb-4"
             style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal" }}
           >
-            8 Days in Italy, 3 Ways
+            9 Days in Italy, 3 Ways
           </h2>
           <p className="text-white/50 text-base font-light max-w-xl mx-auto">
             The same destination. Completely different journeys. See how BTA tailors every detail to your family.
@@ -418,7 +393,7 @@ function ItalyTimeline() {
                   onClick={() => { setActiveTab(i); setActiveDay(0); }}
                   className={`flex items-center gap-2.5 px-6 py-4 text-sm transition-all duration-300 ${
                     activeTab === i
-                      ? "bg-[#BFAF8A] text-[#041E42]"
+                      ? "bg-[#BFAF8A] text-[#384959]"
                       : "text-white/60 hover:text-white hover:bg-white/5"
                   }`}
                 >
@@ -479,7 +454,7 @@ function ItalyTimeline() {
           </div>
 
           {/* Detail panel */}
-          <div className="grid md:grid-cols-2 gap-0 border border-white/10">
+          <div className="grid md:grid-cols-2 gap-0 border border-white/20">
 
             {/* Photo side */}
             <div
@@ -491,7 +466,7 @@ function ItalyTimeline() {
               }}
             >
               {/* Gradient overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#041E42]/80 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#384959]/90 via-transparent to-transparent" />
               {/* Location badge */}
               <div className="absolute bottom-5 left-5 flex items-center gap-2">
                 <MapPin size={12} className="text-[#BFAF8A]" />
@@ -504,8 +479,8 @@ function ItalyTimeline() {
               </div>
             </div>
 
-            {/* Text side */}
-            <div className="p-8 md:p-10 flex flex-col justify-between">
+            {/* Text side — slightly darker panel for contrast against slate blue bg */}
+            <div className="p-8 md:p-10 flex flex-col justify-between bg-[#384959]/40">
               <div>
                 <p
                   className="text-[#BFAF8A] text-xs mb-3"
