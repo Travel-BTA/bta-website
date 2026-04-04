@@ -44,6 +44,8 @@ import HotelSpecialistProgram from "./pages/HotelSpecialistProgram";
 import HotelCollectionApplication from "./pages/HotelCollectionApplication";
 import LuxuryTravelAgency from "./pages/LuxuryTravelAgency";
 import ContactUs from "./pages/ContactUs";
+import Pricing from "./pages/Pricing";
+import Press from "./pages/Press";
 function Router() {
   // make sure to consider if you need authentication for certain routes
   return (
@@ -76,6 +78,8 @@ function Router() {
       <Route path={"/hotel-collection-application"} component={HotelCollectionApplication} />
       <Route path={"/luxury-travel-agency-bta"} component={LuxuryTravelAgency} />
       <Route path={"/contact-us"} component={ContactUs} />
+      <Route path={"/pricing"} component={Pricing} />
+      <Route path={"/press"} component={Press} />
       {/* Land Journeys sub-pages */}
       <Route path={"/custom-itineraries"} component={CustomItineraries} />
       {/* Journal / Blog */}

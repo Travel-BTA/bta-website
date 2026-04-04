@@ -22,6 +22,8 @@ export const nav = {
     { label: "Cruises", href: "/cruises" },
     { label: "Partners", href: "/preferred-partners" },
     { label: "Journal", href: "/journal" },
+    { label: "Press", href: "/press" },
+    { label: "Pricing", href: "/pricing" },
     { label: "About", href: "/about" },
   ],
   cta: { label: "BOOK NOW", href: "/book" },
