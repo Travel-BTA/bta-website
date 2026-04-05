@@ -7,17 +7,16 @@
  * Colors: White text on transparent/dark background.
  *
  * Structure (desktop):
- *   Primary: Destinations | Experiences ▾ | Cruises ▾ | Family Travel | Journal | About Us ▾
+ *   Primary: Destinations | Experiences ▾ | Cruises ▾ | Family Travel | Journal | Work With Us ▾ | About Us ▾
  *   Experiences dropdown: Land Journeys, Private Jet Charters, Custom Itineraries
  *   Cruises dropdown: Luxury Ocean, Premium Ocean, River Cruises, Expedition, Private Charters
- *   About Us dropdown: Our Team, We Give Back, Hotel Specialist Program,
- *                      Hotel Collection Application, Pricing, Press, Contact Us,
- *                      Preferred Partners
+ *   Work With Us dropdown: Hotel Specialist Program, Hotel Collection Application, Advisor Recruitment
+ *   About Us dropdown: Overview, Contact Us, Pricing, FAQ, Our Team, We Give Back, Press
  *   Right: Search icon | BOOK NOW
  *
- * WHY: Family Travel and Cruises promoted to primary nav per Janet's request.
- * Press moved to About Us dropdown. Search bar added for discoverability.
- * All routed pages are now reachable from the nav.
+ * WHY: Advisor-facing and hotel partner links moved to dedicated "Work With Us" dropdown
+ * to shorten the About Us list and give these high-value pages their own top-level entry point.
+ * Advisor Programs page removed — replaced by Advisor Recruitment.
  */
 
 import { useState, useEffect, useRef } from "react";
@@ -42,22 +41,26 @@ const CRUISES_SUBMENU = [
   { label: "Cruise Partners",         href: "/cruises/partners" },
 ];
 
-// WHY: Renamed from "Our Team" to "About Us" per Janet's request.
+// WHY: About Us trimmed to company-only links. Hotel/advisor links moved to Work With Us.
 // Client-facing items (Contact Us, Pricing, FAQ) appear first so clients find them immediately.
-// Company and advisor items follow below.
 const ABOUT_SUBMENU = [
   // ── Client-facing ──────────────────────────────────────────────────────────
+  { label: "Overview",                      href: "/about" },
   { label: "Contact Us",                    href: "/contact-us" },
   { label: "Pricing",                       href: "/pricing" },
   { label: "FAQ",                           href: "/faq" },
-  // ── Company & Advisor ──────────────────────────────────────────────────────
+  // ── Company ───────────────────────────────────────────────────────────────
   { label: "Our Team",                      href: "/about" },
   { label: "We Give Back",                  href: "/about/philanthropic-initiatives" },
   { label: "Press",                         href: "/press" },
+];
+
+// WHY: Hotel partner and advisor recruitment links get their own top-level dropdown
+// so high-value B2B pages are easy to find without scrolling through the full About Us list.
+const WORK_WITH_US_SUBMENU = [
   { label: "Hotel Specialist Program",      href: "/hotel-specialist-program" },
   { label: "Hotel Collection Application",  href: "/hotel-collection-application" },
-  { label: "Advisor Programs",              href: "/advisor-programs" },
-  { label: "Advisor Recruitment",            href: "/advisor-recruitment" },
+  { label: "Advisor Recruitment",           href: "/advisor-recruitment" },
 ];
 
 // Shared dropdown panel styles
@@ -179,13 +182,15 @@ export default function NavBar() {
   const [menuOpen, setMenuOpen]         = useState(false);
   const [experiencesOpen, setExperiencesOpen] = useState(false);
   const [cruisesOpen, setCruisesOpen]   = useState(false);
+  const [workWithUsOpen, setWorkWithUsOpen] = useState(false);
   const [aboutOpen, setAboutOpen]       = useState(false);
   const [searchOpen, setSearchOpen]     = useState(false);
   const [searchQuery, setSearchQuery]   = useState("");
 
-  const experiencesRef = useRef<HTMLDivElement>(null);
-  const cruisesRef     = useRef<HTMLDivElement>(null);
-  const aboutRef       = useRef<HTMLDivElement>(null);
+  const experiencesRef  = useRef<HTMLDivElement>(null);
+  const cruisesRef      = useRef<HTMLDivElement>(null);
+  const workWithUsRef   = useRef<HTMLDivElement>(null);
+  const aboutRef        = useRef<HTMLDivElement>(null);
   const searchInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
@@ -197,9 +202,10 @@ export default function NavBar() {
   // Close dropdowns when clicking outside
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
-      if (experiencesRef.current && !experiencesRef.current.contains(e.target as Node)) setExperiencesOpen(false);
-      if (cruisesRef.current     && !cruisesRef.current.contains(e.target as Node))     setCruisesOpen(false);
-      if (aboutRef.current       && !aboutRef.current.contains(e.target as Node))       setAboutOpen(false);
+      if (experiencesRef.current  && !experiencesRef.current.contains(e.target as Node))  setExperiencesOpen(false);
+      if (cruisesRef.current      && !cruisesRef.current.contains(e.target as Node))      setCruisesOpen(false);
+      if (workWithUsRef.current   && !workWithUsRef.current.contains(e.target as Node))   setWorkWithUsOpen(false);
+      if (aboutRef.current        && !aboutRef.current.contains(e.target as Node))        setAboutOpen(false);
     };
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
@@ -291,7 +297,16 @@ export default function NavBar() {
             Journal
           </a>
 
-          {/* About Us dropdown — renamed from "Our Team" per Janet's request */}
+          {/* Work With Us dropdown — hotel partners and advisor recruitment */}
+          <DesktopDropdown
+            label="Work With Us"
+            items={WORK_WITH_US_SUBMENU}
+            open={workWithUsOpen}
+            setOpen={setWorkWithUsOpen}
+            dropRef={workWithUsRef}
+          />
+
+          {/* About Us dropdown */}
           <DesktopDropdown
             label="About Us"
             href="/about"
@@ -411,6 +426,12 @@ export default function NavBar() {
             >
               Journal
             </a>
+
+            <MobileAccordionItem
+              label="Work With Us"
+              items={WORK_WITH_US_SUBMENU}
+              onClose={() => setMenuOpen(false)}
+            />
 
             <MobileAccordionItem
               label="About Us"
