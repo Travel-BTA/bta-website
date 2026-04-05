@@ -5,6 +5,11 @@
  * Dot navigation allows manual control. Slider pauses on hover.
  * All images served from CDN — no local assets.
  *
+ * Mobile fix: The partner logo bar is hidden inside the hero on mobile
+ * (md:block) to prevent it from wrapping onto the hero text. A separate
+ * <MobileLogoBar> component is exported and rendered immediately below
+ * the hero in HomeV2 on small screens only (md:hidden).
+ *
  * Slide order (per Janet's brief):
  *   1. Italy woman — Cinque Terre overlook
  *   2. Family of 3 — infinity pool ocean view
@@ -44,8 +49,40 @@ const SLIDES = [
   },
 ];
 
+/** Shared logo list so both the in-hero bar and the mobile bar use the same source */
+const PARTNER_LOGOS = [
+  { src: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/virtuoso-white_3531f0d2.png", alt: "Virtuoso Member", heightClass: "h-10 md:h-14" },
+  { src: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/forbes-white_4b960c7c.png", alt: "Forbes Travel Guide", heightClass: "h-8 md:h-10" },
+  { src: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/asta-white_6eb5d156.png", alt: "ASTA", heightClass: "h-8 md:h-10" },
+  { src: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/best-of-valley-white_a7701861.png", alt: "Best of Our Valley 2026 Winner", heightClass: "h-8 md:h-10" },
+  { src: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/iatan-white-v2_329e4c97.png", alt: "IATAN", heightClass: "h-8 md:h-10" },
+  { src: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/phoenix-symphony-white-v3_3ddb4034.png", alt: "The Phoenix Symphony", heightClass: "h-8 md:h-10" },
+];
+
 const INTERVAL_MS = 3000;
 const FADE_MS = 800; // crossfade duration in ms
+
+/**
+ * MobileLogoBar — rendered below the hero on mobile only (md:hidden).
+ * Dark background matches the hero's bottom gradient so the transition
+ * feels seamless on small screens.
+ */
+export function MobileLogoBar() {
+  return (
+    <div className="md:hidden bg-[#0a0a0a] border-t border-white/10 py-5 px-6">
+      <div className="flex items-center justify-center gap-6 flex-wrap">
+        {PARTNER_LOGOS.map((logo) => (
+          <img
+            key={logo.alt}
+            src={logo.src}
+            alt={logo.alt}
+            className={`${logo.heightClass} w-auto opacity-75`}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
 
 export default function HeroSection() {
   const [current, setCurrent] = useState(0);
@@ -102,9 +139,9 @@ export default function HeroSection() {
         style={{ zIndex: 2 }}
       />
 
-      {/* Main Content */}
+      {/* Main Content — pb-6 on mobile (no logos below), pb-28 on md+ (logos bar is inside hero) */}
       <div
-        className="relative h-full max-w-[1440px] mx-auto px-6 lg:px-10 flex flex-col justify-end pb-28"
+        className="relative h-full max-w-[1440px] mx-auto px-6 lg:px-10 flex flex-col justify-end pb-6 md:pb-28"
         style={{ zIndex: 3 }}
       >
         <div className="max-w-xl">
@@ -159,50 +196,21 @@ export default function HeroSection() {
         </a>
       </div>
 
-      {/* Partner Logos Bar — official white logos matching Figma design */}
+      {/* Partner Logos Bar — visible on md+ only; hidden on mobile to prevent text overlap */}
       <div
-        className="absolute bottom-0 left-0 right-0 border-t border-white/10 bg-black/25 backdrop-blur-sm"
+        className="hidden md:block absolute bottom-0 left-0 right-0 border-t border-white/10 bg-black/25 backdrop-blur-sm"
         style={{ zIndex: 3 }}
       >
         {/* Logo bar — all logos normalized to h-10 md:h-12 for visual consistency */}
         <div className="max-w-[1440px] mx-auto px-6 lg:px-10 py-5 flex items-center justify-center gap-8 md:gap-14 flex-wrap">
-          {/* Virtuoso — official white logo */}
-          <img
-            src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/virtuoso-white_3531f0d2.png"
-            alt="Virtuoso Member"
-            className="h-14 md:h-16 w-auto opacity-80 hover:opacity-100 transition-opacity"
-          />
-          {/* Forbes Travel Guide — second position per brand priority */}
-          <img
-            src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/forbes-white_4b960c7c.png"
-            alt="Forbes Travel Guide"
-            className="h-10 md:h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
-          />
-          {/* ASTA — official white logo */}
-          <img
-            src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/asta-white_6eb5d156.png"
-            alt="ASTA"
-            className="h-10 md:h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
-          />
-          {/* Best of Our Valley 2026 — official white logo */}
-          <img
-            src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/best-of-valley-white_a7701861.png"
-            alt="Best of Our Valley 2026 Winner"
-            className="h-10 md:h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
-          />
-          {/* IATAN — official white logo */}
-          <img
-            src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/iatan-white-v2_329e4c97.png"
-            alt="IATAN"
-            className="h-10 md:h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
-          />
-          {/* Phoenix Symphony — white logo, converted from black background version */}
-          <img
-            src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/phoenix-symphony-white-v3_3ddb4034.png"
-            alt="The Phoenix Symphony"
-            className="h-10 md:h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
-          />
-
+          {PARTNER_LOGOS.map((logo) => (
+            <img
+              key={logo.alt}
+              src={logo.src}
+              alt={logo.alt}
+              className={`${logo.heightClass} w-auto opacity-80 hover:opacity-100 transition-opacity`}
+            />
+          ))}
         </div>
       </div>
     </section>

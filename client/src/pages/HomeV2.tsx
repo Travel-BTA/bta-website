@@ -20,7 +20,7 @@
  * 16. Footer
  */
 
-import HeroSection from "@/components/sections/HeroSection";
+import HeroSection, { MobileLogoBar } from "@/components/sections/HeroSection";
 import {
   WhoWeAreSection,
   StatsSection,
@@ -45,6 +45,8 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <HeroSection />
+      {/* MobileLogoBar renders below the hero on small screens only — prevents logos from overlapping hero text */}
+      <MobileLogoBar />
       <WhoWeAreSection />
       <StatsSection />
       <PhilosophySection />
