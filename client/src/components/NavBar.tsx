@@ -53,6 +53,10 @@ const ABOUT_SUBMENU = [
   { label: "Our Team",                      href: "/about" },
   { label: "We Give Back",                  href: "/about/philanthropic-initiatives" },
   { label: "Press",                         href: "/press" },
+  // ── Corporate ─────────────────────────────────────────────────────────────
+  // WHY: Employee benefit program is a corporate/B2B offering — lives under About Us
+  // so HR decision-makers can find it alongside company overview and values pages.
+  { label: "Employee Benefit Program",      href: "/employee-benefit-program" },
 ];
 
 // WHY: Hotel partner and advisor recruitment links get their own top-level dropdown
