@@ -29,10 +29,13 @@ const CDN = {
   costaRicaKayak:    "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/kRsvJFPLBTtRLtDJ.jpg",
   italyVenice:       "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/vffZjZaZyJeIONSB.jpg",
   thailandElephant:  "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/XVaYiUfdLMyvtpWJ.jpg",
-  icelandWaterfall:  "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/XstSWWeGpNaXPXhd.jpg",
-  fijiPool:          "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/jgMUTHJPGDhVRPwt.jpg",
+  icelandWaterfall:  "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/iceland-family-waterfall_21263a3a.jpg",
+  icelandAurora:     "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/iceland-aurora_f161272c.jpg",
+  fijiPool:          "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/fiji-family-glassbottom_63530dc8.jpg",
   // New photos from Janet (Apr 2026):
-  franceSeine:            "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/QlJufeKDhrsRXhjQ.jpg",
+  franceSeine:            "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/france-paris-mother-daughter_322ce512.jpg",
+  franceLoire:            "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/france-loire-castle_2925b151.jpg",
+  franceRiviera:          "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/france-riviera-marina_173fd8c8.jpg",
   // v2 replacements — correct photos per Janet's direction:
   youngChildrenGladiator: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/fSWIIBAYqwfCGZNT.jpg",
   teensDiving:            "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/feoAhmboCuSZhyiC.jpg",
@@ -1023,7 +1026,7 @@ export default function FamilyTravel() {
       {/* ── Accommodations split section ──────────────────────────────────── */}
       <section className="py-24 md:py-32 px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Fiji pool photo — perfect for accommodations */}
+          {/* Fiji glass-bottom boat photo — Janet's photo, Apr 2026 */}
           <div className="relative hidden lg:block">
             <div
               className="w-full h-[520px]"
@@ -1154,9 +1157,11 @@ export default function FamilyTravel() {
         <div
           className="absolute inset-0"
           style={{
-            backgroundImage: `url(${CDN.icelandWaterfall})`,
+            // WHY: Aurora borealis used here for maximum visual impact — the waterfall
+            // photo is used in the destination card grid above.
+            backgroundImage: `url(${CDN.icelandAurora})`,
             backgroundSize: "cover",
-            backgroundPosition: "center 30%",
+            backgroundPosition: "center 40%",
           }}
         />
         <div className="absolute inset-0 bg-[#384959]/50" />

@@ -55,20 +55,20 @@ export interface DestinationItinerary {
 // WHY: Destination-specific images sourced from Unsplash (royalty-free).
 // Janet's uploaded CDN photos are used where available (passed in via data).
 const IMG = {
-  // France
-  paris:          "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=900&q=80&auto=format&fit=crop",
-  loireValley:    "https://images.unsplash.com/photo-1549144511-f099e773c147?w=900&q=80&auto=format&fit=crop",
-  cotedazur:      "https://images.unsplash.com/photo-1533929736458-ca588d08c8be?w=900&q=80&auto=format&fit=crop",
-  // Iceland
-  reykjavik:      "https://images.unsplash.com/photo-1539066834-b1f0f2c7f7b4?w=900&q=80&auto=format&fit=crop",
-  southCoast:     "https://images.unsplash.com/photo-1476610182048-b716b8518aae?w=900&q=80&auto=format&fit=crop",
+  // France — Janet's photos (Apr 2026)
+  paris:          "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/france-paris-mother-daughter_322ce512.jpg",
+  loireValley:    "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/france-loire-castle_2925b151.jpg",
+  cotedazur:      "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/france-riviera-marina_173fd8c8.jpg",
+  // Iceland — Janet's photos (Apr 2026)
+  reykjavik:      "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/iceland-aurora_f161272c.jpg",
+  southCoast:     "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/iceland-family-waterfall_21263a3a.jpg",
   // Thailand
   bangkok:        "https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=900&q=80&auto=format&fit=crop",
   chiangMai:      "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=900&q=80&auto=format&fit=crop",
   kohSamui:       "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=900&q=80&auto=format&fit=crop",
-  // Fiji
-  coralCoast:     "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=900&q=80&auto=format&fit=crop",
-  privateIsland:  "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=900&q=80&auto=format&fit=crop",
+  // Fiji — Janet's photo (Apr 2026)
+  coralCoast:     "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/fiji-family-glassbottom_63530dc8.jpg",
+  privateIsland:  "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/fiji-family-glassbottom_63530dc8.jpg",
   // Costa Rica
   arenal:         "https://images.unsplash.com/photo-1518259102261-b40117eabbc9?w=900&q=80&auto=format&fit=crop",
   guanacaste:     "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=900&q=80&auto=format&fit=crop",
