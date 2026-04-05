@@ -196,9 +196,9 @@ export default function HeroSection() {
             alt="IATAN"
             className="h-10 md:h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
           />
-          {/* Phoenix Symphony — white logo, blue background removed */}
+          {/* Phoenix Symphony — white logo, converted from black background version */}
           <img
-            src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/phoenix-symphony-white-v2_4d1ab4fb.png"
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/phoenix-symphony-white-v3_3ddb4034.png"
             alt="The Phoenix Symphony"
             className="h-10 md:h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
           />
