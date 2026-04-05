@@ -825,6 +825,123 @@ export default function AdvisorRecruitment() {
             </div>
           </div>
 
+          {/* ── Feature Row 6: Benchmarking & Best Practices ── */}
+          {/* WHY: The problem section names fragmented systems and no benchmarking as
+              the core pain. This row closes that loop by showing BTA's answer. */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="relative order-2 lg:order-1">
+              <div className="absolute -inset-6 bg-[#bfaf8a]/5 rounded-2xl blur-2xl" />
+              {/* Benchmarking dashboard — illustrated with a styled stat panel */}
+              <div className="relative z-10 bg-[#faf9f6] border border-[#bfaf8a]/20 shadow-2xl p-8">
+                <div className="flex items-center justify-between mb-6">
+                  <p
+                    className="text-[#384959] text-[0.6rem] tracking-[0.2em] uppercase"
+                    style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                  >
+                    BTA Advisor Intelligence
+                  </p>
+                  <span
+                    className="text-[0.55rem] tracking-[0.15em] uppercase bg-[#384959] text-white px-2 py-1"
+                    style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                  >
+                    Live
+                  </span>
+                </div>
+                {/* Benchmark stat rows */}
+                {[
+                  { label: "Your Annual Volume", value: "$847,200", delta: "+18% YoY", positive: true },
+                  { label: "BTA Network Median", value: "$612,000", delta: "Peer benchmark", positive: null },
+                  { label: "Top 10% Threshold", value: "$1.2M", delta: "Your next milestone", positive: null },
+                  { label: "Avg. Commission Rate", value: "82%", delta: "+7pts vs. industry avg", positive: true },
+                ].map(({ label, value, delta, positive }) => (
+                  <div key={label} className="flex items-center justify-between py-3 border-b border-[#bfaf8a]/10 last:border-0">
+                    <div>
+                      <p
+                        className="text-[#2F2F2F]/50 text-[0.6rem] tracking-[0.12em] uppercase mb-0.5"
+                        style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                      >
+                        {label}
+                      </p>
+                      <p
+                        className="text-[#384959] text-xl font-light"
+                        style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
+                      >
+                        {value}
+                      </p>
+                    </div>
+                    <span
+                      className={`text-[0.6rem] tracking-[0.12em] uppercase px-2 py-1 ${
+                        positive === true
+                          ? "bg-[#384959]/8 text-[#384959]"
+                          : "bg-[#bfaf8a]/10 text-[#9C886A]"
+                      }`}
+                      style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                    >
+                      {delta}
+                    </span>
+                  </div>
+                ))}
+                <p
+                  className="text-[#2F2F2F]/30 text-[0.55rem] tracking-[0.1em] uppercase mt-4"
+                  style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                >
+                  Data refreshed monthly · Anonymized peer cohort
+                </p>
+              </div>
+            </div>
+
+            <div className="order-1 lg:order-2">
+              <p
+                className="text-[#9C886A] text-[0.65rem] tracking-[0.2em] uppercase mb-4"
+                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              >
+                06 — Benchmarking & Best Practices
+              </p>
+              <h3
+                className="text-[#384959] text-3xl md:text-4xl font-light mb-6"
+                style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
+              >
+                Know exactly where you stand. And what it takes to grow.
+              </h3>
+              <p
+                className="text-[#2F2F2F]/60 text-base font-light leading-relaxed mb-6"
+                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              >
+                Most advisors operate without a single reference point for what “good” looks like.
+                BTA changes that. Every advisor in our network has access to anonymized performance
+                benchmarks — annual volume, commission rates, client retention, and average booking
+                value — so you always know where you stand relative to your peers.
+              </p>
+              <p
+                className="text-[#2F2F2F]/60 text-base font-light leading-relaxed mb-8"
+                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+              >
+                Alongside benchmarking, BTA maintains a living library of best practices built
+                collaboratively by our advisor community — covering client communication, fee
+                structures, proposal strategy, supplier negotiation, and more. When one advisor
+                discovers a better way to work, the whole network benefits.
+              </p>
+              <div className="space-y-3">
+                {[
+                  "Monthly performance benchmarks vs. anonymized peer cohort",
+                  "Best practice library updated by the advisor community",
+                  "Strategic collaboration channels for complex multi-advisor trips",
+                  "Annual advisor summit for peer learning and supplier access",
+                ].map((item) => (
+                  <div key={item} className="flex items-start gap-3">
+                    <div className="w-1 h-1 rounded-full bg-[#9C886A] mt-2 shrink-0" />
+                    <p
+                      className="text-[#2F2F2F]/60 text-sm font-light"
+                      style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                    >
+                      {item}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
 
