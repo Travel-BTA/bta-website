@@ -21,7 +21,7 @@
 
 import { useState } from "react";
 import { Baby, Users, Compass, MapPin, Home } from "lucide-react";
-import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 
 // ── Type definitions ──────────────────────────────────────────────────────────
 export interface ItineraryStop {
@@ -103,21 +103,21 @@ export const DESTINATION_ITINERARIES: Record<string, DestinationItinerary> = {
             day: "Nights 1–4", location: "Paris", image: IMG.paris,
             headline: "Paris Through a Child's Eyes",
             experience: "Check in to Hôtel de Crillon on the Place de la Concorde. A private family guide leads a morning at the Eiffel Tower — climbing to the second level before the crowds arrive. Afternoon picnic on the Champ de Mars, then a private Seine river cruise at dusk with the tower lights coming on. Puppet shows at Jardin du Luxembourg and early dinners at brasseries with children's menus.",
-            stay: "Hôtel de Crillon · SLH",
+            stay: "Hôtel de Crillon · Rosewood",
             highlight: "Private Seine river cruise at dusk — Eiffel Tower light show",
           },
           {
             day: "Nights 5–7", location: "Loire Valley", image: IMG.loireValley,
             headline: "Châteaux, Horses & Hidden Gardens",
             experience: "Transfer by private car to Château de la Bourdaisière in the Loire Valley. A château treasure hunt leads children through hidden gardens and turret staircases. Horse-drawn carriage rides between châteaux, a visit to the famous tomato garden, and a guided story tour of Amboise where Leonardo da Vinci spent his final years.",
-            stay: "Château de la Bourdaisière · SLH",
+            stay: "Château de la Bourdaisière · Virtuoso",
             highlight: "Château treasure hunt through hidden gardens and turrets",
           },
           {
             day: "Nights 8–10", location: "Côte d'Azur", image: IMG.cotedazur,
             headline: "Riviera Sunshine & Private Beaches",
             experience: "Hôtel du Cap-Eden-Roc on the Cap d'Antibes peninsula — private beach club with a saltwater pool carved into the rock. Morning snorkeling in the crystal coves, a visit to the Matisse Museum in Nice, and a morning at the Antibes market for fresh flowers and local produce. Gentle evenings watching the sun set over the Mediterranean.",
-            stay: "Hôtel du Cap-Eden-Roc · SLH",
+            stay: "Hôtel du Cap-Eden-Roc · Virtuoso",
             highlight: "Private saltwater pool carved into the rock at Eden-Roc",
           },
         ],
@@ -129,21 +129,21 @@ export const DESTINATION_ITINERARIES: Record<string, DestinationItinerary> = {
             day: "Nights 1–4", location: "Paris", image: IMG.paris,
             headline: "Street Culture, Art & the Seine at Night",
             experience: "Hôtel de Crillon as your Paris base. Evening climb of the Eiffel Tower followed by a private Seine river cruise — the city looks extraordinary from the water at night. Street art tour through Le Marais with a local guide who connects over photography and urban culture. A morning in the fashion district, a rooftop bar dinner, and a visit to the Palais Royal gardens.",
-            stay: "Hôtel de Crillon · SLH",
+            stay: "Hôtel de Crillon · Rosewood",
             highlight: "Eiffel Tower evening climb + private Seine river cruise",
           },
           {
             day: "Nights 5–7", location: "Loire Valley", image: IMG.loireValley,
             headline: "Cycling, Caves & Château Life",
             experience: "Château de la Bourdaisière for three nights of château living. Cycling between châteaux on quiet country roads, a descent into the wine caves beneath Amboise, and an afternoon archery session on the château grounds. Evenings are long and slow — dinner in the château dining room, then stargazing from the tower.",
-            stay: "Château de la Bourdaisière · SLH",
+            stay: "Château de la Bourdaisière · Virtuoso",
             highlight: "Cycling the Loire châteaux + wine cave exploration",
           },
           {
             day: "Nights 8–10", location: "Côte d'Azur", image: IMG.cotedazur,
             headline: "Sailing, Monaco & Cliff Diving",
             experience: "Hôtel du Cap-Eden-Roc for the Riviera finale. A sailing lesson off Cap d'Antibes, cliff diving at the famous Paraggi rocks, and a day trip to Monaco — the casino, the Formula 1 circuit, and the harbour. Final evening: sunset aperitivo on the Eden-Roc terrace before departure.",
-            stay: "Hôtel du Cap-Eden-Roc · SLH",
+            stay: "Hôtel du Cap-Eden-Roc · Virtuoso",
             highlight: "Cliff diving at Paraggi + Monaco day trip",
           },
         ],
@@ -155,21 +155,21 @@ export const DESTINATION_ITINERARIES: Record<string, DestinationItinerary> = {
             day: "Nights 1–4", location: "Paris", image: IMG.paris,
             headline: "Grand Paris for Every Generation",
             experience: "Private fleet transfers the whole family to Hôtel de Crillon. A private Versailles after-hours tour — no crowds, personal guide for every generation. Private Seine river dinner cruise with champagne for the grandparents and sparkling juice for the children, watching the Eiffel Tower light show from the water. Mornings at leisure: the Louvre, the Tuileries, and long lunches in the Palais Royal arcades.",
-            stay: "Hôtel de Crillon · SLH",
+            stay: "Hôtel de Crillon · Rosewood",
             highlight: "Private Versailles after-hours + Seine dinner cruise",
           },
           {
             day: "Nights 5–7", location: "Loire Valley", image: IMG.loireValley,
             headline: "Exclusive Château, Private Chef & Wine",
             experience: "Exclusive-use wing of Château de la Bourdaisière — space for every generation to breathe. A private cooking class with the château chef using produce from the garden. Wine tasting in the caves for the adults while children explore the grounds with a guide. Long family lunches under the lime trees.",
-            stay: "Château de la Bourdaisière · SLH",
+            stay: "Château de la Bourdaisière · Virtuoso",
             highlight: "Exclusive-use château wing with private chef dinner",
           },
           {
             day: "Nights 8–10", location: "Côte d'Azur", image: IMG.cotedazur,
             headline: "Riviera Farewell on a Private Yacht",
             experience: "Hôtel du Cap-Eden-Roc for the final chapter. A private yacht charter for the whole family — swimming in hidden coves, a long seafood lunch on board, and a sunset toast as the Antibes harbour lights come on. The Picasso Museum in Antibes for the grandparents; the beach club for the children. Private transfers staggered to match each generation's departure.",
-            stay: "Hôtel du Cap-Eden-Roc · SLH",
+            stay: "Hôtel du Cap-Eden-Roc · Virtuoso",
             highlight: "Private yacht charter along the Côte d'Azur",
           },
         ],
@@ -949,6 +949,9 @@ export function DestinationTimelineModal({ destination, open, onClose }: Destina
         className="!max-w-5xl w-[95vw] p-0 border-0 overflow-y-auto max-h-[92vh] rounded-none sm:!max-w-5xl"
         showCloseButton={true}
       >
+        {/* WHY: DialogTitle is required by Radix for screen reader accessibility.
+            It is visually hidden since the modal has its own heading inside. */}
+        <DialogTitle className="sr-only">{destination} Sample Itinerary</DialogTitle>
         <DestinationTimelineInner data={data} />
       </DialogContent>
     </Dialog>
