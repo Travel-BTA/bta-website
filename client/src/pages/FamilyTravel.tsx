@@ -48,7 +48,7 @@ const CDN = {
 
 // Unsplash for sections / destinations not covered by uploaded photos:
 const UNS = {
-  hero:              "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1920&q=85&auto=format&fit=crop",
+  hero:              "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/family-hero_565bee68.jpg",
   multigenerational: "https://images.unsplash.com/photo-1511895426328-dc8714191011?w=900&q=85&auto=format&fit=crop",
   accommodations:    "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=900&q=85&auto=format&fit=crop",
   experiences:       "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=900&q=85&auto=format&fit=crop",
@@ -56,7 +56,7 @@ const UNS = {
   // Destination images
   japan:             "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800&q=80&auto=format&fit=crop",
   southAfrica:       "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&q=80&auto=format&fit=crop",
-  hawaii:            "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80&auto=format&fit=crop",
+  hawaii:            "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/hawaii-whale_f5888358.jpg",
   france:            "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800&q=80&auto=format&fit=crop",
 };
 
