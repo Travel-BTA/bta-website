@@ -170,7 +170,7 @@ export default function HeroSection() {
           <img
             src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/virtuoso-white_3531f0d2.png"
             alt="Virtuoso Member"
-            className="h-10 md:h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
+            className="h-14 md:h-16 w-auto opacity-80 hover:opacity-100 transition-opacity"
           />
           {/* Forbes Travel Guide — second position per brand priority */}
           <img
@@ -202,12 +202,7 @@ export default function HeroSection() {
             alt="The Phoenix Symphony"
             className="h-10 md:h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
           />
-          {/* Make-A-Wish — official white logo */}
-          <img
-            src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/make-a-wish-white-v2_23de18b1.png"
-            alt="Make-A-Wish"
-            className="h-10 md:h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
-          />
+
         </div>
       </div>
     </section>
