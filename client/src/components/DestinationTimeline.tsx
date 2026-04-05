@@ -68,9 +68,11 @@ const IMG = {
   // Anantara Elephant Camp jungle bubble photo — Janet's photo, Apr 2026
   chiangMai:      "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/thailand-chiangmai-anantara-elephant_v2_1f0ef51c.jpg",
   kohSamui:       "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=900&q=80&auto=format&fit=crop",
-  // Fiji — Janet's photo (Apr 2026)
-  coralCoast:     "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/fiji-family-glassbottom_63530dc8.jpg",
-  privateIsland:  "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/fiji-family-glassbottom_63530dc8.jpg",
+  // Fiji — Janet's photos (Apr 2026)
+  // coralCoast: manta ray snorkel shot — dramatic underwater perspective
+  coralCoast:     "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/fiji-manta-snorkel_v2_0865395d.jpg",
+  // privateIsland: aerial island view — showcases Kokomo's remote reef setting
+  privateIsland:  "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/fiji-kokomo-island-aerial_49ba6cc9.jpg",
   // Costa Rica
   arenal:         "https://images.unsplash.com/photo-1518259102261-b40117eabbc9?w=900&q=80&auto=format&fit=crop",
   guanacaste:     "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=900&q=80&auto=format&fit=crop",
@@ -358,7 +360,7 @@ export const DESTINATION_ITINERARIES: Record<string, DestinationItinerary> = {
             day: "Nights 4–7", location: "Private Island", image: IMG.privateIsland,
             headline: "Private Island — Horses, Reef & Starlight",
             experience: "Laucala Island — one of the most exclusive private island resorts in the world. A private beach for the family, horse riding along the shoreline at sunrise, and snorkeling in the protected lagoon with a marine biologist guide. Evenings are extraordinary: dinner on the beach under a sky with no light pollution.",
-            stay: "Laucala Island · Private Island Resort",
+            stay: "Kokomo Private Island · Virtuoso",
             highlight: "Horse riding on the beach at sunrise",
           },
         ],
@@ -377,7 +379,7 @@ export const DESTINATION_ITINERARIES: Record<string, DestinationItinerary> = {
             day: "Nights 4–7", location: "Private Island", image: IMG.privateIsland,
             headline: "Scuba, Deep-Sea Fishing & Cliff Jumping",
             experience: "Laucala Island. PADI scuba diving on the house reef — one of the most pristine in the Pacific. Deep-sea fishing with the island's captain, targeting mahi-mahi and wahoo. Cliff jumping from the island's rocky headland into the turquoise lagoon. A private beach bonfire dinner on the final night.",
-            stay: "Laucala Island · Private Island Resort",
+            stay: "Kokomo Private Island · Virtuoso",
             highlight: "Scuba diving on Laucala's pristine house reef",
           },
         ],
@@ -396,7 +398,7 @@ export const DESTINATION_ITINERARIES: Record<string, DestinationItinerary> = {
             day: "Nights 4–7", location: "Private Island", image: IMG.privateIsland,
             headline: "Yacht Charter, Spa & Traditional Feast",
             experience: "Laucala Island for the whole family. A private yacht charter around the island — swimming in hidden coves, snorkeling the outer reef, and a long lunch on board. Spa day for the grandparents at the island's award-winning spa while the children explore the lagoon with a marine biologist. Final evening: a traditional Fijian lovo feast on the beach.",
-            stay: "Laucala Island · Private Island Resort",
+            stay: "Kokomo Private Island · Virtuoso",
             highlight: "Private yacht charter + traditional lovo feast on the beach",
           },
         ],
