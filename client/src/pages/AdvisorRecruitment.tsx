@@ -63,6 +63,167 @@ const VOLUME_OPTIONS = [
   "$2M+",
 ];
 
+// ─── TimeSavingsSection ──────────────────────────────────────────────────────
+// WHY: Extracted as a separate component so it can own its own useRef/useEffect
+// for the IntersectionObserver scroll animation without polluting the parent.
+function TimeSavingsSection() {
+  const sectionRef = useRef<HTMLElement>(null);
+  const [animated, setAnimated] = useState(false);
+
+  useEffect(() => {
+    // Trigger bar animation once when the section enters the viewport
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setAnimated(true);
+          observer.disconnect(); // Only animate once
+        }
+      },
+      { threshold: 0.25 }
+    );
+    if (sectionRef.current) observer.observe(sectionRef.current);
+    return () => observer.disconnect();
+  }, []);
+
+  const rows = [
+    {
+      task: "Build a FIT luxury proposal & itinerary",
+      industry: { label: "Industry Average", time: "2 hours", tools: "Axus · Tern · Travel Joy · Travefy", pct: 100 },
+      iris: { label: "Iris Itinerary Alchemist", time: "10 minutes", pct: 8 },
+      saving: "92% faster",
+    },
+    {
+      task: "Update, QC, and edit an existing itinerary",
+      industry: { label: "Industry Average", time: "2 hours", tools: "Manual review across tools", pct: 100 },
+      iris: { label: "Iris Itinerary Alchemist", time: "30 minutes", pct: 25 },
+      saving: "75% faster",
+    },
+  ];
+
+  return (
+    <section ref={sectionRef} className="py-24 md:py-32 bg-white">
+      <div className="max-w-[1440px] mx-auto px-8 lg:px-14">
+        <div className="text-center mb-20">
+          <div className="flex items-center justify-center gap-4 mb-6">
+            <div className="w-12 h-px bg-[#bfaf8a]" />
+            <p className="text-[#bfaf8a] text-2xl italic" style={{ fontFamily: "'Allura', cursive" }}>
+              The time argument
+            </p>
+            <div className="w-12 h-px bg-[#bfaf8a]" />
+          </div>
+          <h2
+            className="text-[#384959] text-4xl md:text-5xl font-light mb-4"
+            style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
+          >
+            Hours back. Every single week.
+          </h2>
+          <p
+            className="text-[#2F2F2F]/55 text-lg font-light max-w-2xl mx-auto"
+            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+          >
+            Compared to Axus, Tern, Travel Joy, and Travefy — the tools most advisors are using today.
+          </p>
+        </div>
+
+        <div className="space-y-12 max-w-4xl mx-auto">
+          {rows.map(({ task, industry, iris, saving }) => (
+            <div key={task} className="bg-[#faf9f6] border border-[#bfaf8a]/15 p-8 md:p-12">
+              {/* Task label + saving badge */}
+              <div className="flex items-start justify-between gap-4 mb-8">
+                <p
+                  className="text-[#384959] text-lg font-light"
+                  style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
+                >
+                  {task}
+                </p>
+                <span
+                  className="shrink-0 inline-flex items-center gap-1.5 bg-[#384959] text-white text-[0.6rem] tracking-[0.15em] uppercase px-3 py-1.5"
+                  style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                >
+                  <Zap size={10} />
+                  {saving}
+                </span>
+              </div>
+
+              {/* Industry bar — always full width, no animation needed */}
+              <div className="mb-6">
+                <div className="flex items-center justify-between mb-2">
+                  <div>
+                    <span
+                      className="text-[#2F2F2F]/50 text-[0.6rem] tracking-[0.18em] uppercase block mb-0.5"
+                      style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                    >
+                      {industry.label}
+                    </span>
+                    <span
+                      className="text-[#2F2F2F]/35 text-xs font-light"
+                      style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                    >
+                      {industry.tools}
+                    </span>
+                  </div>
+                  <span
+                    className="text-[#2F2F2F]/60 text-2xl font-light"
+                    style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
+                  >
+                    {industry.time}
+                  </span>
+                </div>
+                <div className="h-3 bg-[#e8e2d8] w-full">
+                  {/* Industry bar animates from 0 to 100% on scroll */}
+                  <div
+                    className="h-full bg-[#c4b9a4]"
+                    style={{
+                      width: animated ? "100%" : "0%",
+                      transition: animated ? "width 0.9s cubic-bezier(0.4,0,0.2,1)" : "none",
+                    }}
+                  />
+                </div>
+              </div>
+
+              {/* Iris bar — animates to target pct, delayed so industry bar leads */}
+              <div>
+                <div className="flex items-center justify-between mb-2">
+                  <span
+                    className="text-[#9C886A] text-[0.6rem] tracking-[0.18em] uppercase"
+                    style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+                  >
+                    {iris.label}
+                  </span>
+                  <span
+                    className="text-[#9C886A] text-2xl font-light"
+                    style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
+                  >
+                    {iris.time}
+                  </span>
+                </div>
+                <div className="h-3 bg-[#e8e2d8] w-full">
+                  <div
+                    className="h-full bg-[#9C886A]"
+                    style={{
+                      width: animated ? `${iris.pct}%` : "0%",
+                      transition: animated
+                        ? "width 1.2s cubic-bezier(0.4,0,0.2,1) 0.3s"
+                        : "none",
+                    }}
+                  />
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <p
+          className="text-center text-[#2F2F2F]/35 text-xs mt-10 font-light"
+          style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
+        >
+          Time estimates based on advisor feedback comparing Iris to Axus, Tern, Travel Joy, and Travefy workflows.
+        </p>
+      </div>
+    </section>
+  );
+}
+
 export default function AdvisorRecruitment() {
   const [form, setForm] = useState<InquiryForm>({ name: "", agency: "", volume: "", email: "" });
   const [submitted, setSubmitted] = useState(false);
@@ -212,33 +373,33 @@ export default function AdvisorRecruitment() {
               <div className="flex items-center gap-4 mb-8">
                 <div className="w-12 h-px bg-[#bfaf8a]" />
                 <p className="text-[#bfaf8a] text-2xl italic" style={{ fontFamily: "'Allura', cursive" }}>
-                  The honest truth
+                  The real problem
                 </p>
               </div>
               <h2
                 className="text-[#2F2F2F] text-4xl md:text-5xl font-light leading-tight mb-10"
                 style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
               >
-                You're running a serious business on tools that were never built for it.
+                The industry runs on fragmented systems. You deserve something built differently.
               </h2>
 
               <div className="space-y-6">
                 {[
                   {
-                    problem: "Your CRM was designed for a real estate agent.",
-                    detail: "It tracks contacts. It doesn't understand trips, bookings, supplier relationships, or the complexity of a $50,000 itinerary.",
+                    problem: "Every advisor at your host agency is running a different tech stack.",
+                    detail: "CRM here. Itinerary tool there. A booking platform that doesn't talk to either. The result is friction, duplication, and hours lost every week to systems that were never designed to work together.",
                   },
                   {
-                    problem: "Your host agency takes a cut but doesn't add infrastructure.",
-                    detail: "You're paying for affiliation. You're not getting technology, training, a marketing engine, or a community of peers at your level.",
+                    problem: "There is no shared knowledge base. No benchmarking. No best practices.",
+                    detail: "Top advisors need more than affiliation — they need a community where strategy is shared, performance is benchmarked, and the collective intelligence of a high-producing network is actually accessible.",
                   },
                   {
-                    problem: "You're building itineraries in Word. Or a patchwork of tools.",
-                    detail: "Every document takes hours. Every update means starting over. Your clients deserve better — and so does your time.",
+                    problem: "Collaboration is nearly impossible when everyone is operating in silos.",
+                    detail: "Complex multi-advisor trips, referral partnerships, and peer learning all require a common platform. Without it, every collaboration becomes a coordination project.",
                   },
                   {
-                    problem: "You have no AI working for you.",
-                    detail: "The advisors who will dominate the next decade are already using AI to work faster, advise smarter, and serve more clients at a higher level.",
+                    problem: "Running a successful business requires more than bookings — it requires infrastructure.",
+                    detail: "Pricing strategy, client communication standards, supplier negotiation, marketing systems, financial benchmarks — the advisors growing fastest have these built in. Most host agencies don't provide them.",
                   },
                 ].map(({ problem, detail }) => (
                   <div key={problem} className="flex gap-5">
@@ -277,7 +438,7 @@ export default function AdvisorRecruitment() {
                   className="text-[#384959] text-base italic leading-relaxed mb-4"
                   style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
                 >
-                  "I went from piecing together five different tools to running my entire practice from one platform. My revenue grew 40% in the first year."
+                  "For the first time, I have benchmarks. I know where I stand, where I can grow, and I have colleagues at my level to think through strategy with. That alone is worth everything."
                 </p>
                 <p
                   className="text-[#9C886A] text-[0.6rem] tracking-[0.2em] uppercase"
@@ -848,136 +1009,12 @@ export default function AdvisorRecruitment() {
       </section>
 
       {/* ══════════════════════════════════════════════════════════════════════
-          §7b  TIME SAVINGS — The Iris vs. industry comparison
+          §7b  TIME SAVINGS — Animated Iris vs. industry comparison
           WHY: A $500k+ advisor values their time above almost everything.
-          Showing concrete time savings (2 hrs → 10 min) is one of the most
-          compelling arguments for switching. Numbers are real and verifiable.
+          Bars animate from 0 to target width when the section scrolls into
+          view using IntersectionObserver — making the contrast visceral.
       ══════════════════════════════════════════════════════════════════════ */}
-      <section className="py-24 md:py-32 bg-white">
-        <div className="max-w-[1440px] mx-auto px-8 lg:px-14">
-          <div className="text-center mb-20">
-            <div className="flex items-center justify-center gap-4 mb-6">
-              <div className="w-12 h-px bg-[#bfaf8a]" />
-              <p className="text-[#bfaf8a] text-2xl italic" style={{ fontFamily: "'Allura', cursive" }}>
-                The time argument
-              </p>
-              <div className="w-12 h-px bg-[#bfaf8a]" />
-            </div>
-            <h2
-              className="text-[#384959] text-4xl md:text-5xl font-light mb-4"
-              style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
-            >
-              Hours back. Every single week.
-            </h2>
-            <p
-              className="text-[#2F2F2F]/55 text-lg font-light max-w-2xl mx-auto"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
-            >
-              Compared to Axus, Tern, Travel Joy, and Travefy — the tools most advisors are using today.
-            </p>
-          </div>
-
-          {/* Two comparison rows */}
-          <div className="space-y-12 max-w-4xl mx-auto">
-            {[
-              {
-                task: "Build a FIT luxury proposal & itinerary",
-                industry: { label: "Industry Average", time: "2 hours", tools: "Axus · Tern · Travel Joy · Travefy", pct: 100 },
-                iris: { label: "Iris Itinerary Alchemist", time: "10 minutes", pct: 8 },
-                saving: "92% faster",
-              },
-              {
-                task: "Update, QC, and edit an existing itinerary",
-                industry: { label: "Industry Average", time: "2 hours", tools: "Manual review across tools", pct: 100 },
-                iris: { label: "Iris Itinerary Alchemist", time: "30 minutes", pct: 25 },
-                saving: "75% faster",
-              },
-            ].map(({ task, industry, iris, saving }) => (
-              <div key={task} className="bg-[#faf9f6] border border-[#bfaf8a]/15 p-8 md:p-12">
-                {/* Task label */}
-                <div className="flex items-start justify-between gap-4 mb-8">
-                  <p
-                    className="text-[#384959] text-lg font-light"
-                    style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
-                  >
-                    {task}
-                  </p>
-                  <span
-                    className="shrink-0 inline-flex items-center gap-1.5 bg-[#384959] text-white text-[0.6rem] tracking-[0.15em] uppercase px-3 py-1.5"
-                    style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
-                  >
-                    <Zap size={10} />
-                    {saving}
-                  </span>
-                </div>
-
-                {/* Industry bar */}
-                <div className="mb-6">
-                  <div className="flex items-center justify-between mb-2">
-                    <div>
-                      <span
-                        className="text-[#2F2F2F]/50 text-[0.6rem] tracking-[0.18em] uppercase block mb-0.5"
-                        style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
-                      >
-                        {industry.label}
-                      </span>
-                      <span
-                        className="text-[#2F2F2F]/35 text-xs font-light"
-                        style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
-                      >
-                        {industry.tools}
-                      </span>
-                    </div>
-                    <span
-                      className="text-[#2F2F2F]/60 text-2xl font-light"
-                      style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
-                    >
-                      {industry.time}
-                    </span>
-                  </div>
-                  <div className="h-3 bg-[#e8e2d8] w-full">
-                    <div className="h-full bg-[#c4b9a4] w-full" />
-                  </div>
-                </div>
-
-                {/* Iris bar */}
-                <div>
-                  <div className="flex items-center justify-between mb-2">
-                    <div>
-                      <span
-                        className="text-[#9C886A] text-[0.6rem] tracking-[0.18em] uppercase block mb-0.5"
-                        style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
-                      >
-                        {iris.label}
-                      </span>
-                    </div>
-                    <span
-                      className="text-[#9C886A] text-2xl font-light"
-                      style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
-                    >
-                      {iris.time}
-                    </span>
-                  </div>
-                  <div className="h-3 bg-[#e8e2d8] w-full">
-                    <div
-                      className="h-full bg-[#9C886A] transition-all duration-1000"
-                      style={{ width: `${iris.pct}%` }}
-                    />
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Bottom note */}
-          <p
-            className="text-center text-[#2F2F2F]/35 text-xs mt-10 font-light"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
-          >
-            Time estimates based on advisor feedback comparing Iris to Axus, Tern, Travel Joy, and Travefy workflows.
-          </p>
-        </div>
-      </section>
+      <TimeSavingsSection />
 
       {/* ══════════════════════════════════════════════════════════════════════
           §7c  ELEVATE THIS TRIP — Horizontal scrolling upsell showcase
