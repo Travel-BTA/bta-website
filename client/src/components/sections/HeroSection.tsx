@@ -192,7 +192,7 @@ export default function HeroSection() {
           />
           {/* IATAN — official white logo */}
           <img
-            src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/iatan-white_14a34ade.png"
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/iatan-white-v2_329e4c97.png"
             alt="IATAN"
             className="h-10 md:h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
           />
@@ -204,7 +204,7 @@ export default function HeroSection() {
           />
           {/* Make-A-Wish — official white logo */}
           <img
-            src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/make-a-wish-white_b38d8c6b.png"
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/make-a-wish-white-v2_23de18b1.png"
             alt="Make-A-Wish"
             className="h-10 md:h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
           />
