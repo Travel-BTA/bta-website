@@ -297,15 +297,6 @@ export default function NavBar() {
             Journal
           </a>
 
-          {/* Work With Us dropdown — hotel partners and advisor recruitment */}
-          <DesktopDropdown
-            label="Work With Us"
-            items={WORK_WITH_US_SUBMENU}
-            open={workWithUsOpen}
-            setOpen={setWorkWithUsOpen}
-            dropRef={workWithUsRef}
-          />
-
           {/* About Us dropdown */}
           <DesktopDropdown
             label="About Us"
@@ -314,6 +305,15 @@ export default function NavBar() {
             open={aboutOpen}
             setOpen={setAboutOpen}
             dropRef={aboutRef}
+          />
+
+          {/* Work With Us dropdown — hotel partners and advisor recruitment — last in nav */}
+          <DesktopDropdown
+            label="Work With Us"
+            items={WORK_WITH_US_SUBMENU}
+            open={workWithUsOpen}
+            setOpen={setWorkWithUsOpen}
+            dropRef={workWithUsRef}
           />
         </nav>
 
@@ -428,15 +428,15 @@ export default function NavBar() {
             </a>
 
             <MobileAccordionItem
-              label="Work With Us"
-              items={WORK_WITH_US_SUBMENU}
+              label="About Us"
+              href="/about"
+              items={ABOUT_SUBMENU}
               onClose={() => setMenuOpen(false)}
             />
 
             <MobileAccordionItem
-              label="About Us"
-              href="/about"
-              items={ABOUT_SUBMENU}
+              label="Work With Us"
+              items={WORK_WITH_US_SUBMENU}
               onClose={() => setMenuOpen(false)}
             />
 
