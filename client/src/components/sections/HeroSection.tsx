@@ -159,17 +159,44 @@ export default function HeroSection() {
         </a>
       </div>
 
-      {/* Partner Logos Bar */}
+      {/* Partner Logos Bar — official white logos matching Figma design */}
       <div
-        className="absolute bottom-0 left-0 right-0 border-t border-white/10 bg-black/20 backdrop-blur-sm"
+        className="absolute bottom-0 left-0 right-0 border-t border-white/10 bg-black/25 backdrop-blur-sm"
         style={{ zIndex: 3 }}
       >
-        <div className="max-w-[1440px] mx-auto px-6 lg:px-10 py-4 flex items-center justify-center gap-8 md:gap-16 flex-wrap">
-          <span className="bta-eyebrow text-white/60 text-[10px] tracking-[0.2em] uppercase">Virtuoso</span>
-          <span className="bta-eyebrow text-white/60 text-[10px] tracking-[0.2em] uppercase">ASTA</span>
-          <span className="bta-eyebrow text-white/60 text-[10px] tracking-[0.2em] uppercase">Best of Our Valley</span>
-          <span className="bta-eyebrow text-white/60 text-[10px] tracking-[0.2em] uppercase">IATAN</span>
-          <span className="bta-eyebrow text-white/60 text-[10px] tracking-[0.2em] uppercase">Forbes</span>
+        <div className="max-w-[1440px] mx-auto px-6 lg:px-10 py-5 flex items-center justify-center gap-8 md:gap-14 flex-wrap">
+          {/* Virtuoso — official white logo */}
+          <img
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/virtuoso-white_3531f0d2.png"
+            alt="Virtuoso Member"
+            className="h-8 md:h-10 w-auto opacity-80 hover:opacity-100 transition-opacity"
+          />
+          {/* ASTA — official white logo */}
+          <img
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/asta-white_6eb5d156.png"
+            alt="ASTA"
+            className="h-8 md:h-10 w-auto opacity-80 hover:opacity-100 transition-opacity"
+          />
+          {/* Best of Our Valley 2026 — official white logo */}
+          <img
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/best-of-valley-white_a7701861.png"
+            alt="Best of Our Valley 2026 Winner"
+            className="h-10 md:h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
+          />
+          {/* IATAN — text badge (logo not provided) */}
+          <span className="text-white/80 font-semibold tracking-[0.15em] text-sm uppercase hover:text-white transition-colors">IATAN</span>
+          {/* Forbes Travel Guide — official white logo */}
+          <img
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/forbes-white_4b960c7c.png"
+            alt="Forbes Travel Guide"
+            className="h-8 md:h-10 w-auto opacity-80 hover:opacity-100 transition-opacity"
+          />
+          {/* Phoenix Symphony — official white logo */}
+          <img
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/phoenix-symphony-white_75fee589.png"
+            alt="The Phoenix Symphony"
+            className="h-8 md:h-10 w-auto opacity-80 hover:opacity-100 transition-opacity"
+          />
         </div>
       </div>
     </section>
