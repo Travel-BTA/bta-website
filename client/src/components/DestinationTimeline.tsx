@@ -63,8 +63,10 @@ const IMG = {
   reykjavik:      "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/iceland-aurora_f161272c.jpg",
   southCoast:     "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/iceland-family-waterfall_21263a3a.jpg",
   // Thailand
-  bangkok:        "https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=900&q=80&auto=format&fit=crop",
-  chiangMai:      "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=900&q=80&auto=format&fit=crop",
+  // Bangkok temple photo — Janet's photo, Apr 2026
+  bangkok:        "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/thailand-bangkok-temple_6cbc2371.jpg",
+  // Anantara Elephant Camp jungle bubble photo — Janet's photo, Apr 2026
+  chiangMai:      "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/thailand-chiangmai-anantara-elephant_v2_1f0ef51c.jpg",
   kohSamui:       "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=900&q=80&auto=format&fit=crop",
   // Fiji — Janet's photo (Apr 2026)
   coralCoast:     "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/fiji-family-glassbottom_63530dc8.jpg",
@@ -267,7 +269,7 @@ export const DESTINATION_ITINERARIES: Record<string, DestinationItinerary> = {
             day: "Nights 4–6", location: "Chiang Mai", image: IMG.chiangMai,
             headline: "Elephants, Lanterns & Hill Tribes",
             experience: "Rosewood Chiang Mai in the old city. A half-day at an ethical elephant sanctuary — feeding, bathing, and walking with rescued elephants. An evening at the Yi Peng lantern festival (seasonal) or a private lantern release ceremony. A hill tribe village visit with a local guide who explains the culture and crafts to young children.",
-            stay: "Rosewood Chiang Mai · Virtuoso",
+            stay: "Anantara Elephant Camp · Virtuoso",
             highlight: "Elephant sanctuary — feeding and bathing rescued elephants",
           },
           {
@@ -293,7 +295,7 @@ export const DESTINATION_ITINERARIES: Record<string, DestinationItinerary> = {
             day: "Nights 4–6", location: "Chiang Mai", image: IMG.chiangMai,
             headline: "Full-Day Elephant Sanctuary & Zip-Line",
             experience: "Rosewood Chiang Mai. A full-day at the elephant sanctuary — no riding, just genuine interaction with rescued elephants and their mahouts. Afternoon zip-line through the jungle canopy above Chiang Mai. Evening at the Sunday Walking Street night market, browsing handmade crafts and local food stalls.",
-            stay: "Rosewood Chiang Mai · Virtuoso",
+            stay: "Anantara Elephant Camp · Virtuoso",
             highlight: "Full-day elephant sanctuary + jungle zip-line",
           },
           {
@@ -319,7 +321,7 @@ export const DESTINATION_ITINERARIES: Record<string, DestinationItinerary> = {
             day: "Nights 4–6", location: "Chiang Mai", image: IMG.chiangMai,
             headline: "Elephant Sanctuary & Private Monk Blessing",
             experience: "Rosewood Chiang Mai. The elephant sanctuary experience for the whole family — accessible for grandparents, thrilling for children. A private monk blessing ceremony at a hilltop temple at dawn — a deeply meaningful experience for all generations. Cooking class with a local family, learning northern Thai recipes passed down through generations.",
-            stay: "Rosewood Chiang Mai · Virtuoso",
+            stay: "Anantara Elephant Camp · Virtuoso",
             highlight: "Private monk blessing ceremony at dawn",
           },
           {
