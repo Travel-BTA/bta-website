@@ -508,9 +508,10 @@ function FaqAccordion() {
 
 export default function HotelSpecialistProgram() {
   return (
-    <div className="min-h-screen" style={{ backgroundColor: "#F5F0EA" }}>
+    <div className="min-h-screen" style={{ backgroundColor: "#F5F0EA", overflow: "hidden" }}>
 
-      {/* Hero */}
+      {/* Hero — WHY: overflow:hidden prevents the hero content from bleeding into adjacent
+           sections on mobile and in preview environments. */}
       <section
         style={{
           position: "relative",
@@ -522,6 +523,7 @@ export default function HotelSpecialistProgram() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+          overflow: "hidden",
         }}
       >
         <div
@@ -748,6 +750,56 @@ export default function HotelSpecialistProgram() {
         </div>
       </section>
 
+      {/* Full-Width Image Strip — WHY: A cinematic image break between About BTA and the
+           Earnings Calculator gives the page visual breathing room and reinforces the
+           calibre of properties specialists will represent. */}
+      <section
+        style={{
+          position: "relative",
+          height: "52vh",
+          minHeight: "360px",
+          backgroundImage: `url(https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/hotel-poolside_14bf168b.jpg)`,
+          backgroundSize: "cover",
+          backgroundPosition: "center 40%",
+          overflow: "hidden",
+        }}
+      >
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            backgroundColor: "rgba(20,20,20,0.42)",
+          }}
+        />
+        <div
+          style={{
+            position: "relative",
+            zIndex: 1,
+            height: "100%",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            textAlign: "center",
+            padding: "0 2rem",
+          }}
+        >
+          <p
+            style={{
+              fontFamily: "'Playfair Display', serif",
+              fontStyle: "italic",
+              fontWeight: 400,
+              fontSize: "clamp(1.1rem, 2.2vw, 1.65rem)",
+              color: "rgba(255,255,255,0.92)",
+              maxWidth: "720px",
+              lineHeight: 1.65,
+              letterSpacing: "0.02em",
+            }}
+          >
+            "The properties you recommend become the memories your clients carry for a lifetime."
+          </p>
+        </div>
+      </section>
+
       {/* Earnings Calculator */}
       <EarningsCalculator />
 
@@ -917,6 +969,112 @@ export default function HotelSpecialistProgram() {
                 >
                   {item.body}
                 </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Portfolio Gallery — WHY: Three curated hotel images placed after the benefits grid
+           give prospective specialists a visceral sense of the property portfolio they will
+           represent, making the value proposition tangible rather than abstract. */}
+      <section style={{ backgroundColor: "#fff", padding: "4rem 0" }}>
+        <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 2rem" }}>
+          <p
+            className="bta-eyebrow"
+            style={{ textAlign: "center", marginBottom: "0.5rem", letterSpacing: "0.12em" }}
+          >
+            The Portfolio
+          </p>
+          <h2
+            style={{
+              fontFamily: "'Instrument Serif', serif",
+              fontStyle: "normal",
+              fontWeight: 400,
+              textTransform: "uppercase",
+              fontSize: "clamp(1.4rem, 3vw, 2rem)",
+              color: "#384959",
+              textAlign: "center",
+              marginBottom: "2.5rem",
+              letterSpacing: "0.06em",
+            }}
+          >
+            Properties You Will Represent
+          </h2>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+              gap: "1rem",
+            }}
+          >
+            {[
+              {
+                src: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/hotel-balcony-ocean_3514179c.jpg",
+                caption: "Oceanfront Retreats",
+                position: "center 60%",
+              },
+              {
+                src: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/hotel-pool-luxury_f0808683.jpg",
+                caption: "Resort Collections",
+                position: "center 50%",
+              },
+              {
+                src: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/boutique-hotel-room_4da9868c.jpg",
+                caption: "Boutique Sanctuaries",
+                position: "center 40%",
+              },
+            ].map((item) => (
+              <div
+                key={item.caption}
+                style={{
+                  position: "relative",
+                  overflow: "hidden",
+                  height: "320px",
+                }}
+              >
+                <img
+                  src={item.src}
+                  alt={item.caption}
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                    objectPosition: item.position,
+                    display: "block",
+                    transition: "transform 0.7s ease",
+                  }}
+                  onMouseEnter={(e) => {
+                    (e.currentTarget as HTMLImageElement).style.transform = "scale(1.05)";
+                  }}
+                  onMouseLeave={(e) => {
+                    (e.currentTarget as HTMLImageElement).style.transform = "scale(1)";
+                  }}
+                />
+                <div
+                  style={{
+                    position: "absolute",
+                    bottom: 0,
+                    left: 0,
+                    right: 0,
+                    padding: "1.5rem 1.25rem 1rem",
+                    background:
+                      "linear-gradient(to top, rgba(20,20,20,0.65) 0%, transparent 100%)",
+                  }}
+                >
+                  <p
+                    style={{
+                      fontFamily: "'Instrument Serif', serif",
+                      fontWeight: 400,
+                      textTransform: "uppercase",
+                      letterSpacing: "0.14em",
+                      fontSize: "0.78rem",
+                      color: "#BFAF8A",
+                    }}
+                  >
+                    {item.caption}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
