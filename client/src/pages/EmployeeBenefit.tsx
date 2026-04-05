@@ -493,7 +493,7 @@ export default function EmployeeBenefit() {
                     className="text-3xl text-[#BFAF8A] mb-1"
                     style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 400 }}
                   >
-                    $100K+
+                    $250K+
                   </div>
                   <p className="text-white/60 text-sm">raised through travel bookings for charitable causes</p>
                 </div>

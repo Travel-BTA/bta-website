@@ -45,7 +45,9 @@ const CRUISES_SUBMENU = [
 // Client-facing items (Contact Us, Pricing, FAQ) appear first so clients find them immediately.
 const ABOUT_SUBMENU = [
   // ── Client-facing ──────────────────────────────────────────────────────────
-  { label: "Overview",                      href: "/about" },
+  // WHY: "Overview" is intentionally omitted here — MobileAccordionItem already
+  // renders an "Overview" link from the href prop, so including it in the items
+  // array would produce a duplicate entry in the mobile nav.
   { label: "Contact Us",                    href: "/contact-us" },
   { label: "Pricing",                       href: "/pricing" },
   { label: "FAQ",                           href: "/faq" },
