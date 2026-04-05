@@ -6,25 +6,22 @@
 
 export const storyUnfoldItineraries = [
   {
+    // WHY: Carmel-by-the-Sea card uses Janet's harbor photo for an authentic,
+    // locally-sourced feel that differentiates from stock imagery.
     title: "America 8-Night Ultra Luxury Escape",
     destination: "United States",
-    city: "America",
-    image: "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=800&q=80&auto=format&fit=crop",
-    href: "https://3000-ixbmhhcvmbnbqxekpeqwx-d9c66b5e.us2.manus.computer/itinerary/america-8-night-ultra-luxury-escape",
+    city: "Carmel-by-the-Sea",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/carmel-harbor_2143ea51.jpg",
+    href: "https://itineraries.luxurytravelclubs.com/itinerary/america-8-night-ultra-luxury-escape",
   },
   {
-    title: "America 8-Night Ultra Luxury Escape",
-    destination: "United States",
-    city: "New York",
-    image: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=800&q=80&auto=format&fit=crop",
-    href: "https://3000-ixbmhhcvmbnbqxekpeqwx-d9c66b5e.us2.manus.computer/itinerary/america-8-night-ultra-luxury-escape",
-  },
-  {
-    title: "America 8-Night Ultra Luxury Escape",
-    destination: "United States",
-    city: "Los Angeles",
-    image: "https://images.unsplash.com/photo-1534430480872-3498386e7856?w=800&q=80&auto=format&fit=crop",
-    href: "https://3000-ixbmhhcvmbnbqxekpeqwx-d9c66b5e.us2.manus.computer/itinerary/america-8-night-ultra-luxury-escape",
+    // WHY: Austria ski adventure card uses the Hallstatt photo provided by Janet,
+    // linking directly to the LTC itinerary page.
+    title: "Austria 8-Night Luxury Ski Adventure",
+    destination: "Austria",
+    city: "Hallstatt & the Alps",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/austria-hallstatt_a71eb215.jpg",
+    href: "https://itineraries.luxurytravelclubs.com/itinerary/austria-8-night-luxury-ski-adventure",
   },
 ];
 
@@ -48,8 +45,8 @@ export function StoryUnfoldSection() {
           </h2>
         </div>
 
-        {/* Itinerary Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        {/* Itinerary Cards Grid — 2-col layout matches the 2 featured itineraries */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {storyUnfoldItineraries.map((item, i) => (
             <a
               key={i}
@@ -57,7 +54,7 @@ export function StoryUnfoldSection() {
               target="_blank"
               rel="noopener noreferrer"
               className="group relative overflow-hidden block"
-              style={{ height: "520px" }}
+              style={{ height: "580px" }}
             >
               {/* Background Image */}
               <img
