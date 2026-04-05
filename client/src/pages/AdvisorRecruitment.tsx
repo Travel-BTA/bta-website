@@ -491,7 +491,7 @@ export default function AdvisorRecruitment() {
               { stat: "$550", label: "Avg. VIP Amenity Value", note: "Per stay, passed directly to your clients" },
               { stat: "$0", label: "Per-Booking Fees", note: "No charges eating into your margin" },
             ].map(({ stat, label, note }) => (
-              <div key={label} className="bg-[#1a2330]/60 p-10 text-center hover:bg-[#bfaf8a]/10 transition-colors duration-300">
+              <div key={label} className="bg-[#1a2330]/60 p-8 md:p-10 text-center hover:bg-[#bfaf8a]/10 transition-colors duration-300">
                 <p
                   className="text-[#bfaf8a] text-4xl md:text-5xl font-light mb-3"
                   style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
@@ -499,13 +499,13 @@ export default function AdvisorRecruitment() {
                   {stat}
                 </p>
                 <p
-                  className="text-white text-sm mb-2"
+                  className="text-white text-base mb-2"
                   style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
                 >
                   {label}
                 </p>
                 <p
-                  className="text-white/40 text-xs font-light leading-relaxed"
+                  className="text-white/50 text-sm font-light leading-relaxed"
                   style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
                 >
                   {note}
@@ -757,22 +757,22 @@ export default function AdvisorRecruitment() {
                 links to what needs attention first. On every active trip, Iris runs a full QC audit
                 and surfaces upsell opportunities with estimated commission. Nothing slips through.
               </p>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
                   { title: "Morning Briefing", desc: "Prioritized pipeline summary every day" },
                   { title: "Trip QC Audit", desc: "Full departure checklist, auto-generated" },
                   { title: "Elevate Upsells", desc: "AI-suggested opportunities with commission" },
                   { title: "Call Summaries", desc: "Every call transcribed and filed automatically" },
                 ].map(({ title, desc }) => (
-                  <div key={title} className="p-4 bg-[#faf9f6] border border-[#bfaf8a]/15">
+                  <div key={title} className="p-6 bg-[#faf9f6] border border-[#bfaf8a]/15">
                     <p
-                      className="text-[#384959] text-sm mb-1"
+                      className="text-[#384959] text-base mb-2"
                       style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
                     >
                       {title}
                     </p>
                     <p
-                      className="text-[#2F2F2F]/50 text-xs font-light"
+                      className="text-[#2F2F2F]/55 text-sm font-light leading-relaxed"
                       style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
                     >
                       {desc}
