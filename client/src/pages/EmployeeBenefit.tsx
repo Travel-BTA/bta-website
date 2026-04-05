@@ -19,7 +19,7 @@ import { useEffect, useRef, useState } from "react";
 
 // ─── CDN image constants ───────────────────────────────────────────────────
 const IMG_HERO =
-  "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/hero-resort-pool_1b79419a.jpg";
+  "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/hero-kayak_94778c93.jpg";
 const IMG_COUPLE_POOL =
   "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/couple-infinity-pool_761f60cb.jpg";
 const IMG_BEACH =
