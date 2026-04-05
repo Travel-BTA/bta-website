@@ -164,18 +164,25 @@ export default function HeroSection() {
         className="absolute bottom-0 left-0 right-0 border-t border-white/10 bg-black/25 backdrop-blur-sm"
         style={{ zIndex: 3 }}
       >
+        {/* Logo bar — all logos normalized to h-10 md:h-12 for visual consistency */}
         <div className="max-w-[1440px] mx-auto px-6 lg:px-10 py-5 flex items-center justify-center gap-8 md:gap-14 flex-wrap">
-          {/* Virtuoso — official white logo, slightly larger than peers */}
+          {/* Virtuoso — official white logo */}
           <img
             src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/virtuoso-white_3531f0d2.png"
             alt="Virtuoso Member"
-            className="h-10 md:h-14 w-auto opacity-80 hover:opacity-100 transition-opacity"
+            className="h-10 md:h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
+          />
+          {/* Forbes Travel Guide — second position per brand priority */}
+          <img
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/forbes-white_4b960c7c.png"
+            alt="Forbes Travel Guide"
+            className="h-10 md:h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
           />
           {/* ASTA — official white logo */}
           <img
             src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/asta-white_6eb5d156.png"
             alt="ASTA"
-            className="h-8 md:h-10 w-auto opacity-80 hover:opacity-100 transition-opacity"
+            className="h-10 md:h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
           />
           {/* Best of Our Valley 2026 — official white logo */}
           <img
@@ -183,19 +190,23 @@ export default function HeroSection() {
             alt="Best of Our Valley 2026 Winner"
             className="h-10 md:h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
           />
-          {/* IATAN — text badge (logo not provided) */}
-          <span className="text-white/80 font-semibold tracking-[0.15em] text-sm uppercase hover:text-white transition-colors">IATAN</span>
-          {/* Forbes Travel Guide — official white logo */}
+          {/* IATAN — official white logo */}
           <img
-            src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/forbes-white_4b960c7c.png"
-            alt="Forbes Travel Guide"
-            className="h-8 md:h-10 w-auto opacity-80 hover:opacity-100 transition-opacity"
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/iatan-white_14a34ade.png"
+            alt="IATAN"
+            className="h-10 md:h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
           />
           {/* Phoenix Symphony — white logo, blue background removed */}
           <img
             src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/phoenix-symphony-white-v2_4d1ab4fb.png"
             alt="The Phoenix Symphony"
-            className="h-8 md:h-10 w-auto opacity-80 hover:opacity-100 transition-opacity"
+            className="h-10 md:h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
+          />
+          {/* Make-A-Wish — official white logo */}
+          <img
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/make-a-wish-white_b38d8c6b.png"
+            alt="Make-A-Wish"
+            className="h-10 md:h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
           />
         </div>
       </div>
