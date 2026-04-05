@@ -165,11 +165,11 @@ export default function HeroSection() {
         style={{ zIndex: 3 }}
       >
         <div className="max-w-[1440px] mx-auto px-6 lg:px-10 py-5 flex items-center justify-center gap-8 md:gap-14 flex-wrap">
-          {/* Virtuoso — official white logo */}
+          {/* Virtuoso — official white logo, slightly larger than peers */}
           <img
             src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/virtuoso-white_3531f0d2.png"
             alt="Virtuoso Member"
-            className="h-8 md:h-10 w-auto opacity-80 hover:opacity-100 transition-opacity"
+            className="h-10 md:h-14 w-auto opacity-80 hover:opacity-100 transition-opacity"
           />
           {/* ASTA — official white logo */}
           <img
@@ -191,9 +191,9 @@ export default function HeroSection() {
             alt="Forbes Travel Guide"
             className="h-8 md:h-10 w-auto opacity-80 hover:opacity-100 transition-opacity"
           />
-          {/* Phoenix Symphony — official white logo */}
+          {/* Phoenix Symphony — white logo, blue background removed */}
           <img
-            src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/phoenix-symphony-white_75fee589.png"
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/phoenix-symphony-white-v2_4d1ab4fb.png"
             alt="The Phoenix Symphony"
             className="h-8 md:h-10 w-auto opacity-80 hover:opacity-100 transition-opacity"
           />
