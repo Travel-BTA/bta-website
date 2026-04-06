@@ -383,7 +383,7 @@ export default function PartnerDirectory() {
             Our Partner Directory
           </h1>
           <p className="text-white/70 text-base max-w-xl leading-relaxed" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 400 }}>
-            Every co-branded platform and interactive experience. pre-configured so all enquiries route directly to Boutique Travel Advisors.
+            Explore our carefully selected cruise and travel partners — each chosen for their commitment to exceptional service, exclusive amenities, and the extraordinary experiences they deliver to our clients.
           </p>
         </div>
       </section>
