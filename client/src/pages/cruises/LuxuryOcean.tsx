@@ -33,7 +33,9 @@ const CRUISE_LINES = [
     ],
     culinary:
       "Anthology Culinary Masterclasses & Workshops: hands-on cooking classes led by resident chefs, market visits, and destination-inspired menus that change with every port.",
-    image: "https://images.unsplash.com/photo-1599640842225-85d111c60e6b?auto=format&fit=crop&w=1400&q=80",
+    // WHY: Venice Grand Canal — evokes the residential, unhurried Mediterranean
+    // atmosphere that defines the Explora Journeys brand philosophy.
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/cruise-venice-grand-canal_880d7ca2.jpg",
     link: "https://explorajourneys.com?insider=zq18x-boutique-travel-advisors",
     linkLabel: "Explore Explora Journeys",
     imageRight: false,
@@ -55,7 +57,9 @@ const CRUISE_LINES = [
     ],
     culinary:
       "Culinary Arts Kitchen: a state-of-the-art teaching kitchen aboard Explorer, Splendor, and Grandeur class ships. Hands-on classes, guest chef programs, and Regent Destinations programs bring each port to life through food.",
-    image: "https://images.unsplash.com/photo-1548574505-5e239809ee19?auto=format&fit=crop&w=1400&q=80",
+    // WHY: Ha Long Bay — showcases Regent's reach into exotic, bucket-list
+    // destinations that set it apart from traditional European-focused lines.
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/cruise-halong-bay_b6dfb89d.jpg",
     link: "https://www.rssc.com?insider=zq18x-boutique-travel-advisors",
     linkLabel: "Explore Regent Seven Seas",
     imageRight: true,
@@ -77,7 +81,9 @@ const CRUISE_LINES = [
     ],
     culinary:
       "Thomas Keller Partnership: The Grill by Thomas Keller is the signature restaurant aboard all Seabourn ships, offering the chef's classic American cuisine. Culinary Enrichment & Workshops include hands-on cooking demonstrations and destination-focused food experiences.",
-    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80",
+    // WHY: Norwegian Lofoten fjord — the dramatic, remote landscape mirrors
+    // Seabourn's intimate yacht-like experience in extraordinary destinations.
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/cruise-norway-lofoten_269455d6.jpg",
     link: "https://www.seabourn.com",
     linkLabel: "Explore Seabourn",
     imageRight: false,
@@ -99,7 +105,10 @@ const CRUISE_LINES = [
     ],
     culinary:
       "S.A.L.T. (Sea And Land Taste): a ship-wide culinary philosophy. The S.A.L.T. Lab offers hands-on cooking classes; S.A.L.T. Bar serves destination-inspired cocktails; S.A.L.T. Kitchen features menus that change with every port of call.",
-    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1400&q=80",
+    // WHY: Greek island aerial — the turquoise Mediterranean waters and
+    // island-hopping spirit align with Silversea's S.A.L.T. culinary program
+    // and its 900+ destination reach across the Mediterranean.
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/cruise-greece-aerial_368721be.jpg",
     link: "https://www.silversea.com?insider=zq18x-boutique-travel-advisors",
     linkLabel: "Explore Silversea",
     imageRight: true,
@@ -121,7 +130,9 @@ const CRUISE_LINES = [
     ],
     culinary:
       "Culinary Nuances & Enrichment: guest chef demonstrations, wine and spirits masterclasses, and destination-inspired menus. Crystal's Nobu at Sea partnership brings the iconic Japanese-Peruvian cuisine to select voyages.",
-    image: "https://images.unsplash.com/photo-1517783999520-f068d7431a60?auto=format&fit=crop&w=1400&q=80",
+    // WHY: Humpback whale breaching — Crystal's enrichment programs and
+    // expedition spirit are captured by this dramatic wildlife encounter image.
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/cruise-humpback-whale_b97f780e.jpg",
     link: "https://www.crystalcruises.com",
     linkLabel: "Explore Crystal Cruises",
     imageRight: false,
