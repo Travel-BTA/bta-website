@@ -114,7 +114,7 @@ export const DESTINATION_ITINERARIES: Record<string, DestinationItinerary> = {
             day: "Nights 5–7", location: "Loire Valley", image: IMG.loireValley,
             headline: "Châteaux, Horses & Hidden Gardens",
             experience: "Transfer by private car to Château de la Bourdaisière in the Loire Valley. A château treasure hunt leads children through hidden gardens and turret staircases. Horse-drawn carriage rides between châteaux, a visit to the famous tomato garden, and a guided story tour of Amboise where Leonardo da Vinci spent his final years.",
-            stay: "Château de la Bourdaisière · Virtuoso",
+            stay: "Château de la Bourdaisière",
             highlight: "Château treasure hunt through hidden gardens and turrets",
           },
           {
@@ -140,7 +140,7 @@ export const DESTINATION_ITINERARIES: Record<string, DestinationItinerary> = {
             day: "Nights 5–7", location: "Loire Valley", image: IMG.loireValley,
             headline: "Cycling, Caves & Château Life",
             experience: "Château de la Bourdaisière for three nights of château living. Cycling between châteaux on quiet country roads, a descent into the wine caves beneath Amboise, and an afternoon archery session on the château grounds. Evenings are long and slow — dinner in the château dining room, then stargazing from the tower.",
-            stay: "Château de la Bourdaisière · Virtuoso",
+            stay: "Château de la Bourdaisière",
             highlight: "Cycling the Loire châteaux + wine cave exploration",
           },
           {
@@ -166,7 +166,7 @@ export const DESTINATION_ITINERARIES: Record<string, DestinationItinerary> = {
             day: "Nights 5–7", location: "Loire Valley", image: IMG.loireValley,
             headline: "Exclusive Château, Private Chef & Wine",
             experience: "Exclusive-use wing of Château de la Bourdaisière — space for every generation to breathe. A private cooking class with the château chef using produce from the garden. Wine tasting in the caves for the adults while children explore the grounds with a guide. Long family lunches under the lime trees.",
-            stay: "Château de la Bourdaisière · Virtuoso",
+            stay: "Château de la Bourdaisière",
             highlight: "Exclusive-use château wing with private chef dinner",
           },
           {
@@ -359,7 +359,7 @@ export const DESTINATION_ITINERARIES: Record<string, DestinationItinerary> = {
           {
             day: "Nights 4–7", location: "Private Island", image: IMG.privateIsland,
             headline: "Private Island — Horses, Reef & Starlight",
-            experience: "Laucala Island — one of the most exclusive private island resorts in the world. A private beach for the family, horse riding along the shoreline at sunrise, and snorkeling in the protected lagoon with a marine biologist guide. Evenings are extraordinary: dinner on the beach under a sky with no light pollution.",
+            experience: "Kokomo Private Island — a 140-acre private island on the Great Astrolabe Reef, one of the world's largest barrier reefs. A private beach for the family, horse riding along the shoreline at sunrise, and snorkeling in the protected lagoon with a marine biologist guide. Evenings are extraordinary: dinner on the beach under a sky with no light pollution.",
             stay: "Kokomo Private Island · Virtuoso",
             highlight: "Horse riding on the beach at sunrise",
           },
@@ -378,9 +378,9 @@ export const DESTINATION_ITINERARIES: Record<string, DestinationItinerary> = {
           {
             day: "Nights 4–7", location: "Private Island", image: IMG.privateIsland,
             headline: "Scuba, Deep-Sea Fishing & Cliff Jumping",
-            experience: "Laucala Island. PADI scuba diving on the house reef — one of the most pristine in the Pacific. Deep-sea fishing with the island's captain, targeting mahi-mahi and wahoo. Cliff jumping from the island's rocky headland into the turquoise lagoon. A private beach bonfire dinner on the final night.",
+            experience: "Kokomo Private Island. PADI scuba diving on the Great Astrolabe Reef — one of the most pristine in the Pacific. Deep-sea fishing with the island's captain, targeting mahi-mahi and wahoo. Cliff jumping from the island's rocky headland into the turquoise lagoon. A private beach bonfire dinner on the final night.",
             stay: "Kokomo Private Island · Virtuoso",
-            highlight: "Scuba diving on Laucala's pristine house reef",
+            highlight: "Scuba diving on the Great Astrolabe Reef",
           },
         ],
       },
@@ -397,7 +397,7 @@ export const DESTINATION_ITINERARIES: Record<string, DestinationItinerary> = {
           {
             day: "Nights 4–7", location: "Private Island", image: IMG.privateIsland,
             headline: "Yacht Charter, Spa & Traditional Feast",
-            experience: "Laucala Island for the whole family. A private yacht charter around the island — swimming in hidden coves, snorkeling the outer reef, and a long lunch on board. Spa day for the grandparents at the island's award-winning spa while the children explore the lagoon with a marine biologist. Final evening: a traditional Fijian lovo feast on the beach.",
+            experience: "Kokomo Private Island for the whole family. A private yacht charter around the island — swimming in hidden coves, snorkeling the outer reef, and a long lunch on board. Spa day for the grandparents at the island's award-winning spa while the children explore the lagoon with a marine biologist. Final evening: a traditional Fijian lovo feast on the beach.",
             stay: "Kokomo Private Island · Virtuoso",
             highlight: "Private yacht charter + traditional lovo feast on the beach",
           },

@@ -169,7 +169,7 @@ const DESTINATIONS = [
     name: "Fiji",
     region: "South Pacific",
     description:
-      "One of the most beautiful places on earth for families, with overwater bungalows, pristine reefs, private island resorts, and a culture of warmth and hospitality that makes every guest feel genuinely welcomed.",
+      "One of the most beautiful places on earth for families, with pristine reefs, private island resorts, and a culture of warmth and hospitality that makes every guest feel genuinely welcomed. We love placing families at Kokomo Private Island on the Great Astrolabe Reef.",
     imageUrl: CDN.fijiPool,
   },
   {
