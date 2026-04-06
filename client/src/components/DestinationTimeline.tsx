@@ -81,7 +81,8 @@ const IMG = {
   // Japan
   tokyo:          "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=900&q=80&auto=format&fit=crop",
   kyoto:          "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=900&q=80&auto=format&fit=crop",
-  hakone:         "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=900&q=80&auto=format&fit=crop",
+  // Janet's photo: two children holding hands under the red torii gate at Lake Ashi, Hakone (Apr 2026)
+  hakone:         "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/hakone_kids_v1_f6f82517.jpg",
   // South Africa
   // Cape Town — Janet's photo (Apr 2026): Table Mountain cable car aerial view
   capeTown:       "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/cape-town-table-mountain_c1e20bf1.webp",

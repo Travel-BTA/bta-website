@@ -56,7 +56,8 @@ const CDN = {
 
 // Unsplash for sections / destinations not covered by uploaded photos:
 const UNS = {
-  hero:              "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/family-hero_565bee68.jpg",
+  // Janet's photo: family of three at infinity pool overlooking Mediterranean bay at sunset (Apr 2026)
+  hero:              "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/iStock-1429367591_e872ad4a.jpg",
   multigenerational: "https://images.unsplash.com/photo-1511895426328-dc8714191011?w=900&q=85&auto=format&fit=crop",
   accommodations:    "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=900&q=85&auto=format&fit=crop",
   experiences:       "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=900&q=85&auto=format&fit=crop",

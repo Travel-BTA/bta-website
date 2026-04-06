@@ -56,6 +56,8 @@ import LivePageRenderer from "./pages/LivePageRenderer";
 import AdvisorPage from "./pages/advisors/AdvisorPage";
 import TeamAdmin from "./pages/admin/TeamAdmin";
 import AdminPanel from "./pages/admin/AdminPanel";
+import AdminLogin from "./pages/admin/AdminLogin";
+import ContentEditor from "./pages/admin/ContentEditor";
 function Router() {
   // make sure to consider if you need authentication for certain routes
   return (
@@ -106,6 +108,8 @@ function Router() {
       <Route path={"/admin"} component={AdminPanel} />
       <Route path={"/admin/media"} component={MediaManager} />
       <Route path={"/admin/team"} component={TeamAdmin} />
+      <Route path={"/admin/login"} component={AdminLogin} />
+      <Route path={"/admin/content"} component={ContentEditor} />
       {/* Page Builder — admin only, no NavBar/Footer wrapper needed (full-screen editor) */}
       <Route path={"/admin/pages"} component={PagesDashboard} />
       <Route path={"/admin/page-builder"} component={PageBuilder} />

@@ -249,6 +249,56 @@ export const advisors = mysqlTable("advisors", {
 export type Advisor = typeof advisors.$inferSelect;
 export type InsertAdvisor = typeof advisors.$inferInsert;
 
+// ── Admin Credentials ──────────────────────────────────────────────────────────────────────────────
+// WHY: Standalone email+password login for the admin panel. Completely
+// independent of Manus OAuth so it works on any deployment (Vercel, etc.).
+// Passwords are stored as bcrypt hashes — never plaintext.
+
+export const adminCredentials = mysqlTable("adminCredentials", {
+  id: int("id").autoincrement().primaryKey(),
+  email: varchar("email", { length: 320 }).notNull().unique(),
+  /** bcrypt hash of the password */
+  passwordHash: varchar("passwordHash", { length: 255 }).notNull(),
+  /** Display name shown in the admin header */
+  name: varchar("name", { length: 200 }).notNull().default(""),
+  /** Whether this admin account is active */
+  active: boolean("active").default(true).notNull(),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+  updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+});
+
+export type AdminCredential = typeof adminCredentials.$inferSelect;
+export type InsertAdminCredential = typeof adminCredentials.$inferInsert;
+
+// ── Site Content (CMS key-value store) ──────────────────────────────────────
+// WHY: Allows the admin to edit copy and swap photos on any public page
+// without touching code. Each row is a named content slot (e.g.
+// "homepage.hero.headline") with a text value and an optional image URL.
+// Public pages read from this table first and fall back to hardcoded defaults.
+
+export const siteContent = mysqlTable("siteContent", {
+  id: int("id").autoincrement().primaryKey(),
+  /** Dot-notation key, e.g. "homepage.hero.headline" or "familytravel.southafrica.header_image" */
+  key: varchar("key", { length: 300 }).notNull().unique(),
+  /** Human-readable label shown in the admin editor */
+  label: varchar("label", { length: 300 }).notNull(),
+  /** The page this slot belongs to, e.g. "homepage", "familytravel" */
+  page: varchar("page", { length: 100 }).notNull(),
+  /** Section within the page, e.g. "hero", "southafrica" */
+  section: varchar("section", { length: 100 }).notNull(),
+  /** Field type — determines the editor widget shown in admin */
+  fieldType: mysqlEnum("fieldType", ["text", "textarea", "image"]).notNull().default("text"),
+  /** The current value (text copy or CDN image URL) */
+  value: text("value"),
+  /** ID of the admin user who last updated this slot */
+  updatedBy: int("updatedBy"),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+  updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+});
+
+export type SiteContent = typeof siteContent.$inferSelect;
+export type InsertSiteContent = typeof siteContent.$inferInsert;
+
 export type PageBlock =
   | HeroBlock
   | TextBlock

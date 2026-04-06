@@ -4,6 +4,8 @@ import { systemRouter } from "./_core/systemRouter";
 import { publicProcedure, router } from "./_core/trpc";
 import { pagesRouter } from "./routers/pages";
 import { advisorsRouter } from "./routers/advisors";
+import { siteContentRouter } from "./routers/siteContent";
+import { adminAuthRouter } from "./routers/adminAuth";
 
 export const appRouter = router({
     // if you need to use socket.io, read and register route in server/_core/index.ts, all api should start with '/api/' so that the gateway can route correctly
@@ -24,6 +26,12 @@ export const appRouter = router({
 
   // Team member / advisor profiles
   advisors: advisorsRouter,
+
+  // Site Content CMS — admin edits copy and photos on existing pages
+  siteContent: siteContentRouter,
+
+  // Standalone admin email+password auth (works on any deployment)
+  adminAuth: adminAuthRouter,
 
   // TODO: add feature routers here, e.g.
   // todo: router({

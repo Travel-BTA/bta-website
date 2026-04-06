@@ -119,3 +119,30 @@
 ## Family Itinerary Photo Updates (Apr 2026)
 - [ ] Replace Iceland itinerary photos with aurora/northern lights and family-at-waterfall images
 - [ ] Replace Fiji itinerary photo with glass-bottom boat family image
+
+## Admin Content Editor (Apr 2026)
+- [ ] Add siteContent table to database schema (key-value store per page/section)
+- [ ] Run db:push to sync schema
+- [ ] Build server router: siteContent.get, siteContent.set (admin only)
+- [ ] Build /admin/content page — page selector + editable fields for copy + image upload
+- [ ] Add "Site Content" card to AdminPanel.tsx
+- [ ] Wire public pages to pull from DB first, fallback to hardcoded defaults
+- [ ] Seed initial content values from current hardcoded copy
+- [ ] Test: edit a headline in admin, verify it shows live on public page
+- [ ] Save checkpoint
+
+## Admin Email+Password Login (Apr 2026)
+- [ ] Add adminCredentials table (email, hashed password) to schema
+- [ ] Run direct SQL to create table
+- [ ] Add server procedures: admin.login (returns JWT), admin.me, admin.setPassword
+- [ ] Build /admin/login page — clean BTA-branded email+password form
+- [ ] Store admin JWT in httpOnly cookie, protect /admin/* routes client-side
+- [ ] Seed janet@travelbta.com with initial password via setup endpoint
+- [ ] Build /admin/content — page selector + editable fields + image upload
+- [ ] Add "Content Editor" card to AdminPanel
+- [ ] Wire public pages to pull from siteContent DB with hardcoded fallbacks
+
+## Photo Updates (Apr 2026 — Janet uploads)
+- [x] Upload family pool/infinity view photo → Family Travel hero
+- [x] Upload Hakone torii gate kids photo → Japan itinerary Hakone section
+- [x] Seed janet@travelbta.com admin account with password

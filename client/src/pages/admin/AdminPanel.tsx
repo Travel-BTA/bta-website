@@ -40,6 +40,13 @@ const ADMIN_TOOLS = [
     icon: "🖼",
     adminOnly: false,
   },
+  {
+    title: "Content Editor",
+    description: "Edit page copy and swap photos on any public page. Changes go live instantly.",
+    href: "/admin/content",
+    icon: "✏️",
+    adminOnly: false,
+  },
 ];
 
 // ── Component ─────────────────────────────────────────────────────────────────
