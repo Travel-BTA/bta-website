@@ -71,8 +71,8 @@ const IMG = {
   // Fiji — Janet's photos (Apr 2026)
   // coralCoast: manta ray snorkel shot — dramatic underwater perspective
   coralCoast:     "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/fiji-manta-snorkel_v2_0865395d.jpg",
-  // privateIsland: aerial island view — showcases Kokomo's remote reef setting
-  privateIsland:  "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/fiji-kokomo-island-aerial_49ba6cc9.jpg",
+  // privateIsland: Kokomo Private Island aerial beach — Janet's photo (Apr 2026)
+  privateIsland:  "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/fiji-kokomo-beach-aerial_1a9fef82.png",
   // Costa Rica — Janet's photos (Apr 2026)
   // arenal: sloth in Arenal rainforest — warm, iconic Costa Rica wildlife moment for families
   arenal:         "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/costa-rica-sloth-arenal_bc18c182.jpg",

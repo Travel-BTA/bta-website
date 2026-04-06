@@ -37,7 +37,8 @@ export const storyUnfoldItineraries = [
     title: "Fiji & South Pacific Family Adventure",
     destination: "Fiji · South Pacific",
     city: "Kokomo Private Island",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/fiji-kokomo-island-aerial_49ba6cc9.jpg",
+    // WHY: Updated to Janet's Kokomo Private Island aerial beach photo (Apr 2026)
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/fiji-kokomo-beach-aerial_1a9fef82.png",
     href: "/experiences/family-travel",
     internal: true,
   },
