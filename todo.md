@@ -175,3 +175,11 @@
 
 ## Nav Fixes (Apr 2026)
 - [x] Remove duplicate "Overview" from About Us dropdown, keep "Our Team" as primary
+
+## TypeScript Fixes
+- [ ] Fix HomeV2.tsx MobileLogoBar TS2614 import error
+
+## Branding Fixes
+- [x] Fix branding on payments page (colors, fonts, layout off-brand)
+- [x] Update Pricing page with correct brand palette: #2f2f2f, #faf9f6, #edeae4, #384959, #bfaf8a
+- [ ] Audit all pages for off-brand colors and update to correct palette

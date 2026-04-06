@@ -12,6 +12,8 @@
  */
 
 import PageSEO from "@/components/PageSEO";
+import NavBar from "@/components/NavBar";
+import { FooterSection } from "@/components/sections/JournalSections";
 import { Link } from "wouter";
 
 const PRICING_TIERS = [
@@ -33,7 +35,7 @@ const PRICING_TIERS = [
     ],
     cta: "Start Planning",
     ctaHref: "/contact-us",
-    accent: "#7982A2", // slate blue
+    accent: "#384959", // slate blue
   },
   {
     label: "INTERNATIONAL",
@@ -54,7 +56,7 @@ const PRICING_TIERS = [
     ],
     cta: "Start Planning",
     ctaHref: "/contact-us",
-    accent: "#9C886A", // gold
+    accent: "#bfaf8a", // champagne
     featured: true,
   },
 ];
@@ -84,8 +86,8 @@ const WHAT_YOU_GET = [
 
 export default function Pricing() {
   return (
-    <div
-className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white">
+      <NavBar />
       {/* ── Hero ── */}
       <section
         className="relative flex items-center justify-center"
@@ -110,7 +112,7 @@ className="min-h-screen bg-white">
         <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
           <p
             className="tracking-[0.22em] text-xs mb-4"
-            style={{ color: "#9C886A", fontFamily: "inherit" }}
+            style={{ color: "#bfaf8a", fontFamily: "inherit" }}
           >
             BOUTIQUE TRAVEL ADVISORS
           </p>
@@ -145,7 +147,7 @@ className="min-h-screen bg-white">
       <section className="py-20 px-6 max-w-3xl mx-auto text-center">
         <p
           className="tracking-[0.18em] text-xs mb-6"
-          style={{ color: "#9C886A" }}
+          style={{ color: "#bfaf8a" }}
         >
           HOW WE WORK
         </p>
@@ -155,7 +157,7 @@ className="min-h-screen bg-white">
             fontFamily: "'Playfair Display', Georgia, serif",
             fontWeight: 500,
             fontSize: "clamp(1.6rem, 3vw, 2.4rem)",
-            color: "#040619",
+            color: "#2f2f2f",
             lineHeight: 1.3,
           }}
         >
@@ -239,7 +241,7 @@ className="min-h-screen bg-white">
               </div>
               <p
                 className="text-xs tracking-widest mb-5"
-                style={{ color: "#9C886A" }}
+                style={{ color: "#bfaf8a" }}
               >
                 STARTING FROM
               </p>
@@ -332,13 +334,14 @@ className="min-h-screen bg-white">
       {/* ── What You Get ── */}
       <section
         className="py-24 px-6"
-        style={{ background: "#3d3f47" }}
+        {/* WHY: #2f2f2f is the brand charcoal — used for dark sections. #bfaf8a is the champagne accent. */}
+        style={{ background: "#2f2f2f" }}
       >
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
             <p
               className="tracking-[0.2em] text-xs mb-5"
-              style={{ color: "#9C886A" }}
+              style={{ color: "#bfaf8a" }}
             >
               THE BTA DIFFERENCE
             </p>
@@ -359,7 +362,7 @@ className="min-h-screen bg-white">
               <div key={item.title} className="flex gap-5">
                 <div
                   className="shrink-0 w-px self-stretch"
-                  style={{ background: "#9C886A", opacity: 0.5 }}
+                  style={{ background: "#bfaf8a", opacity: 0.5 }}
                 />
                 <div>
                   <h4
@@ -399,22 +402,22 @@ className="min-h-screen bg-white">
         <div className="max-w-2xl mx-auto">
           <div
             className="w-12 mx-auto mb-6"
-            style={{ height: "1px", background: "#9C886A" }}
+            style={{ height: "1px", background: "#bfaf8a" }}
           />
           <p
             style={{
               fontFamily: "'Playfair Display', Georgia, serif",
               fontStyle: "italic",
               fontSize: "clamp(1.05rem, 2vw, 1.3rem)",
-              color: "#040619",
+              color: "#2f2f2f",
               lineHeight: 1.8,
             }}
           >
-            A portion of every booking supports philanthropic causes — including Make-A-Wish, veterans' programs, arts & culture, and local communities where you travel.
+            A portion of every booking supports philanthropic causes, including Make-A-Wish, veterans' programs, arts and culture, and local communities where you travel.
           </p>
           <div
             className="w-12 mx-auto mt-6"
-            style={{ height: "1px", background: "#9C886A" }}
+            style={{ height: "1px", background: "#bfaf8a" }}
           />
         </div>
       </section>
@@ -423,7 +426,7 @@ className="min-h-screen bg-white">
       <section className="py-24 px-6 text-center">
         <p
           className="tracking-[0.2em] text-xs mb-5"
-          style={{ color: "#9C886A" }}
+          style={{ color: "#bfaf8a" }}
         >
           READY TO BEGIN
         </p>
@@ -433,7 +436,7 @@ className="min-h-screen bg-white">
             fontFamily: "'Playfair Display', Georgia, serif",
             fontWeight: 500,
             fontSize: "clamp(1.6rem, 3vw, 2.4rem)",
-            color: "#040619",
+            color: "#2f2f2f",
             lineHeight: 1.3,
           }}
         >
@@ -454,14 +457,14 @@ className="min-h-screen bg-white">
           <button
             className="px-10 py-4 tracking-[0.2em] text-xs transition-all duration-300"
             style={{
-              border: "1px solid #040619",
-              color: "#040619",
+              border: "1px solid #2f2f2f",
+              color: "#2f2f2f",
               background: "transparent",
               fontFamily: "inherit",
               cursor: "pointer",
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.background = "#3d3f47";
+              e.currentTarget.style.background = "#2f2f2f";
               e.currentTarget.style.color = "#ffffff";
             }}
             onMouseLeave={(e) => {
@@ -473,6 +476,7 @@ className="min-h-screen bg-white">
           </button>
         </Link>
       </section>
+      <FooterSection />
     </div>
   );
 }
