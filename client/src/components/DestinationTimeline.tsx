@@ -83,9 +83,12 @@ const IMG = {
   kyoto:          "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=900&q=80&auto=format&fit=crop",
   hakone:         "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=900&q=80&auto=format&fit=crop",
   // South Africa
-  capeTown:       "https://images.unsplash.com/photo-1580060839134-75a5edca2e99?w=900&q=80&auto=format&fit=crop",
-  winelands:      "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=900&q=80&auto=format&fit=crop",
-  safari:         "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=900&q=80&auto=format&fit=crop",
+  // Cape Town — Janet's photo (Apr 2026): Table Mountain cable car aerial view
+  capeTown:       "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/cape-town-table-mountain_c1e20bf1.webp",
+  // Winelands — Janet's photo (Apr 2026): horse in the winelands
+  winelands:      "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/south-africa-winelands-horse_353be4d6.webp",
+  // Safari — Janet's photo (Apr 2026): zebras in the bush
+  safari:         "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/south-africa-safari-zebra_992b2149.jpg",
   // Hawaii
   maui:           "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=900&q=80&auto=format&fit=crop",
   bigIsland:      "https://images.unsplash.com/photo-1542259009477-d625272157b7?w=900&q=80&auto=format&fit=crop",

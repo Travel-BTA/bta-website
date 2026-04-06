@@ -1,9 +1,8 @@
 /**
  * PartnerDirectory. /cruises/partners
  *
- * Photo-forward white-label co-branded partner directory.
+ * Client-facing preferred partner directory.
  * Cards use full-bleed photography with name/tagline overlay (bottom gradient).
- * Design references: philanthropic-initiatives page card grid pattern.
  *
  * BTA brand: Instrument Serif headings, Playfair Display body,
  * Champagne Gold #bfaf8a, Aegean Blue #384959, Linen White #faf9f6.
@@ -13,7 +12,7 @@ import PageSEO from "@/components/PageSEO";
 import { Link } from "wouter";
 import { PageLayout } from "@/components/PageLayout";
 
-// ── Partner data with curated Unsplash photos ─────────────────────────────────
+// ── Partner data ──────────────────────────────────────────────────────────────
 
 const CRUISE_PARTNERS = [
   {
@@ -21,24 +20,24 @@ const CRUISE_PARTNERS = [
     tagline: "Specialised luxury river travel",
     category: "River",
     link: "https://www.vikingrivercruises.com/myagent/travelbta1",
-    photo: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80",
-    note: "Direct Co-Branded Site",
+    photo: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/viking-river-prague_9cb02fd7.webp",
+    note: "BTA Preferred Partner",
   },
   {
     name: "Viking Ocean Cruises",
     tagline: "Small-ship ocean voyages",
     category: "Ocean",
     link: "https://www.vikingcruises.com/oceans/myagent/travelbta1",
-    photo: "https://images.unsplash.com/photo-1548574505-5e239809ee19?auto=format&fit=crop&w=800&q=80",
-    note: "Direct Co-Branded Site",
+    photo: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/viking-ocean-ship_07cf648e.webp",
+    note: "BTA Preferred Partner",
   },
   {
     name: "Viking Expedition Cruises",
     tagline: "Remote destination & polar exploration",
     category: "Expedition",
     link: "https://www.vikingcruises.com/expeditions/myagent/travelbta1",
-    photo: "https://images.unsplash.com/photo-1551244072-5d12893278bc?auto=format&fit=crop&w=800&q=80",
-    note: "Direct Co-Branded Site",
+    photo: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/viking-expedition_9a4451bc.webp",
+    note: "BTA Preferred Partner",
   },
   {
     name: "Uniworld Boutique River Cruises",
@@ -46,7 +45,7 @@ const CRUISE_PARTNERS = [
     category: "River",
     link: "https://travelbta1.uniworld.com",
     photo: "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=800&q=80",
-    note: "Direct Co-Branded Site",
+    note: "BTA Preferred Partner",
   },
   {
     name: "Regent Seven Seas Cruises",
@@ -54,23 +53,23 @@ const CRUISE_PARTNERS = [
     category: "Luxury Ocean",
     link: "https://www.rssc.com?insider=zq18x-boutique-travel-advisors",
     photo: "https://images.unsplash.com/photo-1599640842225-85d111c60e6b?auto=format&fit=crop&w=800&q=80",
-    note: "All Inquiries Route to BTA",
+    note: "BTA Preferred Partner",
   },
   {
     name: "Explora Journeys",
     tagline: "Modern luxury ocean travel",
     category: "Luxury Ocean",
     link: "https://explorajourneys.com?insider=zq18x-boutique-travel-advisors",
-    photo: "https://images.unsplash.com/photo-1580541832626-2a7131ee809f?auto=format&fit=crop&w=800&q=80",
-    note: "All Inquiries Route to BTA",
+    photo: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/explora-monaco_96651138.webp",
+    note: "BTA Preferred Partner",
   },
   {
     name: "Silversea Cruises",
     tagline: "Luxury expedition & classic ocean travel",
     category: "Luxury Ocean",
     link: "https://www.silversea.com?insider=zq18x-boutique-travel-advisors",
-    photo: "https://images.unsplash.com/photo-1505118380757-91f5f5632de0?auto=format&fit=crop&w=800&q=80",
-    note: "All Inquiries Route to BTA",
+    photo: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/silversea-glacier_fa736023.webp",
+    note: "BTA Preferred Partner",
   },
   {
     name: "Oceania Cruises",
@@ -78,15 +77,15 @@ const CRUISE_PARTNERS = [
     category: "Premium Ocean",
     link: "https://www.oceaniacruises.com?insider=zq18x-boutique-travel-advisors",
     photo: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80",
-    note: "All Inquiries Route to BTA",
+    note: "BTA Preferred Partner",
   },
   {
     name: "Atlas Ocean Voyages",
     tagline: "Intimate, expedition-style luxury",
     category: "Expedition",
     link: "https://atlasoceanvoyages.com?insider=zq18x-boutique-travel-advisors",
-    photo: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=800&q=80",
-    note: "All Inquiries Route to BTA",
+    photo: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/atlas-iceland-waterfall_2c6c108b.webp",
+    note: "BTA Preferred Partner",
   },
   {
     name: "Riverside Luxury Cruises",
@@ -94,7 +93,7 @@ const CRUISE_PARTNERS = [
     category: "River",
     link: "https://inspires.to/riverside/copilot",
     photo: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/riverside-rhine-symphony_dab3342f.png",
-    note: "Interactive Experience",
+    note: "BTA Preferred Partner",
   },
   {
     name: "Norwegian Cruise Line",
@@ -102,15 +101,15 @@ const CRUISE_PARTNERS = [
     category: "Ocean",
     link: "https://www.ncl.com?insider=zq18x-boutique-travel-advisors",
     photo: "https://images.unsplash.com/photo-1548574505-5e239809ee19?auto=format&fit=crop&w=800&q=80",
-    note: "All Inquiries Route to BTA",
+    note: "BTA Preferred Partner",
   },
   {
     name: "UnCruise Adventures",
     tagline: "Small-ship boutique expeditions",
     category: "Expedition",
     link: "https://uncruise.com?insider=zq18x-boutique-travel-advisors",
-    photo: "https://images.unsplash.com/photo-1504893524553-b855bce32c67?auto=format&fit=crop&w=800&q=80",
-    note: "All Inquiries Route to BTA",
+    photo: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/uncruise-whales_b7899228.webp",
+    note: "BTA Preferred Partner",
   },
 ];
 
@@ -121,7 +120,7 @@ const LAND_PARTNERS = [
     category: "Guided Land",
     link: "https://www.tauck.com?insider=zq18x-boutique-travel-advisors",
     photo: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=800&q=80",
-    note: "All Inquiries Route to BTA",
+    note: "BTA Preferred Partner",
   },
   {
     name: "Tauck Roam",
@@ -129,7 +128,7 @@ const LAND_PARTNERS = [
     category: "Active & Family",
     link: "https://www.tauck.com/roam?insider=zq18x-boutique-travel-advisors",
     photo: "https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=800&q=80",
-    note: "All Inquiries Route to BTA",
+    note: "BTA Preferred Partner",
   },
   {
     name: "Lindblad Expeditions",
@@ -137,7 +136,7 @@ const LAND_PARTNERS = [
     category: "Expedition",
     link: "https://www.expeditions.com?insider=zq18x-boutique-travel-advisors",
     photo: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/safari_bush_dining_v2_e2293e19.jpg",
-    note: "All Inquiries Route to BTA",
+    note: "BTA Preferred Partner",
   },
   {
     name: "Big Five Tours & Expeditions",
@@ -145,7 +144,7 @@ const LAND_PARTNERS = [
     category: "Safari & Land",
     link: "https://bigfive.com?insider=zq18x-boutique-travel-advisors",
     photo: "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=800&q=80",
-    note: "All Inquiries Route to BTA",
+    note: "BTA Preferred Partner",
   },
   {
     name: "Villas of Distinction",
@@ -153,7 +152,7 @@ const LAND_PARTNERS = [
     category: "Private Residences",
     link: "https://www.villasofdistinction.com?insider=zq18x-boutique-travel-advisors",
     photo: "https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=800&q=80",
-    note: "All Inquiries Route to BTA",
+    note: "BTA Preferred Partner",
   },
 ];
 
@@ -172,7 +171,7 @@ const EXPERIENCES = [
     category: "River",
     link: "https://inspires.to/experiences/amawaterways-a-new-expression-and-a-deeper-connection-xw4kl4",
     photo: "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=800&q=80",
-    badge: "Interactive",
+    badge: "River",
   },
   {
     name: "Hurtigruten: The Coastal Express",
@@ -180,7 +179,7 @@ const EXPERIENCES = [
     category: "Expedition",
     link: "https://inspires.to/experiences/original-voyage-the-coastal-express-classic-norwegian-cruise-q7okj7",
     photo: "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=800&q=80",
-    badge: "Immersive",
+    badge: "Expedition",
   },
   {
     name: "Tahiti with Paul Gauguin",
@@ -190,7 +189,6 @@ const EXPERIENCES = [
     photo: "https://images.unsplash.com/photo-1589979481223-deb893043163?auto=format&fit=crop&w=800&q=80",
     badge: "Romance",
   },
-
   {
     name: "G-Adventures",
     tagline: "Curated itineraries for the independent traveller",
@@ -200,16 +198,16 @@ const EXPERIENCES = [
     badge: "Adventure",
   },
   {
-    name: "HX Insights: Why Travel with Hurtigruten",
+    name: "HX Expeditions: Why Travel with Hurtigruten",
     tagline: "Strategic reasons to choose HX Expeditions",
     category: "Expedition",
     link: "https://inspires.to/experiences/why-travel-with-hx-m5gj4",
     photo: "https://images.unsplash.com/photo-1504893524553-b855bce32c67?auto=format&fit=crop&w=800&q=80",
-    badge: "Guide",
+    badge: "Expedition",
   },
 ];
 
-// ── Photo card component (philanthropic-initiatives style) ────────────────────
+// ── Photo card component ──────────────────────────────────────────────────────
 
 function PhotoCard({
   name,
@@ -242,10 +240,10 @@ function PhotoCard({
         className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
       />
 
-      {/* Gradient overlay. always visible at bottom, deepens on hover */}
+      {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent group-hover:from-black/90 transition-all duration-500" />
 
-      {/* Category badge. top left */}
+      {/* Category badge — top left */}
       <div className="absolute top-4 left-4">
         <span
           className="inline-block bg-[#bfaf8a] text-white text-[9px] tracking-[0.25em] uppercase px-2.5 py-1"
@@ -255,11 +253,11 @@ function PhotoCard({
         </span>
       </div>
 
-      {/* Text overlay. bottom */}
+      {/* Text overlay — bottom */}
       <div className="absolute bottom-0 left-0 right-0 px-5 pb-5 pt-10">
         <h3
           className="text-white text-lg font-light leading-snug mb-1 group-hover:text-[#bfaf8a] transition-colors duration-300"
-          style={{ fontFamily: "'Instrument Serif', 'Playfair Display', serif", fontStyle: "normal" , textTransform: "uppercase" }}
+          style={{ fontFamily: "'Instrument Serif', 'Playfair Display', serif", fontStyle: "normal", textTransform: "uppercase" }}
         >
           {name}
         </h3>
@@ -277,7 +275,7 @@ function PhotoCard({
             ✦ {note}
           </p>
         )}
-        {/* Arrow CTA. slides in on hover */}
+        {/* Arrow CTA — slides in on hover */}
         <div className="mt-3 flex items-center gap-2 opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
           <div className="w-6 h-px bg-[#bfaf8a]" />
           <span
@@ -308,7 +306,7 @@ function SectionHeader({
   return (
     <div className="mb-12 text-center">
       <p
-        className={`text-xs tracking-[0.3em] uppercase mb-4 ${light ? "text-[#bfaf8a]" : "text-[#bfaf8a]"}`}
+        className="text-xs tracking-[0.3em] uppercase mb-4 text-[#bfaf8a]"
         style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
       >
         {eyebrow}
@@ -341,8 +339,8 @@ export default function PartnerDirectory() {
   return (
     <PageLayout>
       <PageSEO
-        title="Cruise Partner Directory | Boutique Travel Advisors"
-        description="BTA's complete cruise partner directory — all major luxury, premium, river, and expedition cruise lines with direct booking links and Virtuoso benefits."
+        title="Our Preferred Partners | Boutique Travel Advisors"
+        description="Explore BTA's personally vetted cruise and travel partners — from ultra-luxury ocean liners to intimate river ships, polar expeditions, and guided land journeys."
         path="/cruises/partners"
       />
 
@@ -356,63 +354,60 @@ export default function PartnerDirectory() {
         <div className="absolute inset-0 bg-gradient-to-t from-[#2f2f2f]/90 via-[#2f2f2f]/30 to-transparent" />
 
         <div className="relative z-10 w-full max-w-[1440px] mx-auto px-8 lg:px-14 pb-20">
-          {/* Breadcrumb: white on photo. Champagne Gold only on plain backgrounds */}
           <div className="flex items-center gap-2 mb-6">
             <Link
               href="/cruises"
               className="text-white/55 text-xs tracking-[0.2em] uppercase hover:text-white transition-colors"
-              style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal" , textTransform: "uppercase" }}
+              style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal", textTransform: "uppercase" }}
             >
               Cruises
             </Link>
             <span className="text-white/35 text-xs">›</span>
             <span
               className="text-white/75 text-xs tracking-[0.2em] uppercase"
-              style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal" , textTransform: "uppercase" }}
+              style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal", textTransform: "uppercase" }}
             >
-              Partner Directory
+              Preferred Partners
             </span>
           </div>
 
-          {/* Allura script: white on photo */}
           <p className="mb-3" style={{ color: "rgba(255,255,255,0.9)", fontFamily: "'Allura', cursive", fontSize: "1.8rem" }}>
-            Every Link Leads Back to BTA
+            Explore our world
           </p>
-          {/* H1: Instrument Serif ALL CAPS white */}
-          <h1 className="text-white text-5xl md:text-7xl uppercase leading-tight mb-6" style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal", fontWeight: 400, letterSpacing: "0.04em" , textTransform: "uppercase" }}>
-            Our Partner Directory
+          <h1 className="text-white text-5xl md:text-7xl uppercase leading-tight mb-6" style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal", fontWeight: 400, letterSpacing: "0.04em", textTransform: "uppercase" }}>
+            Our Preferred Partners
           </h1>
           <p className="text-white/70 text-base max-w-xl leading-relaxed" style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 400 }}>
-            Explore our carefully selected cruise and travel partners — each chosen for their commitment to exceptional service, exclusive amenities, and the extraordinary experiences they deliver to our clients.
+            Every partner on this page has been personally evaluated by our advisors for service quality, exclusive amenities, and the extraordinary experiences they deliver to our clients.
           </p>
         </div>
       </section>
 
-      {/* ── How It Works. Aegean Blue band ───────────────────────────────── */}
+      {/* ── Why We Partner ────────────────────────────────────────────────── */}
       <section className="bg-[#384959] py-14">
         <div className="max-w-[1440px] mx-auto px-8 lg:px-14">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {[
               {
                 num: "01",
-                title: "Browse & Explore",
-                body: "Clients browse any partner site with live pricing, itineraries, and full booking functionality.",
+                title: "Personally Vetted",
+                body: "Every partner has been evaluated by our advisors for service quality, value, and the exclusive benefits they offer BTA clients.",
               },
               {
                 num: "02",
-                title: "All Leads Route to BTA",
-                body: "Every enquiry form, phone number, and CTA is configured to route directly to Boutique Travel Advisors.",
+                title: "Exclusive Benefits",
+                body: "As a Virtuoso agency, we secure amenities not available when booking directly — including onboard credits, upgrades, and priority access.",
               },
               {
                 num: "03",
-                title: "Approach Guide Experiences",
-                body: "Immersive digital experiences on inspires.to. designed to inspire, with a direct CTA back to BTA.",
+                title: "Expert Guidance",
+                body: "Our advisors know these partners intimately. We match you with the right line, ship, and itinerary, then handle every detail from deposit to disembarkation.",
               },
             ].map((item) => (
               <div key={item.num} className="flex gap-5">
                 <span
                   className="text-[#bfaf8a]/35 text-3xl font-light flex-shrink-0 leading-none mt-0.5"
-                  style={{ fontFamily: "'Instrument Serif', serif", fontStyle: "normal" , textTransform: "uppercase" }}
+                  style={{ fontFamily: "'Instrument Serif', serif", fontStyle: "normal", textTransform: "uppercase" }}
                 >
                   {item.num}
                 </span>
@@ -435,9 +430,9 @@ export default function PartnerDirectory() {
       <section className="bg-[#faf9f6] py-20">
         <div className="max-w-[1440px] mx-auto px-8 lg:px-14">
           <SectionHeader
-            eyebrow="Co-Branded Partner Platforms"
+            eyebrow="Our Preferred Cruise Partners"
             title="Cruise Collections"
-            subtitle="Twelve co-branded cruise partner sites. from ultra-luxury ocean liners to intimate river ships and polar expeditions."
+            subtitle="From ultra-luxury ocean liners to intimate river ships and polar expeditions — each line personally selected by our advisors."
           />
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {CRUISE_PARTNERS.map((p) => (
@@ -453,7 +448,7 @@ export default function PartnerDirectory() {
           <SectionHeader
             eyebrow="Land, Expedition & Private Residences"
             title="Beyond the Ship"
-            subtitle="Guided land journeys, African safaris, and curated villa stays. all co-branded and routing to BTA."
+            subtitle="Guided land journeys, African safaris, and curated villa stays — each partner selected for their exceptional standards and exclusive benefits for BTA clients."
           />
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {LAND_PARTNERS.map((p) => (
@@ -463,13 +458,13 @@ export default function PartnerDirectory() {
         </div>
       </section>
 
-      {/* ── Approach Guide Experiences ────────────────────────────────────── */}
+      {/* ── Featured Experiences ──────────────────────────────────────────── */}
       <section className="bg-[#384959] py-20">
         <div className="max-w-[1440px] mx-auto px-8 lg:px-14">
           <SectionHeader
-            eyebrow="Approach Guides · inspires.to"
-            title="Curated Experiences"
-            subtitle="Immersive interactive experiences. designed to inspire. Every CTA routes directly to BTA for booking."
+            eyebrow="Featured Experiences"
+            title="Curated Journeys"
+            subtitle="Immersive voyages and special departures — handpicked by our advisors and available exclusively through Boutique Travel Advisors."
             light
           />
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
