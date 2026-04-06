@@ -349,8 +349,8 @@ export default function PartnerDirectory() {
       {/* ── Hero ──────────────────────────────────────────────────────────── */}
       <section className="relative h-[70vh] min-h-[520px] flex items-end overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1548574505-5e239809ee19?auto=format&fit=crop&w=2400&q=80"
-          alt="Luxury cruise ship at sea"
+          src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/partner-directory-header_c0ae4576.webp"
+          alt="Positano, Amalfi Coast"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#2f2f2f]/90 via-[#2f2f2f]/30 to-transparent" />
