@@ -117,6 +117,17 @@ const DESTINATIONS = [
     highlights: ["Serengeti migration timing", "Ngorongoro Crater drives", "Zanzibar beach extension", "Kilimanjaro approach treks"],
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/dest-tanzania-UuTu4hDwAZf7E2P3oPTBH6.webp",
   },
+  {
+    id: "new-zealand",
+    name: "New Zealand",
+    region: "South Pacific",
+    year: "2026 & 2027",
+    tagline: "Remote Lodges, Fiords & Vineyard Escapes",
+    description:
+      "New Zealand rewards those who venture beyond the obvious. Helicopter landings on remote glaciers, intimate lodge stays above Lake Wakatipu, private cruises through Milford Sound's cathedral walls of rock, and long lunches among Marlborough's world-renowned sauvignon blanc vines. This is the country at its most unhurried and extraordinary.",
+    highlights: ["Private helicopter over Milford Sound", "Remote lodge stays — Fiordland & Queenstown", "Marlborough wine country cellar tours", "Glacier landings on the Southern Alps"],
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/nz-milford-sound-fiord_2e13df32.jpg",
+  },
 ];
 
 export default function Destinations() {

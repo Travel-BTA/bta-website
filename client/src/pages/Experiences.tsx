@@ -102,25 +102,6 @@ const EXPERIENCE_CATEGORIES = [
     bgColor: "#384959",
     textColor: "#faf9f6",
   },
-  {
-    id: "new-zealand",
-    name: "New Zealand",
-    eyebrow: "Fiordland, Marlborough & Beyond",
-    tagline: "The World's Most Spectacular Wilderness, Entirely Your Own",
-    description:
-      "New Zealand rewards those who venture beyond the obvious. We design private journeys through landscapes so dramatic they feel cinematic — helicopter landings on remote glaciers, intimate lodge stays on the shores of Lake Wakatipu, private cruises through Milford Sound's cathedral walls of rock, and long lunches among Marlborough's world-renowned sauvignon blanc vines. This is the country at its most unhurried and extraordinary.",
-    experiences: [
-      "Private helicopter flights over Milford Sound & Fiordland",
-      "Exclusive remote lodge stays — Fiordland & Queenstown",
-      "Private Milford Sound overnight cruise",
-      "Marlborough wine country private cellar tours",
-      "Glacier landings on the Southern Alps",
-      "Heli-hiking & fly-fishing in remote wilderness",
-    ],
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/nz-milford-sound-fiord_2e13df32.jpg",
-    bgColor: "#edeae4",
-    textColor: "#2f2f2f",
-  },
 ];
 
 export default function Experiences() {
