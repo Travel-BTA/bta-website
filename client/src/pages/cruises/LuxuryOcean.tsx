@@ -131,9 +131,9 @@ const CRUISE_LINES = [
     ],
     culinary:
       "Culinary Nuances & Enrichment: guest chef demonstrations, wine and spirits masterclasses, and destination-inspired menus. Crystal's Nobu at Sea partnership brings the iconic Japanese-Peruvian cuisine to select voyages.",
-    // WHY: Humpback whale breaching — Crystal's enrichment programs and
-    // expedition spirit are captured by this dramatic wildlife encounter image.
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/cruise-humpback-whale_b97f780e.jpg",
+    // WHY: Aerial shot of whale and calf in turquoise water — evokes the
+    // intimate, world-class wildlife encounters Crystal guests experience at sea.
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/crystal-cruises-whales_278d2af8.webp",
     link: "https://www.crystalcruises.com",
     linkLabel: "Explore Crystal Cruises",
     imageRight: false,
