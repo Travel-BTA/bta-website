@@ -19,7 +19,7 @@
  * Advisor Programs page removed — replaced by Advisor Recruitment.
  */
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { nav } from "@/content/homepage";
 import { Search, X } from "lucide-react";
 
@@ -91,12 +91,27 @@ function DesktopDropdown({
   setOpen: (v: boolean) => void;
   dropRef: React.RefObject<HTMLDivElement | null>;
 }) {
+  // WHY: Use a ref-based close timer so the dropdown stays open long enough
+  // for the user to move their mouse from the trigger label down into the panel.
+  // Without this delay the gap between the trigger and panel closes the menu
+  // before the cursor arrives.
+  const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const handleMouseEnter = useCallback(() => {
+    if (closeTimer.current) clearTimeout(closeTimer.current);
+    setOpen(true);
+  }, [setOpen]);
+
+  const handleMouseLeave = useCallback(() => {
+    closeTimer.current = setTimeout(() => setOpen(false), 150);
+  }, [setOpen]);
+
   return (
     <div
       ref={dropRef}
       className="relative"
-      onMouseEnter={() => setOpen(true)}
-      onMouseLeave={() => setOpen(false)}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
     >
       {href ? (
         <a

@@ -113,6 +113,9 @@
 - [ ] Build Hotel Collection Application page (/hotel-collection-application)
 - [ ] Add About dropdown nav: Our People, We Give Back, Hotel Specialist Program, Hotel Collection Application
 
+## Nav Dropdown Fix (Apr 2026)
+- [x] Fix nav dropdown hover — add close delay so user can move mouse from trigger into dropdown without it closing
+
 ## Family Itinerary Photo Updates (Apr 2026)
 - [ ] Replace Iceland itinerary photos with aurora/northern lights and family-at-waterfall images
 - [ ] Replace Fiji itinerary photo with glass-bottom boat family image
