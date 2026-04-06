@@ -149,3 +149,6 @@
 
 ## Copy Fixes
 - [x] Remove all em dashes from AdvisorRecruitment page
+
+## Bug Fixes
+- [ ] Fix broken advisor profile photos
