@@ -798,7 +798,8 @@ function DestinationTimelineInner({ data }: { data: DestinationItinerary }) {
         </div>
 
         {/* Main content: day selector + detail panel */}
-        <div className="grid lg:grid-cols-[240px_1fr] gap-6 items-start">
+        {/* WHY: narrower day selector (180px vs 240px) gives the photo+text panel more horizontal room */}
+        <div className="grid lg:grid-cols-[180px_1fr] gap-6 items-start">
 
           {/* Day selector */}
           <div className="flex lg:flex-col gap-2 overflow-x-auto lg:overflow-visible pb-2 lg:pb-0">
@@ -838,9 +839,9 @@ function DestinationTimelineInner({ data }: { data: DestinationItinerary }) {
           {/* WHY: 55/45 split gives the photo more breathing room so portrait images are less cropped */}
           <div className="grid md:grid-cols-[55%_45%] gap-0 border border-white/20">
 
-            {/* Photo side — WHY: taller min-height reveals more of portrait images without cropping */}
+            {/* Photo side */}
             <div
-              className="relative h-56 md:h-auto min-h-[420px]"
+              className="relative h-56 md:h-auto min-h-[280px]"
               style={{
                 backgroundImage: `url(${day.image})`,
                 backgroundSize: "cover",
