@@ -172,3 +172,6 @@
 - [x] Build beautiful FAQ page at /faq with accordion, brand typography, CTA
 - [x] Restore FAQ nav link in NavBar
 - [x] Add à la carte and minimum requirements Q&As from Janet
+
+## Nav Fixes (Apr 2026)
+- [x] Remove duplicate "Overview" from About Us dropdown, keep "Our Team" as primary

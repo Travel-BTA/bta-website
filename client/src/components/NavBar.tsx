@@ -319,9 +319,10 @@ export default function NavBar() {
           </a>
 
           {/* About Us dropdown */}
+          {/* WHY: href removed — "Our Team" in the dropdown is the primary /about link.
+              Removing href prevents the duplicate "Overview" entry in mobile nav. */}
           <DesktopDropdown
             label="About Us"
-            href="/about"
             items={ABOUT_SUBMENU}
             open={aboutOpen}
             setOpen={setAboutOpen}
@@ -448,9 +449,9 @@ export default function NavBar() {
               Journal
             </a>
 
+            {/* WHY: href removed — Our Team in the dropdown is the primary /about link */}
             <MobileAccordionItem
               label="About Us"
-              href="/about"
               items={ABOUT_SUBMENU}
               onClose={() => setMenuOpen(false)}
             />
