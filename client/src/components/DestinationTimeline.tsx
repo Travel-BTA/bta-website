@@ -838,9 +838,9 @@ function DestinationTimelineInner({ data }: { data: DestinationItinerary }) {
           {/* WHY: 55/45 split gives the photo more breathing room so portrait images are less cropped */}
           <div className="grid md:grid-cols-[55%_45%] gap-0 border border-white/20">
 
-            {/* Photo side */}
+            {/* Photo side — WHY: taller min-height reveals more of portrait images without cropping */}
             <div
-              className="relative h-56 md:h-auto min-h-[280px]"
+              className="relative h-56 md:h-auto min-h-[420px]"
               style={{
                 backgroundImage: `url(${day.image})`,
                 backgroundSize: "cover",
