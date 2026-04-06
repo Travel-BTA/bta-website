@@ -122,7 +122,7 @@ function TimeSavingsSection() {
             className="text-[#2F2F2F]/55 text-lg font-light max-w-2xl mx-auto"
             style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
-            Compared to Axus, Tern, Travel Joy, and Travefy — the tools most advisors are using today.
+            Compared to Axus, Tern, Travel Joy, and Travefy, the tools most advisors are using today.
           </p>
         </div>
 
@@ -146,7 +146,7 @@ function TimeSavingsSection() {
                 </span>
               </div>
 
-              {/* Industry bar — always full width, no animation needed */}
+              {/* Industry bar, always full width, no animation needed */}
               <div className="mb-6">
                 <div className="flex items-center justify-between mb-2">
                   <div>
@@ -182,7 +182,7 @@ function TimeSavingsSection() {
                 </div>
               </div>
 
-              {/* Iris bar — animates to target pct, delayed so industry bar leads */}
+              {/* Iris bar, animates to target pct, delayed so industry bar leads */}
               <div>
                 <div className="flex items-center justify-between mb-2">
                   <span
@@ -243,7 +243,7 @@ className="min-h-screen bg-white">
       <NavBar />
 
       {/* ══════════════════════════════════════════════════════════════════════
-          §1  HERO — Recognition, not a pitch
+          §1  HERO, Recognition, not a pitch
           WHY: A $500k+ advisor has seen every "join our agency" pitch.
           We open by acknowledging what they've already built, then
           invite them to imagine what comes next.
@@ -291,7 +291,7 @@ className="min-h-screen bg-white">
               className="text-white/70 text-lg md:text-xl max-w-2xl font-light leading-relaxed mb-14"
               style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
             >
-              BTA is the operating infrastructure for the most ambitious advisors in luxury travel —
+              BTA is the operating infrastructure for the most ambitious advisors in luxury travel
               the technology, the contracts, the community, and the AI that lets you scale without
               sacrificing the quality that built your reputation.
             </p>
@@ -325,7 +325,7 @@ className="min-h-screen bg-white">
       </section>
 
       {/* ══════════════════════════════════════════════════════════════════════
-          §2  QUALIFICATION BAR — "This is not for everyone"
+          §2  QUALIFICATION BAR, "This is not for everyone"
           WHY: Selective framing elevates perceived value and pre-qualifies
           visitors. The right advisor reads this and leans in.
       ══════════════════════════════════════════════════════════════════════ */}
@@ -367,7 +367,7 @@ className="min-h-screen bg-white">
       </section>
 
       {/* ══════════════════════════════════════════════════════════════════════
-          §3  THE REAL PROBLEM — Make them feel seen
+          §3  THE REAL PROBLEM, Make them feel seen
           WHY: Before we sell anything, we name the frustrations a high-producing
           advisor lives with. This earns trust and creates contrast for §4.
       ══════════════════════════════════════════════════════════════════════ */}
@@ -398,15 +398,15 @@ className="min-h-screen bg-white">
                   },
                   {
                     problem: "There is no shared knowledge base. No benchmarking. No best practices.",
-                    detail: "Top advisors need more than affiliation — they need a community where strategy is shared, performance is benchmarked, and the collective intelligence of a high-producing network is actually accessible.",
+                    detail: "Top advisors need more than affiliation, they need a community where strategy is shared, performance is benchmarked, and the collective intelligence of a high-producing network is actually accessible.",
                   },
                   {
                     problem: "Collaboration is nearly impossible when everyone is operating in silos.",
                     detail: "Complex multi-advisor trips, referral partnerships, and peer learning all require a common platform. Without it, every collaboration becomes a coordination project.",
                   },
                   {
-                    problem: "Running a successful business requires more than bookings — it requires infrastructure.",
-                    detail: "Pricing strategy, client communication standards, supplier negotiation, marketing systems, financial benchmarks — the advisors growing fastest have these built in. Most host agencies don't provide them.",
+                    problem: "Running a successful business requires more than bookings, it requires infrastructure.",
+                    detail: "Pricing strategy, client communication standards, supplier negotiation, marketing systems, financial benchmarks, the advisors growing fastest have these built in. Most host agencies don't provide them.",
                   },
                 ].map(({ problem, detail }) => (
                   <div key={problem} className="flex gap-5">
@@ -451,7 +451,7 @@ className="min-h-screen bg-white">
                   className="text-[#9C886A] text-[0.6rem] tracking-[0.2em] uppercase"
                   style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
                 >
-                  — BTA Affiliate Advisor, Top Producer
+                 , BTA Affiliate Advisor, Top Producer
                 </p>
               </div>
             </div>
@@ -461,7 +461,7 @@ className="min-h-screen bg-white">
       </section>
 
       {/* ══════════════════════════════════════════════════════════════════════
-          §4  THE BTA DIFFERENCE — Numbers that matter
+          §4  THE BTA DIFFERENCE, Numbers that matter
           WHY: A $500k+ advisor is a business owner. They respond to
           economics. Show the split, the inventory, the amenity value.
           Dark texture background creates visual separation and gravitas.
@@ -532,8 +532,8 @@ className="min-h-screen bg-white">
       </section>
 
       {/* ══════════════════════════════════════════════════════════════════════
-          §5  THE PLATFORM — Your Unfair Advantage
-          WHY: This is the core differentiator. We show the actual platform —
+          §5  THE PLATFORM, Your Unfair Advantage
+          WHY: This is the core differentiator. We show the actual platform
           not screenshots of generic software, but real Iris/DASH UI captures.
           Five feature rows: CRM, Booking Engine, White-Label Portal,
           Iris Intelligence, Iris Itinerary.
@@ -560,7 +560,7 @@ className="min-h-screen bg-white">
               style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
             >
               Not a collection of third-party tools bolted together. A purpose-built operating
-              system for luxury travel advisors — designed around the complexity of high-touch,
+              system for luxury travel advisors, designed around the complexity of high-touch,
               high-value itineraries.
             </p>
           </div>
@@ -572,7 +572,7 @@ className="min-h-screen bg-white">
                 className="text-[#9C886A] text-[0.65rem] tracking-[0.2em] uppercase mb-4"
                 style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
               >
-                01 — CRM & Practice Management
+                01, CRM & Practice Management
               </p>
               <h3
                 className="text-[#384959] text-3xl md:text-4xl font-light mb-6"
@@ -584,17 +584,17 @@ className="min-h-screen bg-white">
                 className="text-[#2F2F2F]/60 text-base font-light leading-relaxed mb-8"
                 style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
               >
-                The BTA CRM is built for the complexity of luxury travel — not adapted from a
+                The BTA CRM is built for the complexity of luxury travel, not adapted from a
                 generic sales tool. Every client record holds their full travel history, preferences,
                 passport details, upcoming bookings, and every call, email, and message in a single
                 timeline. When a traveler calls, everything is already on screen.
               </p>
               <ul className="space-y-3">
                 {[
-                  "Live phone & SMS from your browser — calls log automatically",
+                  "Live phone & SMS from your browser, calls log automatically",
                   "Real-time task board tied to trips and clients",
                   "Supplier directory with direct contacts at every hotel and DMC",
-                  "AI-assisted call summaries — less documenting, more advising",
+                  "AI-assisted call summaries, less documenting, more advising",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <div className="w-4 h-4 rounded-full bg-[#bfaf8a]/20 flex items-center justify-center shrink-0 mt-0.5">
@@ -614,7 +614,7 @@ className="min-h-screen bg-white">
               <div className="absolute -inset-6 bg-[#bfaf8a]/5 rounded-2xl blur-2xl" />
               <img
                 src={CDN.workflowKanban}
-                alt="BTA CRM — Advisor Practice Management"
+                alt="BTA CRM, Advisor Practice Management"
                 className="relative z-10 w-full shadow-2xl border border-[#bfaf8a]/10"
               />
             </div>
@@ -626,7 +626,7 @@ className="min-h-screen bg-white">
               <div className="absolute -inset-6 bg-[#384959]/5 rounded-2xl blur-2xl" />
               <img
                 src={CDN.bookingEngine}
-                alt="BTA Global Booking Engine — 3,000+ Luxury Properties"
+                alt="BTA Global Booking Engine, 3,000+ Luxury Properties"
                 className="relative z-10 w-full shadow-2xl border border-[#bfaf8a]/10"
               />
             </div>
@@ -635,7 +635,7 @@ className="min-h-screen bg-white">
                 className="text-[#9C886A] text-[0.65rem] tracking-[0.2em] uppercase mb-4"
                 style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
               >
-                02 — Global Booking Engine
+                02, Global Booking Engine
               </p>
               <h3
                 className="text-[#384959] text-3xl md:text-4xl font-light mb-6"
@@ -648,7 +648,7 @@ className="min-h-screen bg-white">
                 style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
               >
                 BTA's booking engine runs on Sabre with a proprietary BTA rate code for preferred
-                partners — giving you access to inventory and amenity packages that independent
+                partners, giving you access to inventory and amenity packages that independent
                 advisors simply cannot access. Over 3,000 luxury properties across Virtuoso,
                 Four Seasons, Rosewood, Aman, and beyond. Real-time availability. Instant booking.
                 Every commission tracked automatically.
@@ -658,7 +658,7 @@ className="min-h-screen bg-white">
                   "Sabre-powered with BTA proprietary rate code",
                   "Virtuoso preferred partner inventory included",
                   "Avg. $550 VIP amenity value per stay for your clients",
-                  "Commission dashboard — every booking, every dollar",
+                  "Commission dashboard, every booking, every dollar",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <div className="w-4 h-4 rounded-full bg-[#bfaf8a]/20 flex items-center justify-center shrink-0 mt-0.5">
@@ -683,7 +683,7 @@ className="min-h-screen bg-white">
                 className="text-[#9C886A] text-[0.65rem] tracking-[0.2em] uppercase mb-4"
                 style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
               >
-                03 — White-Label Client Portal
+                03, White-Label Client Portal
               </p>
               <h3
                 className="text-[#384959] text-3xl md:text-4xl font-light mb-6"
@@ -696,7 +696,7 @@ className="min-h-screen bg-white">
                 style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
               >
                 Unlike host agencies that keep the booking experience generic, BTA gives you a
-                fully white-labeled client portal at luxurytravelclubs.com — branded with your
+                fully white-labeled client portal at luxurytravelclubs.com, branded with your
                 agency identity. Your clients browse, wish-list, and book through an experience
                 that feels like it was built for them by you. You stay in control. BTA handles
                 the infrastructure.
@@ -705,8 +705,8 @@ className="min-h-screen bg-white">
                 {[
                   "Fully branded with your agency name and identity",
                   "Client wish-list functionality for collaborative planning",
-                  "Mobile-optimized — your clients access everything on the go",
-                  "Custom client app in development — launching soon",
+                  "Mobile-optimized, your clients access everything on the go",
+                  "Custom client app in development, launching soon",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <div className="w-4 h-4 rounded-full bg-[#bfaf8a]/20 flex items-center justify-center shrink-0 mt-0.5">
@@ -738,7 +738,7 @@ className="min-h-screen bg-white">
               <div className="absolute -inset-6 bg-[#384959]/5 rounded-2xl blur-2xl" />
               <img
                 src={CDN.morningBriefing}
-                alt="Iris Intelligence — Morning Pipeline Briefing"
+                alt="Iris Intelligence, Morning Pipeline Briefing"
                 className="relative z-10 w-full shadow-2xl border border-[#bfaf8a]/10 rounded-xl"
               />
             </div>
@@ -747,7 +747,7 @@ className="min-h-screen bg-white">
                 className="text-[#9C886A] text-[0.65rem] tracking-[0.2em] uppercase mb-4"
                 style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
               >
-                04 — Iris Intelligence
+                04, Iris Intelligence
               </p>
               <h3
                 className="text-[#384959] text-3xl md:text-4xl font-light mb-6"
@@ -759,8 +759,8 @@ className="min-h-screen bg-white">
                 className="text-[#2F2F2F]/60 text-base font-light leading-relaxed mb-8"
                 style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
               >
-                Every morning, Iris scans your full pipeline and delivers a prioritized briefing —
-                overdue tasks, payment deadlines, departing trips, unconfirmed bookings — with direct
+                Every morning, Iris scans your full pipeline and delivers a prioritized briefing
+                overdue tasks, payment deadlines, departing trips, unconfirmed bookings, with direct
                 links to what needs attention first. On every active trip, Iris runs a full QC audit
                 and surfaces upsell opportunities with estimated commission. Nothing slips through.
               </p>
@@ -797,7 +797,7 @@ className="min-h-screen bg-white">
                 className="text-[#9C886A] text-[0.65rem] tracking-[0.2em] uppercase mb-4"
                 style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
               >
-                05 — Iris Itinerary Alchemist
+                05, Iris Itinerary Alchemist
               </p>
               <h3
                 className="text-[#384959] text-3xl md:text-4xl font-light mb-6"
@@ -810,7 +810,7 @@ className="min-h-screen bg-white">
                 style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
               >
                 Iris is BTA's proprietary AI platform, built exclusively for our advisor team.
-                Tell Iris about the trip, the travelers, and their vision — and it transforms that
+                Tell Iris about the trip, the travelers, and their vision, and it transforms that
                 conversation into a fully structured, beautifully branded itinerary. Day-by-day
                 programming, destination guides, hotel overviews, dining recommendations, gratuity
                 tables, and client-ready PDF export. Every section editable. Every photo swappable.
@@ -826,7 +826,7 @@ className="min-h-screen bg-white">
               <div className="absolute -inset-6 bg-[#bfaf8a]/5 rounded-2xl blur-2xl" />
               <img
                 src={CDN.itineraryTool}
-                alt="Iris Itinerary Tool — AI-Powered Luxury Itinerary Builder"
+                alt="Iris Itinerary Tool, AI-Powered Luxury Itinerary Builder"
                 className="relative z-10 w-full shadow-2xl border border-[#bfaf8a]/10"
               />
             </div>
@@ -838,7 +838,7 @@ className="min-h-screen bg-white">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative order-2 lg:order-1">
               <div className="absolute -inset-6 bg-[#bfaf8a]/5 rounded-2xl blur-2xl" />
-              {/* Benchmarking dashboard — illustrated with a styled stat panel */}
+              {/* Benchmarking dashboard, illustrated with a styled stat panel */}
               <div className="relative z-10 bg-[#faf9f6] border border-[#bfaf8a]/20 shadow-2xl p-8">
                 <div className="flex items-center justify-between mb-6">
                   <p
@@ -902,7 +902,7 @@ className="min-h-screen bg-white">
                 className="text-[#9C886A] text-[0.65rem] tracking-[0.2em] uppercase mb-4"
                 style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
               >
-                06 — Benchmarking & Best Practices
+                06, Benchmarking & Best Practices
               </p>
               <h3
                 className="text-[#384959] text-3xl md:text-4xl font-light mb-6"
@@ -916,15 +916,15 @@ className="min-h-screen bg-white">
               >
                 Most advisors operate without a single reference point for what “good” looks like.
                 BTA changes that. Every advisor in our network has access to anonymized performance
-                benchmarks — annual volume, commission rates, client retention, and average booking
-                value — so you always know where you stand relative to your peers.
+                benchmarks, annual volume, commission rates, client retention, and average booking
+                value, so you always know where you stand relative to your peers.
               </p>
               <p
                 className="text-[#2F2F2F]/60 text-base font-light leading-relaxed mb-8"
                 style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
               >
                 Alongside benchmarking, BTA maintains a living library of best practices built
-                collaboratively by our advisor community — covering client communication, fee
+                collaboratively by our advisor community, covering client communication, fee
                 structures, proposal strategy, supplier negotiation, and more. When one advisor
                 discovers a better way to work, the whole network benefits.
               </p>
@@ -953,7 +953,7 @@ className="min-h-screen bg-white">
       </section>
 
       {/* ══════════════════════════════════════════════════════════════════════
-          §6  SCALABILITY STRIP — The architecture argument
+          §6  SCALABILITY STRIP, The architecture argument
           WHY: A $500k+ advisor is thinking about $1M, $2M, $5M.
           This section speaks directly to that ambition.
       ══════════════════════════════════════════════════════════════════════ */}
@@ -974,7 +974,7 @@ className="min-h-screen bg-white">
                 className="text-white/60 text-base font-light leading-relaxed"
                 style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
               >
-                BTA's platform is not a set of features — it is an operating model. The CRM, the booking
+                BTA's platform is not a set of features, it is an operating model. The CRM, the booking
                 engine, the white-label portal, Iris Intelligence, and the Academy compound on each other.
                 As your volume grows, the platform grows with you. There is no ceiling.
               </p>
@@ -1002,7 +1002,7 @@ className="min-h-screen bg-white">
       </section>
 
       {/* ══════════════════════════════════════════════════════════════════════
-          §7  COMMUNITY — Who you'll work alongside
+          §7  COMMUNITY, Who you'll work alongside
           WHY: Peer caliber is a major decision factor for high-producers.
           They want to know: "Are these my people?"
       ══════════════════════════════════════════════════════════════════════ */}
@@ -1133,18 +1133,18 @@ className="min-h-screen bg-white">
       </section>
 
       {/* ══════════════════════════════════════════════════════════════════════
-          §7b  TIME SAVINGS — Animated Iris vs. industry comparison
+          §7b  TIME SAVINGS, Animated Iris vs. industry comparison
           WHY: A $500k+ advisor values their time above almost everything.
           Bars animate from 0 to target width when the section scrolls into
-          view using IntersectionObserver — making the contrast visceral.
+          view using IntersectionObserver, making the contrast visceral.
       ══════════════════════════════════════════════════════════════════════ */}
       <TimeSavingsSection />
 
       {/* ══════════════════════════════════════════════════════════════════════
-          §7c  ELEVATE THIS TRIP — Horizontal scrolling upsell showcase
+          §7c  ELEVATE THIS TRIP, Horizontal scrolling upsell showcase
           WHY: Showing the actual Iris "Elevate This Trip" UI is the most
           compelling proof of the platform's intelligence. Real suggestions,
-          real commission values, real client names — makes it tangible.
+          real commission values, real client names, makes it tangible.
       ══════════════════════════════════════════════════════════════════════ */}
       <section className="py-24 md:py-32 bg-[#faf9f6] overflow-hidden">
         <div className="max-w-[1440px] mx-auto px-8 lg:px-14 mb-14">
@@ -1167,7 +1167,7 @@ className="min-h-screen bg-white">
                 style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
               >
                 On every active trip, Iris scans the itinerary and surfaces upsell opportunities
-                with estimated value and commission — ready to propose, book, or add as a task.
+                with estimated value and commission, ready to propose, book, or add as a task.
               </p>
             </div>
             <div className="flex items-center gap-2 shrink-0">
@@ -1204,7 +1204,7 @@ className="min-h-screen bg-white">
             {
               title: "Santorini Sunset Catamaran Cruise",
               type: "Experience",
-              description: "A private catamaran sailing the caldera at sunset — champagne, fresh seafood, and views of the volcanic cliffs. One of the most requested add-ons for Santorini itineraries.",
+              description: "A private catamaran sailing the caldera at sunset, champagne, fresh seafood, and views of the volcanic cliffs. One of the most requested add-ons for Santorini itineraries.",
               value: "$680",
               commission: "$68",
               status: "identified",
@@ -1228,7 +1228,7 @@ className="min-h-screen bg-white">
             {
               title: "Delphi Day Excursion from Athens",
               type: "Tour",
-              description: "A full-day private guided excursion to Delphi — the oracle, the museum, the mountain views. Pairs perfectly with the Athens pre-cruise extension already in the itinerary.",
+              description: "A full-day private guided excursion to Delphi, the oracle, the museum, the mountain views. Pairs perfectly with the Athens pre-cruise extension already in the itinerary.",
               value: "$550",
               commission: "$55",
               status: "identified",
@@ -1317,7 +1317,7 @@ className="min-h-screen bg-white">
       </section>
 
       {/* ══════════════════════════════════════════════════════════════════════
-          §7d  ACADEMY — Rebuilt to match brand screenshots
+          §7d  ACADEMY, Rebuilt to match brand screenshots
           WHY: The Academy is a major differentiator. Structured like the
           provided screenshots: full-bleed CTA + curriculum breakdown.
       ══════════════════════════════════════════════════════════════════════ */}
@@ -1351,7 +1351,7 @@ className="min-h-screen bg-white">
               </p>
             </div>
 
-            {/* Curriculum list — styled from screenshot */}
+            {/* Curriculum list, styled from screenshot */}
             <div>
               <p
                 className="text-[#9C886A] text-[0.6rem] tracking-[0.25em] uppercase mb-6"
@@ -1371,7 +1371,7 @@ className="min-h-screen bg-white">
                   {
                     Icon: BookOpen,
                     title: "Curated Curriculum",
-                    desc: "Structured courses covering every aspect of luxury travel advising — from CRM workflows and booking systems to client journey management and preferred supplier relationships.",
+                    desc: "Structured courses covering every aspect of luxury travel advising, from CRM workflows and booking systems to client journey management and preferred supplier relationships.",
                   },
                   {
                     Icon: Award,
@@ -1381,7 +1381,7 @@ className="min-h-screen bg-white">
                   {
                     Icon: Users,
                     title: "Advisor Excellence",
-                    desc: "Professional development resources covering communication, marketing, planning fees, and the MAPS Framework — designed to elevate every advisor's practice.",
+                    desc: "Professional development resources covering communication, marketing, planning fees, and the MAPS Framework, designed to elevate every advisor's practice.",
                   },
                   {
                     Icon: Play,
@@ -1414,7 +1414,7 @@ className="min-h-screen bg-white">
           </div>
         </div>
 
-        {/* Part B: "Enter BTA Academy" full-bleed CTA — styled from screenshot */}
+        {/* Part B: "Enter BTA Academy" full-bleed CTA, styled from screenshot */}
         <div className="relative h-[480px] md:h-[560px] overflow-hidden flex items-center justify-center">
           {/* Background: dark overlay over luxury travel image */}
           <div className="absolute inset-0 bg-[#1a2330]/70 z-10" />
@@ -1455,7 +1455,7 @@ className="min-h-screen bg-white">
       </section>
 
       {/* ══════════════════════════════════════════════════════════════════════
-          §8  PHILANTHROPY STRIP — The mission, briefly
+          §8  PHILANTHROPY STRIP, The mission, briefly
           WHY: Brand requirement. One sentence. Genuine, not performative.
       ══════════════════════════════════════════════════════════════════════ */}
       <section className="py-14 bg-[#faf9f6] border-y border-[#bfaf8a]/20">
@@ -1467,7 +1467,7 @@ className="min-h-screen bg-white">
           >
             A portion of every BTA booking supports childhood cancer research, Make-A-Wish,
             veterans' programs, and local communities where we travel. Advisors and clients
-            are invited to participate — helping raise hundreds of thousands of dollars for
+            are invited to participate, helping raise hundreds of thousands of dollars for
             causes that matter.
           </p>
           <div className="w-12 h-px bg-[#bfaf8a] shrink-0 hidden md:block" />
@@ -1475,7 +1475,7 @@ className="min-h-screen bg-white">
       </section>
 
       {/* ══════════════════════════════════════════════════════════════════════
-          §9  FAQ — Address the real objections
+          §9  FAQ, Address the real objections
           WHY: A $500k+ advisor has specific, sophisticated questions.
           Answering them here removes friction before the conversation.
       ══════════════════════════════════════════════════════════════════════ */}
@@ -1494,7 +1494,7 @@ className="min-h-screen bg-white">
             {[
               {
                 q: "I already have a host agency. Why would I switch?",
-                a: "Most host agencies provide affiliation and little else. BTA provides a purpose-built CRM, a proprietary booking engine with 3,000+ properties, Iris AI, a white-label client portal, a full marketing suite, and an academy — all under one roof. The question is not why switch, but what it's costing you to stay.",
+                a: "Most host agencies provide affiliation and little else. BTA provides a purpose-built CRM, a proprietary booking engine with 3,000+ properties, Iris AI, a white-label client portal, a full marketing suite, and an academy, all under one roof. The question is not why switch, but what it's costing you to stay.",
               },
               {
                 q: "What does the commission split actually look like?",
@@ -1544,7 +1544,7 @@ className="min-h-screen bg-white">
       </section>
 
       {/* ══════════════════════════════════════════════════════════════════════
-          §10  FINAL CTA — The private conversation
+          §10  FINAL CTA, The private conversation
           WHY: Not a form wall. A direct, unhurried invitation. Two paths:
           schedule a call (high-trust, low-friction) or submit a brief
           inquiry (4 fields only). The closing line sets expectations.
@@ -1684,7 +1684,7 @@ className="min-h-screen bg-white">
                       />
                     </div>
 
-                    {/* Annual volume — clickable options */}
+                    {/* Annual volume, clickable options */}
                     <div>
                       <label
                         className="block text-[#384959] text-[0.65rem] tracking-[0.2em] uppercase mb-3"

@@ -146,3 +146,6 @@
 - [x] Upload family pool/infinity view photo → Family Travel hero
 - [x] Upload Hakone torii gate kids photo → Japan itinerary Hakone section
 - [x] Seed janet@travelbta.com admin account with password
+
+## Copy Fixes
+- [x] Remove all em dashes from AdvisorRecruitment page
