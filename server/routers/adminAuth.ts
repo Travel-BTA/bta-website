@@ -27,7 +27,10 @@ const ADMIN_COOKIE = "bta_admin_session";
 const COOKIE_MAX_AGE = 60 * 60 * 24 * 30; // 30 days
 
 function getJwtSecret() {
-  const secret = process.env.JWT_SECRET ?? "bta-admin-fallback-secret-change-in-prod";
+  // WHY: JWT_SECRET must be set in production env vars — no fallback to prevent
+  // accidental insecure deployments. Set this in Vercel/Railway environment settings.
+  const secret = process.env.JWT_SECRET;
+  if (!secret) throw new Error("JWT_SECRET environment variable is not set");
   return new TextEncoder().encode(secret);
 }
 
@@ -124,8 +127,12 @@ export const adminAuthRouter = router({
       setupKey: z.string(), // simple guard against accidental public use
     }))
     .mutation(async ({ input }) => {
-      // Simple guard — must match env var or default key
-      const expectedKey = process.env.ADMIN_SETUP_KEY ?? "bta-setup-2026";
+      // WHY: ADMIN_SETUP_KEY must be explicitly set — no default fallback to prevent
+      // unauthorized account creation on public deployments.
+      const expectedKey = process.env.ADMIN_SETUP_KEY;
+      if (!expectedKey) {
+        throw new TRPCError({ code: "FORBIDDEN", message: "Setup is disabled on this deployment" });
+      }
       if (input.setupKey !== expectedKey) {
         throw new TRPCError({ code: "FORBIDDEN", message: "Invalid setup key" });
       }

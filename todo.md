@@ -154,3 +154,11 @@
 - [ ] Fix broken advisor profile photos
 - [ ] Fix FAQ page not loading
 - [x] Extract PR #1 images, upload to CDN, replace local /public/images refs
+
+## Pre-Deployment Fixes (Apr 2026)
+- [x] Remove /family/ images from client/public (move to CDN)
+- [x] Delete HotelCollectionApplication.tsx.bak
+- [x] Fix HomeV2.tsx TypeScript error (MobileLogoBar import)
+- [x] Remove hardcoded JWT fallback secret and ADMIN_SETUP_KEY fallback
+- [x] Fix FAQ nav link (removed from nav until FAQ page is built)
+- [x] Delete font-compare.html from public

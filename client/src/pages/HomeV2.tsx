@@ -21,7 +21,9 @@
  */
 
 import PageSEO from "@/components/PageSEO";
-import HeroSection, { MobileLogoBar } from "@/components/sections/HeroSection";
+// WHY: Split into two imports to avoid TS2614 with mixed default+named exports
+import HeroSection from "@/components/sections/HeroSection";
+import { MobileLogoBar } from "@/components/sections/HeroSection";
 import {
   WhoWeAreSection,
   StatsSection,

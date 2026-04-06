@@ -50,7 +50,7 @@ const ABOUT_SUBMENU = [
   // array would produce a duplicate entry in the mobile nav.
   { label: "Contact Us",                    href: "/contact-us" },
   { label: "Pricing",                       href: "/pricing" },
-  { label: "FAQ",                           href: "/faq" },
+  // FAQ page coming soon — link removed until page is built to prevent dead-end navigation
   // ── Company ───────────────────────────────────────────────────────────────
   { label: "Our Team",                      href: "/about" },
   { label: "We Give Back",                  href: "/about/philanthropic-initiatives" },
