@@ -32,43 +32,43 @@ const CO_FOUNDERS: Advisor[] = [
   {
     name: "Angie Rice",
     title: "Co-Founder",
-    photo: "https://travelbta.com/wp-content/uploads/2021/03/Angie.jpg",
+    photo: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/angie-ourpeople_5c3468f1.jpg",
     href: "#",
   },
   {
     name: "Janet Semenova",
     title: "Co-Founder",
-    photo: "https://travelbta.com/wp-content/uploads/2021/03/Janet-e1614902028129.jpg",
+    photo: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/janet-ourpeople_f4646fea.jpg",
     href: "#",
   },
 ];
 
 const INHOUSE_ADVISORS: Advisor[] = [
-  { name: "Bri Crowder", photo: "https://travelbta.com/wp-content/uploads/2022/01/Bri-Crowder-About.jpg", href: "#" },
-  { name: "Kim Parizek", photo: "https://travelbta.com/wp-content/uploads/2025/08/unnamed-15.jpg", href: "#" },
-  { name: "Jessica Barkley", photo: "https://travelbta.com/wp-content/uploads/2025/01/jessica-barkley.jpg", href: "#" },
-  { name: "Cristina Medeiros", photo: "https://travelbta.com/wp-content/uploads/2026/01/20231118_125508.jpg", href: "#" },
-  { name: "Justin Lintz", photo: "https://travelbta.com/wp-content/uploads/2026/03/IMG_5590.jpg", href: "#" },
-  { name: "Laura Cosme", photo: "https://travelbta.com/wp-content/uploads/2026/03/Laura-Cosme.jpg", href: "#" },
-  { name: "Rose Topisian", photo: "https://travelbta.com/wp-content/uploads/2026/02/3.jpg", href: "#" },
+  { name: "Bri Crowder", photo: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/bri-crowder-ourpeople_bf12365e.jpg", href: "#" },
+  { name: "Kim Parizek", photo: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/kim-parizek-ourpeople_d5b87149.jpg", href: "#" },
+  { name: "Jessica Barkley", photo: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/jessica-barkley-ourpeople_92ba8741.jpg", href: "#" },
+  { name: "Cristina Medeiros", photo: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/cristina-medeiros-ourpeople_33f13aad.jpg", href: "#" },
+  { name: "Justin Lintz", photo: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/justin-lintz-ourpeople_f6bba6f1.jpg", href: "#" },
+  { name: "Laura Cosme", photo: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/laura-cosme-ourpeople_8abf8a63.jpg", href: "#" },
+  { name: "Rose Topisian", photo: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/rose-topisian_5401ae78.jpg", href: "#" },
 ];
 
 const AFFILIATE_ADVISORS: Advisor[] = [
-  { name: "Julie Rose", photo: "https://travelbta.com/wp-content/uploads/2021/07/Julie-Rose-Photo-resized.jpg", href: "/advisors/julie-rose" },
-  { name: "Rebecca Hogan", photo: "https://travelbta.com/wp-content/uploads/2026/01/Rebecca-Hogan.jpg", href: "#" },
-  { name: "Autumn Garduno", photo: "https://travelbta.com/wp-content/uploads/2024/08/unnamed-13-3-1.jpg", href: "#" },
-  { name: "Becca Samuels", photo: "https://travelbta.com/wp-content/uploads/2024/08/unnamed-1.jpg", href: "#" },
-  { name: "Tracey Davis", photo: "https://travelbta.com/wp-content/uploads/2024/01/bta-horizontal-photo-2.jpg", href: "#" },
-  { name: "Kathleen Smith", photo: "https://travelbta.com/wp-content/uploads/2021/07/Kathleen-Profile-resized.jpg", href: "#" },
-  { name: "Carol Fogerty", photo: "https://travelbta.com/wp-content/uploads/2026/01/f2a52e31-59fe-4b31-8793-0a1fdda00163-IMG_1584-3-1-scaled-e1747425399928.jpg", href: "#" },
-  { name: "Julie Plummer", photo: "https://travelbta.com/wp-content/uploads/2025/06/Screenshot-2025-06-02-at-7.08.48-AM.jpg", href: "#" },
-  { name: "Baylee Shapiro", photo: "https://travelbta.com/wp-content/uploads/2025/01/009A8159-scaled.jpg", href: "#" },
-  { name: "Danitza & Esteban Villanueva", photo: "https://travelbta.com/wp-content/uploads/2025/01/Danitza-and-Esteban-Villaneuva-at-The-Tower-Birdge.jpg", href: "#" },
+  { name: "Julie Rose", photo: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/julie-rose_c16d3a87.jpg", href: "/advisors/julie-rose" },
+  { name: "Rebecca Hogan", photo: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/rebecca-hogan_3a10a8db.jpg", href: "#" },
+  { name: "Autumn Garduno", photo: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/autumn-garduno_b538def1.jpg", href: "#" },
+  { name: "Becca Samuels", photo: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/becca-samuels_ff0d8337.jpg", href: "#" },
+  { name: "Tracey Davis", photo: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/advisor-tracey-davis_d8cbd8ec.jpg", href: "#" },
+  { name: "Kathleen Smith", photo: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/kathleen-smith_c681729f.jpg", href: "#" },
+  { name: "Carol Fogerty", photo: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/carol-fogerty_7fa0f753.jpg", href: "#" },
+  { name: "Julie Plummer", photo: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/advisor-julie-plummer_9c810986.jpg", href: "#" },
+  { name: "Baylee Shapiro", photo: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/baylee-shapiro_dd13a17b.jpg", href: "#" },
+  { name: "Danitza & Esteban Villanueva", photo: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/danitza-villanueva_e15eb15f.jpg", href: "#" },
 ];
 
 const SUPPORT_STAFF: Advisor[] = [
-  { name: "Camila Dominguez", photo: "https://travelbta.com/wp-content/uploads/2025/01/IMG_5029-2-scaled.jpg", href: "#" },
-  { name: "Malou Sarmiento", photo: "https://travelbta.com/wp-content/uploads/2025/08/Screenshot-2025-08-19-at-9.38.30-PM.jpg", href: "#" },
+  { name: "Camila Dominguez", photo: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/camila-dominguez_1b0fa5c6.jpg", href: "#" },
+  { name: "Malou Sarmiento", photo: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/malou-sarmiento_5484ce97.png", href: "#" },
 ];
 
 const TRAVEL_COACHES: Advisor[] = [

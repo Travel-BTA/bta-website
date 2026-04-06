@@ -58,6 +58,7 @@ import TeamAdmin from "./pages/admin/TeamAdmin";
 import AdminPanel from "./pages/admin/AdminPanel";
 import AdminLogin from "./pages/admin/AdminLogin";
 import ContentEditor from "./pages/admin/ContentEditor";
+import FAQ from "./pages/FAQ";
 function Router() {
   // make sure to consider if you need authentication for certain routes
   return (
@@ -135,6 +136,7 @@ function Router() {
       <Route path={"/terms-and-conditions"} component={TermsAndConditions} />
       <Route path={"/fulfillment-policy"} component={FulfillmentPolicy} />
       <Route path={"/cookie-policy"} component={CookiePolicy} />
+      <Route path={"/faq"} component={FAQ} />
       {/*
         WHY: WordPress blog posts live at root-level slugs (e.g. /lake-garda-holidays-planning-guide).
         This catch-all route intercepts any unmatched path, treats it as a blog post slug,
