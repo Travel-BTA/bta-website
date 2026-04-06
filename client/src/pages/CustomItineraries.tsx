@@ -170,7 +170,7 @@ export default function CustomItineraries() {
           </div>
 
           <p
-            className="text-[#2F2F2F]/80 text-xl md:text-2xl leading-relaxed mb-8"
+            className="text-[#2F2F2F]/80 text-base md:text-lg leading-relaxed mb-8"
             style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
             Are you tired of finding the same cookie-cutter, uninspired itineraries? At BTA, our mission is to create transformational and fully custom travel experiences for our clients. Each itinerary designed by a BTA Virtuoso Advisor will be personally handcrafted to meet your unique needs and expectations. Whether you prefer to explore a new destination by air, land, or sea, you can rest assured that your journey will be unforgettable.
