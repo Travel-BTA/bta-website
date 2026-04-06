@@ -332,9 +332,9 @@ export default function Pricing() {
       </section>
 
       {/* ── What You Get ── */}
+      {/* WHY: #2f2f2f is the brand charcoal — used for dark sections. #bfaf8a is the champagne accent. */}
       <section
         className="py-24 px-6"
-        {/* WHY: #2f2f2f is the brand charcoal — used for dark sections. #bfaf8a is the champagne accent. */}
         style={{ background: "#2f2f2f" }}
       >
         <div className="max-w-5xl mx-auto">
