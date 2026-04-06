@@ -90,7 +90,8 @@ const IMG = {
   // Safari — Janet's photo (Apr 2026): zebras in the bush
   safari:         "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/south-africa-safari-zebra_992b2149.jpg",
   // Hawaii
-  maui:           "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=900&q=80&auto=format&fit=crop",
+  // Maui itinerary day image — Janet's sea turtle at Maui reef (Apr 2026)
+  maui:           "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/jake-houglum-ZCI9sjsJXfM-unsplash_c7fe778f.webp",
   bigIsland:      "https://images.unsplash.com/photo-1542259009477-d625272157b7?w=900&q=80&auto=format&fit=crop",
 };
 
