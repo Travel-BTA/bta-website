@@ -152,3 +152,4 @@
 
 ## Bug Fixes
 - [ ] Fix broken advisor profile photos
+- [ ] Fix FAQ page not loading
