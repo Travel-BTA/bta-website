@@ -121,8 +121,8 @@ const CRUISE_LINES = [
     ],
     culinary:
       "European-inspired menus featuring regional specialties. Select beverages included with meals. Cooking demonstrations on select sailings.",
-    // Rhine Symphony ship on the Rhine. user-provided photo
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/riverside-rhine-symphony_dab3342f.png",
+    // Rhine river cruise ship passing Cochem Castle. clean landscape photo
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/riverside-rhine-clean_62697799.jpg",
     link: "https://www.riverside-guide.com/copilot",
     linkLabel: "Explore Riverside",
     imageRight: true,
@@ -143,7 +143,7 @@ export default function RiverCruises() {
       {/* Stronger overlay (via/50) ensures white text is legible over any image */}
       <section className="relative h-[75vh] min-h-[520px] flex items-end overflow-hidden" style={{ marginTop: 0 }}>
         <img
-          src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/riverside-rhine-symphony_dab3342f.png"
+          src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/riverside-rhine-clean_62697799.jpg"
           alt="Luxury river cruise ship sailing through a European waterway at golden hour"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
