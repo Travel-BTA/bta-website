@@ -212,7 +212,7 @@ export default function About() {
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
             {([
               { name: "Bri Crowder", image: "https://travelbta.com/wp-content/uploads/2022/12/Bri-Crowder-About.jpg" },
-              { name: "Kim Parizek", image: "/images/advisor-kim-parizek.jpg" },
+              { name: "Kim Parizek", image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/advisor-kim-parizek_9c74abd9.jpg" },
               { name: "Jessica Barkley", image: "https://travelbta.com/wp-content/uploads/2025/02/unnamed-17-e1755721947975.jpg" },
               { name: "Cristina Medeiros", image: "https://travelbta.com/wp-content/uploads/2026/01/cris.jpg" },
               { name: "Justin Lintz", image: "https://travelbta.com/wp-content/uploads/2026/03/IMG_5590-1024x768.jpeg" },
@@ -240,10 +240,10 @@ export default function About() {
               { name: "Rebecca Hogan", image: "https://travelbta.com/wp-content/uploads/2026/03/IMG_0181-766x1024.jpeg" },
               { name: "Autumn Garduno", image: "https://travelbta.com/wp-content/uploads/2024/04/unnamed-13-3-1.jpg" },
               { name: "Becca Samuels", image: "https://travelbta.com/wp-content/uploads/2024/08/unnamed-1.jpg" },
-              { name: "Tracey Davis", image: "/images/advisor-tracey-davis.jpg" },
+              { name: "Tracey Davis", image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/advisor-tracey-davis_d8cbd8ec.jpg" },
               { name: "Kathleen Smith", image: "https://travelbta.com/wp-content/uploads/2022/12/Kathleen-Profile-resized.jpg" },
               { name: "Carol Fogerty", image: "https://travelbta.com/wp-content/uploads/2025/05/f2a52e31-59fe-4b31-8793-0a1fdda00163_IMG_1584__3_-1-scaled-e1747425399928.jpg" },
-              { name: "Julie Plummer", image: "/images/advisor-julie-plummer.jpg" },
+              { name: "Julie Plummer", image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/advisor-julie-plummer_9c810986.jpg" },
               { name: "Baylee Shapiro", image: "https://travelbta.com/wp-content/uploads/2025/07/009A8159-scaled.jpeg" },
               { name: "Danitza & Esteban Villanueva", image: "https://travelbta.com/wp-content/uploads/2025/09/Danitza-and-Esteban-Villaneuva-at-The-Tower-Birdge-e1757596376865.jpg" },
               // WHY: Chloe removed per request. Camila and Malou moved to Support Staff section.

@@ -153,3 +153,4 @@
 ## Bug Fixes
 - [ ] Fix broken advisor profile photos
 - [ ] Fix FAQ page not loading
+- [x] Extract PR #1 images, upload to CDN, replace local /public/images refs
