@@ -74,8 +74,8 @@ const IMG = {
   // privateIsland: aerial island view — showcases Kokomo's remote reef setting
   privateIsland:  "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/fiji-kokomo-island-aerial_49ba6cc9.jpg",
   // Costa Rica — Janet's photos (Apr 2026)
-  // arenal: ocelot in Arenal rainforest — captures the rare wildlife encounter that defines this destination
-  arenal:         "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/costa-rica-ocelot-arenal_1f8548e7.jpg",
+  // arenal: sloth in Arenal rainforest — warm, iconic Costa Rica wildlife moment for families
+  arenal:         "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/costa-rica-sloth-arenal_bc18c182.jpg",
   // guanacaste: family surfers on the Pacific coast — active, adventurous Guanacaste energy
   guanacaste:     "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/costa-rica-family-surf_1bc1f9fb.jpg",
   // Japan

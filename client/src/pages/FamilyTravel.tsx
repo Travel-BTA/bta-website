@@ -27,8 +27,8 @@ import { Link } from "wouter";
 const CDN = {
   familyBeach:       "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/wXVbMyseEaNXhhWW.jpg",
   // Costa Rica — Janet's photos (Apr 2026):
-  // costaRicaKayak kept for backward compat but replaced by ocelot for card/banner
-  costaRicaKayak:    "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/costa-rica-ocelot-arenal_1f8548e7.jpg",
+  // costaRicaKayak = sloth in Arenal rainforest (Nayara Tented Camp stop)
+  costaRicaKayak:    "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/costa-rica-sloth-arenal_bc18c182.jpg",
   costaRicaSurf:     "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/costa-rica-family-surf_1bc1f9fb.jpg",
   italyVenice:       "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/vffZjZaZyJeIONSB.jpg",
   thailandElephant:  "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/XVaYiUfdLMyvtpWJ.jpg",
