@@ -73,9 +73,11 @@ const IMG = {
   coralCoast:     "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/fiji-manta-snorkel_v2_0865395d.jpg",
   // privateIsland: aerial island view — showcases Kokomo's remote reef setting
   privateIsland:  "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/fiji-kokomo-island-aerial_49ba6cc9.jpg",
-  // Costa Rica
-  arenal:         "https://images.unsplash.com/photo-1518259102261-b40117eabbc9?w=900&q=80&auto=format&fit=crop",
-  guanacaste:     "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=900&q=80&auto=format&fit=crop",
+  // Costa Rica — Janet's photos (Apr 2026)
+  // arenal: ocelot in Arenal rainforest — captures the rare wildlife encounter that defines this destination
+  arenal:         "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/costa-rica-ocelot-arenal_1f8548e7.jpg",
+  // guanacaste: family surfers on the Pacific coast — active, adventurous Guanacaste energy
+  guanacaste:     "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/costa-rica-family-surf_1bc1f9fb.jpg",
   // Japan
   tokyo:          "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=900&q=80&auto=format&fit=crop",
   kyoto:          "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=900&q=80&auto=format&fit=crop",

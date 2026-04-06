@@ -26,7 +26,10 @@ import { Link } from "wouter";
 // Janet's uploaded photos (Manus CDN — permanent):
 const CDN = {
   familyBeach:       "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/wXVbMyseEaNXhhWW.jpg",
-  costaRicaKayak:    "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/kRsvJFPLBTtRLtDJ.jpg",
+  // Costa Rica — Janet's photos (Apr 2026):
+  // costaRicaKayak kept for backward compat but replaced by ocelot for card/banner
+  costaRicaKayak:    "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/costa-rica-ocelot-arenal_1f8548e7.jpg",
+  costaRicaSurf:     "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/costa-rica-family-surf_1bc1f9fb.jpg",
   italyVenice:       "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/vffZjZaZyJeIONSB.jpg",
   thailandElephant:  "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/XVaYiUfdLMyvtpWJ.jpg",
   icelandWaterfall:  "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/iceland-family-waterfall_21263a3a.jpg",
