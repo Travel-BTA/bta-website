@@ -1,43 +1,13 @@
-/*
- * BTA Design System — index.css
- *
- * Design Philosophy: Luxury, Elevated, Modern, Sophisticated
- *
- * OFFICIAL BRAND COLORS (from brand kit):
- *   Champagne Gold:  #BFAF8A  → primary accent, buttons, eyebrows, borders
- *   Aegean Blue:     #384959  → text on light backgrounds, dark accents, nav
- *   Linen White:     #faf9f6  → text on dark backgrounds, nav overlay text
- *   Warm Stone:      #faf9f6  → section backgrounds, secondary surfaces
- *   Charcoal Ink:    #2F2F2F  → primary body text on light backgrounds
- *
- * Typography:
- *   Display (H1):  Playfair Display — large, uppercase, serif
- *   Script:        Allura — decorative script pops and quotes only
- *   Heading (H2):  Playfair Display — uppercase, tracked
- *   Body:          Playfair Display 400 — body text
- *   Labels:        Playfair Display 500 italic — eyebrow labels (champagne gold)
- *
- * HARD TYPOGRAPHY RULES:
- *   Instrument Serif  → ALWAYS uppercase, weight 400, upright. No exceptions.
- *   Playfair Display  → ALWAYS 500 italic (subheadings) OR 400 upright (body). Never uppercase, never 600+, never light.
- */
-
 @import "tailwindcss";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  /* BTA Official Brand Colors in OKLCH */
-  --color-bta-gold:       oklch(0.76 0.053 87.4);   /* #bfaf8a — Champagne Gold */
-  --color-bta-gold-dark:  oklch(0.68 0.055 87.4);   /* #bfaf8a/80 — Champagne Gold hover */
-  --color-bta-aegean:     oklch(0.40 0.035 247.2);  /* #384959 — Aegean Blue */
-  --color-bta-linen:      oklch(0.98 0.004 91.6);   /* #faf9f6 — Linen White */
-  --color-bta-stone:      oklch(0.94 0.009 84.6);   /* #edeae4 — Warm Stone */
-  --color-bta-charcoal:   oklch(0.31 0.000 263.3);  /* #2f2f2f — Charcoal Ink */
-  --color-bta-navy:       oklch(0.40 0.035 247.2);  /* #384959 — Aegean Blue (dark sections) */
-
-  /* Semantic tokens */
+  --font-serif: var(--font-heading);
+  --font-sans: var(--font-body);
+  --font-script: var(--font-script);
+  
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -61,79 +31,153 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
 }
 
 :root {
-  --radius: 0rem; /* Sharp corners — luxury feel */
+  /* Brand Colors */
+  --color-bta-gold: #A18B6E;
+  --color-bta-navy: #040619;
+  --color-bta-blue: #7982A2;
+  --color-bta-dark-gold: #9C886A;
+  
+  /* Typography */
+  --font-heading: "Perandory", "Playfair Display", serif;
+  --font-body: "Playfair", "Playfair Display", serif;
+  --font-script: "Brittany", "Great Vibes", cursive;
 
-  /* Warm Stone as page background, Charcoal Ink as body text */
-  --background:           oklch(0.93 0.01 80);    /* #faf9f6 Warm Stone */
-  --foreground:           oklch(0.23 0.00 0);     /* #2F2F2F Charcoal Ink */
-  --card:                 oklch(0.97 0.005 80);   /* near-white card */
-  --card-foreground:      oklch(0.23 0.00 0);
-  --popover:              oklch(0.97 0.005 80);
-  --popover-foreground:   oklch(0.23 0.00 0);
-  --primary:              oklch(0.73 0.05 78);    /* #BFAF8A Champagne Gold */
-  --primary-foreground:   oklch(1 0 0);           /* White */
-  --secondary:            oklch(0.93 0.01 80);    /* Warm Stone */
-  --secondary-foreground: oklch(0.35 0.04 230);   /* Aegean Blue */
-  --muted:                oklch(0.93 0.01 80);
-  --muted-foreground:     oklch(0.50 0.03 78);
-  --accent:               oklch(0.73 0.05 78);    /* Champagne Gold */
-  --accent-foreground:    oklch(1 0 0);
-  --destructive:          oklch(0.577 0.245 27.325);
+  /* Theme Variables */
+  --primary: var(--color-bta-gold);
+  --primary-foreground: #FFFFFF;
+  
+  --secondary: var(--color-bta-navy);
+  --secondary-foreground: #FFFFFF;
+  
+  --accent: var(--color-bta-blue);
+  --accent-foreground: #FFFFFF;
+  
+  --background: #FFFFFF;
+  --foreground: var(--color-bta-navy);
+  
+  --card: #FFFFFF;
+  --card-foreground: var(--color-bta-navy);
+  
+  --popover: #FFFFFF;
+  --popover-foreground: var(--color-bta-navy);
+  
+  --muted: #F5F5F5;
+  --muted-foreground: #666666;
+  
+  --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.985 0 0);
-  --border:               oklch(0.85 0.02 78);    /* subtle gold-tinted border */
-  --input:                oklch(0.88 0.015 78);
-  --ring:                 oklch(0.73 0.05 78);    /* Champagne Gold focus ring */
+  
+  --border: #E5E5E5;
+  --input: #E5E5E5;
+  --ring: var(--color-bta-gold);
+  
+  --radius: 0rem; /* Sharp corners for editorial look */
+  
+  /* Sidebar / Admin defaults */
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: var(--color-bta-navy);
+  --sidebar-primary: var(--color-bta-gold);
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #F5F5F5;
+  --sidebar-accent-foreground: var(--color-bta-navy);
+  --sidebar-border: #E5E5E5;
+  --sidebar-ring: var(--color-bta-gold);
+}
+
+.dark {
+  --primary: var(--color-blue-700);
+  --primary-foreground: var(--color-blue-50);
+  --sidebar-primary: var(--color-blue-500);
+  --sidebar-primary-foreground: var(--color-blue-50);
+  --background: oklch(0.141 0.005 285.823);
+  --foreground: oklch(0.85 0.005 65);
+  --card: oklch(0.21 0.006 285.885);
+  --card-foreground: oklch(0.85 0.005 65);
+  --popover: oklch(0.21 0.006 285.885);
+  --popover-foreground: oklch(0.85 0.005 65);
+  --secondary: oklch(0.24 0.006 286.033);
+  --secondary-foreground: oklch(0.7 0.005 65);
+  --muted: oklch(0.274 0.006 286.033);
+  --muted-foreground: oklch(0.705 0.015 286.067);
+  --accent: oklch(0.274 0.006 286.033);
+  --accent-foreground:  oklch(0.92 0.005 65);
+  --destructive: oklch(0.704 0.191 22.216);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.488 0.243 264.376);
+  --chart-1: var(--color-blue-300);
+  --chart-2: var(--color-blue-500);
+  --chart-3: var(--color-blue-600);
+  --chart-4: var(--color-blue-700);
+  --chart-5: var(--color-blue-800);
+  --sidebar: oklch(0.21 0.006 285.885);
+  --sidebar-foreground: oklch(0.85 0.005 65);
+  --sidebar-accent: oklch(0.274 0.006 286.033);
+  --sidebar-accent-foreground:  oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.488 0.243 264.376);
 }
 
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
-
-  html {
-    scroll-behavior: smooth;
-  }
-
   body {
-    @apply bg-background text-foreground;
-    /* WHY: Playfair Display Regular is the BTA brand body font */
-    font-family: 'Playfair Display', Georgia, serif;
-    font-weight: 400;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    @apply bg-background text-foreground font-sans;
   }
-
   h1, h2, h3, h4, h5, h6 {
-    /* WHY: Instrument Serif is the BTA default heading font at weight 400 upright.
-       HARD RULE: Instrument Serif is ALWAYS uppercase and NEVER italic.
-       text-transform is NOT set globally — uppercase is applied per element.
-       Playfair Display headings must NEVER be forced uppercase. */
-    font-family: 'Instrument Serif', Georgia, serif;
-    font-weight: 400;
-    font-style: normal;
+    @apply font-serif;
   }
-
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
   [type="button"]:not(:disabled),
   [type="submit"]:not(:disabled),
+  [type="reset"]:not(:disabled),
   a[href],
-  select:not(:disabled) {
+  select:not(:disabled),
+  input[type="checkbox"]:not(:disabled),
+  input[type="radio"]:not(:disabled) {
     @apply cursor-pointer;
   }
 }
 
 @layer components {
-  /* Container: centered, responsive padding */
+  /**
+   * Custom container utility that centers content and adds responsive padding.
+   *
+   * This overrides Tailwind's default container behavior to:
+   * - Auto-center content (mx-auto)
+   * - Add responsive horizontal padding
+   * - Set max-width for large screens
+   *
+   * Usage: <div className="container">...</div>
+   *
+   * For custom widths, use max-w-* utilities directly:
+   * <div className="max-w-6xl mx-auto px-4">...</div>
+   */
   .container {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 1rem; /* 16px - mobile padding */
+    padding-right: 1rem;
   }
 
   .flex {
@@ -143,547 +187,16 @@
 
   @media (min-width: 640px) {
     .container {
-      padding-left: 2rem;
-      padding-right: 2rem;
+      padding-left: 1.5rem; /* 24px - tablet padding */
+      padding-right: 1.5rem;
     }
   }
 
   @media (min-width: 1024px) {
     .container {
-      padding-left: 4rem;
-      padding-right: 4rem;
-      max-width: 1440px;
-    }
-  }
-
-  /* BTA Typography Utilities */
-  .font-display {
-    font-family: 'Playfair Display', Georgia, serif;
-  }
-
-  .font-script {
-    /* WHY: Allura is the BTA brand script/pop font */
-    font-family: 'Allura', cursive;
-    font-style: italic;
-    font-weight: 400;
-  }
-
-  .font-body {
-    /* WHY: Playfair Display Regular is the BTA brand body font */
-    font-family: 'Playfair Display', Georgia, serif;
-    font-weight: 400;
-  }
-
-  .font-smallcaps {
-    /* WHY: Playfair Display 500 italic is the BTA eyebrow/label font — hard rule, never 600, never upright */
-    font-family: 'Playfair Display', Georgia, serif;
-    font-weight: 500;
-    font-style: italic;
-    letter-spacing: 0.02em;
-  }
-
-  /* BTA Section Eyebrow Label — Playfair Display 500 italic, Champagne Gold
-     HARD RULE: Playfair Display is ALWAYS 500 italic (subheadings) or 400 upright (body).
-     Never use 600, 700, or uppercase with Playfair Display. */
-  .bta-eyebrow {
-    font-family: 'Playfair Display', Georgia, serif;
-    font-weight: 500;
-    font-style: italic;
-    font-size: 1.1rem;
-    color: #BFAF8A;
-    letter-spacing: 0.02em;
-  }
-
-  /* BTA Outlined Button — white version (on dark/image backgrounds) */
-  /* BTA Nav Link — Instrument Serif 400 upright, never italic, never bold */
-  .bta-nav-link {
-    font-family: 'Instrument Serif', Georgia, serif;
-    font-weight: 400;
-    font-style: normal;
-    text-transform: uppercase;
-    letter-spacing: 0.18em;
-  }
-
-  .bta-btn-outline-white {
-    display: inline-block;
-    padding: 0.6rem 2rem;
-    border: 1px solid rgba(255,255,255,0.8);
-    color: white;
-    font-family: 'Playfair Display', Georgia, serif;
-    font-size: 0.75rem;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    background: transparent;
-    transition: background 0.25s ease, color 0.25s ease;
-  }
-  .bta-btn-outline-white:hover {
-    background: rgba(255,255,255,0.15);
-  }
-
-  /* BTA Outlined Button — gold version (on light/stone backgrounds) */
-  .bta-btn-outline-dark {
-    display: inline-block;
-    padding: 0.6rem 2rem;
-    border: 1px solid #BFAF8A;
-    color: #BFAF8A;
-    font-family: 'Playfair Display', Georgia, serif;
-    font-size: 0.75rem;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    background: transparent;
-    transition: background 0.25s ease, color 0.25s ease;
-  }
-  .bta-btn-outline-dark:hover {
-    background: #BFAF8A;
-    color: white;
-  }
-
-  /* BTA Filled Button — Champagne Gold */
-  .bta-btn-gold {
-    display: inline-block;
-    padding: 0.65rem 2.5rem;
-    background: #BFAF8A;
-    color: white;
-    font-family: 'Playfair Display', Georgia, serif;
-    font-size: 0.75rem;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    border: 1px solid #BFAF8A;
-    transition: background 0.25s ease;
-  }
-  .bta-btn-gold:hover {
-    background: #bfaf8a;
-    border-color: #bfaf8a;
-  }
-
-  /* Section heading style — Instrument Serif is the BTA title font, always uppercase */
-  .bta-section-title {
-    font-family: 'Instrument Serif', Georgia, serif;
-    font-weight: 400;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    line-height: 1.15;
-  }
-
-  /* ─── Blog Body Typography ──────────────────────────────────────────────────
-     WHY: WordPress post content arrives as raw HTML with no styling applied.
-     These rules style every element the WordPress editor can produce — headings,
-     paragraphs, lists, blockquotes, images, tables — to match the BTA luxury
-     editorial aesthetic. Instrument Serif for headings, Playfair Display for
-     body text, generous spacing, and brand-consistent colors throughout.
-  ─────────────────────────────────────────────────────────────────────────── */
-  .blog-body {
-    font-family: 'Playfair Display', Georgia, serif;
-    font-size: 1.2rem;
-    line-height: 1.9;
-    color: #2F2F2F;
-  }
-
-  /* Paragraphs — generous spacing between every paragraph, always visible.
-     WHY: margin-top ensures space even when the browser collapses adjacent margins.
-     Using both top and bottom guarantees a gap no matter what precedes or follows. */
-  .blog-body p {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    font-size: 1.2rem;
-    line-height: 1.9;
-    font-family: 'Playfair Display', Georgia, serif;
-  }
-
-  /* First paragraph directly after a heading should not double-stack space */
-  .blog-body h1 + p,
-  .blog-body h2 + p,
-  .blog-body h3 + p,
-  .blog-body h4 + p,
-  .blog-body h5 + p,
-  .blog-body h6 + p {
-    margin-top: 0.5rem;
-  }
-
-  /* Prevent margin collapse by using padding on the container instead of relying
-     solely on child margins — this is the root cause of paragraphs touching */
-  .blog-body > * + * {
-    margin-top: 1.5rem;
-  }
-
-  /* Override for headings which already have their own top margin */
-  .blog-body > h1,
-  .blog-body > h2,
-  .blog-body > h3,
-  .blog-body > h4,
-  .blog-body > h5,
-  .blog-body > h6 {
-    margin-top: 3rem;
-  }
-
-  /* ── Headings — Instrument Serif for blog post headings ── */
-  .blog-body h1,
-  .blog-body h2,
-  .blog-body h3,
-  .blog-body h4,
-  .blog-body h5,
-  .blog-body h6 {
-    font-family: 'Instrument Serif', Georgia, serif;
-    font-weight: 400;
-    color: #2F2F2F;
-    line-height: 1.25;
-    margin-top: 3rem;
-    margin-bottom: 1.25rem;
-  }
-
-  /* H2 — major section breaks, subtle gold underline */
-  .blog-body h2 {
-    font-size: clamp(1.65rem, 3vw, 2.25rem);
-    padding-bottom: 0.6rem;
-    border-bottom: 1px solid #edeae4;
-  }
-
-  /* H3 — sub-section headings */
-  .blog-body h3 {
-    font-size: clamp(1.35rem, 2.5vw, 1.8rem);
-    color: #384959;
-  }
-
-  /* H4 — tertiary headings, italic to distinguish from H3 */
-  .blog-body h4 {
-    font-size: clamp(1.15rem, 2vw, 1.4rem);
-    font-style: italic;
-    color: #384959;
-  }
-
-  /* H5 / H6 — used by WordPress for labels and disclaimers */
-  .blog-body h5,
-  .blog-body h6 {
-    font-size: 0.85rem;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: #9C886A;
-    margin-top: 2rem;
-  }
-
-  /* ── Lists ── */
-  .blog-body ul,
-  .blog-body ol {
-    margin: 0 0 1.75rem 1.75rem;
-    padding: 0;
-  }
-
-  .blog-body ul { list-style-type: disc; }
-  .blog-body ol { list-style-type: decimal; }
-
-  .blog-body li {
-    margin-bottom: 0.5rem;
-    line-height: 1.8;
-    font-size: 1.2rem;
-  }
-
-  /* ── Blockquotes — gold left border, Aegean Blue text ── */
-  .blog-body blockquote {
-    border-left: 3px solid #9C886A;
-    margin: 2.5rem 0;
-    padding: 1rem 1.75rem;
-    background: #faf9f6;
-    font-style: italic;
-    font-size: 1.25rem;
-    color: #384959;
-    line-height: 1.75;
-  }
-
-  .blog-body blockquote p {
-    margin-bottom: 0;
-  }
-
-  /* ── Images — natural dimensions, generous vertical spacing ── */
-  /* WHY: Blog photos come in varying sizes (not always 800x600). We must NOT
-     force width:100% as that stretches portrait/square images to fill the
-     full column width and distorts the composition. Instead we use max-width
-     so images never overflow the column but always render at their natural
-     aspect ratio and size. */
-  .blog-body img {
-    max-width: 100%;
-    width: auto;
-    height: auto;
-    display: block;
-    margin: 2.5rem auto;
-    border-radius: 2px;
-  }
-
-  .blog-body figure {
-    margin: 2.5rem 0;
-  }
-
-  .blog-body figcaption {
-    text-align: center;
-    font-size: 0.8rem;
-    color: #9C886A;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    margin-top: 0.5rem;
-  }
-
-  /* ── Links — Aegean Blue, gold on hover ── */
-  .blog-body a {
-    color: #384959;
-    text-decoration: underline;
-    text-underline-offset: 3px;
-    transition: color 0.2s ease;
-  }
-
-  .blog-body a:hover {
-    color: #9C886A;
-  }
-
-  /* ── Strong / Em ── */
-  .blog-body strong,
-  .blog-body b {
-    font-weight: 600;
-    color: #2F2F2F;
-  }
-
-  .blog-body em,
-  .blog-body i {
-    font-style: italic;
-  }
-
-  /* ── Horizontal Rule ── */
-  .blog-body hr {
-    border: none;
-    border-top: 1px solid #edeae4;
-    margin: 3rem 0;
-  }
-
-  /* ── Tables ── */
-  .blog-body table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 2rem 0;
-    font-size: 1rem;
-  }
-
-  .blog-body th {
-    background: #384959;
-    color: #fff;
-    font-family: 'Playfair Display', serif;
-    font-weight: 400;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    font-size: 0.75rem;
-    padding: 0.75rem 1rem;
-    text-align: left;
-  }
-
-  .blog-body td {
-    padding: 0.75rem 1rem;
-    border-bottom: 1px solid #edeae4;
-    vertical-align: top;
-  }
-
-  .blog-body tr:last-child td {
-    border-bottom: none;
-  }
-
-  /* ── WordPress block wrappers ── */
-  .blog-body .wp-block-image,
-  .blog-body .wp-block-embed {
-    margin: 2.5rem 0;
-  }
-
-  .blog-body .wp-block-quote {
-    border-left: 3px solid #9C886A;
-    padding-left: 1.5rem;
-    font-style: italic;
-    color: #384959;
-  }
-
-  /* ── h6 affiliate/Virtuoso disclaimer fallback ──
-     WHY: The removeDisclaimer() regex strips these in JS, but as a CSS
-     safety net we also style any remaining h6 at the top of a post to
-     be small, italic, non-caps, and muted — never large bold uppercase. */
-  .blog-body > h6:first-child,
-  .blog-body h6[data-start] {
-    font-size: 0.78rem !important;
-    font-style: italic !important;
-    font-weight: 400 !important;
-    text-transform: none !important;
-    color: #9C886A !important;
-    opacity: 0.8 !important;
-    letter-spacing: 0.01em !important;
-    line-height: 1.6 !important;
-    margin-bottom: 2rem !important;
-    text-align: left !important;
-  }
-
-  /* ── BTA Luxury Travel Club box ──────────────────────────────────────────
-     WHY: The WP source uses a light stone background with a grey border.
-     We override to a warm sand (#f5ede0) with slate blue text and gold accents —
-     light, editorial, and magazine-adjacent. Pairs beautifully with the article
-     body text and doesn't compete with hero imagery. */
-
-  /* Outer container: warm sand, gold border, generous padding */
-  .blog-body > div[style*="background-color: #faf9f7"],
-  .blog-body > div[style*="background-color:#faf9f7"],
-  .blog-body > div[style*="border: 1px solid #7a7a7a"] {
-    background-color: #edeae4 !important;
-    border: 1px solid #9C886A !important;
-    padding: 48px 40px !important;
-    margin: 3rem 0 !important;
-  }
-
-  /* Title (h2.vip-main-heading): Instrument Serif, slate blue — editorial label */
-  .blog-body .vip-main-heading {
-    font-family: 'Instrument Serif', Georgia, serif !important;
-    font-size: clamp(1.1rem, 2.5vw, 1.35rem) !important;
-    font-weight: 400 !important;
-    color: #384959 !important;
-    letter-spacing: 0.12em !important;
-    text-transform: uppercase !important;
-    background-color: #edeae4 !important;
-    padding: 0 20px !important;
-  }
-
-  /* The decorative rule behind the title: gold, softened */
-  .blog-body > div[style*="border: 1px solid #7a7a7a"] > div[style*="border-top"] > div,
-  .blog-body > div[style*="background-color: #faf9f7"] > div[style*="border-top"] > div {
-    border-top-color: #9C886A !important;
-    opacity: 0.5;
-  }
-
-  /* Subheading (p.vip-subheading): italic, warm brown-gold */
-  .blog-body .vip-subheading {
-    font-family: 'Playfair Display', Georgia, serif !important;
-    font-size: 0.95rem !important;
-    font-style: italic !important;
-    color: #7a6a55 !important;
-    line-height: 1.75 !important;
-    margin: 0 0 28px !important;
-  }
-  .blog-body .vip-subheading em {
-    font-style: italic !important;
-    color: #7a6a55 !important;
-  }
-
-  /* Amenity list items (h6 inside the box): slate blue, spaced, no bold */
-  .blog-body > div[style*="border: 1px solid #7a7a7a"] h6,
-  .blog-body > div[style*="background-color: #faf9f7"] h6 {
-    font-family: 'Playfair Display', Georgia, serif !important;
-    font-size: 0.72rem !important;
-    font-weight: 400 !important;
-    font-style: normal !important;
-    color: #384959 !important;
-    letter-spacing: 0.14em !important;
-    text-transform: uppercase !important;
-    margin: 0 !important;
-    padding: 10px 0 !important;
-    border-bottom: 1px solid rgba(156, 136, 106, 0.3) !important;
-    line-height: 1.4 !important;
-  }
-
-  /* First amenity item: gold top rule */
-  .blog-body > div[style*="border: 1px solid #7a7a7a"] h6:first-of-type,
-  .blog-body > div[style*="background-color: #faf9f7"] h6:first-of-type {
-    border-top: 1px solid rgba(156, 136, 106, 0.3) !important;
-  }
-
-  /* Disclaimer h6 (the *Benefits apply one): muted, italic, no border */
-  .blog-body > div[style*="border: 1px solid #7a7a7a"] h6:last-of-type,
-  .blog-body > div[style*="background-color: #faf9f7"] h6:last-of-type {
-    font-size: 0.62rem !important;
-    font-style: italic !important;
-    color: rgba(122, 106, 85, 0.6) !important;
-    letter-spacing: 0.04em !important;
-    text-transform: none !important;
-    border-bottom: none !important;
-    padding-top: 16px !important;
-    padding-bottom: 0 !important;
-    margin-bottom: 24px !important;
-  }
-
-  /* Strong tags inside amenity h6s: inherit weight (no bold) */
-  .blog-body > div[style*="border: 1px solid #7a7a7a"] h6 strong,
-  .blog-body > div[style*="background-color: #faf9f7"] h6 strong {
-    font-weight: 400 !important;
-    color: inherit !important;
-  }
-
-  /* ── BOOK WITH VIP AMENITIES button ──
-     WHY: WordPress embeds inline styles (padding:16px 40px, background:#040619)
-     directly on the <a> tag. We override to a gold outline ghost button that
-     feels editorial and refined — not a hard-sell dark block. */
-  .blog-body a[href*="luxurytravelclubs"] {
-    display: inline-block !important;
-    padding: 11px 32px !important;
-    background-color: transparent !important;
-    color: #9C886A !important;
-    border: 1px solid #9C886A !important;
-    font-family: 'Playfair Display', Georgia, serif !important;
-    font-size: 0.65rem !important;
-    letter-spacing: 0.22em !important;
-    text-transform: uppercase !important;
-    text-decoration: none !important;
-    border-radius: 0 !important;
-    transition: background-color 0.3s ease, color 0.3s ease !important;
-    margin-top: 8px !important;
-  }
-
-  .blog-body a[href*="luxurytravelclubs"]:hover {
-    background-color: #9C886A !important;
-    color: #ffffff !important;
-  }
-
-  /* ── WordPress CTA buttons ── */
-  .blog-body .wp-block-buttons,
-  .blog-body .wp-block-button {
-    margin: 2rem 0;
-    text-align: center;
-  }
-
-  .blog-body .wp-block-button__link {
-    display: inline-block;
-    padding: 0.75rem 2.5rem;
-    background: #2F2F2F;
-    color: #fff;
-    font-family: 'Playfair Display', Georgia, serif;
-    font-size: 0.75rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: background 0.25s ease;
-  }
-
-  .blog-body .wp-block-button__link:hover {
-    background: #9C886A;
-    color: #fff;
-  }
-
-  /* ── Mobile adjustments ── */
-  @media (max-width: 640px) {
-    .blog-body {
-      font-size: 1.0625rem;
-      line-height: 1.85;
-    }
-
-    .blog-body p,
-    .blog-body li {
-      font-size: 1.0625rem;
-    }
-
-    .blog-body h2 {
-      font-size: 1.5rem;
-      margin-top: 2.25rem;
-    }
-
-    .blog-body h3 {
-      font-size: 1.25rem;
-    }
-
-    .blog-body h4 {
-      font-size: 1.1rem;
-    }
-
-    .blog-body blockquote {
-      font-size: 1.05rem;
-      padding: 0.75rem 1rem;
+      padding-left: 2rem; /* 32px - desktop padding */
+      padding-right: 2rem;
+      max-width: 1280px; /* Standard content width */
     }
   }
 }

@@ -11,7 +11,7 @@ export default function Home() {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="/images/hero-advisor-tech.png" 
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/Gx5wcsVGxSvVzDSaV9n2Eh/hero-advisor-tech_e7009371.png" 
             alt="Luxury Travel Advisor" 
             className="w-full h-full object-cover"
           />
@@ -59,7 +59,7 @@ export default function Home() {
             <div className="relative">
               <div className="aspect-[4/5] overflow-hidden">
                 <img 
-                  src="/images/community-advisors.png" 
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/Gx5wcsVGxSvVzDSaV9n2Eh/community-advisors_59d6f94b.png" 
                   alt="BTA Community" 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
@@ -156,7 +156,7 @@ export default function Home() {
               </div>
               <div className="relative z-10 rounded-sm overflow-hidden shadow-2xl border border-white/10 order-1 lg:order-2 transform hover:scale-[1.02] transition-transform duration-500">
                 <img 
-                  src="/images/bta_intranet_hub.png" 
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/Gx5wcsVGxSvVzDSaV9n2Eh/bta_intranet_hub_a47df6d5.png" 
                   alt="BTA Intranet Central Hub" 
                   className="w-full h-auto"
                 />
@@ -221,7 +221,7 @@ export default function Home() {
               </div>
               <div className="relative z-10 rounded-sm overflow-hidden shadow-2xl border border-white/10 order-1 lg:order-2">
                 <img 
-                  src="/images/workflow-kanban-glass.png" 
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/Gx5wcsVGxSvVzDSaV9n2Eh/workflow-kanban-glass_1dec8950.png" 
                   alt="Workflow Automation" 
                   className="w-full h-auto"
                 />
@@ -240,7 +240,7 @@ export default function Home() {
               </div>
               <div className="order-1 lg:order-2">
                 <img 
-                  src="/images/marketing-suite-collage.png" 
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/Gx5wcsVGxSvVzDSaV9n2Eh/marketing-suite-collage_8542542e.png" 
                   alt="Marketing Suite" 
                   className="w-full h-auto rounded-sm shadow-2xl border border-white/10 mb-8"
                 />
@@ -277,7 +277,7 @@ export default function Home() {
             <div className="relative">
               <div className="absolute -inset-10 bg-primary/5 rounded-full blur-3xl" />
               <img 
-                src="/images/iris_ai_map_network.png" 
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/Gx5wcsVGxSvVzDSaV9n2Eh/iris_ai_map_network_06af6218.png" 
                 alt="Iris AI" 
                 className="relative z-10 w-full rounded-sm shadow-2xl"
               />
@@ -328,7 +328,7 @@ export default function Home() {
               </div>
               <div className="flex-grow flex items-start justify-center">
                 <img 
-                  src="/images/itinerary_tool_showcase.png" 
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/Gx5wcsVGxSvVzDSaV9n2Eh/itinerary_tool_showcase_903493dc.png" 
                   alt="Integrated Itinerary Tool Interface" 
                   className="w-full h-auto shadow-lg border border-border/50 rounded-sm"
                 />
@@ -346,7 +346,7 @@ export default function Home() {
               </div>
               <div className="flex-grow flex items-start justify-center">
                 <img 
-                  src="/images/mobile_app_showcase.png" 
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/Gx5wcsVGxSvVzDSaV9n2Eh/mobile_app_showcase_1106b4d1.png" 
                   alt="BTA Mobile App Interface Showcase" 
                   className="w-full h-auto shadow-lg border border-border/50 rounded-sm"
                 />
@@ -395,7 +395,7 @@ export default function Home() {
             <div className="order-1 lg:order-2 relative">
               <div className="relative z-10">
                 <img 
-                  src="/images/luxury-villa-pool.png" 
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/Gx5wcsVGxSvVzDSaV9n2Eh/luxury-villa-pool_39aac5f1.png" 
                   alt="Luxury Booking" 
                   className="w-full shadow-2xl"
                 />
@@ -415,7 +415,7 @@ export default function Home() {
             <div className="relative order-2 lg:order-1">
               <div className="aspect-[4/3] overflow-hidden rounded-sm shadow-2xl">
                 <img 
-                  src="/images/philanthropy_impact.png" 
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/Gx5wcsVGxSvVzDSaV9n2Eh/philanthropy_impact_11d2caec.png" 
                   alt="BTA Philanthropy Impact" 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
@@ -467,7 +467,7 @@ export default function Home() {
       <section className="py-32 bg-secondary text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
            <img 
-            src="/images/hero-advisor-tech.png" 
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/Gx5wcsVGxSvVzDSaV9n2Eh/hero-advisor-tech_e7009371.png" 
             alt="Background" 
             className="w-full h-full object-cover grayscale"
           />
