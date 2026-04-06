@@ -51,7 +51,7 @@ const SLIDES = [
 
 /** Shared logo list so both the in-hero bar and the mobile bar use the same source */
 const PARTNER_LOGOS = [
-  { src: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/virtuoso-white_3531f0d2.png", alt: "Virtuoso Member", heightClass: "h-10 md:h-14" },
+  { src: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/virtuoso-white_3531f0d2.png", alt: "Virtuoso Member", heightClass: "h-[52px] md:h-[73px]" },
   { src: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/forbes-white_4b960c7c.png", alt: "Forbes Travel Guide", heightClass: "h-8 md:h-10" },
   { src: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/asta-white_6eb5d156.png", alt: "ASTA", heightClass: "h-8 md:h-10" },
   { src: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/best-of-valley-white_a7701861.png", alt: "Best of Our Valley 2026 Winner", heightClass: "h-8 md:h-10" },
