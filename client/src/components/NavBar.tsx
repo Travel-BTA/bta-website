@@ -73,7 +73,7 @@ const WORK_WITH_US_SUBMENU = [
 const dropdownPanelClass =
   "absolute top-full left-0 mt-2 bg-[#384959] border border-white/10 shadow-xl min-w-[230px] z-50";
 const dropdownLinkClass =
-  "block px-5 py-3 bta-nav-link text-[10px] tracking-[0.16em] text-white/80 hover:text-white hover:bg-white/5 uppercase transition-colors border-b border-white/10 last:border-b-0";
+  "block px-5 py-3 bta-nav-link text-[12px] tracking-[0.14em] text-white/80 hover:text-white hover:bg-white/5 uppercase transition-colors border-b border-white/10 last:border-b-0";
 
 // ── Desktop dropdown wrapper ──────────────────────────────────────────────────
 function DesktopDropdown({
@@ -101,14 +101,14 @@ function DesktopDropdown({
       {href ? (
         <a
           href={href}
-          className="bta-nav-link text-[11px] tracking-[0.18em] text-white/90 hover:text-white transition-colors uppercase flex items-center gap-1"
+          className="bta-nav-link text-[13px] tracking-[0.15em] text-white/90 hover:text-white transition-colors uppercase flex items-center gap-1"
         >
           {label}
           <span className="text-white/60 text-[9px]">▾</span>
         </a>
       ) : (
         <button
-          className="bta-nav-link text-[11px] tracking-[0.18em] text-white/90 hover:text-white transition-colors uppercase flex items-center gap-1 bg-transparent border-0 cursor-pointer"
+          className="bta-nav-link text-[13px] tracking-[0.15em] text-white/90 hover:text-white transition-colors uppercase flex items-center gap-1 bg-transparent border-0 cursor-pointer"
         >
           {label}
           <span className="text-white/60 text-[9px]">▾</span>
@@ -144,7 +144,7 @@ function MobileAccordionItem({
   return (
     <div>
       <button
-        className="bta-nav-link text-[12px] tracking-[0.18em] text-white/90 hover:text-white uppercase flex items-center gap-2 w-full text-left bg-transparent border-0 cursor-pointer"
+        className="bta-nav-link text-[13px] tracking-[0.15em] text-white/90 hover:text-white uppercase flex items-center gap-2 w-full text-left bg-transparent border-0 cursor-pointer"
         onClick={() => setOpen((v) => !v)}
       >
         {label}
@@ -160,7 +160,7 @@ function MobileAccordionItem({
           {href && (
             <a
               href={href}
-              className="bta-nav-link text-[11px] tracking-[0.16em] text-white/80 hover:text-white uppercase"
+              className="bta-nav-link text-[13px] tracking-[0.14em] text-white/80 hover:text-white uppercase"
               onClick={onClose}
             >
               Overview
@@ -170,7 +170,7 @@ function MobileAccordionItem({
             <a
               key={item.href}
               href={item.href}
-              className="bta-nav-link text-[11px] tracking-[0.16em] text-white/80 hover:text-white uppercase"
+              className="bta-nav-link text-[13px] tracking-[0.14em] text-white/80 hover:text-white uppercase"
               onClick={onClose}
             >
               {item.label}
@@ -262,7 +262,7 @@ export default function NavBar() {
           {/* Destinations — direct link */}
           <a
             href="/destinations"
-            className="bta-nav-link text-[11px] tracking-[0.18em] text-white/90 hover:text-white transition-colors uppercase"
+            className="bta-nav-link text-[13px] tracking-[0.15em] text-white/90 hover:text-white transition-colors uppercase"
           >
             Destinations
           </a>
@@ -290,7 +290,7 @@ export default function NavBar() {
           {/* Family Travel — direct link */}
           <a
             href="/experiences/family-travel"
-            className="bta-nav-link text-[11px] tracking-[0.18em] text-white/90 hover:text-white transition-colors uppercase"
+            className="bta-nav-link text-[13px] tracking-[0.15em] text-white/90 hover:text-white transition-colors uppercase"
           >
             Family Travel
           </a>
@@ -298,7 +298,7 @@ export default function NavBar() {
           {/* Journal — direct link */}
           <a
             href="/journal"
-            className="bta-nav-link text-[11px] tracking-[0.18em] text-white/90 hover:text-white transition-colors uppercase"
+            className="bta-nav-link text-[13px] tracking-[0.15em] text-white/90 hover:text-white transition-colors uppercase"
           >
             Journal
           </a>
@@ -358,7 +358,7 @@ export default function NavBar() {
             )}
           </div>
 
-          <a href={nav.cta.href} className="bta-btn-outline-white text-[10px] py-2 px-5">
+          <a href={nav.cta.href} className="bta-btn-outline-white text-[12px] py-2 px-5">
             {nav.cta.label}
           </a>
         </div>
@@ -397,7 +397,7 @@ export default function NavBar() {
 
             <a
               href="/destinations"
-              className="bta-nav-link text-[12px] tracking-[0.18em] text-white/90 hover:text-white uppercase"
+              className="bta-nav-link text-[13px] tracking-[0.15em] text-white/90 hover:text-white uppercase"
               onClick={() => setMenuOpen(false)}
             >
               Destinations
@@ -419,7 +419,7 @@ export default function NavBar() {
 
             <a
               href="/experiences/family-travel"
-              className="bta-nav-link text-[12px] tracking-[0.18em] text-white/90 hover:text-white uppercase"
+              className="bta-nav-link text-[13px] tracking-[0.15em] text-white/90 hover:text-white uppercase"
               onClick={() => setMenuOpen(false)}
             >
               Family Travel
@@ -427,7 +427,7 @@ export default function NavBar() {
 
             <a
               href="/journal"
-              className="bta-nav-link text-[12px] tracking-[0.18em] text-white/90 hover:text-white uppercase"
+              className="bta-nav-link text-[13px] tracking-[0.15em] text-white/90 hover:text-white uppercase"
               onClick={() => setMenuOpen(false)}
             >
               Journal
@@ -446,7 +446,7 @@ export default function NavBar() {
               onClose={() => setMenuOpen(false)}
             />
 
-            <a href={nav.cta.href} className="bta-btn-outline-white text-[10px] py-2 px-5 self-start mt-2">
+            <a href={nav.cta.href} className="bta-btn-outline-white text-[12px] py-2 px-5 self-start mt-2">
               {nav.cta.label}
             </a>
           </div>
