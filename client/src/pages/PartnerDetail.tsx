@@ -30,13 +30,6 @@ function BookingModal({
   hotelName: string;
   onClose: () => void;
 }) {
-  const [activeTab, setActiveTab] = useState<"stays" | "hotel">("stays");
-  const [hotelSearch, setHotelSearch] = useState(hotelName);
-  const [checkIn, setCheckIn] = useState("");
-  const [checkOut, setCheckOut] = useState("");
-  const [guests, setGuests] = useState("2");
-  const [rooms, setRooms] = useState("1");
-
   // Close on Escape key
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
@@ -47,15 +40,14 @@ function BookingModal({
   }, [onClose]);
 
   return (
-    // Backdrop
+    // Backdrop — click outside the modal to close
     <div
       className="fixed inset-0 z-50 flex items-center justify-center bg-[#2f2f2f]/70 backdrop-blur-sm px-4"
       onClick={(e) => {
-        // Close when clicking the backdrop, not the modal itself
         if (e.target === e.currentTarget) onClose();
       }}
     >
-      <div className="bg-[#faf9f6] w-full max-w-lg relative shadow-2xl">
+      <div className="bg-[#faf9f6] w-full max-w-4xl relative shadow-2xl">
         {/* Header */}
         <div className="bg-[#384959] px-8 py-5 flex items-center justify-between">
           <div>
@@ -75,126 +67,17 @@ function BookingModal({
           </button>
         </div>
 
-        {/* Body */}
-        <div className="px-8 py-8">
-          <p className="text-[#384959]/70 text-sm mb-6 leading-relaxed" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
-            Exclusive Member Privileges Worth $350+ Per Stay
-          </p>
-
-          {/* Tabs */}
-          <div className="flex mb-6 border-b border-[#bfaf8a]/30">
-            <button
-              onClick={() => setActiveTab("stays")}
-              className={`text-[10px] tracking-[0.18em] uppercase px-6 py-2 transition-all ${
-                activeTab === "stays"
-                  ? "border-b-2 border-[#bfaf8a] text-[#bfaf8a]"
-                  : "text-[#384959]/50 hover:text-[#384959]"
-              }`}
-              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
-            >
-              Stays
-            </button>
-            <button
-              onClick={() => setActiveTab("hotel")}
-              className={`text-[10px] tracking-[0.18em] uppercase px-6 py-2 transition-all ${
-                activeTab === "hotel"
-                  ? "border-b-2 border-[#bfaf8a] text-[#bfaf8a]"
-                  : "text-[#384959]/50 hover:text-[#384959]"
-              }`}
-              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
-            >
-              Search by Hotel
-            </button>
-          </div>
-
-          {/* Search Form */}
-          <div className="space-y-3">
-            {activeTab === "hotel" ? (
-              <div className="relative">
-                <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#bfaf8a]/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
-                <input
-                  type="text"
-                  value={hotelSearch}
-                  onChange={(e) => setHotelSearch(e.target.value)}
-                  placeholder="Search Hotel Name"
-                  className="w-full pl-10 pr-4 py-3 border border-[#bfaf8a]/30 bg-white font-body text-[#384959] text-sm placeholder:text-[#384959]/40 focus:outline-none focus:border-[#bfaf8a]"
-                />
-              </div>
-            ) : (
-              <div className="relative">
-                <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#bfaf8a]/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-                <input
-                  type="text"
-                  placeholder="Destination or City"
-                  className="w-full pl-10 pr-4 py-3 border border-[#bfaf8a]/30 bg-white font-body text-[#384959] text-sm placeholder:text-[#384959]/40 focus:outline-none focus:border-[#bfaf8a]"
-                />
-              </div>
-            )}
-
-            {/* Check-in / Check-out side by side */}
-            <div className="grid grid-cols-2 gap-3">
-              <div className="relative">
-                <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#bfaf8a]/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
-                <input
-                  type="date"
-                  value={checkIn}
-                  onChange={(e) => setCheckIn(e.target.value)}
-                  placeholder="Check-in"
-                  className="w-full pl-10 pr-3 py-3 border border-[#bfaf8a]/30 bg-white font-body text-[#384959] text-sm placeholder:text-[#384959]/40 focus:outline-none focus:border-[#bfaf8a]"
-                />
-              </div>
-              <div className="relative">
-                <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#bfaf8a]/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
-                <input
-                  type="date"
-                  value={checkOut}
-                  onChange={(e) => setCheckOut(e.target.value)}
-                  placeholder="Check-out"
-                  className="w-full pl-10 pr-3 py-3 border border-[#bfaf8a]/30 bg-white font-body text-[#384959] text-sm placeholder:text-[#384959]/40 focus:outline-none focus:border-[#bfaf8a]"
-                />
-              </div>
-            </div>
-
-            {/* Guests / Rooms */}
-            <div className="relative">
-              <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#bfaf8a]/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
-              </svg>
-              <input
-                type="text"
-                value={`Guests: ${guests}, Rooms: ${rooms}`}
-                readOnly
-                className="w-full pl-10 pr-4 py-3 border border-[#bfaf8a]/30 bg-white font-body text-[#384959] text-sm focus:outline-none focus:border-[#bfaf8a] cursor-default"
-              />
-            </div>
-
-            {/* Search CTA — routes to contact page with pre-filled context */}
-            <Link href={`/contact-us?hotel=${encodeURIComponent(hotelSearch)}&checkin=${checkIn}&checkout=${checkOut}&guests=${guests}&rooms=${rooms}`}>
-              <button
-                className="w-full flex items-center justify-center gap-2 py-3 bg-[#bfaf8a] text-white text-xs tracking-[0.25em] uppercase hover:bg-[#a89e78] transition-colors"
-                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
-                onClick={onClose}
-              >
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
-                Search &amp; Enquire
-              </button>
-            </Link>
-          </div>
-
-          <p className="text-[#384959]/40 text-xs text-center mt-4" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
-            A BTA advisor will confirm your VIP inclusions within 24 hours.
-          </p>
+        {/* Booking engine iframe — luxurytravelclubs.com embed */}
+        <div className="w-full">
+          <iframe
+            src="https://luxurytravelclubs.com/embed"
+            width="100%"
+            height="600"
+            frameBorder="0"
+            allowFullScreen
+            title={`Book ${hotelName}`}
+            style={{ border: "none", display: "block" }}
+          />
         </div>
       </div>
     </div>
