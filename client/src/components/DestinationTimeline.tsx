@@ -835,7 +835,8 @@ function DestinationTimelineInner({ data }: { data: DestinationItinerary }) {
           </div>
 
           {/* Detail panel */}
-          <div className="grid md:grid-cols-2 gap-0 border border-white/20">
+          {/* WHY: 55/45 split gives the photo more breathing room so portrait images are less cropped */}
+          <div className="grid md:grid-cols-[55%_45%] gap-0 border border-white/20">
 
             {/* Photo side */}
             <div
