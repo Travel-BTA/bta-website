@@ -15,6 +15,7 @@
  * All images served from CDN — no local /public references.
  */
 
+import PageSEO from "@/components/PageSEO";
 import { useState, useEffect, useRef } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
@@ -237,7 +238,8 @@ export default function AdvisorRecruitment() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div
+className="min-h-screen bg-white">
       <NavBar />
 
       {/* ══════════════════════════════════════════════════════════════════════
@@ -264,7 +266,12 @@ export default function AdvisorRecruitment() {
             <span
               className="inline-block py-1.5 px-5 border border-[#bfaf8a]/60 text-[#bfaf8a] text-[0.6rem] tracking-[0.3em] uppercase mb-10"
               style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
-            >
+    >
+      <PageSEO
+        title="Join Our Team | Boutique Travel Advisors"
+        description="BTA is recruiting experienced luxury travel advisors. Learn about our culture, Virtuoso membership, and what it means to build a career at Boutique Travel Advisors."
+        path="/advisor-recruitment"
+      />
               By Invitation · Limited Membership
             </span>
 

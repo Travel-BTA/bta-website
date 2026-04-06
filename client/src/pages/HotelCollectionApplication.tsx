@@ -17,6 +17,7 @@
  *  9. Final CTA / Apply
  */
 
+import PageSEO from "@/components/PageSEO";
 import React from "react";
 import NavBar from "@/components/NavBar";
 
@@ -25,7 +26,7 @@ import NavBar from "@/components/NavBar";
 function GoldDivider({ center = false }: { center?: boolean }) {
   return (
     <div
-      style={{
+style={{
         width: 60,
         height: 2,
         background: "#bfaf8a",
@@ -48,6 +49,11 @@ function SectionHeading({ children, light = false }: { children: React.ReactNode
         color: light ? "#ffffff" : "#2f2f2f",
       }}
     >
+      <PageSEO
+        title="Hotel Collection Application | Boutique Travel Advisors"
+        description="Apply to join BTA's curated Hotel Collection — preferred partner benefits, Virtuoso access, and placement in front of our luxury travel clientele."
+        path="/hotel-collection-application"
+      />
       {children}
     </h2>
   );

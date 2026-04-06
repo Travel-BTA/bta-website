@@ -12,6 +12,7 @@
  *  - Body: system sans
  */
 
+import PageSEO from "@/components/PageSEO";
 import { useState } from "react";
 import { MapPin, Phone, Mail } from "lucide-react";
 
@@ -81,7 +82,8 @@ export default function ContactUs() {
   };
 
   return (
-    <div className="min-h-screen bg-[#F7F4EF]">
+    <div
+className="min-h-screen bg-[#F7F4EF]">
       {/* Hero */}
       <div
         className="relative h-[45vh] min-h-[300px] flex items-end pb-12 px-6"
@@ -91,7 +93,12 @@ export default function ContactUs() {
           backgroundSize: "cover",
           backgroundPosition: "center 30%",
         }}
-      >
+    >
+      <PageSEO
+        title="Contact Us | Boutique Travel Advisors"
+        description="Reach out to BTA's team of Virtuoso-affiliated luxury travel advisors. We're ready to start planning your next extraordinary journey."
+        path="/contact-us"
+      />
         <div className="absolute inset-0 bg-[#1a2a35]/55" />
         <div className="relative z-10 max-w-5xl mx-auto w-full">
           <p className="bta-eyebrow text-[0.7rem] tracking-[0.22em] mb-3">

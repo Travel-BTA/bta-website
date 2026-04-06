@@ -1,3 +1,4 @@
+import PageSEO from "@/components/PageSEO";
 import {
   Accordion,
   AccordionContent,
@@ -227,7 +228,8 @@ export default function ComponentsShowcase() {
   };
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div
+className="min-h-screen bg-background text-foreground">
       <main className="container max-w-6xl mx-auto">
         <div className="space-y-2 justify-between flex">
           <h2 className="text-3xl font-semibold tracking-tight mb-6">
@@ -479,7 +481,13 @@ export default function ComponentsShowcase() {
                         className={`w-full justify-start text-left font-normal ${
                           !datePickerDate && "text-muted-foreground"
                         }`}
-                      >
+    >
+      <PageSEO
+        title="Component Showcase | BTA"
+        description="Internal UI component showcase for Boutique Travel Advisors."
+        path="/showcase"
+        noIndex={true}
+      />
                         <CalendarIcon className="mr-2 h-4 w-4" />
                         {datePickerDate ? (
                           format(datePickerDate, "PPP HH:mm", { locale: zhCN })

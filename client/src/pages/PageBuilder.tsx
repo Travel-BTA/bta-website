@@ -12,6 +12,7 @@
  *   Bottom bar            — AI chat input for natural-language edits
  */
 
+import PageSEO from "@/components/PageSEO";
 import { useState, useCallback, useRef, useEffect } from "react";
 import { useLocation, useRoute } from "wouter";
 import { trpc } from "@/lib/trpc";
@@ -296,13 +297,20 @@ export default function PageBuilder() {
   const selectedIdx = blocks.findIndex((b) => b.id === selectedBlockId);
 
   return (
-    <div className="flex flex-col h-screen bg-[#0f1a24] text-white overflow-hidden">
+    <div
+className="flex flex-col h-screen bg-[#0f1a24] text-white overflow-hidden">
       {/* ── Top bar ─────────────────────────────────────────────────────────── */}
       <header className="flex items-center gap-4 px-4 py-2 border-b border-[#384959] bg-[#0f1a24] z-20 shrink-0">
         <button
           onClick={() => navigate("/admin/pages")}
           className="flex items-center gap-1.5 text-[#9C886A] hover:text-white transition-colors text-xs uppercase tracking-widest"
-        >
+    >
+      <PageSEO
+        title="Page Builder | BTA"
+        description="Internal page builder for Boutique Travel Advisors."
+        path="/admin/pages"
+        noIndex={true}
+      />
           <ArrowLeft size={12} />
           Pages
         </button>

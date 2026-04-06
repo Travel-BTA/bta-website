@@ -8,6 +8,7 @@
  *   4. Done. all content comes from the data file, no JSX changes needed
  */
 
+import PageSEO from "@/components/PageSEO";
 import React, { useState } from "react";
 import { PageLayout } from "@/components/PageLayout";
 import { advisor } from "@/content/advisors/julie-rose";
@@ -53,6 +54,7 @@ function HeroSection() {
   const h = advisor.hero;
   return (
     <>
+      <PageSEO title="Julie Rose | Boutique Travel Advisors" description="Meet Julie Rose, luxury travel advisor at BTA. Specializing in bespoke European itineraries, family travel, and Virtuoso-preferred hotel experiences." path="/advisors/julie-rose" />
     {/* ── MOBILE hero: cream bg, text top, photo bottom ── */}
     <section className="block lg:hidden bg-[#faf9f6]">
       {/* Text block */}

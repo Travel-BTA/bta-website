@@ -11,6 +11,7 @@
  * - Warm Stone (#F5F0EA): light section backgrounds
  */
 
+import PageSEO from "@/components/PageSEO";
 import { useState } from "react";
 
 const HERO_IMAGE =
@@ -508,7 +509,8 @@ function FaqAccordion() {
 
 export default function HotelSpecialistProgram() {
   return (
-    <div className="min-h-screen" style={{ backgroundColor: "#F5F0EA", overflow: "hidden" }}>
+    <div
+className="min-h-screen" style={{ backgroundColor: "#F5F0EA", overflow: "hidden" }}>
 
       {/* Hero — WHY: overflow:hidden prevents the hero content from bleeding into adjacent
            sections on mobile and in preview environments. */}
@@ -525,7 +527,12 @@ export default function HotelSpecialistProgram() {
           justifyContent: "center",
           overflow: "hidden",
         }}
-      >
+    >
+      <PageSEO
+        title="Hotel Specialist Program | Boutique Travel Advisors"
+        description="BTA's Hotel Specialist Program — deep-dive training and certification for luxury travel advisors specializing in hotel knowledge and property expertise."
+        path="/hotel-specialist-program"
+      />
         <div
           style={{
             position: "absolute",

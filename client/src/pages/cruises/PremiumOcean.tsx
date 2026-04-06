@@ -15,6 +15,7 @@
  *   Hero → Elegant ocean voyage at golden hour
  */
 
+import PageSEO from "@/components/PageSEO";
 import { Link } from "wouter";
 import { PageLayout } from "@/components/PageLayout";
 
@@ -112,6 +113,11 @@ const CRUISE_LINES = [
 export default function PremiumOcean() {
   return (
     <PageLayout>
+      <PageSEO
+        title="Premium Ocean Cruises | Boutique Travel Advisors"
+        description="Premium ocean cruises with Viking, Oceania, Virgin Voyages, and Azamara. Destination-focused itineraries, culinary experiences, and Virtuoso benefits through BTA."
+        path="/cruises/premium-ocean"
+      />
 
       {/* ── Hero. elegant ocean voyage at golden hour ─────────────────────── */}
       <section className="relative h-[75vh] min-h-[520px] flex items-end overflow-hidden">

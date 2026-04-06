@@ -7,6 +7,7 @@
  * Fully mobile-responsive with horizontal scroll on aircraft categories.
  */
 
+import PageSEO from "@/components/PageSEO";
 import { useState } from "react";
 import { Link } from "wouter";
 import {
@@ -27,7 +28,8 @@ export default function PrivateJetCharters() {
   const [activeJet, setActiveJet] = useState(0);
 
   return (
-    <div className="min-h-screen bg-[#F5F2EE] font-['Playfair_Display',serif]">
+    <div
+className="min-h-screen bg-[#F5F2EE] font-['Playfair_Display',serif]">
 
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
       <section className="relative h-screen min-h-[600px] flex items-end overflow-hidden">
@@ -44,7 +46,12 @@ export default function PrivateJetCharters() {
           <p
             className="text-xs tracking-[0.35em] uppercase mb-4"
             style={{ color: GOLD }}
-          >
+    >
+      <PageSEO
+        title="Private Jet Charters | Boutique Travel Advisors"
+        description="Private jet charter services curated by BTA — seamless air travel for luxury itineraries, remote destinations, and time-sensitive journeys worldwide."
+        path="/private-jet-charters"
+      />
             {jetHero.eyebrow}
           </p>
           <h1

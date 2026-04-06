@@ -23,6 +23,7 @@
  *   - Publish / draft toggle
  */
 
+import PageSEO from "@/components/PageSEO";
 import { useState, useEffect } from "react";
 import { useLocation } from "wouter";
 import { trpc } from "@/lib/trpc";
@@ -54,6 +55,12 @@ function AdvisorList({ onEdit, onNew }: { onEdit: (a: Advisor) => void; onNew: (
 
   return (
     <div>
+      <PageSEO
+        title="Team Admin | BTA"
+        description="Internal team administration for Boutique Travel Advisors."
+        path="/admin/team"
+        noIndex={true}
+      />
       <div className="flex items-center justify-between mb-8">
         <div>
           <h1 className="text-3xl text-[#2F2F2F]" style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal", textTransform: "uppercase", letterSpacing: "0.04em" }}>

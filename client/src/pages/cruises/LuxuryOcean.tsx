@@ -11,6 +11,7 @@
  * Champagne Gold #bfaf8a, Aegean Blue #384959, Linen White #faf9f6.
  */
 
+import PageSEO from "@/components/PageSEO";
 import { Link } from "wouter";
 import { PageLayout } from "@/components/PageLayout";
 
@@ -144,6 +145,11 @@ const CRUISE_LINES = [
 export default function LuxuryOcean() {
   return (
     <PageLayout>
+      <PageSEO
+        title="Luxury Ocean Cruises | Boutique Travel Advisors"
+        description="Ultra-luxury ocean voyages with Explora Journeys, Regent Seven Seas, Seabourn, Silversea, and Crystal Cruises. All-inclusive fares, butler service, and Virtuoso benefits."
+        path="/cruises/luxury-ocean"
+      />
 
       {/* ── Hero ──────────────────────────────────────────────────────────── */}
       <section className="relative h-[75vh] min-h-[520px] flex items-end overflow-hidden">

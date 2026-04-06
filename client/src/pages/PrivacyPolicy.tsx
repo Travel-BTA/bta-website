@@ -11,6 +11,7 @@
  * ─────────────────────────────────────────────────────────────────────────────
  */
 
+import PageSEO from "@/components/PageSEO";
 import { Link } from "wouter";
 
 const PHOTO_BG =
@@ -141,7 +142,8 @@ const sections = [
 
 export default function PrivacyPolicy() {
   return (
-    <div style={{ backgroundColor: "#faf9f6", minHeight: "100vh" }}>
+    <div
+style={{ backgroundColor: "#faf9f6", minHeight: "100vh" }}>
 
       {/* ── HERO HEADER ─────────────────────────────────────────────────────── */}
       {/* Rule: white text over photo, Champagne Gold only on plain backgrounds */}
@@ -153,7 +155,12 @@ export default function PrivacyPolicy() {
           backgroundSize: "cover",
           backgroundPosition: "center 30%",
         }}
-      >
+    >
+      <PageSEO
+        title="Privacy Policy | Boutique Travel Advisors"
+        description="BTA's privacy policy — how we collect, use, and protect your personal information."
+        path="/privacy-policy"
+      />
         {/* Dark gradient overlay for legibility */}
         <div
           className="absolute inset-0"

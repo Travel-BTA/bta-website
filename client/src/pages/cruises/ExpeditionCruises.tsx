@@ -12,6 +12,7 @@
  *   No mainstream cruise ships. No sunny Caribbean beaches for polar/arctic destinations.
  */
 
+import PageSEO from "@/components/PageSEO";
 import { Link } from "wouter";
 import { PageLayout } from "@/components/PageLayout";
 
@@ -141,6 +142,11 @@ const DESTINATIONS = [
 export default function ExpeditionCruises() {
   return (
     <PageLayout>
+      <PageSEO
+        title="Expedition Cruises | Boutique Travel Advisors"
+        description="Expedition cruises to Antarctica, the Arctic, Galapagos, and beyond with Lindblad, Hurtigruten, and Quark. Expert naturalists, Zodiacs, and remote wilderness access."
+        path="/cruises/expedition"
+      />
 
       {/* ── Hero. Antarctica iceberg scene, strong overlay for text legibility ── */}
       <section className="relative h-[75vh] min-h-[520px] flex items-end overflow-hidden">

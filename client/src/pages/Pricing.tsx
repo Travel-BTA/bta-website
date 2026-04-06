@@ -11,6 +11,7 @@
  *  - International: from $75/day of travel
  */
 
+import PageSEO from "@/components/PageSEO";
 import { Link } from "wouter";
 
 const PRICING_TIERS = [
@@ -83,7 +84,8 @@ const WHAT_YOU_GET = [
 
 export default function Pricing() {
   return (
-    <div className="min-h-screen bg-white">
+    <div
+className="min-h-screen bg-white">
       {/* ── Hero ── */}
       <section
         className="relative flex items-center justify-center"
@@ -95,7 +97,12 @@ export default function Pricing() {
           height: "62vh",
           minHeight: "420px",
         }}
-      >
+    >
+      <PageSEO
+        title="Planning Fees | Boutique Travel Advisors"
+        description="BTA's transparent travel planning fee structure. Our advisory fees reflect the depth of expertise, exclusive access, and white-glove service we provide."
+        path="/pricing"
+      />
         <div
           className="absolute inset-0"
           style={{ background: "rgba(4,6,25,0.58)" }}

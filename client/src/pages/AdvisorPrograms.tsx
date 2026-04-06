@@ -10,6 +10,7 @@
  * It is separate from the client-facing homepage.
  */
 
+import PageSEO from "@/components/PageSEO";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Check, Shield, TrendingUp } from "lucide-react";
@@ -34,7 +35,8 @@ const CDN = {
 
 export default function AdvisorPrograms() {
   return (
-    <div className="min-h-screen bg-white">
+    <div
+className="min-h-screen bg-white">
       <NavBar />
 
       {/* ── Hero ──────────────────────────────────────────────────────────── */}
@@ -55,7 +57,12 @@ export default function AdvisorPrograms() {
             <span
               className="inline-block py-1 px-4 border border-[#bfaf8a]/50 text-[#bfaf8a] text-[0.65rem] tracking-[0.25em] uppercase mb-8"
               style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
-            >
+    >
+      <PageSEO
+        title="Advisor Programs | Boutique Travel Advisors"
+        description="Join BTA's advisor programs — Hotel Collection, Hotel Specialist, and preferred partner benefits. Elevate your luxury travel business with Virtuoso access."
+        path="/advisor-programs"
+      />
               For Elite Advisors
             </span>
             <h1

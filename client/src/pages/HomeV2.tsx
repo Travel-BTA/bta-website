@@ -20,6 +20,7 @@
  * 16. Footer
  */
 
+import PageSEO from "@/components/PageSEO";
 import HeroSection, { MobileLogoBar } from "@/components/sections/HeroSection";
 import {
   WhoWeAreSection,
@@ -44,6 +45,11 @@ import {
 export default function Home() {
   return (
     <div className="min-h-screen">
+      <PageSEO
+        title="Boutique Travel Advisors | Luxury Travel Design"
+        description="BTA crafts extraordinary luxury journeys — from private villa escapes to expedition cruises. Virtuoso member. Every booking supports global philanthropy."
+        path="/"
+      />
       <HeroSection />
       {/* MobileLogoBar renders below the hero on small screens only — prevents logos from overlapping hero text */}
       <MobileLogoBar />

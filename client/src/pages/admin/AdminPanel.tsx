@@ -10,6 +10,7 @@
  * backend tools without cluttering the site navigation.
  */
 
+import PageSEO from "@/components/PageSEO";
 import { useAuth } from "@/_core/hooks/useAuth";
 import { getLoginUrl } from "@/const";
 import { useEffect } from "react";
@@ -69,6 +70,12 @@ export default function AdminPanel() {
 
   return (
     <div className="min-h-screen bg-[#faf9f6]">
+      <PageSEO
+        title="Admin Panel | BTA"
+        description="Internal admin panel for Boutique Travel Advisors."
+        path="/admin"
+        noIndex={true}
+      />
 
       {/* Header */}
       <div className="bg-[#384959] text-white px-8 py-10">

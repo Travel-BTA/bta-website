@@ -15,6 +15,7 @@
  * Images: Janet's uploaded photos (CDN) + Unsplash for destinations not covered.
  */
 
+import PageSEO from "@/components/PageSEO";
 import NavBar from "@/components/NavBar";
 import { DestinationTimelineModal, DESTINATION_ITINERARIES } from "@/components/DestinationTimeline";
 import { footer } from "@/content/homepage";
@@ -48,7 +49,8 @@ const CDN = {
   italyRome:              "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/LyGhkzFTaqAffZLN.jpg",
   italyTuscany:           "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/hYfEHzdFIlOpnyZs.jpg",
   italyAmalfi:            "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/EorfCZAQDYxVwjKH.jpg",
-  italyFlorence:          "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/hvUVxwtvPipkXycm.jpg",
+  // italyFlorence: family at Piazzale Michelangelo with Duomo at golden hour — Janet's photo, Apr 2026
+  italyFlorence:          "https://d2xsxph8kpxj0f.cloudfront.net/310419663028906848/A8bTz7Hz79QpvHBkB84nHJ/italy-florence-family-duomo_752512b1.jpg",
   italyVeniceCanal:       "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028906848/DXMbKalGojJSFbbl.jpg",
 };
 
@@ -603,7 +605,8 @@ export default function FamilyTravel() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#faf9f6] text-[#2f2f2f]">
+    <div
+className="min-h-screen bg-[#faf9f6] text-[#2f2f2f]">
       <NavBar />
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
@@ -624,7 +627,12 @@ export default function FamilyTravel() {
           <p
             className="text-[#bfaf8a] text-sm mb-4"
             style={{ fontFamily: FONT.eyebrow, fontWeight: 500, fontStyle: "italic" }}
-          >
+    >
+      <PageSEO
+        title="Family Travel | Boutique Travel Advisors"
+        description="Luxury family travel designed for every age — Costa Rica wildlife, Fiji private islands, Thailand elephant camps, Italy cultural immersions, and Iceland adventures."
+        path="/experiences/family-travel"
+      />
             Experiences · Family Travel
           </p>
           {/* H1 — Instrument Serif, UPPERCASE, never italic */}

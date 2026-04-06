@@ -13,6 +13,7 @@
  * Color rule:
  *   Champagne Gold #bfaf8a ONLY on plain/solid backgrounds — NEVER over photos
  */
+import PageSEO from "@/components/PageSEO";
 import { Link } from "wouter";
 import { PageLayout } from "@/components/PageLayout";
 
@@ -141,6 +142,11 @@ const SECTIONS = [
 export default function FulfillmentPolicy() {
   return (
     <PageLayout>
+      <PageSEO
+        title="Fulfillment Policy | Boutique Travel Advisors"
+        description="BTA's fulfillment and service delivery policy for travel planning engagements."
+        path="/fulfillment-policy"
+      />
       {/* ── Header ────────────────────────────────────────────────────────── */}
       {/*
         WHY: Photo background — luxury concierge service setting conveying trust,

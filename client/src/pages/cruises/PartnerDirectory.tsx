@@ -9,6 +9,7 @@
  * Champagne Gold #bfaf8a, Aegean Blue #384959, Linen White #faf9f6.
  */
 
+import PageSEO from "@/components/PageSEO";
 import { Link } from "wouter";
 import { PageLayout } from "@/components/PageLayout";
 
@@ -339,6 +340,11 @@ function SectionHeader({
 export default function PartnerDirectory() {
   return (
     <PageLayout>
+      <PageSEO
+        title="Cruise Partner Directory | Boutique Travel Advisors"
+        description="BTA's complete cruise partner directory — all major luxury, premium, river, and expedition cruise lines with direct booking links and Virtuoso benefits."
+        path="/cruises/partners"
+      />
 
       {/* ── Hero ──────────────────────────────────────────────────────────── */}
       <section className="relative h-[70vh] min-h-[520px] flex items-end overflow-hidden">

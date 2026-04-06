@@ -7,6 +7,7 @@
  * No emojis. No aggressive fonts.
  */
 
+import PageSEO from "@/components/PageSEO";
 import { footer } from "@/content/homepage";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import { useState } from "react";
@@ -61,7 +62,8 @@ export default function Book() {
   };
 
   return (
-    <div className="min-h-screen bg-[#faf9f6] text-[#2F2F2F]">
+    <div
+className="min-h-screen bg-[#faf9f6] text-[#2F2F2F]">
 
       {submitted ? (
         /* ── Thank You State ─────────────────────────────────────────── */
@@ -71,7 +73,12 @@ export default function Book() {
             <h1
               className="text-[#384959] text-5xl font-light mb-6"
               style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
-            >
+    >
+      <PageSEO
+        title="Book a Consultation | Boutique Travel Advisors"
+        description="Schedule a complimentary consultation with a BTA luxury travel advisor. We'll craft a bespoke itinerary tailored to your travel style and interests."
+        path="/book"
+      />
               Thank You
             </h1>
             <p className="text-[#2f2f2f] text-lg leading-relaxed mb-10 font-light">

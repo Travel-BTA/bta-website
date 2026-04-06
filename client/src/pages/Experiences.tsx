@@ -2,6 +2,7 @@
 // Brand: #2f2f2f | #faf9f6 | #edeae4 | #384959 | #bfaf8a
 // Layout: Full-bleed hero → intro → featured categories → curated list → philanthropy note → CTA
 
+import PageSEO from "@/components/PageSEO";
 import { Link } from "wouter";
 import { useState } from "react";
 
@@ -107,7 +108,8 @@ export default function Experiences() {
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: "#faf9f6" }}>
+    <div
+className="min-h-screen" style={{ backgroundColor: "#faf9f6" }}>
       {/* Hero */}
       <section
         className="relative h-[70vh] min-h-[500px] flex items-end"
@@ -116,7 +118,12 @@ export default function Experiences() {
           backgroundSize: "cover",
           backgroundPosition: "center 30%",
         }}
-      >
+    >
+      <PageSEO
+        title="Travel Experiences | Boutique Travel Advisors"
+        description="Curated luxury travel experiences — family adventures, cultural immersions, expedition journeys, European escapes, and safari & wildlife encounters."
+        path="/experiences"
+      />
         <div
           className="absolute inset-0"
           style={{ background: "linear-gradient(to top, rgba(47,47,47,0.88) 0%, rgba(47,47,47,0.3) 55%, rgba(47,47,47,0.15) 100%)" }}

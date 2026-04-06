@@ -6,6 +6,7 @@
  * Accessible at /admin/pages (admin only).
  */
 
+import PageSEO from "@/components/PageSEO";
 import { useState } from "react";
 import { useLocation } from "wouter";
 import { trpc } from "@/lib/trpc";
@@ -98,7 +99,8 @@ export default function PagesDashboard() {
   }
 
   return (
-    <div className="min-h-screen bg-[#0f1a24] text-white">
+    <div
+className="min-h-screen bg-[#0f1a24] text-white">
       {/* Header */}
       <header className="border-b border-[#384959] px-8 py-5 flex items-center justify-between">
         <div>
@@ -106,7 +108,13 @@ export default function PagesDashboard() {
           <h1
             className="text-2xl font-light uppercase tracking-widest"
             style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
-          >
+    >
+      <PageSEO
+        title="Pages Dashboard | BTA"
+        description="Internal pages dashboard for Boutique Travel Advisors."
+        path="/admin/pages-dashboard"
+        noIndex={true}
+      />
             Page Builder
           </h1>
         </div>

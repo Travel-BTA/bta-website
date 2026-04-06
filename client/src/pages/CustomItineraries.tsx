@@ -11,6 +11,7 @@
  * Champagne Gold #bfaf8a, Aegean Blue #384959, Linen White #faf9f6.
  */
 
+import PageSEO from "@/components/PageSEO";
 import { Link } from "wouter";
 import { PageLayout } from "@/components/PageLayout";
 
@@ -120,6 +121,11 @@ function JourneySection({
 export default function CustomItineraries() {
   return (
     <PageLayout>
+      <PageSEO
+        title="Custom Itineraries | Boutique Travel Advisors"
+        description="Bespoke travel itineraries crafted by BTA's luxury advisors. Every detail — hotels, transfers, experiences, dining — designed around you."
+        path="/custom-itineraries"
+      />
 
       {/* ── Hero ──────────────────────────────────────────────────────────── */}
       <section className="relative h-[70vh] min-h-[500px] flex items-end overflow-hidden">

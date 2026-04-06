@@ -1,3 +1,4 @@
+import PageSEO from "@/components/PageSEO";
 import { useState, useRef, useCallback } from "react";
 import { trpc } from "@/lib/trpc";
 import { toast } from "sonner";
@@ -123,7 +124,8 @@ export default function MediaManager() {
   );
 
   return (
-    <div className="min-h-screen bg-[#faf9f6]">
+    <div
+className="min-h-screen bg-[#faf9f6]">
       {/* Header */}
       <header className="bg-white border-b border-[#edeae4] sticky top-0 z-10 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
@@ -141,7 +143,13 @@ export default function MediaManager() {
           <button
             onClick={() => fileInputRef.current?.click()}
             className="bg-[#384959] text-white px-5 py-2 rounded text-sm font-medium hover:bg-[#2f2f2f] transition-colors"
-          >
+    >
+      <PageSEO
+        title="Media Manager | BTA"
+        description="Internal media management for Boutique Travel Advisors."
+        path="/admin/media"
+        noIndex={true}
+      />
             + Upload Files
           </button>
         </div>

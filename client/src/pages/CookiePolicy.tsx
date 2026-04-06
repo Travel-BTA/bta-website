@@ -13,6 +13,7 @@
  * Color rule:
  *   Champagne Gold #bfaf8a ONLY on plain/solid backgrounds — NEVER over photos
  */
+import PageSEO from "@/components/PageSEO";
 import { Link } from "wouter";
 import { PageLayout } from "@/components/PageLayout";
 
@@ -127,6 +128,11 @@ const SECTIONS = [
 export default function CookiePolicy() {
   return (
     <PageLayout>
+      <PageSEO
+        title="Cookie Policy | Boutique Travel Advisors"
+        description="BTA's cookie policy — how we use cookies and similar technologies on our website."
+        path="/cookie-policy"
+      />
       {/* ── Header ────────────────────────────────────────────────────────── */}
       {/*
         WHY: Photo background — luxury hotel room with laptop, conveying the

@@ -22,6 +22,7 @@
  * To update design: edit the individual section component files.
  */
 
+import PageSEO from "@/components/PageSEO";
 import HeroSection from "@/components/sections/HeroSection";
 import {
   WhoWeAreSection,
@@ -44,7 +45,14 @@ import {
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <div
+className="min-h-screen"
+    >
+      <PageSEO
+        title="Boutique Travel Advisors | Luxury Travel Planning"
+        description="BTA is a Virtuoso-affiliated luxury travel agency. We craft bespoke journeys with exclusive hotel access, Virtuoso benefits, and white-glove service."
+        path="/"
+      />
       <HeroSection />
       <WhoWeAreSection />
       <StatsSection />

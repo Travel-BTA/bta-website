@@ -12,6 +12,7 @@
  * Content managed in: client/src/content/philanthropy.ts
  */
 
+import PageSEO from "@/components/PageSEO";
 import {
   philanthropyBeneficiaries,
   philanthropyCta,
@@ -40,7 +41,8 @@ export default function PhilanthropicInitiatives() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#FAF8F5] text-[#2F2F2F] font-serif">
+    <div
+className="min-h-screen bg-[#FAF8F5] text-[#2F2F2F] font-serif">
 
       {/* ══════════════════════════════════════════════════════════════
           HERO. Full-screen cinematic with parallax
@@ -64,7 +66,12 @@ export default function PhilanthropicInitiatives() {
           <h1
             className="text-white text-5xl md:text-7xl lg:text-8xl leading-[1.0] mb-6 max-w-3xl"
             style={PF}
-          >
+    >
+      <PageSEO
+        title="Philanthropic Initiatives | Boutique Travel Advisors"
+        description="BTA Gives Back — our philanthropic travel initiatives supporting conservation, community development, and sustainable tourism worldwide."
+        path="/philanthropic-initiatives"
+      />
             {philanthropyHero.headline.split("\n").map((l, i) => (
               <span key={i} className="block">{l}</span>
             ))}

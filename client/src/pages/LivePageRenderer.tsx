@@ -6,6 +6,7 @@
  * Includes the site NavBar and Footer so published pages feel native.
  */
 
+import PageSEO from "@/components/PageSEO";
 import { useRoute } from "wouter";
 import { trpc } from "@/lib/trpc";
 import BlockRenderer from "@/components/pageBuilder/BlockRenderer";
@@ -63,7 +64,14 @@ export default function LivePageRenderer() {
   const blocks = (page.blocks as PageBlock[]) ?? [];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div
+className="min-h-screen bg-white"
+    >
+      <PageSEO
+        title="Page | Boutique Travel Advisors"
+        description="Boutique Travel Advisors — luxury travel planning with Virtuoso access."
+        path="/pages"
+      />
       <NavBar />
       {blocks.map((block) => (
         <BlockRenderer key={block.id} block={block} />

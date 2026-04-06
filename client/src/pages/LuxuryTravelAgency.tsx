@@ -9,6 +9,7 @@
  *  - Body: Inter / system sans
  */
 
+import PageSEO from "@/components/PageSEO";
 import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
@@ -70,12 +71,18 @@ const faqs = [
 function FaqItem({ index, q, a }: { index: number; q: string; a: string }) {
   const [open, setOpen] = useState(false);
   return (
-    <div className="border-b border-[#D6CFC4] py-6">
+    <div
+className="border-b border-[#D6CFC4] py-6">
       <button
         onClick={() => setOpen(!open)}
         className="w-full flex items-start justify-between gap-4 text-left group"
         aria-expanded={open}
-      >
+    >
+      <PageSEO
+        title="Luxury Travel Agency | Boutique Travel Advisors"
+        description="BTA is a Virtuoso-affiliated luxury travel agency specializing in bespoke journeys, exclusive hotel access, and white-glove planning for discerning travelers."
+        path="/luxury-travel-agency"
+      />
         <div className="flex items-start gap-4">
           {/* Number */}
           <span

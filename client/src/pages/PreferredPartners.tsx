@@ -12,6 +12,7 @@
  * so adding a new partner requires no changes here.
  */
 
+import PageSEO from "@/components/PageSEO";
 import { useRef, useEffect, useState } from "react";
 import { Link } from "wouter";
 import {
@@ -100,7 +101,8 @@ export default function PreferredPartners() {
       : partners.filter((p) => p.category === activeCategory);
 
   return (
-    <div className="bg-[#EDEAE4] min-h-screen">
+    <div
+className="bg-[#EDEAE4] min-h-screen">
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
       <section className="relative h-[70vh] min-h-[520px] overflow-hidden flex items-center justify-center">
@@ -174,7 +176,12 @@ export default function PreferredPartners() {
                     ? "bg-[#384959] text-white border-[#384959]"
                     : "bg-transparent text-[#384959] border-[#384959]/40 hover:border-[#384959]"
                 }`}
-              >
+    >
+      <PageSEO
+        title="Preferred Partners | Boutique Travel Advisors"
+        description="BTA's curated network of preferred hotel, cruise, and tour operator partners — all vetted for exceptional quality and Virtuoso-level service."
+        path="/preferred-partners"
+      />
                 {cat}
               </button>
             ))}

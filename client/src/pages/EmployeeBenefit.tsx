@@ -15,6 +15,7 @@
  * Animated counters use IntersectionObserver to trigger on scroll.
  */
 
+import PageSEO from "@/components/PageSEO";
 import { useEffect, useRef, useState } from "react";
 
 // ─── CDN image constants ───────────────────────────────────────────────────
@@ -62,11 +63,17 @@ interface StatCardProps {
 function StatCard({ value, suffix, label, source, triggered }: StatCardProps) {
   const count = useCountUp(value, 2000, triggered);
   return (
-    <div className="flex flex-col items-center text-center px-6 py-8">
+    <div
+className="flex flex-col items-center text-center px-6 py-8">
       <div
         className="text-5xl md:text-6xl mb-3"
         style={{ fontFamily: "'Playfair Display', Georgia, serif", color: "#BFAF8A", fontWeight: 400 }}
-      >
+    >
+      <PageSEO
+        title="Employee Benefit Program | Boutique Travel Advisors"
+        description="BTA's Employee Benefit Program brings luxury travel planning to corporate teams. Offer your employees access to Virtuoso-affiliated advisors as a premium workplace benefit."
+        path="/employee-benefit"
+      />
         {count.toLocaleString()}{suffix}
       </div>
       <p className="text-white/90 text-base md:text-lg leading-snug max-w-[200px]">{label}</p>

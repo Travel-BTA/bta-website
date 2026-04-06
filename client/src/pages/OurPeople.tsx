@@ -11,6 +11,7 @@
  * - Uniform 3:4 portrait cards. same size for every advisor
  */
 
+import PageSEO from "@/components/PageSEO";
 import { useState, useMemo } from "react";
 import { Link } from "wouter";
 import { PageLayout } from "@/components/PageLayout";
@@ -134,14 +135,20 @@ function AdvisorCard({ advisor }: { advisor: Advisor }) {
 
 function SectionHeader({ eyebrow, heading, sub }: { eyebrow: string; heading: string; sub?: string }) {
   return (
-    <div className="mb-16">
+    <div
+className="mb-16">
       {/* Gold rule + eyebrow */}
       <div className="flex items-center gap-4 mb-4">
         <div className="w-12 h-px bg-[#bfaf8a]" />
         <p
           className="text-[#bfaf8a] text-2xl italic"
           style={{ fontFamily: "'Allura', cursive" }}
-        >
+    >
+      <PageSEO
+        title="Our People | Boutique Travel Advisors"
+        description="Meet BTA's team of Virtuoso-affiliated luxury travel advisors — passionate experts dedicated to crafting extraordinary journeys for our clients."
+        path="/our-people"
+      />
           {eyebrow}
         </p>
       </div>

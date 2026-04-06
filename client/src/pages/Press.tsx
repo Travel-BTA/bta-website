@@ -13,6 +13,7 @@
  *  - NEW: Phoenix Symphony exclusive travel partner
  */
 
+import PageSEO from "@/components/PageSEO";
 import { Link } from "wouter";
 
 // ── Types ──────────────────────────────────────────────────────────────────────
@@ -174,7 +175,8 @@ const TYPE_COLORS: Record<PressItem["outletType"], { bg: string; text: string }>
 // ── Component ─────────────────────────────────────────────────────────────────
 export default function Press() {
   return (
-    <div className="min-h-screen bg-white">
+    <div
+className="min-h-screen bg-white">
       {/* ── Hero ── */}
       <section
         className="relative flex items-center justify-center"
@@ -186,7 +188,12 @@ export default function Press() {
           height: "55vh",
           minHeight: "380px",
         }}
-      >
+    >
+      <PageSEO
+        title="Press | Boutique Travel Advisors"
+        description="BTA in the press — media coverage, awards, and editorial features highlighting our luxury travel expertise and Virtuoso membership."
+        path="/press"
+      />
         <div
           className="absolute inset-0"
           style={{ background: "rgba(4,6,25,0.62)" }}

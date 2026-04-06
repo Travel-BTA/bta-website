@@ -11,6 +11,7 @@
  * - NO em dashes
  */
 
+import PageSEO from "@/components/PageSEO";
 import { Link } from "wouter";
 
 const SECTIONS = [
@@ -394,6 +395,11 @@ export default function TermsAndConditions() {
       className="min-h-screen"
       style={{ backgroundColor: "#faf9f6", fontFamily: "'Playfair Display', serif" }}
     >
+      <PageSEO
+        title="Terms & Conditions | Boutique Travel Advisors"
+        description="BTA's terms and conditions governing travel planning services and client engagements."
+        path="/terms-and-conditions"
+      />
       {/* Hero Header — photo background, white text only */}
       <div className="relative flex items-center justify-center" style={{ minHeight: "420px" }}>
         {/* Background photo */}

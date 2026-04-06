@@ -13,6 +13,7 @@
  *   White text on all photo overlays
  */
 
+import PageSEO from "@/components/PageSEO";
 import { useState, useMemo } from "react";
 import { Link } from "wouter";
 import { trpc } from "@/lib/trpc";
@@ -70,7 +71,8 @@ interface Post {
 // ─── Skeleton ─────────────────────────────────────────────────────────────────
 function CardSkeleton() {
   return (
-    <div className="animate-pulse">
+    <div
+className="animate-pulse">
       <div className="w-full h-[240px] bg-[#edeae4] mb-4" />
       <div className="h-3 bg-[#edeae4] rounded w-24 mb-3" />
       <div className="h-5 bg-[#edeae4] rounded w-4/5 mb-2" />
@@ -131,7 +133,12 @@ function FeaturedCard({ post }: { post: Post }) {
         <p
           className="text-[#2F2F2F]/65 text-sm leading-relaxed mb-7 line-clamp-4"
           style={{ fontFamily: "'Playfair Display', serif" }}
-        >
+    >
+      <PageSEO
+        title="Journal | Boutique Travel Advisors"
+        description="Travel stories, destination guides, and expert insights from BTA's luxury travel advisors. Inspiration for your next extraordinary journey."
+        path="/journal"
+      />
           {decodeHtml(post.excerpt)}
         </p>
 

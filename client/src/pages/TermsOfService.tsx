@@ -14,6 +14,7 @@
  *   Champagne Gold #bfaf8a ONLY on plain/solid backgrounds — NEVER over photos
  */
 
+import PageSEO from "@/components/PageSEO";
 import { Link } from "wouter";
 import { PageLayout } from "@/components/PageLayout";
 
@@ -212,6 +213,11 @@ const SECTIONS = [
 export default function TermsOfService() {
   return (
     <PageLayout>
+      <PageSEO
+        title="Terms of Service | Boutique Travel Advisors"
+        description="BTA's terms of service for website use and travel planning engagements."
+        path="/terms-of-service"
+      />
 
       {/* ── Header ────────────────────────────────────────────────────────── */}
       {/*

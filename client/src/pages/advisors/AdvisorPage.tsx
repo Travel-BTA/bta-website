@@ -21,6 +21,7 @@
  *  11. Closing quote banner
  */
 
+import PageSEO from "@/components/PageSEO";
 import React, { useState } from "react";
 import { useRoute } from "wouter";
 import { trpc } from "@/lib/trpc";
@@ -558,6 +559,7 @@ export default function AdvisorPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <PageSEO title="Advisor | Boutique Travel Advisors" description="Meet a BTA luxury travel advisor — expert in bespoke itineraries, Virtuoso-preferred hotels, and extraordinary travel experiences." path="/advisors" />
       <HeroSection a={advisor} />
       <MeetSection a={advisor} />
       <StatsSection a={advisor} />

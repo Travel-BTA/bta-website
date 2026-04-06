@@ -8,6 +8,7 @@
  * Content is managed entirely in: client/src/content/landJourneys.ts
  */
 
+import PageSEO from "@/components/PageSEO";
 import {
   landJourneysHero,
   landJourneysIntro,
@@ -38,7 +39,8 @@ export default function LandJourneys() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#faf9f6] text-[#2F2F2F] font-serif">
+    <div
+className="min-h-screen bg-[#faf9f6] text-[#2F2F2F] font-serif">
       {/* ── Navigation ─────────────────────────────────────────────────── */}
 
       {/* ── Hero ───────────────────────────────────────────────────────── */}
@@ -60,7 +62,12 @@ export default function LandJourneys() {
           <p
             className="tracking-[0.3em] text-sm uppercase mb-4"
             style={{ color: "rgba(255,255,255,0.75)", fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "normal" , textTransform: "uppercase" }}
-          >
+    >
+      <PageSEO
+        title="Land Journeys | Boutique Travel Advisors"
+        description="Curated overland travel experiences — private guided tours, luxury lodges, and bespoke land itineraries across the world's most compelling destinations."
+        path="/experiences/land-journeys"
+      />
             {landJourneysHero.eyebrow}
           </p>
 

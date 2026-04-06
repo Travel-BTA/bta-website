@@ -16,6 +16,7 @@
  *   White text on all photo overlays
  */
 
+import PageSEO from "@/components/PageSEO";
 import { Link } from "wouter";
 import { PageLayout } from "@/components/PageLayout";
 
@@ -123,6 +124,11 @@ const HOW_IT_WORKS = [
 export default function PrivateCharters() {
   return (
     <PageLayout>
+      <PageSEO
+        title="Private Yacht Charters | Boutique Travel Advisors"
+        description="Private yacht and vessel charters for the ultimate bespoke ocean experience. BTA curates fully crewed superyachts, catamarans, and expedition vessels worldwide."
+        path="/cruises/private-charters"
+      />
 
       {/* ── Hero ──────────────────────────────────────────────────────────── */}
       {/* WHY: Dark photo — standard gradient overlay, white text throughout */}

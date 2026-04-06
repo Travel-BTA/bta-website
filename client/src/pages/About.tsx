@@ -22,6 +22,7 @@
  * consumer-facing and polished.
  */
 
+import PageSEO from "@/components/PageSEO";
 import { useState } from "react";
 import { Link } from "wouter";
 // WHY: footer import removed — About.tsx no longer renders its own footer.
@@ -104,6 +105,11 @@ export default function About() {
 
   return (
     <div className="min-h-screen bg-bta-stone font-['Playfair_Display',Georgia,serif]">
+      <PageSEO
+        title="About Us | Boutique Travel Advisors"
+        description="Meet the BTA team — Virtuoso-affiliated luxury travel advisors dedicated to crafting bespoke journeys. Learn our story, philosophy, and commitment to giving back."
+        path="/about"
+      />
 
       {/* ── 1. HERO ── */}
       <section className="relative h-[55vh] min-h-[400px] overflow-hidden">

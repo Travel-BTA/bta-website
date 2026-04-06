@@ -2,6 +2,7 @@
 // Brand: #2f2f2f | #faf9f6 | #edeae4 | #384959 | #bfaf8a
 // Layout: Full-bleed hero → intro → destination grid with hover reveals → CTA
 
+import PageSEO from "@/components/PageSEO";
 import { Link } from "wouter";
 
 const DESTINATIONS = [
@@ -120,7 +121,8 @@ const DESTINATIONS = [
 
 export default function Destinations() {
   return (
-    <div className="min-h-screen" style={{ backgroundColor: "#faf9f6" }}>
+    <div
+className="min-h-screen" style={{ backgroundColor: "#faf9f6" }}>
       {/* Hero */}
       <section
         className="relative h-[70vh] min-h-[500px] flex items-end"
@@ -129,7 +131,12 @@ export default function Destinations() {
           backgroundSize: "cover",
           backgroundPosition: "center 40%",
         }}
-      >
+    >
+      <PageSEO
+        title="Destinations | Boutique Travel Advisors"
+        description="Explore BTA's curated destination portfolio — Europe, Asia, the Americas, Africa, and beyond. Every journey is designed with insider access and Virtuoso benefits."
+        path="/destinations"
+      />
         <div
           className="absolute inset-0"
           style={{ background: "linear-gradient(to top, rgba(47,47,47,0.85) 0%, rgba(47,47,47,0.3) 50%, rgba(47,47,47,0.15) 100%)" }}

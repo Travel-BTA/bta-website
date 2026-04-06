@@ -13,6 +13,7 @@
  * Content is fetched live from travelbta.com WordPress REST API via tRPC.
  */
 
+import PageSEO from "@/components/PageSEO";
 import { useParams, Link } from "wouter";
 import { trpc } from "@/lib/trpc";
 import { PageLayout } from "@/components/PageLayout";
@@ -164,6 +165,11 @@ export default function BlogPost() {
   if (error || !post) {
   return (
     <PageLayout>
+      <PageSEO
+        title="Journal | Boutique Travel Advisors"
+        description="Insider travel stories, destination guides, and expert advice from the BTA team."
+        path="/journal"
+      />
       <div className="max-w-3xl mx-auto px-6 py-32 text-center">
         <p className="text-[#bfaf8a] text-sm tracking-[0.15em] uppercase bta-eyebrow mb-4">Article Not Found</p>
         <h1 className="text-[#384959] text-4xl font-light mb-6 font-display">

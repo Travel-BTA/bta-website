@@ -11,6 +11,7 @@
  * Hero overlay strengthened (from/90 via/50 to/15) for text legibility.
  */
 
+import PageSEO from "@/components/PageSEO";
 import { Link } from "wouter";
 import { PageLayout } from "@/components/PageLayout";
 
@@ -132,6 +133,11 @@ const CRUISE_LINES = [
 export default function RiverCruises() {
   return (
     <PageLayout>
+      <PageSEO
+        title="River Cruises | Boutique Travel Advisors"
+        description="Luxury river cruises with AmaWaterways, Uniworld, Viking River, and Tauck. Drift through medieval villages and vineyard valleys with Virtuoso benefits."
+        path="/cruises/river"
+      />
 
       {/* ── Hero ──────────────────────────────────────────────────────────── */}
       {/* Stronger overlay (via/50) ensures white text is legible over any image */}

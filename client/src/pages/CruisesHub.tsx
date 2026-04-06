@@ -10,6 +10,7 @@
  *   Zero Playfair Display anywhere.
  */
 
+import PageSEO from "@/components/PageSEO";
 import { Link } from "wouter";
 import { PageLayout } from "@/components/PageLayout";
 
@@ -80,6 +81,11 @@ const F = {
 export default function CruisesHub() {
   return (
     <PageLayout>
+      <PageSEO
+        title="Luxury Cruises | Boutique Travel Advisors"
+        description="Explore the world’s finest cruise lines with BTA — Explora Journeys, Regent Seven Seas, Silversea, river cruises, and expedition voyages. Virtuoso benefits included."
+        path="/cruises"
+      />
 
       {/* ── Hero ──────────────────────────────────────────────────────────── */}
       <section className="relative h-[80vh] min-h-[560px] flex items-end overflow-hidden">

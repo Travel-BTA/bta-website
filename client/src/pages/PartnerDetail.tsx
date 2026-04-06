@@ -16,6 +16,7 @@
  *   7. Footer
  */
 
+import PageSEO from "@/components/PageSEO";
 import { useRef, useEffect, useState } from "react";
 import { Link, useParams } from "wouter";
 import { partners } from "@/content/preferredPartners";
@@ -57,7 +58,14 @@ function PropertyCard({
   imageUrl: string;
 }) {
   return (
-    <div className="group relative overflow-hidden cursor-pointer">
+    <div
+className="group relative overflow-hidden cursor-pointer"
+    >
+      <PageSEO
+        title="Partner | Boutique Travel Advisors"
+        description="Detailed information about BTA's preferred travel partners — hotels, cruise lines, tour operators, and destination specialists."
+        path="/partners"
+      />
       {/* Photo */}
       <div className="relative h-56 overflow-hidden">
         <img
